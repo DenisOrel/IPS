@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Search.Interfaces.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96FFBD61-0144-4D08-ADFB-6CC22653CAB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Search.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Localization\CustomDescription.cs" />
+    <Compile Include="Localization\CustomCategory.cs" />
+    <Compile Include="Localization\CustomDisplayName.cs" />
+    <Compile Include="Signs\Interfaces\ExpiredAuthFileUsing.cs" />
+    <Compile Include="Signs\Interfaces\ICertSheetClientService.cs" />
+    <Compile Include="Signs\Interfaces\ArchiveControl.cs" />
+    <Compile Include="Signs\Interfaces\CertProcs.cs" />
+    <Compile Include="Signs\Interfaces\SignResult.cs" />
+    <Compile Include="Signs\Interfaces\SignsProcs.cs" />
+    <Compile Include="Signs\Interfaces\CAPIBaseMethods.cs" />
+    <Compile Include="Signs\Interfaces\CAPICertificate.cs" />
+    <Compile Include="Signs\Interfaces\CAPIConsts.cs" />
+    <Compile Include="Signs\Interfaces\PROV_ENUMALGS_EX.cs" />
+    <Compile Include="Signs\Interfaces\CRYPT_SIGN_MESSAGE_PARA.cs" />
+    <Compile Include="Signs\Interfaces\CRYPT_VERIFY_MESSAGE_PARA.cs" />
+    <Compile Include="Signs\Interfaces\CRYPT_ALGORITHM_IDENTIFIER.cs" />
+    <Compile Include="Signs\Interfaces\CRYPTOAPI_BLOB.cs" />
+    <Compile Include="Signs\Interfaces\GraphClass.cs" />
+    <Compile Include="Signs\Interfaces\Graphs4Type.cs" />
+    <Compile Include="Signs\Interfaces\Graphs4TypeStruct.cs" />
+    <Compile Include="Signs\Interfaces\GraphsCollection.cs" />
+    <Compile Include="Signs\Interfaces\GraphsSet.cs" />
+    <Compile Include="Signs\Interfaces\ISignsService.cs" />
+    <Compile Include="Signs\Interfaces\SignParams.cs" />
+    <Compile Include="Signs\Interfaces\SignVersions.cs" />
+    <Compile Include="Signs\Interfaces\SignStatuses.cs" />
+    <Compile Include="Signs\Interfaces\SignHelper.cs" />
+    <Compile Include="Signs\Interfaces\OpenKey.cs" />
+    <Compile Include="Signs\Interfaces\OpenKeyType.cs" />
+    <Compile Include="Signs\Interfaces\OpenKeysCollection.cs" />
+    <Compile Include="Signs\Interfaces\SignCollection.cs" />
+    <Compile Include="Signs\Interfaces\SignsHolder.cs" />
+    <Compile Include="Signs\Interfaces\StreamCms.cs" />
+    <Compile Include="Signs\Interfaces\SignsServerUsersCache.cs" />
+    <Compile Include="Signs\Interfaces\Win32.cs" />
+    <Compile Include="Signs\CryptoAPI\CapiProvider.cs" />
+    <Compile Include="Signs\CryptoAPI\CapiCertificate.cs" />
+    <Compile Include="Search\Interfaces\DocGroupType.cs" />
+    <Compile Include="Search\Interfaces\CertSheetData.cs" />
+    <Compile Include="Search\Interfaces\CertSheetDataList.cs" />
+    <Compile Include="Search\Interfaces\CertSheetHolder.cs" />
+    <Compile Include="Search\Interfaces\ListEx`1.cs" />
+    <Compile Include="Search\Interfaces\ZLib.cs" />
+    <Compile Include="Search\Interfaces\Signs\CheckSumService.cs" />
+    <Compile Include="Search\Interfaces\Signs\LengthedCryptoStream.cs" />
+    <Compile Include="Search\Interfaces\Copies\CopyKind.cs" />
+    <Compile Include="Search\Interfaces\Copies\IDocumentCopyService.cs" />
+    <Compile Include="Search\Interfaces\Copies\IInventoryNumberGenerator.cs" />
+    <Compile Include="Archives\Common\ArchiveStructureChangeAction.cs" />
+    <Compile Include="Archives\Common\ConstsHolder.cs" />
+    <Compile Include="Archives\Common\ArchiveTypesUsingMode.cs" />
+    <Compile Include="Archives\Common\TypesAndUsers.cs" />
+    <Compile Include="Interfaces\IArchiveAutoPlaceCacheService.cs" />
+    <Compile Include="Interfaces\IArchiveService.cs" />
+    <Compile Include="Interfaces\IColumnCaptionsHelper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Search\Interfaces\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Search\Interfaces\Resources\SearchInterfacesResources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
