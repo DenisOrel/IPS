@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Signs.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66411743-1A78-4A5B-96AA-012146B94EB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Signs</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraGrid">
+      <HintPath>lib\DevExpress.IM.XtraGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Workflow">
+      <HintPath>lib\Intermech.Interfaces.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\Localization\CustomDescription.cs" />
+    <Compile Include="Intermech\Localization\CustomCategory.cs" />
+    <Compile Include="Intermech\Localization\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Signs\SignActionInfo.cs" />
+    <Compile Include="Intermech\Signs\SignUpActionHandler.cs" />
+    <Compile Include="Intermech\Signs\Client\OpenKeyClassWrapper.cs" />
+    <Compile Include="Intermech\Signs\Client\OpenKeyPropertyDescriptor.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControl.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControl_LCStepProperty.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControl_LCLevelProperty.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControlPropertyEnum.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControlPropertyClass.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControlPropertyTypeConverter.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControlPropertyTypeEditor.cs" />
+    <Compile Include="Intermech\Signs\Client\SignControlPropertyEditorForm.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsCard.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsClientService.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsCommands.cs" />
+    <Compile Include="Intermech\Signs\Client\SignedInfo.cs" />
+    <Compile Include="Intermech\Signs\Client\SignUpContextMenuProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetGraphSortClass.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetGraphSortConverter.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetGrapSorthHelper.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetPropertiesPage.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetProperties.cs" />
+    <Compile Include="Intermech\Signs\Client\BlankObjectEditor.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsOutputPropertyPage.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsOutputProperties.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsPropertiesPage.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsProperties.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsUserPropertiesPage.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsUserProperties.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsCache.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsStartup.cs" />
+    <Compile Include="Intermech\Signs\Client\ArchiveSigns.cs" />
+    <Compile Include="Intermech\Signs\Client\ArchiveSignsProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetCache.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetClientService.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetGraphSortMethod.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetConsts.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetContextMenuProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetControl.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetOptions.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetForm.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetSaveToDiskPage.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetSaveToDiskPageProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetProcessor.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetTableElement.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetTableElementList.cs" />
+    <Compile Include="Intermech\Signs\Client\ElementListComparer.cs" />
+    <Compile Include="Intermech\Signs\Client\CertSheetTemplate.cs" />
+    <Compile Include="Intermech\Signs\Client\EDSContextMenuProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\EDSProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\EDSTypeContextMenuProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\Graphs.cs" />
+    <Compile Include="Intermech\Signs\Client\GraphsProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\OpenKeysProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\OpenKeysView.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsView.cs" />
+    <Compile Include="Intermech\Signs\Client\SignsViewProvider.cs" />
+    <Compile Include="Intermech\Signs\Client\AddGraphs.cs" />
+    <Compile Include="Intermech\Signs\Client\FilterObjectType.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectCertificate.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectGraphs.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectOpenKey.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectOpenKeyValueType.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectRank.cs" />
+    <Compile Include="Intermech\Signs\Client\UserRankInformation.cs" />
+    <Compile Include="Intermech\Signs\Client\GraphTreeNode.cs" />
+    <Compile Include="Intermech\Signs\Client\GraphComparer.cs" />
+    <Compile Include="Intermech\Signs\Client\SelectUser.cs" />
+    <Compile Include="Intermech\Signs\Client\SignQuestion.cs" />
+    <Compile Include="Intermech\Signs\Classes\SignConditionCommandSubscriber.cs" />
+    <Compile Include="Intermech\Signs\Properties\Resources.cs" />
+    <Compile Include="Intermech\Signs\Windows\FixGraphs.cs" />
+    <Compile Include="Intermech\Signs\Windows\AttributeCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\IAttributeCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\DateOfSignatureCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\GraphCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\IOUserCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\RankCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\ResolutionCondition.cs" />
+    <Compile Include="Intermech\Signs\Windows\SignConditionsEditor.cs" />
+    <Compile Include="Intermech\Signs\Windows\UserCondition.cs" />
+    <Compile Include="ImSSP\sc_18405.cs" />
+    <Compile Include="ImSSP\sc_18419.cs" />
+    <Compile Include="ImSSP\sc_18398.cs" />
+    <Compile Include="ImSSP\sc_18429.cs" />
+    <Compile Include="ImSSP\sc_18452.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImSSP\sc_18419.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\AddGraphs.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\ArchiveSigns.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\CertSheetControl.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\CertSheetForm.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\Graphs.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\OpenKeysView.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SelectCertificate.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SelectGraphs.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SelectOpenKey.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SelectRank.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SelectUser.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SignControl.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SignControlPropertyEditorForm.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SignQuestion.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Client\SignsView.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Resources\SignConditions.png" />
+    <EmbeddedResource Include="Intermech\Signs\Resources\SignsResources.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Windows\FixGraphs.resx" />
+    <EmbeddedResource Include="Intermech\Signs\Windows\SignConditionsEditor.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

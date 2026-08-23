@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="treeListColumnSign.FieldName" xml:space="preserve">
+    <value>treeListColumnSign</value>
+  </data>
+  <data name="&gt;&gt;_cbII.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_cbII.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="panel1.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAACAAAACw==</value>
+  </data>
+  <data name="panel1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAOYBAAAYAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_tree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonItemEdit.ToolTipText" xml:space="preserve">
+    <value>Переименовать группу</value>
+  </data>
+  <data name="&gt;&gt;buttonItemDelete.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItemDelete.Name" xml:space="preserve">
+    <value>buttonItemDelete</value>
+  </data>
+  <data name="&gt;&gt;buttonItemAddGroup.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItemAddGroup.Name" xml:space="preserve">
+    <value>buttonItemAddGroup</value>
+  </data>
+  <data name="$this.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAPABAABYAQAACw==</value>
+  </data>
+  <data name="buttonItemClearGroup.CommandName" xml:space="preserve">
+    <value>buttonItemClearGroup</value>
+  </data>
+  <data name="&gt;&gt;toolBarSign.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarSign.Name" xml:space="preserve">
+    <value>toolBarSign</value>
+  </data>
+  <data name="&gt;&gt;toolBarSign.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="imageListSign.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA8FwAAAk1TRnQBSQFMAgEBBgEAAQkBAAEEAQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFAAwABIAMAAQEBAAEgBgABIDIAAacBrQGvAf8BpwGtAa8B/wGnAa0BrwH/AacBrQGvAf8BpwGtAa8B/wGnAa0BrwH/AacBrQGvAf8UAAGjAakBqwH/Aa4BswG2Af8BowGpAasB/wGuAbMBtgH/AaMBqQGrAf8BrgGzAbYB/wGjAakBqwH/Aa4BswG2Af8BowGpAasB/6gAATwBgQGXAf8BJAGBAakB/wF1AnEB/wEkAYEBugH/AXEBdQF9Af8DgQH/AScBgQGoAf8BJwGBAagB/wGnAa0BrwH/DAABPAGBAZcB/wEkAYEBqQH/AXUCcQH/ASQBgQG6Af8BcQF1AX0B/wEkAYEBpQH/A4EB/wGHAZkBqAH/ASQBgQGoAf8BmAGlAa4B/wGvArUB/6QAAYEBsAHBAf8BuAL+Af8BUgGBAZ4B/wGBAcMB5gH/ASQBgQGpAf8BLwGNAbkB/wEoAaIB3gH/ASQBbwGBAf8BpwGtAa8B/wwAAYEBsAHBAf8BuAL+Af8BUgGBAZ4B/wGBAcMB5gH/ASQBgQGpAf8BNwGYAdIB/wEvAY0BuQH/ASgBogHeAf8BMAGBAaoB/wEkAW8BgQH/AZkBsAG5Af+kAAKBAY4B/wEkAYEBmgH/ATcBxAHtAf8BgQHLAegB/wE1AcIB7AH/ASsBgQGNAf8BMwGkAesB/wFhAYEBkgH/AacBrQGvAf8MAAFnAYEBjwH/AYEBxwHnAf8BWwGLAaoB/wGBAcwB6gH/ASQBgQGlAf8BMgGaAc0B/wEvAYEBnwH/ATEBowHqAf8BMgGBAakB/wEkAXEBgQH/AZkBsAG5Af+oAAEkAVwBgQH/Aa4B/AH+Af8BWAGeAdIB/wEkAYEBvQH/ATUBwgHtAf8BMQGbAdcB/wElAXABgQH/AacBrQGvAf8MAAKBAY4B/wEkAYEBmgH/AYEB7AH+Af8BgQHLAegB/wE7AZsB0wH/AS4BiwHBAf8BKwGBAY0B/wEzAaQB6wH/ASoBgQGnAf8BYQGBAZIB/wGmAawBrgH/qAABoAG1Ab4B/wEkAWMBuAH/ASQBZQGzAf8BJAFlAbIB/wEkAWgBtQH/ASQBbAG+Af8BYAGBAZEB/xQAASQBXAGBAf8BrgH8Af4B/wFYAZ4B0gH/ASQBgQG9Af8BLwGBAb8B/wExAZgB1QH/ATEBmwHXAf8BJAF7AYEB/wFeAYEBkgH/Ab4BwgHEAf+MAAG0AakBngH/ATwBfgGBAf8BPgGBAYIB/wE/AYEBigH/AT8BgQGJAf8BPgGBAYMB/wE8AX8BgQH/AbEBpwGdAf8BgQFhAYQB/wE0AZQB8AH/ATYBkQHsAf8BMwGVAfAB/wGBAU4BmwH/AaEBtgG+Af8UAAFyAoEB/wFDAeYB/QH/AWUB8QH+Af8BRQHeAfsB/wE0Ab0B5gH/ATcBzgHbAf8BNQHDAe0B/wEkAW0BgQH/AaQBpwGoAf+QAAE3AYEBlwH/ATsBtgHVAf8BQAGmAdsB/wFAAaUB2wH/ATsBtQHVAf8BOwG2AdUB/wE7AbYB1QH/ATsBtgHVAf8BJAF6AZcB/wFJATkBuwH/ATkBQQGoAf8BPwE2AbYB/wFUAYEBmgH/Aa8CtQH/FAABoAG1Ab4B/wEkAWMBuAH/ASQBZQGzAf8BJAFlAbIB/wEkAWYBswH/ASQBaAG1Af8BJAFsAb4B/wE+AXkBgQH/AaQBpwGoAf+QAAE3AYEBlwH/AUwB1QHqAf8BPQG7AdgB/wE8AbgB1gH/ATwBtwHWAf8BSgG8AdsB/wFRAb8B3wH/AVoBxAHgAf8BTgGhAakB/wGwAv4B/wGnAv4B/wFXAaoBrAH/ASQBeQGBAf8BrwK1Af8YAAGBAWEBhAH/ATQBlAHwAf8BNgGRAewB/wE3AZEB7AH/ATMBlQHwAf8BgQFOAZsB/wGZAbABuQH/lAABNwGBAZcB/wFEAe4B+AH/AUcB0AHnAf8BTgHVAeoB/wFTAdQB6wH/AVgB0wHsAf8BXQHTAeoB/wFgAdEB6wH/AaUB/QH+Af8BJgGBAa0B/wGBAaQBwAH/AScBcwGBAf8BOQGBAbkB/xwAASQBegGXAf8BSQE5AbsB/wE5AUEBqAH/ATgBRAGqAf8BPwE2AbYB/wFUAYEBmgH/Aa8CtAH/lAABNwGBAZcB/wFEAfMB+gH/AUUB8AH6Af8BTAHuAfkB/wFhAfEB+QH/AWkB8QH5Af8BcgHxAfkB/wF6AfEB+QH/AYEB8QH6Af8BgQHyAfoB/wFKAbcB+QH/ASQBLQFvAf8gAAFOAaEBqQH/AbAC/gH/AacC/gH/ATMB/gH8Af8BVwGqAawB/wEkAXkBgQH/AagBqwGsAf+UAAE3AYEBlxH/AcYD/wG0A/8BqAP/AaID/wGBAfoC/wFMAbUB9QH/ASQBLQFvAf8kAAEmAYEBrQH/AYEBpAHAAf8BJwFyAYEB/wE1AYEBuQH/AbYBuQG6Af+YAAFRAZIBxQH/AVEBkgHFAf8BUQGSAcUB/wFRAZIBxQH/AVEBkgHFAf8BUQGSAcUB/wFRAZIBxQH/AU0BjQHAAf8BRAGFAbgB/wFAAYEBtAH/AUwBtAH0Af8BKAEvAXAB/ygAAUoBtwH5Af8BJAErAW0B/6QAATcBgQGXBf8BmQP/AZkD/wGZA/8BNwGBAZcB/wwAAUwBtAH0Af8BKAEvAXAB/ygAAUwBtQH1Af8BJAEyAXMB/6QAAbQBqQGeAf8BNwGBAZcB/wE3AYEBlwH/ATcBgQGXAf8BNwGBAZcB/wG0AakBngH/PAABTAG0AfQB/wEkATQBdAH/+AABTAG0AfQB/wEkATQBdAH/rAABtAGpAZ4B/wE8AX4BgQH/AT4BgQGCAf8BPwGBAYoB/wE/AYEBiQH/AT4BgQGDAf8BPAF/AYEB/wE+AX4BgQH/AUACgQH/AT4BfwGBAf8BPQF9AYEB/wG0AakBngH/AbsBjQF7Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BtAGpAZ4B/wE8AX4BgQH/AT4BgQGCAf8BPwGBAYoB/wE/AYEBiQH/AT4BgQGDAf8BPAF/AYEB/wE+AX4BgQH/AUACgQH/AT4BfwGBAf8BPQF9AYEB/wG0AakBngH/YAABNwGBAZcB/wE7AbYB1QH/AUABpgHbAf8BQAGlAdsB/wE7AbUB1QH/ATsBtgHVAf8BOwG2AdUB/wE7AbYB1QH/ATsBtgHVAf8BZAHCAd0B/wGBAdIB5AH/ASoBgQGeAf8BuwGOAX05/wG7AY4BfQH/ATcBgQGXAf8BOwG2AdUB/wFAAaYB2wH/AUABpQHbAf8BOwG1AdUB/wE7AbYB1QH/ATsBtgHVAf8BOwG2AdUB/wE7AbYB1QH/AWQBwgHdAf8BgQHSAeQB/wEqAYEBngH/GAABiQGQAZEB/wF8AoEB/wF8AoEB/wGJAZABkQH/FAABrwG0AbYB/wGOAZIBlAH/AZcBmwGcAf8YAAE3AYEBlwH/AUwB1QHqAf8BPQG7AdgB/wE8AbgB1gH/ATwBtwHWAf8BSgG8AdsB/wFRAb8B3wH/AVoBxAHgAf8BZAHFAeQB/wF0AcsB5wH/AYEB0QHpAf8BLgGBAaIB/wG7AY4BfTn/AbsBjgF9Af8BNwGBAZcB/wFMAdUB6gH/AT0BuwHYAf8BPAG4AdYB/wE8AbcB1gH/AUoBvAHbAf8BUQG/Ad8B/wFaAcQB4AH/AWQBxQHkAf8BdAHLAecB/wGBAdEB6QH/AS4BgQGiAf8YAAEkAUQB7gH/ASQBNgHEAf8BJQE4AZQB/wF8AoEB/wGJAZABkQH/DAABsgG3AbgB/wElATgBlAH/AS0BLwHYAf8BiAGMAY0B/xgAATcBgQGXAf8BRAHuAfgB/wFHAdAB5wH/AU4B1QHqAf8BUwHUAesB/wFYAdMB7AH/AV0B0wHqAf8BYAHRAesB/wFmAdIB6gH/AXUB1gHtAf8BgQHZAe4B/wE2AYEBpwH/AbsBjgF9Of8BuwGOAX0B/wE3AYEBlwH/AUQB7gH4Af8BRwHQAecB/wFOAdUB6gH/AVMB1AHrAf8BWAHTAewB/wFdAdMB6gH/AWAB0QHrAf8BZgHSAeoB/wF1AdYB7QH/AYEB2QHuAf8BNgGBAacB/xgAASgBQwG2Af8BJAFEAe4B/wEkATYBxAH/ASUBOAGUAf8BfAKBAf8BiQGQAZEB/wQAAbABswG1Af8BJQE4AZQB/wElATQB4AH/ASgBQwG2Af8BqQGuAbAB/xgAATcBgQGXAf8BRAHzAfoB/wFFAfAB+gH/AUwB7gH5Af8BYQHxAfkB/wFpAfEB+QH/AXIB8QH5Af8BegHxAfkB/wGBAfEB+gH/AYEB8gH6Af8BjgH2AfsB/wExAYEBowH/AbsBjgF9Of8BuwGOAX0B/wE3AYEBlwH/AUQB8wH6Af8BRQHwAfoB/wFMAe4B+QH/AWEB8QH5Af8BaQHxAfkB/wMkAf8BtgHDAcYB/wGBAfEB+gH/AYEB8gH6Af8BjgH2AfsB/wExAYEBowH/HAABKAFDAbYB/wEkAUQB7gH/ASQBNgHEAf8BJQE4AZQB/wF8AoEB/wF8AoEB/wElATgBlAH/ASUBNAHgAf8BKAFDAbYB/wG/AcIBxAH/HAABNwGBAZcR/wHGA/8BtAP/AagD/wGiA/8BgQH6Av8BgQH6Av8BLwGBAaMB/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/AbsBjgF9Af8BuwGOAX0B/wG7AY4BfQH/ATcBgQGXEf8BxgP/ASwBlgHCAf8BUgGBAY0B/wFFAW8BgQH/AYEB+gL/AYEB+gL/AS8BgQGjAf8gAAEoAUMBtgH/ASQBRAHuAf8BJAE2AcQB/wElATgBlAH/ASUBOAGUAf8BLAE+AekB/wEoAUMBtgH/AboBvQG+Af8gAAFRAZIBxQH/AVEBkgHFAf8BUQGSAcUB/wFRAZIBxQH/AVEBkgHFAf8BUQGSAcUB/wFRAZIBxQH/AU0BjQHAAf8BRAGFAbgB/wFAAYEBtAH/AT8BgQGzAf9EAAFRAZIBxQH/AVEBkgHFAf8BUQGSAcUB/wFRAZIBxQH/AVEBkgHFAf8BgQHSAeQB/wE5AaQB0AH/AUkBpwHYAf8BUAGiAdwB/wFDAW4BgQH/AT8BgQGzAf8BtAGpAZ4B/yQAASgBQwG2Af8BJAFEAe4B/wEkATYBxAH/AS8BSwHoAf8BKAFDAbYB/wGNAo8B/ygAATcBgQGXBf8BmQP/AZkD/wGZA/8BNwGBAZcB/1gAATcBgQGXBf8BmQP/AZkD/wGZA/8BeAGBAZMB/wFKAboB3gH/AWQB4QHrAf8BLAGWAcIB/wFBAWUBgQH/KAABugG8Ab0B/wElATgBlAH/ASQBRwH2Af8BJAFEAe4B/wElATgBlAH/A4EB/wGlAqgB/yQAAbQBqQGeAf8BNwGBAZcB/wE3AYEBlwH/ATcBgQGXAf8BNwGBAZcB/wG0AakBngH/WAABtAGpAZ4B/wE3AYEBlwH/ATcBgQGXAf8BNwGBAZcB/wE3AYEBlwH/AYEB0gHkAf8BUAGBAZwB/wFKAboB3gH/AWQB4QHrAf8BLAGWAcIB/wFBAWUBgQH/IAABzALLAf8BJQE4AZQB/wEzAVcB/gH/ASQBNgHEAf8BRgFZAe0B/wEkAUQB7gH/ASUBOAGUAf8BjgGQAZEB/wGyAbQBtQH/FAABQAGBAUAB/wFAAYEBQAH/AUABgQFAAf80AAFAAYEBQAH/AUABgQFAAf8BQAGBAUAB/0wAAVABgQGcAf8BSgG6Ad4B/wFkAeEB6wH/ASwBlgHCAf8BQQFlAYEB/xgAAcwCywH/ASUBOAGUAf8BMwFXAf4B/wE4AVEBsQH/AcQBxwHIAf8BOAFRAbEB/wFCAVYB7gH/ASQBRAHuAf8BJQE4AZQB/wGPAZEBkgH/AcUByAHJAf8QAAFAAYEBQAH/AYEB7gGOAf8BQAGBAUAB/zQAAUABgQFAAf8BgQHuAY4B/wFAAYEBQAH/UAABUAGBAZwB/wFKAboB3gH/AWQB4QHrAf8BLAGWAcIB/wFBAWUBgQH/FAABJQE4AZQB/wEzAVcB/gH/ATgBUQGxAf8B0ALPAf8IAAE4AVEBsQH/AUIBVgHuAf8BJAFEAe4B/wElATgBlAH/AZABkgGTAf8IAAFAAYEBQAH/AUABgQFAAf8BQAGBAUAB/wGBAe4BjgH/AUABgQFAAf8BQAGBAUAB/wFAAYEBQAH/JAABQAGBAUAB/wFAAYEBQAH/AUABgQFAAf8BgQHuAY4B/wFAAYEBQAH/AUABgQFAAf8BQAGBAUAB/0wAAVABgQGcAf8BSgG6Ad4B/wG3AcQBxwH/AX4BZgFbAf8BgQF4AYEB/xAAASgBQwG2Af8BOAFRAbEB/xQAATgBUQGxAf8BQgFWAfEB/wEkAUQB7gH/ASQBQAG8Af8IAAFAAYEBQAH/AYEB7gGOAf8BgQHuAY4B/wGBAe4BjgH/AYEB7gGOAf8BgQHuAY4B/wFAAYEBQAH/JAABQAGBAUAB/wGBAe4BjgH/AYEB7gGOAf8BgQHuAY4B/wGBAe4BjgH/AYEB7gGOAf8BQAGBAUAB/1AAA4EB/wHjAtMB/wG9AZIBvwH/AYkBgQGYAf8BgQF4AYEB/ywAATgBUQGxAf8BTwFjAfwB/wEkAUABvAH/CAABQAGBAUAB/wFAAYEBQAH/AUABgQFAAf8BgQHuAY4B/wFAAYEBQAH/AUABgQFAAf8BQAGBAUAB/yQAAUABgQFAAf8BQAGBAUAB/wFAAYEBQAH/AYEB7gGOAf8BQAGBAUAB/wFAAYEBQAH/AUABgQFAAf9UAAGBAXgBgQH/AbMBgQHBAf8BqQGBAbgB/wGJAYEBmAH/MAABJAFAAbwB/wFtAYEBwwH/EAABQAGBAUAB/wGBAe4BjgH/AUABgQFAAf80AAFAAYEBQAH/AYEB7gGOAf8BQAGBAUAB/2AAAYEBeAGBAf8BjAGBAZkB/wGdAZEBpgH/SAABQAGBAUAB/wFAAYEBQAH/AUABgQFAAf80AAFAAYEBQAH/AUABgQFAAf8BQAGBAUAB/6wAAUIBTQE+BwABPgMAASgDAAFAAwABIAMAAQEBAAEBBgABARYAA/8BAAH/AQEB8AEHBAAB/gEAAeABAwQAAf4BAAHgAQMEAAH+AQAB4AEDBAAB/wEAAeABAwQAAf8BAQHwAQMEAAGAAQEB8AEHBAABgAEBAfABBwQAAYABAQH4AQ8EAAGAAQMB+AEPBAABgAEHAfgBDwQAAYABBwH8AR8EAAGAAQcB/gF/BAABwAHnAf4BfwQAAcAB/wH+AX8EAAL/Af4BfwQAAfAEAAEPAv8B8AQAAQ8BwwHjAfAEAAEPAcEBwwHwBAABDwHAAYMB8AQAAQ8B4AEHAfAEAAEPAfABDwHwAQEC/wEAAQ8B+AEfAfgBHwL/AYABHwH4AQ8B+AEfAv8BgAEPAfABBwHHAf8BxwL/AQcB4AEDAccB/wHHAv8BgwHhAYMBAQH/AQEC/wHBAecBwwEBAf8BAQL/AeAB/wHjAQEB/wEBAv8B8AH/AfMBxwH/AccC/wH4Av8BxwH/AccF/xYACw==</value>
+  </data>
+  <data name="toolBarSign.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAFAAAABQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;buttonItemAddGraph.Name" xml:space="preserve">
+    <value>buttonItemAddGraph</value>
+  </data>
+  <data name="&gt;&gt;buttonItemAddGraph.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;treeListColumnSign.Name" xml:space="preserve">
+    <value>treeListColumnSign</value>
+  </data>
+  <data name="&gt;&gt;treeListColumnSign.Type" xml:space="preserve">
+    <value>DevExpress.IM.XtraTreeList.Columns.TreeListColumn, DevExpress.IM.XtraTreeList, Version=1.7.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="_tree.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAOYBAAAeAQAACw==</value>
+  </data>
+  <data name="_tree.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_tree.Type" xml:space="preserve">
+    <value>DevExpress.IM.XtraTreeList.TreeList, DevExpress.IM.XtraTreeList, Version=1.7.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;_tree.Name" xml:space="preserve">
+    <value>_tree</value>
+  </data>
+  <data name="treeListColumnStrikt.Caption" xml:space="preserve">
+    <value>Строгий контроль</value>
+  </data>
+  <data name="&gt;&gt;toolBarSign.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="_cbII.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonItemDelete.ToolTipText" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.IM.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.IM.XtraEditors, Version=2.1.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="treeListColumnSign.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="buttonItemClearList.ToolTipText" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="_tree.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAFAAAAHQAAAAs=</value>
+  </data>
+  <data name="buttonItemAddGroup.ToolTipText" xml:space="preserve">
+    <value>Добавить новую группу</value>
+  </data>
+  <data name="buttonItemAddGraph.CommandName" xml:space="preserve">
+    <value>buttonItemAddGraph</value>
+  </data>
+  <data name="treeListColumnStrikt.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="toolBarSign.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAOYBAAAYAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_cbII.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_cbII.Name" xml:space="preserve">
+    <value>_cbII</value>
+  </data>
+  <data name="_cbII.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;treeListColumnStrikt.Type" xml:space="preserve">
+    <value>DevExpress.IM.XtraTreeList.Columns.TreeListColumn, DevExpress.IM.XtraTreeList, Version=1.7.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;treeListColumnStrikt.Name" xml:space="preserve">
+    <value>treeListColumnStrikt</value>
+  </data>
+  <data name="&gt;&gt;buttonItemEdit.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItemEdit.Name" xml:space="preserve">
+    <value>buttonItemEdit</value>
+  </data>
+  <data name="buttonItemAddGroup.CommandName" xml:space="preserve">
+    <value>buttonItemAddGroup</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_tree.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="treeListColumnSign.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Type" xml:space="preserve">
+    <value>DevExpress.IM.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.IM.XtraEditors, Version=2.1.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Name" xml:space="preserve">
+    <value>repositoryItemCheckEdit1</value>
+  </data>
+  <data name="treeListColumnStrikt.FieldName" xml:space="preserve">
+    <value>treeListColumnStrikt</value>
+  </data>
+  <data name="_cbII.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="treeListColumnStrikt.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonItemEdit.CommandName" xml:space="preserve">
+    <value>buttonItemEdit</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SignControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonItemClearGroup.ToolTipText" xml:space="preserve">
+    <value>Очистить группу</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonItemClearList.CommandName" xml:space="preserve">
+    <value>buttonItemClearList</value>
+  </data>
+  <data name="&gt;&gt;buttonItemClearList.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItemClearList.Name" xml:space="preserve">
+    <value>buttonItemClearList</value>
+  </data>
+  <data name="buttonItemDelete.CommandName" xml:space="preserve">
+    <value>buttonItemDelete</value>
+  </data>
+  <data name="&gt;&gt;_cbII.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="treeListColumnStrikt.Options" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdCwgVmVyc2lvbj0xLjcuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPThkMmJjMjBhYjY5ZTRiYjQFAQAAADBEZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdC5Db2x1bW5zLkNvbHVtbk9wdGlvbnMBAAAAB3ZhbHVlX18ACAIAAABwAAAACw==</value>
+  </data>
+  <data name="treeListColumnSign.Options" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdCwgVmVyc2lvbj0xLjcuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPThkMmJjMjBhYjY5ZTRiYjQFAQAAADBEZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdC5Db2x1bW5zLkNvbHVtbk9wdGlvbnMBAAAAB3ZhbHVlX18ACAIAAABQAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;buttonItemClearGroup.Name" xml:space="preserve">
+    <value>buttonItemClearGroup</value>
+  </data>
+  <data name="&gt;&gt;buttonItemClearGroup.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolBarSign.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="_cbII.FlatStyle" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5GbGF0U3R5bGUBAAAAB3ZhbHVlX18ACAIAAAADAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;imageListSign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageListSign.Name" xml:space="preserve">
+    <value>imageListSign</value>
+  </data>
+  <data name="_tree.ViewOptions" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdCwgVmVyc2lvbj0xLjcuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPThkMmJjMjBhYjY5ZTRiYjQFAQAAACtEZXZFeHByZXNzLklNLlh0cmFUcmVlTGlzdC5WaWV3T3B0aW9uc0ZsYWdzAQAAAAd2YWx1ZV9fAAgCAAAAThYAAAs=</value>
+  </data>
+  <data name="&gt;&gt;_tree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonItemAddGraph.ToolTipText" xml:space="preserve">
+    <value>Добавить графу</value>
+  </data>
+  <data name="_cbII.Text" xml:space="preserve">
+    <value>Выпускать извещение при подписывании</value>
+  </data>
+  <data name="_cbII.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAOYBAAAYAAAACw==</value>
+  </data>
+  <data name="_cbII.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="panel1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAFAAAAOwEAAAs=</value>
+  </data>
+  <data name="$this.Padding" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAEFAAAABQAAAAUAAAAFAAAACw==</value>
+  </data>
+  <data name="treeListColumnSign.Caption" xml:space="preserve">
+    <value>Графа для подписи</value>
+  </data>
+</root>

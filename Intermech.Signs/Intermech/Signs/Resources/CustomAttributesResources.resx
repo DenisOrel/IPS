@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SignGraphNameParamCaption" xml:space="preserve">
+    <value>Передавать наименование графы для подписи в параметр</value>
+  </data>
+  <data name="SignDateParamCaption" xml:space="preserve">
+    <value>Передавать дату подписи в параметр</value>
+  </data>
+  <data name="TextForActualQualifiedSignDescription" xml:space="preserve">
+    <value>Текст для отображения актуальных квалифицированных ЭП</value>
+  </data>
+  <data name="CertSheetG10Attribute" xml:space="preserve">
+    <value>Атрибут для графы 10</value>
+  </data>
+  <data name="TextForNonActualSimpleSignDescription" xml:space="preserve">
+    <value>Текст для отображения неактуальных простых ЭП</value>
+  </data>
+  <data name="CompatibleSignsCaption" xml:space="preserve">
+    <value>Совместимые подписи</value>
+  </data>
+  <data name="SignOutputEnabledDevelopParamDescription" xml:space="preserve">
+    <value>Включает и выключает запись информации о подписях в файлы документов форматов Интермех при использовании команд "Просмотр", "Печать", "Сформировать аутентичный файл" если документ разрешено редактировать</value>
+  </data>
+  <data name="SignValueParamDescription" xml:space="preserve">
+    <value>Имя параметра, в который IPS будет передавать значение ЭП в соответствии с настройкой вывода ЭП.  [Графа для подписи] заменяется для каждой подписи на конкретное наименование графы без скобок.</value>
+  </data>
+  <data name="Signs_2" xml:space="preserve">
+    <value>Рабочая копия</value>
+  </data>
+  <data name="Signs_3" xml:space="preserve">
+    <value>Архивная копия</value>
+  </data>
+  <data name="Signs_1" xml:space="preserve">
+    <value>Значение по умолчанию</value>
+  </data>
+  <data name="Signs_4" xml:space="preserve">
+    <value>Состояние копии документа</value>
+  </data>
+  <data name="CertSheetG10AttributeDescription" xml:space="preserve">
+    <value>Атрибут документа, значение которого будет занесено в графу 10 (ГОСТ 2.051-2013) УЛ</value>
+  </data>
+  <data name="CertSheetGraphSortMethod.ByDefault" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="CopySignsToVersionCaption" xml:space="preserve">
+    <value>Копировать подписи при создании версии объекта</value>
+  </data>
+  <data name="ConfirmSingleSigningCaption" xml:space="preserve">
+    <value>Подтверждение подписывания одиночных объектов</value>
+  </data>
+  <data name="CheckActualSignMadeBySameUserCaption" xml:space="preserve">
+    <value>Проверять наличие актуальной подписи, поставленной тем же пользователем</value>
+  </data>
+  <data name="QualifiedSignKeyLastSymbolsNumberDescription" xml:space="preserve">
+    <value>Количество последних символов ключа квалифицированой ЭП</value>
+  </data>
+  <data name="SignsDeveloperModeCaption" xml:space="preserve">
+    <value>Режим разработчика</value>
+  </data>
+  <data name="CertSheetG09Attribute" xml:space="preserve">
+    <value>Атрибут для графы 9</value>
+  </data>
+  <data name="ActualSignsOnlyDescription" xml:space="preserve">
+    <value>Выводить в удостоверяющие листы только актуальные подписи (выполняется проверка подписей, может потребоваться больше времени)</value>
+  </data>
+  <data name="CertSheetGraphSortDescription" xml:space="preserve">
+    <value>Порядок сортировки граф в УЛ. По умолчанию: сначала подписанные графы, затем остальные графы</value>
+  </data>
+  <data name="CompatibleSignsDescription" xml:space="preserve">
+    <value>Поддержка криптоподписей, совместимых с Search: подписываются только файлы объектов. При изменении параметра требуется перезапуск сервера IPS</value>
+  </data>
+  <data name="CheckActualSignMadeBySameUserDescription" xml:space="preserve">
+    <value>Разрешение на переподписание объекта пользователем, при наличии у объекта актуальной подписи в данной графе, поставленной этим же пользователем.</value>
+  </data>
+  <data name="CheckExistingCopyActualityDescription" xml:space="preserve">
+    <value>Проверять наличие актуальной подписи в выбранной графе при подписании</value>
+  </data>
+  <data name="SignSurnameParamDescription" xml:space="preserve">
+    <value>Имя параметра, в который IPS будет передавать фамилию из ЭП.  [Графа для подписи] заменяется для каждой подписи на конкретное наименование графы без скобок.</value>
+  </data>
+  <data name="TextForActualQualifiedSignCaption" xml:space="preserve">
+    <value>Текст для отображения актуальных квалифицированных ЭП</value>
+  </data>
+  <data name="SignsDeveloperModeDescription" xml:space="preserve">
+    <value>Режим разработчика (расширенное логирование)</value>
+  </data>
+  <data name="CertSheetCommonFolderCaption" xml:space="preserve">
+    <value>Имя папки удостоверяющих листов</value>
+  </data>
+  <data name="SignSurnameParamCaption" xml:space="preserve">
+    <value>Передавать фамилию из графы для подписи в параметр</value>
+  </data>
+  <data name="CheckSumTypeDescription" xml:space="preserve">
+    <value>Способ расчета контрольной суммы</value>
+  </data>
+  <data name="SignDateParamDescription" xml:space="preserve">
+    <value>Имя параметра, в который IPS будет передавать дату из ЭП. [Графа для подписи] заменяется для каждой подписи на конкретное наименование графы без скобок.</value>
+  </data>
+  <data name="CertSheetGraphSortMethod.ByValue" xml:space="preserve">
+    <value>По значению графы</value>
+  </data>
+  <data name="CertSheetGraphSortMethod.ByDescription" xml:space="preserve">
+    <value>По описанию графы</value>
+  </data>
+  <data name="TextForActualSimpleSignCaption" xml:space="preserve">
+    <value>Текст для отображения актуальных простых ЭП</value>
+  </data>
+  <data name="SignRankParamDescription" xml:space="preserve">
+    <value>Имя параметра, в который IPS будет передавать должность подписавшего. [Графа для подписи] заменяется для каждой подписи на конкретное наименование графы без скобок.</value>
+  </data>
+  <data name="SignOutputEnabledParamCaption" xml:space="preserve">
+    <value>Разрешить передачу подписей и контрольных сумм в файлы документов</value>
+  </data>
+  <data name="CertSheetG09AttributeDescription" xml:space="preserve">
+    <value>Атрибут документа, значение которого будет занесено в графу 9 (ГОСТ 2.051-2013) УЛ</value>
+  </data>
+  <data name="TextForNonActualQualifiedSignCaption" xml:space="preserve">
+    <value>Текст для отображения неактуальных квалифицированных ЭП</value>
+  </data>
+  <data name="DoRevocationCaption" xml:space="preserve">
+    <value>Проверка сертификатов</value>
+  </data>
+  <data name="SignDateOutputFormatCaption" xml:space="preserve">
+    <value>Формат вывода даты подписи в документы</value>
+  </data>
+  <data name="SignRankParamCaption" xml:space="preserve">
+    <value>Передавать должность подписавшего в параметр</value>
+  </data>
+  <data name="DoRevocationDescription" xml:space="preserve">
+    <value>Верификация сертификатов через серверы/списки отзыва сертификатов при проверке электронных цифровых подписей</value>
+  </data>
+  <data name="CertSheetBlank" xml:space="preserve">
+    <value>Бланк удостоверяющего листа</value>
+  </data>
+  <data name="SignValueParamCaption" xml:space="preserve">
+    <value>Передавать значение подписи в параметр</value>
+  </data>
+  <data name="CheckExistingCopyActualityCaption" xml:space="preserve">
+    <value>Проверять наличие актуальной подписи в выбранной графе при подписании</value>
+  </data>
+  <data name="CheckSumAttributeCaption" xml:space="preserve">
+    <value>Свойство для контрольной суммы</value>
+  </data>
+  <data name="QualifiedSignKeyLastSymbolsNumberCaption" xml:space="preserve">
+    <value>Количество последних символов ключа квалифицированой ЭП</value>
+  </data>
+  <data name="SignOutputEnabledDevelopParamCaption" xml:space="preserve">
+    <value>Передавать подписи в файлы форматов Интермех на шаге ЖЦ "В разработке"".</value>
+  </data>
+  <data name="ConfirmSingleSigningDescription" xml:space="preserve">
+    <value>При подписывании одиночных объектов появляется дополнительный диалог подтверждения. При отключении данного параметра пропадает возможность ввести резолюцию при подписании одиночных объектов</value>
+  </data>
+  <data name="CertSheetGraphSort" xml:space="preserve">
+    <value>Порядок сортировки граф</value>
+  </data>
+  <data name="QualifiedSignDisplayModeCaption" xml:space="preserve">
+    <value>Способ отображения квалифицированных ЭП</value>
+  </data>
+  <data name="SignGraphNameParamDescription" xml:space="preserve">
+    <value>Имя параметра, в который IPS будет передавать наименование графы для подписи. [Графа для подписи] заменяется для каждой подписи на конкретное наименование графы без скобок.</value>
+  </data>
+  <data name="CheckSumTypeCaption" xml:space="preserve">
+    <value>Контрольная сумма</value>
+  </data>
+  <data name="SignOutputEnabledParamDescription" xml:space="preserve">
+    <value>Включает и выключает запись информации о подписях и контрольных суммах файла документа в файлы документов при использовании команд "Просмотр", "Печать", "Сформировать аутентичный файл"</value>
+  </data>
+  <data name="TextForNonActualQualifiedSignDescription" xml:space="preserve">
+    <value>Текст для отображения неактуальных квалифицированных ЭП</value>
+  </data>
+  <data name="TextForActualSimpleSignDescription" xml:space="preserve">
+    <value>Текст для отображения актуальных простых ЭП</value>
+  </data>
+  <data name="SignDateOutputFormatDescription" xml:space="preserve">
+    <value>Формат вывода даты подписи в документы</value>
+  </data>
+  <data name="CopySignsToVersionDescription" xml:space="preserve">
+    <value>Копировать подписи при создании версии объекта</value>
+  </data>
+  <data name="QualifiedSignDisplayModeDescription" xml:space="preserve">
+    <value>Способ отображения квалифицированных ЭП</value>
+  </data>
+  <data name="CertSheetCommonFolderDescription" xml:space="preserve">
+    <value>Имя общей папки для сохранения удостоверяющих листов при выполнении команды "Сохранить на диск"</value>
+  </data>
+  <data name="ActualSignsOnlyCaption" xml:space="preserve">
+    <value>Выводить только актуальные подписи</value>
+  </data>
+  <data name="OnlineRevocationModeDescription" xml:space="preserve">
+    <value>Проверка сертификатов онлайн при включенной верификации сертификатов через серверы/списки отзыва сертификатов</value>
+  </data>
+  <data name="CertificateSigningOnlyDescription" xml:space="preserve">
+    <value>Для подписи предлагаются только сертификаты независимо от наличия у пользователей открытых ключей</value>
+  </data>
+  <data name="TextForNonActualSimpleSignCaption" xml:space="preserve">
+    <value>Текст для отображения неактуальных простых ЭП</value>
+  </data>
+  <data name="SignOutputFormat" xml:space="preserve">
+    <value>Формат вывода подписи в документы</value>
+  </data>
+  <data name="CheckSumAttributeDescription" xml:space="preserve">
+    <value>Наименование свойства, в которое передается сумма</value>
+  </data>
+  <data name="OnlineRevocationModeCaption" xml:space="preserve">
+    <value>Проверка сертификатов онлайн</value>
+  </data>
+  <data name="CertificateSigningOnlyCaption" xml:space="preserve">
+    <value>Исключительное использование сертификатов</value>
+  </data>
+  <data name="CertSheetBlankDescription" xml:space="preserve">
+    <value>Бланк для формирования удостоверяющих листов</value>
+  </data>
+</root>

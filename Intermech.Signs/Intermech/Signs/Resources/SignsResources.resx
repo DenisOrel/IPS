@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExpiredAuthFileCreateQuestion" xml:space="preserve">
+    <value>Выполнять формирование удостоверяющего листа для устаревшего файла?</value>
+  </data>
+  <data name="SignsSettingsCommon" xml:space="preserve">
+    <value>Система\Электронные подписи\Общие настройки</value>
+  </data>
+  <data name="SignNameParam" xml:space="preserve">
+    <value>[Графа для подписи]_Графа</value>
+  </data>
+  <data name="CertSheetDesignationPostfix" xml:space="preserve">
+    <value>УЛ</value>
+  </data>
+  <data name="AnswerYesForAll" xml:space="preserve">
+    <value>Да для всех</value>
+  </data>
+  <data name="Signs_TextForActualQualifiedSign" xml:space="preserve">
+    <value>&lt;Подп.&gt;</value>
+  </data>
+  <data name="CertSheetCommonFolder" xml:space="preserve">
+    <value>Удостоверяющие листы</value>
+  </data>
+  <data name="CreateCertSheet" xml:space="preserve">
+    <value>Сформировать УЛ</value>
+  </data>
+  <data name="SignsSettingsOutput" xml:space="preserve">
+    <value>Система\Электронные подписи\Параметры  вывода подписи</value>
+  </data>
+  <data name="ExpiredAuthFileDetected" xml:space="preserve">
+    <value>Аутентичный файл "{1}" документа "{0}" устарел.</value>
+  </data>
+  <data name="Signs_UnsignedObjectsDetected" xml:space="preserve">
+    <value>Обнаружены неподписанные объекты</value>
+  </data>
+  <data name="CompatibleSignLabel" xml:space="preserve">
+    <value>совместимая</value>
+  </data>
+  <data name="CertSheetNotPossibleToCreate" xml:space="preserve">
+    <value>Невозможно сформировать информационно-удостоверяющий лист по заданным условиям</value>
+  </data>
+  <data name="CertSheetPageName" xml:space="preserve">
+    <value>Удостоверяющие листы</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>Резолюция</value>
+  </data>
+  <data name="Signs_DeleteNSigns" xml:space="preserve">
+    <value>Удалить подпись(и)? Выбрано: {0}</value>
+  </data>
+  <data name="SignDateFormatError" xml:space="preserve">
+    <value>Указан ошибочный формат вывода даты подписи</value>
+  </data>
+  <data name="SignDateFormatParam" xml:space="preserve">
+    <value>DD.MM.YYYY</value>
+  </data>
+  <data name="AnswerNoForAll" xml:space="preserve">
+    <value>Нет для всех</value>
+  </data>
+  <data name="Signs_SignsConvertEnds" xml:space="preserve">
+    <value>Актуализация версий подписей завершена</value>
+  </data>
+  <data name="Signs_8" xml:space="preserve">
+    <value>Очистить группу</value>
+  </data>
+  <data name="Signs_9" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="Signs_2" xml:space="preserve">
+    <value>Открытые ключи</value>
+  </data>
+  <data name="Signs_3" xml:space="preserve">
+    <value>Коллекция граф для подписи с названием "{0}" не уникальна, задайте уникальные названия для коллекций.</value>
+  </data>
+  <data name="Signs_1" xml:space="preserve">
+    <value>Ошибка открытия ключа защиты</value>
+  </data>
+  <data name="Signs_6" xml:space="preserve">
+    <value>Переименовать группу</value>
+  </data>
+  <data name="Signs_7" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Signs_4" xml:space="preserve">
+    <value>Добавить новую группу</value>
+  </data>
+  <data name="Signs_5" xml:space="preserve">
+    <value>Добавить графу</value>
+  </data>
+  <data name="SignsOutputPropertiesPageName" xml:space="preserve">
+    <value>Параметры вывода подписей</value>
+  </data>
+  <data name="CertSheetExtensionsNotSelected" xml:space="preserve">
+    <value>Не указано расширение файлов.</value>
+  </data>
+  <data name="SignAs" xml:space="preserve">
+    <value>Подписать как</value>
+  </data>
+  <data name="Signs_93" xml:space="preserve">
+    <value>Интерфейс лицензий не найден</value>
+  </data>
+  <data name="Signs_92" xml:space="preserve">
+    <value>Электронные подписи</value>
+  </data>
+  <data name="Signs_91" xml:space="preserve">
+    <value>Алгоритм хэширования "{0}" не поддерживается</value>
+  </data>
+  <data name="Signs_90" xml:space="preserve">
+    <value>Алгоритм хэширования "{0}" не поддерживается</value>
+  </data>
+  <data name="Signs_97" xml:space="preserve">
+    <value>Подписать</value>
+  </data>
+  <data name="Signs_96" xml:space="preserve">
+    <value>Загрузка плагина</value>
+  </data>
+  <data name="Signs_95" xml:space="preserve">
+    <value>Серверная часть плагина "Электронные подписи" (сборка Intermech.Signs.Server.dll) не загружена</value>
+  </data>
+  <data name="Signs_94" xml:space="preserve">
+    <value>Ошибка ключа защиты для плагина "Электронные подписи"</value>
+  </data>
+  <data name="Signs_99" xml:space="preserve">
+    <value>Вы не можете подписывать выбранные объекты.</value>
+  </data>
+  <data name="Signs_98" xml:space="preserve">
+    <value>Вы не можете подписывать выбранный объект.</value>
+  </data>
+  <data name="Signs_82" xml:space="preserve">
+    <value>Нельзя создавать объект типа "Внешний криптопровайдер" по прототипу.</value>
+  </data>
+  <data name="Signs_83" xml:space="preserve">
+    <value>Ошибка создания объекта по прототипу</value>
+  </data>
+  <data name="Signs_80" xml:space="preserve">
+    <value>Нельзя создавать версию объекта типа "Внешний криптопровайдер".</value>
+  </data>
+  <data name="Signs_81" xml:space="preserve">
+    <value>Ошибка создания версии объекта</value>
+  </data>
+  <data name="Signs_86" xml:space="preserve">
+    <value>Выбор сертификата</value>
+  </data>
+  <data name="Signs_87" xml:space="preserve">
+    <value>Выберите сертификат для цифровой подписи документа</value>
+  </data>
+  <data name="Signs_84" xml:space="preserve">
+    <value>Нельзя связывать объект типа "Внешний криптопровайдер" с другими объектами.</value>
+  </data>
+  <data name="Signs_85" xml:space="preserve">
+    <value>Ошибка создания объекта</value>
+  </data>
+  <data name="Signs_88" xml:space="preserve">
+    <value>Поле имени пользователя не может быть пустым!</value>
+  </data>
+  <data name="Signs_89" xml:space="preserve">
+    <value>Алгоритм хэширования с идентификатором="{0}" не найден</value>
+  </data>
+  <data name="Signs_39" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_38" xml:space="preserve">
+    <value>Сохранить изменения?</value>
+  </data>
+  <data name="Signs_35" xml:space="preserve">
+    <value>Система\Файлы IStorage</value>
+  </data>
+  <data name="Signs_34" xml:space="preserve">
+    <value>Подписал в графе "{0}" пользователь "{1}"</value>
+  </data>
+  <data name="Signs_37" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_36" xml:space="preserve">
+    <value>Расширения файлов IStorage</value>
+  </data>
+  <data name="Signs_20" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_21" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_22" xml:space="preserve">
+    <value>Позволяет настроить графы для подписей объектов данного типа</value>
+  </data>
+  <data name="Signs_23" xml:space="preserve">
+    <value>[Настроен]</value>
+  </data>
+  <data name="Signs_24" xml:space="preserve">
+    <value>[Не настроен]</value>
+  </data>
+  <data name="Signs_19" xml:space="preserve">
+    <value>Позволяет настроить графы для подписей объектов данного типа</value>
+  </data>
+  <data name="Signs_18" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_13" xml:space="preserve">
+    <value>Очистить группу "{0}"?</value>
+  </data>
+  <data name="Signs_12" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="Signs_11" xml:space="preserve">
+    <value>Удалить "{0}"?</value>
+  </data>
+  <data name="Signs_10" xml:space="preserve">
+    <value>Группа подписей</value>
+  </data>
+  <data name="Signs_17" xml:space="preserve">
+    <value>Контроль подписей</value>
+  </data>
+  <data name="Signs_16" xml:space="preserve">
+    <value>Очистка списка</value>
+  </data>
+  <data name="Signs_15" xml:space="preserve">
+    <value>Очистить весь список?</value>
+  </data>
+  <data name="Signs_14" xml:space="preserve">
+    <value>Очистка группы</value>
+  </data>
+  <data name="Signs_79" xml:space="preserve">
+    <value>Далее &gt;</value>
+  </data>
+  <data name="Signs_78" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Signs_77" xml:space="preserve">
+    <value>Ошибка при освобождении контекста криптопровайдера.</value>
+  </data>
+  <data name="Signs_76" xml:space="preserve">
+    <value>Ошибка при получении контекста криптопровайдера.</value>
+  </data>
+  <data name="Signs_73" xml:space="preserve">
+    <value>Ошибка изменения типа подписи</value>
+  </data>
+  <data name="Signs_72" xml:space="preserve">
+    <value>Вы не можете изменять тип подписи, т.к. вы не являетесь её владельцем.</value>
+  </data>
+  <data name="Signs_68" xml:space="preserve">
+    <value>Защита подписи документа</value>
+  </data>
+  <data name="Signs_69" xml:space="preserve">
+    <value>В сертификате содержится не RSA криптопровайдер.</value>
+  </data>
+  <data name="Signs_65" xml:space="preserve">
+    <value>Сертификат не содержит закрытого ключа</value>
+  </data>
+  <data name="Signs_66" xml:space="preserve">
+    <value>Защита подписи документа</value>
+  </data>
+  <data name="Signs_67" xml:space="preserve">
+    <value>Криптопровайдер, содержащийся в сертификате, в системе не зарегистрирован. 
+ 
+ Криптопровайдер={0} 
+ Тип криптопровайдера={1}</value>
+  </data>
+  <data name="Signs_60" xml:space="preserve">
+    <value>Подпись неверна</value>
+  </data>
+  <data name="Signs_61" xml:space="preserve">
+    <value>Подпись устарела</value>
+  </data>
+  <data name="Signs_62" xml:space="preserve">
+    <value>Подпись актуальна</value>
+  </data>
+  <data name="Signs_59" xml:space="preserve">
+    <value>Подпись с криптозащитой актуальна</value>
+  </data>
+  <data name="Signs_58" xml:space="preserve">
+    <value>Подпись с криптозащитой устарела</value>
+  </data>
+  <data name="Signs_57" xml:space="preserve">
+    <value>Подпись с криптозащитой</value>
+  </data>
+  <data name="Signs_56" xml:space="preserve">
+    <value>Статус подписи</value>
+  </data>
+  <data name="Signs_55" xml:space="preserve">
+    <value>Невозможно подписывать объекты, не содержащие атрибут "{0}"</value>
+  </data>
+  <data name="Signs_54" xml:space="preserve">
+    <value>Подписи</value>
+  </data>
+  <data name="Signs_53" xml:space="preserve">
+    <value>Выберите криптопровайдера</value>
+  </data>
+  <data name="Signs_52" xml:space="preserve">
+    <value>Открытые ключи ЭП</value>
+  </data>
+  <data name="Signs_51" xml:space="preserve">
+    <value>Данные изменены. Сохранить изменения?</value>
+  </data>
+  <data name="Signs_50" xml:space="preserve">
+    <value>Открытые ключи ЭП</value>
+  </data>
+  <data name="Signs_48" xml:space="preserve">
+    <value>Типы объектов</value>
+  </data>
+  <data name="Signs_46" xml:space="preserve">
+    <value>Сохранить изменения?</value>
+  </data>
+  <data name="Signs_47" xml:space="preserve">
+    <value>Графы для подписей</value>
+  </data>
+  <data name="Signs_44" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="Signs_45" xml:space="preserve">
+    <value>Графы для подписи</value>
+  </data>
+  <data name="Signs_42" xml:space="preserve">
+    <value>Добавить графу</value>
+  </data>
+  <data name="Signs_43" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Signs_41" xml:space="preserve">
+    <value>Графы для подписей</value>
+  </data>
+  <data name="SignsView" xml:space="preserve">
+    <value>Просмотр подписей</value>
+  </data>
+  <data name="Signs_121" xml:space="preserve">
+    <value>Объект: </value>
+  </data>
+  <data name="Signs_120" xml:space="preserve">
+    <value>Убедитесь, что объект выбран правильно, так как подпись невозможно будет удалить.
+    </value>
+  </data>
+  <data name="Signs_123" xml:space="preserve">
+    <value>Дата подписания </value>
+  </data>
+  <data name="Signs_122" xml:space="preserve">
+    <value>Нельзя создавать объект типа "{0}" </value>
+  </data>
+  <data name="Signs_125" xml:space="preserve">
+    <value>Резолюция &lt;&lt;</value>
+  </data>
+  <data name="Signs_124" xml:space="preserve">
+    <value>Резолюция &gt;&gt;</value>
+  </data>
+  <data name="Signs_127" xml:space="preserve">
+    <value>Резолюция не может занимать более {0} символов </value>
+  </data>
+  <data name="Signs_126" xml:space="preserve">
+    <value>номер </value>
+  </data>
+  <data name="Signs_102" xml:space="preserve">
+    <value>Подпись объектов</value>
+  </data>
+  <data name="Signs_107" xml:space="preserve">
+    <value>{2}Подписать выделенные объекты в графах {0} в должности "{1}"?"</value>
+  </data>
+  <data name="Signs_106" xml:space="preserve">
+    <value>{2}Подписать выделенные объекты в графе {0} в должности "{1}"?</value>
+  </data>
+  <data name="Signs_105" xml:space="preserve">
+    <value>{2}Подписать выделенный объект в графах {0} в должности "{1}"?</value>
+  </data>
+  <data name="Signs_104" xml:space="preserve">
+    <value>{2}Подписать выделенный объект в графе {0} в должности "{1}"?</value>
+  </data>
+  <data name="Signs_118" xml:space="preserve">
+    <value>Убедитесь, что объекты выбраны правильно, так как подпись невозможно будет удалить.
+    </value>
+  </data>
+  <data name="Signs_119" xml:space="preserve">
+    <value>Объекты: </value>
+  </data>
+  <data name="Signs_112" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Signs_110" xml:space="preserve">
+    <value>Выберите типы объектов</value>
+  </data>
+  <data name="Signs_111" xml:space="preserve">
+    <value>Выберите графы для подписи</value>
+  </data>
+  <data name="SignGraph" xml:space="preserve">
+    <value>[Графа для подписи]</value>
+  </data>
+  <data name="SignDateParam" xml:space="preserve">
+    <value>[Графа для подписи]_Дата</value>
+  </data>
+  <data name="SignsUserPageName" xml:space="preserve">
+    <value>Электронные подписи</value>
+  </data>
+  <data name="CryptoSign" xml:space="preserve">
+    <value>ЭП</value>
+  </data>
+  <data name="SimpleSignLabel" xml:space="preserve">
+    <value>простая</value>
+  </data>
+  <data name="Signs_TextForNonActualSimpleSign" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="SignsPageName" xml:space="preserve">
+    <value>Электронные подписи</value>
+  </data>
+  <data name="CertSheetSettingsCommon" xml:space="preserve">
+    <value>Система\Удостоверяющие листы</value>
+  </data>
+  <data name="SignRankParam" xml:space="preserve">
+    <value>[Графа для подписи]_Должность</value>
+  </data>
+  <data name="ComplexSignLabel" xml:space="preserve">
+    <value>усиленная</value>
+  </data>
+  <data name="CertSheetBlankFieldNotFound" xml:space="preserve">
+    <value>Не найдено поле "{0}" в шаблоне для формирования информационно-удостоверяющего листа</value>
+  </data>
+  <data name="AnswerYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Signs_UpdateInnerSignsHashes" xml:space="preserve">
+    <value>Перерасчёт хэшей подписей</value>
+  </data>
+  <data name="CertSheetBlankNotFound" xml:space="preserve">
+    <value>Не найден шаблон для формирования информационно-удостоверяющего листа</value>
+  </data>
+  <data name="SignsUserSettings" xml:space="preserve">
+    <value>Пользователи\Текущий пользователь\Электронные подписи</value>
+  </data>
+  <data name="Signs_AdminUtils" xml:space="preserve">
+    <value>Утилиты администратора</value>
+  </data>
+  <data name="Signs_TextForNonActualQualifiedSign" xml:space="preserve">
+    <value>???</value>
+  </data>
+  <data name="OutputView_SavingToDisk" xml:space="preserve">
+    <value>Сохранение на диск</value>
+  </data>
+  <data name="Signs_CertOwner" xml:space="preserve">
+    <value>Владелец сертификата</value>
+  </data>
+  <data name="CertSheetGraphsNotSelected" xml:space="preserve">
+    <value>Не указана графа для подписи.</value>
+  </data>
+  <data name="Signs_ConvertInnerSignsToLastVersion" xml:space="preserve">
+    <value>Актуализировать версии подписей</value>
+  </data>
+  <data name="Signs_TextForActualSimpleSign" xml:space="preserve">
+    <value>&lt;Подп.&gt;</value>
+  </data>
+  <data name="SignValueParam" xml:space="preserve">
+    <value>[Графа для подписи]_ЭЦП</value>
+  </data>
+  <data name="AnswerNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="CertSheetProps_NotAssigned" xml:space="preserve">
+    <value>не назначен</value>
+  </data>
+  <data name="NoCertsFound" xml:space="preserve">
+    <value>Сертификат не найден в хранилище или отсутствует закрытый ключ у сертификата</value>
+  </data>
+</root>
