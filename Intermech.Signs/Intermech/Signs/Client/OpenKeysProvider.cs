@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.OpenKeysProvider
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Localization;
 using Intermech.Navigator.Interfaces;
@@ -13,16 +12,10 @@ using System;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Вьюшка для настройки "Открытых ключей" на юзера</summary>
 public class OpenKeysProvider : IViewsProvider
 {
-  /// <summary>Зарегистрирована ли закладка</summary>
   private static bool _registeredView;
 
-  /// <summary>Получение информации о вьюшках</summary>
-  /// <param name="items">выбранные объекты</param>
-  /// <param name="services">сервисы</param>
-  /// <returns>Информация о вьюшке</returns>
   public ViewsInfo GetViews(ISelectedItems items, IServiceProvider services)
   {
     if (!OpenKeysProvider._registeredView)

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intermech.Signs", "Intermech.Signs.csproj", "{66411743-1A78-4A5B-96AA-012146B94EB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intermech.Signs", "Intermech.Signs.csproj", "{AF737716-6DE1-4018-A44D-F8C3D266B2AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{66411743-1A78-4A5B-96AA-012146B94EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66411743-1A78-4A5B-96AA-012146B94EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66411743-1A78-4A5B-96AA-012146B94EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66411743-1A78-4A5B-96AA-012146B94EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF737716-6DE1-4018-A44D-F8C3D266B2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF737716-6DE1-4018-A44D-F8C3D266B2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF737716-6DE1-4018-A44D-F8C3D266B2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF737716-6DE1-4018-A44D-F8C3D266B2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

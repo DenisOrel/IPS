@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsProperties
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Interfaces;
@@ -15,46 +14,21 @@ using System.ComponentModel;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Общие настройки ЭЦП</summary>
 internal class SignsProperties
 {
-  /// <summary>Подписи, совместимые с Search</summary>
   private bool _CompatibleSigns;
-  /// <summary>
-  /// Использовать для подписи только сертификаты, не использовать открытые ключи IPS  // OBSOLETE! сейчас всегда DEFAULT = TRUE
-  /// </summary>
   private bool _CertificateSigningOnlyMode = true;
-  /// <summary>Использовать для проверки серверы отзыва сертификатов</summary>
   private bool _DoRevocationMode;
-  /// <summary>При _DoRevocationMode проверять Online или offline</summary>
   private bool _OnlineModeRevocationMode = true;
-  /// <summary>Режим разработчика для подписей (подробные логи итп)</summary>
   private bool _SignsDeveloperMode;
-  /// <summary>Копировать подписи при создании версии объекта</summary>
   private bool _CopySignsToVersionMode;
-  /// <summary>
-  /// Проверять наличие актуальной подписи в выбранной графе при подписании
-  /// </summary>
   private bool _CheckExistingCopyActualityMode;
-  /// <summary>
-  /// Может ли пользователь переподписать свою же актуальную подпись
-  /// </summary>
   private bool _CheckActualSignMadeBySameUser;
-  /// <summary>Текст для отображения актуальных простых ЭП;</summary>
   private string _TextForActualSimpleSign = LocalizationHolder.rm.GetString("Signs_TextForActualSimpleSign");
-  /// <summary>Текст для отображения неактуальных простых ЭП</summary>
   private string _TextForNonActualSimpleSign = LocalizationHolder.rm.GetString("Signs_TextForNonActualSimpleSign");
-  /// <summary>Способ отображения квалифицированнных ЭП</summary>
   private SignsHolder.SignDisplayMode _QualifiedSignDisplayMode;
-  /// <summary>Текст для отображения актуальных квалифицированных ЭП</summary>
   private string _TextForActualQualifiedSign = LocalizationHolder.rm.GetString("Signs_TextForActualQualifiedSign");
-  /// <summary>
-  /// Количество последних символов ключа квалифицированной ЭП
-  /// </summary>
   private uint _QualifiedSignKeyLastSymbolsNumber = 20;
-  /// <summary>
-  /// Параметр "Текст для отображения неактуальных квалифицированных ЭП"
-  /// </summary>
   private string _TextForNonActualQualifiedSign = LocalizationHolder.rm.GetString("Signs_TextForNonActualQualifiedSign");
   internal bool _inited;
 
@@ -167,7 +141,6 @@ internal class SignsProperties
     set => this._SignsDeveloperMode = value;
   }
 
-  /// <summary>// OBSOLETE! сейчас всегда DEFAULT = TRUE</summary>
   [CustomDescription("CertificateSigningOnlyDescription")]
   [CustomDisplayName("CertificateSigningOnlyCaption")]
   [TypeConverter(typeof (YesNoBooleanConverter))]

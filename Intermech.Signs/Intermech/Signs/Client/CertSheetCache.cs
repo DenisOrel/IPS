@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetCache
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces;
 using Intermech.Signs.Interfaces;
@@ -12,32 +11,23 @@ using System;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Кэш различных данных для модуля удостоверяющих листов</summary>
 internal class CertSheetCache
 {
-  /// <summary>Тип объектов Документы</summary>
   public static readonly Guid DocumentObjectTypeGuid = new Guid("cad00070-306c-11d8-b4e9-00304f19f545");
   private static int? documentObjectTypeID = new int?();
-  /// <summary>Тип объектов Извещения</summary>
   public static readonly Guid ECOObjectTypeGuid = new Guid("cad00348-306c-11d8-b4e9-00304f19f545");
   private static int? ecoObjectTypeID = new int?();
-  /// <summary>Тип объектов Спецификации</summary>
   public static readonly Guid SpecObjectTypeGuid = new Guid("cad00133-306c-11d8-b4e9-00304f19f545");
   private static int? specObjectTypeID = new int?();
-  /// <summary>Тип связи "Изменяется по извещению"</summary>
   public static readonly Guid ECORelationTypeGuid = new Guid("cad0036b-306c-11d8-b4e9-00304f19f545");
   private static int? ecoRelationTypeID = new int?();
-  /// <summary>Тип связи "Состав изделия"</summary>
   public static readonly Guid CompositionRelationTypeGuid = new Guid("cad00023-306c-11d8-b4e9-00304f19f545");
   private static int? compositionRelationTypeID = new int?();
-  /// <summary>Тип связи "Документация на изделие"</summary>
   public static readonly Guid DocumentationRelationTypeGuid = new Guid("cad00154-306c-11d8-b4e9-00304f19f545");
   private static int? documentationRelationTypeID = new int?();
-  /// <summary>Тип связи "Подписи"</summary>
   public static readonly Guid SignsRelationTypeGuid = SignsHolder.SignRelationTypeGuid;
   private static int? signsRelationTypeID = new int?();
 
-  /// <summary>Идентификатор типа объектов Документы</summary>
   public static int DocumentObjectTypeID
   {
     get
@@ -48,7 +38,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа объектов Извещения</summary>
   public static int ECOObjectTypeID
   {
     get
@@ -59,7 +48,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа объектов Спецификации</summary>
   public static int SpecObjectTypeID
   {
     get
@@ -70,7 +58,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа связи "Изменяется по извещению"</summary>
   public static int ECORelationTypeID
   {
     get
@@ -81,7 +68,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа связи "Состав изделия"</summary>
   public static int CompositionRelationTypeID
   {
     get
@@ -92,7 +78,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа связи "Документация на изделие"</summary>
   public static int DocumentationRelationTypeID
   {
     get
@@ -103,7 +88,6 @@ internal class CertSheetCache
     }
   }
 
-  /// <summary>Идентификатор типа связи "Подписи"</summary>
   public static int SignsRelationTypeID
   {
     get

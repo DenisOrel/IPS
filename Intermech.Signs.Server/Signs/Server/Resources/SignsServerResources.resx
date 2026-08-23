@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SignRankAttrName" xml:space="preserve">
+    <value>Должность {0}</value>
+  </data>
+  <data name="LCStepPatchError" xml:space="preserve">
+    <value>Ошибка при патче настроек граф подписей шага жизненного цикла с идентификатором {0}.</value>
+  </data>
+  <data name="CertNotValid" xml:space="preserve">
+    <value>Сертификат {0} не прошел проверку</value>
+  </data>
+  <data name="SignDateAttrName" xml:space="preserve">
+    <value>Дата подписания {0}</value>
+  </data>
+  <data name="Signs.Server_10" xml:space="preserve">
+    <value>Ошибка проверки подписей.</value>
+  </data>
+  <data name="Signs.Server_11" xml:space="preserve">
+    <value>Для выполнения данной операции </value>
+  </data>
+  <data name="Signs.Server_12" xml:space="preserve">
+    <value>объект </value>
+  </data>
+  <data name="Signs.Server_14" xml:space="preserve">
+    <value> должен иметь подпись в графе {0}</value>
+  </data>
+  <data name="Signs.Server_15" xml:space="preserve">
+    <value> должен иметь подписи в графах: {0}</value>
+  </data>
+  <data name="Signs.Server_16" xml:space="preserve">
+    <value> должен иметь верную подпись в графе {0}</value>
+  </data>
+  <data name="Signs.Server_17" xml:space="preserve">
+    <value> должен иметь верные подписи в графах: {0}</value>
+  </data>
+  <data name="Signs.Server_18" xml:space="preserve">
+    <value> должен иметь актуальную подпись в графе {0}</value>
+  </data>
+  <data name="Signs.Server_19" xml:space="preserve">
+    <value> должен иметь актуальные подписи в графах: {0}</value>
+  </data>
+  <data name="Signs.Server_32" xml:space="preserve">
+    <value>Должности с ID={0} не существует</value>
+  </data>
+  <data name="Signs.Server_33" xml:space="preserve">
+    <value>Объект с ID = {0} не найден</value>
+  </data>
+  <data name="Signs.Server_30" xml:space="preserve">
+    <value>Нельзя назначить подписи шагу ЖЦ, т.к. в базе данных существуют объекты данного типа без подписей.</value>
+  </data>
+  <data name="Signs.Server_31" xml:space="preserve">
+    <value>Нельзя удалять объект типа "{0}"</value>
+  </data>
+  <data name="Signs.Server_36" xml:space="preserve">
+    <value>Не найдена Графа для подписей с допустимым значением "{0}".</value>
+  </data>
+  <data name="Signs.Server_34" xml:space="preserve">
+    <value>Нельзя подписывать рабочую копию объекта. Завершите редактирование объекта "{0}" (идентификатор версии '{1}')</value>
+  </data>
+  <data name="Signs.Server_35" xml:space="preserve">
+    <value>Объект {0} уже имеет актуальную подпись в графе  {1} , поставленную {2} пользователем {3} {4}</value>
+  </data>
+  <data name="Signs.Server_23" xml:space="preserve">
+    <value>Вы не имеете права подписывать объекты типа "{0}" в графе "{1}"</value>
+  </data>
+  <data name="Signs.Server_22" xml:space="preserve">
+    <value>Объекты типа "{0}" нельзя подписывать.</value>
+  </data>
+  <data name="Signs.Server_21" xml:space="preserve">
+    <value>Неверное имя пользователя.</value>
+  </data>
+  <data name="Signs.Server_20" xml:space="preserve">
+    <value>Неверный пароль пользователя "{0}"</value>
+  </data>
+  <data name="Signs.Server_27" xml:space="preserve">
+    <value>Подписи для должности "{0}" не настроены.</value>
+  </data>
+  <data name="Signs.Server_25" xml:space="preserve">
+    <value>Электронная подпись объекта</value>
+  </data>
+  <data name="Signs.Server_24" xml:space="preserve">
+    <value>Невозможно подписывать объекты, не содержащие атрибут "{0}"</value>
+  </data>
+  <data name="Signs.Server_29" xml:space="preserve">
+    <value>Невозможно изменить контроль подписей в архиве, т.к. в нём находятся неподписанные документы.</value>
+  </data>
+  <data name="Signs.Server_28" xml:space="preserve">
+    <value>Пользователь "{0}" не имеет права подписывать объекты в должности "{1}"</value>
+  </data>
+  <data name="LCLevelPatchError" xml:space="preserve">
+    <value>Ошибка при патче настроек граф подписей уровня продвижения с идентификатором {0}.</value>
+  </data>
+  <data name="SignGraph" xml:space="preserve">
+    <value>[Графа для подписи]</value>
+  </data>
+  <data name="SignDateParam" xml:space="preserve">
+    <value>[Графа для подписи]_Дата</value>
+  </data>
+  <data name="NotAdminError" xml:space="preserve">
+    <value>Функция патча настроек граф подписей может быть вызвана только администратором системы.</value>
+  </data>
+  <data name="RankPatchError" xml:space="preserve">
+    <value>Ошибка при патче настроек подписей для должности с идентификатором {0}.</value>
+  </data>
+  <data name="Signs.Server_1" xml:space="preserve">
+    <value>Значение первого ключа не задано!</value>
+  </data>
+  <data name="Signs.Server_3" xml:space="preserve">
+    <value>Нельзя производить действие "{0}" для объекта данного типа.</value>
+  </data>
+  <data name="Signs.Server_2" xml:space="preserve">
+    <value>Значение второго ключа не задано!</value>
+  </data>
+  <data name="Signs.Server_5" xml:space="preserve">
+    <value>Нельзя использовать подписи содержащие криптозащиту.</value>
+  </data>
+  <data name="Signs.Server_4" xml:space="preserve">
+    <value>Пользователь "{0}" не имеет права подписывать в графе "{1}"</value>
+  </data>
+  <data name="Signs.Server_7" xml:space="preserve">
+    <value>Электронные подписи</value>
+  </data>
+  <data name="Signs.Server_6" xml:space="preserve">
+    <value>Нельзя создавать связь данного типа</value>
+  </data>
+  <data name="Signs.Server_9" xml:space="preserve">
+    <value>Графа со значением "{0}" была изменена или удалена в настройках атрибута "{1}"</value>
+  </data>
+  <data name="Signs.Server_8" xml:space="preserve">
+    <value>Атрибут "{0}" у объекта "{1}" не найден.</value>
+  </data>
+  <data name="LCStepForTypePatchError" xml:space="preserve">
+    <value>Ошибка при патче настроек граф подписей шага жизненного цикла с идентификатором {0} типа объекта {1}.</value>
+  </data>
+  <data name="ArchivePatchError" xml:space="preserve">
+    <value>Ошибка при патче настроек граф подписей архива с идентификатором версии {0}.</value>
+  </data>
+  <data name="PatchError" xml:space="preserve">
+    <value> Во время патча возникли следующие ошибки:</value>
+  </data>
+  <data name="RanksPatchResult" xml:space="preserve">
+    <value>Пропатчены настройки граф для подписей должностей. Произведено замен: {0}.</value>
+  </data>
+  <data name="SignVerifyResult" xml:space="preserve">
+    <value>Результат проверки подписи для объекта "{0}": {1} </value>
+  </data>
+  <data name="LCStepAndLevelPatchResult" xml:space="preserve">
+    <value>Пропатчены настройки граф для подписей шагов ЖЦ и уровней продвижения. Произведено замен: {0}.</value>
+  </data>
+  <data name="SignValueParam" xml:space="preserve">
+    <value>[Графа для подписи]_ЭЦП</value>
+  </data>
+  <data name="Signs.Server_SignsCheckNegative" xml:space="preserve">
+    <value>Для выполнения действия отсутствуют требуемые подписи</value>
+  </data>
+  <data name="ArchivePatchResult" xml:space="preserve">
+    <value>Пропатчены настройки граф для подписей архивов. Произведено замен: {0}.</value>
+  </data>
+  <data name="SignHashAttrName" xml:space="preserve">
+    <value>Защита объекта {0}</value>
+  </data>
+</root>

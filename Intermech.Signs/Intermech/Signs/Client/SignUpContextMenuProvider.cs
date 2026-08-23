@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignUpContextMenuProvider
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Interfaces;
@@ -17,7 +16,6 @@ using System.Collections.Generic;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Провайдер подписей на объекты</summary>
 internal class SignUpContextMenuProvider : ICommandsProvider
 {
   public CommandsInfo GetMergedCommands(ISelectedItems items, IServiceProvider viewServices)
@@ -64,7 +62,6 @@ internal class SignUpContextMenuProvider : ICommandsProvider
     return groupCommands;
   }
 
-  /// <summary>Команда "Показать подписи"</summary>
   public static void SignsView(
     ISelectedItems items,
     IServiceProvider viewServices,
@@ -75,10 +72,6 @@ internal class SignUpContextMenuProvider : ICommandsProvider
     int num = (int) PropertiesWindow.Execute(string.Empty, string.Empty, itemData.ObjectID, nameof (SignsView));
   }
 
-  /// <summary>Подписать объект</summary>
-  /// <param name="items"></param>
-  /// <param name="viewServices"></param>
-  /// <param name="additionalInfo"></param>
   public static void SignUpCommand(
     ISelectedItems items,
     IServiceProvider viewServices,
@@ -87,10 +80,6 @@ internal class SignUpContextMenuProvider : ICommandsProvider
     SignsCommands.SignUpCommand(SignUpContextMenuProvider.GetObjectsList(items));
   }
 
-  /// <summary>Подписать объект от имени</summary>
-  /// <param name="items"></param>
-  /// <param name="viewServices"></param>
-  /// <param name="additionalInfo"></param>
   public static void SignAsCommand(
     ISelectedItems items,
     IServiceProvider viewServices,
@@ -99,10 +88,6 @@ internal class SignUpContextMenuProvider : ICommandsProvider
     SignsCommands.SignAsCommand(SignUpContextMenuProvider.GetObjectsList(items));
   }
 
-  /// <summary>Подставить ЭЦП подпись</summary>
-  /// <param name="items"></param>
-  /// <param name="viewServices"></param>
-  /// <param name="additionalInfo"></param>
   public static void CryptoSignUp(
     ISelectedItems items,
     IServiceProvider viewServices,
@@ -111,11 +96,6 @@ internal class SignUpContextMenuProvider : ICommandsProvider
     SignsCommands.CryptoSignUp(SignUpContextMenuProvider.GetObjectsList(items));
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="items"></param>
-  /// <returns></returns>
   private static List<IDBTypedObjectID> GetObjectsList(ISelectedItems items)
   {
     List<IDBTypedObjectID> objectsList = new List<IDBTypedObjectID>(items.Count);

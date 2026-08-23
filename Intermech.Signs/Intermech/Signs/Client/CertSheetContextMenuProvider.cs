@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetContextMenuProvider
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Controls;
 using Intermech.DataFormats;
@@ -56,10 +55,6 @@ public class CertSheetContextMenuProvider : ICommandsProvider
     return groupCommands;
   }
 
-  /// <summary>Команда Сформировать УЛ</summary>
-  /// <param name="items"></param>
-  /// <param name="viewServices"></param>
-  /// <param name="additionalInfo"></param>
   public static void CreateCertSheetCommand(
     ISelectedItems items,
     IServiceProvider viewServices,
@@ -97,11 +92,6 @@ public class CertSheetContextMenuProvider : ICommandsProvider
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="items"></param>
-  /// <returns></returns>
   private static List<long> GetObjectsIDList(ISelectedItems items)
   {
     List<long> objectsIdList = new List<long>();

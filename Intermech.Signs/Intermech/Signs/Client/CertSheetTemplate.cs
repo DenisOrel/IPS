@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetTemplate
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Document.Client;
 using Intermech.Document.Model;
@@ -15,12 +14,9 @@ using System;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Класс обслуживания бланка Удостоверяющего листа</summary>
 public class CertSheetTemplate
 {
-  /// <summary>Id объекта бланка</summary>
   private long certSheetBlankObjectId = CertSheetTemplate.GetCertSheetBlankId();
-  /// <summary>Выполнена ли проверка правильности бланка</summary>
   private bool fieldsChecked;
   private ImDocument template;
   private TableElement template_certSheet_Top_Table;
@@ -35,7 +31,6 @@ public class CertSheetTemplate
   private TableElement template_signsBody;
   private TableElement template_empty4;
 
-  /// <summary>Бланк</summary>
   private ImDocument Template => this.template;
 
   public TableElement Template_certSheet_Top_Table => this.template_certSheet_Top_Table;
@@ -60,8 +55,6 @@ public class CertSheetTemplate
 
   public TableElement Template_empty4 => this.template_empty4;
 
-  /// <summary>Вернуть id бланка УЛ</summary>
-  /// <returns>-1, если не назначен</returns>
   private static long GetCertSheetBlankId()
   {
     long certSheetBlankId = -1;
@@ -75,8 +68,6 @@ public class CertSheetTemplate
     return certSheetBlankId;
   }
 
-  /// <summary>Загрузка темплета</summary>
-  /// <returns></returns>
   public bool LoadTemplate()
   {
     this.fieldsChecked = false;
@@ -91,9 +82,6 @@ public class CertSheetTemplate
     return this.template != null;
   }
 
-  /// <summary>Анализ наличия полей бланка</summary>
-  /// <param name="errorField"></param>
-  /// <returns></returns>
   public bool CheckFields(out string errorField)
   {
     this.fieldsChecked = false;

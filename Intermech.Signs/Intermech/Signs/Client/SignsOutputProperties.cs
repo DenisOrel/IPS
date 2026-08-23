@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsOutputProperties
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Checksums;
 using Intermech.Client.Core;
@@ -16,40 +15,17 @@ using System.ComponentModel;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Настройки параметров вывода подписи</summary>
 internal class SignsOutputProperties
 {
-  /// <summary>Разрешает и запрещает использование вывода подписей.</summary>
   private bool _SignOutputEnabledParam;
-  /// <summary>Разрешает и запрещает использование вывода подписей.</summary>
   private bool _SignOutputEnabledDevelopParam = true;
-  /// <summary>
-  /// Имя параметра, в который будет передаваться фамилия из ЭП.
-  /// </summary>
   private string _SignSurnameParam = LocalizationHolder.rm.GetString("SignGraph");
-  /// <summary>
-  /// Имя параметра, в который будет передаваться значение ЭП в соответствии с настройкой вывода ЭП
-  /// </summary>
   private string _SignValueParam = LocalizationHolder.rm.GetString(nameof (SignValueParam));
-  /// <summary>
-  /// Имя параметра, в который будет передаваться должность, в которой подписана ЭП;
-  /// </summary>
   private string _SignRankParam = LocalizationHolder.rm.GetString(nameof (SignRankParam));
-  /// <summary>
-  /// Имя параметра, в который будет передаваться наименование графы для подписи;
-  /// </summary>
   private string _SignGraphNameParam = LocalizationHolder.rm.GetString("SignNameParam");
-  /// <summary>
-  /// Имя параметра, в который будет передаваться дата из ЭП;
-  /// </summary>
   private string _SignDateParam = LocalizationHolder.rm.GetString(nameof (SignDateParam));
-  /// <summary>
-  /// Имя параметра, в который будет передаваться формат даты для вывода
-  /// </summary>
   private string _SignDateFormatParam = LocalizationHolder.rm.GetString("SignDateFormatParam");
-  /// <summary>Способ получения контрольной суммы;</summary>
   private ChecksumAlgorithm _CheckSumType;
-  /// <summary>Наименование свойства, в которое передается сумма;</summary>
   private string _CheckSumAttribute = "CRC32";
   internal bool _inited;
 

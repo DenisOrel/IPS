@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignControlPropertyClass
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces;
 using Intermech.Signs.Interfaces;
@@ -16,10 +15,6 @@ using System.Threading;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// Класс для хранения настроек подписей на этапах жихненного цикла объектов
-/// и уровнях продвижения объекта
-/// </summary>
 [TypeConverter(typeof (SignControlPropertyTypeConverter))]
 [Editor(typeof (SignControlPropertyTypeEditor), typeof (UITypeEditor))]
 public class SignControlPropertyClass
@@ -30,16 +25,10 @@ public class SignControlPropertyClass
   private SignControlPropertyEnum _idType;
   private int _objectType = -1;
 
-  /// <summary>Конструктор</summary>
   public SignControlPropertyClass()
   {
   }
 
-  /// <summary>Конструктор</summary>
-  /// <param name="id">идентификатор</param>
-  /// <param name="idType">тип идентификатора</param>
-  /// <param name="isReadOnly">только для чтения</param>
-  /// <param name="objectTypeID">идентификатор типа объекта</param>
   public SignControlPropertyClass(
     int id,
     SignControlPropertyEnum idType,
@@ -50,27 +39,16 @@ public class SignControlPropertyClass
     this.Load(id, idType, isReadOnly);
   }
 
-  /// <summary>Конструктор</summary>
-  /// <param name="id">идентификатор</param>
-  /// <param name="idType">тип идентификатора</param>
-  /// <param name="objectTypeID">идентификатор типа объекта</param>
   public SignControlPropertyClass(int id, SignControlPropertyEnum idType, int objectTypeID)
     : this(id, idType, false, objectTypeID)
   {
   }
 
-  /// <summary>Конструктор</summary>
-  /// <param name="id">идентификатор</param>
-  /// <param name="idType">тип идентификатора</param>
   public SignControlPropertyClass(int id, SignControlPropertyEnum idType)
     : this(id, idType, false, -1)
   {
   }
 
-  /// <summary>Сохранить изменения в контейнер</summary>
-  /// <param name="id">идентификатор</param>
-  /// <param name="idType">тип идентификатора</param>
-  /// <returns>True если все ок</returns>
   public bool Save(int id, SignControlPropertyEnum idType)
   {
     bool flag = false;
@@ -86,9 +64,6 @@ public class SignControlPropertyClass
     return flag;
   }
 
-  /// <summary>Сохранить изменения в атрибут объекта - контейнера</summary>
-  /// <param name="stepID">Шаг жихненного цикла</param>
-  /// <returns>True если все ок</returns>
   private bool SaveStep(int stepID)
   {
     this._id = stepID;
@@ -140,9 +115,6 @@ public class SignControlPropertyClass
     return flag1;
   }
 
-  /// <summary>Сохранить изменения в атрибут объекта - контейнера</summary>
-  /// <param name="levelID">Уровень продвижения</param>
-  /// <returns>True если все ок</returns>
   private bool SaveLevel(int levelID)
   {
     this._id = levelID;
@@ -167,10 +139,6 @@ public class SignControlPropertyClass
     return flag;
   }
 
-  /// <summary>Загрузить данные из контейнера</summary>
-  /// <param name="id"></param>
-  /// <param name="idType"></param>
-  /// <param name="isReadOnly"></param>
   public void Load(int id, SignControlPropertyEnum idType, bool isReadOnly)
   {
     switch (idType)
@@ -185,8 +153,6 @@ public class SignControlPropertyClass
     this._isFilledOk = this._graphsSet.Count > 0;
   }
 
-  /// <summary>Загрузить данные из контейнера</summary>
-  /// <param name="step">Шаг жизненного цикла</param>
   private void LoadStep(int step)
   {
     this._isFilledOk = false;
@@ -222,8 +188,6 @@ public class SignControlPropertyClass
     }
   }
 
-  /// <summary>Загрузка параметров для уровня продвижения</summary>
-  /// <param name="level">Идентификатор уровня продвижения</param>
   private void LoadLevel(int level)
   {
     this._isFilledOk = false;
@@ -251,10 +215,8 @@ public class SignControlPropertyClass
     }
   }
 
-  /// <summary>Загружено и заполненно</summary>
   public bool isFilledOk => this._isFilledOk;
 
-  /// <summary>Набор подписей</summary>
   public GraphsSet GraphsSet
   {
     get => this._graphsSet;
@@ -265,21 +227,15 @@ public class SignControlPropertyClass
     }
   }
 
-  /// <summary>идентификатор типа объекта</summary>
   public int ObjectTypeID => this._objectType;
 
-  /// <summary>Шаг жизненного цикла</summary>
   public int LCStep => this._idType.Equals((object) SignControlPropertyEnum.LCStep) ? this._id : -1;
 
-  /// <summary>Уровень продвижения объекта</summary>
   public int LCLevel
   {
     get => this._idType.Equals((object) SignControlPropertyEnum.LCLevel) ? this._id : -1;
   }
 
-  /// <summary>Дублирование объекта</summary>
-  /// <param name="value">Исходный объекта</param>
-  /// <returns>Конечный объект</returns>
   public static SignControlPropertyClass Clone(SignControlPropertyClass value)
   {
     return new SignControlPropertyClass()

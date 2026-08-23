@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsPropertiesPage
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces.Client;
 using Intermech.Localization;
@@ -17,7 +16,6 @@ namespace Intermech.Signs.Client;
 
 public class SignsPropertiesPage : IPropertyPage, IPropertyPageSearchOptionEvents
 {
-  /// <summary>Контейнер сервисов</summary>
   private IServiceProvider _provider;
   private SignsProperties _props;
   private ClassWrapperForPropertyGrid _object;
@@ -74,9 +72,6 @@ public class SignsPropertiesPage : IPropertyPage, IPropertyPageSearchOptionEvent
     [DebuggerStepThrough] get => this.PageName;
   }
 
-  /// <summary>
-  /// Возвращает список имен настроек, содержащихся в контроле
-  /// </summary>
   public List<string> GetOptionNames()
   {
     return !(this.Control is ClassWrapperForPropertyGrid control) ? new List<string>() : IPropertyPageHelper.GetOptionNames((ICustomTypeDescriptor) control);

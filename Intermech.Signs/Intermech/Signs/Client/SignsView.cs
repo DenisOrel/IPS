@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsView
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using DevExpress.IM.Utils;
 using DevExpress.IM.XtraGrid;
@@ -32,7 +31,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Вьюшка для просмотра подписей на объект</summary>
 [ViewDescriptionProvider(typeof (SignsView.SignsViewDescriptionProvider))]
 internal class SignsView : UserControl, IView
 {
@@ -44,43 +42,25 @@ internal class SignsView : UserControl, IView
   private Button btnCryptoSign;
   private ImageList ilSignStatus;
   private IContainer components;
-  /// <summary>индекс иконки закладки Подписи</summary>
   private int _imageIndex = -1;
-  /// <summary>служба уведомлений</summary>
   private INotificationService _notificationService;
-  /// <summary>Идентификатор версии объекта</summary>
   private long _objectID;
-  /// <summary>загрузка закладки выполняется впервые</summary>
   private bool isFirstLoad;
-  /// <summary>активна ли закладка</summary>
   private bool _activeView;
-  /// <summary>индекс колонки статуса</summary>
   private int statusColumnIndex = -1;
-  /// <summary>индекс колонки сертификата</summary>
   private int certColumnIndex = -1;
-  /// <summary>индекс колонки должности по штатному расписанию</summary>
   private int staffPositionColumnIndex = -1;
-  /// <summary>дата изменения подписываемого объекта</summary>
   private DateTime _modifyDate;
   private Label lbWarning;
   private Button btnDelete;
   private Button btnVerify;
   private IDBTypedObjectID typedObjectID;
-  /// <summary>отображать колонку Должность по штатному расписанию</summary>
   private bool staffPositionColumnEnabled;
 
-  /// <summary>индекс иконки закладки Подписи</summary>
   public int ImageIndex => this._imageIndex;
 
-  /// <summary>
-  /// Возвращает индекс расположения закладки среди других закладок
-  /// при выводе на экран.
-  /// </summary>
   public int OrderID => 51;
 
-  /// <summary>
-  /// Возвращает название закладки, которое будет отображаться на экране.
-  /// </summary>
   public string Caption => LocalizationHolder.rm.GetString("Signs_54");
 
   public SignsView()
@@ -287,8 +267,6 @@ internal class SignsView : UserControl, IView
     this._activeView = true;
   }
 
-  /// <summary>Формирование структуры запроса к базе данных</summary>
-  /// <returns>массив структур запроса к базе данных</returns>
   private ConditionStructure[] GetConditions()
   {
     return new ConditionStructure[1]
@@ -300,8 +278,6 @@ internal class SignsView : UserControl, IView
     };
   }
 
-  /// <summary>Формирование набора колонок</summary>
-  /// <returns>массив колонок</returns>
   private object[] GetColumns()
   {
     return new object[11]
@@ -320,8 +296,6 @@ internal class SignsView : UserControl, IView
     };
   }
 
-  /// <summary>Заполение класса параметров</summary>
-  /// <returns>Параметры запроса</returns>
   private DBRecordSetParams GetParams()
   {
     return new DBRecordSetParams((ConditionStructure[]) null)
@@ -331,8 +305,6 @@ internal class SignsView : UserControl, IView
     };
   }
 
-  /// <summary>Выполенение запроса (получение таблицы данных)</summary>
-  /// <returns>Таблица данных</returns>
   private DataTable GetDataTable()
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())
@@ -350,7 +322,6 @@ internal class SignsView : UserControl, IView
     }
   }
 
-  /// <summary>Обновление данных отображаемых на экране</summary>
   private void RefreshData()
   {
     this.statusColumnIndex = -1;
@@ -509,9 +480,6 @@ internal class SignsView : UserControl, IView
     this._grid.EndUpdate();
   }
 
-  /// <summary>
-  /// Событие на изменение грида (изменение ширины колонок, порядка следования и т.д.)
-  /// </summary>
   private void _view_Layout(object sender, EventArgs e)
   {
     foreach (GridColumn column in (CollectionBase) this._view.Columns)
@@ -521,7 +489,6 @@ internal class SignsView : UserControl, IView
     }
   }
 
-  /// <summary>Кнопка "Подписать"</summary>
   private void button1_Click(object sender, EventArgs e)
   {
     SignsCommands.SignUpCommand(new List<IDBTypedObjectID>()
@@ -530,7 +497,6 @@ internal class SignsView : UserControl, IView
     });
   }
 
-  /// <summary>Кнопка "Подписать как"</summary>
   private void button2_Click(object sender, EventArgs e)
   {
     SignsCommands.SignAsCommand(new List<IDBTypedObjectID>()
@@ -539,7 +505,6 @@ internal class SignsView : UserControl, IView
     });
   }
 
-  /// <summary>Кнопка "ЭЦП"</summary>
   private void btnCryptoSign_Click(object sender, EventArgs e)
   {
     SignsCommands.CryptoSignUp(new List<IDBTypedObjectID>()
@@ -564,7 +529,6 @@ internal class SignsView : UserControl, IView
 
   private void btnDelete_Click(object sender, EventArgs e) => this.DeleteSign();
 
-  /// <summary>Удаление подписи</summary>
   private void DeleteSign()
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())

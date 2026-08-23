@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\IPS.Installer.Full\InstServer\Server\Intermech.Signs.Server.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA26D1BE-1F7E-454E-B880-BFF8F0D0F04E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Signs.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Server">
+      <HintPath>lib\Intermech.Interfaces.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Kernel">
+      <HintPath>lib\Intermech.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Localization\CustomDescription.cs" />
+    <Compile Include="Localization\CustomDisplayName.cs" />
+    <Compile Include="Localization\CustomCategory.cs" />
+    <Compile Include="Signs\HashPack.cs" />
+    <Compile Include="Signs\SignUpdate.cs" />
+    <Compile Include="Signs\Server\CryptoExporter.cs" />
+    <Compile Include="Signs\Server\CryptoSignDBObject.cs" />
+    <Compile Include="Signs\Server\CryptoSignDBObjectCreator.cs" />
+    <Compile Include="Signs\Server\DualKeysCache.cs" />
+    <Compile Include="Signs\Server\ISignDBObject.cs" />
+    <Compile Include="Signs\Server\SignDBObject.cs" />
+    <Compile Include="Signs\Server\SignDBObjectCreator.cs" />
+    <Compile Include="Signs\Server\SignDBRelation.cs" />
+    <Compile Include="Signs\Server\SignDBRelationCreator.cs" />
+    <Compile Include="Signs\Server\SignDBRelationCollection.cs" />
+    <Compile Include="Signs\Server\SignDBRelationCollectionCreator.cs" />
+    <Compile Include="Signs\Server\SignLinkedObjectsHandler.cs" />
+    <Compile Include="Signs\Server\SignsServerCache.cs" />
+    <Compile Include="Signs\Server\SignsServerStartup.cs" />
+    <Compile Include="Signs\Server\SignsService.cs" />
+    <Compile Include="Signs\Server\SignsErrors.cs" />
+    <Compile Include="Signs\Server\SignsProvider.cs" />
+    <Compile Include="Signs\Server\SignsProviderList.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Signs\Server\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Signs\Server\Resources\SignsServerResources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

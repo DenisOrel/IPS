@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.Graphs
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Bars;
 using Intermech.DataFormats;
@@ -24,7 +23,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Закладка "Графы для подписей".</summary>
 [ViewDescriptionProvider(typeof (Graphs.GraphsViewDescriptionProvider))]
 internal class Graphs : UserControl, IView
 {
@@ -47,16 +45,12 @@ internal class Graphs : UserControl, IView
   private ImageList imageList = new ImageList();
   private ICategoryTypeIconService objTypesIcons;
 
-  /// <summary>Конструктор.</summary>
   public Graphs()
   {
     this.InitializeComponent();
     this.CreateMenu();
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
   public bool Modified
   {
     get => this._modified;
@@ -67,9 +61,6 @@ internal class Graphs : UserControl, IView
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
   private void CreateMenu()
   {
     this._menu = (SignsHolder.Bar as BarManager).MenuBar.AddMenuBar(LocalizationHolder.rm.GetString("Signs_41"));
@@ -89,11 +80,6 @@ internal class Graphs : UserControl, IView
     });
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _menu_Click(object sender, EventArgs e)
   {
     if (!(sender is ButtonItemBase buttonItemBase))
@@ -124,11 +110,6 @@ internal class Graphs : UserControl, IView
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _InfoBox_MouseUp(object sender, MouseEventArgs e)
   {
     if (!e.Button.Equals((object) MouseButtons.Right))
@@ -139,11 +120,6 @@ internal class Graphs : UserControl, IView
     this._menu.Show(sender as Control, new Point(e.X, e.Y));
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _menu_BeforePopup(object sender, MenuPopupEventArgs e)
   {
     TreeNode selectedNode = this._InfoBox.SelectedNode;
@@ -204,26 +180,12 @@ internal class Graphs : UserControl, IView
     this.ResumeLayout(false);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
   public int ImageIndex => -1;
 
-  /// <summary>
-  /// 
-  /// </summary>
   public int OrderID => 21;
 
-  /// <summary>
-  /// 
-  /// </summary>
   public string Caption => LocalizationHolder.rm.GetString("Signs_45");
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="items"></param>
-  /// <param name="services"></param>
   public void Initialize(ISelectedItems items, IServiceProvider services)
   {
     this._objID = (items.GetItemData(0, typeof (IDBObjectID)) as IDBObjectID).Value;
@@ -233,10 +195,6 @@ internal class Graphs : UserControl, IView
     this._InfoBox.ImageList.Images.Add("empty", (Image) new Bitmap(1, 1));
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="nextView"></param>
   public void Deactivate(IView nextView)
   {
     if (!this.Modified)
@@ -247,10 +205,6 @@ internal class Graphs : UserControl, IView
       this._bCancel_Click((object) null, (EventArgs) null);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="previousView"></param>
   public void Activate(IView previousView)
   {
     if (!this._firstRun)
@@ -278,19 +232,12 @@ internal class Graphs : UserControl, IView
     this.Modified = false;
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
   private void PopulateInfo()
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())
       this.PopulateInfo(sessionKeeper.Session);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="session"></param>
   private void PopulateInfo(IUserSession session)
   {
     this._InfoBox.BeginUpdate();
@@ -330,21 +277,11 @@ internal class Graphs : UserControl, IView
     this._menu_BeforePopup((object) null, (MenuPopupEventArgs) null);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _InfoBox_AfterSelect(object sender, TreeViewEventArgs e)
   {
     this._menu_BeforePopup((object) null, (MenuPopupEventArgs) null);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _bAdd_Click(object sender, EventArgs e)
   {
     using (AddGraphs addGraphs = new AddGraphs())
@@ -359,11 +296,6 @@ internal class Graphs : UserControl, IView
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _bDelete_Click(object sender, EventArgs e)
   {
     TreeNode selectedNode = this._InfoBox.SelectedNode;
@@ -405,11 +337,6 @@ internal class Graphs : UserControl, IView
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _bApply_Click(object sender, EventArgs e)
   {
     using (MemoryStream destStream = new MemoryStream())
@@ -432,11 +359,6 @@ internal class Graphs : UserControl, IView
     this.Modified = false;
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="sender"></param>
-  /// <param name="e"></param>
   private void _bCancel_Click(object sender, EventArgs e)
   {
     this._firstRun = true;

@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.OpenKeysView
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Interfaces;
@@ -21,7 +20,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Вьюшка для просмотра открытых ключей</summary>
 [ViewDescriptionProvider(typeof (OpenKeysView.OpenKeysViewDescriptionProvider))]
 internal class OpenKeysView : UserControl, IView
 {
@@ -65,7 +63,6 @@ internal class OpenKeysView : UserControl, IView
     }
   }
 
-  /// <summary>Конструктор</summary>
   public OpenKeysView()
   {
     this.InitializeComponent();

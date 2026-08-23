@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetControl
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Checksums;
 using Intermech.Interfaces;
@@ -19,22 +18,14 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// Контрол для указания опций формирования УЛ (как для виртуального, так при сохранении на диск)
-/// </summary>
 public class CertSheetControl : UserControl
 {
   private bool saveToDiskInterfaceFlag;
-  /// <summary>алгоритм по умолчанию</summary>
   private ChecksumAlgorithm checksumAlgorithm;
-  /// <summary>разрешен выбор альтернатив</summary>
   private bool enableChecksumAlternatives;
-  /// <summary>список граф для подписей в системе</summary>
   private List<object[]> graphList;
-  /// <summary>список расширений файлов документов</summary>
   private List<long> objectIDList;
   private bool blockChecked;
-  /// <summary>Required designer variable.</summary>
   private IContainer components;
   private GroupBox gbOptions;
   private CheckBox cbSaveToStandaloneFolder;
@@ -56,7 +47,6 @@ public class CertSheetControl : UserControl
   private ListView lvEmptyGraphs;
   private CheckBox cbEmptyGraphs;
 
-  /// <summary>Режим сохранения на диск</summary>
   public bool SaveToDiskInterfaceFlag
   {
     get => this.saveToDiskInterfaceFlag;
@@ -76,15 +66,8 @@ public class CertSheetControl : UserControl
 
   public CertSheetControl() => this.InitializeComponent();
 
-  /// <summary>
-  /// инициализация, для сохранения на диск инициализация списка объектов значения не имеет - там все равно идет пообъектное сохранение
-  /// </summary>
-  /// <param name="objectIDlist"></param>
   public void InitControl(List<long> _objectIDlist) => this.objectIDList = _objectIDlist;
 
-  /// <summary>Получить из ISelectedItems список id объектов</summary>
-  /// <param name="items"></param>
-  /// <returns></returns>
   public static List<long> InitItemsID(ISelectedItems items)
   {
     List<long> longList = new List<long>();
@@ -95,7 +78,6 @@ public class CertSheetControl : UserControl
 
   private void CertSheetControl_Load(object sender, EventArgs e) => this.FillControl();
 
-  /// <summary>заполнение (+ по items)</summary>
   public void FillControl()
   {
     if (this.DesignMode)
@@ -120,7 +102,6 @@ public class CertSheetControl : UserControl
     this.splitContainer.Enabled = this.cbEnabled.Checked;
   }
 
-  /// <summary>Заполнить список граф в lvGraphs</summary>
   private void FillGrapList()
   {
     if (this.graphList == null)
@@ -136,7 +117,6 @@ public class CertSheetControl : UserControl
     this.cbGraphs.Checked = true;
   }
 
-  /// <summary>Заполнить список расширений</summary>
   private void FillExtList()
   {
     List<string> stringList = (List<string>) null;
@@ -176,8 +156,6 @@ public class CertSheetControl : UserControl
     this.ProcessControlStates();
   }
 
-  /// <summary>заполнить класс с опциями текущими значениями</summary>
-  /// <param name="certSheetOptions"></param>
   public CertSheetOptions GetCertSheetOptions()
   {
     CertSheetOptions certSheetOptions = new CertSheetOptions();
@@ -286,8 +264,6 @@ public class CertSheetControl : UserControl
     }
   }
 
-  /// <summary>Clean up any resources being used.</summary>
-  /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -295,10 +271,6 @@ public class CertSheetControl : UserControl
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     this.gbOptions = new GroupBox();

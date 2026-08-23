@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Windows.FixGraphs
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces;
 using Intermech.Interfaces.Workflow;
@@ -20,7 +19,6 @@ namespace Intermech.Signs.Windows;
 
 public class FixGraphs : Form
 {
-  /// <summary>Required designer variable.</summary>
   private IContainer components;
   private Button button1;
   private ListBox listBox1;
@@ -88,8 +86,6 @@ public class FixGraphs : Form
     }
   }
 
-  /// <summary>Clean up any resources being used.</summary>
-  /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -97,10 +93,6 @@ public class FixGraphs : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     this.button1 = new Button();

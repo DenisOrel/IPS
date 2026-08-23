@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.AddGraphs
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Localization;
@@ -17,23 +16,13 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// форма для добавления объектам доступных
-/// граф  для подписания
-/// </summary>
 public class AddGraphs : Form
 {
-  /// <summary>Шаг мастера</summary>
   private int step;
-  /// <summary>Первый шаг мастера</summary>
   private SelectorForm srForm;
-  /// <summary>Второй шаг мастера</summary>
   private SelectGraphs sgForm;
-  /// <summary>Выбранные графы для подписи</summary>
   private ICollection selectedList;
-  /// <summary>Выбранные типы объектов</summary>
   private ArrayList idList;
-  /// <summary>Required designer variable.</summary>
   private IContainer components;
   private Button btnNext;
   private Button btnOK;
@@ -43,15 +32,10 @@ public class AddGraphs : Form
   private Panel panel1;
   private Panel panel2;
 
-  /// <summary>Выбранные графы для подписи</summary>
   public ICollection SelectedList => this.selectedList;
 
-  /// <summary>Выбранные типы объектов</summary>
   public ArrayList IDList => this.idList;
 
-  /// <summary>
-  /// 
-  /// </summary>
   public AddGraphs()
   {
     this.srForm = new SelectorForm(typeof (ObjectTypesFolder), LocalizationHolder.rm.GetString("Signs_48"), typeof (ObjectTypeFolder), true);
@@ -60,7 +44,6 @@ public class AddGraphs : Form
     this.InitializeComponent();
   }
 
-  /// <summary>В зависимоти от шага отобразим нужную форму</summary>
   public void LoadForm()
   {
     this.panel1.Controls.Clear();
@@ -133,8 +116,6 @@ public class AddGraphs : Form
     this.btnOK.Enabled = this.sgForm.SelectedGraphs > 0;
   }
 
-  /// <summary>Clean up any resources being used.</summary>
-  /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -142,10 +123,6 @@ public class AddGraphs : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (AddGraphs));

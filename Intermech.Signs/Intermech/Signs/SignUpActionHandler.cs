@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.SignUpActionHandler
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core.FormDesigner.Controls;
 using Intermech.DataFormats;
@@ -16,16 +15,8 @@ using System.Collections.Generic;
 #nullable disable
 namespace Intermech.Signs;
 
-/// <summary>Действие "Подписать"</summary>
 public class SignUpActionHandler : IFormDesignerActionHandler
 {
-  /// <summary>
-  /// Доступность кнопки.
-  /// true если к данному типу объектов можно прикрепить электронные подписи связью Подпись
-  /// </summary>
-  /// <param name="button">The button.</param>
-  /// <param name="form">The form.</param>
-  /// <returns></returns>
   public bool ButtonEnabled(object button, object form)
   {
     bool flag = false;
@@ -59,9 +50,6 @@ public class SignUpActionHandler : IFormDesignerActionHandler
     return flag;
   }
 
-  /// <summary>Собитие на нажатие кнопки.</summary>
-  /// <param name="button">Кнопка (AttrButton)</param>
-  /// <param name="form">Форма (DesForm)</param>
   public void ButtonPressed(object button, object form)
   {
     if (!(form is DesForm desForm))

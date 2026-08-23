@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignQuestion
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces;
 using Intermech.Interfaces.Client;
@@ -18,21 +17,12 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>форма для подтверждения факта подписания объекта</summary>
 public class SignQuestion : Form
 {
   private List<string> messageText;
-  /// <summary>
-  /// В каком виде показывать диалог подписания
-  /// true - скрыть поле Резолюция,
-  /// false - отобразить поле Резолюция
-  /// </summary>
   private bool isCollapsed;
-  /// <summary>Значение атрибута Резолюция</summary>
   private string resolution = string.Empty;
-  /// <summary>Размер атрибута Резолюция.</summary>
   private readonly long attrResolutionSize;
-  /// <summary>Required designer variable.</summary>
   private IContainer components;
   private PictureBox pictureBox1;
   private Button btnOk;
@@ -45,18 +35,12 @@ public class SignQuestion : Form
   private Panel panel2;
   private Panel panel3;
 
-  /// <summary>Значение атрибута Резолюция</summary>
   public string Resolution
   {
     get => this.resolution;
     set => this.resolution = value;
   }
 
-  /// <summary>
-  /// В каком виде показывать диалог подписания
-  /// true - скрыть поле Резолюция,
-  /// false - отобразить поле Резолюция
-  /// </summary>
   public bool IsCollapsed
   {
     get => this.isCollapsed;
@@ -67,7 +51,6 @@ public class SignQuestion : Form
     }
   }
 
-  /// <summary>текст-предупреждение для пользователя</summary>
   public List<string> MessageText
   {
     get => this.messageText;
@@ -81,7 +64,6 @@ public class SignQuestion : Form
     }
   }
 
-  /// <summary>конструктор</summary>
   public SignQuestion()
   {
     this.InitializeComponent();
@@ -131,8 +113,6 @@ public class SignQuestion : Form
   {
   }
 
-  /// <summary>Clean up any resources being used.</summary>
-  /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -140,10 +120,6 @@ public class SignQuestion : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (SignQuestion));

@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetProperties
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Interfaces;
@@ -18,18 +17,13 @@ using System.Drawing.Design;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Общие настройки Удостоверяющих листов</summary>
 internal class CertSheetProperties
 {
-  /// <summary>Бланк удостоверяющих листов</summary>
   private long _BlankObjectId = -1;
-  /// <summary>атрибут для графы 9</summary>
   private int _g09AttributeId;
-  /// <summary>атрибут для графы 10</summary>
   private int _g10AttributeId;
   private CertSheetGraphSortMethod _CertSheetGraphSortMethod;
   private string _CertSheetCommonFolder = LocalizationHolder.rm.GetString(nameof (CertSheetCommonFolder));
-  /// <summary>выводить только актуальные подписи</summary>
   private bool _ActualSignsOnly;
   internal bool _inited;
 

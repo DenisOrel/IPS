@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SelectUser
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Localization;
 using System;
@@ -13,7 +12,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Окно ввода информации пользователя (Имя и пароль)</summary>
 public class SelectUser : Form
 {
   private Panel panel1;
@@ -29,19 +27,12 @@ public class SelectUser : Form
   private Panel panel4;
   private System.ComponentModel.Container components;
 
-  /// <summary>Конструктор</summary>
   public SelectUser() => this.InitializeComponent();
 
-  /// <summary>Возвращает имя(логин) пользователя</summary>
   public string UserName => this.textBox1.Text;
 
-  /// <summary>Возвращает пароль пользователя</summary>
   public string Password => this.textBox2.Text;
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="disposing"></param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -49,10 +40,6 @@ public class SelectUser : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (SelectUser));
@@ -127,7 +114,6 @@ public class SelectUser : Form
     this.PerformLayout();
   }
 
-  /// <summary>Кнопка "Ок"</summary>
   private void button1_Click(object sender, EventArgs e)
   {
     if (!this.textBox1.Text.Equals(string.Empty))

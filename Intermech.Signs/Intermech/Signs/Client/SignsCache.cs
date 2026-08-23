@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsCache
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Extensions;
@@ -21,14 +20,10 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Класс для кэша</summary>
 public class SignsCache
 {
-  /// <summary>Кэш "Возможные графы для подписей"</summary>
   public static Dictionary<string, string> PossibleGraphs = new Dictionary<string, string>();
-  /// <summary>Кэш "Карточка подписей пользователя"</summary>
   public static SignsCard UserSignsCard = (SignsCard) null;
-  /// <summary>Колонки на закладке "Подписи"</summary>
   public static Hashtable SignsViewColumns = new Hashtable();
   private static SortedList SignsCardCache = new SortedList();
   internal static int appId = 353;
@@ -644,9 +639,6 @@ public class SignsCache
     }
   };
 
-  /// <summary>Разбор таблицы в значения</summary>
-  /// <param name="data">таблица</param>
-  /// <returns></returns>
   public static Dictionary<string, string> ParsePossibleGraphs(DataTable data)
   {
     Dictionary<string, string> possibleGraphs = new Dictionary<string, string>();
@@ -664,18 +656,11 @@ public class SignsCache
     return possibleGraphs;
   }
 
-  /// <summary>Загрузка карточки пользователя</summary>
-  /// <param name="session">сессия подключения к базе</param>
-  /// <param name="userID">Идентификатор пользователя</param>
   public static SignsCard LoadUserGraphInfo(IUserSession session, long userID)
   {
     return SignsCache.LoadUserGraphInfo(session, userID, true);
   }
 
-  /// <summary>Загрузка карточки пользователя</summary>
-  /// <param name="session">Сессия подключения к базе</param>
-  /// <param name="userID">Идентификатор пользователя</param>
-  /// <param name="fromCache">Использовать cache</param>
   public static SignsCard LoadUserGraphInfo(IUserSession session, long userID, bool fromCache)
   {
     if (SignsCache.SignsCardCache.ContainsKey((object) userID) & fromCache)
@@ -705,12 +690,6 @@ public class SignsCache
     return signsCard;
   }
 
-  /// <summary>
-  /// Вернуть id юзера по имени юзера.
-  /// Или exception.
-  /// </summary>
-  /// <param name="userName"></param>
-  /// <returns></returns>
   public static long GetUserIdByUserName(string userName)
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())
@@ -738,9 +717,6 @@ public class SignsCache
     throw new InvalidLoginInfoException();
   }
 
-  /// <summary>Загрузка карточки пользователя для любого юзера</summary>
-  /// <param name="infoForSigning">Информация для подписывания</param>
-  /// <returns>Карта подписей</returns>
   public static SignsCard LoadUserGraphInfo(SignCollection infoForSigning)
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())
@@ -755,12 +731,6 @@ public class SignsCache
     throw new InvalidLoginInfoException();
   }
 
-  /// <summary>подписывание объекта</summary>
-  /// <param name="typedObjectID"> информация об объекте</param>
-  /// <param name="card"> карточка подписи пользователя </param>
-  /// <param name="rankInfo">класс с информацией о должности </param>
-  /// <param name="resolutionString">резолюции</param>
-  /// <returns></returns>
   public static bool Sign(
     IDBTypedObjectID typedObjectID,
     SignsCard card,
@@ -773,12 +743,6 @@ public class SignsCache
     }, card, out rankInfo, out resolutionString);
   }
 
-  /// <summary>Проверка условий для подписывания объектов</summary>
-  /// <param name="typedObjectIDs">Объекты для подписания</param>
-  /// <param name="card">Карточка подписей пользователя</param>
-  /// <param name="rankInfo">Информация для подписания</param>
-  /// <param name="resolutionString"> резолюция </param>
-  /// <returns>Если true, то все условия для подписания выполнены</returns>
   public static bool Sign(
     List<IDBTypedObjectID> typedObjectIDs,
     SignsCard card,
@@ -874,17 +838,12 @@ public class SignsCache
     return false;
   }
 
-  /// <summary>очистка кэша (серверного в том числе)</summary>
   public static void ClearCache(IUserSession session)
   {
     SignsCache.SignsCardCache.Clear();
     (session.GetCustomService(typeof (ISignsService)) as ISignsService).CleanCache();
   }
 
-  /// <summary>
-  /// Возвращает набор граф для подписи, в которых требуется подписание объектов, идентификаторы которых перечислены в ObjectIDs.
-  /// Для этого производится поиск всех активных действий "Утверждение" в почте текущего пользователя, содержащих данные объекты как вложения.
-  /// </summary>
   public static GraphsSet GetGraphsToSign(List<IDBTypedObjectID> typedObjectIDs)
   {
     GraphsSet graphsToSign = (GraphsSet) null;

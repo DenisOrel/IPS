@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsCommands
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Interfaces;
@@ -23,11 +22,8 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Реализация команд подписания</summary>
 public class SignsCommands
 {
-  /// <summary>Команда "Подписать"</summary>
-  /// <param name="typedObjectIDs">Подписываемые объекты</param>
   public static bool SignUpCommand(List<IDBTypedObjectID> typedObjectIDs)
   {
     SignCollection infoForSigning = new SignCollection();
@@ -59,8 +55,6 @@ public class SignsCommands
     return false;
   }
 
-  /// <summary>Команда "Подписать как"</summary>
-  /// <param name="typedObjectIDs"></param>
   public static void SignAsCommand(List<IDBTypedObjectID> typedObjectIDs)
   {
     SignCollection infoForSigning = new SignCollection();
@@ -119,8 +113,6 @@ public class SignsCommands
     }
   }
 
-  /// <summary>Команда "ЭЦП"</summary>
-  /// <param name="typedObjectIDs"></param>
   public static void CryptoSignUp(List<IDBTypedObjectID> typedObjectIDs)
   {
     UserRankInformation[] rankInfo = (UserRankInformation[]) null;
@@ -346,13 +338,6 @@ public class SignsCommands
     }
   }
 
-  /// <summary>
-  /// Получения данных для подписывания : старая функция для криптоподписей ниже HashVersionsCrypto.Version4
-  /// Используется только для поддержки проверки старых версий подписи.
-  /// </summary>
-  /// <param name="dbObject">Объект для получения данных</param>
-  /// <param name="versionID">Версия подписи</param>
-  /// <returns></returns>
   private static byte[] GetObjectHashData(
     IDBObject dbObject,
     int versionID,

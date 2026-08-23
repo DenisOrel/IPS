@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SelectOpenKey
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Interfaces;
@@ -17,7 +16,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Форма для выбора открытого ключа пользователя</summary>
 public class SelectOpenKey : Form
 {
   private System.ComponentModel.Container components;
@@ -29,7 +27,6 @@ public class SelectOpenKey : Form
   private object _value;
   private SelectOpenKeyValueType _valueType;
 
-  /// <summary>Конструктор</summary>
   public SelectOpenKey(OpenKeysCollection collection)
   {
     this.InitializeComponent();
@@ -40,10 +37,6 @@ public class SelectOpenKey : Form
     this._property.SelectedObject = (object) new OpenKeyClassWrapper(collection.Values);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="disposing"></param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -51,10 +44,6 @@ public class SelectOpenKey : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (SelectOpenKey));
@@ -130,10 +119,8 @@ public class SelectOpenKey : Form
     }
   }
 
-  /// <summary>Возвращает тип выбранного значения</summary>
   public SelectOpenKeyValueType ValueType => this._valueType;
 
-  /// <summary>Возвращает выбранное значение</summary>
   public object Value => this._value;
 
   private void button1_Click(object sender, EventArgs e)

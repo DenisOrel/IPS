@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignControlPropertyEditorForm
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Interfaces;
@@ -21,9 +20,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// Форма редактирования настройки подписей для типов объекта
-/// </summary>
 internal class SignControlPropertyEditorForm : Form
 {
   private System.ComponentModel.Container components;
@@ -56,7 +52,6 @@ internal class SignControlPropertyEditorForm : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>Класс настройки подписей</summary>
   public SignControlPropertyClass SignControlPropertyClass
   {
     get
@@ -75,7 +70,6 @@ internal class SignControlPropertyEditorForm : Form
     }
   }
 
-  /// <summary>Информация только для просмотра (никаких изменений)</summary>
   public bool ReadOnly
   {
     set
@@ -86,10 +80,6 @@ internal class SignControlPropertyEditorForm : Form
     get => this._control.ReadOnly;
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (SignControlPropertyEditorForm));

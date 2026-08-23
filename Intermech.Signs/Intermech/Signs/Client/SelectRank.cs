@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SelectRank
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Controls;
@@ -20,7 +19,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Окно выбора должности</summary>
 public class SelectRank : Form
 {
   private Panel _bottom;
@@ -32,11 +30,6 @@ public class SelectRank : Form
   private ImageList imageList;
   private GraphsSet hintGraphSet;
 
-  /// <summary>Конструктор</summary>
-  /// <param name="rankIDs">Список должностей пользователя</param>
-  /// <param name="typedObjectIDs">Массив выбранных объектов для подписания</param>
-  /// <param name="card">Карточка пользователя</param>
-  /// <param name="hintGraphSet">Набор граф, которые могут быть подписаны в конкретном контексте использования - для подсказки пользователю. Может быть null.</param>
   public SelectRank(
     List<long> rankIDs,
     List<IDBTypedObjectID> typedObjectIDs,
@@ -49,10 +42,6 @@ public class SelectRank : Form
     this.LoadList(rankIDs, typedObjectIDs, card);
   }
 
-  /// <summary>Згрузка должностей в список для выбора</summary>
-  /// <param name="rankIDs">список должностей пользователя</param>
-  /// <param name="typedObjectIDs">Массив выбранных объектов для подписания</param>
-  /// <param name="card">Карточка пользователя</param>
   private void LoadList(List<long> rankIDs, List<IDBTypedObjectID> typedObjectIDs, SignsCard card)
   {
     this._Box.BeginUpdate();
@@ -109,7 +98,6 @@ public class SelectRank : Form
     this._Box.ExpandAll();
   }
 
-  /// <summary>Список выбранных фич</summary>
   public ArrayList SelectedItems
   {
     get
@@ -121,9 +109,6 @@ public class SelectRank : Form
     }
   }
 
-  /// <summary>Получение списка выделенных граф с должностями</summary>
-  /// <param name="list">Список для помещения информации</param>
-  /// <param name="node">Текущий нод дерева</param>
   private void GetSelectedItems(ArrayList list, TreeNode node)
   {
     if (node != null && node.Tag is UserRankInformation && node.Checked)
@@ -156,10 +141,6 @@ public class SelectRank : Form
       this.GetSelectedItems(list, node1);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="disposing"></param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -167,10 +148,6 @@ public class SelectRank : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     this.components = (IContainer) new System.ComponentModel.Container();

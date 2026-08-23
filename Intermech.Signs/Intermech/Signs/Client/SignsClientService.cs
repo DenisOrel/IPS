@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsClientService
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Interfaces;
@@ -17,11 +16,6 @@ namespace Intermech.Signs.Client;
 
 internal class SignsClientService : ISignsClientService
 {
-  /// <summary>
-  /// Предлагает юзеру выбрать в каких графах и должностях нужно подписывать или создавать замечания для объекта objectID.
-  /// </summary>
-  /// <param name="objectID">Идентификатор версии объекта.</param>
-  /// <returns>Массив с информацией о выбранных должностях и графах. Массив пустой, если юзер ничего не выбрал или отменил выбор.</returns>
   public RankGraphsInfo[] ShowUserGraphsDialog(long objectID)
   {
     List<IDBTypedObjectID> typedObjectIDs = new List<IDBTypedObjectID>();
@@ -33,11 +27,6 @@ internal class SignsClientService : ISignsClientService
     return this.ShowUserGraphsDialog(typedObjectIDs);
   }
 
-  /// <summary>
-  /// Предлагает юзеру выбрать в каких графах и должностях нужно подписывать или создавать замечания для объектов typedObjectIDs.
-  /// </summary>
-  /// <param name="typedObjectIDs">Список версий объектов.</param>
-  /// <returns>Массив с информацией о выбранных должностях и графах. Массив пустой, если юзер ничего не выбрал или отменил выбор.</returns>
   public RankGraphsInfo[] ShowUserGraphsDialog(List<IDBTypedObjectID> typedObjectIDs)
   {
     UserRankInformation[] userRankInformationArray = (UserRankInformation[]) null;
@@ -88,11 +77,6 @@ internal class SignsClientService : ISignsClientService
     return rankGraphsInfoArray;
   }
 
-  /// <summary>
-  /// Возвращает массив граф, в которых текущий пользователь может подписать объект objectID. Если objectID == 0, то возвращает весь список граф для данного юзера от всех его должностей.
-  /// </summary>
-  /// <param name="objectID">Ид. версии объекта.</param>
-  /// <returns>Массив граф в виде строкового идентификатора графы и его расшифровки&gt;.</returns>
   public Tuple<string, string>[] GetUserGraphs(long objectID)
   {
     List<string> result;
@@ -141,11 +125,6 @@ internal class SignsClientService : ISignsClientService
     return tupleArray;
   }
 
-  /// <summary>
-  /// Метод добавляет в список строк result строки из add_graphs, которых ещё нет в result
-  /// </summary>
-  /// <param name="result">Итоговый список строк.</param>
-  /// <param name="add_graphs">Добавляемые строки.</param>
   private void AddGraphs(List<string> result, List<string> add_graphs)
   {
     for (int index = 0; index < add_graphs.Count; ++index)

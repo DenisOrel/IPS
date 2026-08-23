@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.CertSheetProcessor
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Checksums;
 using Intermech.Client.Core;
@@ -28,61 +27,23 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// Класс, выполняющий обработку УЛ в соответствии с выставленными параметрами (как непосредственно через properties, так и через визуальный контрол)
-/// </summary>
 public class CertSheetProcessor : ISaveToDiskProcessor
 {
-  /// <summary>
-  /// идентификатор объекта-бланка удостоверяющих листов.
-  /// -1, если не найден
-  /// </summary>
   private long certSheetBlankObjectId = CertSheetProcessor.GetCertSheetBlankId();
   public static readonly Guid FileSizeSystemAttributeGuid = new Guid("cadd9973-306c-11d8-b4e9-00304f19f545");
   public static readonly Guid FileDateSystemAttributeGuid = new Guid("cadd9974-306c-11d8-b4e9-00304f19f545");
-  /// <summary>
-  /// Атрибут (guid) для заполнения графы 9
-  /// Guid.Empty, если пуст
-  /// </summary>
   private Guid certSheetG09AttributeGuid = Guid.Empty;
-  /// <summary>
-  /// Атрибут для заполнения графы 9
-  /// 0, если пуст
-  /// </summary>
   private int certSheetG09AttributeId;
-  /// <summary>
-  /// Атрибут (guid) для заполнения графы 10
-  /// Guid.Empty, если пуст
-  /// </summary>
   private Guid certSheetG10AttributeGuid = Guid.Empty;
-  /// <summary>
-  /// Атрибут для заполнения графы 10
-  /// 0, если пуст
-  /// </summary>
   private int certSheetG10AttributeId;
-  /// <summary>
-  /// Имя общей папки для сохранения удостоверяющих листов при выполнении команды "Сохранить на диск"
-  /// </summary>
   private string certSheetCommonFolderName = CertSheetProcessor.GetCertSheetCommonFolderName();
-  /// <summary>Вывод только актуальных подписей</summary>
   private bool actualSignsOnly = CertSheetProcessor.GetActualSignsOnly();
-  /// <summary>
-  /// тихий режим, не спрашивать у пользователя в спорных случаях, действия по умолчанию
-  /// </summary>
   private bool silentMode;
   private ExpiredAuthFileUsing expiredAuthFileUsing;
-  /// <summary>Опции из контрола настройки получения УЛ</summary>
   private CertSheetOptions certSheetOptions;
   private CertSheetGraphSortMethod certSheetGraphSortMethod;
-  /// <summary>
-  /// все графы для подписей в системе парами object[]{string id, string description}
-  /// </summary>
   private List<object[]> graphList = CertSheetProcessor.GetGraphs();
-  /// <summary>
-  /// Максимальное количество документов, при которых допускается чтение граф для подписей по отдельным документам
-  /// </summary>
   public static int MaxDocsForSeparateGraphsRead = 10;
-  /// <summary>кэш</summary>
   private static List<string> allExtensionsList = (List<string>) null;
 
   private static bool GetActualSignsOnly()
@@ -90,9 +51,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return (ServicesManager.GetService(typeof (IDBConfigurations)) as IDBConfigurations).ReadBool("CLIENT", "CERTSHEETS", "ACTUALSIGNSONLY", CertSheetHolder.DefaultParamActualSignsOnly, DBConfigMode.GlobalOnly);
   }
 
-  /// <summary>
-  /// В случае пустого конструктора производить назначение property по отдельности
-  /// </summary>
   public CertSheetProcessor()
   {
     this.certSheetGraphSortMethod = (CertSheetGraphSortMethod) (ServicesManager.GetService(typeof (IDBConfigurations)) as IDBConfigurations).ReadInteger("CLIENT", "CERTSHEETS", "CERTSHEETGRAPHSORT", Convert.ToInt64((object) CertSheetGraphSortMethod.ByDefault), DBConfigMode.GlobalOnly);
@@ -100,20 +58,12 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     this.certSheetG10AttributeId = CertSheetProcessor.GetCertSheetG10AttributeId(out this.certSheetG10AttributeGuid);
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="certSheetOptions">контрол с опциями получения УЛ</param>
-  /// <param name="SaveToDiskOptions">дополнительные настройки для сохранения на диск. при открытии без сохранения null</param>
   public CertSheetProcessor(CertSheetOptions certSheetOptions)
     : this()
   {
     this.certSheetOptions = certSheetOptions;
   }
 
-  /// <summary>Вернуть обозначение сформированного документа УЛ</summary>
-  /// <param name="imDocument"></param>
-  /// <returns></returns>
   public static string GetCertSheetDesignation(ImDocument imDocument)
   {
     if (imDocument == null)
@@ -145,7 +95,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return this.CreateCertSheets(true, ref lExpiredAuthFileUsing);
   }
 
-  /// <summary>Функция получения УЛ</summary>
   public List<ImDocument> CreateCertSheets(
     bool silent,
     ref ExpiredAuthFileUsing lExpiredAuthFileUsing)
@@ -240,18 +189,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     }
   }
 
-  /// <summary>
-  /// записать в документ информацию по отдельному документу, его файлам и подписям
-  /// </summary>
-  /// <param name="certSheetTemplate"></param>
-  /// <param name="certSheet_Top_Table"></param>
-  /// <param name="objId"></param>
-  /// <param name="nn"></param>
-  /// <param name="docDesignation"></param>
-  /// <param name="docDescription"></param>
-  /// <param name="docVersion"></param>
-  /// <param name="docChangeNo"></param>
-  /// <returns></returns>
   private bool FillDocumentCustom(
     CertSheetTemplate certSheetTemplate,
     TableElement certSheet_Top_Table,
@@ -312,14 +249,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return this.FillDocumentCustom(certSheetTemplate, certSheet_Top_Table, objId, ref nn, ref doc_n, out string _, out string _, out string _, out string _);
   }
 
-  /// <summary>заполняем шапку</summary>
-  /// <param name="certSheetTemplate"></param>
-  /// <param name="certSheet_Top_Table"></param>
-  /// <param name="nn"></param>
-  /// <param name="docDesignation"></param>
-  /// <param name="docDescription"></param>
-  /// <param name="docVersion"></param>
-  /// <param name="docChangeNo"></param>
   private void FillBodyBlock(
     CertSheetTemplate certSheetTemplate,
     TableElement certSheet_Top_Table,
@@ -344,11 +273,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     ((TextData) docBody.FindFirstNodeFromTemplate_Recursive(CertSheetConsts.Doc_ChangeNo)).AssignText(docChangeNo, false, false, false);
   }
 
-  /// <summary>
-  /// получить список индексов файлового атрибута, которые можно использовать
-  /// </summary>
-  /// <param name="iFileAttribute"></param>
-  /// <returns></returns>
   private List<int> GetValidFileIndexes(
     IDBObject iDBObject,
     IDBAttribute iFileAttribute,
@@ -414,9 +338,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return validFileIndexes;
   }
 
-  /// <summary>Заполняем блок файлов</summary>
-  /// <param name="certSheetTemplate"></param>
-  /// <param name="iFileAttribute"></param>
   private void FillFileChecksumBlock(
     CertSheetTemplate certSheetTemplate,
     TableElement certSheet_Top_Table,
@@ -525,10 +446,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return objectAttributeValue;
   }
 
-  /// <summary>Заполняем блок подписей</summary>
-  /// <param name="certSheetTemplate"></param>
-  /// <param name="certSheet_Top_Table"></param>
-  /// <param name="docObj"></param>
   private void FillSignsBlock(
     CertSheetTemplate certSheetTemplate,
     TableElement certSheet_Top_Table,
@@ -637,21 +554,11 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     certSheet_Top_Table.AddChildNode((DocumentTreeNode) empty, false, false);
   }
 
-  /// <summary>заполняем штамп</summary>
-  /// <param name="docCertsheet"></param>
-  /// <param name="stampDesignation"></param>
   private void FillStampBlock(TableElement certSheet_Stamp, string stampDesignation)
   {
     ((TextData) certSheet_Stamp.FindFirstNodeFromTemplate_Recursive(CertSheetConsts.CertSheet_Designation)).AssignText(stampDesignation, false, false, false);
   }
 
-  /// <summary>вернуть главные атрибуты объекта</summary>
-  /// <param name="docId"></param>
-  /// <param name="docDesignation"></param>
-  /// <param name="docDescription"></param>
-  /// <param name="docVersion"></param>
-  /// <param name="docChangeNo"></param>
-  /// <returns></returns>
   private IDBObject GetDocumentAttributes(
     IUserSession session,
     long docId,
@@ -685,10 +592,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     int num = (int) IMMessageBox.Show(MessageDialogs.msgError, string.Format(LocalizationHolder.rm.GetString("CertSheetBlankFieldNotFound"), (object) field), MessageBoxButtons.OK, IMMessageBoxImage.Error);
   }
 
-  /// <summary>Сохранение УЛ на диск в формате pdf</summary>
-  /// <param name="iSaveToDiskClass">опции сохранения, в частности, базовая папка для сохранения</param>
-  /// <param name="folder">конкретная папка сохранения документов для конкретно данного объекта</param>
-  /// <param name="objectID"></param>
   public void Save(ISaveToDiskClass iSaveToDiskClass, string folder, long objectID)
   {
     if (iSaveToDiskClass == null || this.certSheetOptions == null || !this.certSheetOptions.ProcessCertSheets || !Directory.Exists(iSaveToDiskClass.SelectedPath) || !Directory.Exists(folder))
@@ -713,8 +616,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     }
   }
 
-  /// <summary>Вернуть id бланка УЛ</summary>
-  /// <returns>-1, если не назначен</returns>
   private static long GetCertSheetBlankId()
   {
     long certSheetBlankId = -1;
@@ -771,10 +672,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return sheetG10AttributeId;
   }
 
-  /// <summary>
-  /// Вернуть все графы для подписей в системе парами object[]{string id, string description}
-  /// </summary>
-  /// <returns></returns>
   public static List<object[]> GetGraphs()
   {
     List<object[]> graphs = new List<object[]>();
@@ -788,12 +685,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return graphs;
   }
 
-  /// <summary>
-  /// Вернуть список граф в виде пар object[]{string id, string description}, имеющихся в подписях у объектов objVerList
-  /// При большом количестве документов вернуть все графы для подписей в системе.
-  /// </summary>
-  /// <param name="objVerList">при null вернуть все графы в системе</param>
-  /// <returns></returns>
   public static List<object[]> GetGraphs(List<long> objVerList)
   {
     List<object[]> graphs = CertSheetProcessor.GetGraphs();
@@ -839,8 +730,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return graphs;
   }
 
-  /// <summary>Вернуть список всех расширений для всех документов</summary>
-  /// <returns></returns>
   public static List<string> GetExtensions()
   {
     if (CertSheetProcessor.allExtensionsList != null)
@@ -854,11 +743,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return CertSheetProcessor.allExtensionsList;
   }
 
-  /// <summary>
-  /// Вернуть список расширений для основных файлов (normal) документов
-  /// </summary>
-  /// <param name="docVerList">список идентификаторов версий объектов документов</param>
-  /// <returns>список ".ext1" ".ext2" ".ext3"</returns>
   public static List<string> GetExtensions(List<long> docVerList)
   {
     if (docVerList == null)
@@ -878,11 +762,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return list;
   }
 
-  /// <summary>
-  /// добавить расширения из настроек для типа документтов docObjType в список list
-  /// </summary>
-  /// <param name="docObjType"></param>
-  /// <param name="list"></param>
   private static void AddDTSToList(int docObjType, List<string> list)
   {
     DocumentTypeSettings settings = DocumentTypeSettingsCache.GetSettings(docObjType);
@@ -903,34 +782,21 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     }
   }
 
-  /// <summary>Вернуть список расширений для аутентичных файлов</summary>
-  /// <returns>список ".ext1" ".ext2" ".ext3"</returns>
   public static List<string> GetPossibleExtensions4AuthFiles()
   {
     return DocumentTypeSettings.SplitAdditionalFileExts((ServicesManager.GetService(typeof (IDBConfigurations)) as IDBConfigurations).ReadString("CLIENT", "AUTHFILES", "AUTHFILESEXTENSIONS", "", DBConfigMode.GlobalOnly));
   }
 
-  /// <summary>
-  /// Развернуть извещения, если они попадутся в списке документов
-  /// </summary>
-  /// <param name="objectId"></param>
-  /// <returns>документы, изделия</returns>
   public static List<long> ExpandECO(long objectId)
   {
     return CertSheetProcessor.ExpandObjectsByRelation(objectId, CertSheetCache.ECORelationTypeID, true);
   }
 
-  /// <summary>Развернуть состав первого уровня для изделия</summary>
-  /// <param name="objectId">идентификатор изделия</param>
-  /// <returns>документы, изделия</returns>
   public static List<long> ExpandComposition(long objectId)
   {
     return CertSheetProcessor.ExpandObjectsByRelation(objectId, CertSheetCache.CompositionRelationTypeID, true);
   }
 
-  /// <summary>Развернуть спецификацию</summary>
-  /// <param name="objectId"></param>
-  /// <returns></returns>
   public static List<long> ExpandSpecification(long objectId, bool withComposition)
   {
     List<long> longList1 = CertSheetProcessor.ExpandObjectsByRelation(objectId, CertSheetCache.DocumentationRelationTypeID, false);
@@ -948,10 +814,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return longList1;
   }
 
-  /// <summary>Получить объекты по связи reltypeId для objectId</summary>
-  /// <param name="objectId"></param>
-  /// <param name="reltypeId"></param>
-  /// <returns>объекты</returns>
   private static List<long> ExpandObjectsByRelation(long objectId, int reltypeId, bool consist)
   {
     List<long> longList = new List<long>();
@@ -971,14 +833,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return longList;
   }
 
-  /// <summary>
-  /// Головная функция по раскрутке документа - извещения или спецификации.
-  /// Для иного объекта возвращает список документов на объект.
-  /// </summary>
-  /// <param name="objectId"></param>
-  /// <param name="expandECO"></param>
-  /// <param name="expandComposition"></param>
-  /// <returns></returns>
   public static CertSheetData ExpandObjectToDocs(
     long objectId,
     bool expandECO,
@@ -1021,11 +875,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return data;
   }
 
-  /// <summary>
-  /// Дополнить список документов docList документами из списка документов и изделий docOrObjList
-  /// </summary>
-  /// <param name="docList"></param>
-  /// <param name="docOrObjList"></param>
   private static void ExtractDocs(CertSheetData data, List<long> docOrObjList)
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())
@@ -1047,12 +896,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     }
   }
 
-  /// <summary>
-  /// найти список документов на объект по связи "Документация на изделие".
-  /// объект может быть любым: сборкой, извещением, изделием, в том числе самим документом (для документа он же и возвращается).
-  /// </summary>
-  /// <param name="objectId"></param>
-  /// <returns></returns>
   public static List<long> GetDocumentsForObject(long objectId)
   {
     List<long> documentsForObject = new List<long>();
@@ -1076,13 +919,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return documentsForObject;
   }
 
-  /// <summary>
-  /// Вернуть идентификатор объекта, на котором висят подписи к документу documentId.
-  /// Если у документа documentId имеется атрибут "cad001a6", то по ссылке из этого атрибута есть объект, на котором висят подписи.
-  /// Если атрибута нет, то подписи на самом документе.
-  /// </summary>
-  /// <param name="documentId"></param>
-  /// <returns>-1 - не найден;</returns>
   public long GetSignedObject(long documentId)
   {
     long signedObject = documentId;
@@ -1102,11 +938,6 @@ public class CertSheetProcessor : ISaveToDiskProcessor
     return signedObject;
   }
 
-  /// <summary>
-  /// Вернуть список объектов подписей для объекта по связи "Подписи".
-  /// </summary>
-  /// <param name="objectId">идентификатор объекта, к которому привязаны подписи</param>
-  /// <returns></returns>
   public List<long> GetSigns(long objectId)
   {
     return CertSheetProcessor.ExpandObjectsByRelation(objectId, CertSheetCache.SignsRelationTypeID, true);

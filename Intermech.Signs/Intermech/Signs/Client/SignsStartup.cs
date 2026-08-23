@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsStartup
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using ImSSP;
 using Intermech.Bars;
@@ -33,13 +32,11 @@ using System.Xml;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Загрузочный класс для плагина "Подписи"</summary>
 public class SignsStartup : IPackage, IConfigurable
 {
   private IServiceProvider _serviceProvider;
   private CertSheetSaveToDiskPageProvider certSheetSaveToDiskPageProvider;
 
-  /// <summary>Выгрузка плагина</summary>
   public void Unload()
   {
     (ServicesManager.GetService(typeof (IObjectCreatorService)) as IObjectCreatorService).BeforeDraftCreateEvent -= new BeforeDraftCreateEventHandler(this.creatorService_ObjectCreatorBeforeDraftCreateEvent);
@@ -49,11 +46,8 @@ public class SignsStartup : IPackage, IConfigurable
     service.UnregisterProvider((ISaveToDiskPageProvider) this.certSheetSaveToDiskPageProvider);
   }
 
-  /// <summary>Заголовок плагина</summary>
   public string Name => LocalizationHolder.rm.GetString("Signs_92");
 
-  /// <summary>Загрузка плагина</summary>
-  /// <param name="serviceProvider"></param>
   public void Load(IServiceProvider serviceProvider)
   {
     this._serviceProvider = serviceProvider;
@@ -142,15 +136,10 @@ public class SignsStartup : IPackage, IConfigurable
     }
   }
 
-  /// <summary>Загрузка конфигурации</summary>
-  /// <param name="configurationManager">интерфейс менеджера конфигураций</param>
   public void LoadConfiguration(IConfigurationManager configurationManager) => this.LoadColumns();
 
-  /// <summary>Сохранение конфигурации</summary>
-  /// <param name="configurationManager">интерфейс менеджера конфигураций</param>
   public void SaveConfiguration(IConfigurationManager configurationManager) => this.SaveColumns();
 
-  /// <summary>Загрузка ширины колонок из конфигурации пользователя</summary>
   private void LoadColumns()
   {
     byte[] config_file;
@@ -171,8 +160,6 @@ public class SignsStartup : IPackage, IConfigurable
     }
   }
 
-  /// <summary>Разбор XmlNode'ов</summary>
-  /// <param name="node">XmlNode для разбора</param>
   private void ParseXml(XmlNode node)
   {
     if (node.Name.Equals("SignsViewColumns"))
@@ -187,7 +174,6 @@ public class SignsStartup : IPackage, IConfigurable
     SignsCache.SignsViewColumns[(object) key] = (object) int32;
   }
 
-  /// <summary>Сохранение ширины колонок в конфигурацию пользователя</summary>
   private void SaveColumns()
   {
     XmlDocument xmlDocument = new XmlDocument();
@@ -252,9 +238,6 @@ public class SignsStartup : IPackage, IConfigurable
     }
   }
 
-  /// <summary>
-  /// Регистрируем обработчик для обработки экспорта объектов
-  /// </summary>
   private void creatorService_ObjectCreatorBeforeDraftCreateEvent(
     object sender,
     BeforeDraftCreateEventArgs e)

@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SelectGraphs
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Client.Core;
 using Intermech.Interfaces;
@@ -18,7 +17,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Окно выбора граф для подписи</summary>
 public class SelectGraphs : Form
 {
   private Panel panel1;
@@ -30,15 +28,10 @@ public class SelectGraphs : Form
   private System.ComponentModel.Container components;
   private List<SelectGraphs.Value2Description> _list = new List<SelectGraphs.Value2Description>();
 
-  /// <summary>событие на изменение пользователем набора граф</summary>
   public event EventHandler OnButtonApllyChange;
 
-  /// <summary>кол-во выбранных граф для подписания</summary>
   public int SelectedGraphs => this._Box.CheckedItems.Count;
 
-  /// <summary>
-  /// Создание окна (колонки беруться из атрибута "Графы для подписей")
-  /// </summary>
   public SelectGraphs()
   {
     this.InitializeComponent();
@@ -46,7 +39,6 @@ public class SelectGraphs : Form
     this._bUpdate_Click((object) null, (EventArgs) null);
   }
 
-  /// <summary>Коллекция выбранных колонок</summary>
   public ICollection SelectedList
   {
     get
@@ -58,7 +50,6 @@ public class SelectGraphs : Form
     }
   }
 
-  /// <summary>Загрузка колонок в список для выбора</summary>
   private void LoadValues()
   {
     this._Box.BeginUpdate();
@@ -74,10 +65,6 @@ public class SelectGraphs : Form
     }
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="disposing"></param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -85,10 +72,6 @@ public class SelectGraphs : Form
     base.Dispose(disposing);
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (SelectGraphs));
@@ -140,10 +123,6 @@ public class SelectGraphs : Form
     this.PerformLayout();
   }
 
-  /// <summary>
-  /// Обновление списка из атрибута "Графы для подписей"
-  /// Походу обновляется также кэш возможных колонок
-  /// </summary>
   private void _bUpdate_Click(object sender, EventArgs e) => this.ListUpdate();
 
   private void SelectGraphs_Load(object sender, EventArgs e)
@@ -156,8 +135,6 @@ public class SelectGraphs : Form
     FormStorage.SaveLayout((Control) this);
   }
 
-  /// <summary>Для корректного размещения формы</summary>
-  /// <param name="parent"></param>
   public void SetParent(Control parent)
   {
     this.TopLevel = false;
@@ -173,9 +150,6 @@ public class SelectGraphs : Form
     this._bApply.Visible = false;
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
   public void ListUpdate()
   {
     using (SessionKeeper sessionKeeper = new SessionKeeper())

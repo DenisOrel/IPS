@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignsUserPropertiesPage
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.Interfaces.Client;
 using Intermech.Localization;
@@ -17,7 +16,6 @@ namespace Intermech.Signs.Client;
 
 public class SignsUserPropertiesPage : IPropertyPage, IPropertyPageSearchOptionEvents
 {
-  /// <summary>Контейнер сервисов</summary>
   private IServiceProvider _provider;
   private SignsUserProperties _props;
   private ClassWrapperForPropertyGrid _object;

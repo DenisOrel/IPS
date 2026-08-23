@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.SignControl
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using DevExpress.IM.XtraEditors;
 using DevExpress.IM.XtraEditors.Controls;
@@ -24,10 +23,6 @@ using System.Windows.Forms;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>
-/// Контрол для настройки подписей (на архива и на типы объектов)
-/// + уровни продвижения
-/// </summary>
 public class SignControl : UserControl
 {
   private IContainer components;
@@ -51,10 +46,6 @@ public class SignControl : UserControl
   private Panel panel1;
   private CheckBox _cbII;
   private TreeListNode _current;
-  /// <summary>
-  /// флаг для события FocusedColumnChanged
-  /// если true, обрабатывать событие не надо,
-  /// </summary>
   private bool isEdit;
   private MenuBarItem _menu;
   private MenuButtonItem _AddGroup;
@@ -93,17 +84,12 @@ public class SignControl : UserControl
     }
   }
 
-  /// <summary>Конструктор</summary>
   public SignControl()
   {
     this.InitializeComponent();
     this.InitMenu();
   }
 
-  /// <summary>
-  /// 
-  /// </summary>
-  /// <param name="disposing"></param>
   protected override void Dispose(bool disposing)
   {
     if (disposing && this.components != null)
@@ -111,7 +97,6 @@ public class SignControl : UserControl
     base.Dispose(disposing);
   }
 
-  /// <summary>Произоводились ли изменения</summary>
   public bool Modified
   {
     get => this._modified;
@@ -124,7 +109,6 @@ public class SignControl : UserControl
     }
   }
 
-  /// <summary>Только для просмотра</summary>
   public bool ReadOnly
   {
     set
@@ -139,14 +123,12 @@ public class SignControl : UserControl
     get => this._readonly;
   }
 
-  /// <summary>Событые на изменение содержимого, можно подписываться</summary>
   public event EventHandler OnModified
   {
     add => this._onModified += value;
     remove => this._onModified -= value;
   }
 
-  /// <summary>Набор подписей</summary>
   public GraphsSet Set
   {
     get
@@ -213,7 +195,6 @@ public class SignControl : UserControl
     }
   }
 
-  /// <summary>Оригинальный набор данных (не измененный)</summary>
   public GraphsSet OriginalSet => this._originalSet;
 
   private void InitMenu()
@@ -464,10 +445,6 @@ label_62:
     this.Modified = true;
   }
 
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
   private void InitializeComponent()
   {
     this.components = (IContainer) new System.ComponentModel.Container();

@@ -2,8 +2,7 @@
 // Type: Intermech.Signs.Client.ArchiveSignsProvider
 // Assembly: Intermech.Signs, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
 // MVID: A3C02709-D794-49CE-8C55-5624449406B7
-// Assembly location: D:\IPS\Client\Intermech.Signs.dll
-// XML documentation location: D:\IPS\Client\Intermech.Signs.xml
+// Assembly location: D:\IPS\IPS.Installer.Full\IPS.InstClient\Client\Intermech.Signs.dll
 
 using Intermech.DataFormats;
 using Intermech.Interfaces;
@@ -16,16 +15,10 @@ using System;
 #nullable disable
 namespace Intermech.Signs.Client;
 
-/// <summary>Закладка для подписей архивов</summary>
 public class ArchiveSignsProvider : IViewsProvider
 {
-  /// <summary>Зарегистрирована ли закладка</summary>
   private static bool _registeredView;
 
-  /// <summary>Получить доступные вьюшки</summary>
-  /// <param name="items">выбранные объекты</param>
-  /// <param name="services">дополнительные сервисы</param>
-  /// <returns>Информация о вьюшках</returns>
   public ViewsInfo GetViews(ISelectedItems items, IServiceProvider services)
   {
     if (!ArchiveSignsProvider._registeredView)
