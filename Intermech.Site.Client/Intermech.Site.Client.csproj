@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Site.Client.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13FFAAE5-06B3-454E-82A1-BDE7FC03C78F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Site.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_18649.cs" />
+    <Compile Include="ImSSP\sc_18665.cs" />
+    <Compile Include="ImSSP\sc_18669.cs" />
+    <Compile Include="ImSSP\sc_18513.cs" />
+    <Compile Include="ImSSP\sc_18676.cs" />
+    <Compile Include="ImSSP\sc_18497.cs" />
+    <Compile Include="ImSSP\sc_18643.cs" />
+    <Compile Include="ImSSP\sc_18518.cs" />
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\Localization\CustomDescription.cs" />
+    <Compile Include="Intermech\Localization\CustomCategory.cs" />
+    <Compile Include="Intermech\Localization\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Site\Client\AutoPublishListDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\AutoPublishListNode.cs" />
+    <Compile Include="Intermech\Site\Client\AutoPublishListBinding.cs" />
+    <Compile Include="Intermech\Site\Client\ComboPriority.cs" />
+    <Compile Include="Intermech\Site\Client\Commands.cs" />
+    <Compile Include="Intermech\Site\Client\ImportFileSelector.cs" />
+    <Compile Include="Intermech\Site\Client\IncludesForm.cs" />
+    <Compile Include="Intermech\Site\Client\OfflineImport.cs" />
+    <Compile Include="Intermech\Site\Client\PacketCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectsList.cs" />
+    <Compile Include="Intermech\Site\Client\PleaseWaitForm.cs" />
+    <Compile Include="Intermech\Site\Client\PleaseWaitFormManager.cs" />
+    <Compile Include="Intermech\Site\Client\ReceiptContentView.cs" />
+    <Compile Include="Intermech\Site\Client\ReceiptViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\SelectEnterPointForm.cs" />
+    <Compile Include="Intermech\Site\Client\Helper.cs" />
+    <Compile Include="Intermech\Site\Client\ImbaseCatalogCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\ImportForm.cs" />
+    <Compile Include="Intermech\Site\Client\ImportPacketForm.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectListForm.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectListView.cs" />
+    <Compile Include="Intermech\Site\Client\PacketsListView.cs" />
+    <Compile Include="Intermech\Site\Client\PacketContentForm.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectListQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PublishCompositionPart.cs" />
+    <Compile Include="Intermech\Site\Client\PublishCompositionQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PacketViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PacketContentView.cs" />
+    <Compile Include="Intermech\Site\Client\ReceiptContentBaseView.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectsListControl.cs" />
+    <Compile Include="Intermech\Site\Client\PublishCompositionDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PublishCompositionNode.cs" />
+    <Compile Include="Intermech\Site\Client\ListPublishObjectsDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\ListPublishObjectsNode.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTaskCreator.cs" />
+    <Compile Include="Intermech\Site\Client\SiteInfoItem.cs" />
+    <Compile Include="Intermech\Site\Client\NotToGiveItem.cs" />
+    <Compile Include="Intermech\Site\Client\CompositionType.cs" />
+    <Compile Include="Intermech\Site\Client\UnitedPublishForm.cs" />
+    <Compile Include="Intermech\Site\Client\WaitForm.cs" />
+    <Compile Include="Intermech\Site\Client\ExportSettingsPropertiesPage.cs" />
+    <Compile Include="Intermech\Site\Client\ExportSettings.cs" />
+    <Compile Include="Intermech\Site\Client\ImbaseFolderEditor.cs" />
+    <Compile Include="Intermech\Site\Client\ImbaseFolderPropertyClass.cs" />
+    <Compile Include="Intermech\Site\Client\ImportSettingsPropertiesPage.cs" />
+    <Compile Include="Intermech\Site\Client\ImportSettings.cs" />
+    <Compile Include="Intermech\Site\Client\InseparableObjectTypesEditor.cs" />
+    <Compile Include="Intermech\Site\Client\InseparableObjectTypesItem.cs" />
+    <Compile Include="Intermech\Site\Client\TransferSettings`1.cs" />
+    <Compile Include="Intermech\Site\Client\ITransferSettings.cs" />
+    <Compile Include="Intermech\Site\Client\SitesListConverter.cs" />
+    <Compile Include="Intermech\Site\Client\SitesListEditor.cs" />
+    <Compile Include="Intermech\Site\Client\SitesListPropertyClass.cs" />
+    <Compile Include="Intermech\Site\Client\StorageEditor.cs" />
+    <Compile Include="Intermech\Site\Client\TaskPriorityConverter.cs" />
+    <Compile Include="Intermech\Site\Client\TransferSettingsPropertyPage.cs" />
+    <Compile Include="Intermech\Site\Client\NotificationsSettings.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectsCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavWindow.cs" />
+    <Compile Include="Intermech\Site\Client\PortalSelectionCreatorControl.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTypeAttrDescriber.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTypeAttEditor.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTypeSelectForm.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectType4PublicationProrerties.cs" />
+    <Compile Include="Intermech\Site\Client\ObjectType4PublicationProrertiesEx.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTypeUITypeEditor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalPropertiesPage.cs" />
+    <Compile Include="Intermech\Site\Client\PortalSelectionDialog.cs" />
+    <Compile Include="Intermech\Site\Client\PortalSelectionView.cs" />
+    <Compile Include="Intermech\Site\Client\PublishRelationColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PublishObjectsCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PublishTypesSettingsForm.cs" />
+    <Compile Include="Intermech\Site\Client\OwnCompleteForm.cs" />
+    <Compile Include="Intermech\Site\Client\RelationTypeProrerties.cs" />
+    <Compile Include="Intermech\Site\Client\SiteClient.cs" />
+    <Compile Include="Intermech\Site\Client\SiteClientConsts.cs" />
+    <Compile Include="Intermech\Site\Client\IDBTaskID.cs" />
+    <Compile Include="Intermech\Site\Client\PublishCompositionType.cs" />
+    <Compile Include="Intermech\Site\Client\DBTaskID.cs" />
+    <Compile Include="Intermech\Site\Client\ProgressForm.cs" />
+    <Compile Include="Intermech\Site\Client\TasksCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\TestPublishForm.cs" />
+    <Compile Include="Intermech\Site\Client\Properties\Resources.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\LoggingObjectTypesEditor.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\NewNotificationForm.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\PortalProperties.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\SettingsHelper.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\ITypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\LoggingObjectTypeItem.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\ObjectTypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\PublishTypesHelper.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\ReceiptTemplateEditor.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\RelationTypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\TypeNode`1.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\TreeNodes\ObjectTypeRootNode.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\TreeNodes\RelationTypeRootNode.cs" />
+    <Compile Include="Intermech\Site\Client\Settings\TreeNodes\RootTypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\Services\SaveDiskPublishOptionsDialogService.cs" />
+    <Compile Include="Intermech\Site\Client\Services\PublicationService.cs" />
+    <Compile Include="Intermech\Site\Client\Selections\PortalAttributeConditionController.cs" />
+    <Compile Include="Intermech\Site\Client\Selections\PortalConditionDataProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketTypeNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketsListDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketsListNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketBinding.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ListSitesNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ListSitesPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ListSitesQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketTypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketsPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PacketTypeRootDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ReceiptTableHelper.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalRootNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\RootNodeChildren.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ObjectsListConditionsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectsDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectsNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedPacketObligatoryColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishNodeColumn.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishTypeRootDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ListSitesDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedUserObligatoryColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalUserNameTransform.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteUsersPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteUsersQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteUsersView.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SiteViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ListSitesViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\UserCommandsProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\UserNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\UserNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\IUserNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\AttributesForm.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ObjectAttributesView.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\CompositionNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\CompositionPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\CompositionQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\CompositionView.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\BooleanTransform.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalSelectionCreator.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalSelectionDialogControl.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalTypesBinding.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishAttributesColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\RelationAttributesView.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\TaskNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\TaskNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\TaskPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ContainsPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ContainsQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ObjectTypeChandedEventHandler.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SelectedObjectChangedEventHandler.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\ObjectTypeChandedEventArgs.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\SelectedObjectChangedEvent.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\Helper.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\DataErrors.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\IPacketNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\IPublishTypedID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\IPublishObjectID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\IPublishRelationID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\RelatedPublishObjectNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectObligatoryColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalObjectTypeNameTransform.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectsView.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalDescriptor.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishTypeNode.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishTypesPart.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalTypesQuery.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PortalViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishObjectTypeColumnScheme.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishedObjectViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishSelectionViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishTypeNodeID.cs" />
+    <Compile Include="Intermech\Site\Client\PortalNavigator\PublishTypeViewProvider.cs" />
+    <Compile Include="Intermech\Site\Client\Cache\Cache.cs" />
+    <Compile Include="Intermech\Site\Client\Cache\MetaDataCache.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImSSP\sc_18643.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ImportFileSelector.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ImportForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ImportPacketForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\IncludesForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\NotificationsSettings.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ObjectListForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ObjectsList.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\OwnCompleteForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PacketContentForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PleaseWaitForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PortalNavigator\AttributesForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PortalNavigator\PublishedObjectsView.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PortalSelectionDialog.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PortalSelectionView.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\ProgressForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishForm\ChoiseComposition.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishForm\PublishForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishForm\PublishSettings.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishForm\StepControl.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishTypeSelectForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\PublishTypesSettingsForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\Resources\SiteClientResources.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\SelectEnterPointForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\Settings\NewNotificationForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\TestPublishForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\UnitedPublishForm.resx" />
+    <EmbeddedResource Include="Intermech\Site\Client\WaitForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

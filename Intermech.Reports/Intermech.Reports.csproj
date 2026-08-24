@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Reports.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02022E79-AA83-4329-A030-E37CDC1E2C55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.DBCore">
+      <HintPath>lib\Intermech.Document.DBCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Expert">
+      <HintPath>lib\Intermech.Expert.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Expert.User">
+      <HintPath>lib\Intermech.Expert.User.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Reports">
+      <HintPath>lib\Intermech.Interfaces.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_17679.cs" />
+    <Compile Include="ImSSP\sc_17689.cs" />
+    <Compile Include="ImSSP\sc_17672.cs" />
+    <Compile Include="ImSSP\sc_17667.cs" />
+    <Compile Include="ImSSP\sc_17682.cs" />
+    <Compile Include="ImSSP\sc_17706.cs" />
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\Localization\CustomDescription.cs" />
+    <Compile Include="Intermech\Localization\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Localization\CustomCategory.cs" />
+    <Compile Include="Intermech\Reports\ComplectAuthFileGenerator.cs" />
+    <Compile Include="Intermech\Reports\ReportBackgroundBaseTask.cs" />
+    <Compile Include="Intermech\Reports\ReportsClientCache.cs" />
+    <Compile Include="Intermech\Reports\ReportCommandProvider.cs" />
+    <Compile Include="Intermech\Reports\ReportsProtection.cs" />
+    <Compile Include="Intermech\Reports\ReportsService.cs" />
+    <Compile Include="Intermech\Reports\ReportsPlugin.cs" />
+    <Compile Include="Intermech\Reports\CategoryHelper.cs" />
+    <Compile Include="Intermech\Reports\ReportUtils.cs" />
+    <Compile Include="Intermech\Reports\ReportsBaseTask.cs" />
+    <Compile Include="Intermech\Reports\TraceSupport.cs" />
+    <Compile Include="Intermech\Reports\Views\DocComplectScriptViewProvider.cs" />
+    <Compile Include="Intermech\Reports\Views\DocComplectScriptFormsView.cs" />
+    <Compile Include="Intermech\Reports\Documents\ReportDocumentSyncStrategy.cs" />
+    <Compile Include="Intermech\Reports\Documents\ReportDocumentType.cs" />
+    <Compile Include="Intermech\Reports\Documents\ReportDocument.cs" />
+    <Compile Include="Intermech\Reports\Documents\RealignStrategy\DocumentRealignStrategy.cs" />
+    <Compile Include="Intermech\Reports\Documents\RealignStrategy\DocumentUpdateStrategyFactory.cs" />
+    <Compile Include="Intermech\Reports\Documents\RealignStrategy\ImExternalDocumentRealignStrategy.cs" />
+    <Compile Include="Intermech\Reports\Documents\RealignStrategy\ImDocumentRealignStrategy.cs" />
+    <Compile Include="Intermech\Reports\Tasks\GenerateBaseCommand.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectGenerateCommand.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ObjectsSelectedItemsAnalyzer.cs" />
+    <Compile Include="Intermech\Reports\Tasks\RepDocTraceInfo.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectBackgroundBaseTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectGenerateBackgroundTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectCreateVersionBackgroundTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectUpdateCommand.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ComplectUpdateBackgroundTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ReportsCreateVersionTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ReportsGenerateTask.cs" />
+    <Compile Include="Intermech\Reports\Tasks\ReportsUpdateTask.cs" />
+    <Compile Include="Intermech\Reports\Commands\ComplectBaseCommand.cs" />
+    <Compile Include="Intermech\Reports\Commands\ComplectPrintCommand.cs" />
+    <Compile Include="Intermech\Reports\Commands\ComplectSaveCommand.cs" />
+    <Compile Include="Intermech\Reports\Commands\ComplectShowCommand.cs" />
+    <Compile Include="Intermech\Reports\Commands\ComplectDeleteCommand.cs" />
+    <Compile Include="Intermech\Reports\Commands\ReportBaseCommand.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Reports\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\Reports\Resources\ReportAndDocs.png" />
+    <EmbeddedResource Include="Intermech\Reports\Resources\ReportsResources.resx" />
+    <EmbeddedResource Include="Intermech\Reports\Views\DocComplectScriptFormsView.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

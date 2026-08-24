@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{130117AA-A2AF-4D0D-B594-9DC95DC0D4C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Interfaces">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LocalizationHolder.cs" />
+    <Compile Include="CustomDescription.cs" />
+    <Compile Include="CustomDisplayName.cs" />
+    <Compile Include="CustomCategory.cs" />
+    <Compile Include="XmlConvertException.cs" />
+    <Compile Include="XmlStrategyConvertResultType.cs" />
+    <Compile Include="Resources\CustomAttributesResources.cs" />
+    <Compile Include="Configuration\ConvertSessionInfo.cs" />
+    <Compile Include="Configuration\Utils\ConfigTypesUtils.cs" />
+    <Compile Include="Configuration\Serialization\RelationConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\TechcardToIpsConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\SerializationService\ConfigSerializationService.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ConvertStrategyConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ConvertStrategyConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ConvertationRulesConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\IdConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\IdConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\IdPartGroupSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\IdPartSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\RelationConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\RelationConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\BaseConfigSerializer`1.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\BaseConvertableEntityConfigSerializer`1.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\BaseConvertableEntityWithParamsConfigSerializer`1.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ConstValueConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ConstValueConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\LoggerConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ObjectConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ObjectConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\OutputConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ParamConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\UniqueControlRuleConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ValueConverterConfigSerializers\ConvertedValueConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ValueConverterConfigSerializers\OriginValueConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ValueConverterConfigSerializers\ValueConverterConfigSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ValueConverterConfigSerializers\ValueConverterConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ParamValueConfigSerializers\ValueConfigSerialzier.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ParamValueConfigSerializers\ValueConfigsSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Serialization\ParamValueConfigSerializers\ValueConverterReferenceSerializer.cs" />
+    <Compile Include="Configuration\Serialization\Attributes\ConfigSerializerAttribute.cs" />
+    <Compile Include="Configuration\Serialization\Attributes\SerializeMethodAttribute.cs" />
+    <Compile Include="Configuration\Load\TechCardToIpsConfigLoader.cs" />
+    <Compile Include="Configuration\Load\LoadService\ConfigLoadService.cs" />
+    <Compile Include="Configuration\Load\Loaders\ConstValueConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\BaseConvertableEntityConfigLoader`1.cs" />
+    <Compile Include="Configuration\Load\Loaders\BaseConvertableEntityWithParamsConfigLoader`1.cs" />
+    <Compile Include="Configuration\Load\Loaders\ConstValueConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ConvertationRulesConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\BaseConfigLoader`1.cs" />
+    <Compile Include="Configuration\Load\Loaders\ConvertStrategyConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ConvertStrategyConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\IdConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\IdConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\IdPartGroupLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\IdPartLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ObjectConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ObjectConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ParamConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\RelationConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\RelationConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\UniqueControlRuleConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\OutputConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\LoggerConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ValueConverterConfigLoaders\ConvertedValueConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ValueConverterConfigLoaders\OriginValueConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ValueConverterConfigLoaders\ValueConverterConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ValueConverterConfigLoaders\ValueConverterConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ParamValueConfigLoaders\ValueConfigLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ParamValueConfigLoaders\ValueConfigsLoader.cs" />
+    <Compile Include="Configuration\Load\Loaders\ParamValueConfigLoaders\ValueConverterReferenceLoader.cs" />
+    <Compile Include="Configuration\Load\Attributes\LoadMethodAttribute.cs" />
+    <Compile Include="Configuration\Load\Attributes\ParamConfigsContainerAttribute.cs" />
+    <Compile Include="Configuration\Load\Attributes\ConfigLoaderAttribute.cs" />
+    <Compile Include="Configuration\Format\ConvertationRules.cs" />
+    <Compile Include="Configuration\Format\IdConfigCalcResultType.cs" />
+    <Compile Include="Configuration\Format\ParamType.cs" />
+    <Compile Include="Configuration\Format\ParamConfigType.cs" />
+    <Compile Include="Configuration\Format\UniqueControlRule.cs" />
+    <Compile Include="Configuration\Format\ValueDestType.cs" />
+    <Compile Include="Configuration\Format\AttrType.cs" />
+    <Compile Include="Configuration\Format\ConditionType.cs" />
+    <Compile Include="Configuration\Format\IdConfigType.cs" />
+    <Compile Include="Configuration\Format\ParamSubType.cs" />
+    <Compile Include="Configuration\Format\NodeType.cs" />
+    <Compile Include="Configuration\Format\TypeExtensions.cs" />
+    <Compile Include="Configuration\ConfigTypes\BaseConvertableEntityConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\BaseConvertableEntityWithParamsConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ConstValueConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ConstValueConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\ParamConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ParamConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\RelationConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\RelationConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\UniqueControlRuleConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ConvertationRulesConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\BaseConfigContainer`1.cs" />
+    <Compile Include="Configuration\ConfigTypes\BaseConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\BaseConfigExtension.cs" />
+    <Compile Include="Configuration\ConfigTypes\ConvertStrategyConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ConvertStrategyConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\LoggerConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ObjectConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ObjectConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\OutputConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\TechcardToIpsConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\IdConfig\BaseIdPart.cs" />
+    <Compile Include="Configuration\ConfigTypes\IdConfig\IdConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\IdConfig\IdConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\IdConfig\IdPart.cs" />
+    <Compile Include="Configuration\ConfigTypes\IdConfig\IdPartGroup.cs" />
+    <Compile Include="Configuration\ConfigTypes\Attributes\ConfigNodeTypeAttribute.cs" />
+    <Compile Include="Configuration\ConfigTypes\ValueConverterConfig\ConvertedValueConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ValueConverterConfig\OriginValueConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ValueConverterConfig\ValueConverterConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ValueConverterConfig\ValueConverterConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\ParamValueConfig\ValueConfig.cs" />
+    <Compile Include="Configuration\ConfigTypes\ParamValueConfig\ValueConfigs.cs" />
+    <Compile Include="Configuration\ConfigTypes\ParamValueConfig\ValueConverterReference.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources\Designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Height" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;gridCol4ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol4ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol4ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="iGColPattern3.MinWidth" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="&gt;&gt;gridCol3ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol3ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol3ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;columnPos.Type" xml:space="preserve">
+    <value>Infralution.Controls.VirtualTree.Column, Infralution.Controls.VirtualTree, Version=3.1.4.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;columnPos.Name" xml:space="preserve">
+    <value>columnPos</value>
+  </data>
+  <data name="&gt;&gt;gridCol5ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol5ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol5ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="imagesToolbars.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACuCgAAAk1TRnQBSQFMAgEBBAEAAVQBAgFUAQIBEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEoAwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZAWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLMAQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEAAWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEAAWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZAWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEAAZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFmATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8AHgABGwEaAVIBmQEbBQABuwH3HgAB/wG0AfMTAAMxASMBKgMAAbsCtAKLAfcOAAH/AbUCrQG0AfAHAAG0AbMBiwFmAa4NAAXsAzEBKgEjAgAEtASLDAAB8wGtBdQBCQYAArMBiwJmDQAB7AQAATECegFYATECAAS0BIsJAAG0AbsB/wGtAtsBrQEJAfIBCQGtAfEFAAO0AYsBZg0AAewFAAFZAXoBWQH/AgAEtASLCQABswHcAa0B3AHbAbMB9AMAAf8BCQUABNwBtA0AAewLAAS0BIsJAAG0ARkC3AHVAd0MAAPcAf8NAAHsBAABGwEaAUYBBwH0AgACtAG7AQkBuwG0AosDAAEWAZMEAAG6ARkC3AGzAQkB/wQAAv8GAAHsDwAB7AQAAUYBJQIkAUUCAAG7BQkBuwG0AQABlAEXAeMB6QElAZMCAAEJAfQBGQEJAdwB2wEJAfQBuwK0AbMBrQHyBQAB7A8ABewBJQJGASQBHwMABgkBAAMXAeMEJQEAAfIBswG0AdUBtAG6AfQBuwHcBBkBuwUAAewPAAHsBAABbwIWAW8BRgUAAgkDAAMXAeMEJQIAAv8EAAH/AQkBswLcARkBtAQAAf8BtAHzDQAB/wG0AfMEAAOUAf8EAAE/BQADFwHjBCUJAAHwAdsC3AEJAbQDAAG0AbMBiwFmAa4LAAG0AbMBiwFmAa4LAAE/BQADFwEWAekDJQMAAQkB/wMAAfQBswHbAdwBrQHcAa0DAAKzAYsCZgsAArMBiwJmCQAFPwMAAhcBlAG3AeMBRgHpASUDAAHyAbMBCQHzAQkBswLbAa0B9AK0AwADtAGLAWYLAAO0AYsBZgoAAz8EAAEWBZQBFwFGBAABCQTUAdsBrQHxBgAE3AG0CwAE3AG0CwABPwYABJQBFgGUBgABGQG0ArMBtAHzCAAD3AH/DAAD3AH/DAADPwUAApQTAAFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP/gQAD/wGDAecD/wHjAv8BgwGBAf8B+AEfAcEB/wHwAQMBAAH/AfABDwHBAf8B9wGDAQAB/wGAAQcBwQH/AfcBwwEAAf8BgAHnAcEB/wH3Af8BAAH/AYEB/wHhAf8B9wGDAQAB5wGAAfMB9wH/AfcBgwEAAYEBgAEBAfcB/wHwAQMBgQEAAYABAQH3Af8B9wGDAecBAAHPAQEB4wH/AeMBwwHfAQAB/wGBAcEB/wHBAf8B3wEAAecBAQHBAf8BwQH/AQcBAAHgAQEBwQH/AcEB/wGPAQAB8AEPAcEB/wHBAf8B3wGBAfgBHwHhAf8B4QH/AeMB5wL/FgAL</value>
+  </data>
+  <data name="btnHideHint.ToolTip" xml:space="preserve">
+    <value>Убрать панель с подсказкой</value>
+  </data>
+  <data name="&gt;&gt;grid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="columnCount.HeaderStyle.HorzAlignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB5TeXN0ZW0uRHJhd2luZy5TdHJpbmdBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;grid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="iGColPattern2.Key" xml:space="preserve">
+    <value>colPosition</value>
+  </data>
+  <data name="iGColPattern3.Key" xml:space="preserve">
+    <value>colQuantity</value>
+  </data>
+  <data name="iGColPattern1.Key" xml:space="preserve">
+    <value>colCaption</value>
+  </data>
+  <data name="iGColPattern6.Key" xml:space="preserve">
+    <value>colGroupNo</value>
+  </data>
+  <data name="iGColPattern7.Key" xml:space="preserve">
+    <value>colSubGroup</value>
+  </data>
+  <data name="iGColPattern4.Key" xml:space="preserve">
+    <value>colNote</value>
+  </data>
+  <data name="iGColPattern5.Key" xml:space="preserve">
+    <value>colPrjLinkID</value>
+  </data>
+  <data name="btnHideHint.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAACIAQAABwAAAAs=</value>
+  </data>
+  <data name="iGColPattern3.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="btRefresh.CommandName" xml:space="preserve">
+    <value>btRefresh</value>
+  </data>
+  <data name="$this.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMIBAAAsAQAACw==</value>
+  </data>
+  <data name="edHint.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAIAAAABwAAAAs=</value>
+  </data>
+  <data name="btActualize.Text" xml:space="preserve">
+    <value>Актуализировать</value>
+  </data>
+  <data name="btCollapseAll.ToolTipText" xml:space="preserve">
+    <value>Свернуть все узлы в допустимых заменах</value>
+  </data>
+  <data name="grid.Header.Height" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;grid.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGrid, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;grid.Name" xml:space="preserve">
+    <value>grid</value>
+  </data>
+  <data name="columnNote.CellStyle.WordWrap" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupRowsLevel1.Name" xml:space="preserve">
+    <value>groupRowsLevel1</value>
+  </data>
+  <data name="&gt;&gt;groupRowsLevel1.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyleDesign, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;groupRowsLevel2.Name" xml:space="preserve">
+    <value>groupRowsLevel2</value>
+  </data>
+  <data name="&gt;&gt;groupRowsLevel2.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyleDesign, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btExpandAll.Text" xml:space="preserve">
+    <value>Раскрыть всё</value>
+  </data>
+  <data name="&gt;&gt;gridCol5CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol5CellStyle.Name" xml:space="preserve">
+    <value>gridCol5CellStyle</value>
+  </data>
+  <data name="iGColPattern7.Width" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="$this.Margin" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAEEAAAABAAAAAQAAAAEAAAACw==</value>
+  </data>
+  <data name="btRefresh.Text" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="iGColPattern4.MinWidth" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="&gt;&gt;toolBarGrid.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=4.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolBarGrid.Name" xml:space="preserve">
+    <value>toolBarGrid</value>
+  </data>
+  <data name="columnPos.MinWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="btActualize.ToolTipText" xml:space="preserve">
+    <value>Сделать текущий заменитель актуальным (также можно с помощью клавиши &lt;Пробел&gt; или двойного клика мышью)</value>
+  </data>
+  <data name="grid.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edHint.Name" xml:space="preserve">
+    <value>edHint</value>
+  </data>
+  <data name="&gt;&gt;panelHint.Name" xml:space="preserve">
+    <value>panelHint</value>
+  </data>
+  <data name="&gt;&gt;panelHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHideHint.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;columnMain.Type" xml:space="preserve">
+    <value>Infralution.Controls.VirtualTree.Column, Infralution.Controls.VirtualTree, Version=3.1.4.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;columnMain.Name" xml:space="preserve">
+    <value>columnMain</value>
+  </data>
+  <data name="&gt;&gt;btnHideHint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grid.GroupBox.Text" xml:space="preserve">
+    <value>Перетащите заголовок колонки в эту область для группировки по значениям этой колонки</value>
+  </data>
+  <data name="&gt;&gt;btnHideHint.Parent" xml:space="preserve">
+    <value>panelHint</value>
+  </data>
+  <data name="grid.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMIBAACXAAAACw==</value>
+  </data>
+  <data name="grid.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;panelHint.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btRefresh.Name" xml:space="preserve">
+    <value>btRefresh</value>
+  </data>
+  <data name="&gt;&gt;btRefresh.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnHideHint.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAAAZUYWhvbWEAAOBABfz///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAX7////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAgAAAAMAAAAL</value>
+  </data>
+  <data name="btnHideHint.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAADIAAAAZAAAACw==</value>
+  </data>
+  <data name="btRefresh.ToolTipText" xml:space="preserve">
+    <value>Обновить допустимые замены</value>
+  </data>
+  <data name="panelHint.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="iGColPattern2.MaxWidth" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="panelHint.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAArwAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;toolBarGrid.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelHint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grid.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAGAAAAAs=</value>
+  </data>
+  <data name="panelHint.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAACAAAACw==</value>
+  </data>
+  <data name="panelHint.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMIBAAB9AAAACw==</value>
+  </data>
+  <data name="&gt;&gt;toolBarGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridCol2CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol2CellStyle.Name" xml:space="preserve">
+    <value>gridCol2CellStyle</value>
+  </data>
+  <data name="btExpandAll.ToolTipText" xml:space="preserve">
+    <value>Раскрыть все узлы в допустимых заменах</value>
+  </data>
+  <data name="&gt;&gt;gridCol0CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol0CellStyle.Name" xml:space="preserve">
+    <value>gridCol0CellStyle</value>
+  </data>
+  <data name="resource.NormalCellHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;rowsLevel3.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyleDesign, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rowsLevel3.Name" xml:space="preserve">
+    <value>rowsLevel3</value>
+  </data>
+  <data name="&gt;&gt;imagesTreeview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imagesTreeview.Name" xml:space="preserve">
+    <value>imagesTreeview</value>
+  </data>
+  <data name="iGColPattern4.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="iGColPattern2.Text" xml:space="preserve">
+    <value>Позиция</value>
+  </data>
+  <data name="btnHideHint.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAJAAAACw==</value>
+  </data>
+  <data name="iGColPattern3.Text" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="&gt;&gt;toolTips.Name" xml:space="preserve">
+    <value>toolTips</value>
+  </data>
+  <data name="&gt;&gt;toolTips.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHideHint.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="iGColPattern1.Text" xml:space="preserve">
+    <value>Допустимые замены / Заголовок</value>
+  </data>
+  <data name="columnNote.HeaderStyle.HorzAlignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB5TeXN0ZW0uRHJhd2luZy5TdHJpbmdBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+  <data name="iGColPattern4.Text" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="&gt;&gt;btnHideHint.Name" xml:space="preserve">
+    <value>btnHideHint</value>
+  </data>
+  <data name="&gt;&gt;btnHideHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edHint.Parent" xml:space="preserve">
+    <value>panelHint</value>
+  </data>
+  <data name="columnMain.Width" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <data name="edHint.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAHoBAABwAAAACw==</value>
+  </data>
+  <data name="edHint.Text" xml:space="preserve">
+    <value>На данной закладке можно выбрать актуальный заменитель (по умолчанию он выделен значком красного цвета). Для этого выделите требуемый заменитель и нажмите кнопку "Актуализировать". Также допускается двойной клик мыши по необходимому заменителю.</value>
+  </data>
+  <data name="iGColPattern3.MaxWidth" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="columnPos.HeaderStyle.HorzAlignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB5TeXN0ZW0uRHJhd2luZy5TdHJpbmdBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+  <data name="iGColPattern1.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="columnNote.MinWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="toolBarGrid.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMIBAAAYAAAACw==</value>
+  </data>
+  <data name="toolBarGrid.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gridCol2ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol2ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol2ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol6CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol6CellStyle.Name" xml:space="preserve">
+    <value>gridCol6CellStyle</value>
+  </data>
+  <data name="&gt;&gt;edHint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gridCol4CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol4CellStyle.Name" xml:space="preserve">
+    <value>gridCol4CellStyle</value>
+  </data>
+  <data name="&gt;&gt;cellEditor.Name" xml:space="preserve">
+    <value>cellEditor</value>
+  </data>
+  <data name="&gt;&gt;cellEditor.Type" xml:space="preserve">
+    <value>Infralution.Controls.VirtualTree.CellEditor, Infralution.Controls.VirtualTree, Version=3.1.4.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="columnCount.Caption" xml:space="preserve">
+    <value>Кол.</value>
+  </data>
+  <data name="btCollapseAll.CommandName" xml:space="preserve">
+    <value>btCollapseAll</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MRP_PDMSubstitutesView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Intermech.MRP.Orders.MRP_BaseView, Intermech.MRP, Version=7.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="columnMain.MinWidth" type="System.Int32, mscorlib">
+    <value>350</value>
+  </data>
+  <data name="$this.MinimumSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMIBAAAsAQAACw==</value>
+  </data>
+  <data name="&gt;&gt;rowsLevel3Right.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyleDesign, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rowsLevel3Right.Name" xml:space="preserve">
+    <value>rowsLevel3Right</value>
+  </data>
+  <data name="&gt;&gt;btExpandAll.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btExpandAll.Name" xml:space="preserve">
+    <value>btExpandAll</value>
+  </data>
+  <data name="columnPos.Caption" xml:space="preserve">
+    <value>Поз.</value>
+  </data>
+  <data name="columnMain.Caption" xml:space="preserve">
+    <value>Доп. замены / Заголовок</value>
+  </data>
+  <data name="iGColPattern5.Width" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="toolBarGrid.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="iGColPattern2.MinWidth" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="iGColPattern2.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="btActualize.CommandName" xml:space="preserve">
+    <value>btActualize</value>
+  </data>
+  <data name="iGColPattern1.MinWidth" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="columnCount.MinWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="btCollapseAll.Text" xml:space="preserve">
+    <value>Свернуть всё</value>
+  </data>
+  <data name="resource.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="edHint.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAPAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;gridCol0ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol0ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol0ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="edHint.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="columnNote.Caption" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="&gt;&gt;imagesToolbars.Name" xml:space="preserve">
+    <value>imagesToolbars</value>
+  </data>
+  <data name="&gt;&gt;imagesToolbars.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridCol1ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol1ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol1ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol6ColHdrStyle.Name" xml:space="preserve">
+    <value>gridCol6ColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol6ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnHideHint.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+QIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAArtAAAK7QECiEnBAAAAB3RJTUUH0wQYECUs/l4C5QAAAohJREFUOE+tkl1Ik2EUx8/euZyYW6YpYfkxTDFDqUBSIaRIbxIDRTAoMskitUwhv6YhNdnEdhFaTa0swY+Z1EUFYujCMl3dmBdJuj5oVtqaQWlNi39n+gRheFU/OA8vL8/vnPM8z6H/TwutJj0VSkapb73Jzx7QoJ6UGSQLnaFi/q8Su1bgBiX5N6rtxdZMNL8uQdVoFnKHdiPjQRxizcFQGBQfqI6Sxe5lsBzdpvne9rYa+rGDyLFuRfpAJFLuhyHx3kbE3A5AaKcailrJxUlShCXgtv1NKnv75FmUje5FzpMYHBqORcZAFJJ7NUi4uwEhHd7QPS1HeLcvqEw2RSW0RtiMjgrzB9NhGMvGYWsMslnOerQFqZZI7OoJhcbsBdunF4ALeO6wQmlUgQqpTNhMLfU1TJRgP0t7ekOQ+TAKaZYI/tYg4qY3bE6WfwD4CVwcLwXV+YFOyR4Lm2hdg69d++wANrUGQt9vRHiXL5J6ghDZ7Y1XM+NsLmEar4B0lUA1QZxA6RQ6kf8F9eS+vkS0D5vhmp7HyJsRbL8VDNsMVxY02Srg6ZYbObRRoJN/JKBzkiWtPx6bzaGYfufAV+cs8I2thSW52VYJr2sEqYnleomrx4GO07CwmQoqju0IR1CnEjvvRGP28xzm59yHZvll5WLlRdnEURkGOhEByiWtsBkDqTxrVr0P5KfyuS5DRv8OTH2Z4LbLIb8ixMscurWg/ASurnBQDvkJW6CnZA+d5FK2eIBY8mllwX3eSxz1HFXBoLx4ltULVESpwlpGNU+Ye0j0StB5NUjPz1UVAiraBirgto95Ouj0SvJvSnnCCnjNkw9SgfIj5Xs56Kh8iI7wTf3V9j9D9Avj/Fv6fEX+GwAAAABJRU5ErkJgggs=</value>
+  </data>
+  <data name="&gt;&gt;columnCount.Type" xml:space="preserve">
+    <value>Infralution.Controls.VirtualTree.Column, Infralution.Controls.VirtualTree, Version=3.1.4.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="&gt;&gt;columnCount.Name" xml:space="preserve">
+    <value>columnCount</value>
+  </data>
+  <data name="imagesTreeview.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADIDAAAAk1TRnQBSQFMAgEBAwEAASQBAQEkAQEBEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFAAwABEAMAAQEBAAEgBgABEDYAAWABVgHeAf8BDwEAAc0B/wEPAQABzQH/AWABVgHeAf/sAAFgAVYB3gH/AQ8BAAHNAf8MAAFgAVYB3gH/6AABDwEAAc0B//QAAQ8BAAHNAf8BnwGZAeUB/wEPAQABzQH/AZ8BmQHlAf8BDwEAAc0B/wgAAb0BYwEAAf8QAAELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8UAAG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf9oAAEPAQABzQH/AQ8BAAHNAf8BDwEAAc0B/wgAAb0BYwEAAf8BvQFjAQAB/wG9AWMBAAH/DAABCwEAAb4B/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wELAQABvgH/FAABvgFjAQAB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wG+AWMBAAH/UAABGgFWAXwB/wEcAV4BhAH/AR0BZgGMAf8BHQFjAYsB/wEdAWMBiwH/CAABDwEAAc0B/wgAAb0BYwEAAf8B3QG8AZcB/wG9AWMBAAH/Ad0BvAGXAf8BvQFjAQAB/wgAAQsBAAG+Af8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8BCwEAAb4B/xQAAb4BYwEAAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8BvgFjAQAB/0wAARQBcQGYAf8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8YAAG9AWMBAAH/EAABCwEAAb4B/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wELAQABvgH/FAABvgFjAQAB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wHyAeUBxwH/AfIB5QHHAf8B8gHlAccB/wG+AWMBAAH/TAABFAFxAZgB/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wQAAcwBkAFIAf8MAAG9AWMBAAH/AcwBkAFIAf8QAAELAQABvgH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AdEBxwHyAf8B0QHHAfIB/wHRAccB8gH/AQsBAAG+Af8UAAG+AWMBAAH/AfIB5QHDAf8B8wHlAcMB/wHyAeQBwwH/AfIB5AHDAf8B8gHkAcMB/wHyAeUBwwH/AfIB5QHEAf8B8wHkAcMB/wHyAeUBxAH/Ab4BYwEAAf9MAAEUAXIBmgH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/CAABzAGQAUgB/wG9AWMBAAH/Ab0BYwEAAf8BzAGQAUgB/xQAAQsBAAG+Af8BzgHDAfEB/wHOAcMB8QH/Ac4BwwHxAf8BzgHDAfEB/wHOAcMB8QH/Ac4BwwHxAf8BzgHDAfEB/wHOAcMB8QH/Ac4BwwHxAf8BCwEAAb4B/xQAAb4BYwEAAf8B8wHjAb4B/wHzAeQBvQH/AfMB5AG+Af8B8wHkAb4B/wHzAeQBvgH/AfMB4wG+Af8B8wHjAb4B/wHzAeMBvgH/AfIB5AG+Af8BvgFjAQAB/0wAARIBdwGaAf8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/ygAAQsBAAG+Af8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BCwEAAb4B/xQAAb4BYwEAAf8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8BvgFjAQAB/0wAARIBdQGYAf8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BDQFuAaQB/xAAAQsBAAG+Af8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BywG/AfAB/wHLAb8B8AH/AcsBvwHwAf8BCwEAAb4B/xQAAb4BYwEAAf8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8B8wHjAboB/wHzAeMBugH/AfMB4wG6Af8BvgFjAQAB/0wAAREBdAGXAf8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BUQHsAf4B/wFRAewB/gH/AVEB7AH+Af8BDQFuAaQB/xAAAQsBAAG+Af8BvQGtAewB/wG9Aa0B7AH/Ab0BrQHsAf8BvQGtAewB/wG9Aa0B7AH/Ab0BrQHsAf8BvQGtAewB/wG9Aa0B7AH/Ab0BrQHsAf8BCwEAAb4B/xQAAb4BYwEAAf8B7AHaAa0B/wHsAdoBrQH/AewB2gGtAf8B7AHaAa0B/wHsAdoBrQH/AewB2gGtAf8B7AHaAa0B/wHsAdoBrQH/AewB2gGtAf8BvgFjAQAB/0wAAREBdAGXMf8BCwFsAaQB/xAAAQsBAAG+Af8B8AHtAfsB/wHwAe0B+wH/AfAB7QH7Af8B8AHtAfsB/wHwAe0B+wH/AfAB7QH7Af8B8AHtAfsB/wHwAe0B+wH/AfAB7QH7Af8BCwEAAb4B/xQAAb4BYwEAAf8B+wH3Ae0B/wH7AfcB7QH/AfsB9wHtAf8B+wH3Ae0B/wH7AfcB7QH/AfsB9wHtAf8B+wH3Ae0B/wH7AfcB7QH/AfsB9wHtAf8BvgFjAQAB/0wAASsBkgHFAf8BKwGSAcUB/wErAZIBxQH/ASsBkgHFAf8BKwGSAcUB/wErAZIBxQH/ASsBkgHFAf8BKwGSAcUB/wEnAY0BwAH/AR4BhQG4Af8BGgGBAbQB/wEaAYEBtAH/AR0BfAG0Af8UAAELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8BCwEAAb4B/wELAQABvgH/AQsBAAG+Af8UAAG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf8BvgFjAQAB/wG+AWMBAAH/Ab4BYwEAAf9QAAERAXQBlwX/AZkD/wGZA/8BmQP/AREBdAGXAf/sAAERAXQBlwH/AREBdAGXAf8BEQF0AZcB/wERAXQBlwH/6AABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wEAAf8BhwT/AgAB/wE7BP8CAAH/AX8E/wIAAfwBGwHAAQcBwAEHAgAB/gExAcABBwHAAQcCAAGDAWABwAEHAcABBwIAAQEB+wHAAQcBwAEHAgABAQFzAcABBwHAAQcCAAEBAYcBwAEHAcABBwMAAf8BwAEHAcABBwMAAQMBwAEHAcABBwMAAQMBwAEHAcABBwMAAQMBwAEHAcABBwMAAQcBwAEHAcABBwIAAYEF/wIAAcMF/xgACw==</value>
+  </data>
+  <data name="&gt;&gt;columnNote.Name" xml:space="preserve">
+    <value>columnNote</value>
+  </data>
+  <data name="&gt;&gt;columnNote.Type" xml:space="preserve">
+    <value>Infralution.Controls.VirtualTree.Column, Infralution.Controls.VirtualTree, Version=3.1.4.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="toolBarGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btCollapseAll.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btCollapseAll.Name" xml:space="preserve">
+    <value>btCollapseAll</value>
+  </data>
+  <data name="iGColPattern6.Width" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;btActualize.Name" xml:space="preserve">
+    <value>btActualize</value>
+  </data>
+  <data name="&gt;&gt;btActualize.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.13.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btExpandAll.CommandName" xml:space="preserve">
+    <value>btExpandAll</value>
+  </data>
+  <data name="&gt;&gt;gridCol3CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol3CellStyle.Name" xml:space="preserve">
+    <value>gridCol3CellStyle</value>
+  </data>
+  <data name="&gt;&gt;gridCol1CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridCol1CellStyle.Name" xml:space="preserve">
+    <value>gridCol1CellStyle</value>
+  </data>
+  <data name="columnMain.HeaderStyle.HorzAlignment" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB5TeXN0ZW0uRHJhd2luZy5TdHJpbmdBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+</root>

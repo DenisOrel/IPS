@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Office.Client.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79F281EC-A9F8-4A04-9C83-186BD4473907}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Office.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions">
+      <HintPath>lib\Intermech.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions.Client">
+      <HintPath>lib\Intermech.Extensions.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions.Interfaces">
+      <HintPath>lib\Intermech.Extensions.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Imbase">
+      <HintPath>lib\Intermech.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Workflow">
+      <HintPath>lib\Intermech.Interfaces.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.MaterialsHandbook">
+      <HintPath>lib\Intermech.MaterialsHandbook.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Office.Interfaces">
+      <HintPath>lib\Intermech.Office.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Workflow.Design">
+      <HintPath>lib\Intermech.Workflow.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Script.cs" />
+    <Compile Include="ImSSP\sc_15080.cs" />
+    <Compile Include="ImSSP\sc_15086.cs" />
+    <Compile Include="ImSSP\sc_15092.cs" />
+    <Compile Include="ImSSP\sc_15101.cs" />
+    <Compile Include="ImSSP\sc_15068.cs" />
+    <Compile Include="ImSSP\sc_15046.cs" />
+    <Compile Include="ImSSP\sc_15053.cs" />
+    <Compile Include="ImSSP\sc_15055.cs" />
+    <Compile Include="ImSSP\sc_15065.cs" />
+    <Compile Include="Intermech\Search\MSOfficeAddins\MSOfficeAddinsComService.cs" />
+    <Compile Include="Intermech\Search\MSOfficeAddins\IMSOfficeAddinsComService.cs" />
+    <Compile Include="Intermech\Search\MSOfficeAddins\MSOfficeAddinsClientModule.cs" />
+    <Compile Include="Intermech\Office\Client\CheckedComboBox.cs" />
+    <Compile Include="Intermech\Office\Client\CCBoxItem.cs" />
+    <Compile Include="Intermech\Office\Client\ChoiceForm.cs" />
+    <Compile Include="Intermech\Office\Client\ChoiceOfficeDocTypeForm.cs" />
+    <Compile Include="Intermech\Office\Client\EmailCommands.cs" />
+    <Compile Include="Intermech\Office\Client\EmailSender.cs" />
+    <Compile Include="Intermech\Office\Client\ProcessEmailSender.cs" />
+    <Compile Include="Intermech\Office\Client\SimpleEmailSender.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocument.cs" />
+    <Compile Include="Intermech\Office\Client\InternalDocument.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocument.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeTypeNode.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeTypeNodeBinding.cs" />
+    <Compile Include="Intermech\Office\Client\OutgoingDocument.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocumentCommands.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionCommands.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeSupervisorsListControl.cs" />
+    <Compile Include="Intermech\Office\Client\SMDOSettingsControl.cs" />
+    <Compile Include="Intermech\Office\Client\AddresseeDescriber.cs" />
+    <Compile Include="Intermech\Office\Client\AddresseeAttEditor.cs" />
+    <Compile Include="Intermech\Office\Client\ExecutionOrderInfo.cs" />
+    <Compile Include="Intermech\Office\Client\ExecutionOrderEditorActionHandler.cs" />
+    <Compile Include="Intermech\Office\Client\ExecutionOrderEditor.cs" />
+    <Compile Include="Intermech\Office\Client\ManualRegNumberForm.cs" />
+    <Compile Include="Intermech\Office\Client\ReportsInfo.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionTextInfo.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionTextEditorActionHandler.cs" />
+    <Compile Include="Intermech\Office\Client\TextResolutionEditor.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeClient.cs" />
+    <Compile Include="Intermech\Office\Client\Holder.cs" />
+    <Compile Include="Intermech\Office\Client\CustomMultipleResolutionsDescriptor`1.cs" />
+    <Compile Include="Intermech\Office\Client\MultipleResolutionsDescriptor.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionCopiesForMultipleUsersDescriptor.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionCopyForUserDescriptor.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeTest.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocumentsViewProvider.cs" />
+    <Compile Include="Intermech\Office\Client\Localization.cs" />
+    <Compile Include="Intermech\Office\Client\CustomDescription.cs" />
+    <Compile Include="Intermech\Office\Client\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Office\Client\CustomCategory.cs" />
+    <Compile Include="Intermech\Office\Client\MAPI.cs" />
+    <Compile Include="Intermech\Office\Client\MapiMessage.cs" />
+    <Compile Include="Intermech\Office\Client\MapiFileDesc.cs" />
+    <Compile Include="Intermech\Office\Client\MapiRecipDesc.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocumentVisualizerView.cs" />
+    <Compile Include="Intermech\Office\Client\FormulaControl.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeSettingsForm.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeSettingsViewsProvider.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeSettingsView.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocumentsBinding.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocumentsDescriptor.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocumentsNode.cs" />
+    <Compile Include="Intermech\Office\Client\IncomingDocumentsNodeID.cs" />
+    <Compile Include="Intermech\Office\Client\PrivateRegNumberAttDescriber.cs" />
+    <Compile Include="Intermech\Office\Client\PrivateRegNumberEditor.cs" />
+    <Compile Include="Intermech\Office\Client\PrivateRegNumberValueAttrProxy.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionPreview.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionsRootNodeViewsProvider.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocNode.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocViewsProvider.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionsDescriptor.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionsRootNode.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionsView.cs" />
+    <Compile Include="Intermech\Office\Client\TreeResolutionsView.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeImages.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocSettingsView.cs" />
+    <Compile Include="Intermech\Office\Client\GeneralSettings.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocSettingsForm.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocSettingsTabPage.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocSettingsTemplateControl.cs" />
+    <Compile Include="Intermech\Office\Client\DocumentCommands.cs" />
+    <Compile Include="Intermech\Office\Client\SendEmailForm.cs" />
+    <Compile Include="Intermech\Office\Client\OnSendClickEventHandler.cs" />
+    <Compile Include="Intermech\Office\Client\OnSendClickEventArgs.cs" />
+    <Compile Include="Intermech\Office\Client\AddresseeInfo.cs" />
+    <Compile Include="Intermech\Office\Client\AddresseeEditorActionHandler.cs" />
+    <Compile Include="Intermech\Office\Client\AddresseeEditor.cs" />
+    <Compile Include="Intermech\Office\Client\IReportEditorControl.cs" />
+    <Compile Include="Intermech\Office\Client\ReportActionControl.cs" />
+    <Compile Include="Intermech\Office\Client\ReportEditControl.cs" />
+    <Compile Include="Intermech\Office\Client\ReportsEditorActionHandler.cs" />
+    <Compile Include="Intermech\Office\Client\ReportsEditor.cs" />
+    <Compile Include="Intermech\Office\Client\ReportsViewControl.cs" />
+    <Compile Include="Intermech\Office\Client\SubordinateDescriber.cs" />
+    <Compile Include="Intermech\Office\Client\SubordinateAttEditor.cs" />
+    <Compile Include="Intermech\Office\Client\EmailMessagesCommands.cs" />
+    <Compile Include="Intermech\Office\Client\FileRenameForm.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeClientConsts.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeClientHelper.cs" />
+    <Compile Include="Intermech\Office\Client\OfficeDocumentCreator.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionCreator.cs" />
+    <Compile Include="Intermech\Office\Client\ResolutionView.cs" />
+    <Compile Include="Intermech\Office\Client\SmdoBook.cs" />
+    <Compile Include="Intermech\Office\Client\SmdoBookConsts.cs" />
+    <Compile Include="Intermech\Office\Client\SmdoBookProc.cs" />
+    <Compile Include="Intermech\Office\Client\SmdoDocKindsBook.cs" />
+    <Compile Include="Intermech\Office\Client\SmdoFileTypesBook.cs" />
+    <Compile Include="Intermech\Office\Client\Tag.cs" />
+    <Compile Include="Intermech\Office\Client\SMDOEmailForm.cs" />
+    <Compile Include="Intermech\Office\Client\SMDOEmailDataSettings.cs" />
+    <Compile Include="Intermech\Office\Client\ComboBoxItem.cs" />
+    <Compile Include="Intermech\Office\Client\ComboBoxCertItem.cs" />
+    <Compile Include="Intermech\Office\Client\TaskViewProvider.cs" />
+    <Compile Include="Intermech\Office\Client\CapiCertificate.cs" />
+    <Compile Include="Intermech\Office\Client\Win32.cs" />
+    <Compile Include="Intermech\Office\Client\CRYPT_SIGN_MESSAGE_PARA.cs" />
+    <Compile Include="Intermech\Office\Client\PUBKEYBLOBHEADERS.cs" />
+    <Compile Include="Intermech\Office\Client\CRYPTOAPI_BLOB.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_NAME_INFO.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_RDN_ATTR.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_RDN.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_CONTEXT.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_INFO.cs" />
+    <Compile Include="Intermech\Office\Client\CERT_PUBLIC_KEY_INFO.cs" />
+    <Compile Include="Intermech\Office\Client\CRYPT_BIT_BLOB.cs" />
+    <Compile Include="Intermech\Office\Client\PCERT_EXTENSION.cs" />
+    <Compile Include="Intermech\Office\Client\FILETIME.cs" />
+    <Compile Include="Intermech\Office\Client\CRYPT_VERIFY_MESSAGE_PARA.cs" />
+    <Compile Include="Intermech\Office\Client\EncryptTo.cs" />
+    <Compile Include="Intermech\Office\Client\Properties\Resources.cs" />
+    <Compile Include="Intermech\Office\Client\Editors\Report.cs" />
+    <Compile Include="Intermech\Office\Client\Editors\ConfidentialReport.cs" />
+    <Compile Include="Intermech\Office\Client\Editors\ExternalAddresseeForm.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Office\Client\AddresseeEditor.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ChoiceForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ChoiceOfficeDocTypeForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\Editors\ExternalAddresseeForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ExecutionOrderEditor.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\FileRenameForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\FormulaControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ManualRegNumberForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\OfficeDocSettingsForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\OfficeDocSettingsTemplateControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\OfficeSettingsForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\OfficeSupervisorsListControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ReportActionControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ReportEditControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ReportsEditor.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ReportsViewControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\ResolutionView.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\Resources\OfficeClientResources.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\Resources\Resolutions.png" />
+    <EmbeddedResource Include="Intermech\Office\Client\Resources\User.png" />
+    <EmbeddedResource Include="Intermech\Office\Client\Resources\UserResolution.png" />
+    <EmbeddedResource Include="Intermech\Office\Client\SendEmailForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\SMDOEmailForm.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\SMDOSettingsControl.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\TextResolutionEditor.resx" />
+    <EmbeddedResource Include="Intermech\Office\Client\TreeResolutionsView.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

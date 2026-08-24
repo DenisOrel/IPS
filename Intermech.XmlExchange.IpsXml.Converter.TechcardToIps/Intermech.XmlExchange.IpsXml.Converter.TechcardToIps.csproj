@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0603DA7-9281-4915-A206-4DAD5A58EC39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.XmlExchange">
+      <HintPath>lib\Intermech.Interfaces.XmlExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.IpsXmlViewer.Interfaces">
+      <HintPath>lib\Intermech.IpsXmlViewer.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.IpsXmlViewer.XmlReaderAPI">
+      <HintPath>lib\Intermech.IpsXmlViewer.XmlReaderAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Interfaces">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Provider.Ips">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Provider.Ips.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Provider.Techcard">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Provider.Techcard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TechToIpsXmlService.cs" />
+    <Compile Include="StrategyParams\AddStrategyParams.cs" />
+    <Compile Include="StrategyParams\AddStrategyParamType.cs" />
+    <Compile Include="StrategyParams\ParamsCache.cs" />
+    <Compile Include="Utils\ConvertUtils.cs" />
+    <Compile Include="StrategyProcess\IdGenerator.cs" />
+    <Compile Include="StrategyProcess\ConfigIdCalculator.cs" />
+    <Compile Include="StrategyProcess\ConvertedData.cs" />
+    <Compile Include="StrategyProcess\ConvertedDataCache.cs" />
+    <Compile Include="StrategyProcess\StrategyExecutor.cs" />
+    <Compile Include="StrategyProcess\ValueConverter.cs" />
+    <Compile Include="Resources\LocalizationHolder.cs" />
+    <Compile Include="Resources\CustomDescription.cs" />
+    <Compile Include="Resources\CustomDisplayName.cs" />
+    <Compile Include="Resources\CustomCategory.cs" />
+    <Compile Include="Resources\CustomAttributesResources.cs" />
+    <Compile Include="ConvertStrategies\XmlDataEntityConvertStrategy.cs" />
+    <Compile Include="ConvertStrategies\XmlEntityConvertStrategy.cs" />
+    <Compile Include="ConvertStrategies\XmlObjectConvertStrategy.cs" />
+    <Compile Include="ConvertStrategies\XmlParamConvertStrategy.cs" />
+    <Compile Include="ConvertStrategies\XmlParamFromParentConvertStrategy.cs" />
+    <Compile Include="ConvertStrategies\XmlRelationConvertStrategy.cs" />
+    <Compile Include="Attributes\DefaultConvertStrategyForTypeAttribute.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources\Designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

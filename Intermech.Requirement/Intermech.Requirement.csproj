@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Requirement.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCC56571-7073-4D2F-96E9-B19D69B11567}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Requirement</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>lib\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor">
+      <HintPath>lib\Telerik.WinControls.RichTextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8">
+      <HintPath>lib\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft\Office\Interop\Word\Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\ApplicationEvents4.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\ApplicationEvents4_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\Document.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\DocumentEvents2.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\DocumentEvents2_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\Documents.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\ListFormat.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\Paragraph.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\Paragraphs.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\Range.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\WdBuiltinStyle.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\WdOutlineLevel.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\WdSaveFormat.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\_Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\Word\_Document.cs" />
+    <Compile Include="DiffPlex\Differ.cs" />
+    <Compile Include="DiffPlex\IDiffer.cs" />
+    <Compile Include="DiffPlex\Log.cs" />
+    <Compile Include="DiffPlex\Model\DiffBlock.cs" />
+    <Compile Include="DiffPlex\Model\DiffResult.cs" />
+    <Compile Include="DiffPlex\Model\Edit.cs" />
+    <Compile Include="DiffPlex\Model\EditLengthResult.cs" />
+    <Compile Include="DiffPlex\Model\ModificationData.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\IInlineDiffBuilder.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\InlineDiffBuilder.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\ISideBySideDiffBuilder.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\SideBySideDiffBuilder.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\Model\DiffPaneModel.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\Model\ChangeType.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\Model\DiffPiece.cs" />
+    <Compile Include="DiffPlex\DiffBuilder\Model\SideBySideDiffModel.cs" />
+    <Compile Include="ImSSP\sc_17729.cs" />
+    <Compile Include="Intermech\Requirement\CustomFindReplaceDialogTelerik.cs" />
+    <Compile Include="Intermech\Requirement\NodeTreeFromWord.cs" />
+    <Compile Include="Intermech\Requirement\ListExtensions.cs" />
+    <Compile Include="Intermech\Requirement\ObjectsTree.cs" />
+    <Compile Include="Intermech\Requirement\ObjectsNode.cs" />
+    <Compile Include="Intermech\Requirement\NewObject.cs" />
+    <Compile Include="Intermech\Requirement\ChangesNodesRelation.cs" />
+    <Compile Include="Intermech\Requirement\DeletedObjectRelationWithID.cs" />
+    <Compile Include="Intermech\Requirement\DeletedNodes.cs" />
+    <Compile Include="Intermech\Requirement\AddNodesNames.cs" />
+    <Compile Include="Intermech\Requirement\RequirementConst.cs" />
+    <Compile Include="Intermech\Requirement\RequirementContextMenuProvider.cs" />
+    <Compile Include="Intermech\Requirement\RequirementCreatedForm.cs" />
+    <Compile Include="Intermech\Requirement\Requirement.cs" />
+    <Compile Include="Intermech\Requirement\TreeViewOverrideDblClick.cs" />
+    <Compile Include="Intermech\Requirement\TZNotCompletedForms.cs" />
+    <Compile Include="Intermech\Requirement\WordTTDictionary.cs" />
+    <Compile Include="Intermech\Requirement\Properties\Resources.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffEngineLevel.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffEngine.cs" />
+    <Compile Include="Intermech\Requirement\Diff\IDiffList.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffStatus.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffState.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffStateList.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffResultSpanStatus.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffResultSpan.cs" />
+    <Compile Include="Intermech\Requirement\Diff\TextLine.cs" />
+    <Compile Include="Intermech\Requirement\Diff\DiffList_TextFile.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Requirement\CustomFindReplaceDialogTelerik.resx" />
+    <EmbeddedResource Include="Intermech\Requirement\dll.licenses" />
+    <EmbeddedResource Include="Intermech\Requirement\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Requirement\RequirementCreatedForm.resx" />
+    <EmbeddedResource Include="Intermech\Requirement\TZNotCompletedForms.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

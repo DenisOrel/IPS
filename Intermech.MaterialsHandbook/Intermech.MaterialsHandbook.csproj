@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.MaterialsHandbook.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E268E8A-0C21-4BF9-B462-D03FA2553066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.MaterialsHandbook</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Imbase">
+      <HintPath>lib\Intermech.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.MaterialsHandbook">
+      <HintPath>lib\Intermech.Interfaces.MaterialsHandbook.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_14485.cs" />
+    <Compile Include="ImSSP\sc_14489.cs" />
+    <Compile Include="ImSSP\sc_14467.cs" />
+    <Compile Include="ImSSP\sc_14509.cs" />
+    <Compile Include="ImSSP\sc_14480.cs" />
+    <Compile Include="ImSSP\sc_14500.cs" />
+    <Compile Include="ImSSP\sc_14564.cs" />
+    <Compile Include="ImSSP\sc_14601.cs" />
+    <Compile Include="ImSSP\sc_14604.cs" />
+    <Compile Include="ImSSP\sc_14607.cs" />
+    <Compile Include="ImSSP\sc_14612.cs" />
+    <Compile Include="ImSSP\sc_14617.cs" />
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigDimensionTypeForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\EditCoatingPropertiesForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\EditMaterialsTableForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\CoatingFavouritesForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FilterForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\GlueMaterials.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialPropertiesFileNameDlg.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialPropertiesPage.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Page.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\PropertiesCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SelectedRibbonElementEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SelectedRibbonElementEventHandler.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SelectedElement.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialFavourites.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ColorTable.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\HeaderDescription.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialProperties.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonButtonDesigner.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonDesigner.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonElementWithItemCollectionDesigner.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanelDesigner.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonTabDesigner.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonCanvasEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonElementMeasureSizeEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonElementPaintEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonItemBoundsEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonItemRenderEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanelRenderEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonRenderEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonTabRenderEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonTextEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IContainsRibbonComponents.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IContainsSelectableRibbonItems.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IRibbonElement.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonDropDown.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanelPopup.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPopup.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPopupManager.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonWrappedDropDown.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Ribbon.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonArrowDirection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonButton.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonButtonStyle.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonElementSizeMode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonItem.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonItemCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonItemCollectionEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonMouseSensor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanel.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanelCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonPanelFlowDirection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonRenderer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonTab.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonTabCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\RibbonWindowMode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TransparentTextBox.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\win32.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\BaseSearchForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialSubstitutes.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\GlueSearchForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialSearchForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ProfileSearchForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\StandartSearchForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TreeListView.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ColumnHeaderCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ColumnHeader.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TreeListNodeCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TreeListNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TreeListSubNodeCollection.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TreeListSubNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ITreeListNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ComparerHelper.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\NumericComparer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\StringComparer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\DateTimeComparer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SortMode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHSelector.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SelectedMaterialAnalizer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SelectedCoatingAndGlueAnalizer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHStartup.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ResourceHelper.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FolderNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FolderNodeID.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FolderObjectPart.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FolderQuery.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\StandartFolderNodeID.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VirtualNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VirtualNodeDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VirtualNodeObjectPart.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VirtualNodeQuery.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\AssortmentSearchSettingsCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ForbiddenAttrs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\CoatingsSettingsForm.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHCoatingsVarietiesViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TrvParentNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\TrvNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHDetailsMaterialViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHGluesViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHMaterialsViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHAssortmentViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FormulaRenderer.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHOilViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\OilHelper.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHProfilesViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHVarnishViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VarnishHelper.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VarnishItem.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHView.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHMaterialRecordNodeID.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHMaterialRecordID.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHViewCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\LvItem.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Condition.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\SortamentFilter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FilterList.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IIMHNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHRootViewProvider.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FolderNodeDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHRootNode.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHRootNodeDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHSystemSettingsViewPage.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigSettingsTypeConverter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\CoatingsSettingsTypeConverter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigSettingsCustomDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigSettingsPropertyDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigSettingsUITypeEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ConfigSettingsForAttributesUITypeEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\FieldSelectorUITypeEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\CoatingsSettingsUITypeEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHViewCtrlBase.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\IMHMaterialChangedEventArgs.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialsChildrenView.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MaterialsChildrenViewCommandsProvider.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VarnishPropertiesDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\VarnishPropertyDescriptor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\ImbaseRecordLinkPropConverter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\MultiValuesAttributeConverter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Properties\Resources.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\BasePropertiesCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\DataProvider.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\ControlWithEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\MainPropertiesCtrl.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\MainPropertiesPage.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\MainSettingsDataProvider.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\VarnishTables.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\SelectablePanel.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\TableDescription.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\TableRefTypeConverter.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\TableRefTypeEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\PropertyValueEditor.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\BackgroundTask\IMHIndexesBackgroundTask.cs" />
+    <Compile Include="Intermech\MaterialsHandbook\BackgroundTask\IMHIndexesHelper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\AssortmentSearchSettingsCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\BaseSearchForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\CoatingFavouritesForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\CoatingsSettingsForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\ConfigDimensionTypeForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\BasePropertiesCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\ControlWithEditor.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\MainPropertiesCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\MainPropertiesPage.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\PropertyValueEditor.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Controls\MaterialProperties\TableDescription.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\EditCoatingPropertiesForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\EditMaterialsTableForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\FilterForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\GlueMaterials.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\GlueSearchForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHAssortmentViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHCoatingsVarietiesViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHDetailsMaterialViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHGluesViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHMaterialsViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHOilViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHProfilesViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHSystemSettingsViewPage.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHVarnishViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHView.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHViewCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\IMHViewCtrlBase.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialFavourites.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialProperties.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialPropertiesFileNameDlg.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialPropertiesPage.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialsChildrenView.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialSearchForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\MaterialSubstitutes.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Page.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\ProfileSearchForm.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\PropertiesCtrl.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Assortment.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Assortment.png" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Coating.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Glue.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Glue.png" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\HandbookCoatings.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\HandbookGlues.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\HandbookMaterials.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\IMHResources.resx" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialCoating.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialFavourites.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialFavourites.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialFavouritesAdd.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialFavouritesAdd.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialProperties.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialProperties.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialsHandbook.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialsHandbook.png" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialSubstitutes.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\MaterialSubstitutes.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Minus.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Oils.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Plus.bmp" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Profiles.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Standarts.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\Resources\Varnish.ico" />
+    <EmbeddedResource Include="Intermech\MaterialsHandbook\StandartSearchForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

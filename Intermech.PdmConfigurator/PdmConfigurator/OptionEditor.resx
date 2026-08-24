@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Height" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;_moveUpOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_moveUpOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_moveUpOptionValuesButtonItem</value>
+  </data>
+  <data name="toolBarTop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbDataType.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_optionDescriptionTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="imagesToolbars.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABAFQAAAk1TRnQBSQFMAgEBDgEAAYwBAQGMAQEBEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEoAwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZAWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLMAQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEAAWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEAAWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZAWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEAAZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFmATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/xQAAVICMQFSMAABcgH/CgABUgHDAjgBMQFSKwAB/wEAAfEBAgFPAXIB/wcAATEBoAHDBDgCMQFSJgAB/wEIAk8CVQF9AVUBTwGXBgABWAGgAcMHOAFSJQABmAEuAVUCVgHkAX0BfgFPAvAB/wQAAVgBoAHDBzgBMSQAAfIBLQNVAS4BTwHkAU8B8wHvAQIBCAQAAVgB5QHDAVkGOAExJAABmAEtAi4B9AH/AfQBAgH0AZgBTwFVAQIB/wMAATcBXgGgAVkGOAExJAABCAGYAvMDAAEIAQABCAFPAVUBLgHyAwABNwFeAqABWQU4ATEkAAFPAZcCTwFyAZgDAAHzAU8BVgFVAfADAAE3AV4BHAF5AeUBoAHlAVkCOAExJAABTwF+AX0BVgGYAgABmAEAAZcCVgFPAfQDAAExAXQBvAEcA/sBXgJZATEkAAFPAn0BVgGXAgABmAEuAVUB5AFWAXIFAAEcAbwBHAExAjgBHAG1AlIkAAFPAS0CVgFVAZgB9AEIAU8CfQFVAZcGAAG8AbUCAAFSAe0BtQH3JQABlwEAAU8CVgFVAS4B8QFPAX4BfQFPAXIBmAUAAfABtQMAArUoAAHxAU8DVQFyAZgBTwFyAZgHAAEHAfIB7wIAArUpAAH0AZgDTwH/CwABvAHzAfACvAG1OwABBwG8AQcB74gAAbUCuwm1BQAB/wHyAbUDtAGzArQB9AQAAQcFcwEcA3MBHAHsAu0B7xCuAgABCQH0CRkBtQQAAf8BtQEJAbwBBwG8Au8BuwHcAbMB/wMAAXMC9gL/AfYB9AL2Af8C9gL/AXMBrg1WAXgBrgIAAQkB8wGsAq0B3AKtAawBpgEZAbUEAAHwAQkB/wHzAfcCvAH3AbsBtAGzAf8DAAEcAfYB/wL2Cf8BHAGuDVYBlwGuAgABCQH0AYsBrQG0ARkB3AGsAa0BpgEZAbUEAAG8ARkB9AGdAVUBTwHvAQcBCQG7AbQBGQMAAXMB9gKZARwBmQEcAe8BBwPvARwB9gFzAa4NVQFWAa4CAAEJAfQB9wGuAewBegF0ARIBiwGuARkBtQQAAQkB/wFPATQBVQGYAk8BGQG7AdwBCQMAAXMB9gEHAv8BBwP/Ae8C/wGZAf8B7QGuDU8BGwGuAgABCQHzAbUBdAN6AioB7AEZAbUEAAEJAfMBTwEIAbwB9AJPARkDtAMAAe0B9gLvAZkC7wEHAu8BBwKZAf8B7QGuBS0BLgHwAfEBTwItAZcC/wGuAgABCQH0Ae8BUwKaAXoBUgExAUsBGQG1AwAB/wEJAZgBlwFPAf8BlwFWAU8CuwK0Af8CAAEcAcMBmQL/AZkD/wGZAv8BmQH2ARwBrgFxBAIBuwMZAU8BCAP/Aa4CAAEJAfQB7wF6A5oBKwExASoBGQG1AwAB/wHdAZcBWwFVAQcBlwFWAXEB8QEJAbQBswH0AgABcwH/ATMDLQEzAi0BMwItATMB/wFzAa4B2wFxAgIBnQLcAQkFGQH0Aa4CAAEJAfQB7wRSAjEBSwEZAbsDAAH0ARkB8AGXATMBAgEJAfcBBwHvAQkB3AG0AfICAAHtAf8BMwLBATMDwQEzAsEBLQH/ARwBrgLbAUgBcQLbBdwBCQIZAa4CAAEJAfQBBwEqASsDMQEqAfcB9AG7AwAB8wcZAfABCQEZAdwBtAEJAgABcwH/Ai0BMwMtATMDLQEzAf8BHAGuBNoG2wPcAQkBrgIAAQkB9AEHAe8BUQIqAVEC7wH0AQkDAAEZAfMCGQH/AhkDCQK1AbQBtQIAAe0B9gv/AfYBHAGuCNoF2wHcAa4CAAEJAfQGBwLvAfQBCQMAAgkB3AMJAxkE/wG1AgABBwLtARwFcwHtAnMBHAGSARwQrgIAAQkB/wf0AfMB9AEJAwAB3AGsAbMB2wEJAxkB9AL/AfMBvAHzIwAMCQMAAf8BGQgJAfEB9AH/RwAGpgcADK0nAAGtAdQBswGtAawBpgcAAdUKGQGtJwABrQHVAbMCrQGmBwAM1ScAAa0B2wOzAYoXAAyLBAAMiwcAAa0B3AOzAYoMAAKtCQABiwHzBPQF/wGLBAABiwHzBPQF/wGLBwABrQHcA7MBigsAAbMB3AG0Aa0IAAGLAvME9AT/AYsEAAGLAvME9AT/AYsEAAOtAbMB2wHVArMBiwKsAa0HAAGtAdwC2wG0Aa0HAAGLA/ME9AP/AYsEAAGLA/MB2gFrAdoB9AP/AYsFAAGtAQkB3APVArQB1QGtBwABrQHcAdsD1QG0Aa0GAAGLAfID8wT0Av8BiwQAAYsB8gHzAdoBsgGsAWsB2wH0Av8BiwYAAa0BCQHbBNUBrQcAAa0C3AHbBNUBswGtBQABiwLyA/ME9AH/AYsEAAGLAfICsgHZAfMBsgGKAvQB/wGLBwABrQEZA9sBrQcAA60BtAHcAdUCswGtAqwBrQQAAYsD8gPzBPQBiwQAAYsD8gPzAbIB2gL0AYsIAAGzARkB3AGtCwABrQHcA7MBigcAAYsB8QPyA/MD9AGLBAABiwHxA/ID8wGsAdsB9AGLCQAB1AHVDAABrQHbA7MBigcAAYsB8AHxA/ID8wL0AYsEAAGLAfAB8QPyA/MB0wH0AYsXAAGtAdUDswGKBwABiwLwAfED8gPzAfQBiwQAAYsC8AHxA/ID8wH0AYsEAAytBwABrQG0A60BpgcAAYsD8AHxA/ID8wGLBAABiwPwAfED8gPzAYsEAAHVChkBrQcAAa0B2wKzAawBpgcADIsEAAyLBAAM1QcABqZpAAGhAWUBSAInAUgBDQGFCAABoQFhAT8C6QE+AWABoScAAWUBAgItAgIDSAFlBgABogHpBCUCIAEfAaIIAAamDAACrQkAAaYBAgItAVYDfQECAkgBZQQAAaIBJQUmASUCIAEfAaIHAAGtAdQBswGtAawBpgsAAbMB3AG0Aa0HAAGhAQIDLQFyAv8BfQItAkgBhQIAAaEBJQEmAZQBdQMmAZoBTQElASABHwGhBgABrQHVAbMCrQGmCgABrQHcAtsBtAGtBgABZQFVAy4BcgL/AX0CLQECAUgBDQIAAWEBRwEmAbwB8wEaASYBvQL/AXUCIAFgBgABrQHbA7MBigkAAa0B3AHbA9UBtAGtBQABSAFVAVYCfQFWAv8EfQJIAgABRQFNASYBkwL0AfMD/wFNASUBIAE+BgABrQHcA7MBiggAAa0C3AHbBNUBswGtBAABTwFWAXIB/wHzA/QD/wF9AQIBJwIAAUYCTQEmAeMB8wH0Af8BGgMmASUBHwYAAa0B3AOzAYoHAAOtAbQB3AHVArMBrQKsAa0DAAFPAZcBcgH/AvQC8wP/AX0BAgEnAgABRgF1Ak0BJgHyAv8BmgMmASUBHwMAA60BswHbAdUCswGLAqwBrQcAAa0B3AOzAYoGAAFIAXgDcgGYAvQBVgJyAVYBLQFIAgABRgGUAk0B4wH/Ar0B/wF1AiYBJQE/BAABrQEJAdwD1QK0AdUBrQgAAa0B2wOzAYoGAAFlAXgBlwJWAXIB9AHzAX0CLgItAWUCAAFhAnUBTQG8AfQCJgH0Af8BTQEmASUBYQUAAa0BCQHbBNUBrQkAAa0B1QOzAYoGAAGhAU8BnwJWAXIB/wH0AX0DLgECAaECAAGhAUYBmgFNAm8CTQEmAb0BTQEmAekBoQYAAa0BGQPbAa0KAAGtAbQDrQGmBwABpgFVAZ4BVgFPAnIBVgE0AS4BLQFlBAABogFHAZoBdQRNAiYBJQGiCAABswEZAdwBrQsAAa0B2wKzAawBpggAAaYBTwJ4AZcCVgFVAQIBpgYAAaIBRgF1AZQBdQJNAUcBRgGiCgAB1AHVDAAGpgkAAaEBZQFIAk8BSAFlAaEIAAGhAWEBRQJGAUUBYQGhZAABQgFNAT4HAAE+AwABKAMAAUADAAFAAwABAQEAAQEGAAECFgAD/wEAAv8B4QH/BAAB/gF/AeABfwQAAfQBHwHAAQ8EAAHAAQ8BwAEHBAABwAEDAcABBwQAAYABAwHAAQcEAAGAAQEBwAEHBAABhwFBAcABBwQAAYEBwQHAAQcEAAGDAUEBwAEHBAABgwEDAeABBwQAAYABAwHzAQ8EAAGgAQEB8wGfBAAB4AEHAfEBnwQAAfABPwH4AR8EAAL/AfwBPwQADP8BwAEDAeABBwGAAwABwAEDAcABAwGAAwABwAEDAcABAwGAAwABwAEDAcABAwGAAwABwAEDAcABAwGAAwABwAEDAcABAwGAAwABwAEDAYABAQGAAwABwAEDAYABAQGAAwABwAEDAYABAQGAAwABwAEDAYABAQGAAwABwAEDAYABAQGAAwABwAEDAYABAQGAAwABwAEDAYABAQT/AcABAwGAAQMI/wH4AR8BwAEDBP8B+AEfAcABAwT/AfgBHwHAAQME/wH4AR8C/wHAAQMBwAEDAfgBHwH+AX8BwAEDAcABAwH4AR8B/AE/AcABAwHAAQMBwAEDAfgBHwHAAQMBwAEDAeABBwHwAQ8BwAEDAcABAwHwAQ8B4AEHAcABAwHAAQMB+AEfAcABAwHAAQMBwAEDAfwBPwH4AR8BwAEDAcABAwH+AX8B+AEfAcABAwHAAQMC/wH4AR8BwAEDAcABAwHAAQMB+AEfAcABAwHAAQMBwAEDAfgBHwHAAQMBwAEDAcABAwH4AR8M/wHwAQ8B8AEPBP8B4AEHAeABBwH4AR8B/gF/AcABAwHAAQMB+AEfAfwBPwGAAQEBgAEBAfgBHwH4AR8BgAEBAYABAQH4AR8B8AEPAYABAQGAAQEB+AEfAeABBwGAAQEBgAEBAfgBHwHAAQMBgAEBAYABAQHAAQMB+AEfAYABAQGAAQEB4AEHAfgBHwGAAQEBgAEBAfABDwH4AR8BgAEBAYABAQH4AR8B+AEfAcABAwHAAQMB/AE/AfgBHwHgAQcB4AEHAf4BfwH4AR8B8AEPAfABDwz/FgAL</value>
+  </data>
+  <data name="&gt;&gt;_deleteOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_deleteOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_deleteOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_optionCategoryTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="_addOptionValueButtonItem.Text" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="panelMain.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABQCAAC2AAAACw==</value>
+  </data>
+  <data name="panelMain.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lbDataType.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="_restoreOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btRestore</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Name" xml:space="preserve">
+    <value>lbCategory</value>
+  </data>
+  <data name="_moveTopOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btMoveTop</value>
+  </data>
+  <data name="$this.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAAAZUYWhvbWEAAARBBfz///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAX7////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAgAAAAMAAAAL</value>
+  </data>
+  <data name="$this.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABQCAABIAQAACw==</value>
+  </data>
+  <data name="&gt;&gt;_optionDescriptionTextBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="_optionNameTextBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJ8BAAAVAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_optionCodeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_optionCodeTextBox.Name" xml:space="preserve">
+    <value>_optionCodeTextBox</value>
+  </data>
+  <data name="&gt;&gt;_optionTypeComboBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="lbDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolBarRight.Name" xml:space="preserve">
+    <value>toolBarRight</value>
+  </data>
+  <data name="&gt;&gt;toolBarRight.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;_optionValuesGrid.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGrid, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_optionValuesGrid.Name" xml:space="preserve">
+    <value>_optionValuesGrid</value>
+  </data>
+  <data name="toolBarRight.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAD8AQAAMAAAAAs=</value>
+  </data>
+  <data name="contextMenuBarItem.CommandName" xml:space="preserve">
+    <value>contextMenuBarItem</value>
+  </data>
+  <data name="lbCaption.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="_defaultViewMenuButtonItem.CommandName" xml:space="preserve">
+    <value>btnDefault</value>
+  </data>
+  <data name="&gt;&gt;toolBarTop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbDataType.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_historyButtonItem.Text" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="&gt;&gt;_optionCategoryTextBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;lbDataType.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="panelTop.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABQCAACSAAAACw==</value>
+  </data>
+  <data name="panelTop.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAACw==</value>
+  </data>
+  <data name="_optionNameTextBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAByAAAABQAAAAs=</value>
+  </data>
+  <data name="_optionNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="_optionTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbCategory.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;_optionTypeComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_moveBottomOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_moveBottomOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_moveBottomOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="_restoreOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Восстановить</value>
+  </data>
+  <data name="&gt;&gt;_moveTopOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_moveTopOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_moveTopOptionValuesButtonItem</value>
+  </data>
+  <data name="lbDataType.Text" xml:space="preserve">
+    <value>Тип данных опции:</value>
+  </data>
+  <data name="lbDataType.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAGgAAAANAAAACw==</value>
+  </data>
+  <data name="_moveDownOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btMoveDown</value>
+  </data>
+  <data name="&gt;&gt;_restoreOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_restoreOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_restoreOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="_addOptionValueRangeButtonItem.ToolTipText" xml:space="preserve">
+    <value>Добавить диапазон значений</value>
+  </data>
+  <data name="&gt;&gt;toolBarTop.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="_thumbnailsViewMenuButtonItem.CommandName" xml:space="preserve">
+    <value>btnThumbnails</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;_moveUpOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_moveUpOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_moveUpOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_moveDownOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_moveDownOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_moveDownOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="_deleteOptionValuesButtonItem.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="_optionCategoryTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="_optionDescriptionTextBox.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAANAAAACw==</value>
+  </data>
+  <data name="_optionCodeTextBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAByAAAAIAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lbDataType.Name" xml:space="preserve">
+    <value>lbDataType</value>
+  </data>
+  <data name="&gt;&gt;lbDataType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_moveTopOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Переместить в начало списка</value>
+  </data>
+  <data name="lbCode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_optionCategoryTextBox.Name" xml:space="preserve">
+    <value>_optionCategoryTextBox</value>
+  </data>
+  <data name="&gt;&gt;_optionCategoryTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_optionDescriptionTextBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJ8BAAAVAAAACw==</value>
+  </data>
+  <data name="_optionCategoryTextBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAByAAAAOwAAAAs=</value>
+  </data>
+  <data name="_optionTypeComboBox.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAANAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_moveBottomOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_moveBottomOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_moveBottomOptionValuesButtonItem</value>
+  </data>
+  <data name="_viewDropDownMenuItem.CommandName" xml:space="preserve">
+    <value>btnMode</value>
+  </data>
+  <data name="&gt;&gt;_obsoleteOptionCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="_addOptionValueMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpAddValue</value>
+  </data>
+  <data name="&gt;&gt;toolBarRight.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;_obsoleteOptionCheckBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="_defaultViewMenuButtonItem.Text" xml:space="preserve">
+    <value>Обычный вид</value>
+  </data>
+  <data name="_addOptionValueButtonItem.CommandName" xml:space="preserve">
+    <value>btAddValue</value>
+  </data>
+  <data name="lbDescr.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="_optionTypeComboBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAACAAQAAIAAAAAs=</value>
+  </data>
+  <data name="_obsoleteOptionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="_addOptionValueMenuButtonItem.Text" xml:space="preserve">
+    <value>Добавить значение</value>
+  </data>
+  <data name="_moveBottomOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Переместить в конец списка</value>
+  </data>
+  <data name="_optionCodeTextBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJkAAAAVAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lbCode.Name" xml:space="preserve">
+    <value>lbCode</value>
+  </data>
+  <data name="&gt;&gt;lbCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lbDescr.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="resource.NormalCellHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lbCategory.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAKAAAAPgAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;_deleteOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_deleteOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_deleteOptionValuesButtonItem</value>
+  </data>
+  <data name="lbCategory.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_deleteOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpDelValue</value>
+  </data>
+  <data name="toolBarTop.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;toolBarRight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;_optionDescriptionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_optionDescriptionTextBox.Name" xml:space="preserve">
+    <value>_optionDescriptionTextBox</value>
+  </data>
+  <data name="_optionCodeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;imagesGrid.Name" xml:space="preserve">
+    <value>imagesGrid</value>
+  </data>
+  <data name="&gt;&gt;imagesGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolBarTop.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABQCAAAwAAAACw==</value>
+  </data>
+  <data name="toolBarTop.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="_addOptionValueButtonItem.ToolTipText" xml:space="preserve">
+    <value>Добавить новое значение в опцию (Ins)</value>
+  </data>
+  <data name="&gt;&gt;panelTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbDescr.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;_thumbnailsViewMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_thumbnailsViewMenuButtonItem.Name" xml:space="preserve">
+    <value>_thumbnailsViewMenuButtonItem</value>
+  </data>
+  <data name="_restoreOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpRestore</value>
+  </data>
+  <data name="&gt;&gt;lbDescr.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="_historyButtonItem.CommandName" xml:space="preserve">
+    <value>btHistory</value>
+  </data>
+  <data name="lbCode.Text" xml:space="preserve">
+    <value>Код опции:</value>
+  </data>
+  <data name="lbCode.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEAAAAANAAAACw==</value>
+  </data>
+  <data name="lbDescr.Text" xml:space="preserve">
+    <value>Описание опции:</value>
+  </data>
+  <data name="lbDescr.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAF0AAAANAAAACw==</value>
+  </data>
+  <data name="_moveBottomOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btMoveBottom</value>
+  </data>
+  <data name="&gt;&gt;lbCaption.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panelMain.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAkgAAAAs=</value>
+  </data>
+  <data name="_deleteOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btDeleteValue</value>
+  </data>
+  <data name="&gt;&gt;_optionNameTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="_moveBottomOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Переместить указанные значения к концу списка</value>
+  </data>
+  <data name="lbCode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_historyButtonItem.ToolTipText" xml:space="preserve">
+    <value>Показать подробную информацию и удалённые значения</value>
+  </data>
+  <data name="_obsoleteOptionCheckBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAANAAAAdwAAAAs=</value>
+  </data>
+  <data name="menuBar.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAANAAAANAAAAAs=</value>
+  </data>
+  <data name="lbCaption.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="_optionValuesGrid.GroupBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;_optionNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_optionNameTextBox.Name" xml:space="preserve">
+    <value>_optionNameTextBox</value>
+  </data>
+  <data name="_moveUpOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Переместить указанные значения вверх (Ctrl+Up)</value>
+  </data>
+  <data name="&gt;&gt;_obsoleteOptionCheckBox.Name" xml:space="preserve">
+    <value>_obsoleteOptionCheckBox</value>
+  </data>
+  <data name="&gt;&gt;_obsoleteOptionCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_moveTopOptionValuesMenuButtonItem.Name" xml:space="preserve">
+    <value>_moveTopOptionValuesMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_moveTopOptionValuesMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueMenuButtonItem.Name" xml:space="preserve">
+    <value>_addOptionValueMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueButtonItem.Name" xml:space="preserve">
+    <value>_addOptionValueButtonItem</value>
+  </data>
+  <data name="_optionDescriptionTextBox.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAByAAAAWAAAAAs=</value>
+  </data>
+  <data name="_moveDownOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpMoveDown</value>
+  </data>
+  <data name="&gt;&gt;_optionNameTextBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="_optionDescriptionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;_defaultViewMenuButtonItem.Name" xml:space="preserve">
+    <value>_defaultViewMenuButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_defaultViewMenuButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbCaption.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbCaption.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAFwAAAANAAAACw==</value>
+  </data>
+  <data name="lbCaption.Text" xml:space="preserve">
+    <value>Название опции:</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="_moveDownOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Переместить указанные значения вниз (Ctrl+Down)</value>
+  </data>
+  <data name="&gt;&gt;toolBarTop.Name" xml:space="preserve">
+    <value>toolBarTop</value>
+  </data>
+  <data name="&gt;&gt;toolBarTop.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_viewDropDownMenuItem.Name" xml:space="preserve">
+    <value>_viewDropDownMenuItem</value>
+  </data>
+  <data name="&gt;&gt;_viewDropDownMenuItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.DropDownMenuItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbDescr.Name" xml:space="preserve">
+    <value>lbDescr</value>
+  </data>
+  <data name="&gt;&gt;lbDescr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_moveDownOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_moveDownOptionValuesButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_moveDownOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="_optionValuesGrid.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAPwBAACGAAAACw==</value>
+  </data>
+  <data name="_optionValuesGrid.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_restoreOptionValuesButtonItem.Name" xml:space="preserve">
+    <value>_restoreOptionValuesButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_restoreOptionValuesButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="_restoreOptionValuesButtonItem.Text" xml:space="preserve">
+    <value>Восстановить</value>
+  </data>
+  <data name="&gt;&gt;menuBar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueRangeButtonItem.Name" xml:space="preserve">
+    <value>_addOptionValueRangeButtonItem</value>
+  </data>
+  <data name="&gt;&gt;_addOptionValueRangeButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="_optionValuesGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbDescr.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAKAAAAWwAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>OptionEditor</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Name" xml:space="preserve">
+    <value>menuBar</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuBar, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="_moveBottomOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpMoveBottom</value>
+  </data>
+  <data name="lbDataType.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;menuBar.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="_deleteOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Удалить значение</value>
+  </data>
+  <data name="_moveUpOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpMoveUp</value>
+  </data>
+  <data name="_thumbnailsViewMenuButtonItem.Text" xml:space="preserve">
+    <value>С изображениями</value>
+  </data>
+  <data name="lbCode.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAKAAAAIwAAAAs=</value>
+  </data>
+  <data name="_optionTypeComboBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJEAAAAVAAAACw==</value>
+  </data>
+  <data name="lbCaption.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAKAAAACAAAAAs=</value>
+  </data>
+  <data name="toolBarRight.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAEAAAACw==</value>
+  </data>
+  <data name="toolBarRight.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABgAAACGAAAACw==</value>
+  </data>
+  <data name="toolBarRight.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lbCode.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="menuBar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;_optionTypeComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;_optionTypeComboBox.Name" xml:space="preserve">
+    <value>_optionTypeComboBox</value>
+  </data>
+  <data name="_obsoleteOptionCheckBox.Text" xml:space="preserve">
+    <value>Опция устарела (использование запрещено)</value>
+  </data>
+  <data name="_obsoleteOptionCheckBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAP4AAAARAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;_optionCodeTextBox.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;imagesToolbars.Name" xml:space="preserve">
+    <value>imagesToolbars</value>
+  </data>
+  <data name="&gt;&gt;imagesToolbars.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_moveDownOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Переместить вниз</value>
+  </data>
+  <data name="&gt;&gt;_optionValuesGrid.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="toolBarRight.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBarItem.Name" xml:space="preserve">
+    <value>contextMenuBarItem</value>
+  </data>
+  <data name="&gt;&gt;contextMenuBarItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ContextMenuBarItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="_restoreOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Восстановить ранее удалённое значение опции</value>
+  </data>
+  <data name="_optionValuesGrid.Header.Height" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lbDataType.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAASAQAAIwAAAAs=</value>
+  </data>
+  <data name="_addOptionValueRangeButtonItem.CommandName" xml:space="preserve">
+    <value>_addOptionValueRangeButtonItem</value>
+  </data>
+  <data name="menuBar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelTop.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lbCaption.Name" xml:space="preserve">
+    <value>lbCaption</value>
+  </data>
+  <data name="_addOptionValueRangeButtonItem.Text" xml:space="preserve">
+    <value>Добавить диапазон значений</value>
+  </data>
+  <data name="&gt;&gt;lbCaption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_moveUpOptionValuesMenuButtonItem.Text" xml:space="preserve">
+    <value>Переместить вверх</value>
+  </data>
+  <data name="&gt;&gt;_historyButtonItem.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;_historyButtonItem.Name" xml:space="preserve">
+    <value>_historyButtonItem</value>
+  </data>
+  <data name="lbCode.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lbCode.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="_optionCategoryTextBox.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAANAAAACw==</value>
+  </data>
+  <data name="_moveTopOptionValuesMenuButtonItem.CommandName" xml:space="preserve">
+    <value>mnpMoveTop</value>
+  </data>
+  <data name="lbCategory.Text" xml:space="preserve">
+    <value>Категория опции:</value>
+  </data>
+  <data name="lbCategory.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAGIAAAANAAAACw==</value>
+  </data>
+  <data name="imagesGrid.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADmCAAAAk1TRnQBSQFMAgEBAwEAAYwBAQGMAQEBEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEoAwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZAWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLMAQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEAAWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEAAWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZAWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEAAZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFmATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/5EAEK4QbRIADa4BAAGuDVYBeAGuAW0N7QHvAW0SAAGuC1UBrgEAAa4NVgGXAa4BbQ3tAZIBbRAADa4BTwGuAQABrg1VAVYBrgFtDewB7QFtEAABrgtVAa4B/wGuAQABrg1PARsBrg5tAfABbRAAAa4LTwGuAf8BrgEAAa4FLQEuAfAB8QFPAi0BlwL/Aa4BbQUSAeoBBwG8AW0CEgGSAvMBbRAAAa4ELQEuAfAB8QFPAS0BlwH/Aa4BGQGuAQABrgFxBAIBuwMZAU8BCAP/Aa4BbQHqBBUB7wPyAW0BBwLyAfMBbRAAAa4BcQMCAbsDGQFPAv8BrgEZAa4BAAGuAdsBcQICAZ0C3AEJBRkB9AGuAW0BBwHqAhUB7QK8AQcF8gHxAW0QAAGuAdsBcQECAXEC3AEJBBkBrgHcAa4BAAGuAtsBSAFxAtsF3AEJAhkBrgFtAgcBEQHqAgcFvAEHAvIBbRAAAa4C2wFIAtsD3AEJAdwBGQOuAQABrgTaBtsD3AEJAa4BbQTvBgcDvAEHAW0QAAGuA9oF2wEJAtwBrgMAAa4I2gXbAdwBrgFtCO8FBwG8AW0QAA2uAwAQrhBtkAABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/wEABv8CAAb/AgAC/wYAAcABAQYAAcABAQcAAQEHAAEBBwABAQcAAQEHAAEBBwABAQcAAQEHAAEHBwABBwYABv8CAAb/GAAL</value>
+  </data>
+  <data name="_optionNameTextBox.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAANAAAACw==</value>
+  </data>
+  <data name="_obsoleteOptionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;_optionValuesGrid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="menuBar.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+  <data name="menuBar.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAI0AAAAaAAAACw==</value>
+  </data>
+  <data name="menuBar.Text" xml:space="preserve">
+    <value>menuBar</value>
+  </data>
+  <data name="&gt;&gt;_optionCodeTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="_viewDropDownMenuItem.Text" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="_moveTopOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Переместить указанные значения в начало списка</value>
+  </data>
+  <data name="_optionValuesGrid.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAMAAAAAs=</value>
+  </data>
+  <data name="_moveUpOptionValuesButtonItem.CommandName" xml:space="preserve">
+    <value>btMoveUp</value>
+  </data>
+  <data name="_optionCategoryTextBox.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJ8BAAAVAAAACw==</value>
+  </data>
+  <data name="_deleteOptionValuesButtonItem.ToolTipText" xml:space="preserve">
+    <value>Удалить выделенные значения из опции (Del)</value>
+  </data>
+</root>

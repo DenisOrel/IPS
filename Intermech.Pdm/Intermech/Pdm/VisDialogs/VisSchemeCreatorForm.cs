@@ -1,0 +1,36 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.Pdm.VisDialogs.VisSchemeCreatorForm
+// Assembly: Intermech.Pdm, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
+// MVID: D833CF8C-C82D-4973-9ACD-BA96843B4864
+// Assembly location: D:\IPS\Client\Intermech.Pdm.dll
+
+using Intermech.Interfaces.Client;
+using Intermech.PropertyEditors;
+using System;
+
+#nullable disable
+namespace Intermech.Pdm.VisDialogs;
+
+internal class VisSchemeCreatorForm : IObjectCreatorCustomService
+{
+  public long CreateObjectDialog(
+    int ObjectTypeID,
+    long TemplateObjectID,
+    int[] RelationTypeIDs,
+    long[] RelatedObjectIDs,
+    DateTime StartDate,
+    bool isVersion)
+  {
+    return VisSchemeEditor.Execute(ObjectTypeID, TemplateObjectID);
+  }
+
+  public static void Attach(IObjectCreatorService service)
+  {
+    service.RegisterCreatorCustomService(ObjectTypesHelper.GetObjTypeID("cadd9aa6-306c-11d8-b4e9-00304f19f545"), typeof (VisSchemeCreatorForm));
+  }
+
+  public static void Detach(IObjectCreatorService service)
+  {
+    service.UnregisterCreatorCustomService(ObjectTypesHelper.GetObjTypeID("cadd9aa6-306c-11d8-b4e9-00304f19f545"), typeof (VisSchemeCreatorForm));
+  }
+}

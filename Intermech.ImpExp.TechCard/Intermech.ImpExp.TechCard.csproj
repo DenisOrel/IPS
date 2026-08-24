@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ImpExp.TechCard.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91ABC7FF-4D59-4D3F-9D63-448AB840D765}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.ImpExp.TechCard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CabDotNet">
+      <HintPath>lib\CabDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraGrid">
+      <HintPath>lib\DevExpress.IM.XtraGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.AutoSelection.Client">
+      <HintPath>lib\Intermech.AutoSelection.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.DBCore">
+      <HintPath>lib\Intermech.Document.DBCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Expert">
+      <HintPath>lib\Intermech.Expert.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions">
+      <HintPath>lib\Intermech.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Imbase">
+      <HintPath>lib\Intermech.ImpExp.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Interface">
+      <HintPath>lib\Intermech.ImpExp.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.SearchData">
+      <HintPath>lib\Intermech.ImpExp.SearchData.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.AutoSelection">
+      <HintPath>lib\Intermech.Interfaces.AutoSelection.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.MRP">
+      <HintPath>lib\Intermech.Interfaces.MRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.TechCard">
+      <HintPath>lib\Intermech.Interfaces.TechCard.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.TechAcad.Connector">
+      <HintPath>lib\Intermech.TechAcad.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.TechCard.Document.Interfaces">
+      <HintPath>lib\Intermech.TechCard.Document.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Signs\HashPack.cs" />
+    <Compile Include="ImpExp\TechCardEx\Pumpers\Data\TechProcPump\Tp2ZagLink\TechTp2ZagLinkPump.cs" />
+    <Compile Include="ImpExp\TechCardEx\Pumpers\Data\TechProcPump\TpDwgDraft\DraftDwgDataPump.cs" />
+    <Compile Include="ImpExp\TechCard\AttributeTypeSelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\ListBoxItem.cs" />
+    <Compile Include="ImpExp\TechCard\TypeSelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\TreeNodeComparer.cs" />
+    <Compile Include="ImpExp\TechCard\RelationTypeSelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\lPropertyDescriptor.cs" />
+    <Compile Include="ImpExp\TechCard\ObjectTypeSelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\YesNoConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Entity.cs" />
+    <Compile Include="ImpExp\TechCard\EntityProperties.cs" />
+    <Compile Include="ImpExp\TechCard\EntityPumModes.cs" />
+    <Compile Include="ImpExp\TechCard\EntityPumpStatus.cs" />
+    <Compile Include="ImpExp\TechCard\EntityReference.cs" />
+    <Compile Include="ImpExp\TechCard\EntityRef.cs" />
+    <Compile Include="ImpExp\TechCard\EntityReferenceList.cs" />
+    <Compile Include="ImpExp\TechCard\EntityRefList.cs" />
+    <Compile Include="ImpExp\TechCard\EntitySetting.cs" />
+    <Compile Include="ImpExp\TechCard\EntityProduction.cs" />
+    <Compile Include="ImpExp\TechCard\EntityProductionList.cs" />
+    <Compile Include="ImpExp\TechCard\EntMeasureProdSetting.cs" />
+    <Compile Include="ImpExp\TechCard\MetaDataPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypeConversionPredefinedRules.cs" />
+    <Compile Include="ImpExp\TechCard\FormTokenConsts.cs" />
+    <Compile Include="ImpExp\TechCard\ProductInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Production.cs" />
+    <Compile Include="ImpExp\TechCard\IpsProductionObj.cs" />
+    <Compile Include="ImpExp\TechCard\Scenario2XmlConverter.cs" />
+    <Compile Include="ImpExp\TechCard\TechCardPlugin.cs" />
+    <Compile Include="ImpExp\TechCard\WorkTypePump\WorkTypePump.cs" />
+    <Compile Include="ImpExp\TechCard\ProductionsPump\ProductionsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4Imbase.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4ObjType.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4Production.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4Rate.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4Search.cs" />
+    <Compile Include="ImpExp\TechCard\Condition4Type\Condition4Zag.cs" />
+    <Compile Include="ImpExp\TechCard\Properties\Resources.cs" />
+    <Compile Include="ImpExp\TechCard\DraftPump\DraftDWGPump.cs" />
+    <Compile Include="ImpExp\TechCard\DraftPump\DraftOLEPump.cs" />
+    <Compile Include="ImpExp\TechCard\Controls\ExTabControl.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypeInfo.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypeList.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypePumpMode.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypeRecord.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypeSett.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypePumpModeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypePumper.cs" />
+    <Compile Include="ImpExp\TechCard\TechTypes\TechTypeSettingsControl.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\CondsPump\TechExpCond.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\CondsPump\CondPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\DimensionDirection.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\DimensionType.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\DimensionInfo.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\LayerData.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\TableBody.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\TableHeader.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\TableInfo.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\TechExpTablesConst.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\TablesPump\TablePump.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\BaseMember.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\CompiledFormulaList.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\CompiledTokenRecord.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\EntryHead.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\EntryKeeper.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\EntryMemberType.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\EntryMember.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\FormulaData.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\FormulaDataProc.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\FormulaHeader.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\FormulaList.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\ListMember.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\TokenRecord.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\ExpTokenConverter.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\EntryCont.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\FormulaPump\FormulaPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\BaseExpPumpException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\ServiceNotFoundException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\EntitySettNotExistException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\AttributeNotExistsException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\CommonDataTypeCheckFailException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\ObjLinkTypeCheckFailException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\CommonDataTypeConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\ObjectLinkTypeConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\MeasureTypeConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\BaseConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\TokenConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\FormulaConvertException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\FormulaCompileException.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\Real48.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\TechExpert.cs" />
+    <Compile Include="ImpExp\TechCard\TechExpPump\Common\TechExpObjStruct.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\DocTarget.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\CardType.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\PerehOrder.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\OsnOrder.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\DocKind.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\DocMask.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\ImDocTypeRecord.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\ImTextTypeRecord.cs" />
+    <Compile Include="ImpExp\TechCard\DocsPump\ImVarTypeRecord.cs" />
+    <Compile Include="ImpExp\TechCard\AutoSel\AnketaRow.cs" />
+    <Compile Include="ImpExp\TechCard\AutoSel\AutoSelectNode.cs" />
+    <Compile Include="ImpExp\TechCard\AutoSel\AutoSelCondPump.cs" />
+    <Compile Include="ImpExp\TechCard\AutoSel\AutoSelectProcRec.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRoutesInitClass.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRoute_Links\Routes2Zag\TechRoute2ZagPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRoute_Links\Routes2Art\TechRoute2ArtLinks.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRoute_Links\Elem2Oper\TechRouteElem2OperPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRouteTemplate\TechRouteTemplatePump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRoutes\TechRoutesPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\Common\TechRouteCommonPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRouteElem\TechRouteElemLinkPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechRoutePump\TechRouteElem\TechRouteElemPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\EntityTypeRec.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\EntityTypeList.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechEntityFix.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechEntFixList.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechEntityTypePump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechEntityFixPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechProcPumpConst.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechProcPumpLabel.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechProcPumpLabelProc.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TechProcPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_ZAG\TechZagPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_WRK\TechPersonalPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_TOOL\TechToolsObject.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_TOOL\TechToolsPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_REZ\TechRezPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_PER\TechPerehodPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_OSNPOS\TechOsnPosInstrumLinksPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_OSNPOS\TechOsnPosPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_OPER\TechOperPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_OB\TechOutfitInvNomLinksPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_OB\TechOutfitPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_NPER\TechAddMovementPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_MAT\TechMaterialLinksPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_MAT\TechMaterialLinkString.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_MAT\TechMaterialObject.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_MAT\TechMaterialPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_COM\TechCommentPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_CHN\TechTPOverpatchingPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_ART\TechArtLinkPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TP_ART\TechArtPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TC_INVNOM\InvNomStructRec.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\TC_INVNOM\TechInvNomPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ITechParamAttribute.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ITechAttrParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ITechParamEntity.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ITechEntParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamType.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ITechParamBase.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamAttribute.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechAttrParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamAttributeCaption.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechAttrCaptParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamBase.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamEntity.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechEntParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamEntityFixed.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechEntFixedParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamList.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParmList.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechParamListExtension.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\ExperementPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechRelParam.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechIZW\TechIzwPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechDiff\TechDiffCache.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechDiff\TechDiffElement.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechDiff\TechDiffRec.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechDiff\TechDiffRecList.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechDiff\TechDiffPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechCehZahodPump\TechCehZahodPump.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechProcessPump\TechProcCacheInfo.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechProcessPump\TechProcessObject.cs" />
+    <Compile Include="ImpExp\TechCard\TechProcPump\Common\TechProcessPump\TechProcessPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\TechPumpData.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\SetTechTypeList.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\UpdateControlDataPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\UpdateIpsSettingsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechTypes\Settings\TechTypeConvertionRule.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechTypes\Settings\TechTypeConvertionRuleMode.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechTypes\Settings\TechTypeListHelper.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\TechExpBasePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\TechExpFolderSupportPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpFolderObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpFolderObjectFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpKey.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpKeyConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpObjType.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechExpPump\Common\TechExpObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TC_Configs\TechConfigCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TC_Configs\TechConfigInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TC_Configs\TechConfigInfoFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TC_Configs\TechConfigPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioBuilder.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioVisualComparer.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioPropertyVisualComparer.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioCellVisualComparer.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioKind.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioDbRecord.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioDbRecordsHolder.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioUtils.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\CatalogLinkData.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioProperty.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\CellValueType.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioCell.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\Scenario.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ScenarioPump\ScenarioPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ImTablesPump\TechImCatalogUpdatePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImDataMode.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImDataTypeEx.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImFieldInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImFieldInfoFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImFieldInfoCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\TechImFieldsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImTableInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImTableInfoFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImTableInfoCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\ImTableList.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TablesPump\TechImTablesPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitiesSettingsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\AttributeListTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\MeasureProdConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\OptionsConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\MeasuresTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\PhysicalValuesTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityCollectionTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\MeasureProdDropDownEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\AttributeOptionsDropDownEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\Measure2ProductionListConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\Measure2ProductionListDropDownEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\ReferenceEntityEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityWithMeasureEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityDescriptor.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityExistsStatus.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityHelper.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsIpsAttributes.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsDefault.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsFixed.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsValidator.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityConsts.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityErrorRecord.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsErrorReport.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityYesNoMessageDialog.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityOkMessageDialog.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\SetValues.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitiesPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitiesPumpSettings.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\DopTypes.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\FormulaTemplateConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\TemplateUtils.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\GroupDocuments.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\TcBlankProperties.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\TechcardDocsPumper\TechcardDocsPumperConst.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\BaseMetaPump\TechMetaPumpBase.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\AutoSel\AutoSelCondDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\MetaData\ArcArtPump\ArtArtsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\Tp2LinkPump\Tp2Obj2LinkPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\Obj2Link\Obj2LinkInfoObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRouteTemplate\TechRouteTemplateObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoutes\TechRoutesObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\Common\RouteObjRecBase.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\Common\RouteObjRecDop_D.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2Zag\TechRoute2ZagObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\TechRouteElem\TechRouteElemTemplatePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\TechRouteElem\TechRouteElemObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2Tp\TechRoute2TpObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2Tp\TechRoute2TpPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2TpOld\TechRoute2TpOldObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2TpOld\TechRoute2TpOldPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2TpOld\TechRoute2TPOldDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Routes2Art\TechRoute2ArtDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechRoutePump\TechRoute_Links\Elem2Oper\TechRouteElem2OperDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\LinkedObjectType.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ProcRouteDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ProcRouteObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ProcRoutePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ArtProdCopies.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ZPCProcRouteInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ZPCProcRouteEntryObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ZPCEntryInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ZPCEntryInfoEx.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ProcRouteZPCEntryPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\ZPCEntryPump\ZPCSbList.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\EntryContent.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\EntryHelper.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\EntryInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\EntryInfoEx.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\LinkedObjDescr.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\EntryDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\ProcRouteEntryObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\ProcRouteEntryPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcRoutePump\EntryPump\ProcRouteInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TechProcDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_PER\TechPerehodObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\Vtd\VtdPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_ZAG\TechZagDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_ZAG\TechZagGroupPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_ZAG\TechZagRecord.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchDwgDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchDwgPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchType.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_SKETCH\TechSketchPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_OSNPOS\TechOsnPosInstrumLinksDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_OPER\TechOperationCacheInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_OPER\TechOperationObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\TechMaterialDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\TechMaterialLinkObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\MaterialGroup\TechMaterialGroupDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\MaterialGroup\TechMaterialGroupObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\MaterialGroup\TechMaterialGroupPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\MaterialGroupSubstitute\TechMaterialGroupSubstituteCacheInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_MAT\MaterialGroupSubstitute\TechMaterialGroupSubstitutePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_LINKS\TechTpLinkDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_LINKS\TechTPLinkObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_LINKS\TechTpLinkPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TP_AGREE\TechAgreePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\Tp2ZagLink\TechTP2ZagLinkDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\Tp2ZagLink\TechTp2ZagLinkObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TC_INVNOM\TechInvNomDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\TC_INVNOM\TechInvNomTablePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\Common\TechIZW\TechIzwDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\TechProcPump\Common\TechCehZahodPump\TechCehZahodDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\DraftPump\DraftDwgDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\DraftPump\DraftOLEParser.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Data\DraftPump\DraftOLEObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechConfiguration.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechDataReaderInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteObjectLinkbyIDStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechParamAttributeFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechParamEntityFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteBlobStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeBooleanStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteDateTimeStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteDoubleStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteGuidStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteIntegerStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteMeasuredStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteMemoStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteObjectLinkStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\TechAttributeWriteStringStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\AttributeFieldTypeAttribute.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\ObjectForAttributeFieldTypeFactory`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\ObjectForAttributeFieldTypeService`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertDefaultStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertToMeasuredStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertToObjectLinkStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertToDateStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertToStringStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechParam\Strategy\Convert\TechEntityConvertStrategy.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechBaseUniqueDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ITechDataBuilder.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechDataBuilderSimple`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechDataSource.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechBaseUniquePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ImbaseObjectNameParser.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechLinkBasePump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechParentObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ParentObjectParam.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechObjectRelationInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\TechPumpBase.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\RecordParser\TechRecordParser.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\RecordParser\TechRecordParserMemo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\RecordParser\TechRecordParserSimple.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSubDynamic.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSubFixedType.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub_D2.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub_F.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub_I.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub_S.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecord.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordBase.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSub_D.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordSubFactory.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordDynamic.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectRecords\TechObjectRecordUniqueDynamic.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectData\BaseTechObjInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectData\TechObjectDataSubCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectData\TechObjectDataSub.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\TechBaseObjPump\ObjectData\TechObjectDataSubList.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordMetaDataBuilder`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordDynamic.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordMetaPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordSub_Rec.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\ImbaseObjectRecord\ImbaseObjectRecordPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\ImportingCategoryBuilder.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\ImportingCategoryData.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\ImportingCategoryDataCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\PortalImportedObjectsPump.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Document\PortalSearchDocument.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Document\PortalSearchDocumentCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Document\PortalSearchDocumentVersion.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Document\PortalSearchDocumentVersionCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Article\PortalSearchArticle.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Article\PortalSearchArticleCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Article\PortalSearchArticleVersion.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Search\Article\PortalSearchArticleVersionCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Common\PortalImportedObject.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Common\PortalImportedObjectCache`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Common\PortalImportedObjectVersion.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Impl\Common\PortalImportedObjectVersionCache`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Interfaces\IPortalSearchArticleVersionCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Interfaces\IPortalImportedObjectCache`1.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\Portal\Interfaces\IPortalSearchDocumentVersionCache.cs" />
+    <Compile Include="ImpExp\TechCard\Pumpers\Common\DataCache\ImbaseSync\ImbaseFolderCathegoryUpdatePump.cs" />
+    <Compile Include="ImpExp\TechCard\Common\AppManagerExtension.cs" />
+    <Compile Include="ImpExp\TechCard\Common\MessageBuffer.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ImbaseKeyConvertor.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ImbaseKeyObjectCache.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ImbaseInvalidLinkItems.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ImbaseLinkConvertor.cs" />
+    <Compile Include="ImpExp\TechCard\Common\InvalidKeyItem.cs" />
+    <Compile Include="ImpExp\TechCard\Common\InvalidKeyItems.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ImportingDataHelper.cs" />
+    <Compile Include="ImpExp\TechCard\Common\RtfDataConvertor.cs" />
+    <Compile Include="ImpExp\TechCard\Common\SearchConnectionsManager.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechItemFactoryBase`1.cs" />
+    <Compile Include="ImpExp\TechCard\Common\CompositionSortingRuleProc.cs" />
+    <Compile Include="ImpExp\TechCard\Common\Conflict.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ConflictManager.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechConnectionsManager.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechPumpMetaDataType.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechPumpMode.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechPumpDataType.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechcardConsts.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechVersionInfo.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechDbConsts.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechUtils.cs" />
+    <Compile Include="ImpExp\TechCard\Common\DataConvertor.cs" />
+    <Compile Include="ImpExp\TechCard\Common\VidZag\VidZagPump.cs" />
+    <Compile Include="ImpExp\TechCard\Common\VidIzd\VidIzdPump.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TC_CEH\TechCehObjectTypes.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TC_CEH\TechCehPump.cs" />
+    <Compile Include="ImpExp\TechCard\Common\LoadCache\TechCache.cs" />
+    <Compile Include="ImpExp\TechCard\Common\DataManager\DataManager.cs" />
+    <Compile Include="ImpExp\TechCard\Common\ArcArtPump\ArcArtsObject.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\ArtInfoLight.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\ArtStructExpander.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\ObjStructExpander.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\ProdZakStructExpander.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\ArtSelectionDialog.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\TechSettingsControl.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\TechSettingsDocList.cs" />
+    <Compile Include="ImpExp\TechCard\Common\TechCardSettings\TechSettingsHelper.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\AttributeTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\DictionaryPropertyGridAdapter.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\DictionaryPropertyDescriptor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\EntityAttributeTypeEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\EntitySelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ImportMetadataForm.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ISelectorForm.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ObjectTypeGuidConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ObjectTypeIntConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ObjectTypeGuidEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ObjectAnyTypeEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ObjectTypeIntEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\RelationTypeConverter.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\RelationGuidTypeEditor.cs" />
+    <Compile Include="ImpExp\TechCard\Advanced\ToolTipDialog.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImpExp\TechCard\Advanced\EntitySelectorForm.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Advanced\ImportMetadataForm.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\AttributeTypeSelectorForm.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Common\ConflictManager.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Common\TechCardSettings\ArtSelectionDialog.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Common\TechCardSettings\TechSettingsControl.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Common\TechCardSettings\TechSettingsDocList.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\ObjectTypeSelectorForm.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Properties\Resources.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitiesPumpSettings.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityOkMessageDialog.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntitySettingsErrorReport.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\Pumpers\MetaData\EntitiesPump\EntityYesNoMessageDialog.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\RelationTypeSelectorForm.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\TechTypes\TechTypeSettingsControl.resx" />
+    <EmbeddedResource Include="ImpExp\TechCard\TypeSelectorForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

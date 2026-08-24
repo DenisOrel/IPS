@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgOperationComplete" xml:space="preserve">
+    <value>Операция завершена:</value>
+  </data>
+  <data name="msgFindFirstPROnVhod" xml:space="preserve">
+    <value>По умолчанию не найден. Берем первый в списке</value>
+  </data>
+  <data name="msgProcessRouteFound" xml:space="preserve">
+    <value>Найден подходящий МО:</value>
+  </data>
+  <data name="msgLoadInputData" xml:space="preserve">
+    <value>Загрузка входных данных для конвертации</value>
+  </data>
+  <data name="msgRouteNotFound" xml:space="preserve">
+    <value>Расцеховочный маршрут не найден</value>
+  </data>
+  <data name="msgRemovingEmptyItems" xml:space="preserve">
+    <value>Удаление пустых контейнеров:</value>
+  </data>
+  <data name="msgRoutesSearching" xml:space="preserve">
+    <value>Поиск подходящего расцеховочного маршрута</value>
+  </data>
+  <data name="msgParentNotFoundForLink" xml:space="preserve">
+    <value>Не найден родительский объект у связи:</value>
+  </data>
+  <data name="msgProcessEcoRouteFound" xml:space="preserve">
+    <value>Для ИИ первый в списке МО:</value>
+  </data>
+  <data name="msgProcessRoutesFiltering" xml:space="preserve">
+    <value>Фильтрация маршрутов обработки</value>
+  </data>
+  <data name="msgHeadArtsCount" xml:space="preserve">
+    <value>Количество головных изделий:</value>
+  </data>
+  <data name="msgProcessRouteNotFound" xml:space="preserve">
+    <value>Подходящий МО не найден</value>
+  </data>
+  <data name="msgExportAssemblies" xml:space="preserve">
+    <value>Конвертациы составов головных изделий</value>
+  </data>
+  <data name="msgEmptyPR" xml:space="preserve">
+    <value>Найденный МО не содержит дочерних элементов</value>
+  </data>
+  <data name="msgFindDefaultPROnVhod" xml:space="preserve">
+    <value>Поиск среди подходящий по входимости МО по умолчанию</value>
+  </data>
+  <data name="msgProcessHeadRouteFound" xml:space="preserve">
+    <value>Для головной сборки первый в списке МО:</value>
+  </data>
+  <data name="msgPRNotFound" xml:space="preserve">
+    <value>МО не найден</value>
+  </data>
+  <data name="msgAlreadyExportedObject" xml:space="preserve">
+    <value>Объект уже выгружался:</value>
+  </data>
+  <data name="msgProcessHeadRouteNotFound" xml:space="preserve">
+    <value>МО не найден для головной сборки</value>
+  </data>
+  <data name="msgSaveResultFile" xml:space="preserve">
+    <value>Сохранение результатов конвертации в файл:</value>
+  </data>
+  <data name="msgRouteFound" xml:space="preserve">
+    <value>Найден расцеховочный маршрут:</value>
+  </data>
+  <data name="msgExportPreparedParams" xml:space="preserve">
+    <value>Выгрузка расчитанных значений параметров</value>
+  </data>
+  <data name="msgExportNode" xml:space="preserve">
+    <value>Формирование узла:</value>
+  </data>
+  <data name="msgFindFirstPRWithoutVhod" xml:space="preserve">
+    <value>По умолчанию не найден. Берем первый в списке</value>
+  </data>
+  <data name="msgFindDefalutPRWithoutVhod" xml:space="preserve">
+    <value>По входимости не наден. Ищем с признаком по умолчанию среди МО без входимостей</value>
+  </data>
+</root>

@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intermech.Office.Client", "Intermech.Office.Client.csproj", "{79F281EC-A9F8-4A04-9C83-186BD4473907}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F281EC-A9F8-4A04-9C83-186BD4473907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F281EC-A9F8-4A04-9C83-186BD4473907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F281EC-A9F8-4A04-9C83-186BD4473907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F281EC-A9F8-4A04-9C83-186BD4473907}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

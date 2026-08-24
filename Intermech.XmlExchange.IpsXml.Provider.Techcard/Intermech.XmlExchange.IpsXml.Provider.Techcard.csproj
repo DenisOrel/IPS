@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.XmlExchange.IpsXml.Provider.Techcard.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{541E6EA3-3BD3-49EF-A9C4-9A5C300E540C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.XmlExchange.IpsXml.Provider.Techcard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.XmlExchange.IpsXml.Provider.Techcard</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Interfaces">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TechXmlDataFactory.cs" />
+    <Compile Include="TechXmlDataProvider.cs" />
+    <Compile Include="Relations\TechXmlRelation.cs" />
+    <Compile Include="Params\TechXmlParam.cs" />
+    <Compile Include="Params\TechXmlParams.cs" />
+    <Compile Include="Objects\BaseTechXmlObject.cs" />
+    <Compile Include="Objects\TechXmlObject.cs" />
+    <Compile Include="Format\BaseTechXmlNode.cs" />
+    <Compile Include="Format\AttrType.cs" />
+    <Compile Include="Format\NodeType.cs" />
+    <Compile Include="Format\ParamType.cs" />
+    <Compile Include="Format\AttrTypeExtension.cs" />
+    <Compile Include="Format\NodeTypeExtention.cs" />
+    <Compile Include="Format\ParamTypeExtention.cs" />
+    <Compile Include="Format\TypesExtensions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

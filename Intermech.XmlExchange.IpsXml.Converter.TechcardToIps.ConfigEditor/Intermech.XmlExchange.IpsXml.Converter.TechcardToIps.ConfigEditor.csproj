@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.ConfigEditor.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3505DA0-1C7A-4266-B871-6ADA11ACAC71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.ConfigEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.ConfigEditor</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Converter.TechcardToIps.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.XmlExchange.IpsXml.Interfaces">
+      <HintPath>lib\Intermech.XmlExchange.IpsXml.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigMainEditorView.cs" />
+    <Compile Include="Services\EditorViewService.cs" />
+    <Compile Include="Resources\CustomAttributesResources.cs" />
+    <Compile Include="Resources\LocalizationHolder.cs" />
+    <Compile Include="Resources\CustomDescription.cs" />
+    <Compile Include="Resources\CustomDisplayName.cs" />
+    <Compile Include="Resources\CustomCategory.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Interfaces\BaseEditorViewController.cs" />
+    <Compile Include="Interfaces\IEditorViewController.cs" />
+    <Compile Include="EditorViews\ConstValueConfigEditorView.cs" />
+    <Compile Include="EditorViews\ConvertationRulesConfigEditorView.cs" />
+    <Compile Include="EditorViews\ConvertStrategyConfigEditorView.cs" />
+    <Compile Include="EditorViews\IdConfigEditorView.cs" />
+    <Compile Include="EditorViews\IdPartEditorView.cs" />
+    <Compile Include="EditorViews\IdPartGroupEditorView.cs" />
+    <Compile Include="EditorViews\BaseConvertableEntityWithParamsConfigEditorView.cs" />
+    <Compile Include="EditorViews\OutputConfigControl.cs" />
+    <Compile Include="EditorViews\LoggerConfigControl.cs" />
+    <Compile Include="EditorViews\ParamConfigEditorView.cs" />
+    <Compile Include="EditorViews\UniqueControlRuleConfigEditorView.cs" />
+    <Compile Include="EditorViews\ValueConfigEditorView.cs" />
+    <Compile Include="EditorViewControllers\ConstValueConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\ConvertationRulesConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\ConvertStrategyConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\IdConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\IdPartEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\IdPartGroupEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\LoggerConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\BaseConvertableEntityWithParamsConfigEditorViewCon.cs" />
+    <Compile Include="EditorViewControllers\OutputConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\ParamConfigEditorViewController.cs" />
+    <Compile Include="EditorViewControllers\UniqueControlRuleConfigViewController.cs" />
+    <Compile Include="EditorViewControllers\ValueConfigEditorViewController.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigMainEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\BaseConvertableEntityWithParamsConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\ConstValueConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\ConvertationRulesConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\ConvertStrategyConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\IdConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\IdPartEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\IdPartGroupEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\LoggerConfigControl.resx" />
+    <EmbeddedResource Include="EditorViews\OutputConfigControl.resx" />
+    <EmbeddedResource Include="EditorViews\ParamConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\UniqueControlRuleConfigEditorView.resx" />
+    <EmbeddedResource Include="EditorViews\ValueConfigEditorView.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources.resx" />
+    <EmbeddedResource Include="Resources\LogMessagesResources\Designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

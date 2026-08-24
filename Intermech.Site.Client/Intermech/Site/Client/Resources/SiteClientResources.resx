@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Site.Client_71" xml:space="preserve">
+    <value>Настройка уведомлений об ошибках</value>
+  </data>
+  <data name="Site.Client_70" xml:space="preserve">
+    <value>Для уведомления по e-mail требуется указать корректный адрес электронной почты</value>
+  </data>
+  <data name="Site.Client_73" xml:space="preserve">
+    <value>Не назначен</value>
+  </data>
+  <data name="Site.Client_72" xml:space="preserve">
+    <value>Не указан аккаунт отправителя!</value>
+  </data>
+  <data name="Site.Client_75" xml:space="preserve">
+    <value>В базе данных находится {0} опубликованных на портале объектов типа "{1}". Продолжить?</value>
+  </data>
+  <data name="Site.Client_74" xml:space="preserve">
+    <value>Не найдена серверная служба IPublishTypesConfiguration</value>
+  </data>
+  <data name="Site.Client_77" xml:space="preserve">
+    <value>Опубликовать на портале</value>
+  </data>
+  <data name="Site.Client_76" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Site.Client_79" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Site.Client_78" xml:space="preserve">
+    <value>Импортировать</value>
+  </data>
+  <data name="Site.Client_60" xml:space="preserve">
+    <value>Ежедельно, по {0}</value>
+  </data>
+  <data name="Site.Client_61" xml:space="preserve">
+    <value>НЕ УКАЗАНЫ ДНИ НЕДЕЛИ</value>
+  </data>
+  <data name="Site.Client_62" xml:space="preserve">
+    <value>Ежемесячно, {0} числа {1}</value>
+  </data>
+  <data name="Site.Client_63" xml:space="preserve">
+    <value>НЕ УКАЗАНЫ МЕСЯЦЫ</value>
+  </data>
+  <data name="Site.Client_64" xml:space="preserve">
+    <value> в {0}</value>
+  </data>
+  <data name="Site.Client_65" xml:space="preserve">
+    <value>Не ограничена</value>
+  </data>
+  <data name="Site.Client_66" xml:space="preserve">
+    <value>{0} час.</value>
+  </data>
+  <data name="Site.Client_67" xml:space="preserve">
+    <value>{0}{1} мин.</value>
+  </data>
+  <data name="Site.Client_68" xml:space="preserve">
+    <value>Не указано имя компьютера, на котором будут выполняться задачи!</value>
+  </data>
+  <data name="Site.Client_69" xml:space="preserve">
+    <value>Для уведомления по e-mail требуется указать адрес электронной почты</value>
+  </data>
+  <data name="Site.Client_53" xml:space="preserve">
+    <value>Невозможно получить состав, т.к. отсутствует служба IPublishCompositionService</value>
+  </data>
+  <data name="Site.Client_52" xml:space="preserve">
+    <value>Выбор правила подбора версий и поиск состава</value>
+  </data>
+  <data name="Site.Client_51" xml:space="preserve">
+    <value>Параметры публикации</value>
+  </data>
+  <data name="Site.Client_50" xml:space="preserve">
+    <value>Публикация объектов</value>
+  </data>
+  <data name="Site.Client_57" xml:space="preserve">
+    <value>Расписание по месяцам</value>
+  </data>
+  <data name="Site.Client_56" xml:space="preserve">
+    <value>Расписание по неделям</value>
+  </data>
+  <data name="Site.Client_55" xml:space="preserve">
+    <value>Расписание по дням</value>
+  </data>
+  <data name="Site.Client_54" xml:space="preserve">
+    <value>Однократное выполнение</value>
+  </data>
+  <data name="Site.Client_59" xml:space="preserve">
+    <value>Однократно {0}</value>
+  </data>
+  <data name="Site.Client_58" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="Site.Client_42" xml:space="preserve">
+    <value>Атрибуты опубликованных пользователей</value>
+  </data>
+  <data name="Site.Client_43" xml:space="preserve">
+    <value>Нельзя импортировать пользователей текущего узла</value>
+  </data>
+  <data name="Site.Client_40" xml:space="preserve">
+    <value>Атрибуты публикуемых типов объектов портала</value>
+  </data>
+  <data name="Site.Client_41" xml:space="preserve">
+    <value>Атрибуты связей опубликованных объектов</value>
+  </data>
+  <data name="Site.Client_46" xml:space="preserve">
+    <value>пользователей {0},...</value>
+  </data>
+  <data name="Site.Client_47" xml:space="preserve">
+    <value>пользователя {0}</value>
+  </data>
+  <data name="Site.Client_44" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="Site.Client_45" xml:space="preserve">
+    <value>Задача с импортом {0} поставлена в очередь</value>
+  </data>
+  <data name="Site.Client_48" xml:space="preserve">
+    <value>Параметры публикации состава выбранных объектов</value>
+  </data>
+  <data name="Site.Client_49" xml:space="preserve">
+    <value>Публикация "{0}"{1}</value>
+  </data>
+  <data name="Site.Client_35" xml:space="preserve">
+    <value>Выборка для удаленных запросов</value>
+  </data>
+  <data name="Site.Client_34" xml:space="preserve">
+    <value>Свойства объекта</value>
+  </data>
+  <data name="Site.Client_37" xml:space="preserve">
+    <value>Обязательные атрибуты опубликованных объектов</value>
+  </data>
+  <data name="Site.Client_36" xml:space="preserve">
+    <value>Опубликованные объекты</value>
+  </data>
+  <data name="Site.Client_31" xml:space="preserve">
+    <value>{0} ({1} байт)</value>
+  </data>
+  <data name="Site.Client_30" xml:space="preserve">
+    <value>&lt;Файл&gt;</value>
+  </data>
+  <data name="Site.Client_33" xml:space="preserve">
+    <value>Вы изменили свойства объекта. Сохранить сделанные изменения?</value>
+  </data>
+  <data name="Site.Client_32" xml:space="preserve">
+    <value>Типы опубликованных объектов</value>
+  </data>
+  <data name="Site.Client_38" xml:space="preserve">
+    <value>Перетащите заголовок колонки в эту область для группировки по значениям этой колонки</value>
+  </data>
+  <data name="Site.Client_24" xml:space="preserve">
+    <value>Тип связи</value>
+  </data>
+  <data name="Site.Client_25" xml:space="preserve">
+    <value>Не определен</value>
+  </data>
+  <data name="Site.Client_26" xml:space="preserve">
+    <value>ИСТИНА</value>
+  </data>
+  <data name="Site.Client_27" xml:space="preserve">
+    <value>ДА</value>
+  </data>
+  <data name="Site.Client_20" xml:space="preserve">
+    <value>Идентификатор опубликованной связи</value>
+  </data>
+  <data name="Site.Client_21" xml:space="preserve">
+    <value>Глобальный идентификатор типа объекта</value>
+  </data>
+  <data name="Site.Client_22" xml:space="preserve">
+    <value>Тип объекта</value>
+  </data>
+  <data name="Site.Client_23" xml:space="preserve">
+    <value>Глобальный идентификатор типа связи</value>
+  </data>
+  <data name="Site.Client_28" xml:space="preserve">
+    <value>ЛОЖЬ</value>
+  </data>
+  <data name="Site.Client_29" xml:space="preserve">
+    <value>НЕТ</value>
+  </data>
+  <data name="Site.Client_17" xml:space="preserve">
+    <value>Идентификатор версии опубликованного объекта</value>
+  </data>
+  <data name="Site.Client_16" xml:space="preserve">
+    <value>Глобальный идентификатор родительской версии объекта</value>
+  </data>
+  <data name="Site.Client_15" xml:space="preserve">
+    <value>Глобальный идентификатор версии объекта</value>
+  </data>
+  <data name="Site.Client_14" xml:space="preserve">
+    <value>опубликованной связи</value>
+  </data>
+  <data name="Site.Client_13" xml:space="preserve">
+    <value>связи</value>
+  </data>
+  <data name="Site.Client_12" xml:space="preserve">
+    <value>опубликованного объекта</value>
+  </data>
+  <data name="Site.Client_11" xml:space="preserve">
+    <value>объекта</value>
+  </data>
+  <data name="Site.Client_10" xml:space="preserve">
+    <value>Глобальный идентификатор </value>
+  </data>
+  <data name="Site.Client_19" xml:space="preserve">
+    <value>Тип опубликованного объекта</value>
+  </data>
+  <data name="Site.Client_18" xml:space="preserve">
+    <value>Идентификатор опубликованного объекта</value>
+  </data>
+  <data name="Site.Client_99" xml:space="preserve">
+    <value>Сервисы портала\Почтовые уведомления</value>
+  </data>
+  <data name="Site.Client_97" xml:space="preserve">
+    <value>Сервисы портала\Запуск задач публикации</value>
+  </data>
+  <data name="Site.Client_95" xml:space="preserve">
+    <value>Сервисы портала\Запуск задач импорта</value>
+  </data>
+  <data name="Site.Client_94" xml:space="preserve">
+    <value>Текущий пользователь {0} не является пользователем узла '{1}'. Работа плагина невозможна.</value>
+  </data>
+  <data name="Site.Client_93" xml:space="preserve">
+    <value>Вывод</value>
+  </data>
+  <data name="Site.Client_92" xml:space="preserve">
+    <value>На сервере приложений не инициализированы сервисы для работы с порталом. Работа плагина невозможна.</value>
+  </data>
+  <data name="Site.Client_91" xml:space="preserve">
+    <value>Сервисные настройки</value>
+  </data>
+  <data name="Site.Client_90" xml:space="preserve">
+    <value>Нет раздела справки</value>
+  </data>
+  <data name="Site.Client_88" xml:space="preserve">
+    <value>{0} Публикация невозможна.</value>
+  </data>
+  <data name="Site.Client_89" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="Site.Client_86" xml:space="preserve">
+    <value>Отсутствует информация по текущему узлу информационной системы.</value>
+  </data>
+  <data name="Site.Client_87" xml:space="preserve">
+    <value>Нет прав владения на объект {0}</value>
+  </data>
+  <data name="Site.Client_84" xml:space="preserve">
+    <value>Настройка публикуемых типов</value>
+  </data>
+  <data name="Site.Client_85" xml:space="preserve">
+    <value>Навигатор портала</value>
+  </data>
+  <data name="Site.Client_82" xml:space="preserve">
+    <value>Стоп</value>
+  </data>
+  <data name="Site.Client_83" xml:space="preserve">
+    <value>Навигатор портала</value>
+  </data>
+  <data name="Site.Client_80" xml:space="preserve">
+    <value>Завершить владение</value>
+  </data>
+  <data name="Site.Client_81" xml:space="preserve">
+    <value>Запустить задачу на выполнение</value>
+  </data>
+  <data name="Site.Client_107" xml:space="preserve">
+    <value>Сервисы портала\Настройки импорта</value>
+  </data>
+  <data name="Site.Client_106" xml:space="preserve">
+    <value>{0}, начиная с {1}</value>
+  </data>
+  <data name="Site.Client_105" xml:space="preserve">
+    <value>{0} ({1} байт)</value>
+  </data>
+  <data name="Site.Client_104" xml:space="preserve">
+    <value>&lt;Файл&gt;</value>
+  </data>
+  <data name="Site.Client_103" xml:space="preserve">
+    <value>Атрибуты объекта</value>
+  </data>
+  <data name="Site.Client_102" xml:space="preserve">
+    <value>У задачи {0} отсутствует значение атрибута "Глобальный идентификатор обновления"</value>
+  </data>
+  <data name="Site.Client_101" xml:space="preserve">
+    <value>Наименование текущего узла информационной системы</value>
+  </data>
+  <data name="Site.Client_100" xml:space="preserve">
+    <value>Сервисы портала\Общие </value>
+  </data>
+  <data name="Site.Client_108" xml:space="preserve">
+    <value>Автопубликуемые объекты</value>
+  </data>
+  <data name="Site.Client_6" xml:space="preserve">
+    <value>Атрибуты</value>
+  </data>
+  <data name="Site.Client_7" xml:space="preserve">
+    <value>Атрибуты связи</value>
+  </data>
+  <data name="Site.Client_4" xml:space="preserve">
+    <value>Соединение установлено</value>
+  </data>
+  <data name="Site.Client_5" xml:space="preserve">
+    <value>Соединение не установлено</value>
+  </data>
+  <data name="Site.Client_2" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="Site.Client_3" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Site.Client_1" xml:space="preserve">
+    <value>Ошибка обновления кэша метаданных портала: {0}</value>
+  </data>
+  <data name="Site.Client_8" xml:space="preserve">
+    <value>Состоит из</value>
+  </data>
+  <data name="Site.Client_9" xml:space="preserve">
+    <value>Опубликованные пользователи</value>
+  </data>
+</root>

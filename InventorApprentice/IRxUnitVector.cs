@@ -1,0 +1,33 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: InventorApprentice.IRxUnitVector
+// Assembly: InventorApprentice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: D0FA8D60-444C-4AF2-8B56-3FFB3EB81E4B
+// Assembly location: D:\IPS\Client\InventorApprentice.dll
+
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+#nullable disable
+namespace InventorApprentice;
+
+[Guid("CB69F161-558E-11D3-B793-0060B0F159EF")]
+[InterfaceType(1)]
+[TypeLibType(16 /*0x10*/)]
+[ComImport]
+public interface IRxUnitVector
+{
+  [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
+  void GetUnitVectorData([MarshalAs(UnmanagedType.LPArray, SizeConst = 3), Out] double[] pCoords);
+
+  [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)]
+  void PutUnitVectorData([MarshalAs(UnmanagedType.LPArray, SizeConst = 3), In] double[] pCoords);
+
+  [DispId(67111683 /*0x04000B03*/)]
+  double X { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] get; [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] [param: In] set; }
+
+  [DispId(67111684 /*0x04000B04*/)]
+  double Y { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] get; [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] [param: In] set; }
+
+  [DispId(67111685 /*0x04000B05*/)]
+  double Z { [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] get; [MethodImpl(MethodImplOptions.InternalCall, MethodCodeType = MethodCodeType.Runtime)] [param: In] set; }
+}

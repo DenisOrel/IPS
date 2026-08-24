@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Interfaces.FSS.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B157346-9687-4664-9624-5A1D7F700BFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Interfaces.FSS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.Interfaces.FSS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consts.cs" />
+    <Compile Include="GenericIPS_FSS_Exception.cs" />
+    <Compile Include="LoginErrorException.cs" />
+    <Compile Include="EmptyIPSClientException.cs" />
+    <Compile Include="IPSClientNotLoggedException.cs" />
+    <Compile Include="IPSClientTimedOutException.cs" />
+    <Compile Include="FileStorageNotFoundException.cs" />
+    <Compile Include="FileStorageNotConnectedException.cs" />
+    <Compile Include="SubfolderNotFoundException.cs" />
+    <Compile Include="SystemDirectoryException.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IIPSClient.cs" />
+    <Compile Include="IPSServerInfo.cs" />
+    <Compile Include="IIPS_FSS_Server.cs" />
+    <Compile Include="IPSClient.cs" />
+    <Compile Include="IXMLSettingsStorage.cs" />
+    <Compile Include="XMLSettingsStorage.cs" />
+    <Compile Include="XMLConsts.cs" />
+    <Compile Include="IXMLStorageLoadSave.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

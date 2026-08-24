@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.MRP2.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA1E6CE6-1C2A-4A1D-9C5F-EF9FBDAF5D6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.MRP2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ECO.Client">
+      <HintPath>lib\Intermech.ECO.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions">
+      <HintPath>lib\Intermech.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Imbase">
+      <HintPath>lib\Intermech.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.MRP">
+      <HintPath>lib\Intermech.Interfaces.MRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.TechCard">
+      <HintPath>lib\Intermech.Interfaces.TechCard.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Workflow">
+      <HintPath>lib\Intermech.Interfaces.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.MRP">
+      <HintPath>lib\Intermech.MRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Pdm">
+      <HintPath>lib\Intermech.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.VirtualTreeView">
+      <HintPath>lib\Intermech.VirtualTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Workflow.Design">
+      <HintPath>lib\Intermech.Workflow.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Localization\CustomDescription.cs" />
+    <Compile Include="Localization\CustomDisplayName.cs" />
+    <Compile Include="Localization\CustomCategory.cs" />
+    <Compile Include="MRP2\AllCountItemsForPV.cs" />
+    <Compile Include="MRP2\CompositionItemExtension.cs" />
+    <Compile Include="MRP2\CountInPVColumnProvider.cs" />
+    <Compile Include="MRP2\PLRelationsDescriptor.cs" />
+    <Compile Include="MRP2\PLRelationsNode.cs" />
+    <Compile Include="MRP2\PLRelationsPart.cs" />
+    <Compile Include="MRP2\ProductionListComparer.cs" />
+    <Compile Include="MRP2\ProductionListTree.cs" />
+    <Compile Include="MRP2\ProductionListTreeItem.cs" />
+    <Compile Include="MRP2\TechRouteFilterState.cs" />
+    <Compile Include="MRP2\TechRouteFilterInfo.cs" />
+    <Compile Include="MRP2\TechRouteFilter.cs" />
+    <Compile Include="MRP2\AddFromPLCommand.cs" />
+    <Compile Include="MRP2\AddSostavCommand.cs" />
+    <Compile Include="MRP2\MRP2SelectedItemsAnalyzer.cs" />
+    <Compile Include="MRP2\ApplyChangesByEcoCommand.cs" />
+    <Compile Include="MRP2\ApplyChangesInAnotherPL.cs" />
+    <Compile Include="MRP2\ApplyChangesInPLbyECO.cs" />
+    <Compile Include="MRP2\CreateNewPLCommand.cs" />
+    <Compile Include="MRP2\CreateProtoCommand.cs" />
+    <Compile Include="MRP2\ExcludeAllDeletedCommand.cs" />
+    <Compile Include="MRP2\ExcludeSostavCommand.cs" />
+    <Compile Include="MRP2\HideDeletedPluginTransfer.cs" />
+    <Compile Include="MRP2\HideDeletePositionsCommand.cs" />
+    <Compile Include="MRP2\HideViewsCommand.cs" />
+    <Compile Include="MRP2\IndicateApplicabilityCommand.cs" />
+    <Compile Include="MRP2\LaunchProcessPLCommand.cs" />
+    <Compile Include="MRP2\RecalcCountsCommand.cs" />
+    <Compile Include="MRP2\ReplacePartCommand.cs" />
+    <Compile Include="MRP2\ReplaceVersionCommand.cs" />
+    <Compile Include="MRP2\SelectPLCommand.cs" />
+    <Compile Include="MRP2\SeparateDeliveryCommand.cs" />
+    <Compile Include="MRP2\StartPLCheckCommand.cs" />
+    <Compile Include="MRP2\ComplectNumberDialog.cs" />
+    <Compile Include="MRP2\MRP2ObjectSettings.cs" />
+    <Compile Include="MRP2\MRP2PropertyPage.cs" />
+    <Compile Include="MRP2\SelectSubstituteDlg.cs" />
+    <Compile Include="MRP2\FontStyledNodeService.cs" />
+    <Compile Include="MRP2\CancelChangesCommand.cs" />
+    <Compile Include="MRP2\CheckInCommand.cs" />
+    <Compile Include="MRP2\CheckOutCommand.cs" />
+    <Compile Include="MRP2\EditDocumentCommand.cs" />
+    <Compile Include="MRP2\CompositionOptionsWizard.cs" />
+    <Compile Include="MRP2\RadioGroupDialog.cs" />
+    <Compile Include="MRP2\DocumentsMenuProvider.cs" />
+    <Compile Include="MRP2\ProductionCopyMenuProvider.cs" />
+    <Compile Include="MRP2\ProductionListMenuProvider.cs" />
+    <Compile Include="MRP2\MRP2ClientPlugin.cs" />
+    <Compile Include="MRP2\MRP2Service.cs" />
+    <Compile Include="MRP2\ReplacePartFromSubstitutesCommand.cs" />
+    <Compile Include="MRP2\ProductionCopyComplectNumbersView.cs" />
+    <Compile Include="MRP2\ComplectNodeList.cs" />
+    <Compile Include="MRP2\ComplectNode.cs" />
+    <Compile Include="MRP2\AssemblyNode.cs" />
+    <Compile Include="MRP2\NumbersNode.cs" />
+    <Compile Include="MRP2\ProductionCopyDocumentView.cs" />
+    <Compile Include="MRP2\ProductionCopyEntersInView.cs" />
+    <Compile Include="MRP2\ProductionCopyNode.cs" />
+    <Compile Include="MRP2\ProductionCopyNodePart.cs" />
+    <Compile Include="MRP2\ProductionCopyQuery.cs" />
+    <Compile Include="MRP2\ProductionCopyViewProvider.cs" />
+    <Compile Include="MRP2\ArticlesInProductListProvider.cs" />
+    <Compile Include="MRP2\ProductionObjectsMenuProvider.cs" />
+    <Compile Include="MRP2\ProductionListCreator.cs" />
+    <Compile Include="MRP2\ProductionListReportService.cs" />
+    <Compile Include="MRP2\ProductionListReportView2.cs" />
+    <Compile Include="MRP2\ProductionListReportView.cs" />
+    <Compile Include="MRP2\ProductionListViewProvider.cs" />
+    <Compile Include="MRP2\Resources\MRP2Resource.cs" />
+    <Compile Include="MRP2\Menu\ArticlesCommandProvider.cs" />
+    <Compile Include="MRP2\Menu\ECOCommandProvider.cs" />
+    <Compile Include="MRP2\Menu\FiltrationCompositionCommandProvider.cs" />
+    <Compile Include="MRP2\Dialogs\AttributesCompareDialog.cs" />
+    <Compile Include="MRP2\Dialogs\ReplaceVersionDialog.cs" />
+    <Compile Include="MRP2\Commands\FilterDateAttributesCommand.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MRP2\ComplectNumberDialog.resx" />
+    <EmbeddedResource Include="MRP2\CompositionOptionsWizard.resx" />
+    <EmbeddedResource Include="MRP2\Dialogs\AttributesCompareDialog.resx" />
+    <EmbeddedResource Include="MRP2\Dialogs\ReplaceVersionDialog.resx" />
+    <EmbeddedResource Include="MRP2\MRP2ObjectSettings.resx" />
+    <EmbeddedResource Include="MRP2\MRP2PropertyPage.resx" />
+    <EmbeddedResource Include="MRP2\ProductionCopyComplectNumbersView.resx" />
+    <EmbeddedResource Include="MRP2\ProductionCopyDocumentView.resx" />
+    <EmbeddedResource Include="MRP2\ProductionCopyEntersInView.resx" />
+    <EmbeddedResource Include="MRP2\ProductionListReportView.resx" />
+    <EmbeddedResource Include="MRP2\ProductionListReportView2.resx" />
+    <EmbeddedResource Include="MRP2\RadioGroupDialog.resx" />
+    <EmbeddedResource Include="MRP2\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="MRP2\Resources\CustomResources.resx" />
+    <EmbeddedResource Include="MRP2\Resources\MRP2Resource.resx" />
+    <EmbeddedResource Include="MRP2\SelectSubstituteDlg.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

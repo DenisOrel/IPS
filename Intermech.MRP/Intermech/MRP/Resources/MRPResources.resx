@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MRP_50" xml:space="preserve">
+    <value>Задание успешно завершено</value>
+  </data>
+  <data name="MRP_51" xml:space="preserve">
+    <value>Задание было прервано</value>
+  </data>
+  <data name="MRP_52" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="MRP_53" xml:space="preserve">
+    <value>Планирование производства (MRP)</value>
+  </data>
+  <data name="MRP_54" xml:space="preserve">
+    <value>Обработать производственный заказ</value>
+  </data>
+  <data name="MRP_55" xml:space="preserve">
+    <value>Заменить версию изделия</value>
+  </data>
+  <data name="MRP_56" xml:space="preserve">
+    <value>Заменить изделие</value>
+  </data>
+  <data name="MRP_57" xml:space="preserve">
+    <value>Заменить маршрут обработки</value>
+  </data>
+  <data name="MRP_58" xml:space="preserve">
+    <value>Сделать покупным</value>
+  </data>
+  <data name="MRP_59" xml:space="preserve">
+    <value>Заменить версию в заказе</value>
+  </data>
+  <data name="MRP_41" xml:space="preserve">
+    <value>Объект с идентификатором версии {0} не найден</value>
+  </data>
+  <data name="MRP_40" xml:space="preserve">
+    <value>Объект подобран по условиям применения</value>
+  </data>
+  <data name="MRP_43" xml:space="preserve">
+    <value>Ошибки</value>
+  </data>
+  <data name="MRP_42" xml:space="preserve">
+    <value>Была ли прервана трассировка составов с момента её начала (true означает то, что трассировка не была завершена до конца)</value>
+  </data>
+  <data name="MRP_45" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="MRP_44" xml:space="preserve">
+    <value>Предупреждения</value>
+  </data>
+  <data name="MRP_47" xml:space="preserve">
+    <value>Предупреждения ({0})</value>
+  </data>
+  <data name="MRP_46" xml:space="preserve">
+    <value>Ошибки ({0})</value>
+  </data>
+  <data name="MRP_49" xml:space="preserve">
+    <value>Производственный заказ</value>
+  </data>
+  <data name="MRP_48" xml:space="preserve">
+    <value>Информация ({0})</value>
+  </data>
+  <data name="MRP_14" xml:space="preserve">
+    <value>Выберите контекст редактирования</value>
+  </data>
+  <data name="MRP_15" xml:space="preserve">
+    <value>Выберите контекст редактирования. Он будет использоваться при работе с составом производственного заказа</value>
+  </data>
+  <data name="MRP_16" xml:space="preserve">
+    <value>Контексты редактирования</value>
+  </data>
+  <data name="MRP_17" xml:space="preserve">
+    <value>Добавление объектов в состав производственного заказа</value>
+  </data>
+  <data name="MRP_10" xml:space="preserve">
+    <value>Не найден ни один допустимый заменитель</value>
+  </data>
+  <data name="MRP_11" xml:space="preserve">
+    <value>[Выберите правило подбора версий]</value>
+  </data>
+  <data name="MRP_12" xml:space="preserve">
+    <value>Выберите правило подбора версий для формирования состава</value>
+  </data>
+  <data name="MRP_13" xml:space="preserve">
+    <value>[Выберите контекст редактирования]</value>
+  </data>
+  <data name="MRP_18" xml:space="preserve">
+    <value>Пожалуйста, выберите объекты, которые будут добавлены в состав производственного заказа</value>
+  </data>
+  <data name="MRP_19" xml:space="preserve">
+    <value>Объекты для состава заказа</value>
+  </data>
+  <data name="MRP_63" xml:space="preserve">
+    <value>Маршруты обработки</value>
+  </data>
+  <data name="MRP_62" xml:space="preserve">
+    <value>Выберите маршрут обработки, который будет использоваться взамен назначенного ранее</value>
+  </data>
+  <data name="MRP_61" xml:space="preserve">
+    <value>Допустимые типы объектов</value>
+  </data>
+  <data name="MRP_60" xml:space="preserve">
+    <value>Выберите объект, который будет использоваться взамен указанного</value>
+  </data>
+  <data name="MRP_66" xml:space="preserve">
+    <value>Указано некорректное значение количества. Пожалуйста, исправьте его.</value>
+  </data>
+  <data name="MRP_65" xml:space="preserve">
+    <value>Прервать выполняющееся задание?</value>
+  </data>
+  <data name="MRP_64" xml:space="preserve">
+    <value>Не найдено исходное изделие, либо нет ни одного маршрута обработки, назначенного этому изделию</value>
+  </data>
+  <data name="MRP_36" xml:space="preserve">
+    <value>Идентификатор версии объекта</value>
+  </data>
+  <data name="MRP_37" xml:space="preserve">
+    <value>Идентификатор связи</value>
+  </data>
+  <data name="MRP_34" xml:space="preserve">
+    <value>Событие генерируется когда начинается трассировка составов объектов</value>
+  </data>
+  <data name="MRP_35" xml:space="preserve">
+    <value>Событие генерируется когда прерывается трассировка составов объектов</value>
+  </data>
+  <data name="MRP_32" xml:space="preserve">
+    <value>Генерируется когда полностью завершается трассировка всех объектов</value>
+  </data>
+  <data name="MRP_33" xml:space="preserve">
+    <value>Генерируется когда в гриде выбрана строка, содержащая ссылку на объект состава, который требуется отобразить в дереве Навигатора и на закладках</value>
+  </data>
+  <data name="MRP_30" xml:space="preserve">
+    <value>Ключ настроек фильтрации составов</value>
+  </data>
+  <data name="MRP_31" xml:space="preserve">
+    <value>Событие генерируется когда завершается трассировка состава очередного объекта</value>
+  </data>
+  <data name="MRP_38" xml:space="preserve">
+    <value>Заголовок объекта</value>
+  </data>
+  <data name="MRP_39" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="MRP_27" xml:space="preserve">
+    <value>Контейнер сервисов</value>
+  </data>
+  <data name="MRP_26" xml:space="preserve">
+    <value>Осуществляется ли трассировка составов в настоящий момент времени</value>
+  </data>
+  <data name="MRP_25" xml:space="preserve">
+    <value>Факторы, влияющие на формируемый состав производственного заказа</value>
+  </data>
+  <data name="MRP_24" xml:space="preserve">
+    <value>Открыть факторы, влияющие на формируемый состав производственного заказа</value>
+  </data>
+  <data name="MRP_23" xml:space="preserve">
+    <value>Покупное изделие</value>
+  </data>
+  <data name="MRP_22" xml:space="preserve">
+    <value>Трассировка формируемого состава</value>
+  </data>
+  <data name="MRP_21" xml:space="preserve">
+    <value>Открыть трассировку формируемого состава</value>
+  </data>
+  <data name="MRP_20" xml:space="preserve">
+    <value>Клиентская часть Intermech.MRP</value>
+  </data>
+  <data name="MRP_29" xml:space="preserve">
+    <value>Коллекция объектов состава, которые требуется протрассировать</value>
+  </data>
+  <data name="MRP_28" xml:space="preserve">
+    <value>Полный путь к корневому конфигурируемому объекту, объекты состава которого будут трассироваться</value>
+  </data>
+  <data name="MRP_5" xml:space="preserve">
+    <value>Актуальный заменитель [{0}.{1}]</value>
+  </data>
+  <data name="MRP_4" xml:space="preserve">
+    <value>Допустимые замены</value>
+  </data>
+  <data name="MRP_7" xml:space="preserve">
+    <value>Маршруты обработки</value>
+  </data>
+  <data name="MRP_6" xml:space="preserve">
+    <value>Допустимый заменитель [{0}.{1}]</value>
+  </data>
+  <data name="MRP_1" xml:space="preserve">
+    <value>[free]</value>
+  </data>
+  <data name="MRP_3" xml:space="preserve">
+    <value>[free]</value>
+  </data>
+  <data name="MRP_2" xml:space="preserve">
+    <value>[free]</value>
+  </data>
+  <data name="MRP_9" xml:space="preserve">
+    <value>В группе нет допустимых заменителей</value>
+  </data>
+  <data name="MRP_8" xml:space="preserve">
+    <value>Применить с опциями</value>
+  </data>
+</root>

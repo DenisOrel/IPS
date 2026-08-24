@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.PdmConfigurator.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04EBD58B-8600-4AD3-894F-5C76B010E001}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.PdmConfigurator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CollapsibleSplitter">
+      <HintPath>lib\CollapsibleSplitter.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.PdmConfigurator">
+      <HintPath>lib\Intermech.Interfaces.PdmConfigurator.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.VirtualTreeView">
+      <HintPath>lib\Intermech.VirtualTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Localization\CustomDescription.cs" />
+    <Compile Include="Localization\CustomCategory.cs" />
+    <Compile Include="Localization\CustomDisplayName.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\ApplicationConditionsDisplaySettingsEditor.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\ApplicationConditionsDisplaySettingsForm.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorClientModule.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorClientService.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorCommandNames.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorCommandsProvider.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorOptionValueRangeCreatorCon.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorOptionValueRangeCreatorDia.cs" />
+    <Compile Include="Search\Pdm\CompositionsConfigurator\ICompositionsConfiguratorClientService.cs" />
+    <Compile Include="PdmConfigurator\ConfiguratorCommand.cs" />
+    <Compile Include="PdmConfigurator\ErrorState.cs" />
+    <Compile Include="PdmConfigurator\OptionObjectPart.cs" />
+    <Compile Include="PdmConfigurator\OptionQuery.cs" />
+    <Compile Include="PdmConfigurator\PdmCategoryObjectID.cs" />
+    <Compile Include="PdmConfigurator\PdmCategoryObjectNode.cs" />
+    <Compile Include="PdmConfigurator\PdmCategoryOptionsNodeID.cs" />
+    <Compile Include="PdmConfigurator\PdmCategoryOptionsView.cs" />
+    <Compile Include="PdmConfigurator\PdmCategoryOptionsViewsProvider.cs" />
+    <Compile Include="PdmConfigurator\PdmOptionNodeID.cs" />
+    <Compile Include="PdmConfigurator\PdmOptionObjectID.cs" />
+    <Compile Include="PdmConfigurator\PdmOptionObjectNode.cs" />
+    <Compile Include="PdmConfigurator\PdmOptionsView.cs" />
+    <Compile Include="PdmConfigurator\PdmOptionsViewsProvider.cs" />
+    <Compile Include="PdmConfigurator\OptionAccessRights.cs" />
+    <Compile Include="PdmConfigurator\ConfigurationCodeEditor.cs" />
+    <Compile Include="PdmConfigurator\ConfigurationCodeForm.cs" />
+    <Compile Include="PdmConfigurator\ConfigurationCodeProvider.cs" />
+    <Compile Include="PdmConfigurator\AppConditionsEditor.cs" />
+    <Compile Include="PdmConfigurator\ConflictForm.cs" />
+    <Compile Include="PdmConfigurator\IncompatibilityEditor.cs" />
+    <Compile Include="PdmConfigurator\ObjectOptionsEditor.cs" />
+    <Compile Include="PdmConfigurator\ObjectOptionsEditorView.cs" />
+    <Compile Include="PdmConfigurator\ObjectOptionsEditorViewProvider.cs" />
+    <Compile Include="PdmConfigurator\ObjectContextEditor.cs" />
+    <Compile Include="PdmConfigurator\OptionEditorView.cs" />
+    <Compile Include="PdmConfigurator\OptionEditorViewProvider.cs" />
+    <Compile Include="PdmConfigurator\OptionEditor.cs" />
+    <Compile Include="PdmConfigurator\RelationOptionsEditorView.cs" />
+    <Compile Include="PdmConfigurator\RelationOptionsEditorViewProvider.cs" />
+    <Compile Include="PdmConfigurator\RelationOptionsEditor.cs" />
+    <Compile Include="PdmConfigurator\PdmConfigurator.cs" />
+    <Compile Include="PdmConfigurator\Properties\Resources.cs" />
+    <Compile Include="PdmConfigurator\Options\ObjectOptionsForm.cs" />
+    <Compile Include="PdmConfigurator\Options\ImportAnalyzeForm.cs" />
+    <Compile Include="PdmConfigurator\Options\OptionsImportForm.cs" />
+    <Compile Include="PdmConfigurator\Options\SelectObjectOptionsForm.cs" />
+    <Compile Include="PdmConfigurator\Options\ObjectOptions\LinkedOptionsEditor.cs" />
+    <Compile Include="PdmConfigurator\Creator\CodeCreatorControl.cs" />
+    <Compile Include="PdmConfigurator\Creator\OptionsCreatorControl.cs" />
+    <Compile Include="PdmConfigurator\Creator\OrderCreator.cs" />
+    <Compile Include="PdmConfigurator\Creator\OrderCreatorProvider.cs" />
+    <Compile Include="PdmConfigurator\Creator\TracingProgressForm.cs" />
+    <Compile Include="PdmConfigurator\CompositionTracing\CompositionTracingView.cs" />
+    <Compile Include="PdmConfigurator\CompositionTracing\PdmConfiguratorTarget.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PdmConfigurator\AppConditionsEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\CompositionTracing\CompositionTracingView.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ConfigurationCodeEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ConfigurationCodeForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ConflictForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Creator\CodeCreatorControl.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Creator\OptionsCreatorControl.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Creator\TracingProgressForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\IncompatibilityEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ObjectContextEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ObjectOptionsEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\ObjectOptionsEditorView.resx" />
+    <EmbeddedResource Include="PdmConfigurator\OptionEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\OptionEditorView.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Options\ImportAnalyzeForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Options\ObjectOptions\LinkedOptionsEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Options\ObjectOptionsForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Options\OptionsImportForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Options\SelectObjectOptionsForm.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Properties\Resources.resx" />
+    <EmbeddedResource Include="PdmConfigurator\RelationOptionsEditor.resx" />
+    <EmbeddedResource Include="PdmConfigurator\RelationOptionsEditorView.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="PdmConfigurator\Resources\Options.bmp" />
+    <EmbeddedResource Include="PdmConfigurator\Resources\PdmConfiguratorResources.resx" />
+    <EmbeddedResource Include="Search\Pdm\CompositionsConfigurator\ApplicationConditionsDisplaySettingsForm.resx" />
+    <EmbeddedResource Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorOptionValueRangeCreatorControl.resx" />
+    <EmbeddedResource Include="Search\Pdm\CompositionsConfigurator\CompositionsConfiguratorOptionValueRangeCreatorDialog.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

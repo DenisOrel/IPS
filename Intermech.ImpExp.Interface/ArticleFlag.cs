@@ -1,0 +1,20 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.ImpExp.Interface.ArticleFlag
+// Assembly: Intermech.ImpExp.Interface, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
+// MVID: 37E5557D-7CCE-4F6F-9D9E-D0629D76BFC1
+// Assembly location: D:\IPS\Client\Intermech.ImpExp.Interface.dll
+// XML documentation location: D:\IPS\Client\Intermech.ImpExp.Interface.xml
+
+using System;
+
+#nullable disable
+namespace Intermech.ImpExp.Interface;
+
+[Flags]
+public enum ArticleFlag : ushort
+{
+  None = 0,
+  Documentation = 1,
+  LinkedBySuffix = 2,
+  SBFromSP = 4,
+}

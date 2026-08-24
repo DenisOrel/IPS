@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Reports_52" xml:space="preserve">
+    <value>Список форм редактирования</value>
+  </data>
+  <data name="Reports_53" xml:space="preserve">
+    <value>Форма без заголовка с идентификатором "{0}"</value>
+  </data>
+  <data name="Reports_50" xml:space="preserve">
+    <value>Генерация комплекта документов на объект "{0}" (ID = "{1}") по шаблону ID = "{2}" не может быть проведена - шаблон не допускает генерацию для объектов типа "{3}".</value>
+  </data>
+  <data name="Reports_51" xml:space="preserve">
+    <value>Для обновления содержимого вложенных комплектов выполните команду для КТД верхнего уровня.</value>
+  </data>
+  <data name="Reports_56" xml:space="preserve">
+    <value>Удаление формы</value>
+  </data>
+  <data name="Reports_57" xml:space="preserve">
+    <value>Ошибка сохранения параметров задачи.</value>
+  </data>
+  <data name="Reports_54" xml:space="preserve">
+    <value>Выберите формы для добавления</value>
+  </data>
+  <data name="Reports_55" xml:space="preserve">
+    <value>Вы действительно хотите удалить форму '{0}'?</value>
+  </data>
+  <data name="Reports_58" xml:space="preserve">
+    <value>Параметры формирования комплекта</value>
+  </data>
+  <data name="Reports_59" xml:space="preserve">
+    <value>Обновление следующих комплектов документов невозможно. </value>
+  </data>
+  <data name="Reports_61" xml:space="preserve">
+    <value>Для объектов установлен режим запрета редактирования или же объекты взяты на редактирование другими пользователями.</value>
+  </data>
+  <data name="Reports_60" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="Reports_63" xml:space="preserve">
+    <value>Выберите архив, в который будут помещаться документы / комплекты текущей задачи генерации КТД</value>
+  </data>
+  <data name="Reports_62" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Reports_65" xml:space="preserve">
+    <value>В составе комплекта документа присутствуют документы с графическими замечаниями. Удаление комплекта приведет к удалению замечаний. Продолжить?</value>
+  </data>
+  <data name="Reports_64" xml:space="preserve">
+    <value>Выберите скрипт генерации комплекта документов для объектов</value>
+  </data>
+  <data name="Reports_67" xml:space="preserve">
+    <value>Обновить дополнительные комплекты</value>
+  </data>
+  <data name="Reports_66" xml:space="preserve">
+    <value>Генерация дополнительных комплектов</value>
+  </data>
+  <data name="Reports_69" xml:space="preserve">
+    <value>Прерывание генерации комплектов документов</value>
+  </data>
+  <data name="Reports_68" xml:space="preserve">
+    <value>Создать версию дополнительных комплектов</value>
+  </data>
+  <data name="Reports_34" xml:space="preserve">
+    <value>Для данного объекта(в) не найдены скрипты генерации комплектов документов удовлетворяющие условиям</value>
+  </data>
+  <data name="Reports_35" xml:space="preserve">
+    <value>Выберите скрипт генерации комплекта документов для объекта "{0}" ID={1}</value>
+  </data>
+  <data name="Reports_36" xml:space="preserve">
+    <value>Скрипты генерации комплектов</value>
+  </data>
+  <data name="Reports_37" xml:space="preserve">
+    <value>Ошибка при генерации документа "{0}" для объекта ID = "{1}" :</value>
+  </data>
+  <data name="Reports_30" xml:space="preserve">
+    <value>Ошибка: тип объекта ID = "{0}" не является документом</value>
+  </data>
+  <data name="Reports_31" xml:space="preserve">
+    <value>Для данного типа объекта не найдены скрипты генерации комплектов документов</value>
+  </data>
+  <data name="Reports_32" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Reports_33" xml:space="preserve">
+    <value>Служба {0} не найдена</value>
+  </data>
+  <data name="Reports_38" xml:space="preserve">
+    <value>Создание версии комплекта документов</value>
+  </data>
+  <data name="Reports_39" xml:space="preserve">
+    <value>Значение атрибута "{0}" для объекта ID = "{1}" не определено</value>
+  </data>
+  <data name="Reports_43" xml:space="preserve">
+    <value>Невозможно сохранить документ "{0}" для объекта ID = "{1}".</value>
+  </data>
+  <data name="Reports_42" xml:space="preserve">
+    <value>Для записи документа "{0}" ID = "{1}" не найден родительский элемент ID = "{2}" в кэше</value>
+  </data>
+  <data name="Reports_41" xml:space="preserve">
+    <value>Создать версию комплекта</value>
+  </data>
+  <data name="Reports_40" xml:space="preserve">
+    <value>Отчеты и документы</value>
+  </data>
+  <data name="Reports_47" xml:space="preserve">
+    <value>Комплекты документов</value>
+  </data>
+  <data name="Reports_46" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="Reports_45" xml:space="preserve">
+    <value>Остановить фоновую задачу "{0}"?</value>
+  </data>
+  <data name="Reports_44" xml:space="preserve">
+    <value>Ошибка ключа защиты для плагина "{0}". ErrorCode = {1}</value>
+  </data>
+  <data name="Reports_49" xml:space="preserve">
+    <value>Ошибка: объект типа "{0}" с ид. версии = "{1}" не найден</value>
+  </data>
+  <data name="Reports_48" xml:space="preserve">
+    <value>Для выбранных скриптов генерации найдены существующие комплекты. Выберите комплекты для обновления</value>
+  </data>
+  <data name="Reports_16" xml:space="preserve">
+    <value>Обновить комплект</value>
+  </data>
+  <data name="Reports_17" xml:space="preserve">
+    <value>{0} КД </value>
+  </data>
+  <data name="Reports_14" xml:space="preserve">
+    <value>Генерация комплекта документов на объект ID = "{0}" по шаблону ID = "{1}" не может быть проведена.</value>
+  </data>
+  <data name="Reports_15" xml:space="preserve">
+    <value>Генерация комплекта документов</value>
+  </data>
+  <data name="Reports_12" xml:space="preserve">
+    <value>Выберите шаблон</value>
+  </data>
+  <data name="Reports_13" xml:space="preserve">
+    <value>Шаблоны</value>
+  </data>
+  <data name="Reports_10" xml:space="preserve">
+    <value>Шаблона для генерации документа не найдено.</value>
+  </data>
+  <data name="Reports_11" xml:space="preserve">
+    <value>Генерация комплекта документов</value>
+  </data>
+  <data name="Reports_18" xml:space="preserve">
+    <value>Генерация комплекта "{0}"...</value>
+  </data>
+  <data name="Reports_19" xml:space="preserve">
+    <value>{0} ТД </value>
+  </data>
+  <data name="Reports_25" xml:space="preserve">
+    <value>Ошибка: для шаблона ID = "{0}" не определен тип создаваемого комплекта</value>
+  </data>
+  <data name="Reports_24" xml:space="preserve">
+    <value>Ошибка: объект с ид. версии = "{0}" не найден</value>
+  </data>
+  <data name="Reports_27" xml:space="preserve">
+    <value>Ошибка: тип объекта ID = "{0}" не является шаблоном</value>
+  </data>
+  <data name="Reports_26" xml:space="preserve">
+    <value>Ошибка: для шаблона ID = "{0}" не определен атрибут "{1}"</value>
+  </data>
+  <data name="Reports_21" xml:space="preserve">
+    <value>Обновление комплекта "{0}"...</value>
+  </data>
+  <data name="Reports_20" xml:space="preserve">
+    <value>Генерация документа "{0}"...</value>
+  </data>
+  <data name="Reports_23" xml:space="preserve">
+    <value>Модуль генерации документов</value>
+  </data>
+  <data name="Reports_22" xml:space="preserve">
+    <value>Обновление документа "{0}"...</value>
+  </data>
+  <data name="Reports_29" xml:space="preserve">
+    <value>Ошибка: для скрипта ID = "{0}" не определен тип создаваемого документа</value>
+  </data>
+  <data name="Reports_28" xml:space="preserve">
+    <value>Шаблона для генерации документа, удовлетворяющего условиям, не найдено</value>
+  </data>
+  <data name="Reports_7" xml:space="preserve">
+    <value>Генерация документов</value>
+  </data>
+  <data name="Reports_6" xml:space="preserve">
+    <value>Минимальное значение не может быть меньше максимального</value>
+  </data>
+  <data name="Reports_5" xml:space="preserve">
+    <value>Ошибка: {0}</value>
+  </data>
+  <data name="Reports_4" xml:space="preserve">
+    <value>Объект: {0}</value>
+  </data>
+  <data name="Reports_3" xml:space="preserve">
+    <value>Обновление комплекта документов</value>
+  </data>
+  <data name="Reports_2" xml:space="preserve">
+    <value>{0} на объект "{1}"</value>
+  </data>
+  <data name="Reports_1" xml:space="preserve">
+    <value>Генерация комплекта документов</value>
+  </data>
+  <data name="Reports_9" xml:space="preserve">
+    <value>Генерация комплекта документов</value>
+  </data>
+  <data name="Reports_8" xml:space="preserve">
+    <value>Данная операция может выполняться продолжительное время. Продолжить?</value>
+  </data>
+</root>

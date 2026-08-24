@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ImpExp.Search.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F13F5373-AD23-44B8-9C6D-B182C1C0DD3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.ImpExp.Search</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.ImpExp.Search</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Interface">
+      <HintPath>lib\Intermech.ImpExp.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.SearchData">
+      <HintPath>lib\Intermech.ImpExp.SearchData.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonParametersHandler.cs" />
+    <Compile Include="ArchiveSettingsControl.cs" />
+    <Compile Include="PumpArticleCommonParameters.cs" />
+    <Compile Include="PumpDocumentsCommonParameters.cs" />
+    <Compile Include="PumpArchives.cs" />
+    <Compile Include="PumpArticleAttributes.cs" />
+    <Compile Include="PumpArticleTypes.cs" />
+    <Compile Include="PumpCommonParameters.cs" />
+    <Compile Include="PumpCompositionAttributes.cs" />
+    <Compile Include="PumpConsts.cs" />
+    <Compile Include="PumpDocTypes.cs" />
+    <Compile Include="PumpExternalProgs.cs" />
+    <Compile Include="PumpMeasures.cs" />
+    <Compile Include="PumpRankList.cs" />
+    <Compile Include="PumpSearchClass.cs" />
+    <Compile Include="PumpThematicParams.cs" />
+    <Compile Include="PumpThematicParamsGroups.cs" />
+    <Compile Include="PumpUserGroups.cs" />
+    <Compile Include="PumpUsers.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="AdditionalUserInfo.cs" />
+    <Compile Include="AttrValType.cs" />
+    <Compile Include="SearchPlugin.cs" />
+    <Compile Include="ThematicParamsSettingsControl.cs" />
+    <Compile Include="SpecialDocumentTypes.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="ItemFactories\AccessItemFactory.cs" />
+    <Compile Include="ItemFactories\ArchivesItemFactory.cs" />
+    <Compile Include="ItemFactories\IArchivesItem.cs" />
+    <Compile Include="ItemFactories\TypeAttributeItem.cs" />
+    <Compile Include="ItemFactories\ITypeAttributeItem.cs" />
+    <Compile Include="ItemFactories\ArticleTypeLinksItemFactory.cs" />
+    <Compile Include="ItemFactories\IArticleTypeLinksItem.cs" />
+    <Compile Include="ItemFactories\ArticleTypesItemFactory.cs" />
+    <Compile Include="ItemFactories\AtricleTypeField.cs" />
+    <Compile Include="ItemFactories\IArticleTypesItem.cs" />
+    <Compile Include="ItemFactories\CompositionAttributeFactory.cs" />
+    <Compile Include="ItemFactories\CompositionAttribute.cs" />
+    <Compile Include="ItemFactories\ICompositionAttribute.cs" />
+    <Compile Include="ItemFactories\DocTypeItemFactory.cs" />
+    <Compile Include="ItemFactories\DocTypeItem.cs" />
+    <Compile Include="ItemFactories\IDocTypeItem.cs" />
+    <Compile Include="ItemFactories\MadeTypesItemFactory.cs" />
+    <Compile Include="ItemFactories\IMadeTypesItem.cs" />
+    <Compile Include="ItemFactories\MadeTypesItem.cs" />
+    <Compile Include="ItemFactories\Params4DocTypesItemFactory.cs" />
+    <Compile Include="ItemFactories\IParams4DocTypesItems.cs" />
+    <Compile Include="ItemFactories\Params4DocTypesItems.cs" />
+    <Compile Include="ItemFactories\ParamSizeItemFactory.cs" />
+    <Compile Include="ItemFactories\ThematicParamsGroupItemFactory.cs" />
+    <Compile Include="ItemFactories\IThematicParamsGroupItem.cs" />
+    <Compile Include="ItemFactories\ThematicParamsItemFactory.cs" />
+    <Compile Include="ItemFactories\IThematicParamsItem.cs" />
+    <Compile Include="ItemFactories\ThematicParamsType.cs" />
+    <Compile Include="Controls\SelectLevelForm.cs" />
+    <Compile Include="Controls\SelectSchemeForm.cs" />
+    <Compile Include="Controls\LCStep.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArchiveSettingsControl.resx" />
+    <EmbeddedResource Include="Controls\SelectLevelForm.resx" />
+    <EmbeddedResource Include="Controls\SelectSchemeForm.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="ThematicParamsSettingsControl.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

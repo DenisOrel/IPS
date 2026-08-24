@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ImpExp.Imbase.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{711FFC60-01F6-4CA1-8FE6-3CD98AA9030E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.ImpExp.Imbase</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.ImpExp.Imbase</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Interface">
+      <HintPath>lib\Intermech.ImpExp.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Imbase">
+      <HintPath>lib\Intermech.Interfaces.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImbaseFormulaParser.cs" />
+    <Compile Include="locComparer.cs" />
+    <Compile Include="ImbaseGroups.cs" />
+    <Compile Include="ImbaseIDHelper.cs" />
+    <Compile Include="ImbaseHelper.cs" />
+    <Compile Include="ImbaseMeasureDefine.cs" />
+    <Compile Include="MeasureControlHelper.cs" />
+    <Compile Include="MeasureControl.cs" />
+    <Compile Include="ImbasePlugin.cs" />
+    <Compile Include="ImbasePumpServiceImpl.cs" />
+    <Compile Include="LinkToFolderDecoder.cs" />
+    <Compile Include="DecoderItem.cs" />
+    <Compile Include="MigrateCatalogFilter.cs" />
+    <Compile Include="PumpDataTableBlobs.cs" />
+    <Compile Include="PumpFolderFilters.cs" />
+    <Compile Include="PumpImbaseBlobs.cs" />
+    <Compile Include="PumpImbaseCatalogs.cs" />
+    <Compile Include="PumpImbaseClass.cs" />
+    <Compile Include="PumpImbaseDataTables.cs" />
+    <Compile Include="PumpImbaseFields.cs" />
+    <Compile Include="PumpImbaseLinks.cs" />
+    <Compile Include="PumpImbaseLookup.cs" />
+    <Compile Include="PumpImbaseTables.cs" />
+    <Compile Include="CatalogPres.cs" />
+    <Compile Include="PumpImbaseTablesHelper.cs" />
+    <Compile Include="PumpObjectPoperties.cs" />
+    <Compile Include="PumpRebuildKeys.cs" />
+    <Compile Include="PumpTablesMixData.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="ItemFactories\BlobHelper.cs" />
+    <Compile Include="ItemFactories\BlobType.cs" />
+    <Compile Include="ItemFactories\IImBlobsItem.cs" />
+    <Compile Include="ItemFactories\IImFieldsItem.cs" />
+    <Compile Include="ItemFactories\ImBlobsItem.cs" />
+    <Compile Include="ItemFactories\ImBlobsItemFactory.cs" />
+    <Compile Include="ItemFactories\ImCatalogItemFactory.cs" />
+    <Compile Include="ItemFactories\ImCatalogItem.cs" />
+    <Compile Include="ItemFactories\ImCatalogRecItemFactory.cs" />
+    <Compile Include="ItemFactories\ImCatalogRecItem.cs" />
+    <Compile Include="ItemFactories\ImDataMode.cs" />
+    <Compile Include="ItemFactories\ImDataTableItemFactory.cs" />
+    <Compile Include="ItemFactories\DataTableItemOptions.cs" />
+    <Compile Include="ItemFactories\ImDataTableItem.cs" />
+    <Compile Include="ItemFactories\ImDataTypeEx.cs" />
+    <Compile Include="ItemFactories\ImFieldsItem.cs" />
+    <Compile Include="ItemFactories\ImFieldsItemFactory.cs" />
+    <Compile Include="ItemFactories\ImLookupDataType.cs" />
+    <Compile Include="ItemFactories\ImLookupRecordType.cs" />
+    <Compile Include="ItemFactories\ImLookupItemFactory.cs" />
+    <Compile Include="ItemFactories\IImLookupItem.cs" />
+    <Compile Include="ItemFactories\ImTablesType.cs" />
+    <Compile Include="ItemFactories\ImFileAtt.cs" />
+    <Compile Include="ItemFactories\ImTablesItemFactory.cs" />
+    <Compile Include="ItemFactories\IImTablesItem.cs" />
+    <Compile Include="ItemFactories\ComentTextAttribute.cs" />
+    <Compile Include="ImbaseMeasuresSettings\ImbaseSettingsMeasures.cs" />
+    <Compile Include="ImbaseMeasuresSettings\ImbaseMeasureItem.cs" />
+    <Compile Include="ImbaseMeasuresSettings\NewMeasureDialog.cs" />
+    <Compile Include="ImbaseMeasuresSettings\NewPhysValueForm.cs" />
+    <Compile Include="ImbaseMeasuresSettings\ImbaseMeasureSelectDialog.cs" />
+    <Compile Include="ImbaseFieldsSettings\ImbaseTableRecordTypeItem.cs" />
+    <Compile Include="ImbaseFieldsSettings\ImbaseTableRecordTypeItemList.cs" />
+    <Compile Include="Controls\CatalogBindingEventArgs.cs" />
+    <Compile Include="Controls\CatalogBindingChange.cs" />
+    <Compile Include="Controls\CatalogBinding.cs" />
+    <Compile Include="Controls\CatalogImbaseAttProxy.cs" />
+    <Compile Include="Controls\CatalogImbaseEditor.cs" />
+    <Compile Include="Controls\CatalogBindingControl.cs" />
+    <Compile Include="Controls\ImbaseAttribute.cs" />
+    <Compile Include="Controls\TableInfo.cs" />
+    <Compile Include="Controls\AttributeBindingEventArgs.cs" />
+    <Compile Include="Controls\AttributeBindingChange.cs" />
+    <Compile Include="Controls\ListTablesProxy.cs" />
+    <Compile Include="Controls\ListTablesEditor.cs" />
+    <Compile Include="Controls\InvalidAttributesReport.cs" />
+    <Compile Include="Controls\ListTablesForm.cs" />
+    <Compile Include="Controls\SelectCatalogForm.cs" />
+    <Compile Include="Controls\ImbaseAttributesControl.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CatalogBindingControl.resx" />
+    <EmbeddedResource Include="Controls\ImbaseAttributesControl.resx" />
+    <EmbeddedResource Include="Controls\ListTablesForm.resx" />
+    <EmbeddedResource Include="Controls\SelectCatalogForm.resx" />
+    <EmbeddedResource Include="ImbaseFieldsSettings\ImbaseAttributeTypeSelectDialog.resx" />
+    <EmbeddedResource Include="ImbaseMeasuresSettings\ImbaseMeasureSelectDialog.resx" />
+    <EmbeddedResource Include="ImbaseMeasuresSettings\ImbaseSettingsMeasures.resx" />
+    <EmbeddedResource Include="ImbaseMeasuresSettings\NewMeasureDialog.resx" />
+    <EmbeddedResource Include="ImbaseMeasuresSettings\NewPhysValueForm.resx" />
+    <EmbeddedResource Include="MeasureControl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

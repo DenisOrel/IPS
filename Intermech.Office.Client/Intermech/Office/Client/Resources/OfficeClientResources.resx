@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Office.Client_80" xml:space="preserve">
+    <value>Генерировать регистрационный номер</value>
+  </data>
+  <data name="Office.Client_83" xml:space="preserve">
+    <value>Супервизоры канцелярии</value>
+  </data>
+  <data name="Office.Client_82" xml:space="preserve">
+    <value>Создать конфиденциальное поручение</value>
+  </data>
+  <data name="Office.Client_49" xml:space="preserve">
+    <value>Файл {0} не найден у {1}!</value>
+  </data>
+  <data name="Office.Client_48" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Office.Client_41" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Office.Client_40" xml:space="preserve">
+    <value>Новый документ</value>
+  </data>
+  <data name="Office.Client_43" xml:space="preserve">
+    <value>Заменить файл либо выпустить новую версию для одного из найденных канцелярских документов или переименовать файл и создать новый канцелярский документ?</value>
+  </data>
+  <data name="Office.Client_42" xml:space="preserve">
+    <value>В базе обнаружено {0} канцелярских документов с таким же именем файла ({1})</value>
+  </data>
+  <data name="Office.Client_45" xml:space="preserve">
+    <value>Выберите документ, для которого будет {0}</value>
+  </data>
+  <data name="Office.Client_44" xml:space="preserve">
+    <value>Выбор документа</value>
+  </data>
+  <data name="Office.Client_47" xml:space="preserve">
+    <value>выпущена новая версия</value>
+  </data>
+  <data name="Office.Client_46" xml:space="preserve">
+    <value> заменен файл</value>
+  </data>
+  <data name="Office.Client_58" xml:space="preserve">
+    <value>Преобразовать во внутреннее сообщение</value>
+  </data>
+  <data name="Office.Client_59" xml:space="preserve">
+    <value>Для типа {0} отсутствуют допустимые виды канцелярского документа</value>
+  </data>
+  <data name="Office.Client_50" xml:space="preserve">
+    <value>Выберите шаблон для нового процесса</value>
+  </data>
+  <data name="Office.Client_51" xml:space="preserve">
+    <value>Необходимо изменить имя файла!</value>
+  </data>
+  <data name="Office.Client_52" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Office.Client_53" xml:space="preserve">
+    <value>На сервере приложений не загружен плагин "Intermech.Office.Server" . Работа клиентского плагина "Intermech.Office.Client" будет заблокирована.</value>
+  </data>
+  <data name="Office.Client_54" xml:space="preserve">
+    <value>Создать поручение</value>
+  </data>
+  <data name="Office.Client_55" xml:space="preserve">
+    <value>Зарегистрировать документ</value>
+  </data>
+  <data name="Office.Client_56" xml:space="preserve">
+    <value>Ответить</value>
+  </data>
+  <data name="Office.Client_57" xml:space="preserve">
+    <value>Зарегистрировать вложения</value>
+  </data>
+  <data name="Office.Client_69" xml:space="preserve">
+    <value>У {0} отсутствуют файлы</value>
+  </data>
+  <data name="Office.Client_68" xml:space="preserve">
+    <value>Добавить файл</value>
+  </data>
+  <data name="Office.Client_63" xml:space="preserve">
+    <value>Поручение по {0}</value>
+  </data>
+  <data name="Office.Client_62" xml:space="preserve">
+    <value>Выберите классификатор для формирования регистрационного номера</value>
+  </data>
+  <data name="Office.Client_61" xml:space="preserve">
+    <value>Типу {0} не назначен вид канцелярского документа "{1}"</value>
+  </data>
+  <data name="Office.Client_60" xml:space="preserve">
+    <value>Объект типа {0} не может принимать значения типа канцелярского документа: {1}</value>
+  </data>
+  <data name="Office.Client_67" xml:space="preserve">
+    <value>Выберите файл для вложения</value>
+  </data>
+  <data name="Office.Client_66" xml:space="preserve">
+    <value>Новое письмо</value>
+  </data>
+  <data name="Office.Client_65" xml:space="preserve">
+    <value>Поручение с идентификатором "{0}" не найдено.</value>
+  </data>
+  <data name="Office.Client_64" xml:space="preserve">
+    <value>Поручение</value>
+  </data>
+  <data name="Office.Client_78" xml:space="preserve">
+    <value>Найденные документы</value>
+  </data>
+  <data name="Office.Client_79" xml:space="preserve">
+    <value>Вызвать редактор порядка исполнения</value>
+  </data>
+  <data name="Office.Client_72" xml:space="preserve">
+    <value>Не указан адресат</value>
+  </data>
+  <data name="Office.Client_73" xml:space="preserve">
+    <value>Тема письма</value>
+  </data>
+  <data name="Office.Client_70" xml:space="preserve">
+    <value>Выберите адресата</value>
+  </data>
+  <data name="Office.Client_71" xml:space="preserve">
+    <value>Адресаты</value>
+  </data>
+  <data name="Office.Client_76" xml:space="preserve">
+    <value>В базе не существует ни одного типа документов c назначенным для него типом канцелярских документов {0} </value>
+  </data>
+  <data name="Office.Client_77" xml:space="preserve">
+    <value>Подчинение</value>
+  </data>
+  <data name="Office.Client_74" xml:space="preserve">
+    <value>Не указана тема письма. Продолжить?</value>
+  </data>
+  <data name="Office.Client_75" xml:space="preserve">
+    <value>Ответ</value>
+  </data>
+  <data name="Office.Client_18" xml:space="preserve">
+    <value>Отсутствует почтовый аккаунт для текущего пользователя. Невозможно отправить e-mail.</value>
+  </data>
+  <data name="Office.Client_19" xml:space="preserve">
+    <value>Письмо "{0}" успешно отправлено!</value>
+  </data>
+  <data name="Office.Client_14" xml:space="preserve">
+    <value>Вызвать редактор текста поручения</value>
+  </data>
+  <data name="Office.Client_15" xml:space="preserve">
+    <value>Выберите пользователя</value>
+  </data>
+  <data name="Office.Client_16" xml:space="preserve">
+    <value>Поручения</value>
+  </data>
+  <data name="Office.Client_17" xml:space="preserve">
+    <value>Отправить на e-mail</value>
+  </data>
+  <data name="Office.Client_10" xml:space="preserve">
+    <value>Новый адресат</value>
+  </data>
+  <data name="Office.Client_11" xml:space="preserve">
+    <value>Выберите адресат</value>
+  </data>
+  <data name="Office.Client_12" xml:space="preserve">
+    <value>Редактирование адресата</value>
+  </data>
+  <data name="Office.Client_13" xml:space="preserve">
+    <value>Вызвать редактор отчетов исполнения</value>
+  </data>
+  <data name="Office.Client_29" xml:space="preserve">
+    <value>Канцелярский документ должен быть исходящим!</value>
+  </data>
+  <data name="Office.Client_28" xml:space="preserve">
+    <value>На {0} уже существует ответ {1}</value>
+  </data>
+  <data name="Office.Client_27" xml:space="preserve">
+    <value>{0} не зарегистрирован в канцелярии. Создание ответа невозможно.</value>
+  </data>
+  <data name="Office.Client_26" xml:space="preserve">
+    <value>Ответ</value>
+  </data>
+  <data name="Office.Client_25" xml:space="preserve">
+    <value>Отправка письма "{0}"</value>
+  </data>
+  <data name="Office.Client_24" xml:space="preserve">
+    <value>Отсутствует сервис IRouterService!</value>
+  </data>
+  <data name="Office.Client_23" xml:space="preserve">
+    <value>Отсутствует настройка пользователя-отправителя процесса для отправки документа!</value>
+  </data>
+  <data name="Office.Client_22" xml:space="preserve">
+    <value>Отсутствует настройка адреса отправителя для отправки документа!</value>
+  </data>
+  <data name="Office.Client_21" xml:space="preserve">
+    <value>Отсутствует настройка шаблона процесса для отправки документа!</value>
+  </data>
+  <data name="Office.Client_20" xml:space="preserve">
+    <value>Запустить процесс отправки</value>
+  </data>
+  <data name="Office.Client_38" xml:space="preserve">
+    <value>Заменить файл</value>
+  </data>
+  <data name="Office.Client_39" xml:space="preserve">
+    <value>Новая версия</value>
+  </data>
+  <data name="Office.Client_36" xml:space="preserve">
+    <value>В базе обнаружен канцелярский документ {0} с таким же именем файла ({1})</value>
+  </data>
+  <data name="Office.Client_37" xml:space="preserve">
+    <value>Заменить файл у найденного канцелярского документа, выпустить новую версию или переименовать файл и создать новый канцелярский документ?</value>
+  </data>
+  <data name="Office.Client_34" xml:space="preserve">
+    <value>Выберите файл для регистрации</value>
+  </data>
+  <data name="Office.Client_35" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="Office.Client_32" xml:space="preserve">
+    <value>Новое поручение</value>
+  </data>
+  <data name="Office.Client_33" xml:space="preserve">
+    <value>{0} не зарегистрирован в канцелярии. Создание поручения невозможно.</value>
+  </data>
+  <data name="Office.Client_30" xml:space="preserve">
+    <value>Регистрация документа</value>
+  </data>
+  <data name="Office.Client_31" xml:space="preserve">
+    <value>Документ успешно зарегистрирован в канцелярии</value>
+  </data>
+  <data name="Office.Client_9" xml:space="preserve">
+    <value>Выберите новый адресат</value>
+  </data>
+  <data name="Office.Client_8" xml:space="preserve">
+    <value>Дата регистрации</value>
+  </data>
+  <data name="Office.Client_5" xml:space="preserve">
+    <value>Адресат</value>
+  </data>
+  <data name="Office.Client_4" xml:space="preserve">
+    <value>Вызвать редактор адресатов</value>
+  </data>
+  <data name="Office.Client_7" xml:space="preserve">
+    <value>Регистрационный номер</value>
+  </data>
+  <data name="Office.Client_6" xml:space="preserve">
+    <value>Получатель</value>
+  </data>
+  <data name="Office.Client_1" xml:space="preserve">
+    <value>Общие</value>
+  </data>
+  <data name="Office.Client_3" xml:space="preserve">
+    <value>Канцелярия</value>
+  </data>
+  <data name="Office.Client_2" xml:space="preserve">
+    <value>Выберите шаблон процесса</value>
+  </data>
+</root>

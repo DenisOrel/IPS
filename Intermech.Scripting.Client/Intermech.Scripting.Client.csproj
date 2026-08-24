@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Scripting.Client.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{938C879D-9EF6-4834-91C6-55A4AB55B4CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Scripting.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit">
+      <HintPath>lib\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>lib\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.CSharp">
+      <HintPath>lib\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.Cecil">
+      <HintPath>lib\ICSharpCode.NRefactory.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl.Wpf">
+      <HintPath>lib\Intermech.Bcl.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Scripting">
+      <HintPath>lib\Intermech.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>lib\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>lib\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8">
+      <HintPath>lib\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>lib\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfBindingErrors">
+      <HintPath>lib\WpfBindingErrors.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ICSharpCode\NRefactory\TextSources\ReadOnlyTextDocumentReader.cs" />
+    <Compile Include="ICSharpCode\NRefactory\TextSources\ReadOnlyTextDocumentSearchTool.cs" />
+    <Compile Include="ICSharpCode\NRefactory\TextSources\ReadOnlyTextFragment.cs" />
+    <Compile Include="ICSharpCode\NRefactory\TextSources\ReadOnlyTextSource.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpCompletionConsts.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\ICSharpCompletionAssemblyLoader.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\SharedAssemblyLoader.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\ConversionHelper.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\TextBuilder.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CompletionData.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CompletionItemTypes.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpCompletionService.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpCompletionContext.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpCompletionDataFactory.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpInsightItem.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\CSharpInsightProvider.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\EntityCompletionData.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\ImportCompletionData.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\OverrideCompletionData.cs" />
+    <Compile Include="ICSharpCode\NRefactory\Services\VariableCompletionData.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\CSharpNinjectModule.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpCodeModel.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpFormatIndentsAction.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpLanguageClientHolder.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpSessionParameters.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpScriptDebugRuntimeOptions.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpSessionService.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\NRefactoryCodeCompletionServiceProvider.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpTextEditorLanguageService.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpCodeCompletionProvider.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpTextEditorBehavior.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpLanguageExtension.cs" />
+    <Compile Include="Intermech\Scripting\CSharp\DesignTime\CSharpSession.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\CommentSelectionAction.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\InsertDBRelationTypeGuidUIAction.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\InsertDBObjectTypeGuidUIAction.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\InsertDBAttributeGuidUIAction.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\TextEditorAction.cs" />
+    <Compile Include="Intermech\Scripting\Common\DesignTime\TextEditorActions\UncommentSelectionAction.cs" />
+    <Compile Include="Intermech\Scripting\Services\ScriptPadServiceNinjectModule.cs" />
+    <Compile Include="Intermech\Scripting\Services\ScriptPadSettingsService.cs" />
+    <Compile Include="Intermech\Scripting\Services\DiskScriptSystemService.cs" />
+    <Compile Include="Intermech\Scripting\Services\ScriptPadService.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptDialogService.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptKey.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptRepository.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptSaveAsParameters.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\OpenDiskScriptDialogService.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\SaveDiskScriptDialogService.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptSaveChangesBehavior.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptDebugBehavior.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DiskScriptProjectFactory.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\IDebugParametersView.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DebugParametersPresenter.cs" />
+    <Compile Include="Intermech\Scripting\Projects\DiskScripts\DebugParametersWindow.cs" />
+    <Compile Include="Intermech\Scripting\Utils\OpenEventHandlerBuilder`1.cs" />
+    <Compile Include="Intermech\Scripting\Utils\OpenEventHandler`1.cs" />
+    <Compile Include="Intermech\Scripting\Utils\TransparentProxyAdapter.cs" />
+    <Compile Include="Intermech\Scripting\Utils\WeakEventSource`1.cs" />
+    <Compile Include="Intermech\Scripting\Client\NavigatorCommandModule.cs" />
+    <Compile Include="Intermech\Scripting\Client\NavigatorCommandProvider.cs" />
+    <Compile Include="Intermech\Scripting\Client\MainMenuModule.cs" />
+    <Compile Include="Intermech\Scripting\Client\ScriptPadPackage.cs" />
+    <Compile Include="Intermech\Scripting\Properties\Resources.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\CodeCompletionIconProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEModel.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDESettingsEditorModel.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IErrorsView.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IScriptCodeEditorCutCopyPaste.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IScriptCodeEditorUndoRedo.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IScriptWindow.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IScriptWindowCollection.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEChildPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\NavigationListItem.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\ScriptProjectErrorRecord.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\ScriptTextChangedEventArgs.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\SyntaxMode.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\TextSegment.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\CSharpSyntaxModeProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEInternalResources.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEMode.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDEResources.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDESettings.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDESettingsEditorPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDESharedState.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IDESettingsService.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IIDESettingsEditorView.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IIDEView.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\InMemoryIDESettingsService.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\IScriptCodeEditorControl.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\LanguageSessionData.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\PowerShellSyntaxModeProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\PythonSyntaxModeProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\OpenScriptData.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\ScriptProjectEventArgs.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\TextCaretPosition.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\ISyntaxModeFileProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\NavigateToCodeEventArgs.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\ErrorsView.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\ScriptWindow.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\ScriptWindowCollection.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\DockPanelWindowCollection`2.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\GoToLineForm.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\IDESettingsWindow.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\IDEWindow.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\OutputView.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeFoldingStrategy.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\TextEditorCommands.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\FindReplaceTextEditorAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\TextEditorHotkeyHelper.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\FindReplaceOwnerWindowAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeEditorMenuItemViewModel.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\EditableTextDocumentAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\DesignTimeTextEditorAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\EditableTextLineAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\WinformsAdapterControl.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeCompletionDataItem.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeCompletionResultBuilder.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\ReadOnlyTextDocumentAdapter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\OverloadInsightItem.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\OverloadInsightProvider.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\SyntaxDefinitions.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\TextEditorUserControl.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\TextEditorViewModel.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeCompletionTextComparer.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\CodeCompletionImages.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\ActiveScriptChildPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\ActiveScriptInfoPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\ActiveScriptModifiedStatePresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\AdvancedFormattingCommandsPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\ClipboardCommandsPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\CodeWorkspacePresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\EditIDESettingsCommandPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\FindReplaceCommandPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\ReplaceWithCommandPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\RunCommandPresenter.cs" />
+    <Compile Include="Intermech\Scripting\ScriptPad\Presenters\UndoRedoCommandsPresenter.cs" />
+    <Compile Include="Intermech\Scripting\Addons\AddonsModule.cs" />
+    <Compile Include="Intermech\Scripting\Addons\AddonsNinjectModule.cs" />
+    <Compile Include="Intermech\Scripting\Addons\ReportCompareObjectsScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\TechNumerationScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\LCStepScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\TechAutoselectionScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\FormButtonScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\ExpertScenarioScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\ExpertComplectDocScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\ExpertReportScriptProjectInitializer.cs" />
+    <Compile Include="Intermech\Scripting\Addons\SchedulerScriptDebugBehavior.cs" />
+    <Compile Include="Intermech\Scripting\Addons\SchedulerScriptProjectInitializer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="scriptpad\icons\codecompletion\class.png" />
+    <Resource Include="scriptpad\icons\codecompletion\constructor.png" />
+    <Resource Include="scriptpad\icons\codecompletion\delegate.png" />
+    <Resource Include="scriptpad\icons\codecompletion\enum.png" />
+    <Resource Include="scriptpad\icons\codecompletion\enumvalue.png" />
+    <Resource Include="scriptpad\icons\codecompletion\event.png" />
+    <Resource Include="scriptpad\icons\codecompletion\extensionmethod.png" />
+    <Resource Include="scriptpad\icons\codecompletion\field.png" />
+    <Resource Include="scriptpad\icons\codecompletion\indexerproperty.png" />
+    <Resource Include="scriptpad\icons\codecompletion\interface.png" />
+    <Resource Include="scriptpad\icons\codecompletion\literal.png" />
+    <Resource Include="scriptpad\icons\codecompletion\method.png" />
+    <Resource Include="scriptpad\icons\codecompletion\namespace.png" />
+    <Resource Include="scriptpad\icons\codecompletion\operator.png" />
+    <Resource Include="scriptpad\icons\codecompletion\overlayinternal.png" />
+    <Resource Include="scriptpad\icons\codecompletion\overlayprivate.png" />
+    <Resource Include="scriptpad\icons\codecompletion\overlayprotected.png" />
+    <Resource Include="scriptpad\icons\codecompletion\overlayprotectedinternal.png" />
+    <Resource Include="scriptpad\icons\codecompletion\overlaystatic.png" />
+    <Resource Include="scriptpad\icons\codecompletion\pinvokemethod.png" />
+    <Resource Include="scriptpad\icons\codecompletion\property.png" />
+    <Resource Include="scriptpad\icons\codecompletion\readonlyfield.png" />
+    <Resource Include="scriptpad\icons\codecompletion\staticclass.png" />
+    <Resource Include="scriptpad\icons\codecompletion\struct.png" />
+    <Resource Include="scriptpad\icons\codecompletion\virtualmethod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Scripting\Client\dll.licenses" />
+    <EmbeddedResource Include="Intermech\Scripting\Projects\DiskScripts\DebugParametersWindow.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\CSharp.xshd" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\IDEInternalResources.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\PowerShell.xshd" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Python.xshd" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\AvalonCodeEditor\WinformsAdapterControl.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\ErrorsView.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\GoToLineForm.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\IDESettingsWindow.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\IDEWindow.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\OutputView.resx" />
+    <EmbeddedResource Include="Intermech\Scripting\ScriptPad\Views\ScriptWindow.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="scriptpad\views\avaloncodeeditor\texteditorusercontrol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

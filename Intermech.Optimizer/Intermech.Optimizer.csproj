@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Optimizer.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A20A041-AA30-4CDF-9CA7-44FE1B3A2BAC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Optimizer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.Map.Layout</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Map2">
+      <HintPath>lib\Intermech.Map2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapLayout.cs" />
+    <Compile Include="MapLayoutDirection.cs" />
+    <Compile Include="MapLayoutForceDirected.cs" />
+    <Compile Include="MapLayoutForceDirectedLinkData.cs" />
+    <Compile Include="MapLayoutForceDirectedNodeData.cs" />
+    <Compile Include="MapLayoutLayeredDigraph.cs" />
+    <Compile Include="MapLayoutLayeredDigraphAggressive.cs" />
+    <Compile Include="MapLayoutLayeredDigraphCycleRemove.cs" />
+    <Compile Include="MapLayoutLayeredDigraphInitIndices.cs" />
+    <Compile Include="MapLayoutLayeredDigraphLayering.cs" />
+    <Compile Include="MapLayoutLayeredDigraphLinkData.cs" />
+    <Compile Include="MapLayoutLayeredDigraphNodeData.cs" />
+    <Compile Include="MapLayoutLicenseProvider.cs" />
+    <Compile Include="MapLayoutLinkEnumerator.cs" />
+    <Compile Include="MapLayoutNetwork.cs" />
+    <Compile Include="MapLayoutNetworkLink.cs" />
+    <Compile Include="MapLayoutNetworkNode.cs" />
+    <Compile Include="MapLayoutNodeEnumerator.cs" />
+    <Compile Include="MapLayoutProgressEventArgs.cs" />
+    <Compile Include="MapLayoutProgressEventHandler.cs" />
+    <Compile Include="MapLayoutRandom.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MapLayout.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

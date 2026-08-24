@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PdmConfigurator_100" xml:space="preserve">
+    <value>Конфигурирование составов</value>
+  </data>
+  <data name="PdmConfigurator_60" xml:space="preserve">
+    <value>Данная опция отмечена как устаревшая. Управлять видимостью её значений недопустимо.</value>
+  </data>
+  <data name="PdmConfigurator_61" xml:space="preserve">
+    <value>Вы делаете невидимым значение опции, которое было удалено в самой опции (устаревшее значение). Это приведёт к окончательному удалению данного значения из списка значений текущей опции. Удалить указанное значение из списка (Да) или оставить его видимым (Нет)?</value>
+  </data>
+  <data name="PdmConfigurator_62" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="PdmConfigurator_63" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="PdmConfigurator_64" xml:space="preserve">
+    <value>Заимствование опций</value>
+  </data>
+  <data name="PdmConfigurator_65" xml:space="preserve">
+    <value>Не найдено опций, доступных для заимствования</value>
+  </data>
+  <data name="PdmConfigurator_66" xml:space="preserve">
+    <value>Выберите объекты, из которых будут заимствованы опции</value>
+  </data>
+  <data name="PdmConfigurator_67" xml:space="preserve">
+    <value>Заимствование опций из указанных объектов</value>
+  </data>
+  <data name="PdmConfigurator_68" xml:space="preserve">
+    <value>Выберите объекты, из составов которых будут заимствованы опции</value>
+  </data>
+  <data name="PdmConfigurator_69" xml:space="preserve">
+    <value>Заимствование опций из указанных объектов и их составов первого уровня</value>
+  </data>
+  <data name="PdmConfigurator_42" xml:space="preserve">
+    <value>Видимое значение</value>
+  </data>
+  <data name="PdmConfigurator_43" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="PdmConfigurator_40" xml:space="preserve">
+    <value>Описание значения</value>
+  </data>
+  <data name="PdmConfigurator_41" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="PdmConfigurator_46" xml:space="preserve">
+    <value>Конфигуратор составов</value>
+  </data>
+  <data name="PdmConfigurator_47" xml:space="preserve">
+    <value>Конфигуратор составов - "{0}"</value>
+  </data>
+  <data name="PdmConfigurator_44" xml:space="preserve">
+    <value>Код значения</value>
+  </data>
+  <data name="PdmConfigurator_45" xml:space="preserve">
+    <value>ID значения</value>
+  </data>
+  <data name="PdmConfigurator_48" xml:space="preserve">
+    <value> Настройки для выбранного значения текущей опции объекта:</value>
+  </data>
+  <data name="PdmConfigurator_49" xml:space="preserve">
+    <value> Настройки для значения опции: {0}</value>
+  </data>
+  <data name="PdmConfigurator_71" xml:space="preserve">
+    <value>Заимствование опций из указанных объектов и их развёрнутых составов</value>
+  </data>
+  <data name="PdmConfigurator_70" xml:space="preserve">
+    <value>Выберите объекты, из развёрнутых составов которых будут заимствованы опции</value>
+  </data>
+  <data name="PdmConfigurator_73" xml:space="preserve">
+    <value>Сохранить изменения?</value>
+  </data>
+  <data name="PdmConfigurator_72" xml:space="preserve">
+    <value>Конфигуратор</value>
+  </data>
+  <data name="PdmConfigurator_75" xml:space="preserve">
+    <value>Закладка для конфигурирования информационных объектов</value>
+  </data>
+  <data name="PdmConfigurator_74" xml:space="preserve">
+    <value>Сохранение изменений</value>
+  </data>
+  <data name="PdmConfigurator_77" xml:space="preserve">
+    <value>Дата изменений</value>
+  </data>
+  <data name="PdmConfigurator_76" xml:space="preserve">
+    <value>Кто внёс изменения</value>
+  </data>
+  <data name="PdmConfigurator_79" xml:space="preserve">
+    <value>Опция не загружена</value>
+  </data>
+  <data name="PdmConfigurator_78" xml:space="preserve">
+    <value>Опция "{0}"</value>
+  </data>
+  <data name="PdmConfigurator_24" xml:space="preserve">
+    <value>Опция с id={0}</value>
+  </data>
+  <data name="PdmConfigurator_25" xml:space="preserve">
+    <value>Удалить шифр?</value>
+  </data>
+  <data name="PdmConfigurator_26" xml:space="preserve">
+    <value>Выбрать атрибут...</value>
+  </data>
+  <data name="PdmConfigurator_27" xml:space="preserve">
+    <value>Cохранить сделанные изменения?</value>
+  </data>
+  <data name="PdmConfigurator_20" xml:space="preserve">
+    <value>Закладка для просмотра опций указанной категории</value>
+  </data>
+  <data name="PdmConfigurator_21" xml:space="preserve">
+    <value>Объекты, содержащие опцию</value>
+  </data>
+  <data name="PdmConfigurator_22" xml:space="preserve">
+    <value>Закладка для списка объектов, которым назначена указанная опция</value>
+  </data>
+  <data name="PdmConfigurator_23" xml:space="preserve">
+    <value>Значение опции с id={0}</value>
+  </data>
+  <data name="PdmConfigurator_28" xml:space="preserve">
+    <value>У вас нет прав на изменение условий применения</value>
+  </data>
+  <data name="PdmConfigurator_29" xml:space="preserve">
+    <value>&lt;Выберите опцию&gt;</value>
+  </data>
+  <data name="PdmConfigurator_53" xml:space="preserve">
+    <value>Выберите опции, которые требуется добавить в объект</value>
+  </data>
+  <data name="PdmConfigurator_52" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="PdmConfigurator_51" xml:space="preserve">
+    <value>Все опции</value>
+  </data>
+  <data name="PdmConfigurator_50" xml:space="preserve">
+    <value>Возникли ошибки в контексте конфигурирования</value>
+  </data>
+  <data name="PdmConfigurator_57" xml:space="preserve">
+    <value>Не найден объект типа "Опции" с идентификатором версии {0}.
+
+Продолжить добавление опций?</value>
+  </data>
+  <data name="PdmConfigurator_56" xml:space="preserve">
+    <value>Опция не найдена</value>
+  </data>
+  <data name="PdmConfigurator_55" xml:space="preserve">
+    <value>Категории и опции</value>
+  </data>
+  <data name="PdmConfigurator_54" xml:space="preserve">
+    <value>Выберите опции, которые требуется добавить в объект. Вы можете выбрать категорию, а затем отыскать в ней требуемые опции.</value>
+  </data>
+  <data name="PdmConfigurator_59" xml:space="preserve">
+    <value>Опция "{0}" отмечена как устаревшая, её нельзя назначать объектам.
+
+Продолжить добавление опций?</value>
+  </data>
+  <data name="PdmConfigurator_58" xml:space="preserve">
+    <value>Попытка добавить устаревшую опцию</value>
+  </data>
+  <data name="PdmConfigurator_35" xml:space="preserve">
+    <value>Опция с GUID={0}</value>
+  </data>
+  <data name="PdmConfigurator_34" xml:space="preserve">
+    <value> или </value>
+  </data>
+  <data name="PdmConfigurator_37" xml:space="preserve">
+    <value>Категория/Опция</value>
+  </data>
+  <data name="PdmConfigurator_36" xml:space="preserve">
+    <value>Значение {0}</value>
+  </data>
+  <data name="PdmConfigurator_31" xml:space="preserve">
+    <value>Группа условий</value>
+  </data>
+  <data name="PdmConfigurator_30" xml:space="preserve">
+    <value>&lt;Выберите значение опции&gt;</value>
+  </data>
+  <data name="PdmConfigurator_33" xml:space="preserve">
+    <value> и </value>
+  </data>
+  <data name="PdmConfigurator_32" xml:space="preserve">
+    <value>&lt;Выберите операцию&gt;</value>
+  </data>
+  <data name="PdmConfigurator_39" xml:space="preserve">
+    <value>Значение опции</value>
+  </data>
+  <data name="PdmConfigurator_38" xml:space="preserve">
+    <value>Изображение</value>
+  </data>
+  <data name="PdmConfigurator_17" xml:space="preserve">
+    <value>Выберите объекты для добавления в заказ</value>
+  </data>
+  <data name="PdmConfigurator_16" xml:space="preserve">
+    <value>Объекты для добавления в заказ</value>
+  </data>
+  <data name="PdmConfigurator_15" xml:space="preserve">
+    <value>В правилах применения объекта с опциями не задано значение опции {0}</value>
+  </data>
+  <data name="PdmConfigurator_14" xml:space="preserve">
+    <value>с Guid="{0}"</value>
+  </data>
+  <data name="PdmConfigurator_13" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="PdmConfigurator_12" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="PdmConfigurator_11" xml:space="preserve">
+    <value>Выберите объект, на основе которого будет построен шифр заказа</value>
+  </data>
+  <data name="PdmConfigurator_10" xml:space="preserve">
+    <value>Объекты для формирования шифра</value>
+  </data>
+  <data name="PdmConfigurator_19" xml:space="preserve">
+    <value>Опции категории</value>
+  </data>
+  <data name="PdmConfigurator_18" xml:space="preserve">
+    <value>Задайте количество</value>
+  </data>
+  <data name="PdmConfigurator_88" xml:space="preserve">
+    <value>опция "{0}" </value>
+  </data>
+  <data name="PdmConfigurator_89" xml:space="preserve">
+    <value>опция с id={0} </value>
+  </data>
+  <data name="PdmConfigurator_86" xml:space="preserve">
+    <value>В связанных значениях</value>
+  </data>
+  <data name="PdmConfigurator_87" xml:space="preserve">
+    <value>В условиях несовместимости</value>
+  </data>
+  <data name="PdmConfigurator_84" xml:space="preserve">
+    <value>Опция была изменена</value>
+  </data>
+  <data name="PdmConfigurator_85" xml:space="preserve">
+    <value>Закладка для просмотра и редактирования содержимого опций конфигуратора составов IPS</value>
+  </data>
+  <data name="PdmConfigurator_82" xml:space="preserve">
+    <value>Опция</value>
+  </data>
+  <data name="PdmConfigurator_83" xml:space="preserve">
+    <value>Сохранить изменения в опцию?</value>
+  </data>
+  <data name="PdmConfigurator_80" xml:space="preserve">
+    <value>Выберите категорию, в которую будет входить опция</value>
+  </data>
+  <data name="PdmConfigurator_81" xml:space="preserve">
+    <value>Выберите категорию, в которую будет входить редактируемая опция</value>
+  </data>
+  <data name="PdmConfigurator_99" xml:space="preserve">
+    <value>Трассировка конфигурируемого состава</value>
+  </data>
+  <data name="PdmConfigurator_98" xml:space="preserve">
+    <value>Ошибка загрузки конфигуратора составов IPS</value>
+  </data>
+  <data name="PdmConfigurator_97" xml:space="preserve">
+    <value>Не загружен клиентский модуль Intermech.Pdm, необходимый для работы конфигуратора составов IPS</value>
+  </data>
+  <data name="PdmConfigurator_96" xml:space="preserve">
+    <value>Закладка для просмотра и редактирования значений опций конфигуратора составов, назначенных объектам</value>
+  </data>
+  <data name="PdmConfigurator_95" xml:space="preserve">
+    <value>Опции</value>
+  </data>
+  <data name="PdmConfigurator_94" xml:space="preserve">
+    <value>Где используются</value>
+  </data>
+  <data name="PdmConfigurator_93" xml:space="preserve">
+    <value>Список зависимых опций</value>
+  </data>
+  <data name="PdmConfigurator_92" xml:space="preserve">
+    <value>Со связанными значениями</value>
+  </data>
+  <data name="PdmConfigurator_91" xml:space="preserve">
+    <value>С условиями несовместимости</value>
+  </data>
+  <data name="PdmConfigurator_90" xml:space="preserve">
+    <value>Зависимая {0} не может быть импортирована, 
+т.к. она уже добавлена в редактируемый объект</value>
+  </data>
+  <data name="PdmConfigurator_6" xml:space="preserve">
+    <value>Выполнить запрос</value>
+  </data>
+  <data name="PdmConfigurator_7" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="PdmConfigurator_4" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="PdmConfigurator_5" xml:space="preserve">
+    <value>Объект подобран по условиям применения</value>
+  </data>
+  <data name="PdmConfigurator_2" xml:space="preserve">
+    <value>Идентификатор связи</value>
+  </data>
+  <data name="PdmConfigurator_3" xml:space="preserve">
+    <value>Заголовок объекта</value>
+  </data>
+  <data name="PdmConfigurator_1" xml:space="preserve">
+    <value>Идентификатор версии объекта</value>
+  </data>
+  <data name="PdmConfigurator_8" xml:space="preserve">
+    <value>Трассировка может быть выполнена только для конфигурируемых объектов</value>
+  </data>
+  <data name="PdmConfigurator_9" xml:space="preserve">
+    <value>Отменить запрос</value>
+  </data>
+</root>

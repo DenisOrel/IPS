@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ExternalSystemIntegration.Client.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D600849-2577-4931-A26F-3AF24AC45552}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.ExternalSystemIntegration.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.ExternalSystemIntegration.Client</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ExternalSystemIntegration.Interfaces">
+      <HintPath>lib\Intermech.ExternalSystemIntegration.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.VirtualTreeView">
+      <HintPath>lib\Intermech.VirtualTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RequestCreatorCustomService.cs" />
+    <Compile Include="RequestCreatorParams.cs" />
+    <Compile Include="AttributeComprasionForm.cs" />
+    <Compile Include="AttributeComprasionList.cs" />
+    <Compile Include="ContextMenuCommandsProvider.cs" />
+    <Compile Include="ResponceConfigObjectView.cs" />
+    <Compile Include="ResponceConfigObjectViewProvider.cs" />
+    <Compile Include="ResponceSchemeCreatorStepOne.cs" />
+    <Compile Include="ResponceSchemeCreator.cs" />
+    <Compile Include="ResponceSchemeObjectViewProvider.cs" />
+    <Compile Include="ResponceSchemeObjectView.cs" />
+    <Compile Include="SchemeSettingsControl.cs" />
+    <Compile Include="ObjTypeSettingsControl.cs" />
+    <Compile Include="SettingObjectsView.cs" />
+    <Compile Include="CommonSettingsControl.cs" />
+    <Compile Include="ServiceHolder.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="ExternalSystemIntegrationClientPlugin.cs" />
+    <Compile Include="ExtSystIntegrationResources.cs" />
+    <Compile Include="ObjectTypeSettingCreator.cs" />
+    <Compile Include="ObjectTypeSettingCreatorStepOne.cs" />
+    <Compile Include="ObjectTypeSettingView.cs" />
+    <Compile Include="ObjectTypeSettingViewProvider.cs" />
+    <Compile Include="RequestConfigObjectView.cs" />
+    <Compile Include="RequestConfigObjectViewProvider.cs" />
+    <Compile Include="RequestSchemeCreator.cs" />
+    <Compile Include="RequestSchemeCreatorStepOne.cs" />
+    <Compile Include="RequestSchemeObjectView.cs" />
+    <Compile Include="RequestSchemeObjectViewProvider.cs" />
+    <Compile Include="CreateRequestHelper.cs" />
+    <Compile Include="RequestCreator.cs" />
+    <Compile Include="RequestSchemeTreeView.cs" />
+    <Compile Include="ResponceSchemeTreeView.cs" />
+    <Compile Include="BaseSchemeTreeView.cs" />
+    <Compile Include="NodeEventArgs.cs" />
+    <Compile Include="Settings\RequestSchemeItemFrm.cs" />
+    <Compile Include="Settings\ResponceSchemeItemFrm.cs" />
+    <Compile Include="Settings\DemandAttributesForm.cs" />
+    <Compile Include="Settings\BaseSchemeItemFrm.cs" />
+    <Compile Include="Settings\ButtonEditEventArgs.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="ObjectTypeSetting\CustomObjectsListView.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AttributeComprasionForm.resx" />
+    <EmbeddedResource Include="AttributeComprasionList.resx" />
+    <EmbeddedResource Include="BaseSchemeTreeView.resx" />
+    <EmbeddedResource Include="CommonSettingsControl.resx" />
+    <EmbeddedResource Include="ExtSystIntegrationResources.resx" />
+    <EmbeddedResource Include="ObjectTypeSetting\CustomObjectsListView.resx" />
+    <EmbeddedResource Include="ObjectTypeSettingCreatorStepOne.resx" />
+    <EmbeddedResource Include="ObjectTypeSettingView.resx" />
+    <EmbeddedResource Include="ObjTypeSettingsControl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="RequestConfigObjectView.resx" />
+    <EmbeddedResource Include="RequestSchemeCreatorStepOne.resx" />
+    <EmbeddedResource Include="RequestSchemeObjectView.resx" />
+    <EmbeddedResource Include="RequestSchemeTreeView.resx" />
+    <EmbeddedResource Include="ResponceConfigObjectView.resx" />
+    <EmbeddedResource Include="ResponceSchemeCreatorStepOne.resx" />
+    <EmbeddedResource Include="ResponceSchemeObjectView.resx" />
+    <EmbeddedResource Include="ResponceSchemeTreeView.resx" />
+    <EmbeddedResource Include="SchemeSettingsControl.resx" />
+    <EmbeddedResource Include="Settings\BaseSchemeItemFrm.resx" />
+    <EmbeddedResource Include="Settings\DemandAttributesForm.resx" />
+    <EmbeddedResource Include="Settings\RequestSchemeItemFrm.resx" />
+    <EmbeddedResource Include="Settings\ResponceSchemeItemFrm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

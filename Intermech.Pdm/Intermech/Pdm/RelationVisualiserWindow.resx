@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="contextMenuStrip_map.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAH4AAAAwAAAACw==</value>
+  </data>
+  <data name="toolStripMenuItem_delete.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAH0AAAAWAAAACw==</value>
+  </data>
+  <data name="toolStripMenuItem_delete.Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Kulon.Name" xml:space="preserve">
+    <value>menuButtonItem_LA_Kulon</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Kulon.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dropDownMenu_SelectShema.ToolTipText" xml:space="preserve">
+    <value>История</value>
+  </data>
+  <data name="&gt;&gt;dropDownMenu_SelectShema.Name" xml:space="preserve">
+    <value>dropDownMenu_SelectShema</value>
+  </data>
+  <data name="&gt;&gt;dropDownMenu_SelectShema.Type" xml:space="preserve">
+    <value>Intermech.Bars.DropDownMenuItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="buttonItem_ZoomIn.CommandName" xml:space="preserve">
+    <value>buttonItem_ZoomIn</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip_map.Name" xml:space="preserve">
+    <value>contextMenuStrip_map</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip_map.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonItem_Status.ToolTipText" xml:space="preserve">
+    <value>Показывать статусы</value>
+  </data>
+  <data name="buttonItem_AllShema.CommandName" xml:space="preserve">
+    <value>buttonItem_AllShema</value>
+  </data>
+  <data name="propertyGridPanel.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="menuButtonItem_LA_Kulon.CommandName" xml:space="preserve">
+    <value>menuButtonItem_LA_Kulon</value>
+  </data>
+  <data name="buttonItem_ZoomOut.CommandName" xml:space="preserve">
+    <value>buttonItem_ZoomOut</value>
+  </data>
+  <data name="$this.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAAYDAAAqAgAACw==</value>
+  </data>
+  <data name="bStructureLinks.CommandName" xml:space="preserve">
+    <value>bStructureLinks</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomIn.Name" xml:space="preserve">
+    <value>buttonItem_ZoomIn</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomIn.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dropDownMenu_SelectShema.CommandName" xml:space="preserve">
+    <value>dropDownMenu_SelectShema</value>
+  </data>
+  <data name="toolStripStatus_Stop.Text" xml:space="preserve">
+    <value>Стоп!</value>
+  </data>
+  <data name="toolStripStatus_Stop.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABAAAAARAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Normal.Name" xml:space="preserve">
+    <value>menuButtonItem_LA_Normal</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Normal.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="buttonItem_FindObject.CommandName" xml:space="preserve">
+    <value>buttonItem_FindObject</value>
+  </data>
+  <data name="buttonItem_HeigthOut.CommandName" xml:space="preserve">
+    <value>buttonItem_HeigthOut</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="propertyGridPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripStatus_Stop.ToolTipText" xml:space="preserve">
+    <value>Стоп!</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_AllShema.Name" xml:space="preserve">
+    <value>buttonItem_AllShema</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_AllShema.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolStripStatus.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAAAAAAARAAAACw==</value>
+  </data>
+  <data name="propertyGridPanel.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAADAAAACw==</value>
+  </data>
+  <data name="propertyGridPanel.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANAAAAAUAgAACw==</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_LevelP.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_LevelP.Name" xml:space="preserve">
+    <value>buttonItem_LevelP</value>
+  </data>
+  <data name="&gt;&gt;toolBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_HeigthOut.Name" xml:space="preserve">
+    <value>buttonItem_HeigthOut</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_HeigthOut.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="bAssociateLinks.CommandName" xml:space="preserve">
+    <value>bAssociateLinks</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Name" xml:space="preserve">
+    <value>toolBar</value>
+  </data>
+  <data name="&gt;&gt;toolBar.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_IfNeedParentTree.Name" xml:space="preserve">
+    <value>buttonItem_IfNeedParentTree</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_IfNeedParentTree.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dropDownMenu_SelectLO_Alg.ToolTipText" xml:space="preserve">
+    <value>Выбор схемы</value>
+  </data>
+  <data name="&gt;&gt;map.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonItem_Status.CommandName" xml:space="preserve">
+    <value>buttonItem_Status</value>
+  </data>
+  <data name="buttonItem_LevelP.CommandName" xml:space="preserve">
+    <value>buttonItem_LevelP</value>
+  </data>
+  <data name="&gt;&gt;map.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="map.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAADTAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;map.Type" xml:space="preserve">
+    <value>Intermech.Pdm.RelationVisualiser.RelViewControl, Intermech.Pdm, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;map.Name" xml:space="preserve">
+    <value>map</value>
+  </data>
+  <data name="bStructureLinks.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAbQMAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAv9JREFUOE9tkP1PU1cch89vZn+Jmqj7gS0hE1/GAJcoBIrK6HBsna5FUwko0Dfa3nv7otOhKNncsmW/MdDNsXaUoiAV0lpfEmeGEmLiplKkpSMUZkyE7Nm5FU2MfJMn95z7PZ/nvIgS/2BfsRrlfclWb4QiT4TN7v432CJ7xdpgtixwSewIXn6F0IOxmWVqziUZfrDAn3PL3Mku8ccK+vjOP0vcy/3H/h+SyHpdsE2JEPr7GYauBOrIFMpYBldsBucK7qsz8l+a8bnnmL5LrC7omXxK5ZkE5r6/9AVv1KlklqGHz9h37nVBWXBIiO1S8OPdf6noTGD6ZXXBl9dmCd1/ivHruD6VwcuiNDgsioMj8g2koOv2IuWdceovPEAbncUxnMY2NINdfj2xNJ+HUnTfW6R2RVAiw9uCV8UJzS1EsRrh+PUFdklBbe/qJwiOzfLt7QX2dF3Tp/nwyYAq/D5NiA/UAdxj83x4OsHunsd44os4Rl/gGs2hjs3xyW9pTt6U1zx7Iy84EVBEwO8Xqs8vBdoAzcNS0BHHfqwLj72NtiNNNFsPccAWoOKnFJU902gd36C221E97SiKgqL6xiVClGhRzNEcNl8Ht5Jxlp8vMZ1KMfXoMRfP91LXrGH1nSUSDum7Mz+fY/pJmt/7B7A5XOOixBelPrKA196SX9DudmP6zITN7sThcOLScbpwOttxSPZ/YaF6Tw0TE5O43F75olJQG85hP9JIJp3B7nBQ/30Ss9mSF2YyWR4+muJKbDQvKC3b0VBZVc2vfSHcHgVR6h9kb3iRo9YGUlMpvF4FiwwbDNV4FZXW1jZaWlo5fLiRWmMdDYesVBl20917AWtjkxT4ornSzpuYGp30h8OM353gykiM4LHjFG0u4p3t5RTu/BhDlQGPV+Pni31095znq9Nn2PuRMStkvS0p2Lh1V02d0ThpaThIU/NRDsi7btqwIa33dN4tKJgsLHwPs+Ug9Z+aKK+ozK5dt36nLnhZb0nWS/KBFTZJXtYqPbHmf64agR954ZD0AAAAAElFTkSuQmCCCw==</value>
+  </data>
+  <data name="toolBar.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAEAAAACw==</value>
+  </data>
+  <data name="toolBar.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACMAAAAUAgAACw==</value>
+  </data>
+  <data name="toolBar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonItem_HeigthIn.Text" xml:space="preserve">
+    <value>Уменьшить высоту</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomOnce.Name" xml:space="preserve">
+    <value>buttonItem_ZoomOnce</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomOnce.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem_delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem_delete.Name" xml:space="preserve">
+    <value>toolStripMenuItem_delete</value>
+  </data>
+  <data name="collapsibleSplitter.ImeMode" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWVNb2RlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatus_Stop.Name" xml:space="preserve">
+    <value>toolStripStatus_Stop</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatus_Stop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dropDownMenu_SelectLO_Alg.Name" xml:space="preserve">
+    <value>dropDownMenu_SelectLO_Alg</value>
+  </data>
+  <data name="&gt;&gt;dropDownMenu_SelectLO_Alg.Type" xml:space="preserve">
+    <value>Intermech.Bars.DropDownMenuItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_Status.Name" xml:space="preserve">
+    <value>buttonItem_Status</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_Status.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolBar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonItem_IfNeedChildTree.CommandName" xml:space="preserve">
+    <value>buttonItem_IfNeedChildTree</value>
+  </data>
+  <data name="menuButtonItem_LA_Normal.Text" xml:space="preserve">
+    <value>Нормальный</value>
+  </data>
+  <data name="menuButtonItem_LA_Kulon.Text" xml:space="preserve">
+    <value>Кулоновский</value>
+  </data>
+  <data name="statusBar.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAAYDAAAWAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_FindObject.Name" xml:space="preserve">
+    <value>buttonItem_FindObject</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_FindObject.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dropDownMenu_SelectLO_Alg.CommandName" xml:space="preserve">
+    <value>dropDownMenu_SelectLO_Alg</value>
+  </data>
+  <data name="collapsibleSplitter.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAADQAAAAAAAAAAs=</value>
+  </data>
+  <data name="statusBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;collapsibleSplitter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_WidthOut.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_WidthOut.Name" xml:space="preserve">
+    <value>buttonItem_WidthOut</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_HeigthIn.Name" xml:space="preserve">
+    <value>buttonItem_HeigthIn</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_HeigthIn.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="menuButtonItem_LA_Hier.CommandName" xml:space="preserve">
+    <value>menuButtonItem_LA_Hier</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatus.Name" xml:space="preserve">
+    <value>toolStripStatus</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonItem_IfNeedChildTree.ToolTipText" xml:space="preserve">
+    <value>Отображать состав</value>
+  </data>
+  <data name="bStructureLinks.Text" xml:space="preserve">
+    <value>Показывать структурные зависимости</value>
+  </data>
+  <data name="bAssociateLinks.Text" xml:space="preserve">
+    <value>Показывать ассоциативные зависимости</value>
+  </data>
+  <data name="statusBar.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAFAIAAAs=</value>
+  </data>
+  <data name="&gt;&gt;collapsibleSplitter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonItem_ZoomOnce.ToolTipText" xml:space="preserve">
+    <value>Оригинальный размер</value>
+  </data>
+  <data name="&gt;&gt;bStructureLinks.Name" xml:space="preserve">
+    <value>bStructureLinks</value>
+  </data>
+  <data name="&gt;&gt;bStructureLinks.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="buttonItem_ZoomOnce.CommandName" xml:space="preserve">
+    <value>buttonItem_ZoomOnce</value>
+  </data>
+  <data name="menuButtonItem_LA_Hier.Text" xml:space="preserve">
+    <value>Иерархический</value>
+  </data>
+  <data name="buttonItem_IfNeedParentTree.ToolTipText" xml:space="preserve">
+    <value>Отображать применяемость</value>
+  </data>
+  <data name="toolBar.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAADjAgAAAAAAAAs=</value>
+  </data>
+  <data name="buttonItem_WidthIn.CommandName" xml:space="preserve">
+    <value>buttonItem_WidthIn</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem_props.Name" xml:space="preserve">
+    <value>toolStripMenuItem_props</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem_props.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusBar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonItem_LevelP.ToolTipText" xml:space="preserve">
+    <value>Отображать уровни продвижения</value>
+  </data>
+  <data name="buttonItem_WidthOut.Text" xml:space="preserve">
+    <value>Увеличить ширину</value>
+  </data>
+  <data name="&gt;&gt;statusBar.Name" xml:space="preserve">
+    <value>statusBar</value>
+  </data>
+  <data name="&gt;&gt;statusBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonItem_ZoomOut.ToolTipText" xml:space="preserve">
+    <value>Уменьшить</value>
+  </data>
+  <data name="&gt;&gt;bAssociateLinks.Name" xml:space="preserve">
+    <value>bAssociateLinks</value>
+  </data>
+  <data name="&gt;&gt;bAssociateLinks.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomOut.Name" xml:space="preserve">
+    <value>buttonItem_ZoomOut</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_ZoomOut.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_IfNeedChildTree.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_IfNeedChildTree.Name" xml:space="preserve">
+    <value>buttonItem_IfNeedChildTree</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RelationVisualiserWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Intermech.Docking.DockControl, Intermech.Docking, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;statusBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStripMenuItem_props.Text" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="toolStripMenuItem_props.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAH0AAAAWAAAACw==</value>
+  </data>
+  <data name="map.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="bAssociateLinks.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAYAMAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAvJJREFUOE91ke1PzWEYx28z8wfw1uYF2ow8R6kORjZb9EAcQlPqHElZ6hzn+amczmTNzMMKLzyMUKeYDW2pzAvqHFk4TsVUrBqpPMyafNy/X2xe5No+u+/f77qv7/29r0u0+9aJ9rK1f5kaLI0dCp1NQyFYGvdJ/puinvkP4lnZGtF1MV0Ej2mEjCltrlXwI6yi7mFCfJJiBfHMu0Z0VmnFm0sZKvUFkdWfH1cw1l3LI9PSzkBJrOi6sEs9N6mAtOkPnUkhXLlDRbH+s/c2DDSo+3DVTrluVZ7jn8yJaHPHwPdGGL4naYCRJniaNsFIM4w+lPlm+ZwY2uVz/yNwF4bqZFES3J8NDRETPJgjv2fBl3u0OqJR+qT25E/xc99aIVpsMYHQ6S303NJJB7XQtABalsOjFRNr00Lpop6AJ56AK+Z5R/l62r2alx0+jXjli1MaLyIky7rPJ8O3y9C6GAKyOLAS2qLhSRSEdkuHVfxoLYZfV3hZIvPSSbG7QqgjUj7C5xKprKog3+glt9BDVp6TMudBKRQvBbRcvHCcAoOHQpOHYrsXk8v3xOryyjEe0wy+rdxEudNAzZ0HjI1D7/tB3vUOcKX6DqWWPZw55eaWXzZZxtDwV/o+DHCzpg6jydohgp44+FlGvlRXwmxzsTczB+NRK0azHYPZIVcHRy12TBYb+7N1pG7bTuh1JxabAxF0x8KYHd0hM/39HzFaHNTbNpGly1UFBwY/8a6nj8amFkxmKxsSNuqTklOp9ddjszulgOJg3Mg+vYGevn5sLg/Z+jySU7fhcLopMpg4UmQk79BhtDvTydHnkpyylavXb5CXf1gKlMSP9p5fjyM/k2s3aul48YrGh834jp9gdayGDauXkr0lmpTUNKzyxps1fq5eq6a84iQ7tLvGlTEuVsaooE3P6NTJGwoKi8jO0RO5aMngjBkzE5Rc1Mro8IqoVeToDrA3Yx+Jm5M+zp0XkagI/BvzJarYHyIl0yRKTJIT038DgUJKn4Fl0bMAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="map.Text" xml:space="preserve">
+    <value>mapView1</value>
+  </data>
+  <data name="map.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABACAAAUAgAACw==</value>
+  </data>
+  <data name="map.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="buttonItem_WidthOut.CommandName" xml:space="preserve">
+    <value>buttonItem_WidthOut</value>
+  </data>
+  <data name="propertyGridPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Hier.Name" xml:space="preserve">
+    <value>menuButtonItem_LA_Hier</value>
+  </data>
+  <data name="&gt;&gt;menuButtonItem_LA_Hier.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_WidthIn.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonItem_WidthIn.Name" xml:space="preserve">
+    <value>buttonItem_WidthIn</value>
+  </data>
+  <data name="buttonItem_HeigthOut.Text" xml:space="preserve">
+    <value>Увеличить высоту</value>
+  </data>
+  <data name="buttonItem_ZoomIn.ToolTipText" xml:space="preserve">
+    <value>Увеличить</value>
+  </data>
+  <data name="menuButtonItem_LA_Normal.CommandName" xml:space="preserve">
+    <value>menuButtonItem_LA_Normal</value>
+  </data>
+  <data name="buttonItem_AllShema.ToolTipText" xml:space="preserve">
+    <value>Вся схема</value>
+  </data>
+  <data name="buttonItem_WidthIn.Text" xml:space="preserve">
+    <value>Уменьшить ширину</value>
+  </data>
+  <data name="bAssociateLinks.ToolTipText" xml:space="preserve">
+    <value>Показывать ассоциативные зависимости</value>
+  </data>
+  <data name="&gt;&gt;propertyGridPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;propertyGridPanel.Name" xml:space="preserve">
+    <value>propertyGridPanel</value>
+  </data>
+  <data name="&gt;&gt;propertyGridPanel.Type" xml:space="preserve">
+    <value>Intermech.Pdm.RelVisualItemsPropPanel, Intermech.Pdm, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="collapsibleSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;propertyGridPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;collapsibleSplitter.Type" xml:space="preserve">
+    <value>NJFLib.Controls.CollapsibleSplitter, CollapsibleSplitter, Version=3.0.0.270, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="buttonItem_IfNeedParentTree.CommandName" xml:space="preserve">
+    <value>buttonItem_IfNeedParentTree</value>
+  </data>
+  <data name="&gt;&gt;collapsibleSplitter.Name" xml:space="preserve">
+    <value>collapsibleSplitter</value>
+  </data>
+  <data name="bStructureLinks.ToolTipText" xml:space="preserve">
+    <value>Показывать структурные зависимости</value>
+  </data>
+  <data name="buttonItem_HeigthIn.CommandName" xml:space="preserve">
+    <value>buttonItem_HeigthIn</value>
+  </data>
+  <data name="buttonItem_FindObject.ToolTipText" xml:space="preserve">
+    <value>Найти объект</value>
+  </data>
+</root>

@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="headerControl.Padding" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABxTeXN0ZW0uV2luZG93cy5Gb3Jtcy5QYWRkaW5nBQAAAARfYWxsBF90b3AFX2xlZnQGX3JpZ2h0B19ib3R0b20AAAAAAAEICAgIAgAAAAAaAAAAAQAAAAEAAAABAAAACw==</value>
+  </data>
+  <data name="gridArticles.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Height" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btnCancel.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAABVAgAAEgAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;btnToSubstitute.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnToSubstitute.Name" xml:space="preserve">
+    <value>btnToSubstitute</value>
+  </data>
+  <data name="tbComposition.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureRemoved.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="imagesMenus.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADMDQAAAk1TRnQBSQFMAgEBAwEAARQBAAEYAQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFAAwABEAMAAQEBAAEgBgABEP8AEwABpQGMAXkB/wGBAUgBDgH/AYEBSAEWAf8BgQFIAQ4B/wGlAYwBeQH/FAABpQGMAXkB/wGBAUgBDgH/AYEBSAEWAf8BgQFIAQ4B/wGlAYwBeQH/DAAByAGgAYwB/wHJAZYBgQH/AcUBkgGBAf8BwQGOAX0B/wG9AYoBewH/AbkBhgF5Af8BtQGCAXcB/wGxAYEBdQH/Aa0BfQFzAf8BqQF5AXEB/wGlAXUBbwH/AaoCgQH/EAAByAGgAYwB/wHJAZYBgQH/AcUBkgGBAf8BwQGOAX0B/wG9AYoBewH/AbkBhgF5Af8BtQGCAXcB/wGxAYEBdQH/Aa0BfQFzAf8BqQF5AXEB/wGlAXUBbwH/AaoCgQH/SAABeQFIARYB/wHnAcYBnAH/Ad4BtQGMAf8BzgGcAXEB/wGUAWkBPwH/FAABlAFpAT8B/wHOAZQBYAH/Ac4BnAFgAf8BzgGUAVgB/wF5AUgBFgH/CAABywGiAYwB/wHuAdoBzgH/A/kB/wP5Af8D+gH/A/wB/wP+Ff8B2wHHAcQB/wGqAoEB/wgAAcsBogGMAf8B7gHaAc4B/wP5Af8D+QH/A/oB/wP8Af8D/hX/AdsBxwHEAf8BqgKBAf9EAAGlAZQBeQH/AXkBSAEWAf8BeQFIARYB/wHvAcYBjAH/AYEBSAEOAf8BeQFIARYB/wF5AUgBFgH/AXkBSAEWAf8BeQFIARYB/wF5AUgBFgH/AYEBSAEOAf8B1gGlAWkB/wF5AUgBFgH/AXkBSAEWAf8BpQGUAXkB/wgAAdIBnwGCBv8B8AHhAv8B8AHhAv8B+wH3Bv8B+wH3Af8DlwH/A4sB/wOKAf8DiQn/AaUBdQFvAf8IAAHSAZ8Bggb/AfAB4QH/AdsBeAEDAv8B+wH3Bv8B+wH3Af8DlwH/A4sB/wOKAf8DiQn/AaUBdQFvAf9MAAF5AUgBFgH/AfcBzgGUAf8B9wHOAYwB/wHnAb0BgQH/Ae8BvQGBAf8B5wG1AXkB/wHeAa0BcQH/AecBrQFxAf8B5wGtAXEB/wHnAa0BcQH/AXkBSAEWAf8QAAHXAaQBhAb/AfAB4QL/AfAB4QL/AfsB9wL/AfcB8AL/AfsB9wH/A5cB/wONAf8DiwH/A4oJ/wGpAXkBcQH/CAAB1wGkAYQF/wHbAXgBAwH/AdsBeAEDAf8B2wF4AQMC/wH3AfAC/wH7AfcB/wOXAf8DjQH/A4sB/wOKCf8BqQF5AXEB/0QAAaUBlAF5Af8BeQFIARYB/wF5AUgBFgL/AdYBlAH/AYEBSAEOAf8BeQFIARYB/wF5AUgBFgH/AXkBSAEWAf8BeQFIARYB/wF5AUgBFgH/AYEBSAEOAf8B9wG9AXEB/wF5AUgBFgH/AXkBSAEWAf8BpQGUAXkB/wgAAdwBqQGHBv8B8AHhAv8B8AHhAv8B+wH3Av8B9wHwAv8B+wH3Gf8BrgGAAXMB/wgAAdwBqQGHBv8B8AHhAv8B7gHdAf8B2wF4AQMC/wH3AfAC/wH7AfcZ/wGuAYABcwH/RAABeQFIARYB/wHOAZQBYAH/AfcBzgGEAf8BzgGUAVgB/wGUAWkBPwH/FAABlAFpAT8B/wHOAYwBUAH/Ae8BtQFpAf8BzgGMAUgB/wF5AUgBFgH/CAAB4QGuAYoG/wHwAeEC/wHwAeEC/wH7AfcC/wH3AfAC/wH7AfcB/wOXAf8DjwH/A44B/wONCf8BswGBAXYB/wgAAeEBrgGKBv8B7gHdAf8B2wF4AQMC/wH0AegB/wHbAXgBAwL/AfsB9wH/A5cB/wOPAf8DjgH/A40J/wGzAYEBdgH/RAABpQGMAXkB/wGBAUgBDgH/AYEBSAEWAf8BgQFIAQ4B/wGlAYwBeQH/FAABpQGMAXkB/wGBAUgBDgH/AYEBSAEWAf8BgQFIAQ4B/wGlAYwBeQH/CAAB5QGyAYwG/wHwAeEC/wHwAeEC/wH7AfcC/wH3AfAC/wH7AfcB/wOXAf8DkQH/A5AB/wOPCf8BtwGEAXgB/wgAAeUBsgGMBf8B2wF4AQMB/wHbAXgBAwH/AdsBeAEDAv8B9wHwAv8B+wH3Af8DlwH/A5EB/wOQAf8Djwn/AbcBhAF4Af+IAAHpAbYBjgb/AfAB4QL/AfAB4QL/AfsB9wL/AfcB8AL/AfsB9xX/A/4B/wG6AYcBegH/CAAB6QG2AY4G/wHuAd0C/wHuAd0B/wHbAXgBAwL/AfcB8AL/AfsB9xX/A/4B/wG6AYcBegH/SAABgQFIARYB/wGBAUgBFgH/AYEBSAEWAf8BgQFIARYB/wGBAUgBFgH/AYEBSAEWAf8BgQFIARYB/wGBAUgBFgH/AYEBSAEWAf8BgQFIARYB/wGBAUgBFgH/AYEBSAEWAf8BgQFIARYB/wwAAe0BugGQBv8B8AHhAv8B8AHhAv8B+wH3Av8B9wHwAv8B+wH3Af8DlQH/A5QB/wOTAf8DjwX/A/wB/wG+AYsBfAH/CAAB7QG6AZAG/wHcAbgB/wHbAXgBAwL/AekB0gH/AdsBeAEDAv8B+wH3Af8DlQH/A5QB/wOTAf8DjwX/A/wB/wG+AYsBfAH/SAABgQFIARYJ/wGBAVABFhH/AYEBSAEWAf8C9wHvAf8C9wHvAf8B7wHnAd4B/wGBAVABFgH/DAAB8QG+AZIG/wHwAeEC/wHwAeEC/wH7AfcC/wH3AfAC/wH7AfcB/wOXAf8DlQH/A5QB/wOPAv8B+wH3Af8D+gH/AcIBjwGAAf8IAAHxAb4BkgX/AdsBeAEDAf8B2wF4AQMB/wHbAXgBAwL/AfAB4QL/AfsB9wH/A5cB/wOVAf8DlAH/A48C/wH7AfcB/wP6Af8BwgGPAYAB/0gAAYEBSAEWAf8BgQFQARYB/wGBAVABFgH/AYEBUAEWAf8BgQFQARYB/wGBAUgBFgH/AYEBUAEWAf8BgQFIARYB/wGBAUgBFgH/AYEBSAEOAf8BgQFIAQ4B/wGBAUgBFgH/AYEBUAEWAf8MAAH1AcIBlAb/AfAB4QL/AfAB4QL/AfsB9wL/AfcB8AL/AfsB9wL/AfIB5QL/AfQB6AL/AfYB7AL/AfYB7AL/AfYB7AH/A/kB/wHGAZMBgQH/CAAB9QHCAZQG/wHcAbgC/wHlAcsB/wHbAXgBAwL/AesB1gL/AfsB9wL/AfIB5QL/AfQB6AL/AfYB7AL/AfYB7AL/AfYB7AH/A/kB/wHGAZMBgQH/SAABgQFIARYJ/wGBAVABFhH/AYEBSAEWAf8C9wHvAf8C9wHvAf8B7wHnAd4B/wGBAUgBFgH/DAAB+QHGAZYG/wHwAeEC/wHwAeEC/wHwAeEC/wHwAeEC/wHwAeEC/wHwAeEC/wHuAd0C/wHwAeEC/wHwAeEC/wHwAeEB/wP5Af8ByQGWAYEB/wgAAfkBxgGWBv8B3AG4Av8B4AHAAv8B5AHHAf8B2wF4AQMC/wHrAdYC/wHtAdoC/wHuAd0C/wHwAeEC/wHwAeEC/wHwAeEB/wP5Af8ByQGWAYEB/0gAAYEBSAEWAf8BgQFQARYB/wGBAVABFgH/AYEBUAEWAf8BgQFQARYB/wGBAUgBFgH/AYEBUAEWAf8BgQFIARYB/wGBAUgBFgH/AYEBSAEOAf8BgQFIAQ4B/wGBAUgBFgH/AYEBUAEWAf8MAAHoAcABnAH/Af0B6AHVKf8B7gHaAc4B/wGuAYUBgQH/CAAB6AHAAZwB/wH9AegB1Sn/Ae4B2gHOAf8BrgGFAYEB/0gAAYEBSAEWAf8BvQGlAYQB/wG9AaUBhAH/AYEBSAEWAf8BvQGlAYQB/wG9AaUBhAH/Ab0BpQGEAf8BvQGlAYQB/wGBAUgBDgH/Ab0BpQGEAf8BvQGlAYQB/wG9AaUBhAH/AYEBUAEWAf8QAAHkAbwBmQH/AfkBxgGWAf8B9QHCAZQB/wHxAb4BkgH/Ae0BugGQAf8B6QG2AY4B/wHlAbIBjAH/AeEBrgGKAf8B3QGqAYgB/wHZAaYBhgH/AdUBogGEAf8BrgGFAYEB/xAAAeQBvAGZAf8B+QHGAZYB/wH1AcIBlAH/AfEBvgGSAf8B7QG6AZAB/wHpAbYBjgH/AeUBsgGMAf8B4QGuAYoB/wHdAaoBiAH/AdkBpgGGAf8B1QGiAYQB/wGuAYUBgQH/TAABgQFIARYB/wGBAUgBDgH/AYEBSAEOAf8BgQFIAQ4B/wGBAUgBDgH/AYEBSAEOAf8BgQFIAQ4B/wGBAUgBDgH/AYEBSAEOAf8BgQFIAQ4B/wGBAUgBDgH/AYEBSAEWAf8BgQFIARYB/8gAAUIBTQE+BwABPgMAASgDAAFAAwABEAMAAQEBAAEBBQABgBcAA/8BAAb/AgABBwHBAcABAwHAAQMCAAEHAcEBgAEBAYABAQMAAQEBgAEBAYABAQIAAcABBwGAAQEBgAEBAwABAQGAAQEBgAEBAgABBwHBAYABAQGAAQECAAEHAcEBgAEBAYABAQIAAv8BgAEBAYABAQIAAYABAwGAAQEBgAEBAgABgAEDAYABAQGAAQECAAGAAQMBgAEBAYABAQIAAYABAwGAAQEBgAEBAgABgAEDAYABAQGAAQECAAGAAQMBwAEDAcABAwIAAYABAwT/GAAL</value>
+  </data>
+  <data name="pictureAdded.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAGAAAABQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;pictureRemoved.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelBottom.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAAA7AAAACw==</value>
+  </data>
+  <data name="panelBottom.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAACAAAACw==</value>
+  </data>
+  <data name="btnDeselectAll.ToolTipText" xml:space="preserve">
+    <value>Снять все отметки</value>
+  </data>
+  <data name="&gt;&gt;articleCompositionHeader.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelChanged.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="articleCaption.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;articleComposition.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureChanged.Name" xml:space="preserve">
+    <value>pictureChanged</value>
+  </data>
+  <data name="&gt;&gt;pictureChanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;articleCompositionHeader.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnAddToSubstitute2.Name" xml:space="preserve">
+    <value>btnAddToSubstitute2</value>
+  </data>
+  <data name="&gt;&gt;btnAddToSubstitute2.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;articleCompositionHeader.Name" xml:space="preserve">
+    <value>articleCompositionHeader</value>
+  </data>
+  <data name="&gt;&gt;articleCompositionHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iGColPattern2.Key" xml:space="preserve">
+    <value>CHECK</value>
+  </data>
+  <data name="iGColPattern3.Key" xml:space="preserve">
+    <value>DESIGNATION</value>
+  </data>
+  <data name="iGColPattern1.Key" xml:space="preserve">
+    <value>IMAGE</value>
+  </data>
+  <data name="iGColPattern4.Key" xml:space="preserve">
+    <value>NAME</value>
+  </data>
+  <data name="iGColPattern5.Key" xml:space="preserve">
+    <value>F_OBJECT_ID</value>
+  </data>
+  <data name="splitContainer.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAACMAQAACw==</value>
+  </data>
+  <data name="splitContainer.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="gridArticles.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="iGColPattern3.Width" type="System.Int32, mscorlib">
+    <value>251</value>
+  </data>
+  <data name="gridArticles.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAACiAAAACw==</value>
+  </data>
+  <data name="articleComposition.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;headerControl.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="$this.Icon" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5JY29uAgAAAAhJY29uRGF0YQhJY29uU2l6ZQcEAhNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAIAAAAJAwAAAAX8////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgCAAAAAAAAAAAAAAAPAwAAAEZoAAACAAABAAgAEBAAAAEACABoBQAAhgAAABAQAAABACAAaAQAAO4FAAAYGAAAAQAIAMgGAABWCgAAGBgAAAEAIACICQAAHhEAACAgAAABAAgAqAgAAKYaAAAgIAAAAQAgAKgQAABOIwAAMDAAAAEACACoDgAA9jMAADAwAAABACAAqCUAAJ5CAAAoAAAAEAAAACAAAAABAAgAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD0hwAAj5WbAPzNhgCZWDMAy8vLANyWVwDATQAAenNwAMGgjgCveVUA1oEqAP+4UACrr7UA5ubmAN64ogC7ZSEA1W8AAPGbNQDBkGoA8dCtAJR1YQDmsYcAr206AJmLggDx3M8AqEMFAN6AEgCioqIA+cByAM58QADQ3uoA66ZPAOvy+QDDYQkA7cOWAIWDggDSchsA55AnAMKXfADW1tYA430AAKhiLQC+dTUA34s2ALm5uQDzslsAu8bMAL2BUQDFwr8AmpWQAP/XkQCMjIwAx2UZALBzRwCyTAEAtmUuALlcEQD7vGUA9KtHAN++rQDftZYA+Pj4AO3t7QB+fHsAqqqqAODo8AC4VQgAzWcAAMtoDwCampoAjpmlAPDInwDAbCcAuW47AO2ZPgDddQAA5b+jAMZyOgC+ZBMA67mJANnj7ADomDUA9MmUAM7U2gDbfRoAvpZ0AJKSkgCvcE8A68qsAOmDAADKxcUA1WYAAO+lRgDAXAQA4H4HAJmdoQC/UwYAvopsAPHx8QC1tbUArq6uAKampgCrRgAAeXl4AMJhFwCSjYoA7aFKALJxNwDunzgAtGMpAOOPNQDeeQYAyWYUAOvw9ADbcgQA9fX1AOrq6gCfn58AlZWVANFqAADLZAwAwmESANLU1ADU4OsA33sCAMbGxgDZdAAA8siXAPDFlQCXmJkA7sysALlxOQD1slgA7+/vAKSkpACdnZ0A7MSZAL9QAADEZRkAvXM3AOvt7wDXcQAAqUQDANNuAQCho6QAt7i5AJeXlwDddwAAra2tAKenpwClpaUAoaGhAJSUlACZmZkA7u7vANRuAADUbgIA1m8AANl0AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzpEPhlpBQk1AAAAAAAAe5ESnYolGhtPQQAAAAAARlYcoI8kazmQOBgQWQAAjXBTJ2CVgjdoSxFfF2MAAEovXm5xKoFvbTJXI0UhAABqHoY8dFtUUUkVhAd5fgAAjAQ7DV0CE2xNnwxaLYAAADY0THorFDEsUIsIH06eAAByJoVIAyJDUn0gXAooPQAAYg5hfJZ/KQ9knI5zMBYAADNViB2Il3dCHWZAh5OSAAAAg2R/mQEuPwFCdT+UAAAAAJsBAWUBZgZ2iWdlmAAAAAAAiWd4WEeam0cAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA8AcAAOAHAADAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADAAwAAwAMAAOAfAAD//wAAKAAAABAAAAAgAAAAAQAgAAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADCOgANsEgAg7tUAOa7UgDy47eW85mLgfN5eXj8mlkz/XpzcP+FhYXPAAAAAAAAAAAAAAAAAAAAAAAAAADPVwBCxVsE6dNuAf/VbwD/1G4A/+zEmf+Fg4L/8dzP/6hDBf/Gcjr/f318/cFIAEUAAAAAAAAAAAAAAADFUABKzWgO/Nt9Gv/egBL/2XQB/9dxAP/tw5b/ko2K/7ZlLv+pRAP/skwB/69tOv/guqT+sT0AiwAAAAAAAAAAxGEPvuOPNf/omDX/55An/+B+B//ddwD/8MWV/7BzR/+rRgD/uW47/7tlIf/AXAT/5rGH/8SDXs4AAAAAAAAAAMZhDtXzslv/76VG/+6fOP/eeQb/430A//LIl/+0Yyn/snE3/8XCv/++lnT/w2EJ/81nAP/vp032AAAAAAAAAADGXAvr+cBy//WyWP/0q0f/23IE/+mDAP/0yZT/67mJ//DIn//x0K3/7sys/9yWV//RagD/4XwC/QAAAAAAAAAAx2EQ7/zNhv/7vGX//7hQ/9VmAP/0hwD/8Zs1/+2hSv/ddQD/1m8A/9aBKv/ryqz/34s2/9t1AP4AAAAAAAAAAMpjE/T/15H/7Zk+/8tkDP+oYi3/wZBq/72BUf++dTX/vmQT/79QAP/ATQD/znxA/+W/o//WbgH8AAAAAAAAAADLZRH50nIb/7lxOf+OmaX/j5Wb/+vy+f/g6PD/2ePs/9Tg6//Q3ur/ysXF/8Ggjv/Cl3z/4b+u/AAAAAAAAAAAwlEA9auvtf+ZnaH/0tTU/62trf/Gxsb/1tbW/+bm5v/x8fH/7u7v/+vt7//r8PT/u8bM/39GIYwAAAAAAAAAAH9zZmzO1Nr/pKSk/6Kiov+kpKT/p6en/5+fn/+qqqr/oqKi/66urv/t7e3/7+/v/7e4uf+KkJNcAAAAAAAAAACgpKcfkpOUx/Hx8f/Gxsb/oaGh//////+5ubn/+Pj4//////+qqqr/9fX1//j4+P+QkJC6paWlEQAAAAAAAAAAAAAAAISEhHv//////////7W1tf//////rq6u/8vLy//q6ur/nZ2d/6enp964uLjooqKirgAAAAAAAAAAAAAAAAAAAAClpaU4mZmZw6amptyVlZXuhYWFqJSUlLeFhYWedHR0XYKCgm4AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA8AcAAOAHAADAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADAAwAAwAMAAOAfAAD//wAAKAAAABgAAAAwAAAAAQAIAAAAAACgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A9IwAAH+GjQD6xn0ApD4AAEhISADBytMAx3tNAMKejQCFZUwA8aZAAPXhzADJahAApa63AKSEaADhpmwA44wlAJhZLABjX1wA5reZALdsMACampoA18O4AOvr6wD/2JoA/r5dAMaSbgCwUBYApWpKANnZ2QDgegAAd3d3ANmUWQC+WAAAvb29AOGrhADuqlcA+ZoRALF9VwCejnsAdW1lANR8JQDmlzYAumAcAFlRTACzSAIA77NoAKenpwDChVwA3NDJAMZxIQD69O8A0WsAAN+BEADNycYAs3JEAM+CQADQo4YA+7ZPANWhdgDy2L8A8OXdAObIuQDJdy8As7OzAO6WIQCYfGMA4uLiAMzU3AC7lHgAtl4LALaCZADQhlAApnVcAMColwDpgwAA3J1lAFhYWADQ0NAAsIluAMpeAACsRg0AunhNAPi8aQDmihkA+O3iAP3RkAD8xXEA8qtLAK5uOgDnqGMAr2koAMWIaADS2uIAbmdgAK20vAC8j2sAuWQpAL1wOAC9biYAT09PAPCTFwCtra0AfX19AJ+goAClcFMA45EuAOSYQADTcQgA+Pj4AL9mMQDunTUA05hyAPHx8QCrRgEAv10IAPjo2QDFvbgA2qBuALtZFgDBaxwA9bFUAN2BGQDz4NYA0moRAKRqQQCxd00A+bdbAOqRJwDsoEIAwsLCALm5uQC2UAEA13EAALJYFQDztWEA6ahtAMnN0wDDZhIA9NvGANaSYADd3t8AiGlSAOGjYwDJi2IAt247AMxwEwD47+kAs2MtALd8UwDPZQAAyGsXAMZYAADuiAAA6Zs7AOXm5gBTU1MA1dXVAMZgBQDZdQUA0sG0AJyYlAC6WQkA+cN4AOvv8gBdVU8AvWQgAOumUwCyhWAA/9aUAPOYHgDvq1EA4YghAPatRwDrr2oA0mgFAOuRIADFo4wAaGJcAMJuIAD06eEA230PAPO3ZwDup0oA5H4AALFNAwDHx8cAk1gqANx2AAD09PQATExMANjb3wBWTkkAr0QCAM3NzQC7UgAArK6yAKqqqgCjo6MA5o4rAO7u7gCnaUUA6qxjAMeIYQD1vG0AsLCwAPCsWwD07egA44cdAO+hQAC1dksAqUIBAK9IAADqlzQA/MZ5AMBvNQD78ukAwVsAAPePAADUbQAAl5qdAO+oTgDDWQMAsFESAPW4YgD49vUAUk9NAMdgAACoqKkA5KViAPr6+gDp6ekA5OTkANvb2wDX19cAVVVVANPT0wC8VgIAycnJAMXFxQC6uroAtra2ANbc4QC1TQAA0GoDALhlLADysFUAy2EAAMxmAABza2QAwVsHANdxAwDpkykA7bJqAPLl2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhOTuydnWVlvyAAAAAAAAAAAAAA02L2OhPi5+c/yW5ucgYAAAAAAAAAAJLu+TU1kLM0NHxSCeJucr8AAAAAAACpo2383NzckF/Z2QgFHDKU0OM3AAAAAFqTrXu2oIaGW19WFNQF1FM+tcFdAAAAUCoraxHRNr29W/qM4HNxwi6y/y3MSgAAJ2yCm9b9VR8fyynYc0l1jdV4oabMagAAf6isuNJwsbm5/hLVLD0MjKf0Yy2RHQAAOLeI91kLQkxML4e6jyn6+gqFxLwxygAAkgTN4Xquq5pM3jmJr1vmkBAhxN9+SAAAFVekVIA7JtsCZs+CH72GNflNQCL7GwAAZBkEWBqB+Hm0i5iZmVH4l5fkd4vafQAAtKrXyEcPA2BeRUWKdktGlpXVbySfsAAAMyUNQw7FzvEY6USOjo7A8/NeNxc89QAAdFwH3YPtjsbr6cnJyckY6JycnKWiTQAAYSjAhB5n7/LOxsYwxoRPGOgYGG5pAAAAAOXnxsbOzoO78Wnovo5pyejoGMbGAAAAAGcW6wHJwyPnvoPoAQFnchgYchYAAAAAAADl6gEBju0BAYNyAQGE8MOeRDAAAAAAAADGjgEBHoNEye0WaUFBFsfGMM4AAAAAAAAAMMfGZxblMDDlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A/+AHAP4ABwD4AAcA4AADAMAAAwCAAAEAgAABAIAAAQCAAAEAgAABAIAAAQCAAAEAgAABAIAAAQCAAAEAgAADAMAAAwDAAAcA4AAHAOAABwDwB/8A////AP///wAoAAAAGAAAADAAAAABACAAAAAAAGAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABISEh4S0tL3EtLS91ISEjdRkZG3UVFRd1CQkLdQEBA3Tw8PNw1NTVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyk0AKbxNAJG/TgDCvE0Av9uifcpiXlv3+vj3+f7+/ff////168y88vT09O7////t////7ff39+45OTncAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMtRACC9TQCnvVYA/MxmAP/RawD/0GoA/+CiY/9oYlz/+fPu//r07//z4Nb/rEYN/8Sgjvv9+/r0//7+8Pz8/OM9PT3cAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAABt1MAc71XBPXTcQj/13ED/9RtAP/UbgD/020A/+KkY/9tZl//+/Lp//vy6f/He03/oz0A/7BQFv/c0Mn/+O/p//fw6/pPS0nz+fHsaQAAAAAAAAAAAAAAALZeAAOwTwCqzHAT/+GIIf/dgRn/230P/9l1Bf/XcQD/1nAA/+WnY/9uZ2D/+O3i/+a3mf+oQQH/pT8A/6pCAP+6eE3/8OXd//Tp4f9WTkn/yIhm8qs9ADIAAAAAAAAAALVLAF7UfCX/5pc2/+ORLv/jjCX/44cd/9+BEP/cdgD/23UA/+ipY/9ya2T/9NvH/7BREv+qRQH/05hy/69EAv+zSAL/xaOM//Ll2/9ZUUz/xodh/583AHgAAAAAAAAAALRMAIDkmED/66BC/+mbO//qlzT/6ZMp/+aKGf/gegD/33kA/+qsY/91bGT/wG81/6xGAP/QhlD/+OjZ/9aSYP+vSAD/u1kW/9LBtP9dVU//x4hh/585AIUAAAAAAAAAALVMAI7rplP/76tR/+6nSv/voUD/7p01/+uRIP/lfwD/430A/+2yav+YWSz/rUcA/7pgHP/y2L//9eHM//Pbxf+9ZCD/tU0A/71wOP9YUUv/yYti/6A5AJIAAAAAAAAAALdNAJzzt2f/87Vh//KwVf/yq0v/8aZA/+6WIf/pgwD/54EA/++zaP+yWBX/sU0D/4hpUv91bWb/c2tk/3JrZP+FZUz/tlAB/7tRAP+TWCr/woVc/6VDC6IAAAAAAAAAALtPAKr5xX3/9bxt//W4Yv/1sVT/9q1H//OYHv/uiAD/64UA/++oTv/PgkD/6aht/+uvav/nqGL/5KVi/+GjYv/hpmz/2ZRZ/7pTAP/DWQP/pGpB/7p1TsEAAAAAAAAAALxUALn90ZD/+cN4//i8af/5t1v/+7ZP//maEf/3jwD/9IwA//CTF//wrFv/7KBC/995AP/bdQD/13EA/9BqAP/LZQD/255l/8l3L/++WAD/wVsH/8uPZt8AAAAAAAAAAMNdAcf/2Jr/+sd9//zFcf/+vl3/6pEn/8thAP/Baxz/wm0f/8JmEf/Iaxf/xVcA/8dZAP/KXgD/y2EA/85kAP/PZgD/x2AA/9qgbv/EZhP/wVsA/9VrEPsAAAAAAAAAAMdjB9X/1pT//MZ5/+aOK/+2Xgv/pIRo/3+Gjf+ttLz/0tnh/83U3P/L1Nz/yc3T/8W9uP/AqJf/u5R4/7d8U/+zYy3/sEoA/79mMf/hq4T/xmAF/9RpBv4AAAAAAAAAAMtrEeTuqlf/yWoQ/5h8Y/+lrrf/rK6y/7CwsP+6urr/6urq/+Tk5P/h4eH/3t/g/9ze3//a3N//2Nzf/9bb4P/V3OH/0tvi/8zIxf/Xw7j/1aF2/9JrBP4AAAAAAAAAAMJaAPKvaSj/wcrT/5eanf/CwsL/09PT/97e3v+qqqr/19fX/+Tk5P/v7+//7u7u/+7u7v/u7u7/6urq/+jo6P/m5ub/5ubm/+Tl5v/r7/L/nZmV8uqZUssAAAAAAAAAANRfAGOdinTa2Nre/7i4uP/Y2Nj/ra2t/8nJyf+2trb/sLCw/6qqqv+qqqr/p6en/6urq/+5ubn/0NDQ/+zs7P/p6en/6urq/+vr6//29/f/nZ+h4AAAAAAAAAAAAAAAAAAAAAClp6q/+fn6/6mpqf+qqqr/r6+v/7Gxsf/CwsL/x8fH/7q6uv+fn5//6Ojo//T09P/e3t7/oKCg/+/v7//p6en/6enp/+rq6v+rq6v+q6ur8gAAAAEAAAAAAAAAAAAAAACvr690lJSUwtfX1///////7e3t/83Nzf+9vb3/+vr6//T09P/BwcH/6Ojo////////////rKys//Dw8P/s7Oz/7Ozs//Dw8P+UlJSxvr6+CwAAAAAAAAAAAAAAAAAAAAAAAAAAnZ2dVNvb2////////////93d3f/S0tL////////////BwcH/8fHx////////////uLi4/8XFxf/Nzc3/1dXV/+Li4v+mpqbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo6OjbN7e3v///////////9nZ2f/CwsL/4+Pj/+7u7v/T09P/mpqa/5ycnMy0tLTetbW185eXl8ySkpJepKSkaaCgoH6zs7NrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsLCwM6CgoI2fn5+qqampyLCwsOWYmJjen5+fYaCgoHWgoKCKpaWllsjIyAMAAAAAAAAAAJubmwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACSkpICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP/gBwD+AAcA+AAHAOAAAwDAAAMAgAABAIAAAQCAAAEAgAABAIAAAQCAAAEAgAABAIAAAQCAAAEAgAABAIAAAwDAAAMAwAAHAOAABwDgAAcA8Af/AP///wD///8AKAAAACAAAABAAAAAAQAIAAAAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A8IoAAGVoawD7x38AlyEAAKGqsgC/gl0Aul8YANHV2AD0pj0A0aWGAJJZOACOjo4A1IEvAI98aQCvQgAA2+78ANZwAADauqUA6qxjAL/AwABvWUUAtGxBAFBTVgB5MwAAsJiCANqSTADlyrwA/8BeAOmUKQCmdFkAw1kAAHp6egDl5eUAkzoAAJ6engDfhBkAwqmYAMaVdgCaUyEAynAdALZcLwCyjG4A+6MjAPLy8gCpThEAn4NzAHduZQDoo1EAxXg6AHBjVwDxuXAA3KNuALOzswD2sEwAycnJAJRxWgCicEMA5X8AAMS3rgDIaA4AtFMDAKtYIADWhEAAXF9hAIKDhADnljcAtHxSAKEzAAD7zo0AoUIKAJGcqADSkFkA6YgMAPD8/wCNUikA2XgkAOFyCgCmpqYAp4BpANV2FgDvnjEAy2UBAKebkwDT3OMA25lZALx0SgBxcXEAuWksAOOKIgD3uGEAy4ljAKeMeAD5wG8ArLa9AKppOgCaeWYAlpaWANzk7QB9d24A3d7eALFXFwD6t1cA6p5AALSBWwClPgAAvWkcAK1fNgC+cT4A8alKANHR0ACwTAcA96UzAKpuSgC9TwAA5JIwAMDExwD4+PkA7OzsAK2trQDHztMAxm0mALKHZQDaeg4Az3klAO6pUwC9l3oAqZOHAOKbTADeeAAAvmAPALdtNADjklAAkpqeALa8vgBYVFEAmaGpALNZJgD0slkAp00JANRzDQD8wGcAsI53AMx9MQC/urUAu2QkANWFNwC6jGwA/sd1AParQwDrhQAArXxaANnZ2QDNxsMA+JAAAOydOQD8tU8AtXhIAG1tbQDZdwkA5pAiAMNdBgCvUxAA5oMFAPa6agDfl0gA8PX5AMTEwwCLfm4AqUQCAMZrHQDZizoApjYAAH9/fwC1SgAAt7e3AMvT2QCyWxsA7KNHAKJICQCmb1AA1ZBTANBqAADXjUsAp3piAKmyuAC9VgEA6pgwAN+ZUQDJYAEAt3I9AKKiogCSk5MA+8uIAN1+EwClqa4AdW9sAMRnFADjjSgAqnZUAPnFewDxrVEA03ccAPGjOACZg3UA4IcfANzj5wChOgAApmpIANmUVQDT2d0AqkgHAN97BQDytGAArWQ7ALFrPACeLgAAqT0AAPe0UwDXfjMAvGQWALuGXADadQEAqId2AOOeUgDh4uIAdi4AAMNiDwDspU0A3pZMAP39/QD19fUA7+/vAOnp6QDV1tcAzc3NALy8vACxsbEAqqqqAHp0awCampoA8K5WAOyqWgCtjW8AwMjMALBGAADPZQAAyW0ZAO+kQgDfm1UAuVIAAMdcAAD+zocA4n8HAPjBdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK5Yn5+fn5+fn5+fQgAAAAAAAAAAAAAAAAAAmD8uLj8nxWUBAQEBCXYBAQGuAAAAAAAAAAAAAAAARHC7U7dTUzUwIgEBAYqAdQEBASEAAAAAAAAAAAAAlKO7txK3t7e3vTAiAQEcBWpf4gEBIQAAAAAAAAAAAIT7jaASEhISEre9MGUBAdDQrXK6dgEh1wAAAAAAAABmPc4lw3ygEhISEuEwZQFXRWpqrVSHASFt0GwAAAAAsst0x1rOJcPf398S4TDPE9mtyNra1Abrrm1q0OAAAADGaEN0dMdaJdWCgt/h8Jqt2rQRC60QYAYhbWrQUAAAjymzaGhDvB6h/oKCgjFkqtrakadLkhAQXUFtqmq5AAArfX7ls2icvB6kOzuCMXAQEDn17RWw9q9ziCiqah8AAHsO1vLKbvmcUqQ7Ozvzq6+MqQ8PD6kyc/tzGSNqtQAAaayl1ovKbgrMl5c7O34bq6aBgYHm+lZA+yC7GSPRAABEpv+lW4s3lgqXl5eXHkN0gt8SEre3k9LkuyA+4wwAAJ7hBP+lW9s3cQICApdKpDuC3xISt7dTuLiiIL4+OQAAvxTCyV5bZ50sm5sCAgKXOzuC3xISt1M9tkC+/L5hAACENEbJXo4dnBL8u7tzc3Mg/L73txISt1P4Sdy+Uy8AAFk0wgSVnPdr9BhVsXmoPCZ/3r+y9hCvc/t6SU1OUAAAkjT9fveQM4l1QWWZ6+vrCQkJsbGxqCaU2NQqXIUHAAAIpVE9FmNCsOsh4uoi4uJlZWVlmZmZCdPTVW/NtEcAAIO+OlUDd2Jvd2KZLenpd3d36uoiIiIi4uJlIoZMFwAA3VNI4q7o7yIBOGJiT7CobyLp6el36urq6urpNsEAAAAAGsQi8QGoYvF4FRUVsDZ4Yg0keOLq6urq6i048QAAAAAAsHbBYu/tFajsFTZPYuvn6WVP7Hfq6urqeHhPAAAAAO8ksOstmTiw8W/o6emw6wEBARWod+rq6urB7wAAAAAAAADA7gHndnZ44nYt6DaZAQEB7BUtd3d36SQAAAAAAAAAAO8VAQEBASToAecB7iIBAQGZwKg4b5nqJAAAAAAAAAAAT+wBAQEBwQEBAQHtYk/u7agkwSRPT8BPAAAAAAAAAABP7xXsZeliwWLAeO14wADv7+8AAAAAAAAAAAAAAAAAAAAAwMAkYvEkAAAAAE8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////+AB//gAAf/gAAH/gAAB/wAAAP4AAAA8AAAAHAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAA8AAAAPgAAADwAAAB/AAAA/wAAAP8AAAD/AAI//8D3////////////8oAAAAIAAAAEAAAAABACAAAAAAAIAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgYGCRcHBw9G1tbfhra2v4bGxs+G1tbfhubm/4bW1t+GxsbPhsbGz4bGxs+HZ2dr0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuE4AFa5IAHusRgDSqkYA6apEAOSrRQDPzZBpzHRuavTc3Nz///////7+/v///////////9HW2P/3+Pn////////////+/v7/fX19/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3E4AD7tPAIewSQDzvFYA/8pkAP/OaAD/zWcA/8ljAP/co27/dWxk/+Xl5f////////////////+zWSb/qZOH/8HFyP////////////////97e3v9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcxWAF+xSwDnv1kB/9FrAP/UbgD/0mwA/9BqAP/PaQD/z2kA/96YUf93bmT/4+Pj////////////5cq8/5chAP+jPwP/rLa9/+Hk5P///////////3t7e/0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANxeABO+TwCzulQC/tRzDf/Zdwr/1nEE/9RuAP/UbgD/020A/9NtAP/SbAD/35lR/3duZP/e3t7//v////////+gOAD/ozoA/6Q2AP+qbkr/qbK4//j5+v//////e3p6/64/AKm3QQA/AAAAAAAAAAAAAAAAAAAAAAAAAADVWQAks0sA3cdnDv/fhx//3YEa/9t9FP/aeg7/2XYH/9dyAP/WcAD/1nAA/9VvAP/hm1H/eG9l/9zd3v//////vHRK/6EzAP+mPQD/pz8A/6g2AP+nm5P/try+//////98e3v/u24+/6I6AP6uPACwmD4ACQAAAAAAAAAAxU0AB7NMANjTdxz/45Ew/+KMKf/iiSP/4IYe/9+EF//efhH/23YD/9p0AP/ZcwD/2HIA/+OdUf94cGb/3OPn/9q6pf+eLgD/pjcA/6p2VP+oPAD/qj4A/6pIBf+hqbD/1NbX/4CAf/++cD7/pD4A/6A6AP+dNwBTAAAAAAAAAAC2SwA/xGcU/+mdP//mlTb/5ZQy/+WTLf/kjif/5Isg/+KHGf/fewX/3XcA/9x2AP/bdQD/5Z9R/3p0a//NxsP/pjUA/6k8AP+iRgn/2+78/9Glhv+oOAD/rUEA/6ppOv+hq7P/enl6/79yPv+nQQD/oTsA/584AGMAAAAAAAAAALVLAFHKcB3/66JI/+mfQf/pnD7/6Zk3/+iWMP/okij/5pAi/+J/B//gegD/33kA/954AP/nolH/fXdu/6hEA/+qPwD/qjoA/7+6tf/w9fn/8Pz//7tkJv+vQwD/s0IA/6eMeP9aX2H/v3M+/6pEAP+iPAD/nzgAcAAAAAAAAAAAuVEAX895Jf/vqlP/7KVN/+2jRv/soUD/7J05/+uZMP/qlSv/5YMH/+N9AP/ifAD/4HoA/+mkUf+xSgb/rEIA/7FBAP+Tclr/wMjM/7y9vf+9wML/uLi4/7BGAP+1SwD/uk0A/1hUUf+aUyH/qkQA/6Q+AP+fOQB9AAAAAAAAAAC4UgBs1IEv//KzYP/wrlb/8KxQ//CnSv/vpEL/7584/++eMf/ohAX/5oAA/+V/AP/jfQD/7Kpa/8VqHf+0SwD/p00J/4p9bf+QfWr/j3xo/457aP+Mfm//xXg6/7tPAP+5UAD/v1IC/3gzAP+SOwD/pT8A/6A7AIoAAAAAAAAAALtRAHrZizr/9bls//K0YP/zsVn/8q5S//KrSf/ypT7/8aM4/+uHAf/qhAD/6IIA/+aAAP/tqVX/2pJM/8ZrHf/dmEj/5Z1M/+KbTP/gmUz/3pZM/9+bVf/bmVn/1oM//7hTAP/BVgD/vFUD/3kzAP+TOQD/oTsAlgAAAAAAAAAAulEAiOCVR//4wXX/9btr//W4Yf/1s1n/9bBO//arQ//1pzv/7oYA/+2HAP/rhQD/6YMA/+qUKP/nlTn/5JEv/913AP/adAD/13EA/9RuAP/RawD/zmgA/9WFN//ZlFX/w2IP/7tVAP/FWgD/tFQD/3YuAP+GMQCtAAAAAAAAAAC7UwCW5KBT//rGgP/3wHP/97to//e3X//3tFP/969K//elM//yjAD/8IoA/++JAP/rhQD/6YgM/+WBBP/ifAD/33kA/9t1AP/YcgD/1W8A/9JsAP/PaQD/zGcE/9eOSv/WjEz/w10G/8FaAP/MYAD/s1ED/5BkS9YAAAAAAAAAALxSAKTqrGP/+suH//jEef/4vm3/+Lpj//q3V//8tU//+6Mj//mRAP/2jwD/8owA//CKAP/viQD/6YMA/+aAAP/jfQD/3ngA/9t1AP/XcQD/1G4A/89pAP/MZgD/ymkN/9WQU//WhUD/xl8B/8VdAP/JXwP/mXRf5AAAAAAAAAAAvFQAsu61b//7zo3/+cV8//rBcP/8wGf//8Be/+2eN//WbAD/yVsA/8BVAP+9VAD/vU8A/79QAP/AUgD/xVgA/8hcAP/KYAD/zmYA/9FpAP/UbgD/020A/89pAP/LZQD/yW0Z/9OQWP/XfjP/ymEA/81jA/+fgG/sAAAAAAAAAAC+UgC/8Llx//vLif/7x37//sd1/+maO//QZAD/vWkc/62Nb/9QU1b/09vk/8nR2f/HztP/xcTE/8S3rv/CqJb/vZd6/7uGXP+4cTz/s1wc/69GAP+vQQD/tUgA/7lNAP+6UQD/xm0m/9GPWf/ZeCT/4XIK/6d9Y+0AAAAAAAAAAL9SAM30vHH//s6H/+6nUf/PZQD/zH0x/3BjV/+Zoan/v8PG/15fYP/d3t7/19jY/9bX1//U1db/1NbX/9HU1//P09b/z9TY/8zT2P/M1Nr/ytXa/8bDwf/BqZn/uotq/7FrPP+pRwj/tlwv/8uJY//jklD/woBY7QAAAAAAAAAAvlQA2/W5bP/Vdhb/yGgP/29ZRf/c5O3/gIKE/7i4uP/W1tb/eXl5/+Hh4f/o6Oj/5eXl/+Li4v/i4uL/39/f/9/f3//c3Nz/3Nzc/9nZ2f/Z2dn/1tjZ/9TX2f/U2dz/0tnd/9Pb4f/S0M//mYN1/6FJCP+iPADwAAAAAAAAAADBWQDpyWEA/6JwQ//U3eT/ZWhr/+zs7P+VlZX/z8/P/+3t7f+Xl5f/2tra//Hx8f/v7+//7+/v/+zs7P/r6+v/6+vr/+rq6v/o6Oj/5+fn/+bm5v/l5eX/5OTk/+Hh4f/h4eH/3t/f/+Tm5v+Smp7/jU4i8bhFAKAAAAAAAAAAAMBaAN7JYgD/kZyo/+Dh4v99fX3/9fX1/6qqqv/l5eX//////8nJyf+Wlpb/mJiY/6enp/+2trb/xcXF/9LS0v/k5OT/7+/v//Dw8P/v7+//7Ozs/+rq6v/q6ur/6urq/+np6f/p6en/7u7u/7Kzs/90en5/AAAAAAAAAAAAAAAAzGMAE7R4P2alqa7/5+fn/5mZmf//////wsLC/5SUlP+bm5v/ra2t/7+/v//BwcH/vr6+/7i4uP+0tLT/rKys/5iYmP+Ojo7/nJyc/62trf/g4OD/6urq/+np6f/p6en/6enp/+rq6v/y8vL/ycnJ/46OjpYAAAAAAAAAAAAAAAAAAAAAnqOoR7a3uP/39/f/kZGR/5aWlv+qqqr/u7u7/8HBwf/CwsL/zMzM/8DAwP+zs7P/p6en/5WVlf/W1tb//Pz8/+/v7//f39//pqam/8zMzP/s7Oz/6enp/+np6f/p6en/6enp/62trf+srKz/o6OjrgAAAAAAAAAAAAAAAAAAAACmpqZYnp6e/7a2tv/W1tb/8vLy/9nZ2f/IyMj/uLi4/5mZmf/R0dH/9PT0//Dw8P/w8PD/tra2/9bW1v/////////////////BwcH/xMTE/+zs7P/p6en/6enp/+np6f/q6ur/k5OT7qOjo1y2trY9AAAAAAAAAAAAAAAAAAAAAMvLywOgoKAslZWVerCwsP///////Pz8//f39//39/f/rKys/+Li4v/5+fn/8/Pz//X19f+zs7P/29vb/////////////////87Ozv++vr7/8fHx/+zs7P/s7Oz/7Ozs//Dw8P+enp70AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACioqJav7+////////+/v7//v7+//////+enp7/9fX1///////9/f3//////7Gxsf/l5eX/////////////////29vb/6Ojo//ExMT/ysrK/9LS0v/Z2dn/6Ojo/52dnf2jo6MJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKionLMzMz//////////////////////5KSkv//////////////////////vLy8/5eXl/+mpqb/sbGx/729vf/CwsL/np6e/42NjdWWlpakoqKirKKiosGhoaHWpqam4qurqw4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo6Ojhampqf/BwcH/zc3N/9zc3P/w8PD/l5eX/5OTk/6ZmZn+oqKi/62trf+7u7v/rKys/5iYmJWhoaFFpqamW6SkpHKmpqaJtLS0PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkpKQRmJiYSJSUlGeWlpaFlJSUo5OTk8KYmJjgmJiYrJaWlhGRkZEmmZmZOpSUlE+ZmZlkoqKiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////gAf/4AAH/4AAB/4AAAf8AAAD+AAAAPAAAABwAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAPAAAAD4AAAA8AAAAfwAAAP8AAAD/AAAA/wACP//A9/////////////KAAAADAAAABgAAAAAQAIAAAAAACACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A8YoAAGNqbgD4x4AAlyEAAKGqsgC/gl0AvmEaANLV2AD0pz0A0aWGAJphOwCPjYsA1IAtAI98aQCuQwAA2+78ANZvAADYvKUA5alnAL+/wABvWUUAsmxAAEZGRgB5MwAAvJqHANqSTADsz7gA/b5eAOiTKgCndVgAwloAAHp6egDl5eUAkzoAAJ2engDfhRkAvqucAMOYdACUVyIAynAdALRfKgCzjG8A958fAPLy8gCqTBYAoItwAHduZQDnoU4AxHU0AHJlWQDttXMA3qRuALO0tAD3r0sAysnJAJJsUgCaaUIA5X8AAMu8sgDKaQwAtlIGAKtVIwDPg0EAXl5eAIOEhADmljgAuH5RAKEzAAD70ZIAoEQRAJGcqADHilIA6osRAPD8/wB7VjIA2XgkAOFyCgCnpqUAp4BpANd5FQDwnS0Ay2UBAKqdlADT3OMA2plhAMR9SgBvb28AumgvAOKKIQD3uWIAyItiAKeMeAD4vm4ArLa9AKBnOACaeWYAl5eXANzk7QB9d24A3t3dALFVGAD5t1gA6Z5AALN/XgClPgAAwGUbAKVdNAC8dDkA8KhKANDR0QCzTgcA96UzAKltRwC9UQAA4pExAMHEyAD5+fkA7ezrAK6urgDIzdEAw2wkALSIZgDbeg4AzXsmAO6pUwC9mH8An5GJAOKcTADfeQAAu10QALpuNgDjklAAkpqeALa8vgBTS0UAmZ+mALJfJgDzsloApkwLANRzDAD7v2gAsI53AMl9LgC/urUAuWQkANWFNwC8kGkA/sd1APesRADrhAAAroFVANrZ2ADNxsMA95IDAOydOQD8t1EAt3pJAGtrawDZdQkA548iAMNeBgCxUxIA5oMFAPa6aQDelkQA8PX5AMTExACLfm4AqkUBAMdsGwDfjDcApjYAAH19fQC0TQAAuLi4AMzS1gCxXhUA66JHAKJICQCkcFAA1ZBTANFqAQDYj0MAp3piAKmyuAC+VgAA65gwAN+ZUQDIYAEAuXY8AKSioQCTk5QA+cqHANt+FQClqa4AdW9sAMRnFADijSkAqnZUAPnEegDyrVAA0XgeAPGjOQCZg3UA34YfANzj5wCgOgAAqGlGANWWVgDV298AqkUKAOB7BADys2AArWQ7ALFrPACeLgAAqj4AAPeyUgDXfjMAvGQWALqIXwDadAEAqId2AOSfUQDl4d8Adi4AAMJgEQDspk4A3pZMAPz8/AD39fQA7+/vAOnp6QDV1dUAzM3OALy8vACxsbEAqqqqAHp0awCbmpoA8K5XAOSjXACtjW8Aw8jMAK9IAADOZwEAyW0ZAO+jQQDfm1UAuVIBAMVeAAD+zocA4n8HAPjBdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgYGBgYGBgYGBgYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABju4mVlZWXr7JllmZllwRgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABjoAQEBAeImqAEBAQEBZRgAAAAAAAAAAAAAAAAAAAAAAAAAK4r2r6/2qqqjihdpPBjoAQEBAVdmeOIBAQEBmRgAAAAAAAAAAAAAAAAAAAAAAHujr/z3t7e391O+ILv7NYgtAQEBHKqqabB2AQEBmRgAAAAAAAAAAAAAAAAAAAArZj6+t7e3t7e39/f3U1NTNYgtAQHokqqqcFTsAQEBmRgAAAAAAAAAAAAAAAAAAIr7UxK3t7e3t7e3t7e391NTNYgt5+c19vb2r4TuIucBmRgAAAAAAAAAAAAAAABEcL58oI0SEhISEhK3t7e3t7f3NYjp5xw+r6+vr/srsOjn6xg4AAAAAAAAAAAAAIr7jcPDfHyg3xISEhISEhK3t7e3NYjp6Fmv+z77+/vkT+zn64hctQAAAAAAAAAAo6LOzs4lJcN8fKASEhISEhISEre3NYh3Nfv7u5Q1u7u7Mngi64hc0EcAAAAAAABmPcfHx1rOziUlw3zf39/fEhISEhISFDMTu/u7emV3q7sgvpSwb4hc0NDRAAAAAEQ9Q3R0dMfHx1rOJcOC39/f398SEhISNDPku7uiEy0tHPz8vj1U74hcatBsAAAAAIR9aENDQ0N0HsehWiXVgoKC39/f3xKgNLIgIPxc6S0tLVa+vlOQwYhcatA/AAAAAFkOs2hoaJxDvB4eoaHVgoKCgoLf39/hDiAg/H1vZWVlZZnLU1O3YIhc1Go/AAAAAJJ05bOzs2icnLy8HqE7OzuCgoKCgt8xDr6+ojMzM4iIiIhMt7e3Ejo6WWouAAAAAAhDfn7l5bP5aJy8vB47Ozs7O4KCgoJDplP30jQUNTU1NTU1rBISEqA5DCrUAAAAAINo1vLyfm5u+fmcUryXOzs7Ozs7goLOFLe44RK3t7dTU76iNcMSEt/DOWCKAAAAAKLl1taL8srKbvnMzFKXlzs7Ozs7O4LVMUMUEhISt7f3U778qzXV34LVyzlsAAAAAPuLpaXW1ovKypYKzFKXl5eXOzs7O4KC1WjfEhISt7e391P8IECBgoKCO305wAAAAPulNDSlW9aL2zeWClICApeXlzs7OzuCgoLf3xISEre3U1O+ICBWdDs7O5eQ8QAAALv/yf9epVuL2zeWliwCAgKXl5c7Ozs7goLf3xISEre391O+ICCiNUo7l5clVAAAALsEBMn/XqVbZ9s3lpsCAgICl5eXOzs7goKC3xISEre3t1O+/CC7azVKlwIlVAAAAPxGwsn/XqVbZ9s3lpubm5sCAgKXlzs7O4KC398SEre3t1NT/CC7+zLzAgIlgAAAAL5GwgTJ/6VbZ2edLJeCEhIStxIS39+COzuCgt8SEhK3t1NT/CC7+/tXMZtKgAAAK1NGwgTJ/16OHQp8/IMoJycnlN5XbZKDr69zuyC+U7e3t7dTviC7+/uvXGgsVAAAe7dGwgTJ/46cEiBEVIkYCXl57Hl5eXl59RUmf96eknAQ9vu7uyAgu/uv9lymGgAA3o1GBATJ+bdTlBgVNu5B6+vr629vb29v7Ozs7Ox5eXmoJn9EiqraEPb29vZZHwAARFHCBPISu5gJ9YjsqBVYb+JlZWVlmZmZ6+vr629vb29vb29vsXk8f0Q/ampqtQAAnsPJziBJQiSZOJ9lb29Cb+oi6iIiIiIi4uJlZWVlmZmZmevr6+vrCQnTGFNq0QAAv1E9gyYJDXhlb6534mUkOHfq6urq6urq6urq6uoiIiLi4uLiZWVlZZniA4yqcgAAvyASL3WZDRUimQ12Lek2sOLqd3d3d3fq6urq6urq6urq6urqIuoiIiJ3QrUrAAAAniC+Detlwezq4mIBAQHiePHBJO+wOOvid+l3d3fq6urq6urq6urq6urp8fEAAAAAAJREwSLqYmXpIg02qG/iLQEB6Zk4sE9iYiR47TiZIurq6urq6urq6up3eCQAAAAAAAAAYi3pYuLodiLrqLDvJGJiwDYV7Jnp6us4sHgkwHfq6urq6urq6nfpFcAAAAAAAAAAJAF2NmLBJHjtOOsi6XcimTgVNmKZ5+gtd3dl8Xfq6urq6urq4u82708AAAAAAAAAwOLqdufpZW8V7k9iNi13d+rq6k9lAQEB53bpwXfq6urq6urqZWLvTwAAAAAAAAAAT8DxDQF26Ojpd3cVFXYt6el36U/iAQEBAQEBwSLq6urq6urqIvEAAAAAAAAAAAAAAAAAYgEBAefoLS2w7Od26Ogt6MDqAQEBAQEB8eLq6urq6urq6mIAAAAAAAAAAAAAAAAAJAEBAQEB5+d4ZQHn53Z25yTpAQEBAQEBwOt36Xd3d3d36fEAAAAAAAAAAAAAAAAAeAEBAQEBAQHAdwEBAQEBAfF3AQEBAQEBFWJiJMDv7rAVOPEAAAAAAAAAAAAAAADvsAEBAQEBAQFi5wEBAQEBAe7xwfEkeLAV7KhiDQAAT09PT08AAAAAAAAAAAAAAABPNuotAQEBAQHBT3jtqDjrZXd2YgAAAO9PT094AAAAAAAAAAAAAAAAAAAAAAAAAAAAT8AkwfHvNqg4T8BPT0/AwMAk7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT09PTwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///+AAfwAA////wAA/AAD////AAD8AAP/4AAAAPwAA/+AAAAA/AAD/gAAAAD8AAP8AAAAAPwAA/AAAAAAfAAD4AAAAAA8AAPAAAAAABwAA4AAAAAADAADAAAAAAAMAAMAAAAAAAwAAwAAAAAADAADAAAAAAAMAAMAAAAAAAwAAwAAAAAADAADAAAAAAAMAAMAAAAAAAQAAwAAAAAABAADAAAAAAAEAAMAAAAAAAQAAwAAAAAABAADAAAAAAAEAAIAAAAAAAQAAgAAAAAABAACAAAAAAAEAAIAAAAAAAQAAgAAAAAABAACAAAAAAAEAAIAAAAAAAwAAgAAAAAAHAADAAAAAAAcAAPAAAAAABwAA8AAAAAAHAADwAAAAAA8AAPAAAAAAPwAA/gAAAAA/AAD+AAAAAD8AAP4AAAAAPwAA/AAAABg/AAD8AAA4P/8AAP4AAD///wAA//h/////AAD///////8AAP///////wAA////////AAAoAAAAMAAAAGAAAAABACAAAAAAAIAlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2NjYvMDAwtisrK8UrKyvFKCgoxScnJ8UoKCjFJCQkxSMjI8UiIiLFHx8fxR4eHsUbGxvFGhoaxRwcHLAdHR0hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjLGsbGx/+Dg4P/d3d3/3d3d/9zc3P/c3Nz/1dXV/87Ozv/b29v/3Nzc/9ra2v/b29v/3t7e/5KSkv8cHByrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvkYAGLtKADO6SgA2tUkAMLZKAB7JNwAKAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzPg9vb2///////////////////////z3tP/v6SU/8XFxf///////////////////////////93d3f8ZGRnGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2EYACLlNAF+2SwDGsEgA/LNNAP6zTQD/sEoA/q1HAP6sRgD6tUgA57ZIAMa2RwCht0gAd+rMuJtDQkLy9PT0///////////////////////Gekz/sFQd/6+urv/i4uL//////////////////////9ra2v8bGxvGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL48AAm6TABtrkkA47VPAP7EXgD/zWcA/85oAP/OaAD/zmgA/81nAP/LZQD/x2EA/8FbAP+7VQD/tlAA/9OacP9LRUH/8/Pz/////////////////+vKtf+nQwH/rEUB/7OAXv+5ubn/+fn5/////////////////9nZ2f8cHBzGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAACvVMAW7BJAOC3UgD+yGIA/9FrAP/QagD/0GoA/89pAP/OaAD/zmgA/81nAP/NZwD/zWcA/8xmAP/LZQD/yWMA/+CmcP9PSUP/8/Pz///////+/v7/+/bz/7deIv+rRQD/q0UA/7VOCP+xpJr/zs7O//7+/v/+/v7//////9ra2v8eHh7GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMlUADOyTgDHuFEA/splAv/TbQH/0mwA/9FrAP/RawD/0WsA/9FrAP/QagD/0GoA/89pAP/PaQD/zmgA/81nAP/MZgD/y2UA/+KpcP9STEb/8vLy//39/f/8/Pz/2Z95/61HAP+uSAD/r0kA/7JLAP+6bTT/sbGx/+fn5//8/Pz//////9jY2P8gICDGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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/9/f3//Pz8//wMDA/7Gxsf+kpKT/lpaW/7W1tf/y8vL/7e3t/+vr6//p6en/6Ojo/+rq6v+oqKj/3t7e/////////////v7+//v7+//39/f/8PDw/5SUlP/r6+v/6enp/+np6f/p6en/6enp/+np6f/p6en/6urq/9/f3/+UlJTpoaGhXaKionCoqKg/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApaWlGqOjo5GdnZ2wlpaW0JKSkv7+/v7/+vr6//b29v/09PT/8PDw/+3t7f/t7e3/wcHB/76+vv/39/f/8vLy//Dw8P/u7u7/7Ozs/+7u7v+lpaX/4+Pj/////////////////////////////////5KSkv/n5+f/6enp/+np6f/p6en/6enp/+np6f/p6en/6urq/+fn5/+bm5vtAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnJycGJmZmf3///////////7+/v/7+/v/9vb2//Pz8//y8vL/uLi4/83Nzf/9/f3/+Pj4//b29v/09PT/8vLy//T09P+ioqL/6enp/////////////////////////////////5mZmf/g4OD/6urq/+np6f/p6en/6enp/+np6f/p6en/6enp/+rq6v+Xl5f4s7OzCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApqamLqKiov7////////////////+/v7//v7+//z8/P/7+/v/rq6u/93d3f///////f39//39/f/6+vr/+Pj4//z8/P+enp7/7u7u/////////////////////////////////6Kiov/X19f/7Ozs/+7u7v/s7Oz/7e3t/+3t7f/s7Oz/7Ozs/+7u7v+ampr9mJiYFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnp6eR66urv////////////////////////////7+/v//////oaGh/+vr6/////////////7+/v///////v7+//////+ampr/6+vr/////////////////////////////////76+vv+VlZX/l5eX/5+fn/+jo6P/qqqq/7Gxsf+5ubn/v7+//8nJyf+cnJz+oaGhJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoqKiX7i4uP//////////////////////////////////////lZWV//39/f////////////////////////////////+wsLD/mZmZ/5OTk/+ampr9oqKi/qysrP+2trb/wcHB/87Ozv/Dw8P/kpKSv1ZWVlWampo5o6OjSZ+fn16goKByoKCghqCgoJqkpKSoo6OjFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoqKieLOzs//p6en/8vLy////////////////////////////k5OT/6enp/+vr6//urq6/8LCwv/Ly8v/1NTU/97e3v/r6+v/9/f3/5mZmfqZmZkhoaGhL6CgoEWioqJaoaGhcaGhoYegoKCdrKysWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqqqqO6CgoKmfn5/Gm5ub5JWVlfmbm5v+qamp/7W1tf/ExMT/y8vL/6SkpP+ZmZmFn5+fYZ+fn3Wfn5+JnZ2dnqCgoLKfn5/Gn5+f2qmpqcYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOzswihoaEgn5+fPZ+fn1uhoaF4oaGhlqGhoaupqakbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAD////gAH8AAP///8AAPwAA////wAA/AAD/+AAAAD8AAP/gAAAAPwAA/4AAAAA/AAD/AAAAAD8AAPwAAAAAHwAA+AAAAAAPAADwAAAAAAcAAOAAAAAAAwAAwAAAAAADAADAAAAAAAMAAMAAAAAAAwAAwAAAAAADAADAAAAAAAMAAMAAAAAAAwAAwAAAAAADAADAAAAAAAEAAMAAAAAAAQAAwAAAAAABAADAAAAAAAEAAMAAAAAAAQAAwAAAAAABAACAAAAAAAEAAIAAAAAAAQAAgAAAAAABAACAAAAAAAEAAIAAAAAAAQAAgAAAAAABAACAAAAAAAMAAIAAAAAABwAAwAAAAAAHAADwAAAAAAcAAPAAAAAABwAA8AAAAAAPAADwAAAAAD8AAP4AAAAAPwAA/gAAAAA/AAD+AAAAAD8AAPwAAAAYPwAA/AAAOD//AAD+AAA///8AAP/4f////wAA////////AAD///////8AAP///////wAACw==</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Найдены исполнения, в которых можно автоматически изменить настройки допустимых замен</value>
+  </data>
+  <data name="&gt;&gt;btnToActual.Name" xml:space="preserve">
+    <value>btnToActual</value>
+  </data>
+  <data name="&gt;&gt;btnToActual.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnVirtualComposition.Name" xml:space="preserve">
+    <value>btnVirtualComposition</value>
+  </data>
+  <data name="&gt;&gt;btnVirtualComposition.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureChanged.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAGAAAAFQAAAAs=</value>
+  </data>
+  <data name="iGColPattern5.MaxWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="imagesState.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAByCwAAAk1TRnQBSQFMAgEBAwEAARQBAAEYAQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFAAwABEAMAAQEBAAEgBgABEP8A/wD/AB0AAoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/EAACgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8QAAKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/1AAAoEBYwH/AewC7wH/Ae8C8QH/AfEC8wH/AfQC9QH/AfYC9wH/AfgC+QH/AfoC+wH/AfwC/QH/A/4F/wKBAWMB/xAAAoEBYwH/AewC7wH/Ae8C8QH/AfEC8wH/AfQC9QH/AfYC9wH/AfgC+QH/AfoC+wH/AfwC/QH/A/4F/wKBAWMB/xAAAoEBYwH/AboCvAH/AbsCvQH/Ab0CvwH/Ab8CwQH/AcECwwH/AcQCxgH/AccCyQH/AcsCzwH/A8gB/wPJAf8CgQFjAf9QAAKBAWMB/wHpAuwB/wHsAu8B/wHvAvEB/wHxAvMB/wH0AvUB/wH2AvcB/wH4AvkB/wH6AvsB/wH8Av0B/wP+Af8CgQFjAf8QAAKBAWMB/wHpAuwB/wHsAu8B/wHvAvEB/wHxAvMB/wH0AvUB/wH2AvcB/wH4AvkB/wH6AvsB/wH8Av0B/wP+Af8CgQFjAf8QAAKBAWMB/wG2ArgB/wG6ArwB/wG7Ar0B/wG9Ar8B/wG/AsEB/wHBAsMB/wHEAsYB/wHHAskB/wHLAs8B/wPIAf8CgQFjAf9QAAKBAWMB/wHlAugB/wHpAuwB/wHsAu8B/wHvAvEB/wHxAvMB/wH0AvUB/wH2AvcB/wH4AvkB/wH6AvsB/wH8Av0B/wKBAWMB/xAAAoEBYwH/AeUC6AH/AekC7AH/AewC7wL/AcEBgQH/AoEBRwL/Ab8BgQH/AfYC9wH/AfgC+QH/AfoC+wH/AfwC/QH/AoEBYwH/EAACgQFjAf8BsgK0Af8BtgK4Af8BugK8Af8DgwH/A2IB/wOCAf8BwQLDAf8BxALGAf8BxwLJAf8BywLPAf8CgQFjAf9QAAKBAWMB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wHvAvEB/wHxAvMB/wH0AvUB/wH2AvcB/wH4AvkB/wH6AvsB/wKBAWMB/xAAAoEBYwH/AeIC5QH/AeUC6AL/AbcBbAH/AcoBiAFHAf8BuAGBAUcB/wKBAUcB/wH+Ac4BgQH/AfYC9wH/AfgC+QH/AfoC+wH/AoEBYwH/EAACgQFjAf8BrwKxAf8BsgK0Af8DgQH/A4EB/wOBAf8DXwH/A5IB/wHBAsMB/wHEAsYB/wHHAskB/wKBAWMB/1AAAoEBYwH/Ad4C4gH/AeIC5QH/AeUC6AH/AekC7AH/AewC7wH/Ae8C8QH/AfEC8wH/AfQC9QH/AfYC9wH/AfgC+QH/AoEBYwH/EAACgQFjAf8B3gLiAf8B0wGOAUcB/wHTAY4BRwL/AbEBWAH/AewC7wH/AdwBkwFHAf8BqQGBAUcB/wH0AvUB/wH2AvcB/wH4AvkB/wKBAWMB/xAAAoEBYwH/AasCrQH/A4EB/wOBAf8DgQH/AboCvAH/A4EB/wN8Af8BvwLBAf8BwQLDAf8BxALGAf8CgQFjAf9QAAKBAWMB/wHbAuAB/wHeAuIB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wHvAvEB/wHxAvMB/wH0AvUB/wH2AvcB/wKBAWMB/xAAAoEBYwH/AdsC4AH/Ad4C4gH/AeIC5QH/AeUC6AH/AekC7AH/AewC7wH/AdgBkQFHAv8BtQFnAf8B9AL1Af8B9gL3Af8CgQFjAf8QAAKBAWMB/wGqAqwB/wGrAq0B/wGvArEB/wGyArQB/wG2ArgB/wG6ArwB/wOBAf8DgQH/Ab8CwQH/AcECwwH/AoEBYwH/UAACgQFjAf8B2QLeAf8B2wLgAf8B3gLiAf8B4gLlAf8B5QLoAf8B6QLsAf8B7ALvAf8B7wLxAf8B8QLzAf8B9AL1Af8CgQFjAf8QAAKBAWMB/wHZAt4B/wHbAuAB/wHeAuIB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wG1AYEBRwH/Af4BxgGBAf8B9AL1Af8CgQFjAf8QAAKBAWMB/wGoAqoB/wGqAqwB/wGrAq0B/wGvArEB/wGyArQB/wG2ArgB/wG6ArwB/wOBAf8DigH/Ab8CwQH/AoEBYwH/UAACgQFjAf8B1wLcAf8B2QLeAf8B2wLgAf8B3gLiAf8B4gLlAf8B5QLoAf8B6QLsAf8B7ALvAf8B7wLxAf8B8QLzAf8CgQFjAf8QAAKBAWMB/wHXAtwB/wHZAt4B/wHbAuAB/wHeAuIB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wH2AaUBRwH/AfEC8wH/AoEBYwH/EAACgQFjAf8BpgKoAf8BqAKqAf8BqgKsAf8BqwKtAf8BrwKxAf8BsgK0Af8BtgK4Af8BugK8Af8DgQH/Ab0CvwH/AoEBYwH/UAACgQFjAf8B1wLcAf8B1wLcAf8B2QLeAf8B2wLgAf8B3gLiAf8B4gLlAf8B5QLoAf8B6QLsAf8B7ALvAf8B7wLxAf8CgQFjAf8QAAKBAWMB/wHXAtwB/wHXAtwB/wHZAt4B/wHbAuAB/wHeAuIB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wHvAvEB/wKBAWMB/xAAAoEBYwH/AaYCqAH/AaYCqAH/AagCqgH/AaoCrAH/AasCrQH/Aa8CsQH/AbICtAH/AbYCuAH/AboCvAH/AbsCvQH/AoEBYwH/UAACgQFjAf8B1wLcAf8B1wLcAf8B1wLcAf8B2QLeAf8B2wLgAf8B3gLiAf8B4gLlAf8B5QLoAf8B6QLsAf8B7ALvAf8CgQFjAf8QAAKBAWMB/wHXAtwB/wHXAtwB/wHXAtwB/wHZAt4B/wHbAuAB/wHeAuIB/wHiAuUB/wHlAugB/wHpAuwB/wHsAu8B/wKBAWMB/xAAAoEBYwH/AaYCqAH/AaYCqAH/AaYCqAH/AagCqgH/AaoCrAH/AasCrQH/Aa8CsQH/AbICtAH/AbYCuAH/AboCvAH/AoEBYwH/UAACgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8CgQFjAf8QAAKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/wKBAWMB/xAAAoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH/AoEBYwH//wBJAAFCAU0BPgcAAT4DAAEoAwABQAMAARADAAEBAQABAQUAAYAXAAP/AQAG/wIABv8CAAb/AgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgAG/xgACw==</value>
+  </data>
+  <data name="btnAddToSubstitute2.CommandName" xml:space="preserve">
+    <value>btnAddToSubstitute2</value>
+  </data>
+  <data name="gridArticles.GroupBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRefresh.ToolTipText" xml:space="preserve">
+    <value>Перечитать состав, обновить примечания</value>
+  </data>
+  <data name="labelAdded.Text" xml:space="preserve">
+    <value>Объекты состава будут добавлены в допустимые замены</value>
+  </data>
+  <data name="labelAdded.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAIMBAAAQAAAACw==</value>
+  </data>
+  <data name="labelRemoved.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAdded.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAA2AAAAAQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;labelRemoved.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;headerControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="headerControl.ToolTip" xml:space="preserve">
+    <value>Укажите исполнения, в которых будут применены новые настройки допустимых замен</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Key" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>214</value>
+  </data>
+  <data name="&gt;&gt;btnAddToNewSubstitute.Name" xml:space="preserve">
+    <value>btnAddToNewSubstitute</value>
+  </data>
+  <data name="&gt;&gt;btnAddToNewSubstitute.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAADHAQAACw==</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="menuComposition.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="btnDeselectAll.CommandName" xml:space="preserve">
+    <value>btnDeselectAll</value>
+  </data>
+  <data name="articleComposition.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pictureChanged.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gridArticles.Name" xml:space="preserve">
+    <value>gridArticles</value>
+  </data>
+  <data name="&gt;&gt;gridArticles.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGrid, TenTec.Windows.iGridLib.iGrid, Version=1.70.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="panelBottom.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAjAEAAAs=</value>
+  </data>
+  <data name="btnProperties.CommandName" xml:space="preserve">
+    <value>btnProperties</value>
+  </data>
+  <data name="articleCompositionHeader.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="btnCancel.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAHkAAAAbAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;labelRemoved.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="pictureAdded.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnOK.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="splitContainer.Panel1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbComposition.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="btnProperties.ToolTipText" xml:space="preserve">
+    <value>Свойства (карточка)</value>
+  </data>
+  <data name="btnCancel.FlatStyle" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5GbGF0U3R5bGUBAAAAB3ZhbHVlX18ACAIAAAADAAAACw==</value>
+  </data>
+  <data name="splitContainer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOK.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAADWAQAAEgAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;imagesMenus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imagesMenus.Name" xml:space="preserve">
+    <value>imagesMenus</value>
+  </data>
+  <data name="btnSelectAll.ToolTipText" xml:space="preserve">
+    <value>Отметить все исполнения</value>
+  </data>
+  <data name="&gt;&gt;gridArticlesCol4CellStyle.Name" xml:space="preserve">
+    <value>gridArticlesCol4CellStyle</value>
+  </data>
+  <data name="&gt;&gt;gridArticlesCol4CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, TenTec.Windows.iGridLib.iGrid, Version=1.70.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="btnToSubstitute.CommandName" xml:space="preserve">
+    <value>btnToSubstitute</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;articleCaption.Name" xml:space="preserve">
+    <value>articleCaption</value>
+  </data>
+  <data name="&gt;&gt;articleCaption.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="headerControl.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="pictureChanged.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACwAAAANAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mnpColumnsSetup.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mnpColumnsSetup.Name" xml:space="preserve">
+    <value>mnpColumnsSetup</value>
+  </data>
+  <data name="tbComposition.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAHAAAAAs=</value>
+  </data>
+  <data name="resource.NormalCellHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="articleCaption.Image" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAAQIAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAAEZ0FNQQAAsY8L/GEFAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAGMSURBVDhPrZLLS0JBFIf9q9pH+9q3baMoeoULgiSCiwTBt1y84ANFQVJXI7gQhBa2uAUFImI+sSASdKEQCMIvz5T3kS4KPHCY1e8735wZ09FLkiTE43FEIhEEAgH4/X74fD54vV54PB64XC6Iogin04mfiLEIQLXZANUqw2oFzOfAbAbk8wzTKTAeA4IgHAbUajWs1+DdailYLjVAs6moAIfDoQH+o91oKEilGOx2uxHwV+2btz5O75dGQCKRULUrFWbQ1gNIO/bRxfnDAjabTQOQPk2mLpcZSiWGYpGhUGDI5RgyGaZqZxdtXD7P9gE7NQrTlKvOO07uPjlAr12vK0gmGaxWqwaIRqOqGk2mKcLLK862oWz2G7jT7naBTgewWCxGwE6NtG9XT7jeXvricc719doUbrd/Aej5aFnUpExNkymcTjPIMlO1ZVnmp9ls1gDhcJhvmppCkwkwGgGDAXj4oLa+QqEQfyZq2vZwCPT7QK8HPvmgtr6CweDeD3S73eoPpO3vaR+nTKYvk/gcYv07zOUAAAAASUVORK5CYIIL</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelAdded.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureRemoved.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelChanged.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAA2AAAAEwAAAAs=</value>
+  </data>
+  <data name="btnRefresh.CommandName" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="btnCancel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="articleComposition.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAFgAAAAs=</value>
+  </data>
+  <data name="splitContainer.Panel2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="iGColPattern4.Width" type="System.Int32, mscorlib">
+    <value>287</value>
+  </data>
+  <data name="splitContainer.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="pictureRemoved.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACwAAAANAAAACw==</value>
+  </data>
+  <data name="iGColPattern3.Text" xml:space="preserve">
+    <value>Обозначение</value>
+  </data>
+  <data name="btnProperties.Text" xml:space="preserve">
+    <value>Карточка</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnCancel.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAKAAAACw==</value>
+  </data>
+  <data name="iGColPattern5.MinWidth" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="articleCaption.ImageAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="btnAddToNewSubstitute.ToolTipText" xml:space="preserve">
+    <value>Создать новую группу допустимых замен и добавить указанные объекты состава в её допустимый заменитель</value>
+  </data>
+  <data name="&gt;&gt;pictureRemoved.Name" xml:space="preserve">
+    <value>pictureRemoved</value>
+  </data>
+  <data name="&gt;&gt;pictureRemoved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridArticlesCol4ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, TenTec.Windows.iGridLib.iGrid, Version=1.70.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridArticlesCol4ColHdrStyle.Name" xml:space="preserve">
+    <value>gridArticlesCol4ColHdrStyle</value>
+  </data>
+  <data name="btnToActual.ToolTipText" xml:space="preserve">
+    <value>Добавить указанные объекты состава в актуальный заменитель текущей группы</value>
+  </data>
+  <data name="mnpColumnsSetup.CommandName" xml:space="preserve">
+    <value>mnpColumnsSetup</value>
+  </data>
+  <data name="iGColPattern4.Text" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="iGColPattern5.Text" xml:space="preserve">
+    <value>Версия объекта</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btnAddToSubstitute2.ToolTipText" xml:space="preserve">
+    <value>Создать новый допустимый заменитель в текущей группе и добавить в него указанные объекты состава</value>
+  </data>
+  <data name="contextMenuComposition.CommandName" xml:space="preserve">
+    <value>contextMenuComposition</value>
+  </data>
+  <data name="&gt;&gt;btnDeselectAll.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnDeselectAll.Name" xml:space="preserve">
+    <value>btnDeselectAll</value>
+  </data>
+  <data name="btnSelectAll.CommandName" xml:space="preserve">
+    <value>btnSelectAll</value>
+  </data>
+  <data name="gridArticles.Header.Height" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="labelChanged.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAFoBAAAQAAAACw==</value>
+  </data>
+  <data name="labelChanged.Text" xml:space="preserve">
+    <value>Объекты состава участвуют в допустимых заменах</value>
+  </data>
+  <data name="menuComposition.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAIAAAAXwAAAAs=</value>
+  </data>
+  <data name="btnAddToNewActualSubstitute.CommandName" xml:space="preserve">
+    <value>btnAddToNewActualSubstitute</value>
+  </data>
+  <data name="headerControl.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;tbComposition.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="menuComposition.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAAAAAACw==</value>
+  </data>
+  <data name="menuComposition.Text" xml:space="preserve">
+    <value>menuBar</value>
+  </data>
+  <data name="menuComposition.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAIkAAAAeAAAACw==</value>
+  </data>
+  <data name="btnOK.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAKAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;pictureChanged.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="labelRemoved.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="iGColPattern3.MaxWidth" type="System.Int32, mscorlib">
+    <value>102400</value>
+  </data>
+  <data name="headerControl.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAAAcAAAACw==</value>
+  </data>
+  <data name="headerControl.Text" xml:space="preserve">
+    <value>Укажите исполнения, в которых будут применены новые настройки допустимых замен</value>
+  </data>
+  <data name="headerControl.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAACw==</value>
+  </data>
+  <data name="btnToActual.CommandName" xml:space="preserve">
+    <value>btnToActual</value>
+  </data>
+  <data name="articleCompositionHeader.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="iGColPattern1.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelAdded.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelChanged.Name" xml:space="preserve">
+    <value>labelChanged</value>
+  </data>
+  <data name="&gt;&gt;labelChanged.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imagesState.Name" xml:space="preserve">
+    <value>imagesState</value>
+  </data>
+  <data name="&gt;&gt;imagesState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelRemoved.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAHABAAAQAAAACw==</value>
+  </data>
+  <data name="labelRemoved.Text" xml:space="preserve">
+    <value>Объекты состава будут удалены из допустимых замен</value>
+  </data>
+  <data name="labelRemoved.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAA2AAAAJQAAAAs=</value>
+  </data>
+  <data name="btnOK.FlatStyle" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5GbGF0U3R5bGUBAAAAB3ZhbHVlX18ACAIAAAADAAAACw==</value>
+  </data>
+  <data name="btnAddToNewSubstitute.CommandName" xml:space="preserve">
+    <value>btnAddToNewSubstitute</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="splitContainer.Orientation" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACBTeXN0ZW0uV2luZG93cy5Gb3Jtcy5PcmllbnRhdGlvbgEAAAAHdmFsdWVfXwAIAgAAAAAAAAAL</value>
+  </data>
+  <data name="&gt;&gt;tbComposition.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureAdded.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;menuComposition.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="articleComposition.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAACcAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;pictureAdded.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="articleComposition.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAAAZUYWhvbWEAAARBBfz///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAX7////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAgAAAAMAAAAL</value>
+  </data>
+  <data name="articleComposition.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;tbComposition.Name" xml:space="preserve">
+    <value>tbComposition</value>
+  </data>
+  <data name="&gt;&gt;tbComposition.Type" xml:space="preserve">
+    <value>Intermech.Bars.ToolBar, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuComposition.Name" xml:space="preserve">
+    <value>menuComposition</value>
+  </data>
+  <data name="&gt;&gt;menuComposition.Type" xml:space="preserve">
+    <value>Intermech.Bars.MenuBar, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;pictureChanged.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="articleCaption.ImageScaling" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAC5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Ub29sU3RyaXBJdGVtSW1hZ2VTY2FsaW5nAQAAAAd2YWx1ZV9fAAgCAAAAAAAAAAs=</value>
+  </data>
+  <data name="btnVirtualComposition.ToolTipText" xml:space="preserve">
+    <value>Показать актуальный состав в том виде, в каком он будет после внесения изменений</value>
+  </data>
+  <data name="&gt;&gt;btnProperties.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnProperties.Name" xml:space="preserve">
+    <value>btnProperties</value>
+  </data>
+  <data name="labelChanged.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ArtSelectForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenuComposition.Type" xml:space="preserve">
+    <value>Intermech.Bars.ContextMenuBarItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;contextMenuComposition.Name" xml:space="preserve">
+    <value>contextMenuComposition</value>
+  </data>
+  <data name="&gt;&gt;gridArticles.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.MinimumSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAO4CAAD0AQAACw==</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="tbComposition.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tbComposition.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAAAYAAAACw==</value>
+  </data>
+  <data name="panelBottom.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancel.ImageAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="iGColPattern5.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelAdded.Name" xml:space="preserve">
+    <value>labelAdded</value>
+  </data>
+  <data name="&gt;&gt;labelAdded.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mnpColumnsSetup.Text" xml:space="preserve">
+    <value>Настройка отображения ...</value>
+  </data>
+  <data name="&gt;&gt;menuComposition.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="articleCompositionHeader.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAACw==</value>
+  </data>
+  <data name="articleCompositionHeader.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAANwCAAAWAAAACw==</value>
+  </data>
+  <data name="iGColPattern2.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="iGColPattern2.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="gridArticles.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuComposition.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="iGColPattern1.MinWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSelectAll.Name" xml:space="preserve">
+    <value>btnSelectAll</value>
+  </data>
+  <data name="pictureRemoved.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAGAAAAJQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;labelChanged.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.StartPosition" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Gb3JtU3RhcnRQb3NpdGlvbgEAAAAHdmFsdWVfXwAIAgAAAAAAAAAL</value>
+  </data>
+  <data name="&gt;&gt;labelRemoved.Name" xml:space="preserve">
+    <value>labelRemoved</value>
+  </data>
+  <data name="&gt;&gt;labelRemoved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureAdded.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="articleCompositionHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pictureAdded.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAACwAAAANAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;labelAdded.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelChanged.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;gridArticles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnToSubstitute.ToolTipText" xml:space="preserve">
+    <value>Добавить указанные объекты состава в допустимый заменитель текущей группы</value>
+  </data>
+  <data name="iGColPattern4.MaxWidth" type="System.Int32, mscorlib">
+    <value>102400</value>
+  </data>
+  <data name="&gt;&gt;pictureAdded.Name" xml:space="preserve">
+    <value>pictureAdded</value>
+  </data>
+  <data name="&gt;&gt;pictureAdded.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;headerControl.Type" xml:space="preserve">
+    <value>Intermech.NavBars.HeaderControl, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerControl.Name" xml:space="preserve">
+    <value>headerControl</value>
+  </data>
+  <data name="labelRemoved.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;articleComposition.Type" xml:space="preserve">
+    <value>Intermech.Pdm.SubstitutesView, Intermech.Pdm, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;articleComposition.Name" xml:space="preserve">
+    <value>articleComposition</value>
+  </data>
+  <data name="&gt;&gt;labelAdded.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="pictureChanged.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnVirtualComposition.CommandName" xml:space="preserve">
+    <value>btnVirtualComposition</value>
+  </data>
+  <data name="btnOK.ImageAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="articleCaption.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAAAZUYWhvbWEAABBBBfz///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAX7////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAgAAAAMAAAAL</value>
+  </data>
+  <data name="articleCaption.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAM0CAAARAAAACw==</value>
+  </data>
+  <data name="gridArticles.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAANAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;articleComposition.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="btnOK.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAHkAAAAbAAAACw==</value>
+  </data>
+  <data name="labelAdded.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelChanged.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureRemoved.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="btnAddToNewActualSubstitute.ToolTipText" xml:space="preserve">
+    <value>Создать новую группу допустимых замен и добавить указанные объекты состава в её актуальный заменитель</value>
+  </data>
+  <data name="&gt;&gt;btnAddToNewActualSubstitute.Name" xml:space="preserve">
+    <value>btnAddToNewActualSubstitute</value>
+  </data>
+  <data name="&gt;&gt;btnAddToNewActualSubstitute.Type" xml:space="preserve">
+    <value>Intermech.Bars.ButtonItem, Intermech.Bars, Version=2.1.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="menuComposition.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

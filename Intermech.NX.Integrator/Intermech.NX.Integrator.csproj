@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.NX.Integrator.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16D7C83C-7426-415B-B4A3-06782BCCD2FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.NX.Integrator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.NX.Integrator</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Tools.Components">
+      <HintPath>lib\Intermech.Tools.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CADInterface">
+      <HintPath>lib\Interop.CADInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>lib\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NXConsts.cs" />
+    <Compile Include="NXProxy.cs" />
+    <Compile Include="NXProxyBuilder.cs" />
+    <Compile Include="NXDocument.cs" />
+    <Compile Include="ModelJTFilesProvider.cs" />
+    <Compile Include="NX12OrNewerFileTypeService.cs" />
+    <Compile Include="NXCADInterfaceService.cs" />
+    <Compile Include="NXCaptureChangesDriver.cs" />
+    <Compile Include="NXCaptureChangesFactory.cs" />
+    <Compile Include="NXDataExchangeExtensions.cs" />
+    <Compile Include="NXDrawingsTypeSettingsPatch.cs" />
+    <Compile Include="NX11OrOlderFileTypeService.cs" />
+    <Compile Include="NXFileBehavior.cs" />
+    <Compile Include="NXFileTypeService.cs" />
+    <Compile Include="NXModelDrawingsService.cs" />
+    <Compile Include="NXMultiCADService.cs" />
+    <Compile Include="NXIntegrator.cs" />
+    <Compile Include="NXLicenseService.cs" />
+    <Compile Include="DocumentTypeFileExtensionsCheck.cs" />
+    <Compile Include="NXSettings.cs" />
+    <Compile Include="NXSettingsCodec.cs" />
+    <Compile Include="NXSettingsFactory.cs" />
+    <Compile Include="NXSettingsViewModel.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="CustomDescription.cs" />
+    <Compile Include="CustomCategory.cs" />
+    <Compile Include="CustomDisplayName.cs" />
+    <Compile Include="NXIntegratorPatchesModule.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="DrawCreator\ChoiceDocument.cs" />
+    <Compile Include="DrawCreator\DrawCreator.cs" />
+    <Compile Include="DrawCreator\DrawCreatorModule.cs" />
+    <Compile Include="DrawCreator\DrawCreatorProvider.cs" />
+    <Compile Include="DrawCreator\DrawCreatorResult.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DrawCreator\ChoiceDocument.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Resources\Integrator template.xml" />
+    <EmbeddedResource Include="Resources\NXResources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

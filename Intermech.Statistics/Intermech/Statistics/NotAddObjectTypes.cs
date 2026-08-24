@@ -1,0 +1,86 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.Statistics.NotAddObjectTypes
+// Assembly: Intermech.Statistics, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
+// MVID: 407EEBC5-347E-45B1-B946-E45BC6430606
+// Assembly location: D:\IPS\Client\Intermech.Statistics.dll
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+
+#nullable disable
+namespace Intermech.Statistics;
+
+public class NotAddObjectTypes : Form
+{
+  private List<string> _abstObjName;
+  private IContainer components;
+  private ListBox listBox1;
+  private Button button1;
+  private Label label1;
+
+  public NotAddObjectTypes(List<string> abstractObjectsName)
+  {
+    this.InitializeComponent();
+    this._abstObjName = abstractObjectsName;
+  }
+
+  private void NotAddObjectTypes_Load(object sender, EventArgs e)
+  {
+    foreach (object obj in this._abstObjName)
+      this.listBox1.Items.Add(obj);
+  }
+
+  private void button1_Click(object sender, EventArgs e) => this.Close();
+
+  protected override void Dispose(bool disposing)
+  {
+    if (disposing && this.components != null)
+      this.components.Dispose();
+    base.Dispose(disposing);
+  }
+
+  private void InitializeComponent()
+  {
+    this.listBox1 = new ListBox();
+    this.button1 = new Button();
+    this.label1 = new Label();
+    this.SuspendLayout();
+    this.listBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+    this.listBox1.FormattingEnabled = true;
+    this.listBox1.Location = new Point(12, 38);
+    this.listBox1.Name = "listBox1";
+    this.listBox1.Size = new Size(410, 199);
+    this.listBox1.TabIndex = 0;
+    this.button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+    this.button1.Location = new Point(347, 247);
+    this.button1.Name = "button1";
+    this.button1.Size = new Size(75, 23);
+    this.button1.TabIndex = 1;
+    this.button1.Text = "ОК";
+    this.button1.UseVisualStyleBackColor = true;
+    this.button1.Click += new EventHandler(this.button1_Click);
+    this.label1.AutoSize = true;
+    this.label1.Location = new Point(9, 9);
+    this.label1.Name = "label1";
+    this.label1.Size = new Size(375, 26);
+    this.label1.TabIndex = 2;
+    this.label1.Text = "Типы данных не добавленные в список т.к. они уже имеются, \r\nлибо добавлена корневая группа которая содержит в себе данный тип: ";
+    this.AcceptButton = (IButtonControl) this.button1;
+    this.AutoScaleDimensions = new SizeF(6f, 13f);
+    this.AutoScaleMode = AutoScaleMode.Font;
+    this.ClientSize = new Size(434, 282);
+    this.Controls.Add((Control) this.label1);
+    this.Controls.Add((Control) this.button1);
+    this.Controls.Add((Control) this.listBox1);
+    this.MinimumSize = new Size(450, 320);
+    this.Name = nameof (NotAddObjectTypes);
+    this.StartPosition = FormStartPosition.CenterScreen;
+    this.Text = "Внимание";
+    this.Load += new EventHandler(this.NotAddObjectTypes_Load);
+    this.ResumeLayout(false);
+    this.PerformLayout();
+  }
+}

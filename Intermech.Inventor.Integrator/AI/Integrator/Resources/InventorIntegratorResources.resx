@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Inventor.Integrator_48" xml:space="preserve">
+    <value>Имя мастер-файла сохраняемого объекта не задано!</value>
+  </data>
+  <data name="Inventor.Integrator_49" xml:space="preserve">
+    <value>Мастер-файл "{0}" сохраняемого документа не зарегистрирован в файловом индексе!</value>
+  </data>
+  <data name="Inventor.Integrator_40" xml:space="preserve">
+    <value>Алгоритм расположения файлов на диске не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_41" xml:space="preserve">
+    <value>Не удалось подключиться к {0}! Таймаут ожидания инициализации CAD-системы.</value>
+  </data>
+  <data name="Inventor.Integrator_42" xml:space="preserve">
+    <value>Имя мастер-файла документа AutoDesk Inventor не задано!</value>
+  </data>
+  <data name="Inventor.Integrator_43" xml:space="preserve">
+    <value>Контекст инструмента не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_44" xml:space="preserve">
+    <value>Владелец разделяемых свойств не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_45" xml:space="preserve">
+    <value>Не удалось определить главный файл объекта!</value>
+  </data>
+  <data name="Inventor.Integrator_46" xml:space="preserve">
+    <value>Все файлы модели AutoDesk Inventor должны располагаться в корневой папке файлового хранилища!
+Переместити файлы и повторите операцию.</value>
+  </data>
+  <data name="Inventor.Integrator_47" xml:space="preserve">
+    <value>Сохраняемый объект, для которого строится граф, не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_58" xml:space="preserve">
+    <value>Интегратор с Autodesk Inventor</value>
+  </data>
+  <data name="Inventor.Integrator_51" xml:space="preserve">
+    <value>Мастер-файл "{0}" сохраняемого документа не найден на диске!
+Попробуйте повторить операцию!</value>
+  </data>
+  <data name="Inventor.Integrator_50" xml:space="preserve">
+    <value>Мастер-файл "{0}" не принадлежит сохраняемому документу!</value>
+  </data>
+  <data name="Inventor.Integrator_53" xml:space="preserve">
+    <value>Имя атрибута не задано!</value>
+  </data>
+  <data name="Inventor.Integrator_52" xml:space="preserve">
+    <value>Нельзя изменить значение ReadOnly-атрибута!</value>
+  </data>
+  <data name="Inventor.Integrator_55" xml:space="preserve">
+    <value>Для того чтобы импортировать файл "{0}", необходим хотя бы один инструмент типа "{1}".</value>
+  </data>
+  <data name="Inventor.Integrator_54" xml:space="preserve">
+    <value>Список значений атрибутов не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_57" xml:space="preserve">
+    <value>Интегратор с {0}</value>
+  </data>
+  <data name="Inventor.Integrator_56" xml:space="preserve">
+    <value>Создайте и настройте инструмент, а затем повторите операцию.</value>
+  </data>
+  <data name="Inventor.Integrator_28" xml:space="preserve">
+    <value>Следующие файлы были изменены Вами, но в базе данных есть более свежие версии:
+</value>
+  </data>
+  <data name="Inventor.Integrator_29" xml:space="preserve">
+    <value>
+Эти файлы будут замещены файлами из базы данных. Продолжить выполнение операции?</value>
+  </data>
+  <data name="Inventor.Integrator_26" xml:space="preserve">
+    <value>Ошибка при сборе файлов, которые должны быть извлечены на диск!</value>
+  </data>
+  <data name="Inventor.Integrator_27" xml:space="preserve">
+    <value>Ошибка при сборе файлов, которые должны быть извлечены на диск!</value>
+  </data>
+  <data name="Inventor.Integrator_24" xml:space="preserve">
+    <value>Файлы объекта обслуживаются другим инструментом!</value>
+  </data>
+  <data name="Inventor.Integrator_25" xml:space="preserve">
+    <value>Файлы объекта не предназначены для выполнения этого действия!</value>
+  </data>
+  <data name="Inventor.Integrator_22" xml:space="preserve">
+    <value>Узел дерева, описывающий объект базы данных, не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_23" xml:space="preserve">
+    <value>Алгоритм определения подходящих контекстов извлечения файлов не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_20" xml:space="preserve">
+    <value>Дерево объектов должно содержать только один корневой элемент!</value>
+  </data>
+  <data name="Inventor.Integrator_21" xml:space="preserve">
+    <value>Корневой элемент дерева должен представлять объект базы данных!</value>
+  </data>
+  <data name="Inventor.Integrator_19" xml:space="preserve">
+    <value>Дерево объектов не задано!</value>
+  </data>
+  <data name="Inventor.Integrator_18" xml:space="preserve">
+    <value>Описатель выбранного пользователем файла на задан!</value>
+  </data>
+  <data name="Inventor.Integrator_15" xml:space="preserve">
+    <value>Список файлов объекта пуст!</value>
+  </data>
+  <data name="Inventor.Integrator_14" xml:space="preserve">
+    <value>Список файлов объекта не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_17" xml:space="preserve">
+    <value>Служба файлового хранилища не найдена в контейнере сервисов! Скорее всего, служба инструментов не была инициализирована или в процессе инициализации возникла ошибка.</value>
+  </data>
+  <data name="Inventor.Integrator_16" xml:space="preserve">
+    <value>Двум файлам присвоены одинаковые абсолютные пути!</value>
+  </data>
+  <data name="Inventor.Integrator_11" xml:space="preserve">
+    <value>Сервисный объект для связи с инструментом не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_10" xml:space="preserve">
+    <value>Файлы "{0}" и "{1}" принадлежат разным контекстам извлечения!</value>
+  </data>
+  <data name="Inventor.Integrator_13" xml:space="preserve">
+    <value>Отсутствует один из обязательных параметров работы алгоритма!</value>
+  </data>
+  <data name="Inventor.Integrator_12" xml:space="preserve">
+    <value>Параметры работы алгоритма не заданы!</value>
+  </data>
+  <data name="Inventor.Integrator_39" xml:space="preserve">
+    <value>Интерфейс с CAD-системой не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_38" xml:space="preserve">
+    <value>Интерфейс с CAD-системой не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_37" xml:space="preserve">
+    <value>Все файлы модели AutoDesk Inventor должны располагаться в корневой папке файлового хранилища!\r\nПереместити файлы и повторите операцию.</value>
+  </data>
+  <data name="Inventor.Integrator_36" xml:space="preserve">
+    <value>Алгоритм расположения файлов на диске не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_35" xml:space="preserve">
+    <value>Интерфейс с CAD-системой не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_34" xml:space="preserve">
+    <value>Интерфейс с CAD-системой не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_33" xml:space="preserve">
+    <value>Потеря изменений</value>
+  </data>
+  <data name="Inventor.Integrator_32" xml:space="preserve">
+    <value>Выполнение прервано, так как приведёт к потере сделанных Вами изменений. Сохраните изменения и повторите попытку</value>
+  </data>
+  <data name="Inventor.Integrator_31" xml:space="preserve">
+    <value>Следующие файлы были изменены Вами и не сохранены в базе данных:
+</value>
+  </data>
+  <data name="Inventor.Integrator_30" xml:space="preserve">
+    <value>Замещение файлов</value>
+  </data>
+  <data name="Inventor.Integrator_8" xml:space="preserve">
+    <value>Файл "{0}" не зарегистрирован в файловом индексе!</value>
+  </data>
+  <data name="Inventor.Integrator_9" xml:space="preserve">
+    <value>Файл "{0}" не зарегистрирован в файловом индексе!</value>
+  </data>
+  <data name="Inventor.Integrator_4" xml:space="preserve">
+    <value>Описание корневого объекта графа на задано!</value>
+  </data>
+  <data name="Inventor.Integrator_5" xml:space="preserve">
+    <value>Описание открываемого файла на задано!</value>
+  </data>
+  <data name="Inventor.Integrator_6" xml:space="preserve">
+    <value>Узел графа для файла "{0}" не реализует интерфейс "{1}" !</value>
+  </data>
+  <data name="Inventor.Integrator_7" xml:space="preserve">
+    <value>Интерфейс с CAD-системой не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_1" xml:space="preserve">
+    <value>Массив регулярных выражений не задан!</value>
+  </data>
+  <data name="Inventor.Integrator_2" xml:space="preserve">
+    <value>Массив регулярных выражений не может быть пуст!</value>
+  </data>
+  <data name="Inventor.Integrator_3" xml:space="preserve">
+    <value>Не задан граф извлекаемых объектов и файлов!</value>
+  </data>
+</root>

@@ -1,0 +1,2099 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Substitutes.NeedDeleteAuxiliaryPositionsWithRelations" xml:space="preserve">
+    <value>Желаете ли вы при удалении вспомогательных позиций удалять связи?</value>
+  </data>
+  <data name="Pdm_rv_28" xml:space="preserve">
+    <value>Визуализатор связей. Не задан идентификатор объекта</value>
+  </data>
+  <data name="Pdm_rv_29" xml:space="preserve">
+    <value>Визуализатор связей. Пользовательская сессия не найдена!</value>
+  </data>
+  <data name="Pdm_rv_22" xml:space="preserve">
+    <value>Сохранить изменения</value>
+  </data>
+  <data name="Pdm_rv_23" xml:space="preserve">
+    <value>Невозможно открыть данный объект в визуализаторе связей т.к. визуализатор связей сейчас выполняет другую задачу. Желаете прервать предыдущую задачу?</value>
+  </data>
+  <data name="Pdm_rv_20" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_rv_21" xml:space="preserve">
+    <value>Свойства связи были изменены, сохранить изменения?</value>
+  </data>
+  <data name="Pdm_rv_26" xml:space="preserve">
+    <value>Визуализатор связей. Сервер не вернул информацию о составе объекта!</value>
+  </data>
+  <data name="Pdm_rv_27" xml:space="preserve">
+    <value>Визуализатор связей. Сервер не вернул информацию о применяемости объекта!</value>
+  </data>
+  <data name="Pdm_rv_24" xml:space="preserve">
+    <value>Система\Визуализатор связей</value>
+  </data>
+  <data name="Pdm_rv_25" xml:space="preserve">
+    <value>;  Объектов на схеме:</value>
+  </data>
+  <data name="Pdm_rv_19" xml:space="preserve">
+    <value>В процессе формирования дерева произошла ошибка!</value>
+  </data>
+  <data name="Pdm_rv_18" xml:space="preserve">
+    <value>Ошибка преобразования атрибута</value>
+  </data>
+  <data name="Pdm_rv_11" xml:space="preserve">
+    <value>[Иерархический]</value>
+  </data>
+  <data name="Pdm_rv_10" xml:space="preserve">
+    <value>Начало обновления схемы</value>
+  </data>
+  <data name="Pdm_rv_12" xml:space="preserve">
+    <value>[Нормальный]</value>
+  </data>
+  <data name="Pdm_rv_15" xml:space="preserve">
+    <value>Остановить процесс выполнения текущей задачи?</value>
+  </data>
+  <data name="Pdm_rv_14" xml:space="preserve">
+    <value>[Кулоновский]</value>
+  </data>
+  <data name="Pdm_rv_17" xml:space="preserve">
+    <value>Сделать корнем</value>
+  </data>
+  <data name="Pdm_rv_16" xml:space="preserve">
+    <value>Визуализатор связей</value>
+  </data>
+  <data name="Pdm_rv_48" xml:space="preserve">
+    <value>Выберите стили отображения визуализатора</value>
+  </data>
+  <data name="Pdm_rv_49" xml:space="preserve">
+    <value>Загрузка превью для родительских объектов</value>
+  </data>
+  <data name="Pdm_rv_44" xml:space="preserve">
+    <value>на 5 уровень</value>
+  </data>
+  <data name="Pdm_rv_45" xml:space="preserve">
+    <value>на 3 уровня</value>
+  </data>
+  <data name="Pdm_rv_46" xml:space="preserve">
+    <value>на 1 уровень</value>
+  </data>
+  <data name="Pdm_rv_47" xml:space="preserve">
+    <value>Стили отображения визуализатора</value>
+  </data>
+  <data name="Pdm_rv_40" xml:space="preserve">
+    <value>Cхемы сбора данных визуализатора</value>
+  </data>
+  <data name="Pdm_rv_41" xml:space="preserve">
+    <value>Выберите схему сбора состава</value>
+  </data>
+  <data name="Pdm_rv_42" xml:space="preserve">
+    <value>Выберите схему сбора применяемости</value>
+  </data>
+  <data name="Pdm_rv_43" xml:space="preserve">
+    <value>Раскрыть структуру</value>
+  </data>
+  <data name="Pdm_rv_39" xml:space="preserve">
+    <value>(по умолчанию)</value>
+  </data>
+  <data name="Pdm_rv_38" xml:space="preserve">
+    <value>Схема применяемости: </value>
+  </data>
+  <data name="Pdm_rv_33" xml:space="preserve">
+    <value>Визуализатор связей</value>
+  </data>
+  <data name="Pdm_rv_32" xml:space="preserve">
+    <value>Задача визуализатора отменена!</value>
+  </data>
+  <data name="Pdm_rv_31" xml:space="preserve">
+    <value>Свойства объекта были изменены, сохранить изменения?</value>
+  </data>
+  <data name="Pdm_rv_30" xml:space="preserve">
+    <value>Визуализатор связей. Серверная служба Визуализатора связей не найдена!</value>
+  </data>
+  <data name="Pdm_rv_37" xml:space="preserve">
+    <value>Схема состава: </value>
+  </data>
+  <data name="Pdm_rv_36" xml:space="preserve">
+    <value>Только применяемость</value>
+  </data>
+  <data name="Pdm_rv_35" xml:space="preserve">
+    <value>Только состав</value>
+  </data>
+  <data name="Pdm_rv_34" xml:space="preserve">
+    <value>Состав и применяемость</value>
+  </data>
+  <data name="Pdm_rv_55" xml:space="preserve">
+    <value>Вы действительно хотите УДАЛИТЬ связь от объекта {0} к объекту {1}?</value>
+  </data>
+  <data name="Pdm_rv_54" xml:space="preserve">
+    <value>Показывать все превью</value>
+  </data>
+  <data name="Pdm_rv_57" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
+  </data>
+  <data name="Pdm_rv_56" xml:space="preserve">
+    <value>Изменять структуру объектов в визуализаторе КРАЙНЕ не рекомендуется!</value>
+  </data>
+  <data name="Pdm_rv_51" xml:space="preserve">
+    <value>Загрузка превью для дочерних объектов</value>
+  </data>
+  <data name="Pdm_rv_50" xml:space="preserve">
+    <value>Загрузка объектов превью завершена</value>
+  </data>
+  <data name="Pdm_rv_53" xml:space="preserve">
+    <value>Превью для объектов выбранных типов</value>
+  </data>
+  <data name="Pdm_rv_52" xml:space="preserve">
+    <value>Не показывать превью</value>
+  </data>
+  <data name="Pdm_30" xml:space="preserve">
+    <value>Активный вид: {0}</value>
+  </data>
+  <data name="Pdm_31" xml:space="preserve">
+    <value>Объект ID {0}</value>
+  </data>
+  <data name="Pdm_32" xml:space="preserve">
+    <value>Не найден объект ID = </value>
+  </data>
+  <data name="Pdm_33" xml:space="preserve">
+    <value>(сравнение по атрибутам связи)</value>
+  </data>
+  <data name="Pdm_34" xml:space="preserve">
+    <value>Открывает панель с дополнительными видами</value>
+  </data>
+  <data name="Pdm_35" xml:space="preserve">
+    <value>Активный вид: {0}</value>
+  </data>
+  <data name="Pdm_36" xml:space="preserve">
+    <value>Объект ID {0}</value>
+  </data>
+  <data name="Pdm_37" xml:space="preserve">
+    <value>Выполняется запрос в базу данных {0}%</value>
+  </data>
+  <data name="Pdm_38" xml:space="preserve">
+    <value>Выполнить запрос</value>
+  </data>
+  <data name="Pdm_39" xml:space="preserve">
+    <value>Отменить запрос</value>
+  </data>
+  <data name="Pdm_12" xml:space="preserve">
+    <value>нажмите кнопку "Отмена" для создания новой партии.</value>
+  </data>
+  <data name="Pdm_13" xml:space="preserve">
+    <value>Изделие "{0}". Обнаружены незадействованные экземпляры.
+</value>
+  </data>
+  <data name="Pdm_10" xml:space="preserve">
+    <value>Изделие "{0}". Обнаружены активные партии.
+</value>
+  </data>
+  <data name="Pdm_11" xml:space="preserve">
+    <value>Выберите одну из них, либо </value>
+  </data>
+  <data name="Pdm_16" xml:space="preserve">
+    <value>Выбрано {0}, необходимо {1}</value>
+  </data>
+  <data name="Pdm_17" xml:space="preserve">
+    <value>Выбор </value>
+  </data>
+  <data name="Pdm_14" xml:space="preserve">
+    <value>Выберите из них включаемые экземпляры, либо </value>
+  </data>
+  <data name="Pdm_15" xml:space="preserve">
+    <value>нажмите кнопку "Отмена" для создания нового экземпляра</value>
+  </data>
+  <data name="Pdm_21" xml:space="preserve">
+    <value>Не найдена форма редактирования для типа объектов "{0}"</value>
+  </data>
+  <data name="Pdm_20" xml:space="preserve">
+    <value>Не найден тип объектов для учёта изделий в производстве</value>
+  </data>
+  <data name="Pdm_23" xml:space="preserve">
+    <value>Ошибка при сохранении формы редактирования</value>
+  </data>
+  <data name="Pdm_22" xml:space="preserve">
+    <value>Ошибка при загрузке формы редактирования</value>
+  </data>
+  <data name="Pdm_25" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_24" xml:space="preserve">
+    <value>Деталь (ID версии {0})</value>
+  </data>
+  <data name="Pdm_27" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="Pdm_26" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Pdm_29" xml:space="preserve">
+    <value>Открывает панель с дополнительными видами</value>
+  </data>
+  <data name="Pdm_28" xml:space="preserve">
+    <value>(сравнение по атрибутам связи)</value>
+  </data>
+  <data name="Pdm_74" xml:space="preserve">
+    <value>Дополнительно отображаемые колонки</value>
+  </data>
+  <data name="Pdm_75" xml:space="preserve">
+    <value>Роли, использующие схему</value>
+  </data>
+  <data name="Pdm_76" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Pdm_77" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Pdm_70" xml:space="preserve">
+    <value>Роль {{{0}}}</value>
+  </data>
+  <data name="Pdm_71" xml:space="preserve">
+    <value>Редактор схемы поиска</value>
+  </data>
+  <data name="Pdm_72" xml:space="preserve">
+    <value>Типы объектов, по которым ведётся поиск</value>
+  </data>
+  <data name="Pdm_73" xml:space="preserve">
+    <value>Типы связей, по которым ведётся поиск</value>
+  </data>
+  <data name="Pdm_78" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_79" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pdm_56" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_57" xml:space="preserve">
+    <value>Ошибка при выполнении запроса</value>
+  </data>
+  <data name="Pdm_55" xml:space="preserve">
+    <value>Выполнение запроса: {0} %</value>
+  </data>
+  <data name="Pdm_52" xml:space="preserve">
+    <value>Выполнить запрос</value>
+  </data>
+  <data name="Pdm_53" xml:space="preserve">
+    <value>Отменить запрос</value>
+  </data>
+  <data name="Pdm_50" xml:space="preserve">
+    <value>Выполняется запрос в базу данных</value>
+  </data>
+  <data name="Pdm_58" xml:space="preserve">
+    <value>Выполнение запроса: {0} %</value>
+  </data>
+  <data name="Pdm_59" xml:space="preserve">
+    <value>Идентификатор версии &lt;{0}&gt;</value>
+  </data>
+  <data name="Pdm_65" xml:space="preserve">
+    <value>Создание схемы поиска</value>
+  </data>
+  <data name="Pdm_64" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Pdm_67" xml:space="preserve">
+    <value>Выбор роли</value>
+  </data>
+  <data name="Pdm_66" xml:space="preserve">
+    <value>Выберите условие фильтрации</value>
+  </data>
+  <data name="Pdm_61" xml:space="preserve">
+    <value>{0} ... OK: Присвоено значение "{1}"</value>
+  </data>
+  <data name="Pdm_60" xml:space="preserve">
+    <value>{0} ... Error: Объект взят на изменение другим пользователем</value>
+  </data>
+  <data name="Pdm_63" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="Pdm_62" xml:space="preserve">
+    <value>{0} ... Error: Нельзя взять объект на изменение</value>
+  </data>
+  <data name="Pdm_69" xml:space="preserve">
+    <value>Изменения не сохранены. Сохранить?</value>
+  </data>
+  <data name="Pdm_68" xml:space="preserve">
+    <value>Выберите роль для текущей схемы поиска</value>
+  </data>
+  <data name="Pdm_47" xml:space="preserve">
+    <value>Поиск состава</value>
+  </data>
+  <data name="Pdm_46" xml:space="preserve">
+    <value>Поиск применяемости</value>
+  </data>
+  <data name="Pdm_45" xml:space="preserve">
+    <value>Сервис ICompositionService не найден</value>
+  </data>
+  <data name="Pdm_44" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Pdm_43" xml:space="preserve">
+    <value>Выделено {0} из {1}</value>
+  </data>
+  <data name="Pdm_42" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="Pdm_41" xml:space="preserve">
+    <value>Атрибуты для сравнения ...</value>
+  </data>
+  <data name="Pdm_48" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_98" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Pdm_99" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Pdm_92" xml:space="preserve">
+    <value>Не найден объект ID = </value>
+  </data>
+  <data name="Pdm_93" xml:space="preserve">
+    <value>(сравнение по атрибутам связи)</value>
+  </data>
+  <data name="Pdm_90" xml:space="preserve">
+    <value>Активный вид: {0}</value>
+  </data>
+  <data name="Pdm_91" xml:space="preserve">
+    <value>Объект ID {0}</value>
+  </data>
+  <data name="Pdm_96" xml:space="preserve">
+    <value>Объект ID {0}</value>
+  </data>
+  <data name="Pdm_97" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="Pdm_94" xml:space="preserve">
+    <value>Открывает панель с дополнительными видами</value>
+  </data>
+  <data name="Pdm_95" xml:space="preserve">
+    <value>Активный вид: {0}</value>
+  </data>
+  <data name="Pdm_89" xml:space="preserve">
+    <value>Открывает панель с дополнительными видами</value>
+  </data>
+  <data name="Pdm_88" xml:space="preserve">
+    <value>(сравнение по атрибутам связи)</value>
+  </data>
+  <data name="Pdm_83" xml:space="preserve">
+    <value>Просмотр схемы поиска</value>
+  </data>
+  <data name="Pdm_82" xml:space="preserve">
+    <value>Редактор схемы поиска</value>
+  </data>
+  <data name="Pdm_81" xml:space="preserve">
+    <value>Отмена изменений в схеме поиска</value>
+  </data>
+  <data name="Pdm_80" xml:space="preserve">
+    <value>Вы действительно хотите отменить все изменения в данной схеме поиска?</value>
+  </data>
+  <data name="Pdm_87" xml:space="preserve">
+    <value>Состав/Применяемость</value>
+  </data>
+  <data name="Pdm_86" xml:space="preserve">
+    <value>Состав/применяемость объекта</value>
+  </data>
+  <data name="Pdm_85" xml:space="preserve">
+    <value>Просмотр схемы поиска - </value>
+  </data>
+  <data name="Pdm_84" xml:space="preserve">
+    <value>Схема поиска - </value>
+  </data>
+  <data name="Pdm_Sync_attr" xml:space="preserve">
+    <value>Система\Управление информацией об изделиях\Настройка синхронизации атрибутов документов и изделий</value>
+  </data>
+  <data name="Pdm_ExemplarsInfo_2" xml:space="preserve">
+    <value>Перед созданием экземпляра/партии будет выполнена проверка состава выбранного объекта. На основе этого состава будет сформирован новый состав создаваемого экземпляра/партии.
+
+Состав будет получен согласно текущим настройкам фильтрации, с учётом текущего правила подбора версий ("{0}").
+
+Вы можете выбрать другое правило подбора версий и указать при необходимости контекст редактирования, закрыв данное окно и воспользовавшись панелями инструментов "Фильтрация состава" и "Текущий контекст составов".
+
+Если требуется изменить текущие настройки фильтрации составов, нажмите кнопку "Отмена", если требуется продолжить создание нового экземпляра/партии, нажмите кнопку "Далее".</value>
+  </data>
+  <data name="Pdm_ExemplarsInfo_1" xml:space="preserve">
+    <value>Перед созданием экземпляра/партии будет выполнена проверка состава выбранного объекта. На основе этого состава будет сформирован новый состав создаваемого экземпляра/партии.
+
+Состав будет получен согласно текущим настройкам фильтрации, с учётом текущего контекста редактирования ("{0}") и правила подбора версий ("{1}").
+
+Вы можете выбрать другое правило подбора версий и (или) контекст редактирования, закрыв данное окно и воспользовавшись панелями инструментов "Фильтрация состава" и "Текущий контекст составов".
+
+Если требуется изменить текущие настройки фильтрации составов, нажмите кнопку "Отмена", если требуется продолжить создание нового экземпляра/партии, нажмите кнопку "Далее".</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="Pdm_701d" xml:space="preserve">
+    <value>Даты</value>
+  </data>
+  <data name="Pdm_rv_8" xml:space="preserve">
+    <value>Поиск дочерних объектов</value>
+  </data>
+  <data name="Pdm_rv_9" xml:space="preserve">
+    <value>Начало создания схемы</value>
+  </data>
+  <data name="Pdm_rv_1" xml:space="preserve">
+    <value>Визуализатор связей</value>
+  </data>
+  <data name="Pdm_rv_2" xml:space="preserve">
+    <value>Связь между данными объектами невозможна</value>
+  </data>
+  <data name="Pdm_rv_3" xml:space="preserve">
+    <value>Невозможно сохранить состояние окна!</value>
+  </data>
+  <data name="Pdm_rv_4" xml:space="preserve">
+    <value>Размещение объектов..</value>
+  </data>
+  <data name="Pdm_rv_5" xml:space="preserve">
+    <value>Размещение объектов завершено</value>
+  </data>
+  <data name="Pdm_rv_6" xml:space="preserve">
+    <value>Поиск дочерних объектов завершен</value>
+  </data>
+  <data name="Pdm_rv_7" xml:space="preserve">
+    <value>Поиск родительских объектов</value>
+  </data>
+  <data name="Pdm_310" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_313" xml:space="preserve">
+    <value>Все объекты</value>
+  </data>
+  <data name="Pdm_312" xml:space="preserve">
+    <value>Изменился рендерер панелей инструментов</value>
+  </data>
+  <data name="Pdm_315" xml:space="preserve">
+    <value>Редактор заменителей</value>
+  </data>
+  <data name="Pdm_314" xml:space="preserve">
+    <value>Редактор заменителей</value>
+  </data>
+  <data name="Pdm_317" xml:space="preserve">
+    <value>Выбраны объекты состава с разными типами связей. Назначить актуальные заменители невозможно.</value>
+  </data>
+  <data name="Pdm_316" xml:space="preserve">
+    <value>У выбранных объектов состава типы связей не позволяют работу с допустимыми заменами.</value>
+  </data>
+  <data name="Pdm_319" xml:space="preserve">
+    <value>Актуализировать можно только связи одной неактуальной подгруппы.
+</value>
+  </data>
+  <data name="Pdm_318" xml:space="preserve">
+    <value>Выбранные связи принадлежат разным подгруппам одной и той же группы допустимых заменителей.
+</value>
+  </data>
+  <data name="Pdm_300" xml:space="preserve">
+    <value>Допустимый заменитель [{0}.{1}]</value>
+  </data>
+  <data name="Pdm_301" xml:space="preserve">
+    <value>Добавьте допустимый заменитель</value>
+  </data>
+  <data name="Pdm_302" xml:space="preserve">
+    <value>Результаты проверки</value>
+  </data>
+  <data name="Pdm_303" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Pdm_304" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pdm_305" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_306" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_307" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="Pdm_308" xml:space="preserve">
+    <value>Конструкторский основной вариант</value>
+  </data>
+  <data name="Pdm_309" xml:space="preserve">
+    <value>Создать новую группу заменителей и добавить в неё указанные данные?</value>
+  </data>
+  <data name="Pdm_333" xml:space="preserve">
+    <value>Выбраны объекты, входящие в состав родительского объекта по разным типам связей.
+</value>
+  </data>
+  <data name="Pdm_332" xml:space="preserve">
+    <value>удалите информацию о допустимых заменах из его состава и завершите изменение родительского объекта.</value>
+  </data>
+  <data name="Pdm_331" xml:space="preserve">
+    <value>Для удаления из его состава информации о допустимых заменах возьмите родительский объект на изменение,
+</value>
+  </data>
+  <data name="Pdm_330" xml:space="preserve">
+    <value>Родительский объект "{0}" не взят Вами на редактирование.
+</value>
+  </data>
+  <data name="Pdm_337" xml:space="preserve">
+    <value>PdmComposition.LoadSubstitutionGroups: некорректные значения у атрибута "Номер группы заменителей" у связи с идентификатором = {0}</value>
+  </data>
+  <data name="Pdm_336" xml:space="preserve">
+    <value>PdmComposition.LoadSubstitutionGroups: не найден атрибут "Номер группы заменителей" у связи с идентификатором = {0}</value>
+  </data>
+  <data name="Pdm_335" xml:space="preserve">
+    <value>PdmComposition.LoadSubstitutionGroups: не найдена связь с идентификатором = {0}</value>
+  </data>
+  <data name="Pdm_334" xml:space="preserve">
+    <value>Для выполнения данного действия необходимо выбрать связи, которые являются связями одного типа.</value>
+  </data>
+  <data name="Pdm_338" xml:space="preserve">
+    <value>PdmComposition.GetGroupsList: атрибут "Номер группы заменителей" имеет тип данных, отличный от ftInteger</value>
+  </data>
+  <data name="Pdm_322" xml:space="preserve">
+    <value>Действие не может быть выполнено.</value>
+  </data>
+  <data name="Pdm_323" xml:space="preserve">
+    <value>Для выполнения данного действия среди отмеченных объектов не должно быть актуальных заменителей.</value>
+  </data>
+  <data name="Pdm_320" xml:space="preserve">
+    <value>Пожалуйста, выберите допустимые заменители одной подгруппы для выполнения данного действия.</value>
+  </data>
+  <data name="Pdm_321" xml:space="preserve">
+    <value>Невозможно назначить актуальные заменители. Внутренняя ошибка.</value>
+  </data>
+  <data name="Pdm_326" xml:space="preserve">
+    <value>Выбраны связи, которые не могут участвовать в допустимых заменах.
+</value>
+  </data>
+  <data name="Pdm_327" xml:space="preserve">
+    <value>Для выполнения данного действия необходимо выбрать связи, которые поддерживают работу с допустимыми заменами.</value>
+  </data>
+  <data name="Pdm_324" xml:space="preserve">
+    <value>Выбраны связи, которые не участвуют в допустимых заменах.
+</value>
+  </data>
+  <data name="Pdm_325" xml:space="preserve">
+    <value>Пожалуйста, выберите неактуальные допустимые заменители для выполнения данного действия.</value>
+  </data>
+  <data name="Pdm_328" xml:space="preserve">
+    <value>Родительский объект "{0}" взят на изменение другим пользователем.
+</value>
+  </data>
+  <data name="Pdm_329" xml:space="preserve">
+    <value>У вас нет прав для удаления информации по допустимым заменам в его составе.</value>
+  </data>
+  <data name="Pdm_355" xml:space="preserve">
+    <value>Удаление допустимых заменителей</value>
+  </data>
+  <data name="Pdm_354" xml:space="preserve">
+    <value>Вы хотите удалить указанные актуальные заменители вместе с их допустимыми заменами?</value>
+  </data>
+  <data name="Pdm_357" xml:space="preserve">
+    <value>Отмена изменений</value>
+  </data>
+  <data name="Pdm_356" xml:space="preserve">
+    <value>Вы хотите удалить указанные допустимые заменители?</value>
+  </data>
+  <data name="Pdm_351" xml:space="preserve">
+    <value>Внесены изменения в свойства объекта состава</value>
+  </data>
+  <data name="Pdm_350" xml:space="preserve">
+    <value>У объекта состава не найден атрибут "Номер группы заменителей"</value>
+  </data>
+  <data name="Pdm_353" xml:space="preserve">
+    <value>Удаление актуальных заменителей</value>
+  </data>
+  <data name="Pdm_352" xml:space="preserve">
+    <value>Внесены изменения в свойства текущего объекта состава.
+Сохранить изменения?</value>
+  </data>
+  <data name="Pdm_359" xml:space="preserve">
+    <value>Исключение объектов из состава</value>
+  </data>
+  <data name="Pdm_358" xml:space="preserve">
+    <value>Вы действительно хотите отменить сделанные изменения?</value>
+  </data>
+  <data name="Pdm_344" xml:space="preserve">
+    <value>Настроить группы заменителей</value>
+  </data>
+  <data name="Pdm_345" xml:space="preserve">
+    <value>Создать группу заменителей</value>
+  </data>
+  <data name="Pdm_346" xml:space="preserve">
+    <value>Удалить группу заменителей</value>
+  </data>
+  <data name="Pdm_347" xml:space="preserve">
+    <value>Сделать заменитель актуальным</value>
+  </data>
+  <data name="Pdm_340" xml:space="preserve">
+    <value>Создать группу заменителей</value>
+  </data>
+  <data name="Pdm_341" xml:space="preserve">
+    <value>Удалить группу заменителей</value>
+  </data>
+  <data name="Pdm_342" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_343" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pdm_348" xml:space="preserve">
+    <value>Допустимые замены</value>
+  </data>
+  <data name="Pdm_349" xml:space="preserve">
+    <value>Допустимые замены для актуального заменителя [{0}.0]</value>
+  </data>
+  <data name="Pdm_375" xml:space="preserve">
+    <value>Добавьте в допустимую замену [{0}.{1}] объекты состава, которые будут применены совместно.</value>
+  </data>
+  <data name="Pdm_374" xml:space="preserve">
+    <value>Для актуального заменителя [{0}.0] нет ни одной допустимой замены.</value>
+  </data>
+  <data name="Pdm_373" xml:space="preserve">
+    <value>Добавьте в актуальный заменитель [{0}.0] объекты состава, которые будут применены совместно</value>
+  </data>
+  <data name="Pdm_372" xml:space="preserve">
+    <value>Не найдены допустимые и актуальные заменители. Вы можете создать несколько заменителей и назначить один из них актуальным.</value>
+  </data>
+  <data name="Pdm_371" xml:space="preserve">
+    <value>Проверка выполнена успешно. Ошибок не найдено.</value>
+  </data>
+  <data name="Pdm_370" xml:space="preserve">
+    <value>Для актуального заменителя нет ни одной допустимой замены.</value>
+  </data>
+  <data name="Pdm_379" xml:space="preserve">
+    <value>У вас нет прав для редактирования допустимых заменителей. Вы можете только актуализировать существующие заменители.</value>
+  </data>
+  <data name="Pdm_378" xml:space="preserve">
+    <value>У вас нет прав для редактирования и актуализации допустимых заменителей. Возьмите родительский объект текущего состава на изменение.</value>
+  </data>
+  <data name="Pdm_366" xml:space="preserve">
+    <value>Вы действительно хотите продублировать указанные объекты в составе?</value>
+  </data>
+  <data name="Pdm_367" xml:space="preserve">
+    <value>Проверка групп заменителей</value>
+  </data>
+  <data name="Pdm_364" xml:space="preserve">
+    <value>В связи с этим для корректного заполнения заменителя будут созданы копии этих объектов в текущем составе.
+
+</value>
+  </data>
+  <data name="Pdm_365" xml:space="preserve">
+    <value>Продолжить добавление объектов состава в заменитель?</value>
+  </data>
+  <data name="Pdm_362" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_363" xml:space="preserve">
+    <value>Некоторые выделенные объекты состава используются в существующих допустимых заменителях.
+</value>
+  </data>
+  <data name="Pdm_360" xml:space="preserve">
+    <value>Внимание! Исключение объектов из состава является необратимой операцией.
+
+</value>
+  </data>
+  <data name="Pdm_361" xml:space="preserve">
+    <value>Вы действительно хотите исключить указанные объекты из состава?</value>
+  </data>
+  <data name="Pdm_368" xml:space="preserve">
+    <value>Не найдены допустимые и актуальные заменители.
+
+Вы можете создать несколько заменителей и назначить один из них актуальным.</value>
+  </data>
+  <data name="Pdm_369" xml:space="preserve">
+    <value>Проверка выполнена успешно. Ошибок не найдено.</value>
+  </data>
+  <data name="Pdm_399" xml:space="preserve">
+    <value>Состав/Применяемость</value>
+  </data>
+  <data name="Pdm_398" xml:space="preserve">
+    <value>Состав/применяемость объекта</value>
+  </data>
+  <data name="Pdm_391" xml:space="preserve">
+    <value>Изменить размеры элементов управления по горизонтали</value>
+  </data>
+  <data name="Pdm_390" xml:space="preserve">
+    <value>Состав показан для типа связи:</value>
+  </data>
+  <data name="Pdm_393" xml:space="preserve">
+    <value>{0}
+Идентификатор версии: [{1}]</value>
+  </data>
+  <data name="Pdm_392" xml:space="preserve">
+    <value>Изменить размеры элементов управления по вертикали</value>
+  </data>
+  <data name="Pdm_395" xml:space="preserve">
+    <value>Не отображается ни одного столбца в составе объекта. Вы можете добавить столбцы для просмотра состава.</value>
+  </data>
+  <data name="Pdm_394" xml:space="preserve">
+    <value>Создана копия объекта состава (ID старой связи = {0}, ID новой связи = {1})</value>
+  </data>
+  <data name="Pdm_397" xml:space="preserve">
+    <value>Пожалуйста, подождите.
+Идёт загрузка информации из базы данных...</value>
+  </data>
+  <data name="Pdm_396" xml:space="preserve">
+    <value>Загрузка информации</value>
+  </data>
+  <data name="Pdm_388" xml:space="preserve">
+    <value>Объектов в составе: {0}</value>
+  </data>
+  <data name="Pdm_389" xml:space="preserve">
+    <value>Родительский объект:</value>
+  </data>
+  <data name="Pdm_380" xml:space="preserve">
+    <value>Показать свойства объекта состава</value>
+  </data>
+  <data name="Pdm_381" xml:space="preserve">
+    <value>Скрыть свойства объекта состава</value>
+  </data>
+  <data name="Pdm_382" xml:space="preserve">
+    <value>Актуальный заменитель [{0}.0]</value>
+  </data>
+  <data name="Pdm_383" xml:space="preserve">
+    <value>Допустимая замена [{0}.{1}]</value>
+  </data>
+  <data name="Pdm_384" xml:space="preserve">
+    <value>Сообщения ({0})</value>
+  </data>
+  <data name="Pdm_385" xml:space="preserve">
+    <value>Замечания ({0})</value>
+  </data>
+  <data name="Pdm_386" xml:space="preserve">
+    <value>Предупреждения ({0})</value>
+  </data>
+  <data name="Pdm_387" xml:space="preserve">
+    <value>Ошибки ({0})</value>
+  </data>
+  <data name="Pdm_131" xml:space="preserve">
+    <value>Пожалуйста, подождите.
+Идёт обновление составов ...</value>
+  </data>
+  <data name="Pdm_130" xml:space="preserve">
+    <value>Обновление составов</value>
+  </data>
+  <data name="Pdm_133" xml:space="preserve">
+    <value>количество в КСЕ</value>
+  </data>
+  <data name="Pdm_132" xml:space="preserve">
+    <value>Изменился рендерер панелей инструментов</value>
+  </data>
+  <data name="Pdm_135" xml:space="preserve">
+    <value>Настройка вида</value>
+  </data>
+  <data name="Pdm_134" xml:space="preserve">
+    <value>ТСЕ</value>
+  </data>
+  <data name="Pdm_137" xml:space="preserve">
+    <value> Ширина столбца для выбранного атрибута (пикс): &lt;авто&gt;</value>
+  </data>
+  <data name="Pdm_136" xml:space="preserve">
+    <value> Ширина столбца для выбранного атрибута (пикс): {0}</value>
+  </data>
+  <data name="Pdm_139" xml:space="preserve">
+    <value>В базе данных найдено изделие с таким же обозначением, </value>
+  </data>
+  <data name="Pdm_138" xml:space="preserve">
+    <value>В базе данных найдены изделия с таким же обозначением, </value>
+  </data>
+  <data name="Pdm_120" xml:space="preserve">
+    <value>Собирается информация у развёрнутых составов КСЕ и ТСЕ ...</value>
+  </data>
+  <data name="Pdm_121" xml:space="preserve">
+    <value>Выполняется сравнительный анализ развёрнутых составов КСЕ и ТСЕ ...</value>
+  </data>
+  <data name="Pdm_122" xml:space="preserve">
+    <value>Заполнение списка объектами состава с некорректным значением количества ...</value>
+  </data>
+  <data name="Pdm_123" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_124" xml:space="preserve">
+    <value>Добавление в состав</value>
+  </data>
+  <data name="Pdm_125" xml:space="preserve">
+    <value>Пожалуйста, подождите.
+Идёт добавление указанных объектов в состав ТСЕ ...</value>
+  </data>
+  <data name="Pdm_126" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_127" xml:space="preserve">
+    <value>Задайте количество для "{0}"</value>
+  </data>
+  <data name="Pdm_128" xml:space="preserve">
+    <value>Обновление составов</value>
+  </data>
+  <data name="Pdm_129" xml:space="preserve">
+    <value>Пожалуйста, подождите.
+Идёт обновление составов ...</value>
+  </data>
+  <data name="Pdm_113" xml:space="preserve">
+    <value>Суммарное значение атрибута "количество" у некоторых объектов ТСЕ превышает аналогичное значение у объектов конструкторской сборочной единицы. В списке приведены объекты состава с указанной ошибкой. Пожалуйста, внесите исправления в количество объектов, либо корректно укажите количество для самой технологической единицы, добавляемой в состав конструкторской.</value>
+  </data>
+  <data name="Pdm_112" xml:space="preserve">
+    <value>Количество</value>
+  </data>
+  <data name="Pdm_111" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Pdm_110" xml:space="preserve">
+    <value>Выбран объект, относящийся к типу "Технологическая сборочная единица".
+На его основе создавать новую ТСЕ не допустимо.</value>
+  </data>
+  <data name="Pdm_117" xml:space="preserve">
+    <value>количество для самой технологической единицы, добавляемой в состав конструкторской
+</value>
+  </data>
+  <data name="Pdm_116" xml:space="preserve">
+    <value>Пожалуйста, внесите исправления в количество объектов, либо корректно укажите
+</value>
+  </data>
+  <data name="Pdm_115" xml:space="preserve">
+    <value>В списке приведены объекты состава с указанной ошибкой.
+
+</value>
+  </data>
+  <data name="Pdm_114" xml:space="preserve">
+    <value>превышает аналогичное значение у объектов конструкторской сборочной единицы.
+
+</value>
+  </data>
+  <data name="Pdm_119" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_102" xml:space="preserve">
+    <value>Внесены изменения в объект состава</value>
+  </data>
+  <data name="Pdm_103" xml:space="preserve">
+    <value>Внесены изменения в свойства текущего объекта состава.
+Сохранить изменения?</value>
+  </data>
+  <data name="Pdm_100" xml:space="preserve">
+    <value>Показать свойства объекта состава</value>
+  </data>
+  <data name="Pdm_101" xml:space="preserve">
+    <value>Скрыть свойства объекта состава</value>
+  </data>
+  <data name="Pdm_106" xml:space="preserve">
+    <value>Выберите конструкторскую сборочную единицу</value>
+  </data>
+  <data name="Pdm_107" xml:space="preserve">
+    <value>Выберите конструкторскую сборочную единицу, на основе которой будет формироваться состав ТСЕ</value>
+  </data>
+  <data name="Pdm_104" xml:space="preserve">
+    <value>Создание технологической сборочной единицы</value>
+  </data>
+  <data name="Pdm_105" xml:space="preserve">
+    <value>Технологическая сборочная единица</value>
+  </data>
+  <data name="Pdm_108" xml:space="preserve">
+    <value>Выбран объект, в составе которого не допускается применение проектной связи</value>
+  </data>
+  <data name="Pdm_109" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Pdm_175" xml:space="preserve">
+    <value>Не найден тип объектов для учёта изделий в производстве</value>
+  </data>
+  <data name="Pdm_177" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_176" xml:space="preserve">
+    <value>Деталь (ID версии {0})</value>
+  </data>
+  <data name="Pdm_171" xml:space="preserve">
+    <value>Выбрано {0}, необходимо {1}</value>
+  </data>
+  <data name="Pdm_170" xml:space="preserve">
+    <value>нажмите кнопку "Отмена" для создания нового экземпляра</value>
+  </data>
+  <data name="Pdm_172" xml:space="preserve">
+    <value>Выбор </value>
+  </data>
+  <data name="Pdm_179" xml:space="preserve">
+    <value>Файл не зарегистрирован в системе</value>
+  </data>
+  <data name="Pdm_178" xml:space="preserve">
+    <value>Выполнено: {0}%</value>
+  </data>
+  <data name="Pdm_164" xml:space="preserve">
+    <value>Стандартное изделие (ID версии {0})</value>
+  </data>
+  <data name="Pdm_165" xml:space="preserve">
+    <value>Изделие "{0}". Обнаружены активные партии.
+</value>
+  </data>
+  <data name="Pdm_166" xml:space="preserve">
+    <value>Выберите одну из них, либо </value>
+  </data>
+  <data name="Pdm_167" xml:space="preserve">
+    <value>нажмите кнопку "Отмена" для создания новой партии.</value>
+  </data>
+  <data name="Pdm_160" xml:space="preserve">
+    <value>Удаление значения файлового атрибута</value>
+  </data>
+  <data name="Pdm_161" xml:space="preserve">
+    <value>Файловые атрибуты</value>
+  </data>
+  <data name="Pdm_162" xml:space="preserve">
+    <value>(ID версии {0})</value>
+  </data>
+  <data name="Pdm_163" xml:space="preserve">
+    <value>Сборочная единица (ID версии {0})</value>
+  </data>
+  <data name="Pdm_168" xml:space="preserve">
+    <value>Изделие "{0}". Обнаружены незадействованные экземпляры.
+</value>
+  </data>
+  <data name="Pdm_169" xml:space="preserve">
+    <value>Выберите из них включаемые экземпляры, либо </value>
+  </data>
+  <data name="Pdm_157" xml:space="preserve">
+    <value>Объект "{0}" не может выпускаться по объекту "{1}"</value>
+  </data>
+  <data name="Pdm_156" xml:space="preserve">
+    <value>Новый объект "{0}"</value>
+  </data>
+  <data name="Pdm_155" xml:space="preserve">
+    <value>Объект "{0}" не может выпускаться по объекту "{1}"</value>
+  </data>
+  <data name="Pdm_154" xml:space="preserve">
+    <value>Выберите архив, в котором будет зарегистрирован создаваемый объект</value>
+  </data>
+  <data name="Pdm_153" xml:space="preserve">
+    <value>Выберите архив</value>
+  </data>
+  <data name="Pdm_152" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_151" xml:space="preserve">
+    <value>Создание объекта</value>
+  </data>
+  <data name="Pdm_150" xml:space="preserve">
+    <value>Не назначен</value>
+  </data>
+  <data name="Pdm_159" xml:space="preserve">
+    <value>Последнее значение удалять нельзя</value>
+  </data>
+  <data name="Pdm_158" xml:space="preserve">
+    <value>&lt;без имени&gt;</value>
+  </data>
+  <data name="Pdm_146" xml:space="preserve">
+    <value>как и у создаваемого документа. Укажите к каким версиям </value>
+  </data>
+  <data name="Pdm_147" xml:space="preserve">
+    <value>найденных объектов привязать создаваемый документ:</value>
+  </data>
+  <data name="Pdm_144" xml:space="preserve">
+    <value>ы //не используется</value>
+  </data>
+  <data name="Pdm_142" xml:space="preserve">
+    <value>В базе данных найдены объекты с таким же обозначением, </value>
+  </data>
+  <data name="Pdm_143" xml:space="preserve">
+    <value>В базе данных найден объект с таким же обозначением, </value>
+  </data>
+  <data name="Pdm_140" xml:space="preserve">
+    <value>ы //не используется</value>
+  </data>
+  <data name="Pdm_141" xml:space="preserve">
+    <value>о //не используется</value>
+  </data>
+  <data name="Pdm_148" xml:space="preserve">
+    <value>Ошибка классификации</value>
+  </data>
+  <data name="Pdm_149" xml:space="preserve">
+    <value>Классификация объекта</value>
+  </data>
+  <data name="Pdm_199" xml:space="preserve">
+    <value>Сборочный чертёж</value>
+  </data>
+  <data name="Pdm_198" xml:space="preserve">
+    <value>Чертёж</value>
+  </data>
+  <data name="Pdm_193" xml:space="preserve">
+    <value>Документ по GUID {{{0}}} не найден</value>
+  </data>
+  <data name="Pdm_192" xml:space="preserve">
+    <value>Функция не поддерживается</value>
+  </data>
+  <data name="Pdm_191" xml:space="preserve">
+    <value>Изделия, выпускаемые по документу, не определены функцией OpenDocArticles(), либо отсутствуют.</value>
+  </data>
+  <data name="Pdm_190" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов документа</value>
+  </data>
+  <data name="Pdm_197" xml:space="preserve">
+    <value>Тип документа</value>
+  </data>
+  <data name="Pdm_196" xml:space="preserve">
+    <value>Файл должен находиться в файловом хранилище по пути
+{0}</value>
+  </data>
+  <data name="Pdm_195" xml:space="preserve">
+    <value>Файл не зарегистрирован в файловом индексе</value>
+  </data>
+  <data name="Pdm_194" xml:space="preserve">
+    <value>Служба {0} не найдена.</value>
+  </data>
+  <data name="Pdm_188" xml:space="preserve">
+    <value>Документ не определён функцией OpenDocument()</value>
+  </data>
+  <data name="Pdm_189" xml:space="preserve">
+    <value>Главное исполнение не найдено</value>
+  </data>
+  <data name="Pdm_182" xml:space="preserve">
+    <value>Изделие не определено функцией OpenArticle().</value>
+  </data>
+  <data name="Pdm_183" xml:space="preserve">
+    <value>Изделие по значению атрибута "Идентификатор изделия", равному {0} не найдено</value>
+  </data>
+  <data name="Pdm_180" xml:space="preserve">
+    <value>Атрибут "{0}" не найден у объекта</value>
+  </data>
+  <data name="Pdm_181" xml:space="preserve">
+    <value>Атрибут "{0}" не найден у объекта</value>
+  </data>
+  <data name="Pdm_186" xml:space="preserve">
+    <value>Документ по значению атрибута "Идентификатор документа", равному {0} не найден</value>
+  </data>
+  <data name="Pdm_187" xml:space="preserve">
+    <value>Отсутствует сервис IArticleService</value>
+  </data>
+  <data name="Pdm_184" xml:space="preserve">
+    <value>Изделие не содержит атрибут "Идентификатор изделия"</value>
+  </data>
+  <data name="Pdm_185" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов изделия</value>
+  </data>
+  <data name="Pdm_210" xml:space="preserve">
+    <value>Документ не определён функцией OpenDocument()</value>
+  </data>
+  <data name="Pdm_211" xml:space="preserve">
+    <value>Главное исполнение не найдено</value>
+  </data>
+  <data name="Pdm_212" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов документа</value>
+  </data>
+  <data name="Pdm_214" xml:space="preserve">
+    <value>Функция не поддерживается</value>
+  </data>
+  <data name="Pdm_215" xml:space="preserve">
+    <value>Документ по GUID {{{0}}} не найден</value>
+  </data>
+  <data name="Pdm_216" xml:space="preserve">
+    <value>Служба {0} не найдена.</value>
+  </data>
+  <data name="Pdm_217" xml:space="preserve">
+    <value>Файл не зарегистрирован в файловом индексе</value>
+  </data>
+  <data name="Pdm_219" xml:space="preserve">
+    <value>Тип документа</value>
+  </data>
+  <data name="Pdm_232" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Pdm_233" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Pdm_230" xml:space="preserve">
+    <value>Типы связей, по которым ведётся поиск</value>
+  </data>
+  <data name="Pdm_231" xml:space="preserve">
+    <value>Дополнительно отображаемые колонки</value>
+  </data>
+  <data name="Pdm_236" xml:space="preserve">
+    <value>Вы действительно хотите отменить все изменения в данной схеме поиска?</value>
+  </data>
+  <data name="Pdm_237" xml:space="preserve">
+    <value>Отмена изменений в схеме поиска</value>
+  </data>
+  <data name="Pdm_234" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_235" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pdm_238" xml:space="preserve">
+    <value>Редактор схемы поиска</value>
+  </data>
+  <data name="Pdm_239" xml:space="preserve">
+    <value>Просмотр схемы поиска</value>
+  </data>
+  <data name="Pdm_201" xml:space="preserve">
+    <value>У объекта {{{0}}} не найден идентификатор документа</value>
+  </data>
+  <data name="Pdm_200" xml:space="preserve">
+    <value>Выберите документы</value>
+  </data>
+  <data name="Pdm_203" xml:space="preserve">
+    <value>Файл {0} не найден в файловом хранилище</value>
+  </data>
+  <data name="Pdm_202" xml:space="preserve">
+    <value>Входным параметром функции должен быть GUID</value>
+  </data>
+  <data name="Pdm_205" xml:space="preserve">
+    <value>Изделие по значению атрибута "Идентификатор изделия", равному {0} не найдено</value>
+  </data>
+  <data name="Pdm_204" xml:space="preserve">
+    <value>Изделие не определено функцией OpenArticle().</value>
+  </data>
+  <data name="Pdm_207" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов изделия</value>
+  </data>
+  <data name="Pdm_206" xml:space="preserve">
+    <value>Изделие не содержит атрибут "Идентификатор изделия"</value>
+  </data>
+  <data name="Pdm_209" xml:space="preserve">
+    <value>Отсутствует сервис IArticleService</value>
+  </data>
+  <data name="Pdm_208" xml:space="preserve">
+    <value>Документ по значению атрибута "Идентификатор документа", равному {0} не найден</value>
+  </data>
+  <data name="Pdm_254" xml:space="preserve">
+    <value>Настройка допустимых замен</value>
+  </data>
+  <data name="Pdm_255" xml:space="preserve">
+    <value>Создать группу заменителей</value>
+  </data>
+  <data name="Pdm_256" xml:space="preserve">
+    <value>Удалить группу заменителей</value>
+  </data>
+  <data name="Pdm_257" xml:space="preserve">
+    <value>Сделать заменитель актуальным</value>
+  </data>
+  <data name="Pdm_250" xml:space="preserve">
+    <value>Сообщения ({0})</value>
+  </data>
+  <data name="Pdm_251" xml:space="preserve">
+    <value>Замечания ({0})</value>
+  </data>
+  <data name="Pdm_252" xml:space="preserve">
+    <value>Предупреждения ({0})</value>
+  </data>
+  <data name="Pdm_253" xml:space="preserve">
+    <value>Ошибки ({0})</value>
+  </data>
+  <data name="Pdm_258" xml:space="preserve">
+    <value>Внесены изменения в свойства объекта состава</value>
+  </data>
+  <data name="Pdm_259" xml:space="preserve">
+    <value>Внесены изменения в свойства текущего объекта состава.
+Сохранить изменения?</value>
+  </data>
+  <data name="Pdm_223" xml:space="preserve">
+    <value>У объекта {{{0}}} не найден идентификатор документа</value>
+  </data>
+  <data name="Pdm_222" xml:space="preserve">
+    <value>Выберите документы</value>
+  </data>
+  <data name="Pdm_221" xml:space="preserve">
+    <value>Сборочный чертёж</value>
+  </data>
+  <data name="Pdm_220" xml:space="preserve">
+    <value>Чертёж</value>
+  </data>
+  <data name="Pdm_227" xml:space="preserve">
+    <value>Выберите условие фильтрации</value>
+  </data>
+  <data name="Pdm_226" xml:space="preserve">
+    <value>Создание схемы поиска</value>
+  </data>
+  <data name="Pdm_225" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Pdm_224" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_229" xml:space="preserve">
+    <value>Типы объектов, по которым ведётся поиск</value>
+  </data>
+  <data name="Pdm_228" xml:space="preserve">
+    <value>Редактор схемы поиска</value>
+  </data>
+  <data name="Pdm_276" xml:space="preserve">
+    <value>Объектов в составе: {0}</value>
+  </data>
+  <data name="Pdm_277" xml:space="preserve">
+    <value>Родительский объект:</value>
+  </data>
+  <data name="Pdm_274" xml:space="preserve">
+    <value>Проверка выполнена успешно. Ошибок не найдено.</value>
+  </data>
+  <data name="Pdm_275" xml:space="preserve">
+    <value>Для актуального заменителя нет ни одной допустимой замены.</value>
+  </data>
+  <data name="Pdm_272" xml:space="preserve">
+    <value>Проверка групп заменителей</value>
+  </data>
+  <data name="Pdm_273" xml:space="preserve">
+    <value>Не найдены допустимые и актуальные заменители.
+
+Вы можете создать несколько заменителей и назначить один из них актуальным.</value>
+  </data>
+  <data name="Pdm_270" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_271" xml:space="preserve">
+    <value>Удалить указанные элементы?</value>
+  </data>
+  <data name="Pdm_278" xml:space="preserve">
+    <value>Состав показан для типа связи:</value>
+  </data>
+  <data name="Pdm_279" xml:space="preserve">
+    <value>{0}
+Идентификатор версии: [{1}]</value>
+  </data>
+  <data name="Pdm_245" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Pdm_244" xml:space="preserve">
+    <value>легенду</value>
+  </data>
+  <data name="Pdm_247" xml:space="preserve">
+    <value>Выберите исполнение в списке, чтобы просмотреть его состав</value>
+  </data>
+  <data name="Pdm_246" xml:space="preserve">
+    <value>Состав исполнения "{0}"</value>
+  </data>
+  <data name="Pdm_241" xml:space="preserve">
+    <value>Просмотр схемы поиска - </value>
+  </data>
+  <data name="Pdm_240" xml:space="preserve">
+    <value>Схема поиска - </value>
+  </data>
+  <data name="Pdm_243" xml:space="preserve">
+    <value>Допустимые замены</value>
+  </data>
+  <data name="Pdm_242" xml:space="preserve">
+    <value>Система\Управление информацией об изделиях\Допустимые замены</value>
+  </data>
+  <data name="Pdm_249" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Pdm_248" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Pdm_298" xml:space="preserve">
+    <value>Добавьте допустимые заменители в группу</value>
+  </data>
+  <data name="Pdm_299" xml:space="preserve">
+    <value>Актуальный заменитель [{0}.{1}]</value>
+  </data>
+  <data name="Pdm_290" xml:space="preserve">
+    <value>У вас нет прав для редактирования допустимых заменителей. Вы можете только актуализировать существующие заменители. Возможно родительский объект не взят на редактирование.</value>
+  </data>
+  <data name="Pdm_291" xml:space="preserve">
+    <value>У вас нет прав для редактирования и актуализации допустимых заменителей. Вы можете только просмотреть текущие настройки допустимых замен. Возможно родительский объект не взят на редактирование.</value>
+  </data>
+  <data name="Pdm_293" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Pdm_294" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Pdm_295" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Pdm_296" xml:space="preserve">
+    <value>Расшифровка примечания допустимых замен</value>
+  </data>
+  <data name="Pdm_297" xml:space="preserve">
+    <value>Группа "{0}"</value>
+  </data>
+  <data name="Pdm_267" xml:space="preserve">
+    <value>Удалить указанные группы допустимых замен?</value>
+  </data>
+  <data name="Pdm_266" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_265" xml:space="preserve">
+    <value>Отменить изменения?</value>
+  </data>
+  <data name="Pdm_264" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_263" xml:space="preserve">
+    <value>Удалить указанные допустимые заменители?</value>
+  </data>
+  <data name="Pdm_262" xml:space="preserve">
+    <value>Удаление допустимых заменителей</value>
+  </data>
+  <data name="Pdm_261" xml:space="preserve">
+    <value>Удалить указанные актуальные заменители вместе с их допустимыми заменами?</value>
+  </data>
+  <data name="Pdm_260" xml:space="preserve">
+    <value>Удаление актуальных заменителей</value>
+  </data>
+  <data name="Pdm_269" xml:space="preserve">
+    <value>Удалить указанные объекты из состава допустимых заменителей?</value>
+  </data>
+  <data name="Pdm_268" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_289" xml:space="preserve">
+    <value>У вас нет прав для редактирования и актуализации допустимых заменителей. Возможно родительский объект не взят на редактирование.</value>
+  </data>
+  <data name="Pdm_281" xml:space="preserve">
+    <value>Проверка выполнена успешно. Ошибок не найдено</value>
+  </data>
+  <data name="Pdm_280" xml:space="preserve">
+    <value>Объект состава [{0}] "{1}" уже задействован в допустимом заменителе [{2}.{3}]. Его нельзя применить в других допустимых заменах</value>
+  </data>
+  <data name="Pdm_283" xml:space="preserve">
+    <value>В группе [{0}] не создано ни одного допустимого заменителя. Вы можете создать несколько заменителей и назначить один из них актуальным</value>
+  </data>
+  <data name="Pdm_282" xml:space="preserve">
+    <value>Не создано ни одной группы допустимых замен. Вы можете создать одну или несколько групп допустимых замен</value>
+  </data>
+  <data name="Pdm_285" xml:space="preserve">
+    <value>Для актуального заменителя [{0}.0] нет ни одной допустимой замены</value>
+  </data>
+  <data name="Pdm_284" xml:space="preserve">
+    <value>Добавьте в актуальный заменитель [{0}.0] объекты состава, которые будут применены совместно</value>
+  </data>
+  <data name="Pdm_286" xml:space="preserve">
+    <value>Добавьте в допустимую замену [{0}.{1}] объекты состава, которые будут применены совместно</value>
+  </data>
+  <data name="Pdm_740" xml:space="preserve">
+    <value>Максимальное количество уровней должно быть неотрицательным целым числом!</value>
+  </data>
+  <data name="Pdm_715" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="Pdm_714" xml:space="preserve">
+    <value>В составе основного заказа точки не найдены.</value>
+  </data>
+  <data name="Pdm_717" xml:space="preserve">
+    <value>Для выполнения команды требуется взять на изменение изделие {0} идентификационный номер {1}.</value>
+  </data>
+  <data name="Pdm_716" xml:space="preserve">
+    <value>Выполнение команды невозможно. Объект {0} уже входит связью Изделие-заготовка в состав объекта {1}.</value>
+  </data>
+  <data name="Pdm_711" xml:space="preserve">
+    <value>Применить изменения настроек фильтрации по сериям/датам</value>
+  </data>
+  <data name="Pdm_710" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Pdm_713" xml:space="preserve">
+    <value>Применяемость в сериях и датах - '{0}'</value>
+  </data>
+  <data name="Pdm_712" xml:space="preserve">
+    <value>Применяемость версии объекта в сериях и датах</value>
+  </data>
+  <data name="Pdm_719" xml:space="preserve">
+    <value>Типы объектов, для которых нельзя разворачивать состав</value>
+  </data>
+  <data name="Pdm_718" xml:space="preserve">
+    <value>Типы объектов, для которых требуется разворачивать состав</value>
+  </data>
+  <data name="Pdm_704" xml:space="preserve">
+    <value>Сохранить изменения в выделенные объекты Навигатора?</value>
+  </data>
+  <data name="Pdm_705" xml:space="preserve">
+    <value>Применяемости в сериях/датах были изменены</value>
+  </data>
+  <data name="Pdm_706" xml:space="preserve">
+    <value>Диапазоны серий не могут содержать отрицательные значения или быть открытыми до минус бесконечности</value>
+  </data>
+  <data name="Pdm_707" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Pdm_700" xml:space="preserve">
+    <value>Головное изделие</value>
+  </data>
+  <data name="Pdm_701" xml:space="preserve">
+    <value>Серии</value>
+  </data>
+  <data name="Pdm_702" xml:space="preserve">
+    <value>Серии/даты</value>
+  </data>
+  <data name="Pdm_703" xml:space="preserve">
+    <value>Закладка для просмотра и редактирования применяемостей версий объекта в сериях/датах</value>
+  </data>
+  <data name="Pdm_708" xml:space="preserve">
+    <value>Найдено пересечение с версией '{1}' для головного изделия '{0}':
+{2}
+{3} (новое значение)</value>
+  </data>
+  <data name="Pdm_709" xml:space="preserve">
+    <value>Информация: найдено пересечение с другой версией</value>
+  </data>
+  <data name="Pdm_737" xml:space="preserve">
+    <value>Дополнительные атрибуты объектов</value>
+  </data>
+  <data name="Pdm_736" xml:space="preserve">
+    <value>Типы объектов, для которых надо показывать Preview</value>
+  </data>
+  <data name="Pdm_735" xml:space="preserve">
+    <value>Введите имя нового стиля</value>
+  </data>
+  <data name="Pdm_734" xml:space="preserve">
+    <value>Создание стиля для связей</value>
+  </data>
+  <data name="Pdm_733" xml:space="preserve">
+    <value>Созданиe стиля для объектов с Preview</value>
+  </data>
+  <data name="Pdm_732" xml:space="preserve">
+    <value>Создание стиля для простых объектов</value>
+  </data>
+  <data name="Pdm_731" xml:space="preserve">
+    <value>Типы связей для текущего стиля визуализатора</value>
+  </data>
+  <data name="Pdm_730" xml:space="preserve">
+    <value>Типы объектов для текущего стиля визуализатора</value>
+  </data>
+  <data name="Pdm_739" xml:space="preserve">
+    <value>Типы объектов, для которых надо показывать Preview</value>
+  </data>
+  <data name="Pdm_738" xml:space="preserve">
+    <value>Дополнительные атрибуты связей</value>
+  </data>
+  <data name="Pdm_726" xml:space="preserve">
+    <value>Создание стиля отображения визуализатора</value>
+  </data>
+  <data name="Pdm_727" xml:space="preserve">
+    <value>Стили простых объектов</value>
+  </data>
+  <data name="Pdm_724" xml:space="preserve">
+    <value>Редактор стиля визуализатора</value>
+  </data>
+  <data name="Pdm_725" xml:space="preserve">
+    <value>Создание схемы данных визуализатора</value>
+  </data>
+  <data name="Pdm_722" xml:space="preserve">
+    <value>Допустимые типы объектов</value>
+  </data>
+  <data name="Pdm_723" xml:space="preserve">
+    <value>Редактор схемы поиска визуализатора</value>
+  </data>
+  <data name="Pdm_720" xml:space="preserve">
+    <value>Объекты</value>
+  </data>
+  <data name="Pdm_721" xml:space="preserve">
+    <value>Выберите добавляемые объекты</value>
+  </data>
+  <data name="Pdm_728" xml:space="preserve">
+    <value>Стили объектов с Preview</value>
+  </data>
+  <data name="Pdm_729" xml:space="preserve">
+    <value>Стили связей</value>
+  </data>
+  <data name="Pdm_560" xml:space="preserve">
+    <value>Головное изделие</value>
+  </data>
+  <data name="Pdm_561" xml:space="preserve">
+    <value>Выбрать головное изделие</value>
+  </data>
+  <data name="Pdm_562" xml:space="preserve">
+    <value>Серия:</value>
+  </data>
+  <data name="Pdm_563" xml:space="preserve">
+    <value>Серия изделий</value>
+  </data>
+  <data name="Pdm_564" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="Pdm_565" xml:space="preserve">
+    <value>Дата выпуска изделий</value>
+  </data>
+  <data name="Pdm_566" xml:space="preserve">
+    <value>Указать дату выпуска изделий</value>
+  </data>
+  <data name="Pdm_567" xml:space="preserve">
+    <value>Включить подбор по сериям/дате</value>
+  </data>
+  <data name="Pdm_568" xml:space="preserve">
+    <value>Выберите головное изделие, в рамках которого выполняется подбор версий объектов по сериям/датам</value>
+  </data>
+  <data name="Pdm_569" xml:space="preserve">
+    <value>Выбор головного изделия</value>
+  </data>
+  <data name="Pdm_553" xml:space="preserve">
+    <value>Сравнение составов объектов</value>
+  </data>
+  <data name="Pdm_552" xml:space="preserve">
+    <value>Сравнение составов</value>
+  </data>
+  <data name="Pdm_551" xml:space="preserve">
+    <value>Для типа {0} не назначен тип создаваемого экземпляра или партии</value>
+  </data>
+  <data name="Pdm_550" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Pdm_557" xml:space="preserve">
+    <value>PDM.SeriesToolbar</value>
+  </data>
+  <data name="Pdm_556" xml:space="preserve">
+    <value>Не найден объект "{0}" (идентификатор версии: {1})</value>
+  </data>
+  <data name="Pdm_555" xml:space="preserve">
+    <value>Исполнения изделия должны быть описаны в электронной модели!</value>
+  </data>
+  <data name="Pdm_554" xml:space="preserve">
+    <value>У {0} отсутсвует значение атрибута {1}</value>
+  </data>
+  <data name="Pdm_559" xml:space="preserve">
+    <value>Головное изделие:</value>
+  </data>
+  <data name="Pdm_558" xml:space="preserve">
+    <value>Подбор по сериям и датам</value>
+  </data>
+  <data name="Pdm_542" xml:space="preserve">
+    <value>Состав отображается полностью</value>
+  </data>
+  <data name="Pdm_543" xml:space="preserve">
+    <value>Актуальный состав</value>
+  </data>
+  <data name="Pdm_540" xml:space="preserve">
+    <value>Пожалуйста, подождите. Выполняется сохранение изменений ...</value>
+  </data>
+  <data name="Pdm_541" xml:space="preserve">
+    <value>Полный состав</value>
+  </data>
+  <data name="Pdm_546" xml:space="preserve">
+    <value>В составе не отображаются объекты, участвующие в допустимых заменах</value>
+  </data>
+  <data name="Pdm_547" xml:space="preserve">
+    <value>Актуализация допустимых замен</value>
+  </data>
+  <data name="Pdm_544" xml:space="preserve">
+    <value>Отображается только актуальный состав</value>
+  </data>
+  <data name="Pdm_545" xml:space="preserve">
+    <value>Состав без доп. замен</value>
+  </data>
+  <data name="Pdm_548" xml:space="preserve">
+    <value>Пожалуйста, подождите. Выполняется подготовка к записи изменений ...</value>
+  </data>
+  <data name="Pdm_549" xml:space="preserve">
+    <value>Удаление допустимых замен</value>
+  </data>
+  <data name="Pdm_535" xml:space="preserve">
+    <value>Анализ составов исполнений</value>
+  </data>
+  <data name="Pdm_537" xml:space="preserve">
+    <value>Общая часть исполнения</value>
+  </data>
+  <data name="Pdm_536" xml:space="preserve">
+    <value>Пожалуйста, подождите. Анализируются составы исполнений ...</value>
+  </data>
+  <data name="Pdm_531" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Pdm_530" xml:space="preserve">
+    <value>Искомый элемент не найден</value>
+  </data>
+  <data name="Pdm_533" xml:space="preserve">
+    <value>Визуализатор связей</value>
+  </data>
+  <data name="Pdm_532" xml:space="preserve">
+    <value>Невозможно остановить текущую задачу визуализатора связей. </value>
+  </data>
+  <data name="Pdm_539" xml:space="preserve">
+    <value>Сохранение изменений</value>
+  </data>
+  <data name="Pdm_538" xml:space="preserve">
+    <value>Переменная часть исполнения</value>
+  </data>
+  <data name="Pdm_524" xml:space="preserve">
+    <value>В окне сравнения составов осталась только архивная копия</value>
+  </data>
+  <data name="Pdm_525" xml:space="preserve">
+    <value>Выполнить удаление настроек отображения?</value>
+  </data>
+  <data name="Pdm_526" xml:space="preserve">
+    <value>Сброс настроек отображения</value>
+  </data>
+  <data name="Pdm_527" xml:space="preserve">
+    <value>Ошибка при выполнении</value>
+  </data>
+  <data name="Pdm_520" xml:space="preserve">
+    <value>Для сравнения составов необходимо указать тип связей</value>
+  </data>
+  <data name="Pdm_521" xml:space="preserve">
+    <value>Настройка сравнения составов</value>
+  </data>
+  <data name="Pdm_522" xml:space="preserve">
+    <value>Типы связей для сравнения:</value>
+  </data>
+  <data name="Pdm_523" xml:space="preserve">
+    <value>Сравниваемые атрибуты:</value>
+  </data>
+  <data name="Pdm_528" xml:space="preserve">
+    <value>Текущее правило подбора версий</value>
+  </data>
+  <data name="Pdm_529" xml:space="preserve">
+    <value>Уровни продвижения</value>
+  </data>
+  <data name="Pdm_517" xml:space="preserve">
+    <value>В свойствах объектов, используемых для сравнения составов, были произведены изменения, которые могут отразиться на правильности работы механизма сравнения составов.</value>
+  </data>
+  <data name="Pdm_516" xml:space="preserve">
+    <value>Объект состава [{0}] "{1}" находится в переменной части исполнения. Его нельзя применить в допустимых заменах, содержащих объекты из общей части</value>
+  </data>
+  <data name="Pdm_515" xml:space="preserve">
+    <value>Объект состава [{0}] "{1}" находится в общей части исполнения. Его нельзя применить в допустимых заменах, содержащих объекты из переменной части</value>
+  </data>
+  <data name="Pdm_514" xml:space="preserve">
+    <value>У объекта #"{0}" нет файлов для извлечения на локальный диск!</value>
+  </data>
+  <data name="Pdm_513" xml:space="preserve">
+    <value>Пожалуйста, подождите. Создаются выбранные исполнения ...</value>
+  </data>
+  <data name="Pdm_512" xml:space="preserve">
+    <value>Создание исполнений</value>
+  </data>
+  <data name="Pdm_511" xml:space="preserve">
+    <value>Вы должны указать не пустое обозначение.</value>
+  </data>
+  <data name="Pdm_510" xml:space="preserve">
+    <value>В базе данных найден другой объект типа "{0}" с таким же обозначением. Вы должны указать другое обозначение.</value>
+  </data>
+  <data name="Pdm_519" xml:space="preserve">
+    <value>
+Необходимо заново выполнить запрос составов.</value>
+  </data>
+  <data name="Pdm_518" xml:space="preserve">
+    <value>
+Необходимо закрыть текущее окно сравнения составов.</value>
+  </data>
+  <data name="Pdm_506" xml:space="preserve">
+    <value>Cравниваемый объект "{0}" был взят на редактирование</value>
+  </data>
+  <data name="Pdm_507" xml:space="preserve">
+    <value>Объект из сравниваемого состава "{0}" был взят на редактирование</value>
+  </data>
+  <data name="Pdm_504" xml:space="preserve">
+    <value>Объект {0} в сравниваемом составе был удалён</value>
+  </data>
+  <data name="Pdm_505" xml:space="preserve">
+    <value>Нельзя сравнивать один и тот же объект {0}</value>
+  </data>
+  <data name="Pdm_502" xml:space="preserve">
+    <value>Связь для объекта {0} была удалена</value>
+  </data>
+  <data name="Pdm_503" xml:space="preserve">
+    <value>Сравниваемый объект "{0}" был удалён</value>
+  </data>
+  <data name="Pdm_500" xml:space="preserve">
+    <value>Создана связь для объекта {0}</value>
+  </data>
+  <data name="Pdm_501" xml:space="preserve">
+    <value>Связь для объекта {0} была изменена</value>
+  </data>
+  <data name="Pdm_508" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="Pdm_509" xml:space="preserve">
+    <value>Вы должны указать обозначение, отличающееся от старого обозначения.</value>
+  </data>
+  <data name="Pdm_470" xml:space="preserve">
+    <value>Настроить группу заменителей</value>
+  </data>
+  <data name="Pdm_471" xml:space="preserve">
+    <value>Удалить группу заменителей</value>
+  </data>
+  <data name="Pdm_472" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_473" xml:space="preserve">
+    <value>Контекстный состав</value>
+  </data>
+  <data name="Pdm_474" xml:space="preserve">
+    <value>Создать экземпляр / партию</value>
+  </data>
+  <data name="Pdm_475" xml:space="preserve">
+    <value>Дерево экземпляров и партий</value>
+  </data>
+  <data name="Pdm_478" xml:space="preserve">
+    <value>Список исполнений</value>
+  </data>
+  <data name="Pdm_479" xml:space="preserve">
+    <value>Сравнение составов</value>
+  </data>
+  <data name="Pdm_453" xml:space="preserve">
+    <value>Редактор схемы поиска</value>
+  </data>
+  <data name="Pdm_450" xml:space="preserve">
+    <value>Отображение</value>
+  </data>
+  <data name="Pdm_451" xml:space="preserve">
+    <value>Фильтрация состава</value>
+  </data>
+  <data name="Pdm_456" xml:space="preserve">
+    <value>Список изделий, выпускаемых по текущему документу</value>
+  </data>
+  <data name="Pdm_457" xml:space="preserve">
+    <value>Список объектов</value>
+  </data>
+  <data name="Pdm_454" xml:space="preserve">
+    <value>Закладка позволяет создавать и редактировать схемы поиска для закладок "Поиск состава" и "Поиск применяемости"</value>
+  </data>
+  <data name="Pdm_455" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="Pdm_458" xml:space="preserve">
+    <value>Список исполнений</value>
+  </data>
+  <data name="Pdm_459" xml:space="preserve">
+    <value>Поиск состава</value>
+  </data>
+  <data name="Pdm_461" xml:space="preserve">
+    <value>Поиск применяемости</value>
+  </data>
+  <data name="Pdm_460" xml:space="preserve">
+    <value>Получение состава или развёрнутого состава</value>
+  </data>
+  <data name="Pdm_463" xml:space="preserve">
+    <value>создание объекта</value>
+  </data>
+  <data name="Pdm_462" xml:space="preserve">
+    <value>Получение применяемости, развёрнутой применяемости</value>
+  </data>
+  <data name="Pdm_465" xml:space="preserve">
+    <value>У базового исполнения "{0}" не найден атрибут "Обозначение"</value>
+  </data>
+  <data name="Pdm_464" xml:space="preserve">
+    <value>изменение объекта</value>
+  </data>
+  <data name="Pdm_467" xml:space="preserve">
+    <value>Создать группу заменителей</value>
+  </data>
+  <data name="Pdm_466" xml:space="preserve">
+    <value>Ошибка синхронизации обозначения</value>
+  </data>
+  <data name="Pdm_469" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Pdm_468" xml:space="preserve">
+    <value>Сделать заменитель актуальным</value>
+  </data>
+  <data name="Pdm_434" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_435" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Pdm_430" xml:space="preserve">
+    <value>Выбор из незадействованных экземпляров</value>
+  </data>
+  <data name="Pdm_431" xml:space="preserve">
+    <value>Выбор из активной партии</value>
+  </data>
+  <data name="Pdm_432" xml:space="preserve">
+    <value>В базе данных найдены незадействованные экземпляры 
+ </value>
+  </data>
+  <data name="Pdm_433" xml:space="preserve">
+    <value>В базе данных найдены активные партии 
+ </value>
+  </data>
+  <data name="Pdm_438" xml:space="preserve">
+    <value>Ошибка: Для {0} не определён тип выпускаемого объекта</value>
+  </data>
+  <data name="Pdm_439" xml:space="preserve">
+    <value>Ошибка: Не определено количество в связи между '{0}' (номер {1}) и '{2}' (номер {3})</value>
+  </data>
+  <data name="Pdm_443" xml:space="preserve">
+    <value>{0} номер {1}</value>
+  </data>
+  <data name="Pdm_442" xml:space="preserve">
+    <value>Ошибка: Для {0} не определен тип учета в производстве</value>
+  </data>
+  <data name="Pdm_441" xml:space="preserve">
+    <value>{0} (номер {1}) ... OK</value>
+  </data>
+  <data name="Pdm_440" xml:space="preserve">
+    <value>Ошибка: Экземпляр объекта '{0}' (номер {1}) не может входить в партию объекта '{2}' (номер {3})</value>
+  </data>
+  <data name="Pdm_447" xml:space="preserve">
+    <value>На сервере приложений не загружен плагин "Intermech.Pdm.Server".
+Работа клиентского плагина "Intermech.Pdm" будет заблокирована.</value>
+  </data>
+  <data name="Pdm_449" xml:space="preserve">
+    <value>Не удалось инициализировать эмулятор Search API! 
+Плагин был загружен не при старте приложения.</value>
+  </data>
+  <data name="Pdm_448" xml:space="preserve">
+    <value>Не удалось инициализировать эмулятор Search API!
+Служба управляемого COM-сервера не найдена в списке служб приложения.</value>
+  </data>
+  <data name="Pdm_414" xml:space="preserve">
+    <value>
+Выберите одну из них, либо для создания 
+новой партии нажмите кнопку "Отмена".</value>
+  </data>
+  <data name="Pdm_412" xml:space="preserve">
+    <value>В базе данных найдены активные партии 
+ </value>
+  </data>
+  <data name="Pdm_413" xml:space="preserve">
+    <value>
+Выберите один из них, либо для создания 
+нового экземпляра нажмите кнопку "Отмена".</value>
+  </data>
+  <data name="Pdm_410" xml:space="preserve">
+    <value>Выбор из активных партий</value>
+  </data>
+  <data name="Pdm_411" xml:space="preserve">
+    <value>В базе данных найдены незадействованные экземпляры
+ </value>
+  </data>
+  <data name="Pdm_425" xml:space="preserve">
+    <value>Ошибка при загрузке формы редактирования</value>
+  </data>
+  <data name="Pdm_424" xml:space="preserve">
+    <value>Не найдена форма редактирования для типа объектов "{0}"</value>
+  </data>
+  <data name="Pdm_427" xml:space="preserve">
+    <value>Проверка</value>
+  </data>
+  <data name="Pdm_426" xml:space="preserve">
+    <value>Ошибка при сохранении формы редактирования</value>
+  </data>
+  <data name="Pdm_421" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_420" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_423" xml:space="preserve">
+    <value>Редактирование объекта</value>
+  </data>
+  <data name="Pdm_422" xml:space="preserve">
+    <value>Создание нового объекта</value>
+  </data>
+  <data name="Pdm_429" xml:space="preserve">
+    <value>(идентификатор версии {0})</value>
+  </data>
+  <data name="Pdm_428" xml:space="preserve">
+    <value>Проверка дерева состава</value>
+  </data>
+  <data name="Pdm_407" xml:space="preserve">
+    <value>Ошибка при сохранении формы редактирования</value>
+  </data>
+  <data name="Pdm_406" xml:space="preserve">
+    <value>Ошибка при загрузке формы редактирования</value>
+  </data>
+  <data name="Pdm_405" xml:space="preserve">
+    <value>Не найдена форма редактирования для типа объектов "{0}"</value>
+  </data>
+  <data name="Pdm_404" xml:space="preserve">
+    <value>Создание нового объекта</value>
+  </data>
+  <data name="Pdm_403" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_402" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_401" xml:space="preserve">
+    <value>Применяемость</value>
+  </data>
+  <data name="Pdm_400" xml:space="preserve">
+    <value>Состав</value>
+  </data>
+  <data name="Pdm_409" xml:space="preserve">
+    <value>Выбор из незадействованных экземпляров</value>
+  </data>
+  <data name="Pdm_408" xml:space="preserve">
+    <value>(идентификатор версии {0})</value>
+  </data>
+  <data name="Pdm_498" xml:space="preserve">
+    <value>Выберите документы</value>
+  </data>
+  <data name="Pdm_499" xml:space="preserve">
+    <value>{0} ({1}) ... OK</value>
+  </data>
+  <data name="Pdm_496" xml:space="preserve">
+    <value>Функция не поддерживается</value>
+  </data>
+  <data name="Pdm_494" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов документа</value>
+  </data>
+  <data name="Pdm_492" xml:space="preserve">
+    <value>Документ не определён функцией OpenDocument()</value>
+  </data>
+  <data name="Pdm_493" xml:space="preserve">
+    <value>Главное исполнение не найдено</value>
+  </data>
+  <data name="Pdm_490" xml:space="preserve">
+    <value>Документ по значению атрибута "Идентификатор документа", равному {0} не найден</value>
+  </data>
+  <data name="Pdm_491" xml:space="preserve">
+    <value>Отсутствует сервис IArticleService</value>
+  </data>
+  <data name="Pdm_489" xml:space="preserve">
+    <value>Атрибут не найден среди атрибутов изделия</value>
+  </data>
+  <data name="Pdm_488" xml:space="preserve">
+    <value>Изделие не содержит атрибут "Идентификатор изделия"</value>
+  </data>
+  <data name="Pdm_487" xml:space="preserve">
+    <value>Изделие по значению атрибута "Идентификатор изделия", равному {0} не найдено</value>
+  </data>
+  <data name="Pdm_486" xml:space="preserve">
+    <value>Изделие не определено функцией OpenArticle().</value>
+  </data>
+  <data name="Pdm_485" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="Pdm_484" xml:space="preserve">
+    <value>Контекст состава</value>
+  </data>
+  <data name="Pdm_483" xml:space="preserve">
+    <value>Актуальные заменители</value>
+  </data>
+  <data name="Pdm_482" xml:space="preserve">
+    <value>Заполнить первичную применяемость</value>
+  </data>
+  <data name="Pdm_481" xml:space="preserve">
+    <value>Типы выделенных объектов не содержат общих типов связей.</value>
+  </data>
+  <data name="Pdm_480" xml:space="preserve">
+    <value>Для сравнения составов необходимы как минимум два объекта</value>
+  </data>
+  <data name="Pdm_3" xml:space="preserve">
+    <value>Проверка состава</value>
+  </data>
+  <data name="Pdm_2" xml:space="preserve">
+    <value>Создание дерева экземпляров</value>
+  </data>
+  <data name="Pdm_1" xml:space="preserve">
+    <value>(ID версии {0})</value>
+  </data>
+  <data name="Pdm_7" xml:space="preserve">
+    <value>Стандартное изделие (ID версии {0})</value>
+  </data>
+  <data name="Pdm_6" xml:space="preserve">
+    <value>Сборочная единица (ID версии {0})</value>
+  </data>
+  <data name="Pdm_5" xml:space="preserve">
+    <value>Партия не может включать в себя экземпляры либо партии изделий.</value>
+  </data>
+  <data name="Pdm_4" xml:space="preserve">
+    <value>У связи с родительским изделием не установлено значение атрибута "Количество".</value>
+  </data>
+  <data name="Pdm_9" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Pdm_8" xml:space="preserve">
+    <value>{0} из {1}</value>
+  </data>
+  <data name="Pdm_sync_attrCaption" xml:space="preserve">
+    <value>Настройка синхронизации атрибутов документов и изделий</value>
+  </data>
+</root>

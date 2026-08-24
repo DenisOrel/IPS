@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IMH_MaterialFavourites_Changed_Msg" xml:space="preserve">
+    <value>Список избранных элементов был изменен. Сохранить изменения?</value>
+  </data>
+  <data name="IMH_SearchCoatingNode_Caption" xml:space="preserve">
+    <value>Поиск покрытий</value>
+  </data>
+  <data name="IMH_Search_GetIndexes_Error" xml:space="preserve">
+    <value>Невозможно получить список индексов. Не был получен сервис для работы с индексами.</value>
+  </data>
+  <data name="IMH_DeleteString_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенную строку?</value>
+  </data>
+  <data name="IMH_ServiceError_IProtectionKey" xml:space="preserve">
+    <value>Ошибка получения службы IProtectionKey.</value>
+  </data>
+  <data name="IMH_RootNode_Caption" xml:space="preserve">
+    <value>Марочник материалов</value>
+  </data>
+  <data name="IMH_SelectCatalogIMBASE" xml:space="preserve">
+    <value>Выберите каталог Imbase</value>
+  </data>
+  <data name="IMH_DataChanged" xml:space="preserve">
+    <value>Изменение данных</value>
+  </data>
+  <data name="IMH_MaterialsCatalogName" xml:space="preserve">
+    <value>Каталог материалов</value>
+  </data>
+  <data name="IMH_DeleteProperties" xml:space="preserve">
+    <value>Удаление свойств</value>
+  </data>
+  <data name="IMH_VarnishHandbookNode_Caption" xml:space="preserve">
+    <value>Лакокрасочные материалы</value>
+  </data>
+  <data name="IMH_Row_Break" xml:space="preserve">
+    <value>Разделить</value>
+  </data>
+  <data name="IMH_SelectOilProperties" xml:space="preserve">
+    <value>Выберите свойства смазочного материала</value>
+  </data>
+  <data name="IMH_Internal_External_Coating" xml:space="preserve">
+    <value>Внутр.-наружное покрытие</value>
+  </data>
+  <data name="IMH_DeleteProperties_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить свойства у объекта?</value>
+  </data>
+  <data name="IMH_DeleteRecord_Caption" xml:space="preserve">
+    <value>Удаление записи</value>
+  </data>
+  <data name="IMH_LoadError_Msg" xml:space="preserve">
+    <value>Не загружен модуль IMBASE. Марочник материалов не может быть загружен без IMBASE.</value>
+  </data>
+  <data name="IMH_DeleteRecord_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенную запись?</value>
+  </data>
+  <data name="IMH_Destination" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
+  <data name="IMH_MaterialSubstitutes_SaveDialog_Msg" xml:space="preserve">
+    <value>Cписок заменителей материала был изменен. Сохранить изменения?</value>
+  </data>
+  <data name="IMH_RevertChanges_Msg" xml:space="preserve">
+    <value>Вы действительно хотите отменить сделанные изменения?</value>
+  </data>
+  <data name="IMH_BaseCatalog_Description" xml:space="preserve">
+    <value>Каталог IMBASE, структура которого используется для узла справочника материалов "Материалы".
+По умолчанию используется каталог "Марочник материалов".</value>
+  </data>
+  <data name="IMH_Internal_Coating" xml:space="preserve">
+    <value>Внутреннее покрытие</value>
+  </data>
+  <data name="IMH_SphereOfUseField" xml:space="preserve">
+    <value>Поле сферы использования</value>
+  </data>
+  <data name="IMH_BackgroundTask_Error" xml:space="preserve">
+    <value>Выполнение фоновой задачи прервано из-за ошибки.</value>
+  </data>
+  <data name="IMH_NullServerPlugin" xml:space="preserve">
+    <value>Не загружен серверный модуль марочника материалов.</value>
+  </data>
+  <data name="IMH_SelectaCoating" xml:space="preserve">
+    <value>Выбор покрытия</value>
+  </data>
+  <data name="IMH_SystemProperties_CategoryName_Folders" xml:space="preserve">
+    <value>Описание корневых папок</value>
+  </data>
+  <data name="IMH_Coating_Preferred_Destination" xml:space="preserve">
+    <value>Покрытие - преимущ. назначения</value>
+  </data>
+  <data name="IMH_Surface_Materials" xml:space="preserve">
+    <value>Материалы поверхности</value>
+  </data>
+  <data name="IMH_Move_Left" xml:space="preserve">
+    <value>Влево</value>
+  </data>
+  <data name="IMH_Move_Down" xml:space="preserve">
+    <value>Вниз</value>
+  </data>
+  <data name="IMH_Coating_Color" xml:space="preserve">
+    <value>Цвета покрытия</value>
+  </data>
+  <data name="IMH_Glue_Search" xml:space="preserve">
+    <value>Поиск клея</value>
+  </data>
+  <data name="IMH_SystemSettings_SubstitutesColumn_Empty" xml:space="preserve">
+    <value>В настройках марочника материалов, не заполнено наименование поля заменителя материала.</value>
+  </data>
+  <data name="IMH_SelectaMaterial" xml:space="preserve">
+    <value>Выбор материала</value>
+  </data>
+  <data name="IMH_Move_Up" xml:space="preserve">
+    <value>Вверх</value>
+  </data>
+  <data name="IMH_Save_Error_Msg" xml:space="preserve">
+    <value>Ошибка сохранения данных марочника материалов.
+Не получен cервис для сохранения настроек. Изменения сохранены не будут.</value>
+  </data>
+  <data name="IMH_SelectObjectProperties" xml:space="preserve">
+    <value>Выберите свойства объекта</value>
+  </data>
+  <data name="IMH_MaterialsPropertiesTableName" xml:space="preserve">
+    <value>Свойства материалов</value>
+  </data>
+  <data name="IMH_SubstitutesField" xml:space="preserve">
+    <value>Поле заменителя</value>
+  </data>
+  <data name="IMH_ConditionUse_BaseCoatings" xml:space="preserve">
+    <value>Условия эксплацтации - Базовые покрытия</value>
+  </data>
+  <data name="IMH_Search_Standart_Asortment" xml:space="preserve">
+    <value>\\Сортамент\{0}\</value>
+  </data>
+  <data name="IMH_GlueFolder_Description" xml:space="preserve">
+    <value>Папки IMBASE, структура которой используется для узла "Справочник клеев".
+По умолчанию используется папка "Клеи" каталога "Материалы".</value>
+  </data>
+  <data name="IMH_Coating_And_Color" xml:space="preserve">
+    <value>Покрытие - цвет</value>
+  </data>
+  <data name="IMH_Search_Material" xml:space="preserve">
+    <value>наименовании материала</value>
+  </data>
+  <data name="IMH_Glue_Material_First" xml:space="preserve">
+    <value>Первый склеиваемый материал</value>
+  </data>
+  <data name="IMH_PropertiesChanged_Caption" xml:space="preserve">
+    <value>Общие свойства изменены</value>
+  </data>
+  <data name="IMH.InRange" xml:space="preserve">
+    <value>&gt;&lt; (в диапазоне)</value>
+  </data>
+  <data name="IMH.InList" xml:space="preserve">
+    <value>(...) (в списке)</value>
+  </data>
+  <data name="IMH_CoatingMaterialsTableName" xml:space="preserve">
+    <value>Покрытие - материалы</value>
+  </data>
+  <data name="IMH_AdditionalInformation" xml:space="preserve">
+    <value>Дополнительная информация</value>
+  </data>
+  <data name="IMH_Search_Glues" xml:space="preserve">
+    <value>Поиск клея по склеиваемым материалам</value>
+  </data>
+  <data name="IMH_DeleteColumn_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенную колонку?</value>
+  </data>
+  <data name="IMH_CoatingFolderName" xml:space="preserve">
+    <value>Папка покрытий</value>
+  </data>
+  <data name="IMH_EmptyPropertiesCollection_Msg" xml:space="preserve">
+    <value>Не удалось получить коллекцию объектов, в которых хранятся настройки материалов</value>
+  </data>
+  <data name="IMH_Varnish_EmptyData_Msg" xml:space="preserve">
+    <value>Не загружены данные для работы с поиском лакокрасочного материала.
+Проверьте настройки марочника материалов.</value>
+  </data>
+  <data name="IMH_CoatingTermsOfUseTableName" xml:space="preserve">
+    <value>Покрытие - условие эксплуатации</value>
+  </data>
+  <data name="IMH_MaterialName_FieldName" xml:space="preserve">
+    <value>Наименования материалов</value>
+  </data>
+  <data name="IMH_SaveChanges_Caption" xml:space="preserve">
+    <value>Сохранение изменений</value>
+  </data>
+  <data name="IMH_Move_Right" xml:space="preserve">
+    <value>Вправо</value>
+  </data>
+  <data name="IMH_MainPropertiesChanged_Caption" xml:space="preserve">
+    <value>Основные свойства изменены</value>
+  </data>
+  <data name="IMH.Equal" xml:space="preserve">
+    <value>= (равно)</value>
+  </data>
+  <data name="IMH.Great" xml:space="preserve">
+    <value>&gt; (больше)</value>
+  </data>
+  <data name="IMH_IndexingService_NotFound" xml:space="preserve">
+    <value>Ошибка сохранения данных марочника материалов.
+Не получен сервис для индексирования данных. Изменения сохранены не будут.</value>
+  </data>
+  <data name="IMH_Search_Standart_Materials" xml:space="preserve">
+    <value>\\Материалы\{0}\</value>
+  </data>
+  <data name="IMH_OilFolder_Description" xml:space="preserve">
+    <value>Папки IMBASE, структура которой используется для узла "Масла и смазки". По умолчанию используется папка "Масла и смазки" каталога "Материалы".</value>
+  </data>
+  <data name="IMH_SurfaceMaterialsField" xml:space="preserve">
+    <value>Поле материала поверхности</value>
+  </data>
+  <data name="IMH_MaterialSubstitutesTableName" xml:space="preserve">
+    <value>Заменители материалов</value>
+  </data>
+  <data name="IMH_OilFolderName" xml:space="preserve">
+    <value>Папка масел и смазок</value>
+  </data>
+  <data name="IMH_MinMaxValue_Error" xml:space="preserve">
+    <value>Минимальное значение не может быть меньше максимального</value>
+  </data>
+  <data name="IMH_Glue_MaterialGroups_TableName" xml:space="preserve">
+    <value>Группы материалов для клеев</value>
+  </data>
+  <data name="IMH_Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="IMH_Glues" xml:space="preserve">
+    <value>Клеи</value>
+  </data>
+  <data name="IMH_AdditionCatalogName" xml:space="preserve">
+    <value>Каталог дополнительных материалов</value>
+  </data>
+  <data name="IMH_Color" xml:space="preserve">
+    <value>Цвет</value>
+  </data>
+  <data name="IMH_FilterError_Caption" xml:space="preserve">
+    <value>Ошибка задания фильтра</value>
+  </data>
+  <data name="IMH_DisplayAllRecords_Name" xml:space="preserve">
+    <value>Отображать все записи</value>
+  </data>
+  <data name="IMH_SpheresOfUse" xml:space="preserve">
+    <value>Сферы использования</value>
+  </data>
+  <data name="IMH_BaseCatalogName" xml:space="preserve">
+    <value>Базовый каталог материалов</value>
+  </data>
+  <data name="IMH_Sort_Descending" xml:space="preserve">
+    <value>По убыванию</value>
+  </data>
+  <data name="IMH.Less" xml:space="preserve">
+    <value>&lt; (меньше)</value>
+  </data>
+  <data name="IMH_PropertiesChanged_Msg" xml:space="preserve">
+    <value>Общие свойства материала были изменены. Сохранить изменения?</value>
+  </data>
+  <data name="IMH_DuplicationRecord_Msg" xml:space="preserve">
+    <value>Запись с выбранными параметрами уже существует.</value>
+  </data>
+  <data name="IMH_SurfaceMaterial" xml:space="preserve">
+    <value>Материал поверхности</value>
+  </data>
+  <data name="IMH_StandardNode_Caption" xml:space="preserve">
+    <value>Нормативные документы</value>
+  </data>
+  <data name="IMH_SortamentFolderName" xml:space="preserve">
+    <value>Папка сортаментов</value>
+  </data>
+  <data name="IMH_SystemCatalogName" xml:space="preserve">
+    <value>Системный каталог</value>
+  </data>
+  <data name="IMH_Pref_Destination" xml:space="preserve">
+    <value>Преимущественные назначения</value>
+  </data>
+  <data name="IMH_SystemProperties_CategoryName_Attributes" xml:space="preserve">
+    <value>Описание используемых атрибутов</value>
+  </data>
+  <data name="IMH_GluesHandbookNode_Caption" xml:space="preserve">
+    <value>Клеи</value>
+  </data>
+  <data name="IMH_MaterialsHandbookNode_Caption" xml:space="preserve">
+    <value>Материалы</value>
+  </data>
+  <data name="IMH_AssortmentFolder_Description" xml:space="preserve">
+    <value>Папки IMBASE, структура которой используется для узла справочника материалов "Сортамент".
+По умолчанию используется папка "Сортамент" каталога "Материалы".</value>
+  </data>
+  <data name="IMH.NotEqual" xml:space="preserve">
+    <value>!= (не равно)</value>
+  </data>
+  <data name="IMH_Coating_Conditions" xml:space="preserve">
+    <value>Условие эксплуатации (УЭ)</value>
+  </data>
+  <data name="IMH_Glues_EmptyData_Msg" xml:space="preserve">
+    <value>Не загружены данные для работы с поиском клеев.
+Проверьте настройки марочника материалов.</value>
+  </data>
+  <data name="IMH_FilterError_Msg" xml:space="preserve">
+    <value>В строке '{0}' в позиции {1} указан недопустимый символ '{2}'</value>
+  </data>
+  <data name="IMH_MaterialsGroupsTableName" xml:space="preserve">
+    <value>Группы материалов</value>
+  </data>
+  <data name="IMH_CoatingsProperties" xml:space="preserve">
+    <value>Свойства покрытий</value>
+  </data>
+  <data name="IMH_DetailMaterialField" xml:space="preserve">
+    <value>Поле материала детали</value>
+  </data>
+  <data name="IMH_MaterialsNode_Caption" xml:space="preserve">
+    <value>Материалы</value>
+  </data>
+  <data name="IMH_External_Coating_With_Condidtion_Use" xml:space="preserve">
+    <value>Наружное покрытие с условием эксплуатации</value>
+  </data>
+  <data name="IMH_Null_Indexing_Service" xml:space="preserve">
+    <value>Невозможно получить сервис для работы с данными параметров.</value>
+  </data>
+  <data name="IMH_Search_Materials_RootFolder" xml:space="preserve">
+    <value>\\Материалы</value>
+  </data>
+  <data name="IMH_TermsOfUseTableName" xml:space="preserve">
+    <value>Условия эксплуатации</value>
+  </data>
+  <data name="IMH_GetObjectError_Msg" xml:space="preserve">
+    <value>Не удалось получить объект с идентификатором {0}</value>
+  </data>
+  <data name="IMH_VarnishFolderName" xml:space="preserve">
+    <value>Папка лакокрасочных материалов</value>
+  </data>
+  <data name="IMH_VarnishFolder_Description" xml:space="preserve">
+    <value>Папки IMBASE, структура которой используется для узла "Лакокрасочные материалы". По умолчанию используется папка "Лакокрасочные материалы" каталога "Материалы".</value>
+  </data>
+  <data name="IMH_Sort_Ascending" xml:space="preserve">
+    <value>По возрастанию</value>
+  </data>
+  <data name="IMH_SaveChangedData_Msg" xml:space="preserve">
+    <value>Данные были изменены. Сохранить изменения?</value>
+  </data>
+  <data name="IMH_RootNode_CatalogsMaterials" xml:space="preserve">
+    <value>Каталоги и материалы</value>
+  </data>
+  <data name="IMH_Indexing_Caption" xml:space="preserve">
+    <value>Получение данных</value>
+  </data>
+  <data name="IMH_SystemSettings_PageName" xml:space="preserve">
+    <value>Настройки марочника материалов</value>
+  </data>
+  <data name="IMH_DetailsMaterial" xml:space="preserve">
+    <value>Материал детали</value>
+  </data>
+  <data name="IMH_Row_Combine" xml:space="preserve">
+    <value>Объединить</value>
+  </data>
+  <data name="IMH_Search_Material_Caption" xml:space="preserve">
+    <value>Поиск материала</value>
+  </data>
+  <data name="IMH_Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="IMH_Glues_EmptyData_Caption" xml:space="preserve">
+    <value>Отсутствуют необходимые данные</value>
+  </data>
+  <data name="IMH_SelectaGlue" xml:space="preserve">
+    <value>Выбор клея</value>
+  </data>
+  <data name="IMH_DeleteData_Msg" xml:space="preserve">
+    <value>Данные будут удалены. Продолжить?</value>
+  </data>
+  <data name="IMH_CoatingFolder_Description" xml:space="preserve">
+    <value>Папки IMBASE, структура которой используется для узла справочника покрытий "Виды покрытий".
+По умолчанию используется папка "Покрытия" каталога "Материалы".</value>
+  </data>
+  <data name="IMH.NotInList" xml:space="preserve">
+    <value>)...( (вне списка)</value>
+  </data>
+  <data name="IMH_Search_Profiles" xml:space="preserve">
+    <value>названии профиля</value>
+  </data>
+  <data name="IMH_Coating_Varnish" xml:space="preserve">
+    <value>Покрытие (краска, лак)</value>
+  </data>
+  <data name="IMH_ObjectField" xml:space="preserve">
+    <value>Поле объекта</value>
+  </data>
+  <data name="IMH_CreateObjectError_Msg" xml:space="preserve">
+    <value>Не удалось создать объект для сохранения настроек</value>
+  </data>
+  <data name="IMH_AddToMaterialFavourites" xml:space="preserve">
+    <value>Добавить в избранное</value>
+  </data>
+  <data name="IMH_SystemProperties_CategoryName_Catalogs" xml:space="preserve">
+    <value>Описание внутренних имен каталогов IMBASE</value>
+  </data>
+  <data name="IMH_MaterialField" xml:space="preserve">
+    <value>Поле материала</value>
+  </data>
+  <data name="IMH_MaterialSubstitutes" xml:space="preserve">
+    <value>Заменители материала</value>
+  </data>
+  <data name="IMH_CoatingsHandbookNode_Caption" xml:space="preserve">
+    <value>Покрытия</value>
+  </data>
+  <data name="IMH_Varnish_AdditionalPropsPage_Surface_Description" xml:space="preserve">
+    <value>Поверхность, на которую наносится покрытие</value>
+  </data>
+  <data name="IMH_AdditionCatalog_Description" xml:space="preserve">
+    <value>Каталог IMBASE, структура которого используется для узла справочника материалов "Профили".
+По умолчанию используется каталог "Виды заготовок".</value>
+  </data>
+  <data name="IMH_SelWin_ObjectTypes" xml:space="preserve">
+    <value>Допустимые типы объектов</value>
+  </data>
+  <data name="IMH_GlueFolderName" xml:space="preserve">
+    <value>Папка клеев</value>
+  </data>
+  <data name="IMH_Coating" xml:space="preserve">
+    <value>Покрытие</value>
+  </data>
+  <data name="IMH_SelectObject" xml:space="preserve">
+    <value>Выбор объекта</value>
+  </data>
+  <data name="IMH_SystemProperties_CategoryName_DisplaySettings" xml:space="preserve">
+    <value>Настройки отображения</value>
+  </data>
+  <data name="IMH_SelectSubstitute" xml:space="preserve">
+    <value>Выберите заменитель материала</value>
+  </data>
+  <data name="IMH_OilHandbookNode_Caption" xml:space="preserve">
+    <value>Масла и смазки</value>
+  </data>
+  <data name="IMH.OutRangeEq" xml:space="preserve">
+    <value>&gt;=&lt; (вне диапазона или равно)</value>
+  </data>
+  <data name="IMH_Color_RAL_Name" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="IMH_SearchProfileNode_Caption" xml:space="preserve">
+    <value>Поиск профиля</value>
+  </data>
+  <data name="IMH_ColorOfVarnishes_Attribute_Name" xml:space="preserve">
+    <value>Цвет лакокрасочных материалов</value>
+  </data>
+  <data name="MaterialsHandbook_2" xml:space="preserve">
+    <value>Система\Марочник материалов</value>
+  </data>
+  <data name="IMH_DeleteData_Caption" xml:space="preserve">
+    <value>Удаление данных</value>
+  </data>
+  <data name="IMH.LessOrEqual" xml:space="preserve">
+    <value>&lt;= (меньше или равно)</value>
+  </data>
+  <data name="IMH_Search_Standart" xml:space="preserve">
+    <value>названии ГОСТа</value>
+  </data>
+  <data name="IMH_Condition_Use" xml:space="preserve">
+    <value>Условия эксплаутации</value>
+  </data>
+  <data name="IMH_Substitutes_Settings" xml:space="preserve">
+    <value>Настройки заменителей материалов</value>
+  </data>
+  <data name="IMH_MaterialProperties" xml:space="preserve">
+    <value>Свойства материала</value>
+  </data>
+  <data name="IMH.OutRange" xml:space="preserve">
+    <value>&lt;&gt; (вне диапазона)</value>
+  </data>
+  <data name="IMH_CoatingsVarietiesNode_Caption" xml:space="preserve">
+    <value>Виды покрытий</value>
+  </data>
+  <data name="IMH_Indexing" xml:space="preserve">
+    <value>Сбор данных параметров поиска</value>
+  </data>
+  <data name="IMH_Coating_Instructions" xml:space="preserve">
+    <value>Доп. указания</value>
+  </data>
+  <data name="IMH_SurfaceMaterialsTableName" xml:space="preserve">
+    <value>Материалы поверхностей</value>
+  </data>
+  <data name="IMH_Varnish_Search" xml:space="preserve">
+    <value>Поиск лакокрасочного материала</value>
+  </data>
+  <data name="IMH_Coating_Purpose" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
+  <data name="IMH_Search_Profiles_RootFolder" xml:space="preserve">
+    <value>\\Профили</value>
+  </data>
+  <data name="IMH_Object" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="IMH_SaveError" xml:space="preserve">
+    <value>Ошибка сохранения</value>
+  </data>
+  <data name="IMH_SaveChanges_Msg" xml:space="preserve">
+    <value>Данные в таблице были изменены. Сохранить изменения?</value>
+  </data>
+  <data name="IMH.GreatOrEqual" xml:space="preserve">
+    <value>&gt;= (больше или равно)</value>
+  </data>
+  <data name="IMH_SystemProperties_CategoryName_Tables" xml:space="preserve">
+    <value>Используемые таблицы</value>
+  </data>
+  <data name="IMH_DeletePage_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить раздел со всем содержимым?</value>
+  </data>
+  <data name="IMH_CoatingSphereOfUseTableName" xml:space="preserve">
+    <value>Покрытие - сфера использования</value>
+  </data>
+  <data name="IMH_CoatingField" xml:space="preserve">
+    <value>Поле покрытия</value>
+  </data>
+  <data name="IMH_CoatingGroup" xml:space="preserve">
+    <value>Группа покрытий</value>
+  </data>
+  <data name="IMH_CoatingClass" xml:space="preserve">
+    <value>Класс покрытий</value>
+  </data>
+  <data name="IMH_MainPropertiesChanged_Msg" xml:space="preserve">
+    <value>Основные свойства материала были изменены. Сохранить изменения?</value>
+  </data>
+  <data name="IMH_Search_Assortment_RootFolder" xml:space="preserve">
+    <value>\\Сортамент</value>
+  </data>
+  <data name="IMH_Color_RAL" xml:space="preserve">
+    <value>Цвета по РАЛ</value>
+  </data>
+  <data name="IMH_DeleteTable_Msg" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенную таблицу?</value>
+  </data>
+  <data name="IMH_ParametersSettings" xml:space="preserve">
+    <value>Настройка параметров</value>
+  </data>
+  <data name="IMH_ProfilesNode_Caption" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="IMH_GlueField" xml:space="preserve">
+    <value>Поле клея</value>
+  </data>
+  <data name="IMH_TermsOfUseField" xml:space="preserve">
+    <value>Поле условий эксплуатации</value>
+  </data>
+  <data name="IMH_ImbaseTable_Data_Error" xml:space="preserve">
+    <value>Не удалось получить данные таблицы</value>
+  </data>
+  <data name="IMH_BaseMaterial_Attribute_Name" xml:space="preserve">
+    <value>Основной материал</value>
+  </data>
+  <data name="IMH_AssortmentsNode_Caption" xml:space="preserve">
+    <value>Сортамент</value>
+  </data>
+  <data name="IMH_DuplicationRecord_Caption" xml:space="preserve">
+    <value>Дублирование записи</value>
+  </data>
+  <data name="IMH_Search_Assortment_Caption" xml:space="preserve">
+    <value>Поиск сортамента</value>
+  </data>
+  <data name="IMH_Base_Coating" xml:space="preserve">
+    <value>Базовое покрытие</value>
+  </data>
+  <data name="IMH_GetAttributeError_Msg" xml:space="preserve">
+    <value>Не удалось получить у объекта атрибут "Свойства материала"</value>
+  </data>
+  <data name="IMH_Glues_AdditionalPage_Caption" xml:space="preserve">
+    <value>Склеиваемые материалы</value>
+  </data>
+  <data name="IMH_CoatingsVarieties" xml:space="preserve">
+    <value>Виды покрытий</value>
+  </data>
+  <data name="IMH.InRangeEq" xml:space="preserve">
+    <value>&gt;=&lt; (в диапазоне или равно)</value>
+  </data>
+  <data name="IMH_KeyProtection_Error" xml:space="preserve">
+    <value>Ошибка ключа защиты для модуля "Клиентская часть марочника материалов".</value>
+  </data>
+  <data name="IMH_DisplayAllRecords_Descriptions" xml:space="preserve">
+    <value>Включение/откллючение фильтра записей с отрицательной применяемостью</value>
+  </data>
+  <data name="IMH_RollbackChanges" xml:space="preserve">
+    <value>Изменения сохранены не будут.</value>
+  </data>
+  <data name="IMH_RepetitionItem_Msg" xml:space="preserve">
+    <value>Элемент с таким наименованием уже существует.</value>
+  </data>
+  <data name="IMH_Glue_Material_Second" xml:space="preserve">
+    <value>Второй склеиваемый материал</value>
+  </data>
+  <data name="IMH_SelectGluesProperties" xml:space="preserve">
+    <value>Выберите свойства клея</value>
+  </data>
+  <data name="IMH_Search_Assortment" xml:space="preserve">
+    <value>сортаменте</value>
+  </data>
+  <data name="IMH_SelectMaterial" xml:space="preserve">
+    <value>Выберите материал</value>
+  </data>
+  <data name="IMH_SystemSettings_MaterialColumn_Empty" xml:space="preserve">
+    <value>В настройках марочника материалов, не заполнено наименование поля материала.</value>
+  </data>
+</root>

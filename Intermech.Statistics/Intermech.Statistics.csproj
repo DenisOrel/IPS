@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Statistics.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB4BDC9F-215D-45EB-9505-78E6BDD2AD9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Statistics</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions">
+      <HintPath>lib\Intermech.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Extensions.WinForms">
+      <HintPath>lib\Intermech.Extensions.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Workflow">
+      <HintPath>lib\Intermech.Interfaces.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Signs">
+      <HintPath>lib\Intermech.Signs.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Statistics.Interfaces">
+      <HintPath>lib\Intermech.Statistics.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Workflow.Design">
+      <HintPath>lib\Intermech.Workflow.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OxyPlot\CodeGenerationAttribute.cs" />
+    <Compile Include="OxyPlot\CodeGenerator.cs" />
+    <Compile Include="OxyPlot\CodeGeneratorStringExtensions.cs" />
+    <Compile Include="OxyPlot\ICodeGenerating.cs" />
+    <Compile Include="OxyPlot\DataPoint.cs" />
+    <Compile Include="OxyPlot\IDataPointProvider.cs" />
+    <Compile Include="OxyPlot\MarkerType.cs" />
+    <Compile Include="OxyPlot\PlotLength.cs" />
+    <Compile Include="OxyPlot\PlotLengthUnit.cs" />
+    <Compile Include="OxyPlot\ControllerBase.cs" />
+    <Compile Include="OxyPlot\ControllerExtensions.cs" />
+    <Compile Include="OxyPlot\CursorType.cs" />
+    <Compile Include="OxyPlot\DelegateViewCommand`1.cs" />
+    <Compile Include="OxyPlot\Element.cs" />
+    <Compile Include="OxyPlot\ElementCollectionChangedEventArgs`1.cs" />
+    <Compile Include="OxyPlot\ElementCollection`1.cs" />
+    <Compile Include="OxyPlot\HitTestArguments.cs" />
+    <Compile Include="OxyPlot\HitTestResult.cs" />
+    <Compile Include="OxyPlot\IController.cs" />
+    <Compile Include="OxyPlot\InputCommandBinding.cs" />
+    <Compile Include="OxyPlot\IView.cs" />
+    <Compile Include="OxyPlot\IViewCommand.cs" />
+    <Compile Include="OxyPlot\IViewCommand`1.cs" />
+    <Compile Include="OxyPlot\ManipulatorBase`1.cs" />
+    <Compile Include="OxyPlot\Model.cs" />
+    <Compile Include="OxyPlot\SelectableElement.cs" />
+    <Compile Include="OxyPlot\Selection.cs" />
+    <Compile Include="OxyPlot\SelectionMode.cs" />
+    <Compile Include="OxyPlot\UIElement.cs" />
+    <Compile Include="OxyPlot\BmpDecoder.cs" />
+    <Compile Include="OxyPlot\BmpEncoder.cs" />
+    <Compile Include="OxyPlot\BmpEncoderOptions.cs" />
+    <Compile Include="OxyPlot\Arrays.cs" />
+    <Compile Include="OxyPlot\BitReader.cs" />
+    <Compile Include="OxyPlot\ByteBitReader.cs" />
+    <Compile Include="OxyPlot\CanonicalCode.cs" />
+    <Compile Include="OxyPlot\CircularDictionary.cs" />
+    <Compile Include="OxyPlot\CodeTree.cs" />
+    <Compile Include="OxyPlot\Deflate.cs" />
+    <Compile Include="OxyPlot\InternalNode.cs" />
+    <Compile Include="OxyPlot\Leaf.cs" />
+    <Compile Include="OxyPlot\Node.cs" />
+    <Compile Include="OxyPlot\IImageDecoder.cs" />
+    <Compile Include="OxyPlot\IImageEncoder.cs" />
+    <Compile Include="OxyPlot\ImageEncoderOptions.cs" />
+    <Compile Include="OxyPlot\ImageFormat.cs" />
+    <Compile Include="OxyPlot\JpegDecoder.cs" />
+    <Compile Include="OxyPlot\OxyImage.cs" />
+    <Compile Include="OxyPlot\OxyImageInfo.cs" />
+    <Compile Include="OxyPlot\PngDecoder.cs" />
+    <Compile Include="OxyPlot\ColorType.cs" />
+    <Compile Include="OxyPlot\CompressionMethod.cs" />
+    <Compile Include="OxyPlot\FilterMethod.cs" />
+    <Compile Include="OxyPlot\InterlaceMethod.cs" />
+    <Compile Include="OxyPlot\PngEncoder.cs" />
+    <Compile Include="OxyPlot\PngEncoderOptions.cs" />
+    <Compile Include="OxyPlot\OxyInputGesture.cs" />
+    <Compile Include="OxyPlot\OxyKeyGesture.cs" />
+    <Compile Include="OxyPlot\OxyMouseDownGesture.cs" />
+    <Compile Include="OxyPlot\OxyMouseEnterGesture.cs" />
+    <Compile Include="OxyPlot\OxyMouseWheelGesture.cs" />
+    <Compile Include="OxyPlot\OxyShakeGesture.cs" />
+    <Compile Include="OxyPlot\OxyTouchGesture.cs" />
+    <Compile Include="OxyPlot\OxyKey.cs" />
+    <Compile Include="OxyPlot\OxyModifierKeys.cs" />
+    <Compile Include="OxyPlot\OxyMouseButton.cs" />
+    <Compile Include="OxyPlot\LibraryDoc.cs" />
+    <Compile Include="OxyPlot\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\PageSize.cs" />
+    <Compile Include="OxyPlot\PageOrientation.cs" />
+    <Compile Include="OxyPlot\LineCap.cs" />
+    <Compile Include="OxyPlot\ColorSpace.cs" />
+    <Compile Include="OxyPlot\FontEncoding.cs" />
+    <Compile Include="OxyPlot\FontSubType.cs" />
+    <Compile Include="OxyPlot\PdfExporter.cs" />
+    <Compile Include="OxyPlot\PdfRenderContext.cs" />
+    <Compile Include="OxyPlot\PdfWriter.cs" />
+    <Compile Include="OxyPlot\PortableDocument.cs" />
+    <Compile Include="OxyPlot\PortableDocumentExtensions.cs" />
+    <Compile Include="OxyPlot\PortableDocumentFont.cs" />
+    <Compile Include="OxyPlot\PortableDocumentFontFamily.cs" />
+    <Compile Include="OxyPlot\PortableDocumentImage.cs" />
+    <Compile Include="OxyPlot\PortableDocumentImageUtilities.cs" />
+    <Compile Include="OxyPlot\StandardFonts.cs" />
+    <Compile Include="OxyPlot\DelegatePlotCommand`1.cs" />
+    <Compile Include="OxyPlot\OxyInputEventArgs.cs" />
+    <Compile Include="OxyPlot\OxyKeyEventArgs.cs" />
+    <Compile Include="OxyPlot\OxyMouseDownEventArgs.cs" />
+    <Compile Include="OxyPlot\OxyMouseEventArgs.cs" />
+    <Compile Include="OxyPlot\OxyMouseWheelEventArgs.cs" />
+    <Compile Include="OxyPlot\OxyTouchEventArgs.cs" />
+    <Compile Include="OxyPlot\IPlotController.cs" />
+    <Compile Include="OxyPlot\MouseManipulator.cs" />
+    <Compile Include="OxyPlot\PanManipulator.cs" />
+    <Compile Include="OxyPlot\PlotManipulator`1.cs" />
+    <Compile Include="OxyPlot\TouchManipulator.cs" />
+    <Compile Include="OxyPlot\TrackerHitResult.cs" />
+    <Compile Include="OxyPlot\TrackerManipulator.cs" />
+    <Compile Include="OxyPlot\ZoomRectangleManipulator.cs" />
+    <Compile Include="OxyPlot\ZoomStepManipulator.cs" />
+    <Compile Include="OxyPlot\PlotCommands.cs" />
+    <Compile Include="OxyPlot\PlotController.cs" />
+    <Compile Include="OxyPlot\IPlotElement.cs" />
+    <Compile Include="OxyPlot\IPlotModel.cs" />
+    <Compile Include="OxyPlot\PlotElement.cs" />
+    <Compile Include="OxyPlot\PlotType.cs" />
+    <Compile Include="OxyPlot\LegendPlacement.cs" />
+    <Compile Include="OxyPlot\LegendPosition.cs" />
+    <Compile Include="OxyPlot\LegendOrientation.cs" />
+    <Compile Include="OxyPlot\LegendItemOrder.cs" />
+    <Compile Include="OxyPlot\LegendSymbolPlacement.cs" />
+    <Compile Include="OxyPlot\TitleHorizontalAlignment.cs" />
+    <Compile Include="OxyPlot\PlotModel.cs" />
+    <Compile Include="OxyPlot\TrackerEventArgs.cs" />
+    <Compile Include="OxyPlot\IPlotView.cs" />
+    <Compile Include="OxyPlot\FontWeights.cs" />
+    <Compile Include="OxyPlot\HorizontalAlignment.cs" />
+    <Compile Include="OxyPlot\LineJoin.cs" />
+    <Compile Include="OxyPlot\LineStyle.cs" />
+    <Compile Include="OxyPlot\LineStyleHelper.cs" />
+    <Compile Include="OxyPlot\OxyColor.cs" />
+    <Compile Include="OxyPlot\OxyColorExtensions.cs" />
+    <Compile Include="OxyPlot\OxyColors.cs" />
+    <Compile Include="OxyPlot\OxyPalette.cs" />
+    <Compile Include="OxyPlot\OxyPalettes.cs" />
+    <Compile Include="OxyPlot\OxyPen.cs" />
+    <Compile Include="OxyPlot\OxyRect.cs" />
+    <Compile Include="OxyPlot\OxySize.cs" />
+    <Compile Include="OxyPlot\OxySizeExtensions.cs" />
+    <Compile Include="OxyPlot\OxyThickness.cs" />
+    <Compile Include="OxyPlot\IRenderContext.cs" />
+    <Compile Include="OxyPlot\MathRenderingExtensions.cs" />
+    <Compile Include="OxyPlot\RenderContextBase.cs" />
+    <Compile Include="OxyPlot\RenderingExtensions.cs" />
+    <Compile Include="OxyPlot\XkcdRenderingDecorator.cs" />
+    <Compile Include="OxyPlot\ScreenPoint.cs" />
+    <Compile Include="OxyPlot\ScreenPointHelper.cs" />
+    <Compile Include="OxyPlot\ScreenVector.cs" />
+    <Compile Include="OxyPlot\CanonicalSplineHelper.cs" />
+    <Compile Include="OxyPlot\CohenSutherlandClipping.cs" />
+    <Compile Include="OxyPlot\Decimator.cs" />
+    <Compile Include="OxyPlot\SutherlandHodgmanClipping.cs" />
+    <Compile Include="OxyPlot\VerticalAlignment.cs" />
+    <Compile Include="OxyPlot\SvgExporter.cs" />
+    <Compile Include="OxyPlot\SvgRenderContext.cs" />
+    <Compile Include="OxyPlot\SvgWriter.cs" />
+    <Compile Include="OxyPlot\ArrayBuilder.cs" />
+    <Compile Include="OxyPlot\ArrayExtensions.cs" />
+    <Compile Include="OxyPlot\BinaryReaderExtensions.cs" />
+    <Compile Include="OxyPlot\ComparerHelper.cs" />
+    <Compile Include="OxyPlot\Conrec.cs" />
+    <Compile Include="OxyPlot\FractionHelper.cs" />
+    <Compile Include="OxyPlot\HashCodeBuilder.cs" />
+    <Compile Include="OxyPlot\ListBuilder`1.cs" />
+    <Compile Include="OxyPlot\ListFiller`1.cs" />
+    <Compile Include="OxyPlot\ReflectionExtensions.cs" />
+    <Compile Include="OxyPlot\ReflectionPath.cs" />
+    <Compile Include="OxyPlot\StreamExtensions.cs" />
+    <Compile Include="OxyPlot\StringHelper.cs" />
+    <Compile Include="OxyPlot\XmlWriterBase.cs" />
+    <Compile Include="OxyPlot\Series\AreaSeries.cs" />
+    <Compile Include="OxyPlot\Series\BarItem.cs" />
+    <Compile Include="OxyPlot\Series\BarItemBase.cs" />
+    <Compile Include="OxyPlot\Series\BarSeries.cs" />
+    <Compile Include="OxyPlot\Series\BarSeriesBase.cs" />
+    <Compile Include="OxyPlot\Series\BarSeriesBase`1.cs" />
+    <Compile Include="OxyPlot\Series\CategorizedItem.cs" />
+    <Compile Include="OxyPlot\Series\CategorizedSeries.cs" />
+    <Compile Include="OxyPlot\Series\ColumnItem.cs" />
+    <Compile Include="OxyPlot\Series\ColumnSeries.cs" />
+    <Compile Include="OxyPlot\Series\ColumnSeriesWithTimeLabels.cs" />
+    <Compile Include="OxyPlot\Series\ErrorColumnItem.cs" />
+    <Compile Include="OxyPlot\Series\ErrorColumnSeries.cs" />
+    <Compile Include="OxyPlot\Series\IntervalBarItem.cs" />
+    <Compile Include="OxyPlot\Series\IntervalBarSeries.cs" />
+    <Compile Include="OxyPlot\Series\IStackableSeries.cs" />
+    <Compile Include="OxyPlot\Series\LabelPlacement.cs" />
+    <Compile Include="OxyPlot\Series\LinearBarSeries.cs" />
+    <Compile Include="OxyPlot\Series\RectangleBarItem.cs" />
+    <Compile Include="OxyPlot\Series\RectangleBarSeries.cs" />
+    <Compile Include="OxyPlot\Series\TornadoBarItem.cs" />
+    <Compile Include="OxyPlot\Series\TornadoBarSeries.cs" />
+    <Compile Include="OxyPlot\Series\BoxPlotItem.cs" />
+    <Compile Include="OxyPlot\Series\BoxPlotSeries.cs" />
+    <Compile Include="OxyPlot\Series\ColumnSeriesExt.cs" />
+    <Compile Include="OxyPlot\Series\ContourSeries.cs" />
+    <Compile Include="OxyPlot\Series\DataPointSeries.cs" />
+    <Compile Include="OxyPlot\Series\CandleStickAndVolumeSeries.cs" />
+    <Compile Include="OxyPlot\Series\CandleStickSeries.cs" />
+    <Compile Include="OxyPlot\Series\HighLowItem.cs" />
+    <Compile Include="OxyPlot\Series\HighLowSeries.cs" />
+    <Compile Include="OxyPlot\Series\OhlcvItem.cs" />
+    <Compile Include="OxyPlot\Series\OldCandleStickSeries.cs" />
+    <Compile Include="OxyPlot\Series\VolumeSeries.cs" />
+    <Compile Include="OxyPlot\Series\VolumeStyle.cs" />
+    <Compile Include="OxyPlot\Series\FunctionSeries.cs" />
+    <Compile Include="OxyPlot\Series\HeatMapCoordinateDefinition.cs" />
+    <Compile Include="OxyPlot\Series\HeatMapSeries.cs" />
+    <Compile Include="OxyPlot\Series\IScatterPointProvider.cs" />
+    <Compile Include="OxyPlot\Series\ItemsSeries.cs" />
+    <Compile Include="OxyPlot\Series\ITrackableSeries.cs" />
+    <Compile Include="OxyPlot\Series\LineLegendPosition.cs" />
+    <Compile Include="OxyPlot\Series\LineSeries.cs" />
+    <Compile Include="OxyPlot\Series\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\Series\PieSeries.cs" />
+    <Compile Include="OxyPlot\Series\PieSeriesExt.cs" />
+    <Compile Include="OxyPlot\Series\PieSlice.cs" />
+    <Compile Include="OxyPlot\Series\ScatterErrorPoint.cs" />
+    <Compile Include="OxyPlot\Series\ScatterErrorSeries.cs" />
+    <Compile Include="OxyPlot\Series\ScatterPoint.cs" />
+    <Compile Include="OxyPlot\Series\ScatterSeries.cs" />
+    <Compile Include="OxyPlot\Series\ScatterSeries`1.cs" />
+    <Compile Include="OxyPlot\Series\Series.cs" />
+    <Compile Include="OxyPlot\Series\StairStepSeries.cs" />
+    <Compile Include="OxyPlot\Series\StemSeries.cs" />
+    <Compile Include="OxyPlot\Series\ThreeColorLineSeries.cs" />
+    <Compile Include="OxyPlot\Series\TwoColorAreaSeries.cs" />
+    <Compile Include="OxyPlot\Series\TwoColorLineSeries.cs" />
+    <Compile Include="OxyPlot\Series\XYAxisSeries.cs" />
+    <Compile Include="OxyPlot\Reporting\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\Reporting\PlotModelExtensions.cs" />
+    <Compile Include="OxyPlot\Reporting\HtmlPlotElementType.cs" />
+    <Compile Include="OxyPlot\Reporting\HtmlReportWriter.cs" />
+    <Compile Include="OxyPlot\Reporting\IReportWriter.cs" />
+    <Compile Include="OxyPlot\Reporting\StringExtensions.cs" />
+    <Compile Include="OxyPlot\Reporting\TextReportWriter.cs" />
+    <Compile Include="OxyPlot\Reporting\WikiReportWriter.cs" />
+    <Compile Include="OxyPlot\Reporting\Alignment.cs" />
+    <Compile Include="OxyPlot\Reporting\DrawingFigure.cs" />
+    <Compile Include="OxyPlot\Reporting\Equation.cs" />
+    <Compile Include="OxyPlot\Reporting\Figure.cs" />
+    <Compile Include="OxyPlot\Reporting\Header.cs" />
+    <Compile Include="OxyPlot\Reporting\HeaderHelper.cs" />
+    <Compile Include="OxyPlot\Reporting\Image.cs" />
+    <Compile Include="OxyPlot\Reporting\ItemsTable.cs" />
+    <Compile Include="OxyPlot\Reporting\ItemsTableField.cs" />
+    <Compile Include="OxyPlot\Reporting\Paragraph.cs" />
+    <Compile Include="OxyPlot\Reporting\ParagraphStyle.cs" />
+    <Compile Include="OxyPlot\Reporting\PlotFigure.cs" />
+    <Compile Include="OxyPlot\Reporting\PropertyTable.cs" />
+    <Compile Include="OxyPlot\Reporting\Report.cs" />
+    <Compile Include="OxyPlot\Reporting\ReportItem.cs" />
+    <Compile Include="OxyPlot\Reporting\ReportSection.cs" />
+    <Compile Include="OxyPlot\Reporting\ReportStyle.cs" />
+    <Compile Include="OxyPlot\Reporting\Table.cs" />
+    <Compile Include="OxyPlot\Reporting\TableCell.cs" />
+    <Compile Include="OxyPlot\Reporting\TableColumn.cs" />
+    <Compile Include="OxyPlot\Reporting\TableOfContents.cs" />
+    <Compile Include="OxyPlot\Reporting\TableRow.cs" />
+    <Compile Include="OxyPlot\Annotations\Annotation.cs" />
+    <Compile Include="OxyPlot\Annotations\AnnotationLayer.cs" />
+    <Compile Include="OxyPlot\Annotations\AnnotationTextOrientation.cs" />
+    <Compile Include="OxyPlot\Annotations\ArrowAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\EllipseAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\FunctionAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\FunctionAnnotationType.cs" />
+    <Compile Include="OxyPlot\Annotations\ImageAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\LineAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\LineAnnotationType.cs" />
+    <Compile Include="OxyPlot\Annotations\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\Annotations\PathAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\PointAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\PolygonAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\PolylineAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\RectangleAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\ShapeAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\TextAnnotation.cs" />
+    <Compile Include="OxyPlot\Annotations\TextualAnnotation.cs" />
+    <Compile Include="OxyPlot\WindowsForms\GraphicsRenderContext.cs" />
+    <Compile Include="OxyPlot\WindowsForms\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\WindowsForms\PlotModelExtensions.cs" />
+    <Compile Include="OxyPlot\WindowsForms\PlotView.cs" />
+    <Compile Include="OxyPlot\WindowsForms\PngExporter.cs" />
+    <Compile Include="OxyPlot\WindowsForms\SvgExporter.cs" />
+    <Compile Include="OxyPlot\WindowsForms\ConverterExtensions.cs" />
+    <Compile Include="OxyPlot\Axes\DateTimeAxisWithDeterminedTicks.cs" />
+    <Compile Include="OxyPlot\Axes\AngleAxis.cs" />
+    <Compile Include="OxyPlot\Axes\Axis.cs" />
+    <Compile Include="OxyPlot\Axes\AxisChangedEventArgs.cs" />
+    <Compile Include="OxyPlot\Axes\AxisChangeTypes.cs" />
+    <Compile Include="OxyPlot\Axes\AxisLayer.cs" />
+    <Compile Include="OxyPlot\Axes\AxisPosition.cs" />
+    <Compile Include="OxyPlot\Axes\CategoryAxis.cs" />
+    <Compile Include="OxyPlot\Axes\CategoryAxisExt.cs" />
+    <Compile Include="OxyPlot\Axes\CategoryColorAxis.cs" />
+    <Compile Include="OxyPlot\Axes\ColorAxisExtensions.cs" />
+    <Compile Include="OxyPlot\Axes\DateTimeAxis.cs" />
+    <Compile Include="OxyPlot\Axes\DateTimeIntervalType.cs" />
+    <Compile Include="OxyPlot\Axes\DaysHoursMinutesTimeSpanAxis.cs" />
+    <Compile Include="OxyPlot\Axes\IColorAxis.cs" />
+    <Compile Include="OxyPlot\Axes\LinearAxis.cs" />
+    <Compile Include="OxyPlot\Axes\LinearColorAxis.cs" />
+    <Compile Include="OxyPlot\Axes\LogarithmicAxis.cs" />
+    <Compile Include="OxyPlot\Axes\MagnitudeAxis.cs" />
+    <Compile Include="OxyPlot\Axes\NamespaceDoc.cs" />
+    <Compile Include="OxyPlot\Axes\RangeColorAxis.cs" />
+    <Compile Include="OxyPlot\Axes\AngleAxisRenderer.cs" />
+    <Compile Include="OxyPlot\Axes\AxisRendererBase.cs" />
+    <Compile Include="OxyPlot\Axes\HorizontalAndVerticalAxisRenderer.cs" />
+    <Compile Include="OxyPlot\Axes\MagnitudeAxisRenderer.cs" />
+    <Compile Include="OxyPlot\Axes\TickStyle.cs" />
+    <Compile Include="OxyPlot\Axes\TimeSpanAxis.cs" />
+    <Compile Include="Intermech\Statistics\Graph.cs" />
+    <Compile Include="Intermech\Statistics\OxyPlotColumnChartPresenter.cs" />
+    <Compile Include="Intermech\Statistics\OxyPlotLinearChartPresenter.cs" />
+    <Compile Include="Intermech\Statistics\OxyPlotBasePresenter.cs" />
+    <Compile Include="Intermech\Statistics\TablePresenter.cs" />
+    <Compile Include="Intermech\Statistics\CommandObjectCreator.cs" />
+    <Compile Include="Intermech\Statistics\CreateReportForm.cs" />
+    <Compile Include="Intermech\Statistics\ReportParametersControl.cs" />
+    <Compile Include="Intermech\Statistics\CustomListBox.cs" />
+    <Compile Include="Intermech\Statistics\PlotPrintSettingsForm.cs" />
+    <Compile Include="Intermech\Statistics\IStatisticsClientService.cs" />
+    <Compile Include="Intermech\Statistics\NotAddObjectTypes.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsPropertyPage.cs" />
+    <Compile Include="Intermech\Statistics\SelectSchemeObject.cs" />
+    <Compile Include="Intermech\Statistics\SelectLCStep.cs" />
+    <Compile Include="Intermech\Statistics\SelectRootTaskActivity.cs" />
+    <Compile Include="Intermech\Statistics\RootActivityListBox.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsClientService.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsMainForm.cs" />
+    <Compile Include="Intermech\Statistics\StatisticNodeItem.cs" />
+    <Compile Include="Intermech\Statistics\StatisticPluginStartUp.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsObjectsCreatorService.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsPlotPrinter.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsReportGenerator.cs" />
+    <Compile Include="Intermech\Statistics\StatisticsReportParams.cs" />
+    <Compile Include="Intermech\Statistics\MainData.cs" />
+    <Compile Include="Intermech\Statistics\TaskObjectCreator.cs" />
+    <Compile Include="Intermech\Statistics\Properties\Resources.cs" />
+    <Compile Include="Intermech\Statistics\ReportGeneration\Report2LevelRowGeneratorHelper.cs" />
+    <Compile Include="Intermech\Statistics\ReportGeneration\ReportGeneratorHelper.cs" />
+    <Compile Include="Intermech\Statistics\ReportGeneration\StatisticReportDocumentGenerator.cs" />
+    <Compile Include="Intermech\Statistics\Controls\ExcludeValuesForCommandsCntrl.cs" />
+    <Compile Include="Intermech\Statistics\Controls\ChartDisplayControl.cs" />
+    <Compile Include="Intermech\Statistics\Controls\ExcludeValuesForTasksCntrl.cs" />
+    <Compile Include="Intermech\Statistics\Controls\FiltersControl.cs" />
+    <Compile Include="Intermech\Statistics\Controls\LaborInputControl.cs" />
+    <Compile Include="Intermech\Statistics\Controls\SchemeChoosingForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\AnalyzeObjectTypeControl.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\CustomNodeFilter.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\CustomSelectorFilter.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\ControlHelper.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\ItemWithDescription.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\CreatedDateConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\DateAttrValueConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\IStatisticSettingsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\LCLevelDateConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\LCStepDateConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\RevertCountTaskConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\SignDateConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\TaskConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\ProcessTemplateConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\TimeInTaskConfigsForm.cs" />
+    <Compile Include="Intermech\Statistics\Configurations\TimeOneTaskFormUsersConfigsForm.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\_statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Statistics\CommandObjectCreator.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\AnalyzeObjectTypeControl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\CreatedDateConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\DateAttrValueConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\LCLevelDateConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\LCStepDateConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\ProcessTemplateConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\RevertCountTaskConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\SignDateConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\TaskConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\TimeInTaskConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Configurations\TimeOneTaskFormUsersConfigsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\ChartDisplayControl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\ExcludeValuesForCommandsCntrl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\ExcludeValuesForTasksCntrl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\FiltersControl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\LaborInputControl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Controls\SchemeChoosingForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\CreateReportForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\NotAddObjectTypes.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\PlotPrintSettingsForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\ReportParametersControl.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\Resources\NewFilter.ico" />
+    <EmbeddedResource Include="Intermech\Statistics\SelectLCStep.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\SelectRootTaskActivity.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\SelectSchemeObject.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\SelectStatisticsObjectType.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\StatisticsMainForm.resx" />
+    <EmbeddedResource Include="Intermech\Statistics\TaskObjectCreator.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.Pdm.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EDE9E4E-B3C8-45D7-94CE-FC4B89CF97CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Pdm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CollapsibleSplitter">
+      <HintPath>lib\CollapsibleSplitter.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraTreeList">
+      <HintPath>lib\DevExpress.IM.XtraTreeList.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Common">
+      <HintPath>lib\Infralution.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.AVS">
+      <HintPath>lib\Intermech.AVS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Archives">
+      <HintPath>lib\Intermech.Archives.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Client">
+      <HintPath>lib\Intermech.Document.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Document.Model">
+      <HintPath>lib\Intermech.Document.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Expert">
+      <HintPath>lib\Intermech.Expert.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Imbase">
+      <HintPath>lib\Intermech.Imbase.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.AVS">
+      <HintPath>lib\Intermech.Interfaces.AVS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Document">
+      <HintPath>lib\Intermech.Interfaces.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.PdmConfigurator">
+      <HintPath>lib\Intermech.Interfaces.PdmConfigurator.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Map2">
+      <HintPath>lib\Intermech.Map2.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Optimizer">
+      <HintPath>lib\Intermech.Optimizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.VirtualTreeView">
+      <HintPath>lib\Intermech.VirtualTreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>lib\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Fluent">
+      <HintPath>lib\Telerik.WinControls.Themes.Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>lib\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StateChanged.cs" />
+    <Compile Include="ImSSP\sc_16560.cs" />
+    <Compile Include="ImSSP\sc_16630.cs" />
+    <Compile Include="ImSSP\sc_16981.cs" />
+    <Compile Include="ImSSP\sc_16987.cs" />
+    <Compile Include="ImSSP\sc_16489.cs" />
+    <Compile Include="ImSSP\sc_16685.cs" />
+    <Compile Include="ImSSP\sc_16689.cs" />
+    <Compile Include="ImSSP\sc_16950.cs" />
+    <Compile Include="ImSSP\sc_16722.cs" />
+    <Compile Include="ImSSP\sc_16458.cs" />
+    <Compile Include="ImSSP\sc_16701.cs" />
+    <Compile Include="ImSSP\sc_16889.cs" />
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\Localization\CustomDescription.cs" />
+    <Compile Include="Intermech\Localization\CustomCategory.cs" />
+    <Compile Include="Intermech\Localization\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Interfaces\Pdm\SubstitutesSettingsPropertiesPage.cs" />
+    <Compile Include="Intermech\Search\Pdm\Substitutes\ISubstitutesClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\Substitutes\SubstitutesClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\Substitutes\SubstitutesCommandsProvider.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesClientModule.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesSelectingControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesEditorControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesImageHelper.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesView.cs" />
+    <Compile Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesViewsProvider.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\IPreciseProductsClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\PreciseProductsClientConstants.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\PreciseProductsClientModule.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\PreciseProductsClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\PreciseProductsCommandsProvider.cs" />
+    <Compile Include="Intermech\Search\Pdm\PreciseProducts\CreatePreciseProductForm.cs" />
+    <Compile Include="Intermech\Search\Pdm\Instances\CreateInstancesSettingsControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\Instances\InstancesClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\Instances\InstancesCommandsProvider.cs" />
+    <Compile Include="Intermech\Search\Pdm\Instances\CreateInstancesForm.cs" />
+    <Compile Include="Intermech\Search\Pdm\Instances\InstancesBlanksListControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingTreeControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingWizardControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingWizardForm.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionFilterControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CopyingItemsControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\ObjectCreationErrorForm.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingClientModule.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingDispatcherHandler.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\CompositionCopying\ICompositionCopyingClientService.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogDropDownMenuItem.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogSelectionModeSelectionControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogsClientConstants.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogsControl.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogsResource.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogsView.cs" />
+    <Compile Include="Intermech\Search\Pdm\Analogs\AnalogsViewsProvider.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesPair.cs" />
+    <Compile Include="Intermech\Pdm\CompareTreeCommandHandler.cs" />
+    <Compile Include="Intermech\Pdm\ContextCompositionCommandProvider.cs" />
+    <Compile Include="Intermech\Pdm\ListInstancesNavWindow.cs" />
+    <Compile Include="Intermech\Pdm\SearchSchemeSettingsPage.cs" />
+    <Compile Include="Intermech\Pdm\SearchSchemeSettings.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\SingleContextSelectionForm.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualiserWindow.cs" />
+    <Compile Include="Intermech\Pdm\RelVisualItemsPropPanel.cs" />
+    <Compile Include="Intermech\Pdm\CreateSubstituteNodeParams.cs" />
+    <Compile Include="Intermech\Pdm\ContextCompositionCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\ElementQuantity.cs" />
+    <Compile Include="Intermech\Pdm\ContextSelectionForm.cs" />
+    <Compile Include="Intermech\Pdm\PDMPlugin.cs" />
+    <Compile Include="Intermech\Pdm\ArtSelectForm.cs" />
+    <Compile Include="Intermech\Pdm\ArtSubstitutionsEditor.cs" />
+    <Compile Include="Intermech\Pdm\MyCompositionObject.cs" />
+    <Compile Include="Intermech\Pdm\MyObjectElement.cs" />
+    <Compile Include="Intermech\Pdm\MyAttributeColumn.cs" />
+    <Compile Include="Intermech\Pdm\PdmObject.cs" />
+    <Compile Include="Intermech\Pdm\PdmComposition.cs" />
+    <Compile Include="Intermech\Pdm\ListInt32Comparer.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesDescriptor.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesNode.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesNodeID.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesPart.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesQuery.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesView.cs" />
+    <Compile Include="Intermech\Pdm\SubstitutesVirtualMode.cs" />
+    <Compile Include="Intermech\Pdm\Substitutes\PDMSubstitutesService.cs" />
+    <Compile Include="Intermech\Pdm\Substitutes\Strings.cs" />
+    <Compile Include="Intermech\Pdm\Substitutes\SubstitutesEditorCommand.cs" />
+    <Compile Include="Intermech\Pdm\Substitutes\SubstitutesEditorMode.cs" />
+    <Compile Include="Intermech\Pdm\Properties\Resources.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\AddStringHandler.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\CancelCreateHandler.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\CreateExemplarForm.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\ExistsExemplarForm.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\ExemplarsTreeCreator.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\ExemplarCreatorDialog.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\ExistsExemplar.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\VirtualExemplar.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\VirtualNode.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\VirtualRelation.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\VirtualGraph.cs" />
+    <Compile Include="Intermech\Pdm\VirtualExemplars\Controls\ContextAndRuleForm.cs" />
+    <Compile Include="Intermech\Pdm\OrderPointSelection\OrderPointSelectionForm.cs" />
+    <Compile Include="Intermech\Pdm\ListInstancesWindow\ListInstancesCommandProvider.cs" />
+    <Compile Include="Intermech\Pdm\ListInstancesWindow\ExcludeInstancesProvider.cs" />
+    <Compile Include="Intermech\Pdm\GroupInstances\Helper.cs" />
+    <Compile Include="Intermech\Pdm\Documents\MainDocumentView.cs" />
+    <Compile Include="Intermech\Pdm\Documents\MainDocumentViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\ArticleAttributesSettings.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\ListItems.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\DocumentsAttributesFolder.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\DocumentsAttributeFolder.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\DocumentsTypesFolder.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\DocumentTypesFolder.cs" />
+    <Compile Include="Intermech\Pdm\SettingsSyncAttributes\ListBoxWithIcons.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\ArticleChangeHandler.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\DocumentChangeHandler.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\IDAttributeInfo.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\IObjectChangeHandler.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\ObjectChangeHandler.cs" />
+    <Compile Include="Intermech\Pdm\IDAttributesSyncronizer\SyncronizerService.cs" />
+    <Compile Include="Intermech\Pdm\ComponentSelection\CommandService.cs" />
+    <Compile Include="Intermech\Pdm\ComponentSelection\CommandsProvider.cs" />
+    <Compile Include="Intermech\Pdm\ComponentSelection\ContextMenu.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\ListArticlesView.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\ISubscriberArticlesView.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\SubscribersArticlesView.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\StandartArticlesModel.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\ArticlesViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\ArticlesView\ReleaseArticlesEnabledProp.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\UserPrompt.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeEditor.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\SchemeEditorParams.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeCommandProvider.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisParentMode.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeView.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeProvider.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisSchemeConsts.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStylesEditor.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStylesCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStyleCommandProvider.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStylesView.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStyleProvider.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStyle.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\VisStyleNode.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\StyleNodeData.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\LinkNodeData.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\ObjNodeData.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\PreviewNodeData.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\StyleKind.cs" />
+    <Compile Include="Intermech\Pdm\VisDialogs\StyleData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\PreviewMode.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\IDrawSettings.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\DrawSettings.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\PickedPair.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\FindDialog.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\PropPanel.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemCreator.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemePackage.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\ReloadDecision.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemeInfo.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemeList.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisControl.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\PortDoubleClickedHandler.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\IVisObjectData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisObjData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\CADRelType.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\IVisRelationData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisRelData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\EvCode.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisDBEvent.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisEventList.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\LayoutKind.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\BasePredicate.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\IVisLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\StandardLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\QualityLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\HierarchLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\StandardVertLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\HierarchVertLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisLink.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\IVisObject.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisObject.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisRelation.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisLevel.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisScheme.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelationFlags.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\LoadSettings.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\ImageHolder.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisOperations.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisNode.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisNodePort.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisPrevNode.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisStatusKey.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisStatus.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisStatusKeeper.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\LCLevelInfoKeeper.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisToolZooming.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisToolSelecting.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisToolPanningAcad.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\MapViewManager.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisView.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\DBEvent.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\DBEventList.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\FindObjectDialog.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\ForceDirected.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\HierarchicalLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\ILayoutAlgorithm.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\NormalLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\PolarForceDirected.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelVisualizerMapLayout.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\MapLayoutRelVisualizerNodeData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\MapLayoutRelVisualizerLinkData.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\VisObjectNode.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\ObjectShape.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\Observer.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelMapLink.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelViewControl.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelVisPropertyPage.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelZoomingTool.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelToolZooming.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelToolSelecting.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\RelToolPanningAcad.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemaInfo.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\SchemaList.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\Statistic.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\Status.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\StatusCollection.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\LifecycleLevelInfo.cs" />
+    <Compile Include="Intermech\Pdm\RelationVisualizer\WinSettings.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\AnalyzeQuantity.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\ContextCompositionEditor.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\ContextCompositionDescriptorDisableFiltration.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\ObjectContextCompositionNode.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\ObjectContextCompositionNodePart.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\ObjectContextCompositionNodeQuery.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\NotAddObject.cs" />
+    <Compile Include="Intermech\Pdm\ContextComposition\SelectAssembliesTCEForm.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SchemeEditorParams.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeCommandProvider.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeEditor.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeProvider.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeView.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSheme.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchSchemeRole.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\GlobalType.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\SearchShemeConsts.cs" />
+    <Compile Include="Intermech\Pdm\SearchScheme\ColumnChangeType.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\AdditionalFiltrationToolBar.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\AnalogCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\CompositionFiltrationCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\ContextCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\DoubleCheckedItemCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\HiddenChildsCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\HiddenCompositionCommand.cs" />
+    <Compile Include="Intermech\Pdm\CompositionFiltration\ShowActualCompositionsCommand.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\AdditionalFiltrationService.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompositionReaderChangeStateEventArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompositionReaderChangeStateDelegate.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SettingsButtonClickEventArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SettingsButtonCommands.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ChangesCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ValueCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\BackgroundReaderComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\BaseBackgroundReader.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsViewBase.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\StateChangedEventArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\DelayedQuery.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareCompositionViewColumnsCache.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompositionReader.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ChangeRelationTypesForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompatibilityComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompositionsComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\DifferencesComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareCompositionView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareNavWindow.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsTreeView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareSettingsControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SettingsButtonClick.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\RelTypesChanged.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareHelper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectNodeID.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectPart.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectQuery.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsListNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsDescriptor.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsListPart.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsListQuery.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareObjectsRootViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ListCompareObjectsView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsNodeID.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsReportQuery.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ReportQueryForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\FillCompositionForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\FirstApplicability.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SeriesToolbar.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\BackgroundReader.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ApplicabilityView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsPart.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsQuery.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SearchSchemeID.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\VirtualSearchSchemeID.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\VirtualSchemesMode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\InstanceViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\InstanceObjectsView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsBase\ContainsAppearanceTuningForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\ContainsBase\Helper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SearchScheme\RoleAttProxy.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SearchScheme\RolePropertyDescriber.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\SearchScheme\RolePropertyEditor.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CaptionCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CheckOutByCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompoitionSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\AttributableAttributeComparer`1.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\AttributesCompareFacade.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\BackgroundCompositionReader.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\BooleanAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareFlagHelper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompositionFiltrationSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\DateTimeAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\DoubleAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IDAttributesSearcher.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IntAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\LevelCompositionReaderArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\MeasureAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\MemoAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\MultiValuesAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\QueryHelper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\LevelCompositionReader.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\RootItemFactory.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ObjectsCompositionComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\BackgroundCompositionReaderArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\StringAttributeComparer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\XmlHelper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\XmlMetadataTypes.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\XmlNodeAttribute.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\AttributesControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\AttributesListControlCellDataHandler.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeWindowRestore.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeWindowSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IAttributesListControlCellDataHandler.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareAttributesListControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompositionItemAttributes.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRuleComboItem.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRuleComboItemsList.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeRowWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeWindow.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ContextDropDownControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ComparePanelSeriesToolbar.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompareTreeWindowRestoreData.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompareTreeWindowSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ListAttributesAlphabeticalAndStateSort.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ListAttributesAlphabeticalSort.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\RulesFilter.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\RuleToObjectTypeSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ValueAttributesListControlCellDataHandler.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ItemAttributesListControlCellDataHandler.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TabStateSyncronyzer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TreeViewFiltrationPanels.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TreeStateSyncronyzer.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TreeRowExpanded.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TreeRowExpandedEventArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompoitionSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesCreatorForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesView.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesViewProvider.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ControlsHelper.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IDAttributesNodes.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\MetadataListNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareAttributesControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareObjectAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRelationAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompareTreeSettingsService.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ImagesAndTextCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\LCLevelCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ObjectIDCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeSettingsService.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesTabList.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\CompositionSettingsControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompareAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ICompareRulesTab.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TabDataChangedEventHandler.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\IDAttributesControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ObjectIDAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\RelationIDAttributesNode.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\RootNodeTypes.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\SelectAttributeAndSourceForm.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\SortingAttributesControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TabDataChangedEventArgs.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TabSettingsControl.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\TypedCellWidget.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\VirtualCompoitionSettings.cs" />
+    <Compile Include="Intermech\Pdm\Compositions\CompareTree\ColumnsConfiguration.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\Interfaces\Pdm\SubstitutesSettingsPropertiesPage.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ArticlesCreatorForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ArtSelectForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ArtSubstitutionsEditor.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\ChangeRelationTypesForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareCompositionView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\AttributesControl.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\CompareAttributesControl.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\CompareRulesForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\CompareTreeWindow.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\CompositionSettingsControl.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\IDAttributesControl.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\SelectAttributeAndSourceForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\CompareTree\SortingAttributesControl.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\ContainsBase\ContainsAppearanceTuningForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\ContainsView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\ContainsViewBase.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\FillCompositionForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Compositions\ReportQueryForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextComposition\AnalyzeQuantity.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextComposition\ContextCompositionEditor.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextComposition\NotAddObject.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextComposition\SelectAssembliesTCEForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextCompositionCreatorForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\ContextSelectionForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\dll.licenses" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\Analogs\AnalogsResource.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\SeriesDates\Images\AddSeriesDatesGroup_16x16.png" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\SeriesDates\Images\AddSeriesDatesRange_16x16.png" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\SeriesDates\Images\Dates_16x16.png" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\SeriesDates\Images\Remove_16x16.png" />
+    <EmbeddedResource Include="Intermech\Pdm\Intermech\Search\Pdm\SeriesDates\Images\Series_16x16.png" />
+    <EmbeddedResource Include="Intermech\Pdm\OrderPointSelection\OrderPointSelectionForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelationVisualiserWindow.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelationVisualizer\FindDialog.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelationVisualizer\FindObjectDialog.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelationVisualizer\PropPanel.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelationVisualizer\VisView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\RelVisualItemsPropPanel.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Resources\PdmResources.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\Resources\SubstitutionsBitmaps.bmp" />
+    <EmbeddedResource Include="Intermech\Pdm\SearchScheme\SearchSchemeEditor.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\SearchScheme\SearchSchemeView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\SettingsSyncAttributes\ArticleAttributesSettings.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\SingleContextSelectionForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\SubstitutesView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VirtualExemplars\Controls\ContextAndRuleForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VirtualExemplars\CreateExemplarForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VirtualExemplars\ExemplarCreatorDialog.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VirtualExemplars\ExistsExemplarForm.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VisDialogs\UserPrompt.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VisDialogs\VisSchemeEditor.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VisDialogs\VisSchemeView.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VisDialogs\VisStylesEditor.resx" />
+    <EmbeddedResource Include="Intermech\Pdm\VisDialogs\VisStylesView.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Analogs\AnalogsControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Analogs\AnalogSelectionModeSelectionControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Analogs\AnalogsView.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingTreeControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingWizardControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CompositionCopyingWizardForm.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CompositionFilterControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\CopyingItemsControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\CompositionCopying\ObjectCreationErrorForm.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Instances\CreateInstancesForm.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Instances\CreateInstancesSettingsControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\Instances\InstancesBlanksListControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\PreciseProducts\CreatePreciseProductForm.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesEditorControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesSelectingControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Pdm\SeriesDates\SeriesDatesView.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

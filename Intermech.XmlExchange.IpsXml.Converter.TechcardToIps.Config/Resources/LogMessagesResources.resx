@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msg_save_base_convertable_entity_config" xml:space="preserve">
+    <value>Сохранение базовых параметров настройки, поддерживающей варианты конвертирования...</value>
+  </data>
+  <data name="msg_load_relation_config_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертирования связи завершена</value>
+  </data>
+  <data name="msg_error_config_serialization" xml:space="preserve">
+    <value>Ошибка сохранения настройки {0}</value>
+  </data>
+  <data name="msg_load_config_id" xml:space="preserve">
+    <value>Загрузка настройки идентификатора настройки...</value>
+  </data>
+  <data name="msg_load_value_config" xml:space="preserve">
+    <value>Загрузка настроек конвертирования значения параметра...</value>
+  </data>
+  <data name="msg_empty_convert_rules_config" xml:space="preserve">
+    <value>Пустая настройка правил конвертирования: {0}</value>
+  </data>
+  <data name="msg_save_base_convertable_entity_config_complete" xml:space="preserve">
+    <value>Сохранение базовых параметров настройки, поддерживающей варианты конвертирования завершено</value>
+  </data>
+  <data name="msg_load_obj_config" xml:space="preserve">
+    <value>Загрузка настройки конвертирования объекта...</value>
+  </data>
+  <data name="msg_load_config_ids" xml:space="preserve">
+    <value>Загрузка настроек идентификаторов настроек...</value>
+  </data>
+  <data name="msg_load_id_config_complete" xml:space="preserve">
+    <value>Загрузка составного идентификатора настроек завершена.</value>
+  </data>
+  <data name="msg_load_value_converter_configs_complete" xml:space="preserve">
+    <value>Загрузка настроек служб конвертации значений параметров завершена</value>
+  </data>
+  <data name="msg_load_obj_configs" xml:space="preserve">
+    <value>Загрузка настроек конвертирования объектов...</value>
+  </data>
+  <data name="msg_empty_unique_rules_config" xml:space="preserve">
+    <value>Пустая настройка правил контроля уникальности: {0}</value>
+  </data>
+  <data name="msg_config_serializers_initialization_complete" xml:space="preserve">
+    <value>Инициализация сериализаторов узлов настроек завершена.</value>
+  </data>
+  <data name="msg_serializer_not_found_for_config" xml:space="preserve">
+    <value>Не найден сериализатор для настройки {0}</value>
+  </data>
+  <data name="msg_serializer_found" xml:space="preserve">
+    <value>Найден сериализатор {0}</value>
+  </data>
+  <data name="msg_config_serialized" xml:space="preserve">
+    <value>Настройка сохранена</value>
+  </data>
+  <data name="msg_load_config_ids_complete" xml:space="preserve">
+    <value>Загрузка настроек идентификаторов настроек завершена.</value>
+  </data>
+  <data name="msg_no_strategies_found" xml:space="preserve">
+    <value>Отсутствуют настройки вариантов конвертирования</value>
+  </data>
+  <data name="msg_load_const_value_configs" xml:space="preserve">
+    <value>Загрузка коллекции настроек именованных констант...</value>
+  </data>
+  <data name="msg_no_childs_for_parent_found" xml:space="preserve">
+    <value>В контейнере настроек: id={0} name={1} не найдено дочерних настроек с типом: {2}</value>
+  </data>
+  <data name="msg_load_obj_strategies_complete" xml:space="preserve">
+    <value>Загрузка настроек вариантов конвертирования объекта завершена.</value>
+  </data>
+  <data name="msg_load_log_config" xml:space="preserve">
+    <value>Загрузка настроек логгирования...</value>
+  </data>
+  <data name="msg_load_param_config" xml:space="preserve">
+    <value>Загрузка настроек конвертации параметра</value>
+  </data>
+  <data name="msg_no_serialize_method_in_serializer" xml:space="preserve">
+    <value>Не найден метод сериализации в сериализаторе {0}</value>
+  </data>
+  <data name="msg_error_config_serializer_initialization" xml:space="preserve">
+    <value>Ошибка инициализации сериализатора: {0}.</value>
+  </data>
+  <data name="msg_load_output_config_complete" xml:space="preserve">
+    <value>Загрузка настроек вывода завершена.</value>
+  </data>
+  <data name="msg_load_obj_configs_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертирования объектов завершена.</value>
+  </data>
+  <data name="msg_load_id_group_config" xml:space="preserve">
+    <value>Загрузка группы настроек составных частей идентификатора настройки...</value>
+  </data>
+  <data name="msg_load_log_config_complete" xml:space="preserve">
+    <value>Загрузка настроек логгирования завершена.</value>
+  </data>
+  <data name="msg_loader_found" xml:space="preserve">
+    <value>Найден загрузчик: {0}</value>
+  </data>
+  <data name="msg_parse_config_file_complete" xml:space="preserve">
+    <value>Парсинг файла завершен.</value>
+  </data>
+  <data name="msg_load_relation_config" xml:space="preserve">
+    <value>Загрузка настроек конвертирования связи...</value>
+  </data>
+  <data name="msg_node_config_loaded" xml:space="preserve">
+    <value>Объект настройки загружен.</value>
+  </data>
+  <data name="msg_serialize_config" xml:space="preserve">
+    <value>Сохранение настройки {0}...</value>
+  </data>
+  <data name="msg_load_id_config" xml:space="preserve">
+    <value>Загрузка составного идентификатора настроек...</value>
+  </data>
+  <data name="msg_load_object_strategy_complete" xml:space="preserve">
+    <value>Загрузка настройки варианта конвертирования объекта завершена.</value>
+  </data>
+  <data name="msg_load_base_convertable_entity_with_params_config_complete" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настроек, поддерживающего варианты конвертирования и настройки параметров</value>
+  </data>
+  <data name="msg_load_value_converter" xml:space="preserve">
+    <value>Загрузка настроек службы конвертации значений параметров...</value>
+  </data>
+  <data name="msg_error_node_config_load" xml:space="preserve">
+    <value>Ошибка загрузки объекта настроек для узла: {0}. Пропуск настройки.</value>
+  </data>
+  <data name="msg_warn_value_converters_configs_not_found" xml:space="preserve">
+    <value>Настройки служб конвертации значений параметров не найдены</value>
+  </data>
+  <data name="msg_no_childs_for_parent_found_id_config_group" xml:space="preserve">
+    <value>В контейнере настроек: id={0} name={1} не найдено дочерних настроек с типами: {2} и {3}</value>
+  </data>
+  <data name="msg_save_base_config_params_complete" xml:space="preserve">
+    <value>Сохранение базовых параметров настройки завершено.</value>
+  </data>
+  <data name="msg_load_param_config_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертации параметра завершена</value>
+  </data>
+  <data name="msg_load_base_config_params_complete" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настройки: Id={0} Name={1} завершена.</value>
+  </data>
+  <data name="msg_load_const_value_configs_complete" xml:space="preserve">
+    <value>Загрузка коллекции настроек именованных констант завершена.</value>
+  </data>
+  <data name="msg_load_value_converter_reference_config" xml:space="preserve">
+    <value>Загрузка ссылки на службу конвертации значений параметров...</value>
+  </data>
+  <data name="msg_load_obj_config_complete" xml:space="preserve">
+    <value>Загрузка настройки конвертирования объекта завершена.</value>
+  </data>
+  <data name="msg_load_output_config" xml:space="preserve">
+    <value>Загрузка настроек вывода...</value>
+  </data>
+  <data name="msg_error_loading_strategies" xml:space="preserve">
+    <value>Ошибка загрузки настроек вариантов конвертирования. Проверьте настройки узла: {0}</value>
+  </data>
+  <data name="msg_warn_no_id_found_in_config" xml:space="preserve">
+    <value>Отсутствует тег Id у узла настройки. node={0} Parent={1}</value>
+  </data>
+  <data name="msg_warn_object_configs_not_found" xml:space="preserve">
+    <value>Настройки конвертирования объектов не найдены</value>
+  </data>
+  <data name="msg_save_base_config_params" xml:space="preserve">
+    <value>Сохранение базовых параметров настройки {0}...</value>
+  </data>
+  <data name="msg_node_loader_initialized" xml:space="preserve">
+    <value>Загрузчик: {0} для типа: {1} инициализирован успешно.</value>
+  </data>
+  <data name="msg_dublicate_config_id" xml:space="preserve">
+    <value>Найден дубликат настройки с Id: {0}. Настройка не будет использована.</value>
+  </data>
+  <data name="msg_load_obj_strategies" xml:space="preserve">
+    <value>Загрузка настроек вариантов конвертирования объекта...</value>
+  </data>
+  <data name="msg_load_converted_value_config_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертированного значения параметра завершена</value>
+  </data>
+  <data name="msg_load_config_id_complete" xml:space="preserve">
+    <value>Загрузка настройки идентификатора настройки завершена.</value>
+  </data>
+  <data name="msg_invoke_serialize_method" xml:space="preserve">
+    <value>Вызов метода сериализации {0}</value>
+  </data>
+  <data name="msg_empty_relation_configs" xml:space="preserve">
+    <value>Пустая настройка связей {0}</value>
+  </data>
+  <data name="msg_load_value_converter_configs" xml:space="preserve">
+    <value>Загрузка настроек служб конвертации значений параметров...</value>
+  </data>
+  <data name="msg_load_base_convertable_entity_with_params_config" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настроек, поддерживающего варианты конвертирования и настройки параметров</value>
+  </data>
+  <data name="msg_config_serializer_initialized" xml:space="preserve">
+    <value>Сериализатор: {0} для типа: {1} инициализирован успешно.</value>
+  </data>
+  <data name="msg_wrong_config_file_format" xml:space="preserve">
+    <value>Неверный формат файла настроек.</value>
+  </data>
+  <data name="msg_loader_not_found_for_node" xml:space="preserve">
+    <value>Не найден загрузчик для узла: {0}</value>
+  </data>
+  <data name="msg_load_object_unique_control_rule" xml:space="preserve">
+    <value>Загрузка правил контроля уникальности объекта...</value>
+  </data>
+  <data name="msg_load_object_convert_rules" xml:space="preserve">
+    <value>Загрузка правил конвертации объекта...</value>
+  </data>
+  <data name="msg_warn_log_config_default" xml:space="preserve">
+    <value>Настройки логгирования не найдены.
+Применены настройки логгирования по умолчанию</value>
+  </data>
+  <data name="msg_load_const_value_config_complete" xml:space="preserve">
+    <value>Загрузка настроек именованной константы завершена.</value>
+  </data>
+  <data name="msg_load_base_convertable_entity_config_complete" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настроек, поддерживающего варианты конвертирования завершена</value>
+  </data>
+  <data name="msg_load_relation_configs" xml:space="preserve">
+    <value>Загрузка настроек конвертирования связей...</value>
+  </data>
+  <data name="msg_error_empty_converted_value" xml:space="preserve">
+    <value>Пустое конвертированное значение в настройках службы конвертирования значений параметров. Узел: {0}</value>
+  </data>
+  <data name="msg_load_base_config_params" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настройки...</value>
+  </data>
+  <data name="msg_warn_const_value_configs_not_found" xml:space="preserve">
+    <value>Настройки констант не найдены</value>
+  </data>
+  <data name="msg_load_base_convertable_entity_config" xml:space="preserve">
+    <value>Загрузка базовых параметров узла настроек, поддерживающего варианты конвертирования...</value>
+  </data>
+  <data name="msg_load_origin_value_config_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертации значения параметра завершена</value>
+  </data>
+  <data name="msg_error_node_loader_initialization" xml:space="preserve">
+    <value>Ошибка инициализации загрузчика: {0}.</value>
+  </data>
+  <data name="msg_load_object_unique_control_rule_complete" xml:space="preserve">
+    <value>Загрузка правил контроля уникальности объекта завершена</value>
+  </data>
+  <data name="msg_load_const_value_config" xml:space="preserve">
+    <value>Загрузка настроек именованной константы...</value>
+  </data>
+  <data name="msg_load_origin_value_config" xml:space="preserve">
+    <value>Загрузка настроек конвертации значения параметра...</value>
+  </data>
+  <data name="msg_error_empty_context_convert_value" xml:space="preserve">
+    <value>Пустой контекст в настройках службы конвертирования значений параметров. Узел: {0}</value>
+  </data>
+  <data name="msg_node_loaders_initialization" xml:space="preserve">
+    <value>Инициализация загрузчиков узлов настроек...</value>
+  </data>
+  <data name="msg_load_object_convert_rules_complete" xml:space="preserve">
+    <value>Загрузка правил конвертации объекта завершена</value>
+  </data>
+  <data name="msg_invoke_load_method" xml:space="preserve">
+    <value>Вызов метода загрузки: {0}</value>
+  </data>
+  <data name="msg_load_object_strategy" xml:space="preserve">
+    <value>Загрузка настройки варианта конвертирования объекта...</value>
+  </data>
+  <data name="msg_parse_config_file" xml:space="preserve">
+    <value>Парсинг файла настроек...</value>
+  </data>
+  <data name="msg_empty_param_configs" xml:space="preserve">
+    <value>Пустая настройка параметров {0}</value>
+  </data>
+  <data name="msg_empty_convert_strategies_config" xml:space="preserve">
+    <value>Пустая настройка вариантов конвертаций: {0}</value>
+  </data>
+  <data name="msg_load_id_group_config_complete" xml:space="preserve">
+    <value>Загрузка группы настроек составных частей идентификатора настройки завершена.</value>
+  </data>
+  <data name="msg_load_config" xml:space="preserve">
+    <value>Загрузка узла {0}...</value>
+  </data>
+  <data name="msg_config_serializers_initialization" xml:space="preserve">
+    <value>Инициализация сериализаторов настроек...</value>
+  </data>
+  <data name="msg_no_load_method_in_loader" xml:space="preserve">
+    <value>Не найден метод загрузки в загрузчике: {0} для узла: {1}</value>
+  </data>
+  <data name="msg_warn_unsupported_param_config_type" xml:space="preserve">
+    <value>Неподдерживаемый тип настройки параметра. Узел настройки Id: {0}. Тип настройки: {1}</value>
+  </data>
+  <data name="msg_node_loaders_initialization_complete" xml:space="preserve">
+    <value>Инициализация загрузчиков узлов настроек завершена.</value>
+  </data>
+  <data name="msg_warn_id_configs_not_found" xml:space="preserve">
+    <value>Настройки идентификаторов настроек не найдены</value>
+  </data>
+  <data name="msg_load_value_converter_complete" xml:space="preserve">
+    <value>Загрузка настроек службы конвертации значений параметров завершена</value>
+  </data>
+  <data name="msg_load_value_converter_reference_config_complete" xml:space="preserve">
+    <value>Загрузка ссылки на службу конвертации значений параметров завершена</value>
+  </data>
+  <data name="msg_load_converted_value_config" xml:space="preserve">
+    <value>Загрузка настроек конвертированного значения параметра...</value>
+  </data>
+  <data name="msg_load_relation_configs_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертирования связей завершена</value>
+  </data>
+  <data name="msg_warn_group_id_only_one_child_allowed" xml:space="preserve">
+    <value>Узел идентификатор настройки может содержать только один дочерний элемент: {0} или {1}
+Проверьте узел: node={2} Id={3} Name={4}
+В качестве источника данных будет выбран первый подходящий из списка дочерних</value>
+  </data>
+  <data name="msg_load_value_config_complete" xml:space="preserve">
+    <value>Загрузка настроек конвертирования значения параметра завершена</value>
+  </data>
+  <data name="msg_warn_output_config_not_found" xml:space="preserve">
+    <value>Настройки вывода не найдены</value>
+  </data>
+</root>

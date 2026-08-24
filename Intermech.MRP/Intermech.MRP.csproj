@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.MRP.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{157BBEA2-68A0-4595-A4F5-2CEB744F021C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.MRP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls">
+      <HintPath>lib\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Docking">
+      <HintPath>lib\Intermech.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.MRP">
+      <HintPath>lib\Intermech.Interfaces.MRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.PdmConfigurator">
+      <HintPath>lib\Intermech.Interfaces.PdmConfigurator.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Pdm">
+      <HintPath>lib\Intermech.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.PdmConfigurator">
+      <HintPath>lib\Intermech.PdmConfigurator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_14777.cs" />
+    <Compile Include="ImSSP\sc_14785.cs" />
+    <Compile Include="ImSSP\sc_14789.cs" />
+    <Compile Include="ImSSP\sc_14795.cs" />
+    <Compile Include="ImSSP\sc_14825.cs" />
+    <Compile Include="Intermech\Localization\LocalizationHolder.cs" />
+    <Compile Include="Intermech\Localization\CustomDescription.cs" />
+    <Compile Include="Intermech\Localization\CustomDisplayName.cs" />
+    <Compile Include="Intermech\Localization\CustomCategory.cs" />
+    <Compile Include="Intermech\Search\Mrp\AnalogSelectionModeSelectionControl.cs" />
+    <Compile Include="Intermech\Search\Mrp\SeriesDatesSelectingControl.cs" />
+    <Compile Include="Intermech\MRP\ClientAutosortRuleEvents.cs" />
+    <Compile Include="Intermech\MRP\Consts.cs" />
+    <Compile Include="Intermech\MRP\MRPClientPlugin.cs" />
+    <Compile Include="Intermech\MRP\Properties\Resources.cs" />
+    <Compile Include="Intermech\MRP\Orders\QuantityFm.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersChangedEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersErrorsInEditorEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersCreator.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersCreatorControl.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersEditor.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersEditorForm.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersTaskForm.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufacturingOrderBlankDescriptor.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufacturingOrderBlankNode.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersCommandsProvider.cs" />
+    <Compile Include="Intermech\MRP\Orders\ProcessManufactOrdersCommandsProvider.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersAPI.cs" />
+    <Compile Include="Intermech\MRP\Orders\NavigatorTreeNodeHelper.cs" />
+    <Compile Include="Intermech\MRP\Orders\MRP_BaseView.cs" />
+    <Compile Include="Intermech\MRP\Orders\MRP_BoughtArticlesView.cs" />
+    <Compile Include="Intermech\MRP\Orders\MRP_PDMConfiguratorView.cs" />
+    <Compile Include="Intermech\MRP\Orders\MRP_PDMSubstitutesView.cs" />
+    <Compile Include="Intermech\MRP\Orders\MRP_TechcardRoutesView.cs" />
+    <Compile Include="Intermech\MRP\Orders\CreateRoutesNodeParams.cs" />
+    <Compile Include="Intermech\MRP\Orders\RoutesDescriptor.cs" />
+    <Compile Include="Intermech\MRP\Orders\RoutesNode.cs" />
+    <Compile Include="Intermech\MRP\Orders\RoutesNodeID.cs" />
+    <Compile Include="Intermech\MRP\Orders\RoutesPart.cs" />
+    <Compile Include="Intermech\MRP\Orders\RoutesQuery.cs" />
+    <Compile Include="Intermech\MRP\Orders\OrdersViewProvider.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracing.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracingEventArgs.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracingEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracingMethodInvoker.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracingMethodInvoker2.cs" />
+    <Compile Include="Intermech\MRP\Orders\CompositionTracingMethodInvoker3.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingAllObjectsCompleteEventArgs.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingAllObjectsCompleteEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingObjectCompleteEventArgs.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingObjectCompleteEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingObjectSelectedEventArgs.cs" />
+    <Compile Include="Intermech\MRP\Orders\TracingObjectSelectedEventHandler.cs" />
+    <Compile Include="Intermech\MRP\Orders\ManufactOrdersEditorNavigatorTreeView.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\MRP\Orders\CompositionTracing.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\ManufactOrdersCreatorControl.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\ManufactOrdersEditor.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\ManufactOrdersEditorForm.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\ManufactOrdersTaskForm.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\MRP_BaseView.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\MRP_BoughtArticlesView.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\MRP_PDMConfiguratorView.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\MRP_PDMSubstitutesView.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\MRP_TechcardRoutesView.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Orders\QuantityFm.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Resources\CustomAttributesResources.resx" />
+    <EmbeddedResource Include="Intermech\MRP\Resources\MRPBitmaps.bmp" />
+    <EmbeddedResource Include="Intermech\MRP\Resources\MRPResources.resx" />
+    <EmbeddedResource Include="Intermech\Search\Mrp\AnalogSelectionModeSelectionControl.resx" />
+    <EmbeddedResource Include="Intermech\Search\Mrp\SeriesDatesSelectingControl.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

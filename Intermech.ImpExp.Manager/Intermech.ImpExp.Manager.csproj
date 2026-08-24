@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ImpExp.Manager.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{146D13A7-5789-45D6-8AC0-B7224CDF23CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Intermech.ImpExp.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.ImpExp.Manager</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.IM.Utils">
+      <HintPath>lib\DevExpress.IM.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.IM.XtraEditors">
+      <HintPath>lib\DevExpress.IM.XtraEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Base">
+      <HintPath>lib\Intermech.Client.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Controls">
+      <HintPath>lib\Intermech.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Interface">
+      <HintPath>lib\Intermech.ImpExp.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_8408.cs" />
+    <Compile Include="BasesInfo.cs" />
+    <Compile Include="PluginsManager.cs" />
+    <Compile Include="BigImageList.cs" />
+    <Compile Include="NewCacheDelegate.cs" />
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="AttributeImageList.cs" />
+    <Compile Include="ConfigurationEnumerator.cs" />
+    <Compile Include="ConfigurationImpl.cs" />
+    <Compile Include="ConfigurationLoader.cs" />
+    <Compile Include="ConverterClientApplicationHost.cs" />
+    <Compile Include="MetadataCreator.cs" />
+    <Compile Include="ImportMetadataForm.cs" />
+    <Compile Include="OnTickImportEventArgs.cs" />
+    <Compile Include="OnTickImportTimerHandler.cs" />
+    <Compile Include="ImportTimer.cs" />
+    <Compile Include="SaveSettingsThreadForm.cs" />
+    <Compile Include="IpsConnector.cs" />
+    <Compile Include="ResultTypes.cs" />
+    <Compile Include="StepSettingsSaver.cs" />
+    <Compile Include="SaveSettings.cs" />
+    <Compile Include="SettingsHelper.cs" />
+    <Compile Include="DataBaseManager.cs" />
+    <Compile Include="SplashLoadingForm.cs" />
+    <Compile Include="DropIndexesPumper.cs" />
+    <Compile Include="CreateIndexesPumper.cs" />
+    <Compile Include="StartClass.cs" />
+    <Compile Include="WizardForm.cs" />
+    <Compile Include="Caches\BaseCache.cs" />
+    <Compile Include="Caches\FileManager.cs" />
+    <Compile Include="Caches\CacheSession.cs" />
+    <Compile Include="Caches\CacheHelper.cs" />
+    <Compile Include="Caches\SavePointManager.cs" />
+    <Compile Include="Caches\LongKeyCache.cs" />
+    <Compile Include="Caches\IntKeyCache.cs" />
+    <Compile Include="Caches\CharKeyCache.cs" />
+    <Compile Include="Caches\StringKeyCache.cs" />
+    <Compile Include="Caches\RecordType.cs" />
+    <Compile Include="Caches\CategoryСacheInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="DataWriter\DataWriterImpl.cs" />
+    <Compile Include="DataWriter\MetadataInfo.cs" />
+    <Compile Include="DataWriter\AttributableTypeItem.cs" />
+    <Compile Include="DataWriter\TypeItemImpl.cs" />
+    <Compile Include="DataWriter\IDataWriterProxy.cs" />
+    <Compile Include="DataWriter\ImportedObjectListItems.cs" />
+    <Compile Include="DataWriter\ImportedObjects.cs" />
+    <Compile Include="DataWriter\ImportedRelationList.cs" />
+    <Compile Include="DataWriter\ImportedRelationListItems.cs" />
+    <Compile Include="DataWriter\ImportedRelations.cs" />
+    <Compile Include="DataWriter\ImportedUsers.cs" />
+    <Compile Include="DataWriter\ImporterPool.cs" />
+    <Compile Include="DataWriter\ImporterPoolItem.cs" />
+    <Compile Include="DataWriter\ImportMetadataThread.cs" />
+    <Compile Include="DataWriter\LCSteps4ArchivesClass.cs" />
+    <Compile Include="DataWriter\Materials.cs" />
+    <Compile Include="DataWriter\AttributeGroupItemImpl.cs" />
+    <Compile Include="DataWriter\AttributeGroupItemListImpl.cs" />
+    <Compile Include="DataWriter\TypeItemListImpl`1.cs" />
+    <Compile Include="DataWriter\AttributePossibleValueImpl.cs" />
+    <Compile Include="DataWriter\AttributeTypeItemImpl.cs" />
+    <Compile Include="DataWriter\AttributeTypeItemListImpl.cs" />
+    <Compile Include="DataWriter\ImportedObjectList.cs" />
+    <Compile Include="DataWriter\ObjectTypeItemImpl.cs" />
+    <Compile Include="DataWriter\ObjectTypeItemListImpl.cs" />
+    <Compile Include="DataWriter\RelationTypeItemImpl.cs" />
+    <Compile Include="DataWriter\RelationTypeItemListImpl.cs" />
+    <Compile Include="DataWriter\Decorators\ImportedObjectListWithStatisticsDecorator.cs" />
+    <Compile Include="DataWriter\Decorators\ImportedRelationListWithStatisticsDecorator.cs" />
+    <Compile Include="DataWriter\Decorators\ImportedObjectListDecorator.cs" />
+    <Compile Include="DataWriter\Decorators\ImportedRelationListDecorator.cs" />
+    <Compile Include="StepControls\StepControlSplash.cs" />
+    <Compile Include="StepControls\StepControlInit.cs" />
+    <Compile Include="StepControls\StepControlSettings.cs" />
+    <Compile Include="StepControls\StepControlMetadata.cs" />
+    <Compile Include="StepControls\StepControlPump.cs" />
+    <Compile Include="StepControls\StepControlResult.cs" />
+    <Compile Include="StepControls\MainConfigurationEditor.cs" />
+    <Compile Include="CommonData\SettingsGroupService.cs" />
+    <Compile Include="CommonData\TechCardTypeService.cs" />
+    <Compile Include="CommonData\FoldersFilter.cs" />
+    <Compile Include="CommonData\PhysicalValuesImpl.cs" />
+    <Compile Include="CommonData\MeasuresImpl.cs" />
+    <Compile Include="CommonData\UsersImpl.cs" />
+    <Compile Include="CommonData\TechCardConsts.cs" />
+    <Compile Include="CommonData\ItemsToCreate\ItemToCreateSelectDialog.cs" />
+    <Compile Include="CommonData\ItemsToCreate\AttributeTypeToCreateList.cs" />
+    <Compile Include="CommonData\ItemsToCreate\AttributeGroupToCreateList.cs" />
+    <Compile Include="CommonData\ItemsToCreate\ObjectTypeToCreateList.cs" />
+    <Compile Include="CommonData\ItemsToCreate\AttributeGroupToCreate.cs" />
+    <Compile Include="CommonData\ItemsToCreate\ItemToCreate.cs" />
+    <Compile Include="CommonData\ItemsToCreate\ItemToCreateList`1.cs" />
+    <Compile Include="CommonData\ItemsToCreate\AttributeTypeToCreate.cs" />
+    <Compile Include="CommonData\ItemsToCreate\NewAttributeTypeForm.cs" />
+    <Compile Include="CommonData\ItemsToCreate\ObjectTypeToCreate.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BasesInfo.resx" />
+    <EmbeddedResource Include="CommonData\ItemsToCreate\ItemToCreateSelectDialog.resx" />
+    <EmbeddedResource Include="CommonData\ItemsToCreate\NewAttributeTypeForm.resx" />
+    <EmbeddedResource Include="Icons\ftAutoInc.ico" />
+    <EmbeddedResource Include="Icons\ftBlob.ico" />
+    <EmbeddedResource Include="Icons\ftBoolean.ico" />
+    <EmbeddedResource Include="Icons\ftDate.ico" />
+    <EmbeddedResource Include="Icons\ftDouble.ico" />
+    <EmbeddedResource Include="Icons\ftExternalLink.ico" />
+    <EmbeddedResource Include="Icons\ftFile.ico" />
+    <EmbeddedResource Include="Icons\ftGuid.ico" />
+    <EmbeddedResource Include="Icons\ftInteger.ico" />
+    <EmbeddedResource Include="Icons\ftMeasured.ico" />
+    <EmbeddedResource Include="Icons\ftMemo.ico" />
+    <EmbeddedResource Include="Icons\ftObjectLink.ico" />
+    <EmbeddedResource Include="Icons\ftObjectLinkByID.ico" />
+    <EmbeddedResource Include="Icons\ftPassword.ico" />
+    <EmbeddedResource Include="Icons\ftShortBlob.ico" />
+    <EmbeddedResource Include="Icons\ftString.ico" />
+    <EmbeddedResource Include="Icons\ftSystem.ico" />
+    <EmbeddedResource Include="ImportMetadataForm.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\imgArrowFirst.bmp" />
+    <EmbeddedResource Include="Resources\imgArrowLast.bmp" />
+    <EmbeddedResource Include="Resources\imgArrowNext.bmp" />
+    <EmbeddedResource Include="Resources\imgArrowPrevious.bmp" />
+    <EmbeddedResource Include="Resources\imgFavoritesWnd.bmp" />
+    <EmbeddedResource Include="Resources\imgHelpAbout.bmp" />
+    <EmbeddedResource Include="Resources\imgHelpContents.bmp" />
+    <EmbeddedResource Include="Resources\imgHelpIndex.bmp" />
+    <EmbeddedResource Include="Resources\imgImportData.bmp" />
+    <EmbeddedResource Include="Resources\imgListChecks.bmp" />
+    <EmbeddedResource Include="Resources\imgListError.bmp" />
+    <EmbeddedResource Include="Resources\imgListOutputs.bmp" />
+    <EmbeddedResource Include="Resources\imgMetadataImport.bmp" />
+    <EmbeddedResource Include="Resources\imgMetadataPrepare.bmp" />
+    <EmbeddedResource Include="Resources\imgPlugin.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginAdapter.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginAdd.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginDel.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginDown.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginFirst.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginLast.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginProperties.bmp" />
+    <EmbeddedResource Include="Resources\imgPluginUp.bmp" />
+    <EmbeddedResource Include="Resources\imgSearch.bmp" />
+    <EmbeddedResource Include="Resources\imgTool.bmp" />
+    <EmbeddedResource Include="SaveSettingsThreadForm.resx" />
+    <EmbeddedResource Include="SplashLoadingForm.resx" />
+    <EmbeddedResource Include="StepControls\MainConfigurationEditor.resx" />
+    <EmbeddedResource Include="StepControls\StepControlInit.resx" />
+    <EmbeddedResource Include="StepControls\StepControlMetadata.resx" />
+    <EmbeddedResource Include="StepControls\StepControlPump.resx" />
+    <EmbeddedResource Include="StepControls\StepControlResult.resx" />
+    <EmbeddedResource Include="StepControls\StepControlSettings.resx" />
+    <EmbeddedResource Include="StepControls\StepControlSplash.resx" />
+    <EmbeddedResource Include="WizardForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

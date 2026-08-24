@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.ImpExp.SearchData.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41E4B2B0-93C8-4C76-98D5-5A5EB2C6B877}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.ImpExp.SearchData</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CabDotNet">
+      <HintPath>lib\CabDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.ImpExp.Interface">
+      <HintPath>lib\Intermech.ImpExp.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.MRP">
+      <HintPath>lib\Intermech.Interfaces.MRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.PdmConfigurator">
+      <HintPath>lib\Intermech.Interfaces.PdmConfigurator.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Workflow">
+      <HintPath>lib\Intermech.Interfaces.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Search.Interfaces">
+      <HintPath>lib\Intermech.Search.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>lib\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="iGrid">
+      <HintPath>lib\iGrid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Signs\HashPack.cs" />
+    <Compile Include="ImpExp\BasePumpHelper.cs" />
+    <Compile Include="ImpExp\DataReadResult.cs" />
+    <Compile Include="ImpExp\SaveToStreamDelegate.cs" />
+    <Compile Include="ImpExp\BlobHelper.cs" />
+    <Compile Include="ImpExp\FormConverter.cs" />
+    <Compile Include="ImpExp\ComponentInfo.cs" />
+    <Compile Include="ImpExp\FormParser.cs" />
+    <Compile Include="ImpExp\FormObjectList.cs" />
+    <Compile Include="ImpExp\FormObject.cs" />
+    <Compile Include="ImpExp\PumpCache.cs" />
+    <Compile Include="ImpExp\CategoryList.cs" />
+    <Compile Include="ImpExp\CacheCategory.cs" />
+    <Compile Include="ImpExp\S4Table.cs" />
+    <Compile Include="ImpExp\SimpleLogger.cs" />
+    <Compile Include="ImpExp\SearchData\S4DBItem.cs" />
+    <Compile Include="ImpExp\SearchData\Article.cs" />
+    <Compile Include="ImpExp\SearchData\Document.cs" />
+    <Compile Include="ImpExp\SearchData\ObjVerInfo.cs" />
+    <Compile Include="ImpExp\SearchData\DocLink.cs" />
+    <Compile Include="ImpExp\SearchData\DocLinkEx.cs" />
+    <Compile Include="ImpExp\SearchData\DocsLinks.cs" />
+    <Compile Include="ImpExp\SearchData\ArtVerInfo.cs" />
+    <Compile Include="ImpExp\SearchData\DocVerInfo.cs" />
+    <Compile Include="ImpExp\SearchData\VartType.cs" />
+    <Compile Include="ImpExp\SearchData\ArtClass.cs" />
+    <Compile Include="ImpExp\SearchData\TechcardDraftInfo.cs" />
+    <Compile Include="ImpExp\SearchData\ArticlesCache.cs" />
+    <Compile Include="ImpExp\SearchData\ArticleTParamsService.cs" />
+    <Compile Include="ImpExp\SearchData\BlobThread.cs" />
+    <Compile Include="ImpExp\SearchData\CommonParamsReader.cs" />
+    <Compile Include="ImpExp\SearchData\ConcurrentList`1.cs" />
+    <Compile Include="ImpExp\SearchData\ProductionListsSettingsControl.cs" />
+    <Compile Include="ImpExp\SearchData\DocLinksHelper.cs" />
+    <Compile Include="ImpExp\SearchData\DocumentTParamsService.cs" />
+    <Compile Include="ImpExp\SearchData\DTSuffixesHelper.cs" />
+    <Compile Include="ImpExp\SearchData\FileStores.cs" />
+    <Compile Include="ImpExp\SearchData\FileStoreList.cs" />
+    <Compile Include="ImpExp\SearchData\FileStore.cs" />
+    <Compile Include="ImpExp\SearchData\ImdocsStore.cs" />
+    <Compile Include="ImpExp\SearchData\BoundPosFactory.cs" />
+    <Compile Include="ImpExp\SearchData\IBoundPosItem.cs" />
+    <Compile Include="ImpExp\SearchData\ArtIDInfo.cs" />
+    <Compile Include="ImpExp\SearchData\VariantsFactory.cs" />
+    <Compile Include="ImpExp\SearchData\IVariantsItem.cs" />
+    <Compile Include="ImpExp\SearchData\LiteraSettingsControl.cs" />
+    <Compile Include="ImpExp\SearchData\ObjectTParamsService.cs" />
+    <Compile Include="ImpExp\SearchData\ObjectTParamValues.cs" />
+    <Compile Include="ImpExp\SearchData\ProductionListsCache.cs" />
+    <Compile Include="ImpExp\SearchData\PumpAVSSettings.cs" />
+    <Compile Include="ImpExp\SearchData\PumpArticlesMode.cs" />
+    <Compile Include="ImpExp\SearchData\PumpArticlesClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpClassificators.cs" />
+    <Compile Include="ImpExp\SearchData\PumpCompositionClass.cs" />
+    <Compile Include="ImpExp\SearchData\ImportingRelationEx.cs" />
+    <Compile Include="ImpExp\SearchData\PumpConfiguratorOptions.cs" />
+    <Compile Include="ImpExp\SearchData\PumpDocRefsClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpDocumentsClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpFinalizer.cs" />
+    <Compile Include="ImpExp\SearchData\PumpFormsClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpHelper.cs" />
+    <Compile Include="ImpExp\SearchData\SpecificationSection.cs" />
+    <Compile Include="ImpExp\SearchData\SpecificationSections.cs" />
+    <Compile Include="ImpExp\SearchData\ApplicableTypes.cs" />
+    <Compile Include="ImpExp\SearchData\OTDStatus.cs" />
+    <Compile Include="ImpExp\SearchData\PumpOptionsToArticles.cs" />
+    <Compile Include="ImpExp\SearchData\PumpOtdClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpPLArticlesClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpProductionLists.cs" />
+    <Compile Include="ImpExp\SearchData\ProductionListIDHelper.cs" />
+    <Compile Include="ImpExp\SearchData\PumpProductionListsAfterPumping.cs" />
+    <Compile Include="ImpExp\SearchData\PumpSelections.cs" />
+    <Compile Include="ImpExp\SearchData\PumpSeriesClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpSignsClass.cs" />
+    <Compile Include="ImpExp\SearchData\SignInfo.cs" />
+    <Compile Include="ImpExp\SearchData\PumpSubstitutesClass.cs" />
+    <Compile Include="ImpExp\SearchData\PumpWorkCopiesClass.cs" />
+    <Compile Include="ImpExp\SearchData\SearchDataPlugin.cs" />
+    <Compile Include="ImpExp\SearchData\AliasData.cs" />
+    <Compile Include="ImpExp\SearchData\AliasInfo.cs" />
+    <Compile Include="ImpExp\SearchData\SearchDataSettingsControl.cs" />
+    <Compile Include="ImpExp\SearchData\ImStorageInfo.cs" />
+    <Compile Include="ImpExp\SearchData\InvalidObject.cs" />
+    <Compile Include="ImpExp\SearchData\PluginSettings.cs" />
+    <Compile Include="ImpExp\SearchData\SearchSign.cs" />
+    <Compile Include="ImpExp\SearchData\SuffixSettingsControl.cs" />
+    <Compile Include="ImpExp\SearchData\TParamValue.cs" />
+    <Compile Include="ImpExp\SearchData\Properties\Resources.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ClassificatorsFactory.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\IClassificatorItem.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ProductionListItem.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ProductionListItemAttributeFactory.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ProductionListItemAttribute.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ProductionListItemFactory.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\SelectionsFactory.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\SelectionOperations.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ISelectionItem.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\SelectionsPicturesFactory.cs" />
+    <Compile Include="ImpExp\SearchData\ItemFactories\ISelectionsPicture.cs" />
+    <Compile Include="ImpExp\SearchData\Controls\RelationTypesComparison.cs" />
+    <Compile Include="Workflow\Design\AutoSizeLabel.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImpExp\SearchData\LiteraSettingsControl.resx" />
+    <EmbeddedResource Include="ImpExp\SearchData\ProductionListsSettingsControl.resx" />
+    <EmbeddedResource Include="ImpExp\SearchData\Properties\Resources.resx" />
+    <EmbeddedResource Include="ImpExp\SearchData\Resources\info.png" />
+    <EmbeddedResource Include="ImpExp\SearchData\Resources\warning.png" />
+    <EmbeddedResource Include="ImpExp\SearchData\SearchDataSettingsControl.resx" />
+    <EmbeddedResource Include="ImpExp\SearchData\SuffixSettingsControl.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

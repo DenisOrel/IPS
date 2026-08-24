@@ -1,0 +1,56 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.PdmConfigurator.PdmOptionObjectNode
+// Assembly: Intermech.PdmConfigurator, Version=7.0.2.1112, Culture=neutral, PublicKeyToken=null
+// MVID: B5CB2E26-657B-4329-B46C-77AE46A32171
+// Assembly location: D:\IPS\Client\Intermech.PdmConfigurator.dll
+
+using Intermech.Interfaces.Client;
+using Intermech.Kernel.Search;
+using Intermech.Localization;
+using Intermech.Navigator;
+using Intermech.Navigator.DBObjects;
+using Intermech.Navigator.Interfaces;
+using Intermech.Navigator.Parts;
+using System;
+using System.Collections.Generic;
+
+#nullable disable
+namespace Intermech.PdmConfigurator;
+
+public sealed class PdmOptionObjectNode(int objTypeID, long objID) : ObjectNode(objTypeID, objID)
+{
+  public const string CategoryObjectsNodeGuid = "{7F78301F-D7CC-4E85-ADA5-DAB876BCF417}";
+  public static readonly string NodeName = LocalizationHolder.rm.GetString("PdmConfigurator_21");
+
+  public override IServiceProvider Services
+  {
+    get => (IServiceProvider) this._services;
+    set => this._services.AdvancedProvider = value;
+  }
+
+  protected override List<PartSlot> CreateNonFolderSlots()
+  {
+    IViewState service = this.Services != null ? this.Services.GetService(typeof (IViewState)) as IViewState : (IViewState) null;
+    if (service == null || (service.ViewState & ViewStateFlags.NodeInViews) == ViewStateFlags.None)
+      return (List<PartSlot>) null;
+    return new List<PartSlot>()
+    {
+      new PartSlot(new Guid("{7F78301F-D7CC-4E85-ADA5-DAB876BCF417}"), (INodePart) new OptionObjectPart(this._objID, this.Services))
+    };
+  }
+
+  public override NodeColumnCollection GetDefaultColumns(ContentType content)
+  {
+    IViewState service1 = this.Services != null ? this.Services.GetService(typeof (IViewState)) as IViewState : (IViewState) null;
+    ViewStateFlags viewStateFlags = service1 != null ? service1.ViewState : ViewStateFlags.None;
+    if ((viewStateFlags & ViewStateFlags.NodeInViews) != ViewStateFlags.NodeInViews && (viewStateFlags & ViewStateFlags.InParametersCard) != ViewStateFlags.InParametersCard)
+      return Utils.CaptionColumnOnly(NodeColumnSortOrder.Ascending);
+    NodeColumnCollection defaultColumns = new NodeColumnCollection();
+    Guid columnSchemeGuid1 = Intermech.Navigator.Consts.ObjectObligatoryColumnSchemeGuid;
+    Guid columnSchemeGuid2 = Intermech.Navigator.Consts.CurrentObjectColumnSchemeGuid;
+    IColumnSchemes service2 = (IColumnSchemes) ServicesManager.GetService(typeof (IColumnSchemes));
+    defaultColumns.Add(service2.CreateColumn(columnSchemeGuid1, (object) ObligatoryObjectAttributes.F_OBJECT_ID), 90);
+    defaultColumns.Add(service2.CreateColumn(columnSchemeGuid1, (object) ObligatoryObjectAttributes.CAPTION, NodeColumnSortOrder.Ascending, 0), 400);
+    return defaultColumns;
+  }
+}

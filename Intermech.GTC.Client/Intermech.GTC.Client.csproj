@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.GTC.Client.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5867E35-67B2-4B76-90B8-B08A943E04B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.GTC.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.GTC.Client</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Controls.VirtualTree">
+      <HintPath>lib\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bars">
+      <HintPath>lib\Intermech.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.GTC.Interfaces">
+      <HintPath>lib\Intermech.GTC.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImSSP\sc_7268.cs" />
+    <Compile Include="BackgroundTask.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="ExtendedBackgroundTaskBase.cs" />
+    <Compile Include="GtcClientPlugin.cs" />
+    <Compile Include="GtcClientResources.cs" />
+    <Compile Include="GtcCommandsProvider.cs" />
+    <Compile Include="GtcItemSelectionWindow.cs" />
+    <Compile Include="IExtendedBackgroundTask.cs" />
+    <Compile Include="ServiceHolder.cs" />
+    <Compile Include="ItemView\GtcProperitesView.cs" />
+    <Compile Include="ItemView\GtcViewProvider.cs" />
+    <Compile Include="PropertyGrid\AttrsRelationshipDescriber.cs" />
+    <Compile Include="PropertyGrid\AttrsRelationshipTypeConverter.cs" />
+    <Compile Include="PropertyGrid\AttrsRelationshipEditor.cs" />
+    <Compile Include="PropertyGrid\AttrsRelationshipPropertyClass.cs" />
+    <Compile Include="PropertyGrid\AttrsRelationshipEditorForm.cs" />
+    <Compile Include="PropertyGrid\GtcObjectPropertyGridTab.cs" />
+    <Compile Include="PropertyGrid\ObjectMainAttributesGridTab.cs" />
+    <Compile Include="PropertyGrid\ObjectAllAttributesGridTab.cs" />
+    <Compile Include="PropertyGrid\IGtcObjectPropDescriptorHolder.cs" />
+    <Compile Include="PropertyGrid\GtcPropDescriptorHolder.cs" />
+    <Compile Include="PropertyGrid\PropertyTabAttribute4GtcPropertyGrid.cs" />
+    <Compile Include="PropertyGrid\BugFixObject.cs" />
+    <Compile Include="PropertyGrid\GtcPropertyGrid.cs" />
+    <Compile Include="PropertyGrid\GtcPropertiesTabCustom.cs" />
+    <Compile Include="ImportWizard\StartPage.cs" />
+    <Compile Include="ImportWizard\ImportMaster.cs" />
+    <Compile Include="ImportWizard\EndPage.cs" />
+    <Compile Include="BrowseFileFolderDialog\BrowseFileFolderDialog.cs" />
+    <Compile Include="BrowseFileFolderDialog\BrowseForServerFileFolder.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BrowseFileFolderDialog\BrowseFileFolderDialog.resx" />
+    <EmbeddedResource Include="GtcClientResources.resx" />
+    <EmbeddedResource Include="ImportWizard\EndPage.resx" />
+    <EmbeddedResource Include="ImportWizard\ImportMaster.resx" />
+    <EmbeddedResource Include="ImportWizard\StartPage.resx" />
+    <EmbeddedResource Include="ItemView\GtcProperitesView.resx" />
+    <EmbeddedResource Include="PropertyGrid\AttrsRelationshipEditorForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

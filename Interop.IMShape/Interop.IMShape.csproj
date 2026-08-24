@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Interop.IMShape.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEE59D7F-8F99-421A-8648-5CC3D4F5B3A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Interop.IMShape</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>Interop.IMShape</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.CADInterface">
+      <HintPath>lib\Interop.CADInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IShapeCom.cs" />
+    <Compile Include="ShapeCom.cs" />
+    <Compile Include="ShapeComClass.cs" />
+    <Compile Include="IShapeItemInfo.cs" />
+    <Compile Include="ShapeItemInfo.cs" />
+    <Compile Include="ShapeItemInfoClass.cs" />
+    <Compile Include="IPdmModelsList.cs" />
+    <Compile Include="PdmModelsList.cs" />
+    <Compile Include="PdmModelsListClass.cs" />
+    <Compile Include="EComCadType.cs" />
+    <Compile Include="EComItemType.cs" />
+    <Compile Include="__MIDL___MIDL_itf_IMShapeCom_0000_0000_0001.cs" />
+    <Compile Include="__MIDL___MIDL_itf_IMShapeCom_0000_0000_0002.cs" />
+    <Compile Include="IShapeCom2.cs" />
+    <Compile Include="IShapeCom3.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

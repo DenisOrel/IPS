@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Interop.IMViewer.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3A162BB-BD1E-469D-9C99-063F1F6F0249}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Interop.IMViewer</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>Interop.IMViewer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="IIMViewerFileConverter.cs" />
+    <Compile Include="IIMViewerFileConverter2.cs" />
+    <Compile Include="IMViewerFileConverter.cs" />
+    <Compile Include="IMViewerFileConverterClass.cs" />
+    <Compile Include="IIMViewerApp.cs" />
+    <Compile Include="IMViewerApp.cs" />
+    <Compile Include="IMViewerAppClass.cs" />
+    <Compile Include="IIMViewerDocView.cs" />
+    <Compile Include="IMViewerDocView.cs" />
+    <Compile Include="IIMViewerView.cs" />
+    <Compile Include="IMViewerDocViewClass.cs" />
+    <Compile Include="IIMViewerMatchView.cs" />
+    <Compile Include="IMViewerMatchView.cs" />
+    <Compile Include="IMViewerMatchViewClass.cs" />
+    <Compile Include="IMViewerAsmView.cs" />
+    <Compile Include="IMViewerAsmViewClass.cs" />
+    <Compile Include="tagIMViewerViewType.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

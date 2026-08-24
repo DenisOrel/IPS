@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\RoslynScriptCompiler\Intermech.Scripting.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7FCB959-9445-4F5D-9A14-0EAB090D5E8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Scripting</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech.Scripting</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management.Automation">
+      <HintPath>lib\System.Management.Automation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ScriptExecutorException.cs" />
+    <Compile Include="ScriptCompilationError.cs" />
+    <Compile Include="ScriptCompilationException.cs" />
+    <Compile Include="ScriptingException.cs" />
+    <Compile Include="ScriptInvocationException.cs" />
+    <Compile Include="ScriptStructureException.cs" />
+    <Compile Include="CSharp\CompileParams.cs" />
+    <Compile Include="CSharp\CSharpLanguageConsts.cs" />
+    <Compile Include="CSharp\CreateScriptObjectParams.cs" />
+    <Compile Include="CSharp\IScriptObjectKeeper.cs" />
+    <Compile Include="CSharp\ExecuteAgentParams.cs" />
+    <Compile Include="CSharp\ScriptObjectKeeper.cs" />
+    <Compile Include="CSharp\ScriptAssemblyChecker.cs" />
+    <Compile Include="CSharp\RoslynCompilerAgent.cs" />
+    <Compile Include="CSharp\IScriptCompilerAgent.cs" />
+    <Compile Include="CSharp\IScriptInvocationOptions.cs" />
+    <Compile Include="CSharp\ScriptDebugTraceListener.cs" />
+    <Compile Include="CSharp\ScriptCustomErrors.cs" />
+    <Compile Include="CSharp\MainDomainScriptInstanceKeeper.cs" />
+    <Compile Include="CSharp\MainDomainScriptRuntimeHelper.cs" />
+    <Compile Include="CSharp\ScriptInvocationOptions.cs" />
+    <Compile Include="CSharp\CompiledCodeCache.cs" />
+    <Compile Include="CSharp\CompiledCodeInfo.cs" />
+    <Compile Include="CSharp\MainDomainScriptExecutorAgent.cs" />
+    <Compile Include="CSharp\EmptySearchPathListProvider.cs" />
+    <Compile Include="CSharp\IScriptExecutorAgent.cs" />
+    <Compile Include="CSharp\ScriptExecutor`1.cs" />
+    <Compile Include="CSharp\ScriptAgentBase.cs" />
+    <Compile Include="CSharp\ExecuteParams.cs" />
+    <Compile Include="CSharp\ScriptExecutorServices.cs" />
+    <Compile Include="CSharp\ScriptArgumentsConverter.cs" />
+    <Compile Include="CSharp\SearchPathListProvider.cs" />
+    <Compile Include="CSharp\WorkerDomainData`1.cs" />
+    <Compile Include="CSharp\WorkerDomainPool`1.cs" />
+    <Compile Include="CSharp\Hosting\ScriptExecutorOptionsProvider.cs" />
+    <Compile Include="CSharp\Hosting\AppDomainSearchPathListProvider.cs" />
+    <Compile Include="CSharp\ServiceProcess\ScriptParseOptions.cs" />
+    <Compile Include="CSharp\ServiceProcess\ICompilerRoot.cs" />
+    <Compile Include="CSharp\ServiceProcess\IScriptLanguageServer.cs" />
+    <Compile Include="CSharp\ServiceProcess\IScriptParser.cs" />
+    <Compile Include="CSharp\ServiceProcess\ILanguageServerRoot.cs" />
+    <Compile Include="CSharp\ServiceProcess\CompilerClient.cs" />
+    <Compile Include="CSharp\ServiceProcess\LanguageServerClient.cs" />
+    <Compile Include="CSharp\ServiceProcess\LocalServiceConnector`1.cs" />
+    <Compile Include="CSharp\ServiceProcess\ServiceProcessConnectionParameters.cs" />
+    <Compile Include="CSharp\ServiceProcess\IScriptCompiler.cs" />
+    <Compile Include="CSharp\ServiceProcess\ScriptCompilerOptions.cs" />
+    <Compile Include="Threading\StoppableTask.cs" />
+    <Compile Include="Threading\StoppableTaskData.cs" />
+    <Compile Include="Threading\StoppableTaskState.cs" />
+    <Compile Include="PowerShell\PowerShellLanguageConsts.cs" />
+    <Compile Include="PowerShell\ConcurrentLRUList`1.cs" />
+    <Compile Include="PowerShell\ScriptExecutor`1.cs" />
+    <Compile Include="PowerShell\ScriptInstanceBucket.cs" />
+    <Compile Include="PowerShell\ScriptInstanceData.cs" />
+    <Compile Include="PowerShell\ScriptInstancePool.cs" />
+    <Compile Include="PowerShell\Hosting\ScriptExecutorOptionsProvider.cs" />
+    <Compile Include="Common\ArgContract.cs" />
+    <Compile Include="Common\CodeModelErrorController.cs" />
+    <Compile Include="Common\CurrentProcessHelper.cs" />
+    <Compile Include="Common\CurrentProcessService.cs" />
+    <Compile Include="Common\EntryPointInfo`1.cs" />
+    <Compile Include="Common\IScriptOutputStream.cs" />
+    <Compile Include="Common\ScriptInvocationData.cs" />
+    <Compile Include="Common\CurrentProcessTempDirectoryService.cs" />
+    <Compile Include="Common\ScriptTextChangesBuilder.cs" />
+    <Compile Include="Common\UniqueIdGenerator.cs" />
+    <Compile Include="Common\ScriptTextChange.cs" />
+    <Compile Include="Common\SimpleOutputStream.cs" />
+    <Compile Include="Common\ScriptCodeHashService.cs" />
+    <Compile Include="Common\ByteArrayComparer.cs" />
+    <Compile Include="Common\ScriptCompiledCodeCache`1.cs" />
+    <Compile Include="Common\EmptyScriptDependencyInjectionService.cs" />
+    <Compile Include="Common\IScriptExecutorEvents.cs" />
+    <Compile Include="Common\ITextHasher.cs" />
+    <Compile Include="Common\LRUTextHasher.cs" />
+    <Compile Include="Common\ScriptCodeKey.cs" />
+    <Compile Include="Common\ScriptExecutorServiceBase.cs" />
+    <Compile Include="Common\ScriptInvocationEventArgs.cs" />
+    <Compile Include="Common\ScriptInvocationFailedEventArgs.cs" />
+    <Compile Include="Common\ScriptDependencyInjectionService.cs" />
+    <Compile Include="Common\SHA1TextHasher.cs" />
+    <Compile Include="Common\ScriptFileNameGenerator.cs" />
+    <Compile Include="Common\DesignTime\CodeModelServiceProvider`1.cs" />
+    <Compile Include="Common\DesignTime\CodeModelSynchronizationStatus.cs" />
+    <Compile Include="Common\DesignTime\CodeNavigationProvider.cs" />
+    <Compile Include="Common\DesignTime\CodeFoldingProvider.cs" />
+    <Compile Include="Common\DesignTime\EmptyCodeModel.cs" />
+    <Compile Include="Common\DesignTime\HoverInfo.cs" />
+    <Compile Include="Common\DesignTime\HoverInfoProvider.cs" />
+    <Compile Include="Common\DesignTime\ICodeModel.cs" />
+    <Compile Include="Common\DesignTime\ICodeModelServiceProvider.cs" />
+    <Compile Include="Common\DesignTime\ICodeNavigationService.cs" />
+    <Compile Include="Common\DesignTime\ICodeFoldingService.cs" />
+    <Compile Include="Common\DesignTime\IHoverInfoService.cs" />
+    <Compile Include="Common\DesignTime\ILanguageExtension.cs" />
+    <Compile Include="Common\DesignTime\FoldingRegionItem.cs" />
+    <Compile Include="Common\DesignTime\IScriptProjectOptionsBehavior.cs" />
+    <Compile Include="Common\DesignTime\NavigationPosition.cs" />
+    <Compile Include="Common\DesignTime\NavigationRange.cs" />
+    <Compile Include="Common\DesignTime\CodeCompletionItemType.cs" />
+    <Compile Include="Common\DesignTime\IEditableTextDocument.cs" />
+    <Compile Include="Common\DesignTime\IEditableTextLine.cs" />
+    <Compile Include="Common\DesignTime\ILanguageSessionParameters.cs" />
+    <Compile Include="Common\DesignTime\IOverloadInsightHandler.cs" />
+    <Compile Include="Common\DesignTime\IScriptReplacementBehavior.cs" />
+    <Compile Include="Common\DesignTime\ISettingsContainer.cs" />
+    <Compile Include="Common\DesignTime\ITextDocument.cs" />
+    <Compile Include="Common\DesignTime\ITextEditor.cs" />
+    <Compile Include="Common\DesignTime\ITextEditorAction.cs" />
+    <Compile Include="Common\DesignTime\ITextEditorLanguageService.cs" />
+    <Compile Include="Common\DesignTime\ITextEditorUIAction.cs" />
+    <Compile Include="Common\DesignTime\LanguageDescriptor.cs" />
+    <Compile Include="Common\DesignTime\LanguageServices.cs" />
+    <Compile Include="Common\DesignTime\UTF8EncodingDetector.cs" />
+    <Compile Include="Common\DesignTime\ICodeCompletionProvider.cs" />
+    <Compile Include="Common\DesignTime\ICodeCompletionResultBuilder.cs" />
+    <Compile Include="Common\DesignTime\ILanguageSession.cs" />
+    <Compile Include="Common\DesignTime\ILanguageSessionService.cs" />
+    <Compile Include="Common\DesignTime\InMemoryScriptProjectFile.cs" />
+    <Compile Include="Common\DesignTime\IReadOnlyTextDocument.cs" />
+    <Compile Include="Common\DesignTime\IScriptDebugBehavior.cs" />
+    <Compile Include="Common\DesignTime\IScriptDisplayBehavior.cs" />
+    <Compile Include="Common\DesignTime\IScriptProjectFactory.cs" />
+    <Compile Include="Common\DesignTime\IScriptProjectRepository.cs" />
+    <Compile Include="Common\DesignTime\IScriptSaveChangesBehavior.cs" />
+    <Compile Include="Common\DesignTime\IScriptSystemService.cs" />
+    <Compile Include="Common\DesignTime\IScriptTextEditorBehavior.cs" />
+    <Compile Include="Common\DesignTime\LanguageInfo.cs" />
+    <Compile Include="Common\DesignTime\LanguageRegistry.cs" />
+    <Compile Include="Common\DesignTime\LanguageSession.cs" />
+    <Compile Include="Common\DesignTime\ScriptAfterSaveEventArgs.cs" />
+    <Compile Include="Common\DesignTime\ScriptBeforeSaveEventArgs.cs" />
+    <Compile Include="Common\DesignTime\ScriptDebugInvocationParameters.cs" />
+    <Compile Include="Common\DesignTime\ScriptDebugInvocationResult.cs" />
+    <Compile Include="Common\DesignTime\ScriptDesignTimeException.cs" />
+    <Compile Include="Common\DesignTime\ScriptProject.cs" />
+    <Compile Include="Common\DesignTime\ScriptProjectBehaviors.cs" />
+    <Compile Include="Common\DesignTime\ScriptProjectFile.cs" />
+    <Compile Include="Common\DesignTime\ScriptSaveAsParameters.cs" />
+    <Compile Include="Common\DesignTime\NavigationItem.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

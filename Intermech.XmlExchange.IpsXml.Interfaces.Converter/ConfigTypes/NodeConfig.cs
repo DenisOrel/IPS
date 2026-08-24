@@ -1,0 +1,39 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.XmlExchange.IpsXml.Interfaces.Converter.ConfigTypes.NodeConfig
+// Assembly: Intermech.XmlExchange.IpsXml.Interfaces.Converter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: E9BB5546-0F4A-4E7E-A111-8011765E8C48
+// Assembly location: D:\IPS\Client\Intermech.XmlExchange.IpsXml.Interfaces.Converter.dll
+
+using System.Xml.Linq;
+
+#nullable disable
+namespace Intermech.XmlExchange.IpsXml.Interfaces.Converter.ConfigTypes;
+
+public class NodeConfig : BaseConfigNode
+{
+  private AttrConfigs _attrConfigs = new AttrConfigs();
+  private bool _export = true;
+
+  public override void LoadFromXML(XElement configNode)
+  {
+    base.LoadFromXML(configNode);
+    XAttribute xattribute = configNode.Attribute((XName) "export");
+    this._export = xattribute == null || !xattribute.Value.Equals("false");
+    XElement configNode1 = configNode.Element((XName) "attrs");
+    if (configNode1 == null)
+      return;
+    this._attrConfigs.LoadFromXML(configNode1);
+  }
+
+  public bool Export
+  {
+    get => this._export;
+    set => this._export = value;
+  }
+
+  public AttrConfigs AttrConfigs
+  {
+    get => this._attrConfigs;
+    set => this._attrConfigs = value;
+  }
+}

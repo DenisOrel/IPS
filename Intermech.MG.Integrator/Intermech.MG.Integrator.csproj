@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\Client\Intermech.MG.Integrator.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15A17230-483B-4845-A9A6-351F5DF5FB84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.MG.Integrator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Client.Core">
+      <HintPath>lib\Intermech.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Client">
+      <HintPath>lib\Intermech.Interfaces.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Pdm">
+      <HintPath>lib\Intermech.Interfaces.Pdm.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Tools.Components">
+      <HintPath>lib\Intermech.Tools.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interop\Viewdraw\IProjectData.cs" />
+    <Compile Include="Interop\Viewdraw\IStringList.cs" />
+    <Compile Include="Interop\Viewdraw\IVdApp.cs" />
+    <Compile Include="Interop\Viewdraw\IVdAttr.cs" />
+    <Compile Include="Interop\Viewdraw\IVdComp.cs" />
+    <Compile Include="Interop\Viewdraw\IVdObjs.cs" />
+    <Compile Include="Interop\Viewdraw\IVdView.cs" />
+    <Compile Include="Interop\Viewdraw\VdAllOrSelected.cs" />
+    <Compile Include="Interop\Viewdraw\VdObjectType.cs" />
+    <Compile Include="Interop\Viewdraw\VdObjectTypeMask.cs" />
+    <Compile Include="Interop\Viewdraw\VdVisibilityFlag.cs" />
+    <Compile Include="MGCPCBPartsEditor\EPDBUnit.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBPart.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBPartitions.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBPartsDB.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBPartsEditorDlg.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBProperties.cs" />
+    <Compile Include="MGCPCBPartsEditor\IMGCPDBProperty.cs" />
+    <Compile Include="MGCPCBPartsEditor\Partitions.cs" />
+    <Compile Include="MGCPCBPartsEditor\PartsDB.cs" />
+    <Compile Include="MGCPCBPartsEditor\Properties.cs" />
+    <Compile Include="MGCPCBPartsEditor\_IMGCPDBBaseCollection.cs" />
+    <Compile Include="MGCPCBAutomationLicensing\IApplication.cs" />
+    <Compile Include="MGCPCB\Application.cs" />
+    <Compile Include="MGCPCB\Component.cs" />
+    <Compile Include="MGCPCB\Components.cs" />
+    <Compile Include="MGCPCB\Document.cs" />
+    <Compile Include="MGCPCB\EPcbCelltype.cs" />
+    <Compile Include="MGCPCB\EPcbComponentType.cs" />
+    <Compile Include="MGCPCB\EPcbSelectionType.cs" />
+    <Compile Include="MGCPCB\IMGCPCBApplication.cs" />
+    <Compile Include="MGCPCB\IMGCPCBBaseCollection.cs" />
+    <Compile Include="MGCPCB\IMGCPCBComponent.cs" />
+    <Compile Include="MGCPCB\IMGCPCBComponents.cs" />
+    <Compile Include="MGCPCB\IMGCPCBDocument.cs" />
+    <Compile Include="MGCPCB\IMGCPCBProperty.cs" />
+    <Compile Include="MGCPCB\Property.cs" />
+    <Compile Include="MGCPCB\_IMGCPCBApplicationEvents.cs" />
+    <Compile Include="MGCPCB\_IMGCPCBApplicationEvents_Event.cs" />
+    <Compile Include="MGCPCB\_IMGCPCBDocumentEvents.cs" />
+    <Compile Include="MGCPCB\_IMGCPCBDocumentEvents_Event.cs" />
+    <Compile Include="ImSSP\sc_14745.cs" />
+    <Compile Include="ImSSP\sc_14695.cs" />
+    <Compile Include="ImSSP\sc_14675.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGComponentsListFilter.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDIntegratorAPI.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGIntegratorAPI.cs" />
+    <Compile Include="Intermech\MG\Integrator\DocumentNotRegisteredException.cs" />
+    <Compile Include="Intermech\MG\Integrator\DocumentNotOpenedException.cs" />
+    <Compile Include="Intermech\MG\Integrator\SelectedComponentsNotFoundException.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBIntegratorAPI.cs" />
+    <Compile Include="Intermech\MG\Integrator\IDXDIntegratorAPI.cs" />
+    <Compile Include="Intermech\MG\Integrator\IExPCBIntegratorAPI.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDElementList.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDSettingsService.cs" />
+    <Compile Include="Intermech\MG\Integrator\ComInstancesCreator`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBProjectBoardsReader.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBSettingsSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\LicenseServer.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGDocumentEmbedAttributesDriver.cs" />
+    <Compile Include="Intermech\MG\Integrator\ProjectInfo.cs" />
+    <Compile Include="Intermech\MG\Integrator\FunctionalGroupHelper.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGCompositionReader.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDProjectBoardsReader.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBElementList.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBSettingsService.cs" />
+    <Compile Include="Intermech\MG\Integrator\PCBPart.cs" />
+    <Compile Include="Intermech\MG\Integrator\SpecialAttributesConsts.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDLaunchActionService.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDApplicationLauncherService.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDApiSession.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDCommandsModule.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDCommandsProvider.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDFileTypeService.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDIntegrator.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBAssemblyComponent.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBCommandsModule.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBCommandsProvider.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBFileTypeService.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBIntegrator.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBInterfaceService.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBPartEditor.cs" />
+    <Compile Include="Intermech\MG\Integrator\ISpecialAttributeHandler.cs" />
+    <Compile Include="Intermech\MG\Integrator\PartNumberHandler.cs" />
+    <Compile Include="Intermech\MG\Integrator\RefDesHandler.cs" />
+    <Compile Include="Intermech\MG\Integrator\DescriptionHandler.cs" />
+    <Compile Include="Intermech\MG\Integrator\SpecialAttributesService.cs" />
+    <Compile Include="Intermech\MG\Integrator\IAttributeCodecCollection.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGArticleExternalKeysService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGArticleTypesService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGEmbedAttributesService.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBApiSession.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBApplicationLauncherService.cs" />
+    <Compile Include="Intermech\MG\Integrator\SynchronizedMGArticleAttributes.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGArticleCodec`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\AttributeTable.cs" />
+    <Compile Include="Intermech\MG\Integrator\SynchronizedMGDocumentAttributes.cs" />
+    <Compile Include="Intermech\MG\Integrator\SchemaPropertiesFormatter`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\VirtualAttributes.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGConsts.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGCaptureChangesService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGCommandsModule.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGInterfaceService`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBLaunchActionService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGDocumentCodec`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGExtendedSaveService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGIntegratorModule`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGLicenseService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGProjectType.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGProjectHelper.cs" />
+    <Compile Include="Intermech\MG\Integrator\OpenMGProject.cs" />
+    <Compile Include="Intermech\MG\Integrator\ComponentProperty`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDComponentProperty.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDProject.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBComponent.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBComponentProperty.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBDocument.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBProject.cs" />
+    <Compile Include="Intermech\MG\Integrator\IMGApplication.cs" />
+    <Compile Include="Intermech\MG\Integrator\IMGProject.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGObject`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGProject`2.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGProjectItem`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGComponent`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDSchema.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDComponent.cs" />
+    <Compile Include="Intermech\MG\Integrator\ExPCBApplication.cs" />
+    <Compile Include="Intermech\MG\Integrator\IMGProjectItem.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGApplication`1.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDSettingsSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\FilterItemSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\ComponentsFilterUIEditor.cs" />
+    <Compile Include="Intermech\MG\Integrator\ElementListItemSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\ElementListsUIEditor.cs" />
+    <Compile Include="Intermech\MG\Integrator\ElementListTypeMarkerUIEditor.cs" />
+    <Compile Include="Intermech\MG\Integrator\NotImportedBoardSettingsSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\SettingsCodec.cs" />
+    <Compile Include="Intermech\MG\Integrator\SettingsValidator.cs" />
+    <Compile Include="Intermech\MG\Integrator\ListFilesBuilder.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDInterfaceService.cs" />
+    <Compile Include="Intermech\MG\Integrator\DXDApplication.cs" />
+    <Compile Include="Intermech\MG\Integrator\ImportService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGIntegrator.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGIntegratorSettings.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGMechanicalDriver.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGDocumentApi.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGPlugin.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGSettingsService.cs" />
+    <Compile Include="Intermech\MG\Integrator\MGSettingsSurrogate.cs" />
+    <Compile Include="Intermech\MG\Integrator\SettingsUtils.cs" />
+    <Compile Include="Intermech\MG\Integrator\Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Intermech\MG\Integrator\Properties\Resources.resx" />
+    <EmbeddedResource Include="Intermech\MG\Integrator\Resources\Integrator template.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

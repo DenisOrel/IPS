@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="panel2.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAACAAAACw==</value>
+  </data>
+  <data name="panel2.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAAAoAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;iGrid1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="panel3.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="panel3.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAADrAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonPrev.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lWarningsCount.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonPrev.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel4.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAACw==</value>
+  </data>
+  <data name="panel4.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAABGAAAACw==</value>
+  </data>
+  <data name="lErrorsCount.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;iGrid1Col0CellStyle.Name" xml:space="preserve">
+    <value>iGrid1Col0CellStyle</value>
+  </data>
+  <data name="&gt;&gt;iGrid1Col0CellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;miCopy.Name" xml:space="preserve">
+    <value>miCopy</value>
+  </data>
+  <data name="&gt;&gt;miCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Icon" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>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hb7Td7bOaK3ITJ27LoGhIW6OTXyOAAAAAAAAABiQFzjHFzjHABiQAAAAAAAAAAAAAAAAAAAAlqasN3aQmMrd0u745vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYhb7Td7bOaa7JW6fETaC/Ppi6KYerEVdyABiQFzjHIUbni57xFzjHAAAAAAAAAAAAAAAAAAAAMX+ep9zvwej20+/55vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYhb7Td7bOaa7JW6fETaC/Ppi6K36eABiQFzjHIUbni57xFzjHAAAAAAAAAAAAAAAAAAAAAAAAL4qsr+L0wej20+/55vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYhb7Td7bOaa7JW6fETaC/NoWjABiQFzjHIUbni57xFzjHAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4qsr+L0wej20+/55vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYhb7Td7bOaa7JW6fEQ4ynABiQFzjHIUbni57xFzjHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4qsr+L0wej20+/55PT63OvxvNjincXViLnNfbPIcq7FaqnCZafAYKW/X6XAY6nDYKjET5KrABiQFzjHIUbni57xFzjHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4qsr+H0m8/icK/HfbXKosjXwtvlzeLqyODpvNrlsdTho8zcksPWgrrPbK7GU567N4CcABiQFzjHIUbni57xFzjHBlNyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKYapVqTBgr7Uzev25vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYhb7TaJ+0ABiQFzjHIUbni57xFzjHEGqMBV6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIoGkndXpwej20+/55vX79/z+9vr76PL22evxy+Psvtznr9Tioczdk8XYdKa5ABiQFzjHIUbni57xFzjHK36eIIetBFx/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL4qsr+L0wej20+/55vX79/z+9vr76PL22evxy+Psvtznr9Tioczdgay9ABiQFzjHIUbni57xFzjHNoWjMZC1IomwB1+CAAAAAAAAAAAA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</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Программа миграции данных</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="bBasesInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel3.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="buttonNext.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Name" xml:space="preserve">
+    <value>buttonNext</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lErrorsCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAABqAgAACw==</value>
+  </data>
+  <data name="&gt;&gt;lText.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="label6.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lInfosCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lTime.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAJAAAACw==</value>
+  </data>
+  <data name="lWarningsCount.Text" xml:space="preserve">
+    <value>Предупреждений: 0</value>
+  </data>
+  <data name="lWarningsCount.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAGoAAAANAAAACw==</value>
+  </data>
+  <data name="label1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABAAAAAQAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;iGrid1DefaultColHdrStyle.Name" xml:space="preserve">
+    <value>iGrid1DefaultColHdrStyle</value>
+  </data>
+  <data name="&gt;&gt;iGrid1DefaultColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label6.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABAAAAAQAAAACw==</value>
+  </data>
+  <data name="buttonPrev.Text" xml:space="preserve">
+    <value>&lt; Назад</value>
+  </data>
+  <data name="buttonPrev.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEsAAAAXAAAACw==</value>
+  </data>
+  <data name="label4.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAABAAAAAQAAAACw==</value>
+  </data>
+  <data name="iGrid1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="buttonNext.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEsAAAAXAAAACw==</value>
+  </data>
+  <data name="buttonNext.Text" xml:space="preserve">
+    <value>Далее &gt;</value>
+  </data>
+  <data name="panel4.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="bBasesInfo.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAJAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bBasesInfo.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="buttonExit.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAC0AgAACAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.Name" xml:space="preserve">
+    <value>buttonExit</value>
+  </data>
+  <data name="splitContainer1.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="splitContainer1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAAAkAgAACw==</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="iGrid1.Header.Height" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.ImageIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lWarningsCount.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lWarningsCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="lText.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEIAAAAYAAAACw==</value>
+  </data>
+  <data name="lText.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="lText.Font" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQIAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AgAAAAIAAAAGAwAAABRNaWNyb3NvZnQgU2FucyBTZXJpZgAAYEEF/P///xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18ACAIAAAABAAAABfv///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgCAAAAAwAAAAs=</value>
+  </data>
+  <data name="panelSteps.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAADrAAAACw==</value>
+  </data>
+  <data name="panelSteps.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="lWarningsCount.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAACTAAAADQAAAAs=</value>
+  </data>
+  <data name="label4.ImageIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;lWarningsCount.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;bBasesInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelSteps.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAAAAAAAAs=</value>
+  </data>
+  <data name="buttonPrev.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAASAgAACAAAAAs=</value>
+  </data>
+  <data name="splitContainer1.Orientation" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACBTeXN0ZW0uV2luZG93cy5Gb3Jtcy5PcmllbnRhdGlvbgEAAAAHdmFsdWVfXwAIAgAAAAAAAAAL</value>
+  </data>
+  <data name="&gt;&gt;lInfosCount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lText.Name" xml:space="preserve">
+    <value>lText</value>
+  </data>
+  <data name="lWarningsCount.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="lText.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAABCAAAAFgAAAAs=</value>
+  </data>
+  <data name="buttonPrev.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAKAAAACw==</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bBasesInfo.Name" xml:space="preserve">
+    <value>bBasesInfo</value>
+  </data>
+  <data name="&gt;&gt;bBasesInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iGColPattern1.Text" xml:space="preserve">
+    <value>Сообщения</value>
+  </data>
+  <data name="lTime.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAQAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;panelSteps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSteps.Name" xml:space="preserve">
+    <value>panelSteps</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pictureBox1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAMAAAADAAAAAs=</value>
+  </data>
+  <data name="label1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAQAAAACwAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lInfosCount.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="splitContainer1.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAARgAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;panelSteps.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonPrev.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>275</value>
+  </data>
+  <data name="miCopy.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAALEAAAAWAAAACw==</value>
+  </data>
+  <data name="miCopy.Text" xml:space="preserve">
+    <value>Копировать Ctrl+C</value>
+  </data>
+  <data name="iGColPattern1.Width" type="System.Int32, mscorlib">
+    <value>777</value>
+  </data>
+  <data name="pictureBox1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAADAAAAAwAAAACw==</value>
+  </data>
+  <data name="lInfosCount.TextAlign" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAB9TeXN0ZW0uRHJhd2luZy5Db250ZW50QWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgCAAAAEAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABoIgAAAk1TRnQBSQFMAgEBBgEAAXQBAAF0AQABEAEAARABAAT/ASEBEAj/AUIBTQE2BwABNgMAASgDAAFAAwABIAMAAQEBAAEgBgABIBIAAYIBjAGOAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AYkBkwGVAf8BggGMAY4B/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BiQGTAZUB/4AAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AYIBswHQAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AfAB9gH4Af8BmgGgAcYB/wGBAYMBtQH/AYEBgwG1Af8BgQGDAbUB/wGBAYMBtQH/AYEBgwG1Af8BgQGDAbUB/wGBAYMBtQH/AYEBgwG1Af8BgQGDAbUB/wHwAfYB+AH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wGOAbsB1QH/ASEBxgHqAf8BAAH+Av8BAAP/ARcD/wFRAv4B/wFqAv4B/wFrAv4B/wFrAv4B/wFpAf0B/gH/ARwB1wL/AVABnQHDAf8B8AH2AfgB/wGeAacBqQH/AYIBjAGOAf8B8AH2AfgB/wGpAa8B2QH/ATsBQgHCAf8BJQEpAc8B/wEjASYB0AH/AR4BGwHWAf8BIAEaAdgB/wEgARoB2AH/ASkBHwHaAf8BNQEoAd0B/wE5ASwB3QH/AWABYQHhAf8BgQGDAbUB/wHwAfYB+AH/AZ4BpwGpAf+AAAGCAYwBjgH/AfAB9gH4Af8BjgG7AdUB/wEbAcYB6wH/AQoB5gL/AQIB5QL/AQEB5wL/AQABxgHaAf8BAgGuAcAB/wEHAecC/wEJAd4C/wEPAdcC/wFYAfcC/wFQAZ0BwwH/AfAB9gH4Af8BngGnAakB/wGCAYwBjgH/AfAB9gH4Af8BngGlAdcB/wEgAScBwAH/AQkBCwHAAf8BCQELAcAB/wEJAQsBwAH/AREBCwHNAf8BCQELAcAB/wEJAQsBwAH/AQkBCwHAAf8BCQELAcAB/wEuATkBywH/AYEBgwG1Af8B8AH2AfgB/wGeAacBqQH/gAABggGMAY4B/wHwAfYB+AH/AY4BuwHVAf8BBgHKAewB/wEAAegC/wEAAeIB/gH/AQAB7gH+Af8BBAFtAYEB/wERARYBGQH/AQAB9QH7Af8BAAHhAf4B/wEAAdUC/wFrAv4B/wFQAZ0BwwH/AfAB9gH4Af8BngGnAakB/wGCAYwBjgH/AfAB9gH4Af8BmQGgAdUB/wEcASQBwQH/AQ4BFQG5Af8BKgEvAcMB/wGLAYwB4AH/ATIBMQG6Af8BFAEXAaUB/wGLAYwB4AH/AUQBRQHQAf8BCQELAcAB/wEuATkBywH/AYEBgwG1Af8B8AH2AfgB/wGeAacBqQH/gAABggGMAY4B/wHwAfYB+AH/AY4BuwHVAf8BRAHTAewB/wEAAekC/wEAAeMB/QH/AQAB5gH8Af8BAAHUAeIB/wEEAbEBxQH/AQAB3wH6Af8BAAHbAf0B/wEEAdkB/gH/AWsC/gH/AVABnQHDAf8B8AH2AfgB/wGeAacBqQH/AYIBjAGOAf8B8AH2AfgB/wGPAZYBzwH/ARcBIAHBAf8BBwESAcAB/wEaASMBugH/AbABsQHUAf8B1wHYAekB/wHKAcsB4gH/AdcB2AHpAf8BNAEzAbkB/wEUAQ4BywH/AS4BOQHLAf8BgQGDAbUB/wHwAfYB+AH/AZ4BpwGpAf+AAAGCAYwBjgH/AfAB9gH4Af8BjgG7AdUB/wGCAdkB7AH/AQAB6gL/AQAB4wH8Af8BAAHtAf4B/wESAZsBngH/AScBOQE/Af8BAAHvAf4B/wEAAd8C/wEKAd0B/gH/AWsC/gH/AVABnQHDAf8B8AH2AfgB/wGeAacBqQH/AYIBjAGOAf8B8AH2AfgB/wGKAZABzAH/ASIBKQHBAf8BBwEWAcUB/wEFARIBxAH/AQ4BFAGmAf8BygHLAeIF/wEZARwBmAH/Ag4BxAH/ARMBEAHHAf8BLgE5AcsB/wGBAYMBtQH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wGOAbsB1QH/AZQB2wHsAf8BAAHpAv8BAAHmAf0B/wEAAeYB9QH/AQABNAE4Af8DAAH/AQcB4gHuAf8BEQHlAv8BCQHfAf4B/wFqAv4B/wFQAZ0BwwH/AfAB9gH4Af8BngGnAakB/wGCAYwBjgH/AfAB9gH4Af8BigGQAcoB/wEmAS4BwQH/AQgBEwHFAf8BGwEkAb0B/wGwAbEB1AH/AdcB2AHpAf8BygHLAeIB/wHXAdgB6QH/ATABMwG0Af8BCwEPAcEB/wEuATkBywH/AYEBgwG1Af8B8AH2AfgB/wGeAacBqQH/gAABggGMAY4B/wHwAfYB+AH/AY4BuwHVAf8BmQHcAewB/wEEAeQC/wEAAfQB/gH/AQABygHWAf8BAAEfASUB/wMAAf8BEwGbAbUB/wEYAegC/wELAd4B/AH/AWgC/gH/AVABnQHDAf8B8AH2AfgB/wGeAacBqQH/AYIBjAGOAf8B8AH2AfgB/wGLAZAByQH/AUgBTgHGAf8BDgEVAbkB/wEtATIBvAH/AZUBlwHFAf8BLgEyAawB/wEQARQBpAH/AZUBlwHFAf8BTgFUAcEB/wEUAR0BvQH/AS4BOQHLAf8BgQGDAbUB/wHwAfYB+AH/AZ4BpwGpAf+AAAGCAYwBjgH/AfAB9gH4Af8BjgG7AdUB/wG+Ad4B7AH/AVIB8QL/AREB4gH+Af8BDQHiAfIB/wEJAWkBhgH/AQkBRAFYAf8BIAHfAeoB/wEYAegC/wEWAeYB/gH/AWUB/AH+Af8BUAGdAcMB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AZEBlgHEAf8BngGhAdQB/wE6AT4BxQH/ATYBOwHCAf8BIQEpAbMB/wESARsBuQH/ARABGQG8Af8BIAEnAa4B/wEfASkBuAH/ASgBMwHGAf8BLgE5AcsB/wGBAYMBtQH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wGOAbsB1QH/AUwBuAHaAf8B4gP/AZwB/AL/AV0B+AL/AR0B6wL/ARgB6AL/ASMB4gH+Af8BGAHoAv8BGAHoAv8BGAHoAv8BUAGdAcMB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AZsBoQHBAf8BWgFfAa0B/wGBAYIB0AH/AWwBgQHSAf8BRQFOAdEB/wEuATkBywH/AS4BOQHLAf8BOQFCAccB/wEuATkBywH/AS4BOQHLAf8BLgE5AcsB/wFcAV4BqwH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AYIBswHQAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8BUAGdAcMB/wFQAZ0BwwH/AVABnQHDAf8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AfAB9gH4Af8BhgGJAbIB/wFQAVUBpAH/AVABVQGlAf8BUAFVAaYB/wFQAVYBpwH/AVABVgGnAf8BWAFeAawB/wFnAWoBsAH/AYEBgwG1Af8BXAFeAasB/wHvAfYB+AH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf8BggGMAY4B/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8BngGnAakB/4AAAYIBjAGOAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AYkBkwGVAf8BggGMAY4B/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BiQGTAZUB//8A/wBCAAGCAYwBjgH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGJAZMBlQH/wAABggGMAY4B/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8BngGnAakB/wwAAUwCSwGPAVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/GAABTAJLAY8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8YAAFMAksBjwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwwAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AYwBrAGIAf8BWwGSAVUB/wFbAZIBVQH/AVsBkgFVAf8BWwGSAVUB/wFbAZIBVQH/AVsBlQFVAf8BWwGXAVYB/wFcAZUBVgH/AV4BlQFXAf8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf8IAAFHAkYBgAE+AacBKAH/AT4ByAExAf8BOwHMATEB/wE5AdIBMQH/ATgB1AExAf8BOAHUATEB/wE4AdQBMQH/ATgB1AExAf8BOAHIATAB/wFSAbwBRQH/AVkCVwG/EAABRwJGAYABIQHGAeoB/wEAAf4C/wEAA/8BFwP/AVEC/gH/AWoC/gH/AWsC/gH/AWsC/gH/AWkB/QH+Af8BHAHXAv8BWQJXAb8QAAFHAkYBgAE7AUIBwgH/ASUBKQHPAf8BIwEmAdAB/wEeARsB1gH/ASABGgHYAf8BIAEaAdgB/wEpAR8B2gH/ATUBKAHdAf8BOQEsAd0B/wFgAWEB4QH/AVkCVwG/CAABggGMAY4B/wHwAfYB+AH/AZIBwAGNAf8BPgGnASgB/wE+AcgBMQH/ATsBzAExAf8BOQHSATEB/wE4AdQBMQH/ATgB1AExAf8BOAHUATEB/wE4AdQBMQH/ATgByAEwAf8BUgG8AUUB/wFfAZcBWQH/AfAB9gH4Af8BngGnAakB/wgAAUcCRgGAAS4BpwEWAf8BLAG1ARAB/wEqAbUBDwH/ASEBtQELAf8BIAG1AQsB/wEgAbUBCwH/ASABtAELAf8BIAG2AQ0B/wElAb8BHAH/ATcB0wEwAf8BWQJXAb8QAAFHAkYBgAEbAcYB6wH/AQoB5gL/AQIB5QL/AQEB5wL/AQABxgHaAf8BAgGuAcAB/wEHAecC/wEJAd4C/wEPAdcC/wFYAfcC/wFZAlcBvxAAAUcCRgGAASABJwHAAf8BCQELAcAB/wEJAQsBwAH/AQkBCwHAAf8BEQELAc0B/wEJAQsBwAH/AQkBCwHAAf8BCQELAcAB/wEJAQsBwAH/AS4BOQHLAf8BWQJXAb8IAAGCAYwBjgH/AfAB9gH4Af8BkgHAAY0B/wEuAacBFgH/ASwBtQEQAf8BKgG1AQ8B/wEhAbUBCwH/ASABtQELAf8BIAG1AQsB/wEgAbQBCwH/ASABtgENAf8BJQG/ARwB/wE3AdMBMAH/AWEBmAFdAf8B8AH2AfgB/wGeAacBqQH/CAABRwJGAYABLwGpARQB/wErAbUBDAH/ATsBugEgAf8BhgHTAWwB/wFEAagBNAH/ASABrwEIAf8BIAGuAQcB/wEgAa8BBwH/ASMBuwEVAf8BOAHUATEB/wFZAlcBvxAAAUcCRgGAAQYBygHsAf8BAAHoAv8BAAHiAf4B/wEAAe4B/gH/AQQBbQGBAf8BEQEWARkB/wEAAfUB+wH/AQAB4QH+Af8BAAHVAv8BawL+Af8BWQJXAb8QAAFHAkYBgAEcASQBwQH/AQ4BFQG5Af8BKgEvAcMB/wGLAYwB4AH/ATIBMQG6Af8BFAEXAaUB/wGLAYwB4AH/AUQBRQHQAf8BCQELAcAB/wEuATkBywH/AVkCVwG/CAABggGMAY4B/wHwAfYB+AH/AZIBwAGNAf8BLwGpARQB/wErAbUBDAH/ATsBugEgAf8BhgHTAWwB/wFEAagBNAH/ASABrwEIAf8BIAGuAQcB/wEgAa8BBwH/ASMBuwEVAf8BOAHUATEB/wFeAZUBWAH/AfAB9gH4Af8BngGnAakB/wgAAUcCRgGAATEBqgEVAf8BKAGxAQcB/wFXAcMBPQH/AfcB+wH2Af8B3QHmAdoB/wEzAYQBIQH/AR8BqQEEAf8BIAGrAQQB/wEiAbUBEAH/ATgB1AExAf8BWQJXAb8QAAFHAkYBgAFEAdMB7AH/AQAB6QL/AQAB4wH9Af8BAAHmAfwB/wEAAdQB4gH/AQQBsQHFAf8BAAHfAfoB/wEAAdsB/QH/AQQB2QH+Af8BawL+Af8BWQJXAb8QAAFHAkYBgAEXASABwQH/AQcBEgHAAf8BGgEjAboB/wGwAbEB1AH/AdcB2AHpAf8BygHLAeIB/wHXAdgB6QH/ATQBMwG5Af8BFAEOAcsB/wEuATkBywH/AVkCVwG/CAABggGMAY4B/wHwAfYB+AH/AZIBwAGNAf8BMQGqARUB/wEoAbEBBwH/AVcBwwE9Af8B9wH7AfYB/wHdAeYB2gH/ATMBhAEhAf8BHwGpAQQB/wEgAasBBAH/ASIBtQEQAf8BOAHUATEB/wFcAZIBVgH/AfAB9gH4Af8BngGnAakB/wgAAUcCRgGAATkBqwEgAf8BLAGwAQkB/wFeAcQBQwH/AaMBvAGcAf8B0QHdAc0F/wE0AYUBIwH/ASMBrQENAf8BIwGxAREB/wE3AdEBLwH/AVkCVwG/EAABRwJGAYABggHZAewB/wEAAeoC/wEAAeMB/AH/AQAB7QH+Af8BEgGbAZ4B/wEnATkBPwH/AQAB7wH+Af8BAAHfAv8BCgHdAf4B/wFrAv4B/wFZAlcBvxAAAUcCRgGAASIBKQHBAf8BBwEWAcUB/wEFARIBxAH/AQ4BFAGmAf8BygHLAeIF/wEZARwBmAH/Ag4BxAH/ARMBEAHHAf8BLgE5AcsB/wFZAlcBvwgAAYIBjAGOAf8B8AH2AfgB/wGSAcABjQH/ATkBqwEgAf8BLAGwAQkB/wFeAcQBQwH/AaMBvAGcAf8B0QHdAc0F/wE0AYUBIwH/ASMBrQENAf8BIwGxAREB/wE3AdEBLwH/AVsBlQFVAf8B8AH2AfgB/wGeAacBqQH/CAABRwJGAYABPQGsASUB/wEsAbEBCwH/AVIBvAE4Af8BgQHDAWIB/wEvAY0BGgH/AdEB3QHNAf8B3QHmAdoB/wFHAaMBNAH/ASYBsAEQAf8BNQHIASkB/wFZAlcBvxAAAUcCRgGAAZQB2wHsAf8BAAHpAv8BAAHmAf0B/wEAAeYB9QH/AQABNAE4Af8DAAH/AQcB4gHuAf8BEQHlAv8BCQHfAf4B/wFqAv4B/wFZAlcBvxAAAUcCRgGAASYBLgHBAf8BCAETAcUB/wEbASQBvQH/AbABsQHUAf8B1wHYAekB/wHKAcsB4gH/AdcB2AHpAf8BMAEzAbQB/wELAQ8BwQH/AS4BOQHLAf8BWQJXAb8IAAGCAYwBjgH/AfAB9gH4Af8BkgHAAY0B/wE9AawBJQH/ASwBsQELAf8BUgG8ATgB/wGBAcMBYgH/AS8BjQEaAf8B0QHdAc0B/wHdAeYB2gH/AUcBowE0Af8BJgGwARAB/wE1AcgBKQH/AVwBmQFWAf8B8AH2AfgB/wGeAacBqQH/CAABRwJGAYABVwGyAUQB/wEyAbABGAH/ATEBqAEYAf8BJgGdAQ8B/wEgAakBBAH/AS0BkQEYAf8BowG8AZsB/wFmAbEBVQH/ATMBqwEYAf8BQAG+ATEB/wFZAlcBvxAAAUcCRgGAAZkB3AHsAf8BBAHkAv8BAAH0Af4B/wEAAcoB1gH/AQABHwElAf8DAAH/ARMBmwG1Af8BGAHoAv8BCwHeAfwB/wFoAv4B/wFZAlcBvxAAAUcCRgGAAUgBTgHGAf8BDgEVAbkB/wEtATIBvAH/AZUBlwHFAf8BLgEyAawB/wEQARQBpAH/AZUBlwHFAf8BTgFUAcEB/wEUAR0BvQH/AS4BOQHLAf8BWQJXAb8IAAGCAYwBjgH/AfAB9gH4Af8BlAG/AY4B/wFXAbIBRAH/ATIBsAEYAf8BMQGoARgB/wEmAZ0BDwH/ASABqQEEAf8BLQGRARgB/wGjAbwBmwH/AWYBsQFVAf8BMwGrARgB/wFAAb4BMQH/AV0BlwFWAf8B8AH2AfgB/wGeAacBqQH/CAABRwJGAYABnAHBAZIB/wFNAbUBOgH/AUkBtAE0Af8BOQGuAR8B/wEzAawBFwH/AS8BqQESAf8BOAGbASIB/wE3AZ8BHQH/AUEBrwEkAf8BSQG3ATAB/wFZAlcBvxAAAUcCRgGAAb4B3gHsAf8BUgHxAv8BEQHiAf4B/wENAeIB8gH/AQkBaQGGAf8BCQFEAVgB/wEgAd8B6gH/ARgB6AL/ARYB5gH+Af8BZQH8Af4B/wFZAlcBvxAAAUcCRgGAAZ4BoQHUAf8BOgE+AcUB/wE2ATsBwgH/ASEBKQGzAf8BEgEbAbkB/wEQARkBvAH/ASABJwGuAf8BHwEpAbgB/wEoATMBxgH/AS4BOQHLAf8BWQJXAb8IAAGCAYwBjgH/AfAB9gH4Af8BmAG8AZMB/wGcAcEBkgH/AU0BtQE6Af8BSQG0ATQB/wE5Aa4BHwH/ATMBrAEXAf8BLwGpARIB/wE4AZsBIgH/ATcBnwEdAf8BQQGvASQB/wFJAbcBMAH/AVsBkwFVAf8B8AH2AfgB/wGeAacBqQH/CAABRwJGAYABYAGcAVMB/wGDAbwBaQH/AYEBvgFkAf8BXwG+AUgB/wFQAbgBNQH/AUoBtwEuAf8BTgGzATUB/wFJAbYBLQH/AUgBtAErAf8BMAGuARMB/wFZAlcBvxAAAUcCRgGAAUwBuAHaAf8B4gP/AZwB/AL/AV0B+AL/AR0B6wL/ARgB6AL/ASMB4gH+Af8BGAHoAv8BGAHoAv8BGAHoAv8BWQJXAb8QAAFHAkYBgAFaAV8BrQH/AYEBggHQAf8BbAGBAdIB/wFFAU4B0QH/AS4BOQHLAf8BLgE5AcsB/wE5AUIBxwH/AS4BOQHLAf8BLgE5AcsB/wEuATkBywH/AVkCVwG/CAABggGMAY4B/wHwAfYB+AH/AaABuQGdAf8BYAGcAVMB/wGDAbwBaQH/AYEBvgFkAf8BXwG+AUgB/wFQAbgBNQH/AUoBtwEuAf8BTgGzATUB/wFJAbYBLQH/AUgBtAErAf8BMAGuARMB/wFbAZIBVQH/AfAB9gH4Af8BngGnAakB/wwAAUwCSwGPAVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/AVkCVwG/GAABTAJLAY8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8BWQJXAb8YAAFMAksBjwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwFZAlcBvwwAAYIBjAGOAf8B8AH2AfgB/wHwAfYB+AH/AYoBqwGIAf8BWQGZAVEB/wFZAZoBUQH/AVsBmwFRAf8BWwGbAVEB/wFbAZsBUQH/AWEBoAFYAf8BXwGaAVgB/wFbAZIBVQH/AVsBkgFVAf8B8AH2AfgB/wHwAfYB+AH/AZ4BpwGpAf/AAAGCAYwBjgH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wHwAfYB+AH/AfAB9gH4Af8B8AH2AfgB/wGeAacBqQH/wAABggGMAY4B/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BngGnAakB/wGeAacBqQH/AZ4BpwGpAf8BiQGTAZUB//8AAQABQgFNAT4HAAE+AwABKAMAAUADAAEgAwABAQEAAQEGAAEBFgAD/3kABP8EAAb/AgAG/wIAAeABBwHgAQcB4AEHAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgABwAEDAcABAwHAAQMCAAHAAQMBwAEDAcABAwIAAcABAwHAAQMBwAEDAgAB4AEHAeABBwHgAQcCAAb/AgAG/wIACP8WAAs=</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelSteps.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="lTime.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAAwBAAAOAAAACw==</value>
+  </data>
+  <data name="lTime.Text" xml:space="preserve">
+    <value>Прошло времени: 01:58:34</value>
+  </data>
+  <data name="buttonNext.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAKAAAACw==</value>
+  </data>
+  <data name="lErrorsCount.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAhAAAADQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;iGrid1Col0ColHdrStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGColHdrStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;iGrid1Col0ColHdrStyle.Name" xml:space="preserve">
+    <value>iGrid1Col0ColHdrStyle</value>
+  </data>
+  <data name="lText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lWarningsCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lWarningsCount.Name" xml:space="preserve">
+    <value>lWarningsCount</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="lErrorsCount.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAADsAAAANAAAACw==</value>
+  </data>
+  <data name="lErrorsCount.Text" xml:space="preserve">
+    <value>Ошибок: 0</value>
+  </data>
+  <data name="&gt;&gt;buttonPrev.Name" xml:space="preserve">
+    <value>buttonPrev</value>
+  </data>
+  <data name="&gt;&gt;buttonPrev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WizardForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.MinimumSize" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJkCAACQAQAACw==</value>
+  </data>
+  <data name="iGrid1.Dock" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value>
+  </data>
+  <data name="iGrid1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAA0DAAANAQAACw==</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="lTime.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAD+AQAANQAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panelSteps.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;iGrid1RowTextColCellStyle.Name" xml:space="preserve">
+    <value>iGrid1RowTextColCellStyle</value>
+  </data>
+  <data name="&gt;&gt;iGrid1RowTextColCellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;iGrid1.Name" xml:space="preserve">
+    <value>iGrid1</value>
+  </data>
+  <data name="&gt;&gt;iGrid1.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGrid, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;lTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lTime.Name" xml:space="preserve">
+    <value>lTime</value>
+  </data>
+  <data name="$this.StartPosition" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5Gb3JtU3RhcnRQb3NpdGlvbgEAAAAHdmFsdWVfXwAIAgAAAAEAAAAL</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bBasesInfo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="buttonExit.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="buttonExit.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAEsAAAAXAAAACw==</value>
+  </data>
+  <data name="imageList2.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACiCwAAAk1TRnQBSQFMAgEBBAEAAXQBAAF0AQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEoAwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHAAQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMAAWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFmAZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHMAWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEAATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEzAWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZAWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLMAQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEAAWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEAAWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZAWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEAAZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFmATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZAf8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEzAQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEAAcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHMAWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHMApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHMAf8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEAAcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHMAmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZAcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEzAQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFmAQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHwAfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8AGQADoRMAAqEBBAGFCAAFoQsAAaEMAAGhAicBXwGFAaEJAAShAgABoQIEAbQB1QEEAaEFAAGhAWADIAEfAQwBBAGhBwABoQINAYUKAAGhAScBLQICAScBDQFfAqEGAAFrAS4BAgENAV8BBAPcAdUBtAEEAV8BoQMAAYUBJQImAiUDIAEKAaEFAAGhAQICLgECAYUIAAGhAScCVQICAScCAgEnAQQGAAGhAS4DfQGFAtwC1QG0AaYBBAGhAgABhQYmAiUCIAEKAaEDAAGhAQIBVQMuAQIBhQcAAScBLgJWBgIBXwUAAaEBVQJWAX0BVgGhAdsC1QK0AYYBpgGhAQABoQImAfIBdQMmAfMBTQElAiABBAIAAaEBAgNVAXgCLgECAYUGAAFPAVUBfQICAScEAgFfBQABZQFVAlYB5AECAaEB1QO0Aa0ChgGFAQABYQFHASYB8QHyAfQBJgH0Av8BdQElASABDAKhAQIDVQICAXgCLgECAYUFAAJWAS0BNAICAScBAgFWAQIBXwUAAUgCVQFIAmUBAAK0AQkB1QK0AacBBAEAASUBJgFHAfMB8gHzAfQD/wFNASYBIAEfAaEBSAFWAlUBAgGhAQABAgF4Ai4BAgGFBAABTwECAVUBVgQCAU8BSAOhAwABpgFVAQ0CXwEEAaEBxwHcAtUCtAGtAYUBAARNAZQB8wH0Av8DJgElASACoQF4AVYBAgGhAwABAgF4Ai4BAgGFAwABLgECAVYBVwMCAScBBAQnAaECAAFNAS4BegF1AU0BJgEMAaEBAAGsAccCoQMABU0B8wH0Av8EJgEgAaEBAAGhAQIBoQUAAQIBmAIuAQIBhQIAAVUBAgFXAX0BLQICAScBVgMCAScBXwIAAXUBeQF6AVMBRwEmAQwJAAFHAXUCTQFMAfMD/wF1AyYBIAGhCgABAgGYAi4BAgGFAaEBVgFVAn0BXAJWAQICVgMCAScBoQEAAYcBmgF6AVMBJgEgAaEJAAFhAXUCTQLzAiYC/wMmAWAMAAECAZgCLgENAQABVgF9AVwBVwECAn0BLgFWAX0EAgFfAgABTQGaAU0BJgFgCwABdQGUAU0BmQGTAk0BJgH/AXUBJgElAaENAAECAZgBVQEEBQABpgENAWUBoQJ9AeQBfQFWAVUBoQIAAaIBmgFNAR8BoQsAAaEClAVNAUcCJgGFDwABSAGFCgABVQF9AeQBVgFVAQQEAAFGASYBBA0AAaEBdQKUA00BRwEmAYUcAAGmAVYBLgFIAaYFAAGhAR8BoQ8AAQUBRwHjAU0BJgFhAaFEAAFCAU0BPgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP/gQAC/wHxAv8BwwH8AR8B/QH/AeABfwHDAQEB8AEHAfAB/wHAAQ8BwAEAAeABAwHgAX8BgAEPAcABAAHAAQEBwAE/AYABDwGAAQABgAEBAYABHwGAAQ8BgAEAAYACAAEPAYABDwGBAQABgAEAAQIBBwGAAQMBgAEAAYABAAEHAQMBgAEBAYABQwGAAQABjwGBAYABAQGAAf8BgAEAAf8BwAIAAYAB/wGAAQEB/wHgAYABAAHBAf8BwAEBAf8B8AH4AQABwQH/AcABAwH/AfkB/wGBAeMB/wHgAQcD/wGDAeMB/wH4AQ8I/xYACw==</value>
+  </data>
+  <data name="label4.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAACCAAAACwAAAAs=</value>
+  </data>
+  <data name="buttonExit.Anchor" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5BbmNob3JTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAKAAAACw==</value>
+  </data>
+  <data name="bBasesInfo.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAADjAgAAEAAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;lInfosCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lInfosCount.Name" xml:space="preserve">
+    <value>lInfosCount</value>
+  </data>
+  <data name="lInfosCount.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAtAQAADQAAAAs=</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="contextMenuStrip1.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAALIAAAAaAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lErrorsCount.Name" xml:space="preserve">
+    <value>lErrorsCount</value>
+  </data>
+  <data name="&gt;&gt;lErrorsCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iGrid1DefaultCellStyle.Type" xml:space="preserve">
+    <value>TenTec.Windows.iGridLib.iGCellStyle, iGrid, Version=1.70.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;iGrid1DefaultCellStyle.Name" xml:space="preserve">
+    <value>iGrid1DefaultCellStyle</value>
+  </data>
+  <data name="lErrorsCount.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5TaXplRgIAAAAFd2lkdGgGaGVpZ2h0AAALCwIAAAAAAMBAAABQQQs=</value>
+  </data>
+  <data name="lInfosCount.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lErrorsCount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;iGrid1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="iGrid1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bBasesInfo.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAB4AAAAeAAAACw==</value>
+  </data>
+  <data name="panel2.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAAAAAA6wAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;toolTipController1.Type" xml:space="preserve">
+    <value>DevExpress.IM.Utils.ToolTipController, DevExpress.IM.Utils, Version=2.1.5.0, Culture=neutral, PublicKeyToken=8d2bc20ab69e4bb4</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolTipController1.Name" xml:space="preserve">
+    <value>toolTipController1</value>
+  </data>
+  <data name="label6.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAAcAQAACwAAAAs=</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
+    <value>imageList2</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;lTime.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="lInfosCount.Text" xml:space="preserve">
+    <value>Сообщений: 0</value>
+  </data>
+  <data name="lInfosCount.Size" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAE0AAAANAAAACw==</value>
+  </data>
+  <data name="&gt;&gt;lErrorsCount.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="panel4.BackgroundImageLayout" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACBTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxheW91dAEAAAAHdmFsdWVfXwAIAgAAAAMAAAAL</value>
+  </data>
+  <data name="buttonNext.Location" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAABfAgAACAAAAAs=</value>
+  </data>
+</root>
