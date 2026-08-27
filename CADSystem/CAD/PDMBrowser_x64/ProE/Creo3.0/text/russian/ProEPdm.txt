@@ -1,0 +1,24 @@
+Search
+Search
+#
+#
+ShowModelTree
+Дерево состава...
+#
+#
+ShowModelTreePrompt
+Дерево состава
+#
+#
+ShowSpecification
+Спецификация...
+#
+#
+SpecificationPrompt
+Спецификация
+#
+#
+PdmSave
+Сохранить активный документ
+#
+#

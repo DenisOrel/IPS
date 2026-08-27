@@ -1,0 +1,172 @@
+***MENUGROUP=TECHCARD
+//D:\WORK\AC_WIN\Tech2000.36\Tech2000\Debug\Techcard.mnu
+
+
+***POP1
+**TECHCRD
+             [ТЕХ. ЭСКИЗ]
+               [->Па&нели TECHCARD]
+                 [Технологический эскиз]^C^C^P_-toolbar;TECHCARD.TB_TECH;_show;^P
+                 [Редактировать тех. эскиз]^C^C^P_-toolbar;TECHCARD.TB_EDIT_DRAFT;_show;^P
+                 [Граница поля рисунка]^C^C^P_-toolbar;TECHCARD.TB_BLANKBORDER;_show;^P
+                 [Установочные элементы]^C^C^P_-toolbar;TECHCARD.TB_SETEL;_show;^P
+                 [Копирование эскиза]^C^C^P_toolbar;TECHCARD.TB_COPYDRAFT;_show;^P
+                 [<-Содержание операции]^C^C^P_-toolbar;TECHCARD.TB_OPERINFO;_show;^P
+[~--]
+ID_TCDrafts    [->Эскизы]
+ID_TCNewDrf      [Новый...]^C^CNewDraft
+ID_TCOpenDrf     [Открыть...]^C^CShowDraft
+ID_TCOpenByPt    [Открыть по точке...]^C^CLoadByPnt
+ID_TCClrDrft     [<-Очистить]^C^CClearDrafts
+
+               [->Редактировать тех. эскиз]
+ID_TCDelDrf      [Удалить...]^C^CDelDraft
+ID_TCCopyDrf     [Копировать эскиз...]^C^CCopyOper
+                 [~--]
+                 [Вырезать в буфер]^C^C_cutentclip
+                 [Копировать эскиз в буфер]^C^C_copyoperclip
+                 [Копировать в буфер]^C^C_copyentclip
+                 [<-Вставить в эскиз]^C^C_pasteoperclip
+
+ID_TCBlExtnt   [->Граница поля рисунка]
+ID_TCBlExtAl     [на все эскизы]^C^CMkBorder
+ID_TCBlExtOp     [на эскиз]^C^CMkOpBorder
+                 [~--]
+ID_TCBlExtOn     [включить]^C^CBorderOn
+ID_TCBlExtOf     [<-выключить]^C^CBorderOff
+ID_NumByPnt    [Номер эскиза по точке]^C^CDNameByPnt
+ID_TCOperСnt   [Содержание операции...]^C^COperInfo
+ID_TCCOprСnt   [Содержание текущей операции]^C^CCOperInfo
+//               [~--]
+//ID_DrawTTT     [Тех. требования]^C^CDrawTTT
+//ID_EditTTT     [Изменить тех. требования]^C^CEditTTT
+               [~--]
+               [Обработка поверхности]^C^C_ProcessSurf
+               [Отмена обработки поверхности]^C^C_UnProcessSurf
+               [Маркер поверхности   ]^C^CSurfMark
+               [->Установочные элементы]^C^C^P(if (not c:fix) (load "fix"));fix
+                 [опоры,зажимы]^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "bs");fix
+                 [<-центры,оправки]^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "cen");fix
+               [~--]
+//               [Технологические размеры]^C^P(load "tcmdtxt");(if (not c:cmdim) (load "lisp/cmdim"));cmdim
+//               [Редактировать размеры]^C^P(load "tcmdtxt");(if (not c:cmdimw) (load "lisp/cmdimw"));(vsetq 'dtype "NEW");cmdimw
+               [Специальное масштабирование]^C^CSpecScale
+               [~--]
+               [Инструментальная наладка]^C^C^P$i=TECHCARD.ctools $i=*
+               [Расчленить в текущий слой]^C^CEXPLAY               
+               [~--]
+ID_DraftOn     [Эскиз]^C^C_LoadDraft
+ID_DrawnOn     [Базовая деталь]^C^C_LoadDrawing
+ID_LoadS4Doc   [Загрузить чертеж из SEARCH...]^C^CLoadS4Doc
+               [~--]
+               [Типовые элементы]^C^C^P(if (null C:cadmgr_list) (load (strcat cadm_pth "lisp/Groupf.lsp")));^Pcadmgr_list
+               [~--]
+               [->Сервис]
+               [Обнуление координаты Z]^C^CZ0
+               [<-Поиск объектов за пределами эскиза]^C^CCHB
+               [~--]
+               [Слайд эскиза]^C^P_MSLIDE
+ID_QuitDraft   [Закончить работу с эскизами]^C^C_QUIT;
+
+***TOOLBARS
+**TB_BLANKBORDER
+            [_Toolbar("Граница поля рисунка",_Top, _Show, 1, 0, 1)]
+ID_TCBlExtAl  [_Button("Граница поля рисунка на все эскизы",  16_TC_25.bmp, 16_TC_25.bmp)]^C^CMkBorder
+ID_TCBlExtOp  [_Button("Граница поля рисунка на эскиз",  16_TC_26.bmp, 16_TC_26.bmp)]^C^CMkOpBorder
+ID_TCBlExtOn  [_Button("Вкл. границу поля рисунка",  16_TC_27.bmp, 16_TC_27.bmp)]^C^CBorderOn
+ID_TCBlExtOf  [_Button("Выкл. границу поля рисунка",  16_TC_28.bmp, 16_TC_28.bmp)]^C^CBorderOff
+
+**TB_SETEL
+           [_Toolbar("Установочные элементы", _Top, _Show, 3, 0, 1)]
+             [_Button("Опоры,зажимы", 16_TC_08.bmp, 16_TC_08.bmp)]^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "bs");fix
+             [_Button("Центры,оправки", 16_TC_09.bmp, 16_TC_09.bmp)]^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "cen");fix
+
+**TB_OPERINFO
+            [_Toolbar("Содержание операции", _Top, _Show, 2, 0, 1)]
+ID_TCOperCnt  [_Button("Содержание операции",  16_TC_23.bmp, 16_TC_23.bmp)]^C^COperInfo
+ID_TCCOprCnt  [_Button("Содержание текущей операции",  16_TC_24.bmp, 16_TC_24.bmp)]^C^CCOperInfo
+
+**TB_EDIT_DRAFT
+           [_Toolbar("РЕДАКТИРОВАТЬ ТЕХ. ЭСКИЗ", _Top, _Show, 1, 1, 1)]
+ID_TCDelDrf  [_Button("Удалить эскиз", 16_TC_15.bmp, 16_TC_15.bmp)]^C^CDelDraft
+ID_TCCopyDrf [_Button("Копировать эскиз", 16_TC_21.bmp, 16_TC_21.bmp)]^C^CCopyOper
+             [--]
+             [_Button("Вырезать в буфер",16_TC_CUT.bmp, 16_TC_CUT.bmp)]^C^C_cutentclip
+             [_Button("Копировать эскиз в буфер", 16_TC_COPYOP.bmp, 16_TC_COPYOP.bmp)]^C^C_copyoperclip
+             [_Button("Копировать в буфер",16_TC_COPY.bmp, 16_TC_COPY.bmp)]^C^C_copyentclip
+             [_Button("Вставить в эскиз",16_TC_PASTE.bmp, 16_TC_PASTE.bmp)]^C^C_pasteoperclip
+
+**TB_TECH
+           [_Toolbar("ТЕХ. ЭСКИЗ", _Right, _Show, 0, 0, 1)]
+ID_TCNewDrf  [_Button("Новый эскиз", 16_TC_02.bmp, 16_TC_02.bmp)]^C^CNewDraft
+ID_TCOpenDrf [_Button("Открыть эскиз", 16_TC_03.bmp, 16_TC_03.bmp)]^C^CShowDraft
+             [--]
+ID_NumByPnt  [_Button("Получить номер эскиза по точке", 16_TC_32.bmp, 16_TC_32.bmp)]^C^CDNameByPnt
+ID_TCOpenByPt[_Button("Открыть эскиз по точке", 16_TC_33.bmp, 16_TC_33.bmp)]^C^CLoadByPnt
+             [_Flyout("Содержание операции", 16_TC_23.bmp, 16_TC_23.bmp, _OtherIcon, TECHCARD.TB_OPERINFO)]
+             [--]
+ID_LoadS4Doc [_Button("Загрузить чертеж из SEARCH", 16_TC_34.bmp, 16_TC_34.bmp)]^C^CLoadS4Doc
+             [--]
+ID_ExpLayer  [_Button("Расчленить в текущий слой", 16_TC_30.bmp, 16_TC_30.bmp)]^C^CEXPLAY
+//ID_DrawTTT   [_Button("Тех. требования", 16_TC_31, 24_TC_31)]^C^CDrawTTT
+//ID_EditTTT   [_Button("Изменить тех. требования", 16_TC_35, 24_TC_35)]^C^CEditTTT
+             [--]
+//             [_Button("Базовая деталь", 16_TC_04, 24_TC_04)]^C^P(progn (vsetq 'pr "BASE") (setq loadsp '(C:TSK "tsk")) (princ));(imload "tech");tsk
+//             [_Button("Обработка поверхности", 16_TC_05, 24_TC_05)]^C^C^P(vsetq 'pr "SET") (if (not c:chthk) (load "tech/chthk"));chthk
+//             [_Button("Отмена обработки поверхности", 16_TC_06, 24_TC_06)]^C^C^P(vsetq 'pr "DEL") (if (not c:chthk) (load "tech/chthk"));chthk
+             [_Button("Обработка поверхности",16_TC_05.bmp, 16_TC_05.bmp)]^C^C_ProcessSurf
+             [_Button("Отмена обработки поверхности", 16_TC_06.bmp, 16_TC_06.bmp)]^C^C_UnProcessSurf
+             [_Button("Маркер поверхности", 16_TC_07.bmp, 16_TC_07.bmp)]^C^CSurfMark
+             [_Flyout("Установочные элементы", 16_TC_08.bmp, 16_TC_08.bmp, _OtherIcon, TECHCARD.TB_SETEL)]
+//             [_Button("Технологические размеры", 16_TC_10.bmp, 24_TC_10.bmp)]^C^P(load "tcmdtxt");(if (not c:cmdim) (load "lisp/cmdim"));cmdim
+//             [_Button("Редактировать размеры", 16_TC_11.bmp, 24_TC_11.bmp)]^C^P(load "tcmdtxt");(if (not c:cmdimw) (load "lisp/cmdimw"));(vsetq 'dtype "NEW");cmdimw
+             [_Button("Инструментальная наладка", 16_TC_12.bmp, 16_TC_12.bmp)]^C^C^P$i=TECHCARD.ctools $i=*
+ID_QuitDraft [_Button("Закончить работу с эскизами", 16_TC_13.bmp, 16_TC_13.bmp)]^C^C_QUIT;
+             [_Button("Слайд эскиза", 16_TC_14.bmp, 16_TC_14.bmp)]^C^P_MSLIDE
+
+
+***image
+**ctools
+[Инструменты]
+[tech(r1,Резец проходной)]^Cset_tool "r1"
+[tech(r2,Резец канавочный)]^Cset_tool "r2"
+[tech(r3,Резец резьбовой]^Cset_tool "r3"
+[tech(r4,Резец проходной)]^Cset_tool "r4"
+[tech(r5,Резец проходной]^Cset_tool "r5"
+[tech(r6,Резец расточной)]^Cset_tool "r6"
+[tech(r7,Резец канавочный)]^Cset_tool "r7"
+[tech(r8,Резец канав.угл.)]^Cset_tool "r8"
+[tech(r9,Резец резьб. внутр.)]^Cset_tool "r9"
+[tech(r10,Резец канав.внутр.)]^Cset_tool "r10"
+[tech(cek1,Цековка)]^Cset_tool "cek1"
+[tech(frz1,Фреза)]^Cset_tool "frz1"
+[tech(raz1,Развертка)]^Cset_tool "raz1"
+[tech(sv1,Сверло)]^Cset_tool "sv1"
+[tech(sv2,Сверло)]^Cset_tool "sv2"
+[tech(sv3,Сверло)]^Cset_tool "sv3"
+[tech(zenk1,Зенковка)]^Cset_tool "zenk1"
+
+***HELPSTRINGS
+ID_TCDrafts    [Эскизы операций]
+ID_TCNewDrf    [Новый эскиз операции]
+ID_TCOpenDrf   [Открыть эскиз операции]
+ID_TCOpenByPt  [Открыть указанный эскиз в мультиэскизном режиме]
+ID_TCDelDrf    [Удалить эскиз операции]
+ID_ExpLayer    [Расчленить объект в текущий слой]
+ID_DrawTTT     [Отрисовка тех. требований для текущего эскиза]
+ID_EditTTT     [Изменение тех. требований для текущего эскиза]
+ID_TCCopyDrf   [Копировать весь эскиз из одной операции в другую]
+ID_TCCpPrDrf   [Копировать часть эскиза из одной операции в другую]
+ID_TCOperСnt   [Содержание операции]
+ID_TCCOprСnt   [Содержание текущей операции]
+ID_TCBlExtnt   [Работа с границами поля рисунка]
+ID_TCBlExtAl   [Отрисовка границы поля рисунка для всех операций]
+ID_TCBlExtOp   [Отрисовка границы поля рисунка для выбранного эскиза]
+ID_TCBlExtOn   [Включить границу поля рисунка]
+ID_TCBlExtOf   [Выключить границу поля рисунка]
+ID_DraftOn     [Загрузить эскизы операций]
+ID_DrawnOn     [Загрузить базовую деталь]
+ID_NumByPnt    [Получить номер эскиза по точке в многоэскизном режиме]
+ID_QuitDraft   [Выход]
+ID_LoadS4Doc   [Загрузить чертеж изделия из SEARCH]
+ID_TCClrDrft   [Данная функция удаляет слои эскизов, которые не связаны с операциями]

@@ -1,0 +1,1262 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="3" IncrementalVersion="2" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="TECHCARD">
+    <MacroGroup Name="TECHCARDMacros">
+      <MenuMacro UID="MMU_0002">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0003">Технологический эскиз</Name>
+          <Command>^C^C^P_-toolbar;TECHCARD.TB_TECH;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0004">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0005">Редактировать тех. эскиз</Name>
+          <Command>^C^C^P_-toolbar;TECHCARD.TB_EDIT_DRAFT;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0006">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0007">Граница поля рисунка</Name>
+          <Command>^C^C^P_-toolbar;TECHCARD.TB_BLANKBORDER;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0008">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0009">Установочные элементы</Name>
+          <Command>^C^C^P_-toolbar;TECHCARD.TB_SETEL;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0010">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0011">Копирование эскиза</Name>
+          <Command>^C^C^P_toolbar;TECHCARD.TB_COPYDRAFT;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0012">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0013">Содержание операции</Name>
+          <Command>^C^C^P_-toolbar;TECHCARD.TB_OPERINFO;_show;^P </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCNewDrf">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0016">Новый...</Name>
+          <Command>^C^CNewDraft </Command>
+          <HelpString xlate="true" UID="XLS_0139">Новый эскиз операции</HelpString>
+          <SmallImage Name="16_TC_02.bmp" />
+          <LargeImage Name="16_TC_02.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCOpenDrf">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0018">Открыть...</Name>
+          <Command>^C^CShowDraft </Command>
+          <HelpString xlate="true" UID="XLS_0140">Открыть эскиз операции</HelpString>
+          <SmallImage Name="16_TC_03.bmp" />
+          <LargeImage Name="16_TC_03.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCOpenByPt">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0020">Открыть по точке...</Name>
+          <Command>^C^CLoadByPnt </Command>
+          <HelpString xlate="true" UID="XLS_0141">Открыть указанный эскиз в мультиэскизном режиме</HelpString>
+          <SmallImage Name="16_TC_33.bmp" />
+          <LargeImage Name="16_TC_33.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCClrDrft">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0022">Очистить</Name>
+          <Command>^C^CClearDrafts </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCDelDrf">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0025">Удалить...</Name>
+          <Command>^C^CDelDraft </Command>
+          <HelpString xlate="true" UID="XLS_0142">Удалить эскиз операции</HelpString>
+          <SmallImage Name="16_TC_15.bmp" />
+          <LargeImage Name="16_TC_15.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCCopyDrf">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0027">Копировать эскиз...</Name>
+          <Command>^C^CCopyOper </Command>
+          <HelpString xlate="true" UID="XLS_0146">Копировать весь эскиз из одной операции в другую</HelpString>
+          <SmallImage Name="16_TC_21.bmp" />
+          <LargeImage Name="16_TC_21.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0020">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0029">Вырезать в буфер</Name>
+          <Command>^C^C_cutentclip </Command>
+          <SmallImage Name="16_TC_CUT.bmp" />
+          <LargeImage Name="16_TC_CUT.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0022">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0031">Копировать эскиз в буфер</Name>
+          <Command>^C^C_copyoperclip </Command>
+          <SmallImage Name="16_TC_COPYOP.bmp" />
+          <LargeImage Name="16_TC_COPYOP.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0024">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0033">Копировать в буфер</Name>
+          <Command>^C^C_copyentclip </Command>
+          <SmallImage Name="16_TC_COPY.bmp" />
+          <LargeImage Name="16_TC_COPY.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0026">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0035">Вставить в эскиз</Name>
+          <Command>^C^C_pasteoperclip </Command>
+          <SmallImage Name="16_TC_PASTE.bmp" />
+          <LargeImage Name="16_TC_PASTE.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCBlExtAl">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0038">на все эскизы</Name>
+          <Command>^C^CMkBorder </Command>
+          <HelpString xlate="true" UID="XLS_0151">Отрисовка границы поля рисунка для всех операций</HelpString>
+          <SmallImage Name="16_TC_25.bmp" />
+          <LargeImage Name="16_TC_25.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCBlExtOp">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0040">на эскиз</Name>
+          <Command>^C^CMkOpBorder </Command>
+          <HelpString xlate="true" UID="XLS_0152">Отрисовка границы поля рисунка для выбранного эскиза</HelpString>
+          <SmallImage Name="16_TC_26.bmp" />
+          <LargeImage Name="16_TC_26.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCBlExtOn">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0042">включить</Name>
+          <Command>^C^CBorderOn </Command>
+          <HelpString xlate="true" UID="XLS_0153">Включить границу поля рисунка</HelpString>
+          <SmallImage Name="16_TC_27.bmp" />
+          <LargeImage Name="16_TC_27.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCBlExtOf">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0044">выключить</Name>
+          <Command>^C^CBorderOff </Command>
+          <HelpString xlate="true" UID="XLS_0154">Выключить границу поля рисунка</HelpString>
+          <SmallImage Name="16_TC_28.bmp" />
+          <LargeImage Name="16_TC_28.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_NumByPnt">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0046">Номер эскиза по точке</Name>
+          <Command>^C^CDNameByPnt </Command>
+          <HelpString xlate="true" UID="XLS_0157">Получить номер эскиза по точке в многоэскизном режиме</HelpString>
+          <SmallImage Name="16_TC_32.bmp" />
+          <LargeImage Name="16_TC_32.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCOperСnt">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0048">Содержание операции...</Name>
+          <Command>^C^COperInfo </Command>
+          <HelpString xlate="true" UID="XLS_0148">Содержание операции</HelpString>
+          <SmallImage Name="16_TC_23.bmp" />
+          <LargeImage Name="16_TC_23.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TCCOprСnt">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0050">Содержание текущей операции</Name>
+          <Command>^C^CCOperInfo </Command>
+          <HelpString xlate="true" UID="XLS_0149">Содержание текущей операции</HelpString>
+          <SmallImage Name="16_TC_24.bmp" />
+          <LargeImage Name="16_TC_24.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0035">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0052">Обработка поверхности</Name>
+          <Command>^C^C_ProcessSurf </Command>
+          <SmallImage Name="16_TC_05.bmp" />
+          <LargeImage Name="16_TC_05.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0037">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0054">Отмена обработки поверхности</Name>
+          <Command>^C^C_UnProcessSurf </Command>
+          <SmallImage Name="16_TC_06.bmp" />
+          <LargeImage Name="16_TC_06.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0039">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0056">Маркер поверхности</Name>
+          <Command>^C^CSurfMark </Command>
+          <SmallImage Name="16_TC_07.bmp" />
+          <LargeImage Name="16_TC_07.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0041">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0059">опоры,зажимы</Name>
+          <Command>^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "bs");fix </Command>
+          <SmallImage Name="16_TC_08.bmp" />
+          <LargeImage Name="16_TC_08.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0043">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0061">центры,оправки</Name>
+          <Command>^C^C^P(if (not c:fix) (load "fix")) (vsetq 'pr "cen");fix </Command>
+          <SmallImage Name="16_TC_09.bmp" />
+          <LargeImage Name="16_TC_09.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0045">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0063">Специальное масштабирование</Name>
+          <Command>^C^CSpecScale </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0047">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0065">Инструментальная наладка</Name>
+          <Command>^C^C^P$i=TECHCARD.ctools $i=* </Command>
+          <SmallImage Name="16_TC_12.bmp" />
+          <LargeImage Name="16_TC_12.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0049">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0067">Расчленить в текущий слой</Name>
+          <Command>^C^CEXPLAY                </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_DraftOn">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0069">Эскиз</Name>
+          <Command>^C^C_LoadDraft </Command>
+          <HelpString xlate="true" UID="XLS_0155">Загрузить эскизы операций</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_DrawnOn">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0071">Базовая деталь</Name>
+          <Command>^C^C_LoadDrawing </Command>
+          <HelpString xlate="true" UID="XLS_0156">Загрузить базовую деталь</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_LoadS4Doc">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0073">Загрузить чертеж из SEARCH...</Name>
+          <Command>^C^CLoadS4Doc </Command>
+          <HelpString xlate="true" UID="XLS_0159">Загрузить чертеж изделия из SEARCH</HelpString>
+          <SmallImage Name="16_TC_34.bmp" />
+          <LargeImage Name="16_TC_34.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0054">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0075">Типовые элементы</Name>
+          <Command>^C^C^P(if (null C:cadmgr_list) (load (strcat cadm_pth "lisp/Groupf.lsp")));^Pcadmgr_list </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0056">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0078">Обнуление координаты Z</Name>
+          <Command>^C^CZ0 </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0058">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0080">Поиск объектов за пределами эскиза</Name>
+          <Command>^C^CCHB </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0060">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0082">Слайд эскиза</Name>
+          <Command>^C^P_MSLIDE </Command>
+          <SmallImage Name="16_TC_14.bmp" />
+          <LargeImage Name="16_TC_14.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_QuitDraft">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0084">Закончить работу с эскизами</Name>
+          <Command>^C^C_QUIT; </Command>
+          <HelpString xlate="true" UID="XLS_0158">Выход</HelpString>
+          <SmallImage Name="16_TC_13.bmp" />
+          <LargeImage Name="16_TC_13.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ExpLayer">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0111">Расчленить в текущий слой</Name>
+          <Command>^C^CEXPLAY </Command>
+          <HelpString xlate="true" UID="XLS_0143">Расчленить объект в текущий слой</HelpString>
+          <SmallImage Name="16_TC_30.bmp" />
+          <LargeImage Name="16_TC_30.bmp" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0064">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0121">Резец проходной</Name>
+          <Command>^Cset_tool "r1" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0066">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0122">Резец канавочный</Name>
+          <Command>^Cset_tool "r2" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0068">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0123">Резец резьбовой</Name>
+          <Command>^Cset_tool "r3" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0070">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0124">Резец проходной</Name>
+          <Command>^Cset_tool "r4" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0072">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0125">Резец проходной</Name>
+          <Command>^Cset_tool "r5" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0074">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0126">Резец расточной</Name>
+          <Command>^Cset_tool "r6" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0076">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0127">Резец канавочный</Name>
+          <Command>^Cset_tool "r7" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0078">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0128">Резец канав.угл.</Name>
+          <Command>^Cset_tool "r8" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0080">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0129">Резец резьб. внутр.</Name>
+          <Command>^Cset_tool "r9" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0082">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0130">Резец канав.внутр.</Name>
+          <Command>^Cset_tool "r10" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0084">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0131">Цековка</Name>
+          <Command>^Cset_tool "cek1" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0086">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0132">Фреза</Name>
+          <Command>^Cset_tool "frz1" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0088">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0133">Развертка</Name>
+          <Command>^Cset_tool "raz1" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0090">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0134">Сверло</Name>
+          <Command>^Cset_tool "sv1" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0092">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0135">Сверло</Name>
+          <Command>^Cset_tool "sv2" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0094">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0136">Сверло</Name>
+          <Command>^Cset_tool "sv3" </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0096">
+        <Macro type="Legacy">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0137">Зенковка</Name>
+          <Command>^Cset_tool "zenk1" </Command>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="PMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>POP1</Alias>
+          <Alias>TECHCRD</Alias>
+          <Name xlate="true" UID="XLS_0001">ТЕХ. ЭСКИЗ</Name>
+          <PopMenuRef pUID="PMU_0004" UID="PMRU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_TCDrafts" UID="PMRU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="PMU_0007" UID="PMRU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="ID_TCBlExtnt" UID="PMRU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0047" xlate="true">Номер эскиза по точке</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_NumByPnt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0049" xlate="true">Содержание операции...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOperСnt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0051" xlate="true">Содержание текущей операции</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCCOprСnt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0053" xlate="true">Обработка поверхности</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0035" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0055" xlate="true">Отмена обработки поверхности</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0037" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0057" xlate="true">Маркер поверхности</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0039" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="PMU_0010" UID="PMRU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0064" xlate="true">Специальное масштабирование</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0045" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0066" xlate="true">Инструментальная наладка</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0047" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0037">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0068" xlate="true">Расчленить в текущий слой</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0049" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0038">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0039">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0070" xlate="true">Эскиз</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DraftOn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0040">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0072" xlate="true">Базовая деталь</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DrawnOn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0041">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0074" xlate="true">Загрузить чертеж из SEARCH...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_LoadS4Doc" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0042">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0043">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0076" xlate="true">Типовые элементы</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0054" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0044">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuRef pUID="PMU_0012" UID="PMRU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0047">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0048">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0083" xlate="true">Слайд эскиза</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0060" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0049">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0085" xlate="true">Закончить работу с эскизами</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_QuitDraft" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">Па&amp;нели TECHCARD</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0004" xlate="true">Технологический эскиз</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0002" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0006" xlate="true">Редактировать тех. эскиз</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0004" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0008" xlate="true">Граница поля рисунка</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0006" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0010" xlate="true">Установочные элементы</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0008" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0012" xlate="true">Копирование эскиза</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0010" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0014" xlate="true">Содержание операции</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0012" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_TCDrafts">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0015">Эскизы</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0017" xlate="true">Новый...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCNewDrf" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0019" xlate="true">Открыть...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOpenDrf" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0021" xlate="true">Открыть по точке...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOpenByPt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0023" xlate="true">Очистить</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCClrDrft" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0007">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0024">Редактировать тех. эскиз</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0026" xlate="true">Удалить...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCDelDrf" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0028" xlate="true">Копировать эскиз...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCCopyDrf" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0030" xlate="true">Вырезать в буфер</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0020" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0032" xlate="true">Копировать эскиз в буфер</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0022" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0034" xlate="true">Копировать в буфер</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0024" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0036" xlate="true">Вставить в эскиз</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0026" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_TCBlExtnt">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0037">Граница поля рисунка</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0039" xlate="true">на все эскизы</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtAl" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0041" xlate="true">на эскиз</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOp" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0043" xlate="true">включить</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0045" xlate="true">выключить</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOf" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0010">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0058">Установочные элементы</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0060" xlate="true">опоры,зажимы</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0041" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0062" xlate="true">центры,оправки</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0043" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0012">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0077">Сервис</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0045">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0079" xlate="true">Обнуление координаты Z</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0056" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0046">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <NameRef UID="XLS_0081" xlate="true">Поиск объектов за пределами эскиза</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0058" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="1" yval="0" rows="1" UID="TBU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>TB_BLANKBORDER</Alias>
+          <Alias>Граница_поля_рисунка</Alias>
+          <Name xlate="true" UID="XLS_0086">Граница поля рисунка</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0087">Граница поля рисунка на все эскизы</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtAl" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0088">Граница поля рисунка на эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOp" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0089">Вкл. границу поля рисунка</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOn" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0090">Выкл. границу поля рисунка</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCBlExtOf" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="3" yval="0" rows="1" UID="TBU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>TB_SETEL</Alias>
+          <Alias>Установочные_элементы</Alias>
+          <Name xlate="true" UID="XLS_0091">Установочные элементы</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0092">Опоры,зажимы</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0041" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0093">Центры,оправки</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0043" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="2" yval="0" rows="1" UID="TBU_0006">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>TB_OPERINFO</Alias>
+          <Alias>Содержание_операции</Alias>
+          <Name xlate="true" UID="XLS_0094">Содержание операции</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0095">Содержание операции</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOperСnt" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0096">Содержание текущей операции</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCCOprСnt" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="1" yval="1" rows="1" UID="TBU_0008">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>TB_EDIT_DRAFT</Alias>
+          <Alias>РЕДАКТИРОВАТЬ_ТЕХ._ЭСКИЗ</Alias>
+          <Name xlate="true" UID="XLS_0097">РЕДАКТИРОВАТЬ ТЕХ. ЭСКИЗ</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0098">Удалить эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCDelDrf" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0099">Копировать эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCCopyDrf" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0100">Вырезать в буфер</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0020" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0101">Копировать эскиз в буфер</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0022" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0102">Копировать в буфер</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0024" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0103">Вставить в эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0026" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="right" ToolbarVisible="show" xval="0" yval="0" rows="1" UID="TBU_0010">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>TB_TECH</Alias>
+          <Alias>ТЕХ._ЭСКИЗ</Alias>
+          <Name xlate="true" UID="XLS_0104">ТЕХ. ЭСКИЗ</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0105">Новый эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCNewDrf" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0106">Открыть эскиз</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOpenDrf" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0107">Получить номер эскиза по точке</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_NumByPnt" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0108">Открыть эскиз по точке</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TCOpenByPt" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarFlyout UseOwnIcon="false" pTargetAlias="TB_OPERINFO" UID="TBFU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <FlyoutName xlate="true" UID="XLS_0109">Содержание операции</FlyoutName>
+            <SmallImage Name="16_TC_23.bmp" />
+            <LargeImage Name="16_TC_23.bmp" />
+          </ToolbarFlyout>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0110">Загрузить чертеж из SEARCH</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_LoadS4Doc" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0112">Расчленить в текущий слой</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ExpLayer" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0113">Обработка поверхности</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0035" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0114">Отмена обработки поверхности</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0037" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0115">Маркер поверхности</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0039" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarFlyout UseOwnIcon="false" pTargetAlias="TB_SETEL" UID="TBFU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <FlyoutName xlate="true" UID="XLS_0116">Установочные элементы</FlyoutName>
+            <SmallImage Name="16_TC_08.bmp" />
+            <LargeImage Name="16_TC_08.bmp" />
+          </ToolbarFlyout>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0117">Инструментальная наладка</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0047" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0118">Закончить работу с эскизами</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_QuitDraft" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0119">Слайд эскиза</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0060" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+      <ScreenMenuRoot />
+      <ImageMenuRoot>
+        <ImageMenu UID="IMU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>image</Alias>
+          <Alias>ctools</Alias>
+          <DialogTitle xlate="true" UID="XLS_0120">Инструменты</DialogTitle>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r1" UID="IMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0064" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r2" UID="IMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0066" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r3" UID="IMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0068" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r4" UID="IMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0070" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r5" UID="IMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0072" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r6" UID="IMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0074" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r7" UID="IMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0076" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r8" UID="IMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0078" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r9" UID="IMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0080" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="r10" UID="IMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0082" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="cek1" UID="IMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0084" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="frz1" UID="IMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0086" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="raz1" UID="IMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0088" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="sv1" UID="IMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0090" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="sv2" UID="IMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0092" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="sv3" UID="IMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0094" />
+            </MenuItem>
+          </ImageMenuItem>
+          <ImageMenuItem BlankLine="false" SlideLibrary="tech" SlideName="zenk1" UID="IMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0096" />
+            </MenuItem>
+          </ImageMenuItem>
+        </ImageMenu>
+      </ImageMenuRoot>
+      <TabletMenuRoot />
+      <DoubleClickRoot />
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>
