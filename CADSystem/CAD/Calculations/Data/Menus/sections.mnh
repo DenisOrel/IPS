@@ -1,0 +1,168 @@
+[ROOT]
+;FOLDERS=F0000
+
+;[F0000]
+;CAPTION=Металлы цветные
+ITEMS=I0001,I0003,I0005,I0006,I0007,I0008,I00020,I00022,I00023,I00024,I00040,I00041,I00033,I00034,I00018,I00017,I00045,I00019,I00014,I00016
+;SLIDE=SLIDE\Tube-01.jpg
+
+;рисунок{|таблица Imbase}
+
+
+[I0001]
+CAPTION=Квадрат
+SLIDE=slide/K-24.jpg
+DATA=section1|section1.bmp|section1.rtf|TBL000208,TBL000135,TBL000134,T13737A,TBL000206,TBL000207,TBL000209
+NOTE=Квадрат
+IMPORT='Квадрат'
+
+
+[I0003]
+CAPTION=Квадрат с отверстием
+SLIDE=slide/tube-02.jpg
+DATA=section3|section3.bmp|section3.rtf
+NOTE=Квадрат с отверстием
+IMPORT='Квадрат с отверстием'
+
+
+[I0005]
+CAPTION=Квадрат на ребре
+SLIDE=slide/section5.bmp
+DATA=section5|section5.bmp|section5.rtf
+NOTE=квадрат с отверстием, поставленный на ребро
+IMPORT='квадрат с отверстием, поставленный на ребро'
+
+
+[I0006]
+CAPTION=Прямоугольник
+SLIDE=slide/section6.bmp
+DATA=section6|section6.bmp|section6.rtf
+NOTE=прямоугольник
+IMPORT='прямоугольник'
+
+
+[I0007]
+CAPTION=Прямоугольник с отверстием
+SLIDE=slide/section7.bmp
+DATA=section7|section7.bmp|section7.rtf
+NOTE=Прямоугольник с отверстием
+IMPORT='Прямоугольник с отверстием'
+
+[I0008]
+CAPTION=Тонкостенный прямоугольник
+SLIDE=slide/section8.bmp
+DATA=section8|section8.bmp|section8.rtf
+NOTE=Тонкостенный прямоугольник
+IMPORT='Тонкостенный прямоугольник'
+
+
+[I00020]
+CAPTION=Уголок неравнобокий
+SLIDE=slide/K-93.jpg
+DATA=section20|section20.bmp|section20.rtf
+NOTE=Уголок неравнобокий
+IMPORT='Уголок неравнобокий'
+
+
+
+[I00022]
+CAPTION=Круг
+SLIDE=slide/K-91.jpg
+DATA=section22|section22.bmp|section22.rtf
+NOTE=Круг
+IMPORT='Круг'
+
+
+[I00023]
+CAPTION=Кольцо
+SLIDE=slide/A-35.jpg
+DATA=section23|section23.bmp|section23.rtf
+NOTE=Кольцо
+IMPORT='Кольцо'
+
+[I00024]
+CAPTION=Тонкое кольцо
+SLIDE=slide/tube2.bmp
+DATA=section24|section24.bmp|section24.rtf
+NOTE=Тонкое кольцо
+IMPORT='Тонкое кольцо'
+
+
+[I00040]
+CAPTION=Шестиугольник
+SLIDE=slide/K-26.jpg
+DATA=section40|section40.bmp|section40.rtf
+NOTE=Правильный шестиугольник
+IMPORT='Правильный шестиугольник'
+
+[I00041]
+CAPTION=Bосьмиугольник
+SLIDE=slide/K-26.jpg
+DATA=section41|section41.bmp|section41.rtf
+NOTE=Правильный восьмиугольник
+IMPORT='Правильный восьмиугольник'
+
+[I00033]
+CAPTION=Эллипс
+SLIDE=slide/section33.bmp
+DATA=section33|section33.bmp|section33.rtf
+NOTE=Эллипс
+IMPORT='Эллипс'
+
+[I00034]
+CAPTION=Полый эллипс
+SLIDE=slide/section34.bmp
+DATA=section34|section34.bmp|section34.rtf
+NOTE=Полый эллипс
+IMPORT='Полый эллипс'
+
+[I00017]
+CAPTION=Двутавр
+SLIDE=slide/K-21.jpg
+DATA=section17|section17.bmp|section17.rtf
+NOTE=Двутавр со скошенными полками
+
+
+[I00018]
+CAPTION=Швеллер
+SLIDE=slide/K-23.jpg
+DATA=section18|section18.bmp|section18.rtf
+NOTE=Швеллер полка прямая
+IMPORT='Швеллер полка прямая'
+
+[I00019]
+CAPTION=Зетообразное сечение
+SLIDE=slide/color-02.jpg
+DATA=section19|section19.bmp|section19.rtf
+NOTE=Зетообразное сечение
+IMPORT='Зетообразное сечение'
+
+[I00014]
+CAPTION=Тавр
+SLIDE=slide/color-03.jpg
+DATA=section14|section14.bmp|section14.rtf
+NOTE=Тавр
+IMPORT='Тавр'
+
+
+[I00016]
+CAPTION=Двутавр
+SLIDE=slide/section16.bmp
+DATA=section16|section16.bmp|section16.rtf
+NOTE=Несимметричный двутавр из прямоугольников
+IMPORT='Несимметричный двутавр из прямоугольников'
+
+
+[I00045]
+CAPTION=Рельс
+SLIDE=slide/section45.bmp
+DATA=section45|section45.bmp|section45.rtf
+NOTE=Железнодорожный рельс
+IMPORT='Железнодорожный рельс'
+
+
+
+[COMMON]
+CAPTION=Профили
+SIZE=4x4
+

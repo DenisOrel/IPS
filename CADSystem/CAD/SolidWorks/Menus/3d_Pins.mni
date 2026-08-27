@@ -1,0 +1,51 @@
+[ROOT]
+FOLDERS=F0000,F0001
+
+[F0000]
+CAPTION=Цилиндрические
+ITEMS=I0000,I0001,I0002
+SLIDE=SLIDE\3128_2.png
+
+[I0000]
+CAPTION=ГОСТ 3128
+DATA=3128_1|T3128|3128_1
+SLIDE=Slide\3128_1.png
+NOTE=Штифты цилиндрические исп. 1
+IMPORT='Цилиндрические исп. 1'
+
+[I0001]
+CAPTION=ГОСТ 3128
+DATA=3128_2|T3128_2|3128_2
+SLIDE=Slide\3128_2.png
+NOTE=Штифты цилиндрические исп. 2
+IMPORT='Цилиндрические исп. 2'
+
+[I0002]
+CAPTION=ГОСТ 3128
+DATA=3128_3|T3128_3|3128_3
+SLIDE=Slide\3128_3.png
+NOTE=Штифты цилиндрические исп. 3
+IMPORT='Цилиндрические исп. 3'
+
+[F0001]
+CAPTION=Конические
+ITEMS=I0003,I0004
+SLIDE=SLIDE\3129_1.png
+
+[I0003]
+Caption=ГОСТ 3129
+Data=3129_1|T3129|3129_1|conical||Back_3129
+Slide=Slide\3129_1.png
+Note=Штифты конические исп. 1
+IMPORT='Конические исп. 1'
+
+[I0004]
+Caption=ГОСТ 3129
+Data=3129_2|T3129_2|3129_2|conical||Back_3129
+Slide=Slide\3129_2.png
+Note=Штифты конические исп. 2
+IMPORT='Конические исп. 2'
+
+[COMMON]
+CAPTION=Штифты
+SIZE=4x3

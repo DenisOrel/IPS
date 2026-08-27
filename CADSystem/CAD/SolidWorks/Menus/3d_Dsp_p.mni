@@ -1,0 +1,206 @@
+[ROOT]
+FOLDERS=F0000,F0001,F0002
+
+[F0000]
+CAPTION=Рукоятки
+ITEMS=I0000,I0001,I0002,I0003,I0004,I0005,I0006,I0007,I0008,I0009,I0010,I0011
+SLIDE=SLIDE\8923_222.jpg
+
+[I0000]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923.jpg
+DATA=8923|TBL001141_IM||concentric
+NOTE=Рукоятка исп.1, L до 140мм
+IMPORT='исп.1, L до 140мм'
+
+[I0001]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923_11.jpg
+DATA=8923_11|T8923_11||concentric
+NOTE=Рукоятка исп.1, L > 140мм
+IMPORT='исп.1, L > 140мм'
+
+[I0002]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923.jpg
+DATA=8923|T8923_21||concentric
+NOTE=Рукоятка исп.2, L до 140мм
+IMPORT='исп.2, L до 140мм'
+
+[I0003]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923_11.jpg
+DATA=8923_11|T8923_22||concentric
+NOTE=Рукоятка исп.2, L > 140мм
+IMPORT='исп.2, L > 140мм'
+
+[I0004]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923_212.jpg
+DATA=8923_212|T8923_212||concentric
+NOTE=Рукоятка исп.2 вариант 2, L до 140мм
+IMPORT='исп.2 вар.2, L до 140мм'
+
+[I0005]
+CAPTION=ГОСТ 8923-69
+SLIDE=Slide\8923_222.jpg
+DATA=8923_222|T8923_222||concentric
+NOTE=Рукоятка исп.2 вариант 2, L > 140мм
+IMPORT='исп.2 вар.2, L > 140мм'
+
+[I0006]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_1.jpg
+DATA=3055_1|T3055_1||concentric
+NOTE=Рукоятка с шаровой головкой исп.1
+IMPORT='с шаровой головкой исп.1'
+
+[I0007]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_2.jpg
+DATA=3055_2|T3055_2||concentric
+NOTE=Рукоятка с шаровой головкой исп.2
+IMPORT='с шаровой головкой исп.2'
+
+[I0008]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_3.jpg
+DATA=3055_3|T3055_3||concentric
+NOTE=Рукоятка с шаровой головкой исп.3
+IMPORT='с шаровой головкой исп.3'
+
+[I0009]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_4.jpg
+DATA=3055_4|T3055_4||concentric
+NOTE=Рукоятка с шаровой головкой исп.4
+IMPORT='с шаровой головкой исп.4'
+
+[I0010]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_5.jpg
+DATA=3055_5|T3055_5||concentric
+NOTE=Рукоятка с шаровой головкой исп.5
+IMPORT='с шаровой головкой исп.5'
+
+[I0011]
+CAPTION=ГОСТ 3055-69
+SLIDE=Slide\3055_6.jpg
+DATA=3055_6|T3055_6||concentric
+NOTE=Рукоятка с шаровой головкой исп.6
+IMPORT='с шаровой головкой исп.6'
+
+//[I0012]
+//CAPTION=ГОСТ 14741-69
+//SLIDE=Slide\14741_1.jpg
+//DATA=14741|T14741|14741|
+//NOTE=Корпус
+//IMPORT='Корпус исп.1'
+
+//[I0013]
+//CAPTION=ГОСТ 14741-69
+//SLIDE=Slide\14741_2.jpg
+//DATA=14741|T14741_2|14741_2|
+//NOTE=Корпус
+//IMPORT='Корпус исп.2'
+
+[F0001]
+CAPTION=Оси
+ITEMS=I0014,I0015,I0016,I0017,I0018,I0019,I0020,I0021
+SLIDE=SLIDE\9650_2_2.jpg
+
+[I0014]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_1_1.jpg
+DATA=9650-71_1_1|TBL002287_IM||concentric
+NOTE=Ось гладкая
+IMPORT='гладкая'
+
+[I0015]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_1_2.jpg
+DATA=9650-71_1_2|TBL002286_IM||concentric
+NOTE=Ось гладкая
+IMPORT='гладкая под шплинт'
+
+[I0016]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_1_3.jpg
+DATA=9650-71_1_3|TBL002285_IM||concentric
+NOTE=Ось гладкая
+IMPORT='гладкая под упорные шайбы'
+
+[I0017]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_1_4.jpg
+DATA=9650-71_1_4|TBL002284_IM||concentric
+NOTE=Ось гладкая
+IMPORT='гладкая под запорные кольца'
+
+[I0018]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_2_1.jpg
+DATA=9650-71_2_1|TBL002291_IM||concentric
+NOTE=Ось гладкая с буртиком
+IMPORT='с буртиком'
+
+[I0019]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_2_2.jpg
+DATA=9650-71_2_2|TBL002288_IM||concentric
+NOTE=Ось с буртиком под шплинт
+IMPORT='с буртиком под шплинт'
+
+[I0020]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_2_3.jpg
+DATA=9650-71_2_3|TBL002290_IM||concentric
+NOTE=Ось с буртиком под упорную шайбу
+IMPORT='с буртиком под упорную шайбу'
+
+[I0021]
+CAPTION=ГОСТ 9650-80
+SLIDE=Slide\9650_2_4.jpg
+DATA=9650-71_2_4|TBL002290_IM||concentric
+NOTE=Ось с буртиком под запорное кольцо
+IMPORT='с буртиком под запорное кольцо'
+
+[F0002]
+CAPTION=Манжеты
+ITEMS=I0022,I0023,I0024,I0025,I0026
+SLIDE=SLIDE\8752.jpg
+
+[I0022]
+CAPTION=ГОСТ 8752
+SLIDE=Slide\8752.jpg
+DATA=8752-70|T8752||concentric
+NOTE=Манжеты резиновые армированные для валов
+IMPORT='Mанжеты'
+
+[I0023]
+CAPTION=ГОСТ 6678-72
+SLIDE=Slide\6678_1.jpg
+DATA=6678-72_1|T6678||concentric
+NOTE=Манжеты ГОСТ 6678-72, тип 1
+IMPORT='Mанжеты тип 1'
+
+[I0024]
+CAPTION=ГОСТ 6678-72
+SLIDE=Slide\6678_2.jpg
+DATA=6678-72_2|T6678_2||concentric
+NOTE=Манжеты ГОСТ 6678-72, тип 2
+IMPORT='Mанжеты тип 2'
+
+[I0025]
+CAPTION=ГОСТ 14896
+SLIDE=Slide\type1.jpg
+DATA=14896|T14896||concentric
+NOTE=Манжеты ГОСТ 14896-84 тип1
+IMPORT='Mанжеты ГОСТ 14896-84'
+
+[I0026]
+CAPTION=ГОСТ 14896
+SLIDE=Slide\type3.jpg
+DATA=14896_3|T14896_2||concentric
+NOTE=Манжеты ГОСТ 14896-84 тип3
+IMPORT='Mанжеты ГОСТ 14896-84'

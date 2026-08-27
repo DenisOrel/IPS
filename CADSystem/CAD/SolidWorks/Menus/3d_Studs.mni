@@ -1,0 +1,98 @@
+[ROOT]
+FOLDERS=F0000,F0001,F0002
+
+[F0000]
+CAPTION=Нормальной точности
+ITEMS=I0000,I0001,I0002,I0003,I0004
+SLIDE=SLIDE\22034.png
+
+[I0000]
+CAPTION=ГОСТ 22032
+DATA=22032|T22032N|22032|||Back_22032,Back_22032_u
+SLIDE=Slide\22032.png
+NOTE=Шпильки (1=1d) нормальный шаг
+IMPORT='Шпильки (1=1d)'
+
+[I0001]
+CAPTION=ГОСТ 22034
+DATA=22034|T22034N|22034|||Back_22034,Back_22034_u
+SLIDE=Slide\22034.png
+NOTE=Шпильки (1=1,25d) нормальный шаг
+IMPORT='Шпильки (1=1,25d)'
+
+[I0002]
+CAPTION=ГОСТ 22036
+DATA=22036|T22036N|22036|||Back_22036,Back_22036_u
+SLIDE=Slide\22036.png
+NOTE=Шпильки (1=1,6d) нормальный шаг
+IMPORT='Шпильки (1=1,6d)'
+
+[I0003]
+CAPTION=ГОСТ 22038
+DATA=22038|T22038N|22038|||Back_22038,Back_22038_u
+SLIDE=Slide\22038.png
+NOTE=Шпильки (1=2d) нормальный шаг
+IMPORT='Шпильки (1=2d)'
+
+[I0004]
+CAPTION=ГОСТ 22040
+DATA=22040|T22040N|22040
+SLIDE=Slide\22040.png
+NOTE=Шпильки (1=2,5d) нормальный шаг
+IMPORT='Шпильки (1=2,5d)'
+
+[F0001]
+CAPTION=Повышенной точности
+ITEMS=I0005,I0006,I0007,I0008,I0009
+SLIDE=SLIDE\22034.png
+
+[I0005]
+CAPTION=ГОСТ 22033
+DATA=22033|T22033N|22032|||Back_22032,Back_22032_u
+SLIDE=Slide\22032.png
+NOTE=Шпильки (1=1d) нормальный шаг
+IMPORT='Шпильки (1=1d)'
+
+[I0006]
+CAPTION=ГОСТ 22035
+DATA=22035|T22035N|22034|||Back_22034,Back_22034_u
+SLIDE=Slide\22034.png
+NOTE=Шпильки (1=1,25d) нормальный шаг
+IMPORT='Шпильки (1=1,25d)'
+
+[I0007]
+CAPTION=ГОСТ 22037
+DATA=22037|T22037N|22036|||Back_22036,Back_22036_u
+SLIDE=Slide\22036.png
+NOTE=Шпильки (1=1,6d) нормальный шаг
+IMPORT='Шпильки (1=1,6d)'
+
+[I0008]
+CAPTION=ГОСТ 22039
+DATA=22039|T22039N|22038|||Back_22038,Back_22038_u
+SLIDE=Slide\22038.png
+NOTE=Шпильки (1=2d) нормальный шаг
+IMPORT='Шпильки (1=2d)'
+
+[I0009]
+CAPTION=ГОСТ 22041
+DATA=22041|T22041N|22040
+SLIDE=Slide\22040.png
+NOTE=Шпильки (1=2,5d) нормальный шаг
+IMPORT='Шпильки (1=2,5d)'
+
+[F0002]
+CAPTION=Симметричные
+ITEMS=I0010
+SLIDE=SLIDE\22042_1.png
+
+[I0010]
+Caption=ГОСТ 22042
+Data=22042|T22042|22042|symmetric||Back_22042,Back_22042_u,Back_22042_d,Back_22042_u_d
+Slide=Slide\22042_1.png
+Note=Шпильки симметричные
+IMPORT='Симметричные'
+
+[COMMON]
+CAPTION=Шпильки
+SIZE=3x2

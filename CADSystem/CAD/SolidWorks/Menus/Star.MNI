@@ -1,0 +1,78 @@
+[ROOT]
+FOLDERS=F0001,F0002
+
+[F0001]
+CAPTION=Цепи по ГОСТ 13568-97
+ITEMS=I0000,I0001,I0002,I0003
+SLIDE=SLIDE\pr.jpg
+
+[I0000]
+SLIDE=SLIDE\pr.jpg
+DATA=StarType=R1PR;TableName=T13568_PR;ModelName=Star;
+NOTE=Роликовая однорядная ПР
+IMPORT='Роликовая однорядная ПР'
+CAPTION=Роликовая однорядная ПР
+TYPE=0
+
+[I0001]
+SLIDE=Slide\2pr.jpg
+DATA=StarType=R2PR;TableName=T13568_2PR;ModelName=Star2
+NOTE=Роликовая двухрядная 2ПР
+IMPORT='Роликовая двухрядная 2ПР'
+CAPTION=Роликовая двухрядная 2ПР
+
+[I0002]
+SLIDE=Slide\pr.jpg
+DATA=StarType=V1PV;TableName=T13568_PV;ModelName=Star
+NOTE=Втулочная однорядная ПВ
+IMPORT='Втулочная однорядная ПВ'
+CAPTION=Втулочная однорядная ПВ
+
+[I0003]
+SLIDE=Slide\2pr.jpg
+DATA=StarType=V2PV;TableName=T13568_2PV;ModelName=Star2
+NOTE=Втулочная двухрядная 2ПВ
+IMPORT='Втулочная двухрядная 2ПВ'
+CAPTION=Втулочная двухрядная 2ПВ
+
+
+[F0002]
+CAPTION=Цепи по ГОСТ 21834-87
+ITEMS=I0004,I0005,I0006,I0007
+SLIDE=SLIDE\pr.jpg
+
+[I0004]
+SLIDE=SLIDE\pr.jpg
+DATA=StarType=R1PR;TableName=T21834_1NP;ModelName=Star;
+NOTE=Роликовая однорядная нормального типа 1НП
+IMPORT='Роликовая однорядная 1НП'
+CAPTION=Роликовая однорядная 1НП
+TYPE=0
+
+[I0005]
+SLIDE=Slide\2pr.jpg
+DATA=StarType=R2PR;TableName=T21834_2NP;ModelName=Star2
+NOTE=Роликовая однорядная нормального типа 2НП
+IMPORT='Роликовая двухрядная 2НП'
+CAPTION=Роликовая двухрядная 2НП
+TYPE=0
+
+[I0006]
+SLIDE=SLIDE\pr.jpg
+DATA=StarType=R1PR;TableName=T21834_1TP;ModelName=Star;
+NOTE=Роликовая однорядная тяжелого типа 1ТП
+IMPORT='Роликовая однорядная 1ТП'
+CAPTION=Роликовая однорядная 1ТП
+TYPE=0
+
+[I0007]
+SLIDE=Slide\2pr.jpg
+DATA=StarType=R2PR;TableName=T21834_2TP;ModelName=Star2
+NOTE=Роликовая однорядная тяжелого типа 2ТП
+IMPORT='Роликовая двухрядная 2ТП'
+CAPTION=Роликовая двухрядная 2ТП
+TYPE=0
+
+[COMMON]
+SIZE=3x3
+

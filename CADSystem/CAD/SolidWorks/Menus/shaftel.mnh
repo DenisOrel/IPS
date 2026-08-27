@@ -1,0 +1,365 @@
+[ROOT]
+FOLDERS=F0000,F0001,F0002,F0003,F0004,F0005,F0011
+
+[F0000]
+CAPTION=Пазы шпоночные
+ITEMS=
+FOLDERS=F0006,F0007
+SLIDE=SLIDE\shp1.jpg
+
+[F0006]
+CAPTION=Призматические
+FOLDERS=F0008,F0009
+ITEMS=
+SLIDE=SLIDE\shp1.jpg
+
+[F0007]
+CAPTION=Сегментные
+ITEMS=I0033
+SLIDE=SLIDE\shp2.jpg
+FOLDERS=F0010
+
+[F0008]
+CAPTION=Нормальные (ГОСТ 23360-78)
+SLIDE=SLIDE\shp1.jpg
+ITEMS=I0035,I0036,I0037
+
+[F0009]
+CAPTION=Высокие (ГОСТ 10748-79)
+SLIDE=SLIDE\shp1.jpg
+ITEMS=I0038,I0039
+
+[F0010]
+CAPTION=перед. кр. момент
+SLIDE=Slide\shp2.jpg
+ITEMS=I0043,I0044
+
+[I0033]
+SLIDE=Slide\shp2.jpg
+DATA=AddElemType=Key;Subtype=SegmFix;TableName=T8795_1;ModelName=8795_1;
+NOTE=Шпонка сегментная фиксирующая D 6-58мм
+CAPTION=фиксирующая
+TYPE=0
+
+[I0035]
+SLIDE=Slide\10748_1.jpg
+DATA=AddElemType=Key;Subtype=RectNormal;TableName=T8788;ModelName=8788;Variant=1
+NOTE=Исполнение 1
+CAPTION=Исполнение 1
+TYPE=0
+
+[I0036]
+SLIDE=Slide\10748_2.jpg
+DATA=AddElemType=Key;Subtype=RectNormal;TableName=T23360_2;ModelName=23360_2a;Variant=2
+NOTE=Исполнение 2
+CAPTION=Исполнение 2
+TYPE=0
+
+[I0037]
+SLIDE=Slide\10748_3.jpg
+DATA=AddElemType=Key;Subtype=RectNormal;TableName=T23360_3;ModelName=23360_3a;Variant=3
+NOTE=Исполнение 3
+CAPTION=Исполнение 3
+TYPE=0
+
+[I0038]
+SLIDE=Slide\10748_1.JPG
+DATA=AddElemType=Key;Subtype=RectHigh;TableName=T10748;ModelName=10748_1;Variant=1
+NOTE=Исполнение 1
+CAPTION=Исполнение 1
+TYPE=0
+
+[I0039]
+SLIDE=Slide\10748_2.JPG
+DATA=AddElemType=Key;Subtype=RectHigh;TableName=T10748_2;ModelName=10748_2a;Variant=2
+NOTE=Исполнение 2
+CAPTION=Исполнение 2
+TYPE=0
+
+[I0043]
+SLIDE=Slide\8795_1.JPG
+DATA=AddElemType=Key;Subtype = SegmMov;TableName=T8795;ModelName=8795;
+NOTE=Шпонка сегментная перед. кр. момент D 3-44мм
+TYPE=0
+CAPTION=исп. 1
+
+[I0044]
+SLIDE=Slide\8795_2.JPG
+DATA=AddElemType=Key;Subtype = SegmMov;TableName=T24071_2;ModelName=24071_2;
+NOTE=Шпонка сегментная перед. кр. момент D 3-44мм
+TYPE=0
+CAPTION=исп. 2
+
+[F0001]
+CAPTION=Канавки кольцевые
+ITEMS=I0004,I0040,I0005,I0006,I0007,I0008,I0009,I0010
+SLIDE=Slide\kanav1.jpg
+
+[I0004]
+CAPTION=ГОСТ 13940 - ГОСТ 13941
+SLIDE=Slide\kanav1_1.jpg
+DATA=AddElemType=Groove;GrooveType=RECT;Subtype=Fixed;OutTableName=T13940;OutModelName=13940-86;InTableName=T13941;InModelName=13941-86;
+IMPORT='Канавка1'
+NOTE=Кольца концентрические
+TYPE=0
+
+[I0040]
+CAPTION=ГОСТ 13942 - ГОСТ 13943
+SLIDE=SLIDE\kanav1.jpg
+DATA=AddElemType=Groove;GrooveType=RECT;Subtype=Fixed;OutTableName=T13942;OutModelName=13942-86;InTableName=T13943;InModelName=13943-86;
+NOTE=Кольца эксцентрические
+TYPE=0
+
+[I0005]
+CAPTION=ГОСТ 11648
+SLIDE=Slide\kanav2.jpg
+DATA=AddElemType=Groove;GrooveType=RECT;Subtype=Washer;TableName=T11648;ModelName=11648-75
+IMPORT='Канавка2'
+NOTE=Шайбы быстросъемные
+
+[I0006]
+CAPTION=под запорные кольца
+SLIDE=Slide\kanav3.jpg
+DATA=AddElemType=Groove;GrooveType=RING;Subtype=Ring;TableName=T470;OutModelName=470-88;InModelName=470-88In
+IMPORT='Канавка3'
+NOTE=Запорные кольца
+TYPE=0
+
+[I0007]
+CAPTION=для торцовых уплотнений
+SLIDE=Slide\kanav7.jpg
+DATA=AddElemType=Groove;GrooveType=FACE;Subtype=FGUMRING;TableName=T9833;ModelName=9833_t;
+IMPORT='Канавка7'
+NOTE=Кольца уплотнительные
+
+[I0008]
+CAPTION=для радиальных уплотнений
+SLIDE=Slide\kanav5.jpg
+DATA=AddElemType=Groove;GrooveType=RECT;Subtype=RGUMRING;TableName=T9833;OutModelName=9833_ro;InModelName= 9833_ri;
+IMPORT='Канавка5'
+
+[I0009]
+CAPTION=прямоугольные
+SLIDE=Slide\kanav6.jpg
+DATA=AddElemType=Groove;GrooveType=RECT;Subtype=Free
+IMPORT='Канавка6'
+
+[I0010]
+CAPTION=треугольные
+SLIDE=Slide\kanav4.jpg
+Data=AddElemType=Groove;GrooveType=ANGLE;Subtype=Angle
+IMPORT='Канавка4'
+NOTE=
+TYPE=0
+
+[F0002]
+CAPTION=Пазы круговые
+ITEMS=I0011,I0012,I0013,I0014
+SLIDE=SLIDE\rotcutm.jpg
+
+[I0011]
+CAPTION=Вырез круговой
+SLIDE=Slide\facecut1m.jpg
+DATA=AddElemType=Groove;GrooveType=FACE;Subtype=FaceCut;
+IMPORT='Канавка12'
+NOTE=
+TYPE=0
+
+[I0012]
+CAPTION=Вырез круговой симметричный
+SLIDE=Slide\facecut2m.jpg
+DATA=AddElemType=Groove;GrooveType=FACE;Subtype=FaceCutS;
+IMPORT='Канавка112'
+NOTE=
+TYPE=0
+
+[I0013]
+CAPTION=Вырез
+SLIDE=Slide\facecut.jpg
+DATA=AddElemType=Groove;GrooveType=FACE;Subtype=FaceCut2;
+IMPORT='Канавка1122'
+NOTE=
+TYPE=0
+
+[I0014]
+CAPTION=Пазы круговые
+SLIDE=Slide\rotcutm.jpg
+DATA=AddElemType=Groove;GrooveType=FACE;Subtype=RotCut;
+IMPORT='Канавка 122'
+NOTE=
+TYPE=0
+
+[F0003]
+CAPTION=Лыски
+ITEMS=I0015,I0016,I0017,I0018,I0019,I0020
+SLIDE=Slide\Lys2.jpg
+
+[I0015]
+CAPTION=Лыска
+SLIDE=Slide\Lys1.jpg
+DATA=AddElemType=Cut;CutType=WithoutOffset;Count=1;
+IMPORT='Лыска 1'
+
+[I0016]
+CAPTION=Лыска
+SLIDE=Slide\Lys2.jpg
+DATA=AddElemType=Cut;CutType=WithoutOffset;Count=2;
+IMPORT='Лыска 2'
+
+[I0017]
+CAPTION=Лыска
+SLIDE=Slide\Lys3.jpg
+DATA=AddElemType=Cut;CutType=WithoutOffset;Count=4;
+IMPORT='Лыска 3'
+
+[I0018]
+CAPTION=Лыска
+SLIDE=Slide\Lys4.jpg
+DATA=AddElemType=Cut;CutType=WithOffset;Count=1;
+IMPORT='Лыска 4'
+
+[I0019]
+CAPTION=Лыска
+SLIDE=Slide\Lys5.jpg
+DATA=AddElemType=Cut;CutType=WithOffset;Count=2;
+IMPORT='Лыска 5'
+
+[I0020]
+CAPTION=Лыска
+SLIDE=Slide\Lys6.jpg
+DATA=AddElemType=Cut;CutType=WithOffset;Count=4;
+IMPORT='Лыска 6'
+
+[F0004]
+CAPTION=Для выхода инструмента
+ITEMS=I0021,I0022,I0023,I0031,I0024,I0025,I0026
+SLIDE=Slide\kan1.jpg
+
+[I0021]
+CAPTION=По цилиндру и торцу исп.1
+SLIDE=Slide\kan1.jpg
+DATA=AddElemType=Undercut;Type=CYL_CAP
+IMPORT='Канавка 1'
+
+[I0022]
+CAPTION=По цилиндру
+SLIDE=Slide\kan2.jpg
+DATA=AddElemType=Undercut;Type=CYL_ONLY
+IMPORT='Канавка 2'
+
+[I0023]
+CAPTION=По торцу
+SLIDE=Slide\kan3.jpg
+DATA=AddElemType=Undercut;Type=CAP_ONLY
+IMPORT='Канавка 3'
+
+[I0031]
+CAPTION=Для выхода долбяка
+SLIDE=Slide\kanDolb.jpg
+DATA=AddElemType=Undercut;Type=GEARS_CUTTER
+IMPORT=
+
+[I0024]
+CAPTION=Сопряжение
+SLIDE=Slide\kan4.jpg
+DATA=AddElemType=Fillet;
+IMPORT='Канавка 4'
+
+[I0025]
+CAPTION=Проточка тип I
+SLIDE=Slide\kan5.jpg
+DATA=AddElemType=Undercut;Type=THREAD;SubType=1
+IMPORT='Канавка 11'
+
+[I0026]
+CAPTION=Проточка тип II
+SLIDE=Slide\kan6.jpg
+DATA=AddElemType=Undercut;Type=THREAD;SubType=2
+IMPORT='Канавка 31'
+
+[F0005]
+CAPTION=Центровые отверстия
+ITEMS=I0027,I0028,I0029,I0030
+SLIDE=Slide\centrA.jpg
+
+[I0027]
+CAPTION=Форма А
+SLIDE=Slide\centrA.jpg
+DATA=AddElemType=CenterHole;Type=A;
+IMPORT='Канавка 1'
+
+[I0028]
+CAPTION=Форма B
+SLIDE=Slide\centrB.jpg
+DATA=AddElemType=CenterHole;Type=B;
+IMPORT='Канавка 2'
+
+[I0029]
+CAPTION=Форма F
+SLIDE=Slide\centrF.jpg
+DATA=AddElemType=CenterHole;Type=F;
+IMPORT='Канавка 3'
+
+[I0030]
+CAPTION=Форма H
+SLIDE=Slide\centrH.jpg
+DATA=AddElemType=CenterHole;Type=H;
+IMPORT='Канавка 4'
+
+[F0011]
+CAPTION=Канавки под манжеты ГОСТ14896
+ITEMS=I00032,I00033,I00034,I00035,I00036,I00037,I00038,I00039
+SLIDE=Slide\kanav6.jpg
+
+[I00032]
+CAPTION=тип 1, без кольца
+SLIDE=Slide\type1.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T1;TableName=T14896;OutModelName=14896;InModelName=14896_In;
+IMPORT='Канавка под манжеты1'
+
+[I00033]
+CAPTION=тип 1, кольцо из фторопласта
+SLIDE=Slide\type1_ftor.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T1_F;TableName=T14896;OutModelName=14896;InModelName=14896_In;OutTableName2=T14896K_1F_P;InTableName2=T14896K_1F_C;OutModelName2=14896_K_1F_P;InModelName2=14896_K_1F_C;
+IMPORT='Канавка под манжеты2'
+
+[I00034]
+CAPTION=тип 1, кольцо из полиамида
+SLIDE=Slide\type1_poly.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T1_P;TableName=T14896;OutModelName=14896;InModelName=14896_In;OutTableName2=T14896K_1P_P;InTableName2=T14896K_1P_C;OutModelName2=14896_K_1P_P;InModelName2=14896_K_1P_C;
+IMPORT='Канавка под манжеты3'
+
+[I00035]
+CAPTION=тип 3, без кольца
+SLIDE=Slide\type3.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T3;TableName=T14896_2;OutModelName=14896_3;InModelName=14896_In_3;
+IMPORT='Канавка под манжеты4'
+
+[I00036]
+CAPTION=тип 3, кольцо из фторопласта
+SLIDE=Slide\type3_ftor.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T3_F;TableName=T14896_2;ModelName=14896_3;TableName2=T14896K_3F_P;ModelName2=14896_K_3F_P;
+IMPORT='Канавка под манжеты5'
+
+[I00037]
+CAPTION=тип 3, кольцо из полиамида
+SLIDE=Slide\type3_poly.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T3_P;TableName=T14896_2;ModelName=14896_3;TableName2=T14896K_3P_P;ModelName2=14896_K_3P_P;
+IMPORT='Канавка под манжеты6'
+
+[I00038]
+CAPTION=тип 3, плоское кольцо из фторопласта
+SLIDE=Slide\type3_ftor_plane.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T3_FP;TableName=T14896_2;OutModelName=14896_3;InModelName=14896_In_3;TableName2=T14896K_3F;OutModelName2=14896_K_3FP_P;InModelName2=14896_K_3FP_C;
+IMPORT='Канавка под манжеты7'
+
+[I00039]
+CAPTION=тип 3, плоское кольцо из полиамида
+SLIDE=Slide\type3_poly_plane.jpg
+DATA=AddElemType=Cup;GrooveType=Cup;Subtype=T3_PP;TableName=T14896_2;OutModelName=14896_3;InModelName=14896_In_3;OutTableName2=T14896K_3P_PV;InTableName2=T14896K_3P_C;OutModelName2=14896_K_3PP_P;InModelName2=14896_K_3PP_C;
+IMPORT='Канавка под манжеты8'
+
+[COMMON]
+CAPTION=Элементы валов
+SIZE=3x3
+

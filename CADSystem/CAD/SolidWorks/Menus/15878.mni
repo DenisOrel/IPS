@@ -1,0 +1,23 @@
+[Common]
+Name=Контактная сварка ГОСТ 15878-79
+Size=3x1
+ShowNames=0
+ShowCaption=0
+
+[11533U11]
+Slide=slide/s15878(s15878t)
+Data=Кт-
+Caption=Точечная
+Note=Точечная, Кт
+
+[11533U12]
+Slide=slide/s15878(s15878r)
+Data=Кр-
+Caption=Рельефная
+Note=Рельефная, Кр
+
+[11533U21]
+Slide=slide/s15878(s15878s)
+Data=Кш-
+Caption=Шовная
+Note=Шовная, Кш

@@ -1,0 +1,47 @@
+[ROOT]
+FOLDERS=F0000
+
+[F0000]
+CAPTION=Цилиндрические
+ITEMS=I0000,I0001
+SLIDE=
+
+[I0000]
+CAPTION=сжатия
+SLIDE=Slide\spr.jpg
+DATA=Spring1|TS137*|Spring1.png|compression
+NOTE=Пружины
+IMPORT='Cжатия 1'
+
+[I0001]
+CAPTION=сжатия
+SLIDE=Slide\spr4.jpg
+DATA=Spring2|TS137*|Spring2.png|compression
+NOTE=Пружины
+IMPORT='Сжатия 2'
+
+[I0002]
+CAPTION=растяжения
+SLIDE=Slide\spr2.jpg
+DATA=Spring3|TS137*|Spring5.png|tension
+NOTE=Пружины
+IMPORT='Растяжения 1'
+
+[I0003]
+CAPTION=растяжения
+SLIDE=Slide\spr1.jpg
+DATA=Spring4|TS137*|Spring4.png|tension
+NOTE=Пружины
+IMPORT='Растяжения 2'
+
+[I0004]
+CAPTION=растяжения
+SLIDE=Slide\spr3.jpg
+DATA=Spring5|TS137*|Spring3.png|tension
+NOTE=Пружины
+IMPORT='Растяжения 3'
+
+[COMMON]
+CAPTION=Пружины
+SIZE=3x2
+

@@ -1,0 +1,777 @@
+[ROOT]
+FOLDERS=F1,F2,F3,F4,F5
+
+[F1]
+CAPTION=Бобышки
+ITEMS=
+FOLDERS=F11,F12,F13,F14,F15,F16
+SLIDE=Slide\CylBossOnCyl.jpg
+
+[F11]
+CAPTION=Цилиндрические
+ITEMS=I111,I112,I113,I114,I115
+SLIDE=Slide\CylBossOnCyl.jpg
+
+[I111]
+NOTE=Цилиндрическая бобышка на цилиндрической поверхности
+SLIDE=Slide\CylBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=Cyl;Placement=OnCyl;
+
+[I112]
+NOTE=Цилиндрическая бобышка на конической поверхности
+SLIDE=Slide\CylBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=Cyl;Placement=OnCone;
+
+[I113]
+NOTE=Цилиндрическая бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\CylBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=Cyl;Placement=OnConePerp;
+
+[I114]
+NOTE=Цилиндрическая бобышка концентрично круговому ребру
+SLIDE=Slide\CylBossOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Boss;Profile=Cyl;Placement=OnCirc;
+
+[I115]
+NOTE=Цилиндрическая бобышка на плоскости
+SLIDE=Slide\CylBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=Cyl;Placement=OnPlane;
+
+
+[F12]
+CAPTION=Прямоугольные
+ITEMS=I121,I122,I123,I124,I125
+SLIDE=Slide\RectBossOnCyl.jpg
+
+[I121]
+NOTE=Прямоугольная бобышка на цилиндрической поверхности
+SLIDE=Slide\RectBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=Rect;Placement=OnCyl;
+
+[I122]
+NOTE=Прямоугольная бобышка на конической поверхности
+SLIDE=Slide\RectBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=Rect;Placement=OnCone;
+
+[I123]
+NOTE=Прямоугольная бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\RectBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=Rect;Placement=OnConePerp;
+
+[I124]
+NOTE=Прямоугольная бобышка концентрично круговому ребру
+CAPTION=На круговом ребре
+SLIDE=Slide\RectBossOnCirc.jpg
+DATA=Type=Boss;Profile=Rect;Placement=OnCirc;
+
+[I125]
+NOTE=Прямоугольная бобышка на плоскости
+SLIDE=Slide\RectBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=Rect;Placement=OnPlane;
+
+
+[F13]
+CAPTION=Трапециевидные
+ITEMS=I131,I132,I133,I134,I135
+SLIDE=Slide\TrapezBossOnCyl.jpg
+
+[I131]
+NOTE=Трапециевидная бобышка на цилиндрической поверхности
+SLIDE=Slide\TrapezBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=Trapez;Placement=OnCyl;
+
+[I132]
+NOTE=Трапециевидная бобышка на конической поверхности
+SLIDE=Slide\TrapezBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=Trapez;Placement=OnCone;
+
+[I133]
+NOTE=Трапециевидная бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\TrapezBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=Trapez;Placement=OnConePerp;
+
+[I134]
+NOTE=Трапециевидная бобышка концентрично круговому ребру
+SLIDE=Slide\TrapezBossOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Boss;Profile=Trapez;Placement=OnCirc;
+
+[I135]
+NOTE=Трапециевидная бобышка на плоскости
+SLIDE=Slide\TrapezBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=Trapez;Placement=OnPlane;
+
+
+[F14]
+CAPTION=Треугольные
+ITEMS=I141,I142,I143,I144,I145
+SLIDE=Slide\TriangBossOnCyl.jpg
+
+[I141]
+NOTE=Треугольная бобышка на цилиндрической поверхности
+SLIDE=Slide\TriangBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=Triang;Placement=OnCyl;
+
+[I142]
+NOTE=Треугольная бобышка на конической поверхности
+SLIDE=Slide\TriangBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=Triang;Placement=OnCone;
+
+[I143]
+NOTE=Треугольная бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\TriangBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=Triang;Placement=OnConePerp;
+
+[I144]
+NOTE=Треугольная бобышка концентрично круговому ребру
+SLIDE=Slide\TriangBossOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Boss;Profile=Triang;Placement=OnCirc;
+
+[I145]
+NOTE=Треугольная бобышка на плоскости
+SLIDE=Slide\TriangBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=Triang;Placement=OnPlane;
+
+
+[F15]
+CAPTION=Полукруглые
+ITEMS=I151,I152,I153,I154,I155
+SLIDE=Slide\HalfKeyBossOnCyl.jpg
+
+[I151]
+NOTE=Полукруглая бобышка на цилиндрической поверхности
+SLIDE=Slide\HalfKeyBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=HalfKey;Placement=OnCyl;
+
+[I152]
+NOTE=Полукруглая бобышка на конической поверхности
+SLIDE=Slide\HalfKeyBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=HalfKey;Placement=OnCone;
+
+[I153]
+NOTE=Полукруглая бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\HalfKeyBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=HalfKey;Placement=OnConePerp;
+
+[I154]
+NOTE=Полукруглая бобышка концентрично круговому ребру
+SLIDE=Slide\HalfKeyBossOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Boss;Profile=HalfKey;Placement=OnCirc;
+
+[I155]
+NOTE=Полукруглая бобышка на плоскости
+SLIDE=Slide\HalfKeyBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=HalfKey;Placement=OnPlane;
+
+
+[F16]
+CAPTION=Овальные
+ITEMS=I161,I162,I163,I164,I165
+SLIDE=Slide\KeyBossOnCyl.jpg
+
+[I161]
+NOTE=Овальная бобышка на цилиндрической поверхности
+SLIDE=Slide\KeyBossOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Boss;Profile=Key;Placement=OnCyl;
+
+[I162]
+NOTE=Овальная бобышка на конической поверхности
+SLIDE=Slide\KeyBossOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Boss;Profile=Key;Placement=OnCone;
+
+[I163]
+NOTE=Овальная бобышка на конической поверхности перпендикулярно оси
+SLIDE=Slide\KeyBossOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Boss;Profile=Key;Placement=OnConePerp;
+
+[I164]
+NOTE=Овальная бобышка концентрично круговому ребру
+SLIDE=Slide\KeyBossOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Boss;Profile=Key;Placement=OnCirc;
+
+[I165]
+NOTE=Овальная бобышка на плоскости
+SLIDE=Slide\KeyBossOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Boss;Profile=Key;Placement=OnPlane;
+
+
+[F2]
+CAPTION=Отверстия
+ITEMS=
+FOLDERS=F21,F22,F23,F24,F25,F26
+SLIDE=Slide\CylHoleOnCyl.jpg
+
+
+[F21]
+CAPTION=Цилиндрические
+ITEMS=I211,I212,I213,I214,I215
+SLIDE=Slide\CylHoleOnCyl.jpg
+
+[I211]
+NOTE=Цилиндрическое отверстие на цилиндрической поверхности
+SLIDE=Slide\CylHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=Cyl;Placement=OnCyl;
+
+[I212]
+NOTE=Цилиндрическое отверстие на конической поверхности
+SLIDE=Slide\CylHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=Cyl;Placement=OnCone;
+
+[I213]
+NOTE=Цилиндрическое отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\CylHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=Cyl;Placement=OnConePerp;
+
+[I214]
+NOTE=Цилиндрическое отверстие концентрично круговому ребру
+SLIDE=Slide\CylHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=Cyl;Placement=OnCirc;
+
+[I215]
+NOTE=Цилиндрическое отверстие на плоскости
+SLIDE=Slide\CylHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=Cyl;Placement=OnPlane;
+
+
+[F22]
+CAPTION=Прямоугольные
+ITEMS=I221,I222,I223,I224,I225
+SLIDE=Slide\RectHoleOnCyl.jpg
+
+[I221]
+NOTE=Прямоугольное отверстие на цилиндрической поверхности
+SLIDE=Slide\RectHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=Rect;Placement=OnCyl;
+
+[I222]
+NOTE=Прямоугольное отверстие на конической поверхности
+SLIDE=Slide\RectHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=Rect;Placement=OnCone;
+
+[I223]
+NOTE=Прямоугольное отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\RectHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=Rect;Placement=OnConePerp;
+
+[I224]
+NOTE=Прямоугольное отверстие концентрично круговому ребру
+SLIDE=Slide\RectHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=Rect;Placement=OnCirc;
+
+[I225]
+NOTE=Прямоугольное отверстие на плоскости
+SLIDE=Slide\RectHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=Rect;Placement=OnPlane;
+
+
+[F23]
+CAPTION=Трапециевидные
+ITEMS=I231,I232,I233,I234,I235
+SLIDE=Slide\TrapezHoleOnCyl.jpg
+
+[I231]
+NOTE=Трапециевидное отверстие на цилиндрической поверхности
+SLIDE=Slide\TrapezHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=Trapez;Placement=OnCyl;
+
+[I232]
+NOTE=Трапециевидное отверстие на конической поверхности
+SLIDE=Slide\TrapezHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=Trapez;Placement=OnCone;
+
+[I233]
+NOTE=Трапециевидное отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\TrapezHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=Trapez;Placement=OnConePerp;
+
+[I234]
+NOTE=Трапециевидное отверстие концентрично круговому ребру
+SLIDE=Slide\TrapezHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=Trapez;Placement=OnCirc;
+
+[I235]
+NOTE=Трапециевидное отверстие на плоскости
+SLIDE=Slide\TrapezHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=Trapez;Placement=OnPlane;
+
+
+[F24]
+CAPTION=Треугольные
+ITEMS=I241,I242,I243,I244,I245
+SLIDE=Slide\TriangHoleOnCyl.jpg
+
+[I241]
+NOTE=Треугольное отверстие на цилиндрической поверхности
+SLIDE=Slide\TriangHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=Triang;Placement=OnCyl;
+
+[I242]
+NOTE=Треугольное отверстие на конической поверхности
+SLIDE=Slide\TriangHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=Triang;Placement=OnCone;
+
+[I243]
+NOTE=Треугольное отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\TriangHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=Triang;Placement=OnConePerp;
+
+[I244]
+NOTE=Треугольное отверстие концентрично круговому ребру
+SLIDE=Slide\TriangHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=Triang;Placement=OnCirc;
+
+[I245]
+NOTE=Треугольное отверстие на плоскости
+SLIDE=Slide\TriangHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=Triang;Placement=OnPlane;
+
+
+[F25]
+CAPTION=Полукруглые
+ITEMS=I251,I252,I253,I254,I255
+SLIDE=Slide\HalfKeyHoleOnCyl.jpg
+
+[I251]
+NOTE=Полукруглое отверстие на цилиндрической поверхности
+SLIDE=Slide\HalfKeyHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=HalfKey;Placement=OnCyl;
+
+[I252]
+NOTE=Полукруглое отверстие на конической поверхности
+SLIDE=Slide\HalfKeyHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=HalfKey;Placement=OnCone;
+
+[I253]
+NOTE=Полукруглое отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\HalfKeyHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=HalfKey;Placement=OnConePerp;
+
+[I254]
+NOTE=Полукруглое отверстие концентрично круговому ребру
+SLIDE=Slide\HalfKeyHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=HalfKey;Placement=OnCirc;
+
+[I255]
+NOTE=Полукруглое отверстие на плоскости
+SLIDE=Slide\HalfKeyHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=HalfKey;Placement=OnPlane;
+
+
+[F26]
+CAPTION=Овальные
+ITEMS=I261,I262,I263,I264,I265
+SLIDE=Slide\KeyHoleOnCyl.jpg
+
+[I261]
+NOTE=Овальное отверстие на цилиндрической поверхности
+SLIDE=Slide\KeyHoleOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Hole;Profile=Key;Placement=OnCyl;
+
+[I262]
+NOTE=Овальное отверстие на конической поверхности
+SLIDE=Slide\KeyHoleOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Hole;Profile=Key;Placement=OnCone;
+
+[I263]
+NOTE=Овальное отверстие на конической поверхности перпендикулярно оси
+SLIDE=Slide\KeyHoleOnConePerp.jpg
+CAPTION=На конусе перпендикулярно оси
+DATA=Type=Hole;Profile=Key;Placement=OnConePerp;
+
+[I264]
+NOTE=Овальное отверстие концентрично круговому ребру
+SLIDE=Slide\KeyHoleOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Hole;Profile=Key;Placement=OnCirc;
+
+[I265]
+NOTE=Овальное отверстие на плоскости
+SLIDE=Slide\KeyHoleOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Hole;Profile=Key;Placement=OnPlane;
+
+
+[F3]
+CAPTION=Выступы
+ITEMS=
+FOLDERS=F31,F32,F33,F34,F35
+SLIDE=Slide\RectLugOnCirc.jpg
+
+[F31]
+CAPTION=Цилиндрические
+ITEMS=I311,I313,I314
+SLIDE=Slide\CylLugOnCirc.jpg
+
+[I311]
+NOTE=Цилиндрический выступ на цилиндрической поверхности
+SLIDE=Slide\CylLugOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Lug;Profile=Cyl;Placement=OnCyl;
+
+[I312]
+NOTE=Цилиндрический выступ на конической поверхности
+SLIDE=Slide\CylLugOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Lug;Profile=Cyl;Placement=OnCone;
+
+[I313]
+NOTE=Цилиндрический выступ на круговом ребре
+SLIDE=Slide\CylLugOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Lug;Profile=Cyl;Placement=OnCirc;
+
+[I314]
+NOTE=Цилиндрический выступ на плоскости
+SLIDE=Slide\CylLugOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Lug;Profile=Cyl;Placement=OnPlane;
+
+[F32]
+CAPTION=Прямоугольные
+ITEMS=I321,I323,I324
+SLIDE=Slide\RectLugOnCirc.jpg
+
+[I321]
+NOTE=Прямоугольный выступ на цилиндрической поверхности
+SLIDE=Slide\RectLugOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Lug;Profile=Rect;Placement=OnCyl;
+
+[I322]
+NOTE=Прямоугольный выступ на конической поверхности
+SLIDE=Slide\RectLugOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Lug;Profile=Rect;Placement=OnCone;
+
+[I323]
+NOTE=Прямоугольный выступ на круговом ребре
+SLIDE=Slide\RectLugOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Lug;Profile=Rect;Placement=OnCirc;
+
+[I324]
+NOTE=Прямоугольный выступ на плоскости
+SLIDE=Slide\RectLugOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Lug;Profile=Rect;Placement=OnPlane;
+
+[F33]
+CAPTION=Трапециевидные
+ITEMS=I331,I333,I334
+SLIDE=Slide\TrapezLugOnCirc.jpg
+
+[I331]
+NOTE=Трапециевидный выступ на цилиндрической поверхности
+SLIDE=Slide\TrapezLugOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Lug;Profile=Trapez;Placement=OnCyl;
+
+[I332]
+NOTE=Трапециевидный выступ на конической поверхности
+SLIDE=Slide\TrapezLugOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Lug;Profile=Trapez;Placement=OnCone;
+
+[I333]
+NOTE=Трапециевидный выступ на круговом ребре
+SLIDE=Slide\TrapezLugOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Lug;Profile=Trapez;Placement=OnCirc;
+
+[I334]
+NOTE=Трапециевидный выступ на плоскости
+SLIDE=Slide\TrapezLugOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Lug;Profile=Trapez;Placement=OnPlane;
+
+[F34]
+CAPTION=Треугольные
+ITEMS=I341,I343,I344
+SLIDE=Slide\TriangLugOnCirc.jpg
+
+[I341]
+NOTE=Треугольный выступ на цилиндрической поверхности
+SLIDE=Slide\TriangLugOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Lug;Profile=Triang;Placement=OnCyl;
+
+[I342]
+NOTE=Треугольный выступ на конической поверхности
+SLIDE=Slide\TriangLugOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Lug;Profile=Triang;Placement=OnCone;
+
+[I343]
+NOTE=Треугольный выступ на круговом ребре
+SLIDE=Slide\TriangLugOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Lug;Profile=Triang;Placement=OnCirc;
+
+[I344]
+NOTE=Треугольный выступ на плоскости
+SLIDE=Slide\TriangLugOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Lug;Profile=Triang;Placement=OnPlane;
+
+[F35]
+CAPTION=Полукруглые
+ITEMS=I351,I352,I353
+SLIDE=Slide\HalfKeyLugOnCirc.jpg
+
+[I351]
+NOTE=Полукруглый выступ на цилиндрической поверхности
+SLIDE=Slide\HalfKeyLugOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Lug;Profile=HalfKey;Placement=OnCyl;
+
+[I352]
+NOTE=Полукруглый выступ на круговом ребре
+SLIDE=Slide\HalfKeyLugOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Lug;Profile=HalfKey;Placement=OnCirc;
+SLIDE=Slide\HalfKeyLugOnCirc.jpg
+
+[I353]
+NOTE=Полукруглый выступ на плоскости
+SLIDE=Slide\HalfKeyLugOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Lug;Profile=HalfKey;Placement=OnPlane;
+
+[F4]
+CAPTION=Пазы
+ITEMS=
+FOLDERS=F41,F42,F43,F44,F45
+SLIDE=Slide\RectSlotOnCirc.jpg
+
+[F41]
+CAPTION=Цилиндрические
+ITEMS=I411,I413,I414
+SLIDE=Slide\CylSlotOnCirc.jpg
+
+[I411]
+NOTE=Цилиндрический паз на цилиндрической поверхности
+SLIDE=Slide\CylSlotOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Slot;Profile=Cyl;Placement=OnCyl;
+
+[I412]
+NOTE=Цилиндрический паз на конической поверхности
+SLIDE=Slide\CylSlotOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Slot;Profile=Cyl;Placement=OnCone;
+
+[I413]
+NOTE=Цилиндрический паз на круговом ребре
+SLIDE=Slide\CylSlotOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Slot;Profile=Cyl;Placement=OnCirc;
+
+[I414]
+NOTE=Цилиндрический паз на плоскости
+SLIDE=Slide\CylSlotOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Slot;Profile=Cyl;Placement=OnPlane;
+
+[F42]
+CAPTION=Прямоугольные
+ITEMS=I421,I423,I424
+SLIDE=Slide\RectSlotOnCirc.jpg
+
+[I421]
+NOTE=Прямоугольный паз на цилиндрической поверхности
+SLIDE=Slide\RectSlotOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Slot;Profile=Rect;Placement=OnCyl;
+
+[I422]
+NOTE=Прямоугольный паз на конической поверхности
+SLIDE=Slide\RectSlotOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Slot;Profile=Rect;Placement=OnCone;
+
+[I423]
+NOTE=Прямоугольный паз на круговом ребре
+SLIDE=Slide\RectSlotOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Slot;Profile=Rect;Placement=OnCirc;
+
+[I424]
+NOTE=Прямоугольный паз на плоскости
+SLIDE=Slide\RectSlotOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Slot;Profile=Rect;Placement=OnPlane;
+
+[F43]
+CAPTION=Трапециевидные
+ITEMS=I431,I433,I434
+SLIDE=Slide\TrapezSlotOnCirc.jpg
+
+[I431]
+NOTE=Трапециевидный паз на цилиндрической поверхности
+SLIDE=Slide\TrapezSlotOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Slot;Profile=Trapez;Placement=OnCyl;
+
+[I432]
+NOTE=Трапециевидный паз на конической поверхности
+SLIDE=Slide\TrapezSlotOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Slot;Profile=Trapez;Placement=OnCone;
+
+[I433]
+NOTE=Трапециевидный паз на круговом ребре
+SLIDE=Slide\TrapezSlotOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Slot;Profile=Trapez;Placement=OnCirc;
+
+[I434]
+NOTE=Трапециевидный паз на плоскости
+SLIDE=Slide\TrapezSlotOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Slot;Profile=Trapez;Placement=OnPlane;
+
+[F44]
+CAPTION=Треугольные
+ITEMS=I441,I443,I444
+SLIDE=Slide\TriangSlotOnCirc.jpg
+
+[I441]
+NOTE=Треугольный паз на цилиндрической поверхности
+SLIDE=Slide\TriangSlotOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Slot;Profile=Triang;Placement=OnCyl;
+
+[I442]
+NOTE=Треугольный паз на конической поверхности
+SLIDE=Slide\TriangSlotOnCone.jpg
+CAPTION=На конусе
+DATA=Type=Slot;Profile=Triang;Placement=OnCone;
+
+[I443]
+NOTE=Треугольный паз на круговом ребре
+SLIDE=Slide\TriangSlotOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Slot;Profile=Triang;Placement=OnCirc;
+
+[I444]
+NOTE=Треугольный паз на плоскости
+SLIDE=Slide\TriangSlotOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Slot;Profile=Triang;Placement=OnPlane;
+
+[F45]
+CAPTION=Полукруглые
+ITEMS=I451,I452,I453
+SLIDE=Slide\HalfKeySlotOnCirc.jpg
+
+[I451]
+NOTE=Полукруглый паз на цилиндрической поверхности
+SLIDE=Slide\HalfKeySlotOnCyl.jpg
+CAPTION=На цилиндре
+DATA=Type=Slot;Profile=HalfKey;Placement=OnCyl;
+
+[I452]
+NOTE=Полукруглый паз на круговом ребре
+SLIDE=Slide\HalfKeySlotOnCirc.jpg
+CAPTION=На круговом ребре
+DATA=Type=Slot;Profile=HalfKey;Placement=OnCirc;
+
+[I453]
+NOTE=Полукруглый паз на плоскости
+SLIDE=Slide\HalfKeySlotOnPlane.jpg
+CAPTION=На плоскости
+DATA=Type=Slot;Profile=HalfKey;Placement=OnPlane;
+
+[F5]
+CAPTION=Вырезы
+ITEMS=I51,I52,I53,I54,I55
+SLIDE=Slide\CylFlatSlotOnCyl.jpg
+
+[I51]
+NOTE=Цилиндрический вырез на цилиндре
+SLIDE=Slide\CylFlatSlotOnCyl.jpg
+CAPTION=Цилиндрический
+DATA=Type=FlatSlot;Profile=Cyl;Placement=OnCyl;
+
+[I52]
+NOTE=Прямоугольный вырез на цилиндре
+SLIDE=Slide\RectFlatSlotOnCyl.jpg
+CAPTION=Прямоугольный
+DATA=Type=FlatSlot;Profile=Rect;Placement=OnCyl;
+
+[I53]
+NOTE=Трапециевидный вырез на цилиндре
+SLIDE=Slide\TrapezFlatSlotOnCyl.jpg
+CAPTION=Трапециевидный
+DATA=Type=FlatSlot;Profile=Trapez;Placement=OnCyl;
+
+[I54]
+NOTE=Треугольный вырез на цилиндре
+SLIDE=Slide\TriangFlatSlotOnCyl.jpg
+CAPTION=Треугольный
+DATA=Type=FlatSlot;Profile=Triang;Placement=OnCyl;
+
+[I55]
+NOTE=Полукруглый вырез на цилиндре
+SLIDE=Slide\HalfKeyFlatSlotOnCyl.jpg
+CAPTION=Полукруглый
+DATA=Type=FlatSlot;Profile=HalfKey;Placement=OnCyl;
+
+[COMMON]
+CAPTION=Типовые элементы
+SIZE=3x3

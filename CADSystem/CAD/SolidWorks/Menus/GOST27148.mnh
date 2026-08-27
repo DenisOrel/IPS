@@ -1,0 +1,32 @@
+[ROOT]
+FOLDERS=F0000,F0001
+
+[F0000]
+CAPTION=Наружная метрическая резьба
+ITEMS=I0001,I0002
+SLIDE=SLIDE\holes7_25.gif
+
+[F0001]
+CAPTION=Внутренняя метрическая резьба
+ITEMS=I0003,I0004
+SLIDE=SLIDE\holes7_23.gif
+
+[I0001]
+SLIDE=Slide\holes7_25.gif
+DATA=AddElemType=Thread;Subtype=External_Without_Groove;
+CAPTION=Без проточки
+
+[I0002]
+SLIDE=Slide\holes7_26.gif
+DATA=AddElemType=Thread;Subtype=External_With_Groove;
+CAPTION=С проточкой
+
+[I0003]
+SLIDE=Slide\holes7_23.gif
+DATA=AddElemType=Thread;Subtype=Internal_Without_Groove;
+CAPTION=Без проточки
+
+[I0004]
+SLIDE=Slide\holes7_22.gif
+DATA=AddElemType=Thread;Subtype=Internal_With_Groove;
+CAPTION=С проточкой

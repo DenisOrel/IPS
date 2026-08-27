@@ -1,0 +1,322 @@
+**Стыковое
+[Common]
+Name=Сварка под флюсом. Соединения сварные. ГОСТ 8713-79
+Size=4x4
+ShowNames=0
+ShowCaption=0
+
+[8713-С1]
+Slide=slide/S8713(8713-C1)
+Data=C1-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С47]
+Slide=slide/S8713(8713-C47)
+Data=C47-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С4-1]
+Slide=slide/S8713(8713-C4-1)
+Data=C4-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С4-2]
+Slide=slide/S8713(8713-C4-2)
+Data=C4-АФм
+Caption=Сварка под флюсом
+Note=
+
+[8713-С4-3]
+Slide=slide/S8713(8713-C4-3)
+Data=C4-АФп
+Caption=Сварка под флюсом
+Note=
+
+[8713-С5]
+Slide=slide/S8713(8713-C5)
+Data=C5-АФо/МФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С7-1]
+Slide=slide/S8713(8713-C7-1)
+Data=C7-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С7-2]
+Slide=slide/S8713(8713-C7-2)
+Data=C7-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-С29]
+Slide=slide/S8713(8713-C29)
+Data=C29-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С30]
+Slide=slide/S8713(8713-C30)
+Data=C30-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С9-1]
+Slide=slide/S8713(8713-C9-1)
+Data=C9-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С9-2]
+Slide=slide/S8713(8713-C9-2)
+Data=C9-АФм
+Caption=Сварка под флюсом
+Note=
+
+[8713-С10]
+Slide=slide/S8713(8713-C10)
+Data=C10-АФо/МФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С11]
+Slide=slide/S8713(8713-C11)
+Data=C11-АФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С12]
+Slide=slide/S8713(8713-C12)
+Data=C12-АФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С31]
+Slide=slide/S8713(8713-C31)
+Data=C31-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С32]
+Slide=slide/S8713(8713-C32)
+Data=C32-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С15]
+Slide=slide/S8713(8713-C15)
+Data=C15-АФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С18]
+Slide=slide/S8713(8713-C18)
+Data=C18-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713С181]
+Slide=slide/S8713(8713C181)
+Data=C18-АФм
+Caption=Сварка под флюсом
+Note=
+
+[8713-С19]
+Slide=slide/S8713(8713-C19)
+Data=С19-АФо/МФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С20]
+Slide=slide/S8713(8713-C20)
+Data=С20-АФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С21]
+Slide=slide/S8713(8713-C21)
+Data=С21-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С21-1]
+Slide=slide/S8713(8713-C21-1)
+Data=С21-АФк/МФк
+Caption=Сварка под флюсом
+Note=
+
+[8713-С21-2]
+Slide=slide/S8713(8713-C21-2)
+Data=С21-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-С33]
+Slide=slide/S8713(8713-C33)
+Data=С33-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С34]
+Slide=slide/S8713(8713-C34)
+Data=С34-АФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С35]
+Slide=slide/S8713(8713-C35)
+Data=С35-АФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С23]
+Slide=slide/S8713(8713-C23)
+Data=С23-АФк
+Caption=Сварка под флюсом
+Note=
+
+[8713-С36]
+Slide=slide/S8713(8713-C36)
+Data=С36-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С37]
+Slide=slide/S8713(8713-C37)
+Data=С37-АФо
+Caption=Сварка под флюсом
+Note=
+
+[8713-С25-1]
+Slide=slide/S8713(8713-C25-1)
+Data=С25-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С25-2]
+Slide=slide/S8713(8713-C25-2)
+Data=С25-АФк
+Caption=Сварка под флюсом
+Note=
+
+[8713-С38]
+Slide=slide/S8713(8713-C38)
+Data=С38-АФф
+Caption=Сварка под флюсом
+Note=
+
+[8713-С39]
+Slide=slide/S8713(8713-C39)
+Data=С39-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-С26]
+Slide=slide/S8713(8713-C26)
+Data=С26-АФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-С40]
+Slide=slide/S8713(8713-C40)
+Data=С40-АФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-С41]
+Slide=slide/S8713(8713-C41)
+Data=С41-АФш
+Caption=Сварка под флюсом
+Note=
+
+**Угловое
+[8713-U1]
+Slide=slide/S8713(8713-U1)
+Data=У1-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-U5]
+Slide=slide/S8713(8713-U5)
+Data=У5-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-U7]
+Slide=slide/S8713(8713-U7)
+Data=У7-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-U3]
+Slide=slide/S8713(8713-U3)
+Data=У3-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+**Тавровое
+[8713-T1-1]
+Slide=slide/S8713(8713-T1-1)
+Data=Т1-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-T2]
+Slide=slide/S8713(8713-T2)
+Data=Т2-АФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-T3-1]
+Slide=slide/S8713(8713-T3-1)
+Data=Т3-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-T3-2]
+Slide=slide/S8713(8713-T3-2)
+Data=Т3-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-T4]
+Slide=slide/S8713(8713-T4)
+Data=Т4-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-T5]
+Slide=slide/S8713(8713-T5)
+Data=Т5-АФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-T7]
+Slide=slide/S8713(8713-T7)
+Data=Т7-АФш/МФш
+Caption=Сварка под флюсом
+Note=
+
+[8713-T8]
+Slide=slide/S8713(8713-T8)
+Data=Т8-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+**Нахлесточное
+[8713-N1]
+Slide=slide/S8713(8713-N1)
+Data=Н1-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+
+[8713-N2]
+Slide=slide/S8713(8713-N2)
+Data=Н2-АФ/МФ
+Caption=Сварка под флюсом
+Note=
+

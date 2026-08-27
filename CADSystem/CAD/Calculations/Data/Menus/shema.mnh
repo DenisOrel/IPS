@@ -1,0 +1,181 @@
+[ROOT]
+CAPTION=Ðאסקועםûו סץולû 
+SLIDE=SLIDE\Tube-01.jpg
+FOLDERS=F0000,F0001
+
+[F0000]
+CAPTION=Îבûקםûו
+ITEMS=I0000,I0001,I0002,I0003,I0004,I0005,I0006,I0007,I0008,I0009,I00010,I00011,I00012,I00013,I00014,I00015,I00016,I00017
+
+[F0001]
+CAPTION=Íומבûקםûו
+ITEMS=I00018,I00019,I00020,I00021,I00022
+
+[I0000]
+CAPTION=Ñץולא ¹1
+SLIDE=slide/sh-1.bmp
+DATA=shema1|sh-1.bmp|shema1.rtf
+NOTE=Ñץולא ¹1
+IMPORT='Ñץולא ¹1'
+
+
+[I0001]
+CAPTION=Ñץולא ¹2
+SLIDE=slide/sh-2.bmp
+DATA=shema2|sh-2.bmp|shema2.rtf
+NOTE=Ñץולא ¹2
+IMPORT='Ñץולא ¹2'
+
+[I0002]
+CAPTION=Ñץולא ¹3
+SLIDE=slide/sh-3.bmp
+DATA=shema3|sh-3.bmp|shema3.rtf
+NOTE=Ñץולא ¹3
+IMPORT='Ñץולא ¹3'
+
+[I0003]
+CAPTION=Ñץולא ¹4
+SLIDE=slide/sh-4.bmp
+DATA=shema4|sh-4.bmp|shema4.rtf
+NOTE=Ñץולא ¹4
+IMPORT='Ñץולא ¹4'
+
+[I0004]
+CAPTION=Ñץולא ¹5
+SLIDE=slide/sh-5.bmp
+DATA=shema5|sh-5.bmp|shema5.rtf
+NOTE=Ñץולא ¹5
+IMPORT='Ñץולא ¹5'
+
+
+[I0005]
+CAPTION=Ñץולא ¹6
+SLIDE=slide/sh-6.bmp
+DATA=shema6|sh-6.bmp|shema6.rtf
+NOTE=Ñץולא ¹6
+IMPORT='Ñץולא ¹6'
+
+
+[I0006]
+CAPTION=Ñץולא ¹7
+SLIDE=slide/sh-7.bmp
+DATA=shema7|sh-7.bmp|shema7.rtf
+NOTE=Ñץולא ¹7
+IMPORT='Ñץולא ¹7'
+
+[I0007]
+CAPTION=Ñץולא ¹8
+SLIDE=slide/sh-8.bmp
+DATA=shema8|sh-8.bmp|shema8.rtf
+NOTE=Ñץולא ¹8
+IMPORT='Ñץולא ¹8'
+
+[I0008]
+CAPTION=Ñץולא ¹9
+SLIDE=slide/sh-9.bmp
+DATA=shema9|sh-9.bmp|shema9.rtf
+NOTE=Ñץולא ¹9
+IMPORT='Ñץולא ¹9'
+
+[I0009]
+CAPTION=Ñץולא ¹10
+SLIDE=slide/sh-10.bmp
+DATA=shema10|sh-10.bmp|shema10.rtf
+NOTE=Ñץולא ¹10
+IMPORT='Ñץולא ¹10'
+
+[I00010]
+CAPTION=Ñץולא ¹11
+SLIDE=slide/sh-11.bmp
+DATA=shema11|sh-11.bmp|shema11.rtf
+NOTE=Ñץולא ¹11
+IMPORT='Ñץולא ¹11'
+
+[I00011]
+CAPTION=Ñץולא ¹12
+SLIDE=slide/sh-12.bmp
+DATA=shema12|sh-12.bmp|shema12.rtf
+NOTE=Ñץולא ¹12
+IMPORT='Ñץולא ¹12'
+
+[I00012]
+CAPTION=Ñץולא ¹13
+SLIDE=slide/sh-13.bmp
+DATA=shema13|sh-13.bmp|shema13.rtf
+NOTE=Ñץולא ¹13
+IMPORT='Ñץולא ¹13'
+
+[I00013]
+CAPTION=Ñץולא ¹14
+SLIDE=slide/sh-14.bmp
+DATA=shema14|sh-14.bmp|shema14.rtf
+NOTE=Ñץולא ¹14
+IMPORT='Ñץולא ¹14'
+
+[I00014]
+CAPTION=Ñץולא ¹15
+SLIDE=slide/sh-15.bmp
+DATA=shema15|sh-15.bmp|shema15.rtf
+NOTE=Ñץולא ¹15
+IMPORT='Ñץולא ¹15'
+
+[I00015]
+CAPTION=Ñץולא ¹16
+SLIDE=slide/sh-16.bmp
+DATA=shema16|sh-16.bmp|shema16.rtf
+NOTE=Ñץולא ¹16
+IMPORT='Ñץולא ¹16'
+
+[I00016]
+CAPTION=Ñץולא ¹17
+SLIDE=slide/sh-17.bmp
+DATA=shema17|sh-17.bmp|shema17.rtf
+NOTE=Ñץולא ¹17
+IMPORT='Ñץולא ¹17'
+
+[I00017]
+CAPTION=Ñץולא ¹18
+SLIDE=slide/sh-18.bmp
+DATA=shema18|sh-18.bmp|shema18.rtf
+NOTE=Ñץולא ¹18
+IMPORT='Ñץולא ¹18'
+
+[I00018]
+CAPTION=Ñץולא ¹19
+SLIDE=slide/sh-19.bmp
+DATA=shema19|sh-19.bmp|shema19.rtf
+NOTE=Ñץולא ¹19
+IMPORT='Ñץולא ¹19'
+
+[I00019]
+CAPTION=Ñץולא ¹20
+SLIDE=slide/sh-20.bmp
+DATA=shema20|sh-20.bmp|shema20.rtf
+NOTE=Ñץולא ¹20
+IMPORT='Ñץולא ¹20
+
+[I00020]
+CAPTION=Ñץולא ¹21
+SLIDE=slide/sh-21.bmp
+DATA=shema21|sh-21.bmp|shema21.rtf
+NOTE=Ñץולא ¹21
+IMPORT='Ñץולא ¹21
+
+[I00021]
+CAPTION=Ñץולא ¹22
+SLIDE=slide/sh-22.bmp
+DATA=shema22|sh-22.bmp|shema22.rtf
+NOTE=Ñץולא ¹22
+IMPORT='Ñץולא ¹22
+
+[I00022]
+CAPTION=Ñץולא ¹23
+SLIDE=slide/sh-23.bmp
+DATA=shema22|sh-23.bmp|shema23.rtf
+NOTE=Ñץולא ¹23
+IMPORT='Ñץולא ¹23
+
+
+[COMMON]
+SIZE=4x4
+CAPTION=Ðאסקועםûו סץולû

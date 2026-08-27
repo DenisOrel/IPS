@@ -1,0 +1,732 @@
+;Предопределенные переменные
+;Emtrl - модуль упругости материала
+;W - Момент сопротивления
+;J - Момент инерции
+;AxisList - список осей для конкретного сечения
+;Axis - выбранная ось для расчета W,J
+;PI - число PI
+;S - площадь сечения
+;Qmtrl - плотность материала
+
+
+;Общее правило описания расчета
+;описываются входные параметры, которые учавствуют в расчете
+In = VAR1,VAR2,...
+
+;описываются выходные параметры
+Out = VAR11,VAR22,...
+
+;описывается диапазон изменения переменной, имеет смысл только для входных параметров,
+;применяется при подборе значений
+Diapason = VAR1=(0,20)|VAR2=(0,VAR1)
+
+;описывает переменные-результат, которые не будут выводиться на эран пользователю(могут использоваться как временные)
+Invisible = VAR33,VAR44
+
+;Любая переменная описывается в виде
+[text] - необязательное поле
+VAR = значение_или_формула|единицы_измерения|описание_переменной|название_переменной_в_файле_отчета[|название_переменной_в_IMBASE_для_IN_переменных]
+
+
+
+[Common]
+;название каталога в IMBASE, в котором будут находится таблицы сечений
+ProfileCatalogName=CTL000001
+
+;название таблицы в IMBASE, в которой будут находиться материалы профилей
+ProfileMaterial=TBL004865
+
+;название каталога в IMBASE, в которой будет находится таблица сечений
+ProfileMaterialCatalogName=CADMECH
+
+
+
+
+[VariablesDefault]
+;описывает значения переменных по умолчанию
+;некоторые из них могут описываться в конкретном сечении или схеме
+
+;модуль упругости материала;
+Emtrl = 2100000|кг/см^2||rpt_Emtrl
+
+;коэффициент перевода модуля сопротивления взятого из IMBASE в текущие в текущие единицы(кг/см^2)
+K_Emtrl = 1000000
+
+;плотность материала
+Qmtrl = 7.85|г/см^3||rpt_Qmtrl
+
+;коэффициент перевода плотности материала из IMBASE в текущие единицы(г/см^3)
+K_Qmtrl = 1
+
+
+;погонный метр
+RunningMeter = S*Qmtrl/10|кг|Масса погонного метра|rpt_RunM
+
+;указывает, какие оси отображать в диалоге(максимум 3)
+;!!!!  может меняться при описании конкретного сечения
+AxisList = Z,Y
+
+;значение в диалоге по умолчанию, указывает выбранную ось 0-Z,1-Y,2-U(дополнительная)
+Axis=1|||rpt_Axis
+
+
+;расчет W(момент сопротивления),J(момент инерции)
+;select2/select3 - фунцкия выбора значения исходя из первого параметра
+;select2 - для 2-х параметров, select3 - для 3-х
+;вид: select3(NUM,var_if_NUM_EQ_0,var_if_NUM_EQ_1,var_if_NUM_EQ_2)
+;     select2(NUM,var_if_NUM_EQ_0,var_if_NUM_EQ_1)
+;также возможные варианты:
+;W=min(Wz,Wy)
+;W=max(Wz,Wy)
+;W=ANY_OTHER_VAR_OR_VALUE_OR_FORMULA
+;тоже самое для J
+;!!!!  может использоваться при описании конкретного сечения
+W=select2(Axis,Wz,Wy)|см^3|&iW&n  момент сопротивления|rpt_W
+J=select2(Axis,Jz,Jy)|см^4|&iJ&n  момент инерции|rpt_J
+
+;расчет минимального J
+;Jmin = min(min(Jz,Jy),Ju) - для 3-х Осей
+Jmin = min(Jz,Jy)|см^4|&iJ&Lmin&n  минимальный момент инерции|rpt_J
+
+;описание наиболее часто используемых параметров в схемах и расчетах
+;VAR = значение_по_умолчанию(не исп.),единицы_измерения,описание_переменной,название_переменной_в_файле_отчета
+;если какое-то значение описано в конкретном  сечении или схеме, то оно берется из оттуда
+;описание_переменной производится в спец. виде, символ '&' - управляющий:
+;&g - включает греческий шрифт
+;&i - включает греческий наклонный шрифт
+;&n - включает первоначальный шрифт
+;&s\xxx\ - отображает спец. греч. символ, где xxx-код символа
+;&L,&l  - отображает текст как индекс
+;&& - выводит &
+
+
+Variables = S,Wy,Wz,Jz,Jy,Sigma_max,M_max,R,Va,Ba,Bb,Ra,Rb,Vxl2,M_a,M_b,Sigma_b,Vmax,Pcrit
+S= 0|см^2|&iS&n  площадь сечения|rpt_S
+Wy=0|см^3|&iW&Ly&n  момент сопротивления по оси &gY|rpt_Wy
+Wz=0|см^3|&iW&Lz&n  момент сопротивления по оси &gZ|rpt_Wz
+Jz=0|см^4|&iJ&Lz&n  момент инерции по оси &gZ|rpt_Jz
+Jy=0|см^4|&iJ&Ly&n  момент инерции по оси &gY|rpt_Jy
+Sigma_max=0|кг/см^2|&i&s\0xF3\&Lmax&n  максим. напряжение изгиба|rpt_Sigmamax
+Sigma_b=0|кг*см|&i&s\0xF3\&LB&n напряжение изгиба  в точке &gB|rpt_Sigmab
+M_max=0|кг*см|&iM&Lmax&n  максим. изгибающий момент|rpt_Mmax
+M_b=0|кг*см|&iM&LB&n  изгибающий момент в точке &gB|rpt_Mb
+M_a=0|кг*см|&iM&LA&n  изгибающий момент в точке &gA|rpt_Ma
+R=0|кг|&iR&n   реакция связи|rpt_R
+Ra=0|кг|&iR&lA&n   реакция связи|rpt_Ra
+Rb=0|кг|&iR&lB&n   реакция связи|rpt_Rb
+Va=0|мм|&iV&La&n  прогиб|rpt_Va
+Vxl2=0|мм|&iV&Lx=L/2&n  прогиб|rpt_Vxl2|rpt_Vxl2
+Vmax=0|мм|&iV&Lmax&n  прогиб|rpt_Vmax
+Ba=0|градус|&i&s\0xF6\&La&n  угол поворота|rpt_Fia
+Bb=0|градус|&i&s\0xF6\&Lb&n  угол поворота|rpt_Fib
+Pcrit=0|кг|&iP&n  критическая сила|rpt_Pcrit
+;///////////////////////////
+;Описание сечений
+;///////////////////////////
+
+
+;квадрат
+[section1]
+In = a
+Out = S,Jz,Jy,Wz,Wy
+Diapason = a=(0,INF)
+a=20|мм|&gH&n|rpt_H|H
+S = a^2/100
+Jz=a^4/12/10000
+Jy=Jz
+Wy=a^3/6/1000
+Wz=Wy
+
+;квадрат с квадратным отверстием
+[section3]
+In = a,b  
+Diapason= a=(b,INF)|b=(0,a)
+Out = S,Jz,Jy,Wz,Wy
+a=20|мм|&gH&n|rpt_H
+b=10|мм|&gh&n|rpt_Hs
+S=(a^2-b^2)/100
+Wy=Wz
+Wz=(a^4-b^4)/(6*a)/1000
+Jz=(a^4-b^4)/12/10000
+Jy=Jz
+
+
+;квадрат с отверстием, поставленный на ребро
+[section5]
+In = a,b
+Diapason= a=(b,INF)|b=(0,a)
+Out = S,Jz,Jy,Wz,Wy
+a=20|мм|&gH&n|rpt_H
+b=10|мм|&gh&n|rpt_Hs
+S=(a^2-b^2)/100
+Jz=(a^4-b^4)/12/10000
+Jy=Jz
+Wz=0.118*(a^4-b^4)/a/1000
+Wy=Wz
+
+
+;прямоугольник
+[section6]
+In = H,B
+H = 60|мм|&gH&n|rpt_H|H
+B = 40|мм|&gB&n|rpt_B|B
+Diapason= H=(0,INF)|B=(0,INF)
+Out = S,Jz,Jy,Wz,Wy
+S = H*B/100
+Jz = B*H^3/12/10000
+Jy = H*B^3/12/10000
+Wz=B*H^2/6/1000
+Wy=H*B^2/6/1000
+
+
+;полый прямоугольник
+[section7]
+In = H,hv,B,bv
+H = 60|мм|&gH&n|rpt_H|H
+hv = 40|мм|&gh&n|rpt_hv|
+B = 50|мм|&gB&n|rpt_B
+bv = 30|мм|&gb&n|rpt_bv
+Diapason= H=(hv,INF)|hv=(0,H)|B=(bv,INF)|bv=(0,B)
+Out = S,Jz,Jy,Wz,Wy
+S = (H*B - hv*bv) /100
+Jz = (B*H^3 - bv*hv^3)/12 /10000
+Jy = (H*B^3 - hv*bv^3)/12 /10000
+Wz=(B*H^3 - bv*hv^3)/(6*H) /1000
+Wy=(B^3*H - bv^3*hv)/(6*B) /1000
+
+
+;тонкостенный прямоугольник
+[section8]
+In = H,B,Delta
+H = 60|мм|&gH&n|rpt_H|H
+B = 50|мм|&gB&n|rpt_B|B
+Delta = 3|мм|&g&s\0xE4\&n|rpt_Delta
+Diapason= H=(0,INF)|B=(0,INF)|Delta=(0,INF)
+Out = S,Jz,Jy,Wz,Wy
+S = 2*Delta*(B+H) /100
+Jz = Delta*H^3/6*(3*B/H+1) /10000
+Jy = Delta*B^3/6*(3*H/B+1) /10000
+Wz = Delta*H^2/3*(3*B/H+1) /1000
+Wy = Delta*B^2/3*(3*H/B+1) /1000
+
+
+;тавр
+[section14]
+In = H,h1,B,b1
+Out = yc,S,Jz,Jy,Wz,Wy
+Diapason= b1=(0,B)
+H = 40|мм|&gH&n|rpt_H
+h1 = 10|мм|&gh1&n|rpt_h1
+B = 30|мм|&gB&n|rpt_B
+b1 = 8|мм|&gb1&n|rpt_b1
+yc = (B*h1^2 + B*H*(2*h1+H))/(2*(B*h1+b1*H))|мм|&iY&lc&n  расстояние до оси &gZ&n|rpt_yc
+S = (B*h1+b1*H) /100
+Jz = ( (B*h1^3+b1*H^3)/12 + B*h1*(yc-h1/2)^2 + b1*H*(H/2+h1-yc)^2 ) /10000 
+Jy= (H*b1^3+h1*b1^3)/12 /10000
+Wz = Jz/(max(yc,H+h1-yc)) *10
+Wy = (H*b1^3+h1*B^3)/6*B  /1000
+
+
+;Несимметричный двутавр из прямоугольников
+[section16]
+In = H,h1,B,bs,b1
+Out = hs,yc,S,Jz,Jy,Wz,Wy
+Diapason= b1=(0,bs)|bs=(b1,B)|h1=(0,H/2)
+Invisible = hs
+H = 50|мм|&gH&n|rpt_H
+h1 = 5|мм|&gh1&n|rpt_h1
+B = 30|мм|&gB&n|rpt_B
+bs = 15|мм|&gb&n|rpt_bs 
+b1 = 5|мм|&gb1&n|rpt_b1
+hs = H-2*h1
+yc= (B*h1^2+b1*hs*(hs+2*h1)+bs*h1*(2*H-h1))/(2*(bs*h1+b1*hs+B*h1))|мм|&iY&lc&n  расстояние до оси &gZ&n|rpt_yc
+S = ((B+bs)*h1+hs*b1) /100
+Jz= ( (b1*hs^3+(B+bs)*h1^3)/12 + b1*hs*(hs/2+h1-yc)^2 + h1*( B*(yc-h1/2)^2 + bs*(H-yc-h1/2)^2) ) /10000 
+Jy= (h1*(B^3+bs^3)+hs*b1^3)/12 /10000
+Wz= Jz/(max(yc,H-yc)) *10
+Wy= (h1*(B^3+bs^3)+hs*b1^3)/6*B  /1000
+
+
+;Круг
+[section22]
+In = d
+d=20|мм|&gD&n|rpt_d
+Out = S,Jz,Jy,Wz,Wy
+S = PI*d^2/4/100
+Jz = PI*d^4/64/10000
+Jy=Jz
+Wz=PI*d^3/32/1000
+Wy=Wz
+
+
+;Кольцо
+[section23]
+In = Db,d
+Out = S,Jz,Jy,Wz,Wy
+Diapason = Db=(d,INF)|d=(0,Db)
+Db=40|мм|&gD&n|rpt_Db
+d=20|мм|&gd&n|rpt_d
+S = PI*(Db^2-d^2)/4/100
+Jz = PI*(Db^4-d^4)/64/10000
+Jy=Jz
+Wz=PI*(Db^3-d^3)/32/1000
+Wy=Wz
+
+
+;Тонкое кольцо
+[section24]
+In = D,Delta
+Out = S,Jz,Jy,Wz,Wy
+Diapason = D=(0,INF)
+D=40|мм|&gD&n|rpt_D
+Delta = 3|мм|&g&s\0xE4\&n|rpt_Delta
+S = PI*D*Delta/100
+Jz = PI*D^3*Delta/8/10000
+Jy=Jz
+Wz=PI*D^2*Delta/4/1000
+Wy=Wz
+
+
+;неравнобокий уголок(21)
+[section20]
+In = H,B,t
+Out = hs,bs,S,Yc,Zc,Jz,Jy,Wz,Wy
+Invisible = hs,bs
+H = 30|мм|&gH&n|rpt_H|H
+B = 30|мм|&gB&n|rpt_B|H1
+t = 5|мм|&gt&n|rpt_t|B
+hs = H-t|мм|&ih&n|rpt_hs
+bs = B-t|мм|&ib&n|rpt_bs
+S = B*H-hs*bs
+Yc = (H^2+bs*t)/(2*(H+bs))|мм|&iY&lc&n  расстояние до оси &gZ&n|rpt_yc
+Zc = (hs*t+B^2)/(2*(hs+B))|мм|&iZ&lc&n  расстояние до оси &gY&n|rpt_zc
+Jz = 1/3*(t*(H-Yc)^3 + B*Yc^3 - bs*(Yc-t)^3) /10000
+Jy = 1/3*(t*(B-Zc)^3 + H*Zc^3 - hs*(Zc-t)^3) /10000
+Wz = Jz/max(Yc,H-Yc) *10
+Wy = Jy/max(Zc,B-Zc) *10
+
+
+
+;правильный шестиугольник
+[section40]
+In = a
+Out = n,h,S,Wz,Wy,Jz,Jy
+Diapason= a=(0,INF)
+Invisible = n,h
+a= 20|мм|&ga&n|rpt_a|A
+n = 6
+h = a/( tan(360/(2*n)) )|мм||rpt_H
+S = 2.598*a^2 /100
+Jz = 0.541*a^4 /10000
+Jy=Jz
+Wz = 0.625*a^3 /1000
+Wy = 0.541*a^3 /1000
+
+
+;правильный восьмиугольник
+[section41]
+In = a
+Out = n,h,S,Wz,Wy,Wu,Jz,Jy,Ju,AxisList,W,J
+Diapason= a=(0,INF)
+Invisible = n,AxisList,W,J,h
+NonCalculable = AxisList
+a= 20|мм|&ga&n|rpt_a|A
+n = 8
+h = a/( tan(360/(2*n)) )|мм||rpt_H
+S = 4.828*a^2 /100
+Jz = 0.0547*h^4 /10000
+Jy=Jz
+Ju=Jz|см^4|&iJ&Lu&n  момент инерции по оси &gU|rpt_Ju
+Wz = 0.1095*h^3 /1000
+Wy=Wz
+Wu = 0.1012*h^3 /1000|см^3|&iW&Lu&n  момент сопротивления по оси &gU|rpt_Wu
+AxisList = Z,Y,U
+J = select3(Axis,Jz,Jy,Ju)
+W = select3(Axis,Wz,Wy,Wu)
+
+
+;эллипс
+[section33]
+In = a,b
+Out = S,Jz,Jy,Wz,Wy
+Diapason= a=(0,INF)|b=(0,INF)
+a= 20|мм|&ga&n|rpt_a|A
+b= 40|мм|&gb&n|rpt_b|B
+S= PI*a*b/4/100
+Jz= PI*a^3*b/64/10000
+Jy= PI*b^3*a/64/10000
+Wz= PI*a^2*b/32/1000
+Wy= PI*b^2*a/32/1000
+
+
+;полый эллипс
+[section34]
+In = a,b,a1,b1
+Out = S,Jz,Jy,Wz,Wy
+Diapason= a=(a1,INF)|a1=(0,a)|b=(b1,INF)|b1=(0,b)
+a = 20|мм|&ga&n|rpt_a|A
+a1= 10|мм|&ga1&n|rpt_a1|A1
+b = 40|мм|&gb&n|rpt_b|B
+b1= 20|мм|&gb1&n|rpt_b1|B1
+S= PI*(a*b-a1*b1)/4/100
+Jz= PI*(a^3*b-a1^3*b1)/64/10000
+Jy= PI*(b^3*a-b1^3*a1)/64/10000
+Wz= PI*(a^3*b-a1^3*b1)/(32*a)/1000
+Wy= PI*(b^3*a-b1^3*a1)/(32*b)/1000
+
+
+;двутавр со скошенными полками
+[section17]
+In = Alfa,a,H,B,c1
+Out = bs,c,h1,hs,Naklon,S,Jz,Jy,Wz,Wy
+Diapason= Alfa=(0,10)|a=(0,B)|H=(h+2*c,INF)|c1=(c,INF)
+Invisible = Naklon,bs,c,h1,hs
+Alfa = 10|градус|&g&s\0xE1\&n|rpt_Alfa
+a = 10|мм|&ga&n|rpt_a
+H = 40|мм|&gH&n|rpt_H
+B = 20|мм|&gB&n|rpt_B
+c1 = 10|мм|&gc1&n|rpt_c1
+bs = (B-a)/2|мм|&ib
+c = c1 - bs*tan(Alfa)|мм|&ic
+h1= H-2*c1|мм|&ih1
+hs = H-2*c|мм|&ih
+Naklon = (hs-h1)/(2*bs)|||rpt_Naklon
+S = (a*H+2*bs*(c+c1))/100
+Jz = (B*H^3- (hs^4-h1^4)/(4*Naklon) )/12/10000
+Jy = (B^3*(H-hs) +h1*a^3+Naklon*(B^4-a^4)/4)/12/10000
+Wz = (B*H^3-(hs^4-h1^4)/(4*Naklon))/(6*H)/1000
+Wy = (B^3*(H-hs)+h1*a^3+Naklon*(B^4-a^4)/4)/(6*B)/1000
+
+
+;корытное сечение
+[section18]
+In = b,b1,h,h1
+Out = S,Yc,Jz,Jy,Wz,Wy
+Diapason= b=(0,INF)|b1=(0,INF)|h=(0,INF)|h1=(0,INF)
+b = 40|мм|&gb&n|rpt_b|B
+b1= 5 |мм|&gb1&n|rpt_b1|B1
+h = 30|мм|&gh&n|rpt_h|H
+h1= 7 |мм|&gh1&n|rpt_h1|H1
+S = (b*h1+2*b1*h)/100
+Yc = (b*h1^2+2*b1*h*(2*h1+h))/(2*(b*h1+2*b1*h))|мм|&iY&lc&n  расстояние до оси &gZ&n|rpt_yc
+Jz = ( (b*h1^3+2*b1*h^3)/12 + b*h1*(Yc - h1/2)^2 + 2*b1*h*(h/2+h1-Yc)^2 )/10000
+Jy = ( b^3*(h+h1)-h*(b-2*b1)^3 )/12/10000
+Wz = Jz/(h+h1-Yc) *10
+Wy = ( ((h+h1)*b^3 - h*(b-2*b1)^3)/(6*b) ) /1000
+
+
+;зетообразное сечение
+[section19]
+In = B,b1,H,h1
+Out = hs,bs,S,Jz,Jy,Wz,Wy
+Diapason= h1=(0,H/2)|b1=(0,B/2)
+Invisible = hs,bs
+B = 20|мм|&gB&n|rpt_B
+b1= 5 |мм|&gb1&n|rpt_b1
+H = 30|мм|&gH&n|rpt_H
+h1= 7 |мм|&gh1&n|rpt_h1
+hs= H-h1
+bs= B-b1
+S = (2*bs*h1+H*b1) /100
+Jz= (B*H^3-bs*(hs-h1)^3)/12  /10000
+Jy= (H*b1^3+6*bs*h1*B^2+2*h1*bs^3)/12 /10000
+Wz= Jz/(H/2) *10
+Wy= Jy/(B-b1/2) *10
+
+;сечение железнодорожного рельса
+[section45]
+In = h
+Out = S,Jz,Wz,AxisList,W,J
+Invisible = AxisList,W,J
+NonCalculable = AxisList
+h=20|мм|&gh&n|rpt_h|H
+S=0.238*h^2 /100
+Jz=0.032*h^4 /10000
+Wz=0.064*h^3 /1000
+AxisList = Z
+W=Wz
+J=Jz
+
+;///////////////////////////
+;Описание расчетных схем
+;///////////////////////////
+
+
+[shema1]
+IN = P,L
+P=7500|кг|&gP&n|rpt_P
+L=300|мм|&gL&n|rpt_L
+OUT = R, M_max, Sigma_max, Va,Ba
+R=P
+M_max = P*L /10
+Sigma_max = M_max/W
+Va = P*L^3/(3*Emtrl*J) /100
+Ba = -P*L^2/(2*Emtrl*J)*180/PI /100
+
+
+[shema2]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = R, M_max, Sigma_max, Va,Ba
+R = q*L /10
+M_max = q*(L)^2/2 /100
+Sigma_max = M_max/W
+Va = q*L^4/(8*Emtrl*J)  /1000
+Ba = -q*L^3/(6*Emtrl*J)*180/PI  /1000
+
+
+[shema3]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = R, M_max, Sigma_max, Va,Ba
+R = q*L/2 /10
+M_max = q*(L)^2/6  /100
+Sigma_max = M_max/W
+Va = q*L^4/(30*Emtrl*J)  /1000
+Ba = -q*L^3/(24*Emtrl*J)*180/PI  /1000
+
+
+[shema4]
+IN = M,L
+M = 4000|кг*см|&gM&n|rpt_M
+L = 300|мм|&gL&n|rpt_L
+OUT = R, M_max, Sigma_max, Va,Ba
+R = 0
+M_max = M
+Sigma_max = M_max/W
+Va = M*L^2/(2*Emtrl*J)    /10
+Ba = M*L/(Emtrl*J)*180/PI /10
+
+
+[shema5]
+IN = P,a,b
+P=7500|кг|&gP&n|rpt_P
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,Ra,Rb,M_max,Sigma_max,Va,Ba,Bb
+L=a+b|мм|&iL&n длина|rpt_L
+Ra = P*b/L
+Rb = P*a/L
+M_max = P*a*b/L /10
+Sigma_max = M_max/W
+Va = P*a^2*b^2/(3*Emtrl*J*L) /100
+Ba = - P*a*b*(b+L)/(6*Emtrl*J*L)*180/PI /100 
+Bb = P*a*b*(a+L)/(6*Emtrl*J*L)*180/PI /100
+
+
+[shema6]
+IN = P,a,b
+P=7500|кг|&gP&n|rpt_P
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,Ra,Rb,M_max,Sigma_max,Vmax,Ba,Bb
+L = 2*a+b|мм|&iL&n длина|rpt_L
+Ra = P
+Rb = Ra
+M_max = P*a /10
+Sigma_max = M_max/W
+Vmax = P*a*(8*a^2+12*a*b+3*b^2)/(24*Emtrl*J) /100
+Ba = P*a*(a+b)/(2*Emtrl*J)*180/PI /100
+Bb = Ba
+
+
+[shema7]
+IN = M,a,b
+M=4000|кг*см|&gM&n|rpt_M
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+Out = L,Ra,Rb,Sigma_max,M_max,Vxl2,Ba,Bb
+L = a+b|мм|&iL&n длина|rpt_L
+Rb = -M/L *10
+Ra = -Rb
+M_max = max(M*a/L,M*b/L)
+Sigma_max = M_max/W
+Vxl2 = M*(a^2+2*a*b-3*b^2)/(16*Emtrl*J) /10
+Ba = M*(a^2+2*a*b-2*b^2)/(6*Emtrl*J*L) /10 
+Bb = M*(b^2+2*a*b-2*a^2)/(6*Emtrl*J*L) /10
+
+
+[shema8]
+IN = q,a,b
+q = 5|кг/см|&gq&n|rpt_q
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,K,Ra,Rb,M_max,Sigma_max,Vmax,Ba,Bb
+L= 2*a+b|мм|&iL&n длина|rpt_L
+Ra = q*b/2 /10
+Rb = Ra
+M_max = q*b/8*(4*a+b) /100
+Sigma_max = M_max/W
+Vmax = 5*q*b^4*(1+8*a/b+19.2*a^2/b^2+12.8*a^3/b^3)/(384*Emtrl*J) /1000
+Ba = q*b^3*(1+6*a/b+6*a^2/b^2)/(24*Emtrl*J)*180/PI /1000
+Bb = Ba
+
+
+[shema9]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = Ra,Rb,M_max,Sigma_max,Vxl2,Ba,Bb
+Ra = q*L/6 /10
+Rb = 2*Ra
+M_max = q*L^2/(9*pow(3,1/3)) /100
+Sigma_max = M_max/W
+Vxl2 = 2.5*q*L^4/(384*Emtrl*J) /1000
+Ba = -7*q*L^3/(360*Emtrl*J)*180/PI /1000
+Bb = q*L^3/(45*Emtrl*J)*180/PI /1000
+
+
+[shema10]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = Ra,Rb,M_max,Sigma_max,Vxl2,Ba,Bb
+Ra = q*L/4 /10
+Rb = Ra
+M_max = q*L^2/12 /100
+Sigma_max = M_max/W
+Vxl2 = q*L^4/(120*Emtrl*J) /1000
+Ba = -5*q*L^3/(192*Emtrl*J)*180/PI /1000
+Bb = -Ba
+
+
+[shema11]
+IN = P,a,b
+P=7500|кг|&gP&n|rpt_P
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,Ra,M_max,Sigma_max,M_b,Sigma_b
+L= a+b|мм|&iL&n длина|rpt_L
+Ra = P*b^2*(2*L+a)/(2*L^3)
+M_max = P*a*b^2*(2*L+a)/(2*L^3) /10
+Sigma_max = M_max/W
+M_b = P*a*b*(L+a)/(2*L^2) /10
+Sigma_b = M_b/W
+
+
+[shema12]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = Ra,Rb,M_max,Sigma_max,Vmax,M_b,Sigma_b
+Ra = 3*q*L/8 /10
+Rb = 5*q*L/8 /10
+M_max = 9*q*L^2/128 /100
+Sigma_max = M_max/W
+Vmax = 0.0054*q*L^4/(Emtrl*J) /1000
+M_b = q*L^2/8 /100
+Sigma_b = M_b/W
+
+
+[shema13]
+IN = M,L
+M=4000|кг*см|&gM&n|rpt_M
+L=300|мм|&gL&n|rpt_L
+Out = Ra,Rb,M_max,M_b,Sigma_max,Sigma_b
+Rb = 1.5*M/L *10
+Ra = -Rb
+M_max = M
+M_b = M/2
+Sigma_max = M_max/W
+Sigma_b = M_b/W
+
+
+[shema14]
+IN = M,a,b
+M=4000|кг*см|&gM&n|rpt_M
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,M_b,Sigma_b
+L= a+b|мм|&iL&n длина|rpt_L
+M_b = -M/(2*L^2)*(b^2+2*a*b-2*a^2)
+Sigma_b = M_b/W
+
+
+[shema15]
+IN = P,L
+P=7500|кг|&gP&n|rpt_P
+L=300|мм|&gL&n|rpt_L
+OUT = Ra,Rb,M_a,M_b,M_max,Sigma_max,Vmax
+Ra = P/2
+Rb = Ra
+M_max = P*L/8 /10
+M_a = M_max
+M_b = M_max
+Sigma_max = M_a/W
+Vmax = P*L^3/(192*Emtrl*J) /100
+
+
+[shema16]
+IN = P,a,b
+P=7500|кг|&gP&n|rpt_P
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,Ra,Rb,M_a,M_b,M_max,Sigma_max,M_xa,Sigma_xa,Vxa
+L= a+b|мм|&iL&n длина|rpt_L
+Ra = P*b^2*(L+2*a)/L^3
+Rb = P*a^2*(L+2*b)/L^3
+M_a = P*a*b^2/L^2 /10
+M_b = P*b*a^2/L^2 /10
+M_max = max(M_a,M_b)
+Sigma_max = M_max/W
+M_xa = M_b*(1-(a-b)/(a+b)) |кг*см|&iM&Lx=a|rpt_Mxa
+Vxa = 2*P*a^3*b^2/(3*Emtrl*J)/(L+2*a)^2 /100 |мм|&iV&Lx=a|rpt_Vxa
+Sigma_xa = M_xa/W|кг*см|&i&s\0xF3\&Lx=a&n|rpt_Sigmaxa
+
+
+[shema17]
+IN = q,L
+q = 5|кг/см|&gq&n|rpt_q
+L = 300|мм|&gL&n|rpt_L
+OUT = Ra,Rb,M_a,M_b,Sigma_max,M_xl2,Sigma_xl2,Vxl2
+Ra = q*L/2 /10
+Rb = Ra
+M_a = q*L^2/12 /100
+M_b = M_a
+Sigma_max = M_a/W
+M_xl2 = M_a/2|кг*см|&iM&Lx=L/2|rpt_Mxl2
+Vxl2 = q*L^4/(384*Emtrl*J) /1000 |мм|&iV&Lx=L/2|rpt_Vxl2
+Sigma_xl2 = M_xl2/W|кг*см|&i&s\0xF3\&Lx=L/2&n|rpt_Sigmaxl2
+
+
+[shema18]
+IN = M,a,b
+M=4000|кг*см|&gM&n|rpt_M
+a=200|мм|&ga&n|rpt_a
+b=100|мм|&gb&n|rpt_b
+OUT = L,M_a,M_b,M_max,Sigma_max
+L= a+b|мм|&iL&n длина|rpt_L
+M_a = abs(-M*b*(2*a-b)/L^2)
+M_b = abs(-M*a*(2*b-a)/L^2)
+M_max = max(M_a,M_b)
+Sigma_max = M_max/W
+
+
+[shema19]
+IN = L
+L = 300|мм|&gL&n|rpt_L
+OUT = Pcrit
+Pcrit = 9.87*Emtrl*Jmin/(4*L^2) *100
+
+
+[shema20]
+IN = L
+L = 300|мм|&gL&n|rpt_L
+OUT = Pcrit
+Pcrit = 9.87*Emtrl*Jmin/(0.4486*L^2) *100
+
+
+[shema21]
+IN = L
+L = 300|мм|&gL&n|rpt_L
+OUT = Pcrit
+Pcrit = 9.87*Emtrl*Jmin/(0.25*L^2) *100
+
+
+[shema22]
+IN = L
+L = 300|мм|&gL&n|rpt_L
+OUT = Pcrit
+Pcrit = 9.87*Emtrl*Jmin/L^2 *100
