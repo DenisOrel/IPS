@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Projects\IPS Code\IPS\CADSystem\CAD\SolidWorks\Bin\SWCommandBar.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5385567-CCED-43B0-935C-D1D7FD10EED4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SWCommandBar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SolidWorksTools">
+      <HintPath>lib\solidworkstools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SWCommandBar\IToolbarInfo.cs" />
+    <Compile Include="SWCommandBar\ICommandBarCallback.cs" />
+    <Compile Include="SWCommandBar\ICommandBarAddin.cs" />
+    <Compile Include="SWCommandBar\CToolBarInfo.cs" />
+    <Compile Include="SWCommandBar\CCommandBarAddin.cs" />
+    <Compile Include="SolidWorks\Interop\swpublished\ISwAddin.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ICommandGroup.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ISldWorks.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ICommandManager.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\CommandManager.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\CommandGroup.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\CommandTab.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ICommandTab.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\CommandTabBox.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ICommandTabBox.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\ModelDoc2.cs" />
+    <Compile Include="SolidWorks\Interop\sldworks\IModelDoc2.cs" />
+    <Compile Include="SolidWorks\Interop\swconst\swDocumentTypes_e.cs" />
+    <Compile Include="SolidWorks\Interop\swconst\swCommandTabButtonTextDisplay_e.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
