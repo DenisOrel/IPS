@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\IPS.Installer.Full\InstServer\Server\Intermech.Vault.Service.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E8195E1-5987-49C6-AC87-44F2CA8DC7F7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>Intermech.Vault.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Vault">
+      <HintPath>lib\Intermech.Interfaces.Vault.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TransactionClass.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="FileOperationType.cs" />
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Vault\Service\CopierRootDirectory.cs" />
+    <Compile Include="Vault\Service\DBManager.cs" />
+    <Compile Include="Vault\Service\DBManagerHolder.cs" />
+    <Compile Include="Vault\Service\BlockedFileInfo.cs" />
+    <Compile Include="Vault\Service\DiskFileStorage.cs" />
+    <Compile Include="Vault\Service\DiskFileStorageCollection.cs" />
+    <Compile Include="Vault\Service\ExtConnections.cs" />
+    <Compile Include="Vault\Service\ProjectInstaller.cs" />
+    <Compile Include="Vault\Service\Intermech_Vault_Service.cs" />
+    <Compile Include="Vault\Service\Program.cs" />
+    <Compile Include="Vault\Service\IntermechVault.cs" />
+    <Compile Include="Vault\Service\ServiceHandler.cs" />
+    <Compile Include="Vault\Service\SQLCommands.cs" />
+    <Compile Include="Vault\Service\StorageSecurity.cs" />
+    <Compile Include="Vault\Service\VaultSettings.cs" />
+    <Compile Include="Interfaces\Server\UndertakerThread.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Vault\Service\Intermech_Vault_Service.resx" />
+    <EmbeddedResource Include="Vault\Service\ProjectInstaller.resx" />
+    <EmbeddedResource Include="Vault\Service\Resources\VaultServiceResources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

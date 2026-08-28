@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\IPS\IPS.Installer.Full\InstServer\Server\Intermech.Portal.Server.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22B38FFF-DB11-47EA-A70C-7587CD4D1D7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Portal.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.2.1112</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces">
+      <HintPath>lib\Intermech.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Portal">
+      <HintPath>lib\Intermech.Interfaces.Portal.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Interfaces.Server">
+      <HintPath>lib\Intermech.Interfaces.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Kernel">
+      <HintPath>lib\Intermech.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Localization\LocalizationHolder.cs" />
+    <Compile Include="Localization\CustomDescription.cs" />
+    <Compile Include="Localization\CustomCategory.cs" />
+    <Compile Include="Localization\CustomDisplayName.cs" />
+    <Compile Include="Portal\Server\DeleteAction.cs" />
+    <Compile Include="Portal\Server\ImportTask.cs" />
+    <Compile Include="Portal\Server\OwnChecks.cs" />
+    <Compile Include="Portal\Server\ActionsHelper.cs" />
+    <Compile Include="Portal\Server\ImportAction.cs" />
+    <Compile Include="Portal\Server\InfoAction.cs" />
+    <Compile Include="Portal\Server\MetadataInfoAction.cs" />
+    <Compile Include="Portal\Server\OwnCompleteAction.cs" />
+    <Compile Include="Portal\Server\PacketAction.cs" />
+    <Compile Include="Portal\Server\PswPackageUserSessionCreator.cs" />
+    <Compile Include="Portal\Server\SiteCodeHelper.cs" />
+    <Compile Include="Portal\Server\StringUserSessionCreator.cs" />
+    <Compile Include="Portal\Server\UserCreator`1.cs" />
+    <Compile Include="Portal\Server\PswPackagePasswordUserCreator.cs" />
+    <Compile Include="Portal\Server\StringPasswordUserCreator.cs" />
+    <Compile Include="Portal\Server\UserSessionCreator`1.cs" />
+    <Compile Include="Portal\Server\AnalyzInfo.cs" />
+    <Compile Include="Portal\Server\AnalyzObjectInfo.cs" />
+    <Compile Include="Portal\Server\AnalyzRelationInfo.cs" />
+    <Compile Include="Portal\Server\IncompleteRelationAnalyzer.cs" />
+    <Compile Include="Portal\Server\IUnitAnalyzer.cs" />
+    <Compile Include="Portal\Server\PackAnalyzInfo.cs" />
+    <Compile Include="Portal\Server\CreateAutoTransferBase.cs" />
+    <Compile Include="Portal\Server\CreateAutoTransferObjects.cs" />
+    <Compile Include="Portal\Server\CreateAutoTransferPacket.cs" />
+    <Compile Include="Portal\Server\BackupTaskUnitFiles.cs" />
+    <Compile Include="Portal\Server\CompositionObjectInfo.cs" />
+    <Compile Include="Portal\Server\DBChanges.cs" />
+    <Compile Include="Portal\Server\DBChangesObjectCreator.cs" />
+    <Compile Include="Portal\Server\DBPortalTask.cs" />
+    <Compile Include="Portal\Server\DBPortalTaskCreator.cs" />
+    <Compile Include="Portal\Server\IncompleteRelationPublisher.cs" />
+    <Compile Include="Portal\Server\IUnitPublisher.cs" />
+    <Compile Include="Portal\Server\PacketAttributesContainerPublisher.cs" />
+    <Compile Include="Portal\Server\PacketAutoTransferPublisher.cs" />
+    <Compile Include="Portal\Server\GroupPublishItem.cs" />
+    <Compile Include="Portal\Server\PublishPacket.cs" />
+    <Compile Include="Portal\Server\PublishGroup.cs" />
+    <Compile Include="Portal\Server\PortalAction.cs" />
+    <Compile Include="Portal\Server\PublishAction.cs" />
+    <Compile Include="Portal\Server\ObjectCollectionAction.cs" />
+    <Compile Include="Portal\Server\SecurityAction.cs" />
+    <Compile Include="Portal\Server\UpdateAction.cs" />
+    <Compile Include="Portal\Server\UserAction.cs" />
+    <Compile Include="Portal\Server\WorkflowAction.cs" />
+    <Compile Include="Portal\Server\AutoTransferAnalyzer.cs" />
+    <Compile Include="Portal\Server\CompositionHelper.cs" />
+    <Compile Include="Portal\Server\DBPublishObject.cs" />
+    <Compile Include="Portal\Server\DBPublishObjectCreator.cs" />
+    <Compile Include="Portal\Server\ObjectAnalyzer.cs" />
+    <Compile Include="Portal\Server\DBPublishRelation.cs" />
+    <Compile Include="Portal\Server\DBPublishRelationCreator.cs" />
+    <Compile Include="Portal\Server\LogException.cs" />
+    <Compile Include="Portal\Server\GroupObjectPublisher.cs" />
+    <Compile Include="Portal\Server\GroupRelationPublisher.cs" />
+    <Compile Include="Portal\Server\PacketObjectPublisher.cs" />
+    <Compile Include="Portal\Server\PacketRelationPublisher.cs" />
+    <Compile Include="Portal\Server\PublishCaches.cs" />
+    <Compile Include="Portal\Server\ReceiptPublisher.cs" />
+    <Compile Include="Portal\Server\PublishHelper.cs" />
+    <Compile Include="Portal\Server\AttributesContainerPublisher.cs" />
+    <Compile Include="Portal\Server\ObjectPublisher.cs" />
+    <Compile Include="Portal\Server\RelationPublisher.cs" />
+    <Compile Include="Portal\Server\UnitPublisher.cs" />
+    <Compile Include="Portal\Server\PublishObjectsDeleteAnalyzer.cs" />
+    <Compile Include="Portal\Server\PublishTask.cs" />
+    <Compile Include="Portal\Server\QueryColumnsHelper.cs" />
+    <Compile Include="Portal\Server\VersionsColumnNames.cs" />
+    <Compile Include="Portal\Server\CompositionColumnNames.cs" />
+    <Compile Include="Portal\Server\AttributeIDAttribute.cs" />
+    <Compile Include="Portal\Server\RelationAnalyzer.cs" />
+    <Compile Include="Portal\Server\UnitAnalyzer.cs" />
+    <Compile Include="Portal\Server\TempStorage.cs" />
+    <Compile Include="Portal\Server\UnitXmlFile.cs" />
+    <Compile Include="Portal\Server\UpdateDataAttributeHelper.cs" />
+    <Compile Include="Portal\Server\DBPublishCollectionCreator.cs" />
+    <Compile Include="Portal\Server\IDHelper.cs" />
+    <Compile Include="Portal\Server\ImportTasksDictionary.cs" />
+    <Compile Include="Portal\Server\Portal.cs" />
+    <Compile Include="Portal\Server\PortalPlugin.cs" />
+    <Compile Include="Portal\Server\PortalServerConsts.cs" />
+    <Compile Include="Portal\Server\PacketStatuses.cs" />
+    <Compile Include="Portal\Server\PortalUpdate.cs" />
+    <Compile Include="Portal\Server\SiteUpdate.cs" />
+    <Compile Include="Portal\Server\TraceLog.cs" />
+    <Compile Include="Portal\Server\Tools\ClearPublishTrashFoldersTask.cs" />
+    <Compile Include="Portal\Server\Tools\ClearUpdatesTrashFoldersTask.cs" />
+    <Compile Include="Portal\Server\Classes\DBPublishCollection.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\BlobValue.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\BlobValueBase.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\IBlobValue.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\FileValue.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\Remarks.cs" />
+    <Compile Include="Portal\Server\Classes\Publishers\RemarksStorage.cs" />
+    <Compile Include="ImSSP\sc_17179.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Portal\Server\Resources\PortalServerResources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="VaultService_9" xml:space="preserve">
+    <value>Ошибка </value>
+  </data>
+  <data name="VaultService_8" xml:space="preserve">
+    <value>Ошибка при старте службы Intermech Vault</value>
+  </data>
+  <data name="VaultService_5" xml:space="preserve">
+    <value>Ошибка при установки библиотеки SQLite.dll: </value>
+  </data>
+  <data name="VaultService_4" xml:space="preserve">
+    <value>Битность системы: </value>
+  </data>
+  <data name="VaultService_7" xml:space="preserve">
+    <value>Остановка работы сервиса. Shutdown</value>
+  </data>
+  <data name="VaultService_6" xml:space="preserve">
+    <value>Остановка работы сервиса</value>
+  </data>
+  <data name="VaultService_3" xml:space="preserve">
+    <value>Запуск сервиса</value>
+  </data>
+  <data name="VaultService_58" xml:space="preserve">
+    <value>Файл удалён</value>
+  </data>
+  <data name="VaultService_59" xml:space="preserve">
+    <value>Рабочая версия файла</value>
+  </data>
+  <data name="VaultService_50" xml:space="preserve">
+    <value>Ид. файла</value>
+  </data>
+  <data name="VaultService_51" xml:space="preserve">
+    <value>Ид. истории</value>
+  </data>
+  <data name="VaultService_52" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="VaultService_53" xml:space="preserve">
+    <value>Размер файла (сжатый)</value>
+  </data>
+  <data name="VaultService_54" xml:space="preserve">
+    <value>Размер файла</value>
+  </data>
+  <data name="VaultService_55" xml:space="preserve">
+    <value>Дата изменения файла</value>
+  </data>
+  <data name="VaultService_56" xml:space="preserve">
+    <value>Имя пользователя, изменявшего файл</value>
+  </data>
+  <data name="VaultService_57" xml:space="preserve">
+    <value>Метод сжатия</value>
+  </data>
+  <data name="VaultService_4x" xml:space="preserve">
+    <value>Битность процесса: </value>
+  </data>
+  <data name="VaultService_49" xml:space="preserve">
+    <value>Ид. версии объекта</value>
+  </data>
+  <data name="VaultService_48" xml:space="preserve">
+    <value>Изменяемый файл c именем {0} не был найден</value>
+  </data>
+  <data name="VaultService_41" xml:space="preserve">
+    <value>Удаление {0}</value>
+  </data>
+  <data name="VaultService_40" xml:space="preserve">
+    <value>Копирование {0} в {1}</value>
+  </data>
+  <data name="VaultService_43" xml:space="preserve">
+    <value>{0}, {1}: Ошибка при откате транзакции. {2}</value>
+  </data>
+  <data name="VaultService_42" xml:space="preserve">
+    <value>Перемещение {0} в {1}</value>
+  </data>
+  <data name="VaultService_45" xml:space="preserve">
+    <value>{0}, {1}: Удаление мусора {2}</value>
+  </data>
+  <data name="VaultService_44" xml:space="preserve">
+    <value>Удаление шкафа {0}</value>
+  </data>
+  <data name="VaultService_47" xml:space="preserve">
+    <value>Файл заблокирован</value>
+  </data>
+  <data name="VaultService_46" xml:space="preserve">
+    <value>Файл c именем {0} при удалении не был найден</value>
+  </data>
+  <data name="VaultService_18" xml:space="preserve">
+    <value>Информация о файле добавлена ID={0}, ObjectID={1}, HistoryID={2}, BlobID={3} Volume={4} Folder={5}</value>
+  </data>
+  <data name="VaultService_19" xml:space="preserve">
+    <value>Удаление информации о файле {0} из индексов</value>
+  </data>
+  <data name="VaultService_14" xml:space="preserve">
+    <value>Ошибка при помещении файла в хранилище: {0}</value>
+  </data>
+  <data name="VaultService_15" xml:space="preserve">
+    <value>Изменение objectID для файла blobID = {0}</value>
+  </data>
+  <data name="VaultService_16" xml:space="preserve">
+    <value>Обновление информации о файле в локальном индексе</value>
+  </data>
+  <data name="VaultService_17" xml:space="preserve">
+    <value>Добавление информации о файле в индексы</value>
+  </data>
+  <data name="VaultService_10" xml:space="preserve">
+    <value>Операция перемещения корневого хранилища уже выполняется</value>
+  </data>
+  <data name="VaultService_11" xml:space="preserve">
+    <value>Невозможно удалить шкаф, т.к. в нём существуют рабочие файлы</value>
+  </data>
+  <data name="VaultService_12" xml:space="preserve">
+    <value>Невозможно удалить шкаф, т.к. к нему подключены пользователи</value>
+  </data>
+  <data name="VaultService_13" xml:space="preserve">
+    <value>В шкафу нет свободного места. Измените максимальный размер шкафа либо создайте новый шкаф</value>
+  </data>
+  <data name="VaultService_63" xml:space="preserve">
+    <value>dirPath={0} не найден</value>
+  </data>
+  <data name="VaultService_62" xml:space="preserve">
+    <value>Откат транзакции. Локальный индекс {0}</value>
+  </data>
+  <data name="VaultService_61" xml:space="preserve">
+    <value>Завершение транзакции. Локальный индекс {0}</value>
+  </data>
+  <data name="VaultService_60" xml:space="preserve">
+    <value>Создана команда для локального индекса {0}. </value>
+  </data>
+  <data name="VaultService_67" xml:space="preserve">
+    <value>Ошибка при перемещении корневого хранилища</value>
+  </data>
+  <data name="VaultService_66" xml:space="preserve">
+    <value>Невозможно изменить путь к корневому каталогу, т.к. существуют активные подключения.</value>
+  </data>
+  <data name="VaultService_65" xml:space="preserve">
+    <value>Невозможно подключиться к службе. Неверный пароль</value>
+  </data>
+  <data name="VaultService_64" xml:space="preserve">
+    <value>filePath={0} не найден</value>
+  </data>
+  <data name="VaultService_38" xml:space="preserve">
+    <value>Удаление файла {0} из Temp files</value>
+  </data>
+  <data name="VaultService_39" xml:space="preserve">
+    <value>Удаление файла из {0} Working files</value>
+  </data>
+  <data name="VaultService_36" xml:space="preserve">
+    <value>Информация о файле {0} помещена во временную таблицу. Временное имя файла {1}</value>
+  </data>
+  <data name="VaultService_37" xml:space="preserve">
+    <value>Ошибка при записи файла:</value>
+  </data>
+  <data name="VaultService_34" xml:space="preserve">
+    <value>{0}, {1}: Получение информации о шкафе</value>
+  </data>
+  <data name="VaultService_35" xml:space="preserve">
+    <value>{0}, {1}: Ошибка при получении информации о файлах, хранимых в шкафу. {3}</value>
+  </data>
+  <data name="VaultService_32" xml:space="preserve">
+    <value>Ошибка при получение истории изменения файла {0}. {1}</value>
+  </data>
+  <data name="VaultService_33" xml:space="preserve">
+    <value>Ошибка при получении истории файла {0}. {1}</value>
+  </data>
+  <data name="VaultService_30" xml:space="preserve">
+    <value>{0}, {1}: Ошибка при получение информации об изменении файлов объекта с ID={2}. {3}</value>
+  </data>
+  <data name="VaultService_31" xml:space="preserve">
+    <value>Ошибка при получении информации о шкафе {0}</value>
+  </data>
+  <data name="VaultService_29" xml:space="preserve">
+    <value>{0}, {1}: Ошибка снятия блокировки с файла blobID={2}. {3}</value>
+  </data>
+  <data name="VaultService_28" xml:space="preserve">
+    <value>В данном корневом хранилище уже расположен шкаф.</value>
+  </data>
+  <data name="VaultService_27" xml:space="preserve">
+    <value>{0} {1}: Транзакция завершена.</value>
+  </data>
+  <data name="VaultService_26" xml:space="preserve">
+    <value>{0} {1}: Завершение транзакции. Запись в глобальный индекс. </value>
+  </data>
+  <data name="VaultService_25" xml:space="preserve">
+    <value>{0} {1}: Ошибка при откате транзакции: {2}</value>
+  </data>
+  <data name="VaultService_24" xml:space="preserve">
+    <value>{0} {1}: Ошибка при старте транзакции: {2}</value>
+  </data>
+  <data name="VaultService_23" xml:space="preserve">
+    <value>Создание новой папки. VolumeName={0}</value>
+  </data>
+  <data name="VaultService_22" xml:space="preserve">
+    <value>Информация о файле не найдена</value>
+  </data>
+  <data name="VaultService_21" xml:space="preserve">
+    <value>Удаление информации о файле {0}</value>
+  </data>
+  <data name="VaultService_20" xml:space="preserve">
+    <value>Информация о файле {0} удалена из индексов</value>
+  </data>
+</root>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PortalServer_38" xml:space="preserve">
+    <value>Для связи {0} в пакете публикации не найден объект {1}</value>
+  </data>
+  <data name="PortalServer_39" xml:space="preserve">
+    <value>Неверный глобальный идентификатор изменения</value>
+  </data>
+  <data name="PortalServer_30" xml:space="preserve">
+    <value>Для связи {0} не найден объект {1}</value>
+  </data>
+  <data name="PortalServer_31" xml:space="preserve">
+    <value>связи {0}</value>
+  </data>
+  <data name="PortalServer_32" xml:space="preserve">
+    <value>Не указан узел для запуска обновления</value>
+  </data>
+  <data name="PortalServer_33" xml:space="preserve">
+    <value>Узел с идентификатором {0} не найден</value>
+  </data>
+  <data name="PortalServer_34" xml:space="preserve">
+    <value>Невозможно опубликовать замечания к несуществующему объекту {0}</value>
+  </data>
+  <data name="PortalServer_35" xml:space="preserve">
+    <value>Не найдена информация по атрибутам в файле с атрибутами связи создаваемой версии опубликованного объекта</value>
+  </data>
+  <data name="PortalServer_36" xml:space="preserve">
+    <value>Не найдена информация по идентификатору родительского объекта в файле с атрибутами связи создаваемой версии опубликованного объекта</value>
+  </data>
+  <data name="PortalServer_37" xml:space="preserve">
+    <value>Ошибка при создании версии опубликованного объекта {0}: {1}</value>
+  </data>
+  <data name="PortalServer_18" xml:space="preserve">
+    <value>Не найдена информация по атрибутам в файле с атрибутами</value>
+  </data>
+  <data name="PortalServer_19" xml:space="preserve">
+    <value>Ошибка при создании задачи '{0}': {1}</value>
+  </data>
+  <data name="PortalServer_12" xml:space="preserve">
+    <value>Не найден тип объектов {0} при импорте объекта {1}. Объект поставлен в очередь на импорт без состава</value>
+  </data>
+  <data name="PortalServer_13" xml:space="preserve">
+    <value>Не указаны типы связей, по которым производится поиск импортируемого состава для объекта {0}. Объект поставлен в очередь на импорт без состава</value>
+  </data>
+  <data name="PortalServer_10" xml:space="preserve">
+    <value>Отсутствуют идентификаторы импортируемых объектов</value>
+  </data>
+  <data name="PortalServer_11" xml:space="preserve">
+    <value>Ошибка при импорте {0} : {1} (см.файл {2})</value>
+  </data>
+  <data name="PortalServer_16" xml:space="preserve">
+    <value>Ошибка при чтении файла с данными для публикуемого объекта '{0}': {1}</value>
+  </data>
+  <data name="PortalServer_17" xml:space="preserve">
+    <value>Файла с атрибутами '{0}' для публикуемого объекта '{1}' не существует</value>
+  </data>
+  <data name="PortalServer_14" xml:space="preserve">
+    <value>Отсутствуют права на владение для {0}</value>
+  </data>
+  <data name="PortalServer_15" xml:space="preserve">
+    <value>Объект {0} уже взят во владение узлом '{1}'</value>
+  </data>
+  <data name="PortalServer_29" xml:space="preserve">
+    <value>Попытка повторной публикации связи {0} в сеансе</value>
+  </data>
+  <data name="PortalServer_28" xml:space="preserve">
+    <value>Не найдены глобальные идентификаторы, необходимые для создания связи "{0}"</value>
+  </data>
+  <data name="PortalServer_21" xml:space="preserve">
+    <value>Отсутсвует значение параметра unitGuid</value>
+  </data>
+  <data name="PortalServer_20" xml:space="preserve">
+    <value>Файла '{0}' не существует</value>
+  </data>
+  <data name="PortalServer_23" xml:space="preserve">
+    <value>Задача {0} не завершена. Удаление невозможно.</value>
+  </data>
+  <data name="PortalServer_22" xml:space="preserve">
+    <value>Задача {0} в данный момент выполняется. Удаление невозможно.</value>
+  </data>
+  <data name="PortalServer_25" xml:space="preserve">
+    <value>Попытка повторной публикации объекта {0} в сеансе</value>
+  </data>
+  <data name="PortalServer_24" xml:space="preserve">
+    <value>Не найдены глобальные идентификаторы объекта</value>
+  </data>
+  <data name="PortalServer_27" xml:space="preserve">
+    <value>объекта {0}</value>
+  </data>
+  <data name="PortalServer_26" xml:space="preserve">
+    <value>Задача {0} в данный момент выполняется</value>
+  </data>
+  <data name="PortalServer_70" xml:space="preserve">
+    <value>Попытка создания связи с еще не опубликованным объектом {0}</value>
+  </data>
+  <data name="PortalServer_71" xml:space="preserve">
+    <value>Нельзя удалить опубликованный объект {0}, так как узел {1} не является владельцем его состава</value>
+  </data>
+  <data name="PortalServer_58" xml:space="preserve">
+    <value>Нельзя удалить опубликованный объект {0}, так как узел {1} не является его владельцем</value>
+  </data>
+  <data name="PortalServer_59" xml:space="preserve">
+    <value>Нельзя удалить опубликованный объект {0}, так как он опубликован в составе</value>
+  </data>
+  <data name="PortalServer_56" xml:space="preserve">
+    <value>Отсутсвует значение параметра objectGuid</value>
+  </data>
+  <data name="PortalServer_57" xml:space="preserve">
+    <value>Нельзя удалить опубликованный объект {0}, так как узел {1} не является его узлом-создателем</value>
+  </data>
+  <data name="PortalServer_54" xml:space="preserve">
+    <value>Пользователь {0} на портале не зарегистрирован</value>
+  </data>
+  <data name="PortalServer_55" xml:space="preserve">
+    <value>Пользователь {0} не входит в состав узла {1}</value>
+  </data>
+  <data name="PortalServer_52" xml:space="preserve">
+    <value>Количество элементов параметра {0} должно совпадать с количеством элементов параметра attributes</value>
+  </data>
+  <data name="PortalServer_53" xml:space="preserve">
+    <value>Атрибут с иденитфикатором {0} не найден</value>
+  </data>
+  <data name="PortalServer_50" xml:space="preserve">
+    <value>Не указаны колонки в параметрах запроса!</value>
+  </data>
+  <data name="PortalServer_51" xml:space="preserve">
+    <value>Развернутый состав {0}</value>
+  </data>
+  <data name="PortalServer_69" xml:space="preserve">
+    <value>Серверный модуль портала</value>
+  </data>
+  <data name="PortalServer_68" xml:space="preserve">
+    <value>{0} входит в несколько узлов информационной системы. Импорт невозможен.</value>
+  </data>
+  <data name="PortalServer_65" xml:space="preserve">
+    <value>Функция доступна только для администратора!</value>
+  </data>
+  <data name="PortalServer_64" xml:space="preserve">
+    <value>Узел {0} не может завершить владение {1}, так как не является владельцем объекта</value>
+  </data>
+  <data name="PortalServer_67" xml:space="preserve">
+    <value>{0} не входит ни в один из узлов информационной системы. Импорт невозможен.</value>
+  </data>
+  <data name="PortalServer_66" xml:space="preserve">
+    <value>Нет списка идентификаторов пользователей для импорта!</value>
+  </data>
+  <data name="PortalServer_61" xml:space="preserve">
+    <value>Среди опубликованных объектов не найдены указанные в objectGuids</value>
+  </data>
+  <data name="PortalServer_60" xml:space="preserve">
+    <value>Узел с глобальным идентификатором {{{0}}} в системе не найден</value>
+  </data>
+  <data name="PortalServer_63" xml:space="preserve">
+    <value>Отсутствует информация по узлам, которым передаются права владения</value>
+  </data>
+  <data name="PortalServer_62" xml:space="preserve">
+    <value>Отсутствуют идентификаторы объектов для завершения владения</value>
+  </data>
+  <data name="PortalServer_49" xml:space="preserve">
+    <value>Тип объектов {0} не входит в иерархию типов опубликованных объектов</value>
+  </data>
+  <data name="PortalServer_48" xml:space="preserve">
+    <value>Ошибка при удалении изменения {0} : {1} (см.файл {2})</value>
+  </data>
+  <data name="PortalServer_47" xml:space="preserve">
+    <value>Ошибка при удалении изменения {0} : {1}</value>
+  </data>
+  <data name="PortalServer_46" xml:space="preserve">
+    <value>Неверное значение стартовой позиции</value>
+  </data>
+  <data name="PortalServer_45" xml:space="preserve">
+    <value>Файл с именем '{0}' не существует</value>
+  </data>
+  <data name="PortalServer_44" xml:space="preserve">
+    <value>Отсутствует информация по файлам с данными экспортируемого изменения</value>
+  </data>
+  <data name="PortalServer_43" xml:space="preserve">
+    <value>На диске отсутствуют файл {0} для экспортируемого изменения</value>
+  </data>
+  <data name="PortalServer_42" xml:space="preserve">
+    <value>Экспортируемое изменение не содержит всех файлов с данными</value>
+  </data>
+  <data name="PortalServer_41" xml:space="preserve">
+    <value>Отсутствует информация по экспортируемому изменению.</value>
+  </data>
+  <data name="PortalServer_40" xml:space="preserve">
+    <value>Изменение {0} не существует или еще не сформировано.</value>
+  </data>
+  <data name="PortalServer_9" xml:space="preserve">
+    <value>Не найдена информация по атрибутам в файле с атрибутами</value>
+  </data>
+  <data name="PortalServer_8" xml:space="preserve">
+    <value>Не найден файл с атрибутами</value>
+  </data>
+  <data name="PortalServer_3" xml:space="preserve">
+    <value>Глобальный идентификатор объекта</value>
+  </data>
+  <data name="PortalServer_2" xml:space="preserve">
+    <value>Ошибка при удалении блоба {0} (Данные задачи синхронизации) для изменения {1} : {2} (см.файл {3})</value>
+  </data>
+  <data name="PortalServer_1" xml:space="preserve">
+    <value>Номер блоба: {0}</value>
+  </data>
+  <data name="PortalServer_7" xml:space="preserve">
+    <value>Неверное значение параметра {0}</value>
+  </data>
+  <data name="PortalServer_6" xml:space="preserve">
+    <value>Глобальный идентификатор родительской версии объекта</value>
+  </data>
+  <data name="PortalServer_5" xml:space="preserve">
+    <value>Глобальный идентификатор версии объекта</value>
+  </data>
+  <data name="PortalServer_4" xml:space="preserve">
+    <value>Глобальный идентификатор связи</value>
+  </data>
+</root>
