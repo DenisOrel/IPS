@@ -1,0 +1,29 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Intermech.Serialization.Compatibility.Binary.MissingSurrogate
+// Assembly: Intermech.Serialization.Compatibility, Version=1.0.1.74, Culture=neutral, PublicKeyToken=null
+// MVID: D3658D7B-7F63-413B-8D5F-ACD5662A960C
+// Assembly location: D:\Projects\IPS Code\AltiumDesigner\IPSAddIn\Intermech.Serialization.Compatibility.dll
+
+using System;
+using System.Reflection;
+using System.Runtime.Serialization;
+
+#nullable disable
+namespace Intermech.Serialization.Compatibility.Binary;
+
+public sealed class MissingSurrogate : ISerializationSurrogate
+{
+  public void GetObjectData(object obj, SerializationInfo info, StreamingContext context)
+  {
+    UnityHolder.GetUnitySerializationInfo(info, (Missing) obj);
+  }
+
+  public object SetObjectData(
+    object obj,
+    SerializationInfo info,
+    StreamingContext context,
+    ISurrogateSelector selector)
+  {
+    throw new NotSupportedException();
+  }
+}

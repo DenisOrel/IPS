@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Projects\IPS Code\AltiumDesigner\IPSAddIn\IPSAddIn.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B685365-5929-4DFA-8C14-9D466B22ED92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>IPSAddIn</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>8.0.3.1634</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CSharpPlugin</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Altium.SDK">
+      <HintPath>lib\Altium.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.AltiumDesigner.Interfaces">
+      <HintPath>lib\Intermech.AltiumDesigner.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl">
+      <HintPath>lib\Intermech.Bcl.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermech.Bcl.Windows">
+      <HintPath>lib\Intermech.Bcl.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Legacy">
+      <HintPath>lib\K4os.Compression.LZ4.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Text.Json">
+      <HintPath>lib\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands.cs" />
+    <Compile Include="PluginFactory.cs" />
+    <Compile Include="PCBDwfDocument.cs" />
+    <Compile Include="MbsDocument.cs" />
+    <Compile Include="FileDocument`1.cs" />
+    <Compile Include="PCBDocument.cs" />
+    <Compile Include="AddinReferenceResolver.cs" />
+    <Compile Include="BoolParameterHandler.cs" />
+    <Compile Include="ComponentIterator.cs" />
+    <Compile Include="FloatParameterHandler.cs" />
+    <Compile Include="FormulaParser.cs" />
+    <Compile Include="IntParameterHandler.cs" />
+    <Compile Include="IObligatoryParameterHandler.cs" />
+    <Compile Include="IPluginFactory.cs" />
+    <Compile Include="ParameterHandler`1.cs" />
+    <Compile Include="Parametrable`1.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IPSAddInProxy.cs" />
+    <Compile Include="LongLifeObject.cs" />
+    <Compile Include="ParametersHelper`1.cs" />
+    <Compile Include="PhysicalComponent.cs" />
+    <Compile Include="PhysicalDocument.cs" />
+    <Compile Include="PhysicalParameterHelper.cs" />
+    <Compile Include="PluginServerModule.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="ProjectParametersHelper.cs" />
+    <Compile Include="SchComponent.cs" />
+    <Compile Include="SchDocument.cs" />
+    <Compile Include="SchIterator`1.cs" />
+    <Compile Include="SchParametersHelper.cs" />
+    <Compile Include="SheetNumberParameterHandler.cs" />
+    <Compile Include="SheetSymbol.cs" />
+    <Compile Include="SheetSymbolIterator.cs" />
+    <Compile Include="StringParameterHandler.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="Variation.cs" />
+    <Compile Include="VariantParametersHelper.cs" />
+    <Compile Include="Draftsman\Parameters\ParameterRecord.cs" />
+    <Compile Include="Draftsman\Logical\Root.cs" />
+    <Compile Include="Draftsman\Logical\EntriesConnection.cs" />
+    <Compile Include="Draftsman\Logical\Connection.cs" />
+    <Compile Include="Draftsman\Logical\PinPair.cs" />
+    <Compile Include="Draftsman\Logical\Module.cs" />
+    <Compile Include="Draftsman\Logical\Component.cs" />
+    <Compile Include="Draftsman\Logical\Parameter.cs" />
+    <Compile Include="Draftsman\Logical\Pin.cs" />
+    <Compile Include="Draftsman\Logical\Entry.cs" />
+    <Compile Include="Draftsman\Logical\EntryPinMap.cs" />
+    <Compile Include="Draftsman\Logical\Map.cs" />
+    <Compile Include="Draftsman\Logical\Source.cs" />
+    <Compile Include="Draftsman\Logical\TypeEnum.cs" />
+    <Compile Include="Draftsman\Logical\TypeEnumConverter.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

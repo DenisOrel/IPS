@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Projects\IPS Code\AltiumDesigner\IPSAddIn\Intermech.Serialization.Compatibility.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DF1C882-2B1D-4021-9E2A-9504B318170C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Intermech.Serialization.Compatibility</AssemblyName>
+    <ApplicationVersion>1.0.1.74</ApplicationVersion>
+    <RootNamespace>Intermech</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UnityHolder.cs" />
+    <Compile Include="Text\MaskPatterns.cs" />
+    <Compile Include="ApplicationModel\AppAssemblyResolveFilter.cs" />
+    <Compile Include="ApplicationModel\AppAssemblyResolver.cs" />
+    <Compile Include="ApplicationModel\AppAssemblyResolveRequest.cs" />
+    <Compile Include="ApplicationModel\AppPluginContext.cs" />
+    <Compile Include="ApplicationModel\AppPluginLoader.cs" />
+    <Compile Include="ApplicationModel\IAppAssemblyAutoLoader.cs" />
+    <Compile Include="ApplicationModel\IAppAssemblyResolveFilter.cs" />
+    <Compile Include="ApplicationModel\NETFXAssemblyResolver.cs" />
+    <Compile Include="ApplicationModel\NETFXPluginContext.cs" />
+    <Compile Include="ApplicationModel\NETFXPluginLoader.cs" />
+    <Compile Include="Serialization\MaskPatternAssemblyForwardingRule.cs" />
+    <Compile Include="Serialization\SerializationInfoExtensions.cs" />
+    <Compile Include="Serialization\StArrayTypeInfo.cs" />
+    <Compile Include="Serialization\StBoundGenericTypeInfo.cs" />
+    <Compile Include="Serialization\StTypeInfo.cs" />
+    <Compile Include="Serialization\StTypeInfoService.cs" />
+    <Compile Include="Serialization\TypeForwardingRule.cs" />
+    <Compile Include="Serialization\URTAssemblyInfo.cs" />
+    <Compile Include="Serialization\URTKind.cs" />
+    <Compile Include="Serialization\ClassicFormatters\DeserializationEventHandler.cs" />
+    <Compile Include="Serialization\ClassicFormatters\FormatterServices.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SurrogateForCyclicalReference.cs" />
+    <Compile Include="Serialization\ClassicFormatters\HashHelpers.cs" />
+    <Compile Include="Serialization\ClassicFormatters\MemberHolder.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ObjectIDGenerator.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ObjectManager.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ObjectHolder.cs" />
+    <Compile Include="Serialization\ClassicFormatters\FixupHolder.cs" />
+    <Compile Include="Serialization\ClassicFormatters\FixupHolderList.cs" />
+    <Compile Include="Serialization\ClassicFormatters\LongList.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ObjectHolderList.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ObjectHolderListEnumerator.cs" />
+    <Compile Include="Serialization\ClassicFormatters\TypeLoadExceptionHolder.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationInfoExtensions.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationEventHandler.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationEvents.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationEventsCache.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationFieldInfo.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SerializationObjectManager.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SR.cs" />
+    <Compile Include="Serialization\ClassicFormatters\SR2.cs" />
+    <Compile Include="Serialization\ClassicFormatters\ValueTypeFixupInfo.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryArray.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryAssembly.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryAssemblyInfo.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryCrossAppDomainAssembly.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryCrossAppDomainMap.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryCrossAppDomainString.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryHeaderEnum.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryTypeEnum.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryArrayTypeEnum.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalSerializerTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalParseTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalObjectTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalObjectPositionE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalArrayTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalMemberTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalMemberValueE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalPrimitiveTypeE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ValueFixupEnum.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryFormatter.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryFormatterDefaults.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryFormatterEventSource.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryFormatterWriter.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryObject.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ObjectReader.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryObjectString.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryObjectWithMap.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryObjectWithMapTyped.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ObjectWriter.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryParser.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\BinaryTypeConverter.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ParseRecord.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\SerStack.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\SizedArray.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\IntSizedArray.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\NameCache.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ValueFixup.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\InternalFE.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\NameInfo.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\PrimitiveArray.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\Converter.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\DateTimeRaw.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\FormatterAssemblyStyle.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\FormatterTypeStyle.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\IStreamable.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\MemberPrimitiveTyped.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\MemberPrimitiveUnTyped.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\MemberReference.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\MessageEnd.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ObjectMap.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ObjectNull.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ObjectProgress.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\ReadObjectInfo.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\SerializationHeaderRecord.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\SerObjectInfoCache.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\SerObjectInfoInit.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\TopLevelAssemblyTypeResolver.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\TypeFilterLevel.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\TypeInformation.cs" />
+    <Compile Include="Serialization\ClassicFormatters\Binary\WriteObjectInfo.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\BinaryFormatterCompatibilityBinder.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\BinaryFormatterCompatibilitySurrogateSelector.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\BinaryFormatterCompatibilitySurrogateServices.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\DataSetSurrogate.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\DataTableSurrogate.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\DBNullSurrogate.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\MissingSurrogate.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\NullHolder.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\DelegateEntry.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\NullHolderSurrogate.cs" />
+    <Compile Include="Serialization\Compatibility\Binary\RuntimeTypeSurrogate.cs" />
+    <Compile Include="Reflection\TypeIdentifiers\TypeIdentifier.cs" />
+    <Compile Include="Reflection\TypeIdentifiers\TypeNameParserException.cs" />
+    <Compile Include="Reflection\TypeIdentifiers\TypeSpecifier.cs" />
+    <Compile Include="Reflection\TypeIdentifiers\TypeSpecifierKind.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Serialization\ClassicFormatters\SR2.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
